@@ -33,16 +33,21 @@
 		// Apple recommends to re-assign "self" with the "super" return value
 		if( (self=[super init] )) {
 			
+			self.isTouchEnabled = YES;
 			viewController = vc;
 			
-			CCSprite * back = [CCSprite spriteWithFile:@"mm_background.png"];
+			CCSprite * back = [CCSprite spriteWithFile:@"wheel_background.png"];
 			[back setPosition:ccp(240,160)];
 			[self addChild:back];
 			
-			CCMenuItemImage * backBtn = [CCMenuItemImage itemFromNormalImage:@"mm_logo.png" selectedImage:@"mm_logo.png" target:self selector:@selector(goBack)];
+			dino = [CCSprite spriteWithFile:@"wheel_dino.png"];
+			[dino setPosition:ccp(240,160)];
+			[self addChild:dino];
+			
+			CCMenuItemImage * backBtn = [CCMenuItemImage itemFromNormalImage:@"wheel_home.png" selectedImage:@"wheel_home.png" target:self selector:@selector(goBack)];
 			CCMenu * menu = [CCMenu menuWithItems:backBtn,nil];
 			[self addChild:menu];
-			[menu setPosition:ccp(240,160)];
+			[menu setPosition:ccp(30,290)];
 			
 		}
 		return self;
@@ -51,7 +56,23 @@
     return self;
 }
 
+-(void)ccTouchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
+{
+	UITouch *touch = [touches anyObject];
+	
+	int randAngle = 1800 + (45 *( arc4random() %8));
+	
+	if(!dinoSpinning)
+	{
+		[dino runAction:[CCSequence actions:[CCEaseSineInOut actionWithAction:[CCRotateBy actionWithDuration:8 angle:randAngle]],[CCCallFunc actionWithTarget:self selector:@selector(stopSpinning)],nil]];
+		dinoSpinning = YES;
+	}
+}
 
+-(void)stopSpinning
+{
+	dinoSpinning = NO;
+}
 
 -(void)goBack
 {
