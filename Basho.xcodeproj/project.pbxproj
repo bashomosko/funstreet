@@ -200,6 +200,26 @@
 		10B3285F131D5EAB0014A77D /* wheel_snd_hat.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 10B32858131D5EAB0014A77D /* wheel_snd_hat.m4a */; };
 		10B32860131D5EAB0014A77D /* wheel_snd_boots.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 10B32859131D5EAB0014A77D /* wheel_snd_boots.m4a */; };
 		10B32861131D5EAB0014A77D /* wheel_snd_backpack.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 10B3285A131D5EAB0014A77D /* wheel_snd_backpack.m4a */; };
+		10B3297C131D87CB0014A77D /* GameManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 10B3297B131D87CB0014A77D /* GameManager.m */; };
+		10B329A3131D8F910014A77D /* wheel_snd_jacket_where.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 10B329A2131D8F910014A77D /* wheel_snd_jacket_where.m4a */; };
+		10B329AB131D90B50014A77D /* wheel_snd_backpack_where.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 10B329A4131D90B50014A77D /* wheel_snd_backpack_where.m4a */; };
+		10B329AC131D90B50014A77D /* wheel_snd_boots_where.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 10B329A5131D90B50014A77D /* wheel_snd_boots_where.m4a */; };
+		10B329AD131D90B50014A77D /* wheel_snd_hat_where.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 10B329A6131D90B50014A77D /* wheel_snd_hat_where.m4a */; };
+		10B329AE131D90B50014A77D /* wheel_snd_necklace_where.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 10B329A7131D90B50014A77D /* wheel_snd_necklace_where.m4a */; };
+		10B329AF131D90B50014A77D /* wheel_snd_pants_where.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 10B329A8131D90B50014A77D /* wheel_snd_pants_where.m4a */; };
+		10B329B0131D90B50014A77D /* wheel_snd_phone_where.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 10B329A9131D90B50014A77D /* wheel_snd_phone_where.m4a */; };
+		10B329B1131D90B50014A77D /* wheel_snd_sunglasses_where.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 10B329AA131D90B50014A77D /* wheel_snd_sunglasses_where.m4a */; };
+		10B329C9131D95F50014A77D /* wheel_snd_backpack_wrong.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 10B329C1131D95F50014A77D /* wheel_snd_backpack_wrong.m4a */; };
+		10B329CA131D95F50014A77D /* wheel_snd_boots_wrong.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 10B329C2131D95F50014A77D /* wheel_snd_boots_wrong.m4a */; };
+		10B329CB131D95F50014A77D /* wheel_snd_hat_wrong.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 10B329C3131D95F50014A77D /* wheel_snd_hat_wrong.m4a */; };
+		10B329CC131D95F50014A77D /* wheel_snd_jacket_wrong.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 10B329C4131D95F50014A77D /* wheel_snd_jacket_wrong.m4a */; };
+		10B329CD131D95F50014A77D /* wheel_snd_necklace_wrong.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 10B329C5131D95F50014A77D /* wheel_snd_necklace_wrong.m4a */; };
+		10B329CE131D95F50014A77D /* wheel_snd_pants_wrong.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 10B329C6131D95F50014A77D /* wheel_snd_pants_wrong.m4a */; };
+		10B329CF131D95F50014A77D /* wheel_snd_phone_wrong.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 10B329C7131D95F50014A77D /* wheel_snd_phone_wrong.m4a */; };
+		10B329D0131D95F50014A77D /* wheel_snd_sunglasses_wrong.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 10B329C8131D95F50014A77D /* wheel_snd_sunglasses_wrong.m4a */; };
+		10B329E4131D97CD0014A77D /* wheel_background-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 10B32803131D58330014A77D /* wheel_background-hd.png */; };
+		10B329E5131D97CD0014A77D /* wheel_background.png in Resources */ = {isa = PBXBuildFile; fileRef = 10B32804131D58330014A77D /* wheel_background.png */; };
+		10B329E6131D97CD0014A77D /* wheel_dino.png in Resources */ = {isa = PBXBuildFile; fileRef = 10B32805131D58330014A77D /* wheel_dino.png */; };
 		10B569FF1306EB2B00AA7DCB /* MainMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 10B569FD1306EB2B00AA7DCB /* MainMenu.m */; };
 		10B56A001306EB2B00AA7DCB /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10B569FE1306EB2B00AA7DCB /* MainMenu.xib */; };
 		10B56A041306EB3F00AA7DCB /* MainMenu_iPad.m in Sources */ = {isa = PBXBuildFile; fileRef = 10B56A021306EB3F00AA7DCB /* MainMenu_iPad.m */; };
@@ -557,6 +577,24 @@
 		10B32858131D5EAB0014A77D /* wheel_snd_hat.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = wheel_snd_hat.m4a; sourceTree = "<group>"; };
 		10B32859131D5EAB0014A77D /* wheel_snd_boots.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = wheel_snd_boots.m4a; sourceTree = "<group>"; };
 		10B3285A131D5EAB0014A77D /* wheel_snd_backpack.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = wheel_snd_backpack.m4a; sourceTree = "<group>"; };
+		10B3297A131D87CB0014A77D /* GameManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameManager.h; sourceTree = "<group>"; };
+		10B3297B131D87CB0014A77D /* GameManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameManager.m; sourceTree = "<group>"; };
+		10B329A2131D8F910014A77D /* wheel_snd_jacket_where.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = wheel_snd_jacket_where.m4a; sourceTree = "<group>"; };
+		10B329A4131D90B50014A77D /* wheel_snd_backpack_where.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = wheel_snd_backpack_where.m4a; sourceTree = "<group>"; };
+		10B329A5131D90B50014A77D /* wheel_snd_boots_where.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = wheel_snd_boots_where.m4a; sourceTree = "<group>"; };
+		10B329A6131D90B50014A77D /* wheel_snd_hat_where.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = wheel_snd_hat_where.m4a; sourceTree = "<group>"; };
+		10B329A7131D90B50014A77D /* wheel_snd_necklace_where.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = wheel_snd_necklace_where.m4a; sourceTree = "<group>"; };
+		10B329A8131D90B50014A77D /* wheel_snd_pants_where.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = wheel_snd_pants_where.m4a; sourceTree = "<group>"; };
+		10B329A9131D90B50014A77D /* wheel_snd_phone_where.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = wheel_snd_phone_where.m4a; sourceTree = "<group>"; };
+		10B329AA131D90B50014A77D /* wheel_snd_sunglasses_where.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = wheel_snd_sunglasses_where.m4a; sourceTree = "<group>"; };
+		10B329C1131D95F50014A77D /* wheel_snd_backpack_wrong.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = wheel_snd_backpack_wrong.m4a; sourceTree = "<group>"; };
+		10B329C2131D95F50014A77D /* wheel_snd_boots_wrong.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = wheel_snd_boots_wrong.m4a; sourceTree = "<group>"; };
+		10B329C3131D95F50014A77D /* wheel_snd_hat_wrong.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = wheel_snd_hat_wrong.m4a; sourceTree = "<group>"; };
+		10B329C4131D95F50014A77D /* wheel_snd_jacket_wrong.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = wheel_snd_jacket_wrong.m4a; sourceTree = "<group>"; };
+		10B329C5131D95F50014A77D /* wheel_snd_necklace_wrong.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = wheel_snd_necklace_wrong.m4a; sourceTree = "<group>"; };
+		10B329C6131D95F50014A77D /* wheel_snd_pants_wrong.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = wheel_snd_pants_wrong.m4a; sourceTree = "<group>"; };
+		10B329C7131D95F50014A77D /* wheel_snd_phone_wrong.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = wheel_snd_phone_wrong.m4a; sourceTree = "<group>"; };
+		10B329C8131D95F50014A77D /* wheel_snd_sunglasses_wrong.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = wheel_snd_sunglasses_wrong.m4a; sourceTree = "<group>"; };
 		10B569FC1306EB2B00AA7DCB /* MainMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainMenu.h; sourceTree = "<group>"; };
 		10B569FD1306EB2B00AA7DCB /* MainMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainMenu.m; sourceTree = "<group>"; };
 		10B569FE1306EB2B00AA7DCB /* MainMenu.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
@@ -1023,6 +1061,22 @@
 		10B32831131D5CAA0014A77D /* Sounds */ = {
 			isa = PBXGroup;
 			children = (
+				10B329C1131D95F50014A77D /* wheel_snd_backpack_wrong.m4a */,
+				10B329C2131D95F50014A77D /* wheel_snd_boots_wrong.m4a */,
+				10B329C3131D95F50014A77D /* wheel_snd_hat_wrong.m4a */,
+				10B329C4131D95F50014A77D /* wheel_snd_jacket_wrong.m4a */,
+				10B329C5131D95F50014A77D /* wheel_snd_necklace_wrong.m4a */,
+				10B329C6131D95F50014A77D /* wheel_snd_pants_wrong.m4a */,
+				10B329C7131D95F50014A77D /* wheel_snd_phone_wrong.m4a */,
+				10B329C8131D95F50014A77D /* wheel_snd_sunglasses_wrong.m4a */,
+				10B329A4131D90B50014A77D /* wheel_snd_backpack_where.m4a */,
+				10B329A5131D90B50014A77D /* wheel_snd_boots_where.m4a */,
+				10B329A6131D90B50014A77D /* wheel_snd_hat_where.m4a */,
+				10B329A7131D90B50014A77D /* wheel_snd_necklace_where.m4a */,
+				10B329A8131D90B50014A77D /* wheel_snd_pants_where.m4a */,
+				10B329A9131D90B50014A77D /* wheel_snd_phone_where.m4a */,
+				10B329AA131D90B50014A77D /* wheel_snd_sunglasses_where.m4a */,
+				10B329A2131D8F910014A77D /* wheel_snd_jacket_where.m4a */,
 				10B32854131D5EAB0014A77D /* wheel_snd_pants.m4a */,
 				10B32855131D5EAB0014A77D /* wheel_snd_necklace.m4a */,
 				10B32856131D5EAB0014A77D /* wheel_snd_jacket.m4a */,
@@ -1182,6 +1236,8 @@
 		28EEBF621118D79A00187D67 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				10B3297A131D87CB0014A77D /* GameManager.h */,
+				10B3297B131D87CB0014A77D /* GameManager.m */,
 				10B32831131D5CAA0014A77D /* Sounds */,
 				10AA0BD2130719D200D11E6B /* MainMenu */,
 				8D1107310486CEB800E47090 /* Basho-Info.plist */,
@@ -1281,6 +1337,10 @@
 				2860E32F111B888700E27156 /* MainWindow_iPad.xib in Resources */,
 				10B56A001306EB2B00AA7DCB /* MainMenu.xib in Resources */,
 				10B56A051306EB3F00AA7DCB /* MainMenu_iPad.xib in Resources */,
+				10B329E4131D97CD0014A77D /* wheel_background-hd.png in Resources */,
+				10B329E5131D97CD0014A77D /* wheel_background.png in Resources */,
+				10B329E6131D97CD0014A77D /* wheel_dino.png in Resources */,
+				102FDE3A131C893800CC0AEB /* wheel_dino-hd.png in Resources */,
 				10B56A461306EDAC00AA7DCB /* mm_background_iPad.png in Resources */,
 				10B56A471306EDAC00AA7DCB /* mm_background.png in Resources */,
 				10B56A481306EDAC00AA7DCB /* mm_background@2x.png in Resources */,
@@ -1377,7 +1437,6 @@
 				102FDE37131C893800CC0AEB /* wheel_btn_sunglasses-hd.png in Resources */,
 				102FDE38131C893800CC0AEB /* wheel_btn_sunglasses.png in Resources */,
 				102FDE39131C893800CC0AEB /* wheel_dino_iPad.png in Resources */,
-				102FDE3A131C893800CC0AEB /* wheel_dino-hd.png in Resources */,
 				102FDE3B131C893800CC0AEB /* wheel_home_iPad.png in Resources */,
 				102FDE3C131C893800CC0AEB /* wheel_home-hd.png in Resources */,
 				102FDE3D131C893800CC0AEB /* wheel_pointsField_iPad.png in Resources */,
@@ -1398,6 +1457,22 @@
 				10B3285F131D5EAB0014A77D /* wheel_snd_hat.m4a in Resources */,
 				10B32860131D5EAB0014A77D /* wheel_snd_boots.m4a in Resources */,
 				10B32861131D5EAB0014A77D /* wheel_snd_backpack.m4a in Resources */,
+				10B329A3131D8F910014A77D /* wheel_snd_jacket_where.m4a in Resources */,
+				10B329AB131D90B50014A77D /* wheel_snd_backpack_where.m4a in Resources */,
+				10B329AC131D90B50014A77D /* wheel_snd_boots_where.m4a in Resources */,
+				10B329AD131D90B50014A77D /* wheel_snd_hat_where.m4a in Resources */,
+				10B329AE131D90B50014A77D /* wheel_snd_necklace_where.m4a in Resources */,
+				10B329AF131D90B50014A77D /* wheel_snd_pants_where.m4a in Resources */,
+				10B329B0131D90B50014A77D /* wheel_snd_phone_where.m4a in Resources */,
+				10B329B1131D90B50014A77D /* wheel_snd_sunglasses_where.m4a in Resources */,
+				10B329C9131D95F50014A77D /* wheel_snd_backpack_wrong.m4a in Resources */,
+				10B329CA131D95F50014A77D /* wheel_snd_boots_wrong.m4a in Resources */,
+				10B329CB131D95F50014A77D /* wheel_snd_hat_wrong.m4a in Resources */,
+				10B329CC131D95F50014A77D /* wheel_snd_jacket_wrong.m4a in Resources */,
+				10B329CD131D95F50014A77D /* wheel_snd_necklace_wrong.m4a in Resources */,
+				10B329CE131D95F50014A77D /* wheel_snd_pants_wrong.m4a in Resources */,
+				10B329CF131D95F50014A77D /* wheel_snd_phone_wrong.m4a in Resources */,
+				10B329D0131D95F50014A77D /* wheel_snd_sunglasses_wrong.m4a in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1515,6 +1590,7 @@
 				10AA094513070E0400D11E6B /* CJSONSerializer.m in Sources */,
 				10AA095213070EEA00D11E6B /* GameWheelScene.m in Sources */,
 				10AA0B971307181700D11E6B /* GameWheelScene_iPad.m in Sources */,
+				10B3297C131D87CB0014A77D /* GameManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

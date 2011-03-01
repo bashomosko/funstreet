@@ -19,7 +19,10 @@
 	BOOL dinoSpinning;
 	BOOL playingSound;
 	int selectedSound;
+	int bashoSelectedSound;
 	CCMenu * tapButtons;
+	
+	BOOL bashoDirected;
 }
 
 // returns a Scene that contains the HelloWorld as the only child
