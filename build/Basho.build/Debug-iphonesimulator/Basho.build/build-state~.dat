@@ -1,1077 +1,0 @@
-TBasho
-v7
-r0
-t319225865.789328
-cCheck dependencies
-cProcessInfoPlistFile /Users/pabloruiz/Documents/Basho/build/Debug-iphonesimulator/Basho.app/Info.plist Basho-Info.plist
-cCompileXIB /Users/pabloruiz/Documents/Basho/iPhone/MainWindow_iPhone.xib
-cCompileXIB /Users/pabloruiz/Documents/Basho/iPad/MainWindow_iPad.xib
-cCompileXIB /Users/pabloruiz/Documents/Basho/iPhone/MainMenu.xib
-cCompileXIB /Users/pabloruiz/Documents/Basho/iPad/MainMenu_iPad.xib
-cCpResource build/Debug-iphonesimulator/Basho.app/mm_background_iPad.png iPad/mm_background_iPad.png
-cCpResource build/Debug-iphonesimulator/Basho.app/mm_background.png iPhone/../iPad/mm_background.png
-cCpResource build/Debug-iphonesimulator/Basho.app/mm_background@2x.png iPhone/../iPad/mm_background@2x.png
-cCpResource build/Debug-iphonesimulator/Basho.app/mm_dress_btn_dis.png iPhone/mm_dress_btn_dis.png
-cCpResource build/Debug-iphonesimulator/Basho.app/mm_dress_btn_dis@2x.png iPhone/mm_dress_btn_dis@2x.png
-cCpResource build/Debug-iphonesimulator/Basho.app/mm_dress_btn_dwn.png iPhone/mm_dress_btn_dwn.png
-cCpResource build/Debug-iphonesimulator/Basho.app/mm_dress_btn_dwn@2x.png iPhone/mm_dress_btn_dwn@2x.png
-cCpResource build/Debug-iphonesimulator/Basho.app/mm_dress_btn.png iPhone/mm_dress_btn.png
-cCpResource build/Debug-iphonesimulator/Basho.app/mm_dress_btn@2x.png iPhone/mm_dress_btn@2x.png
-cCpResource build/Debug-iphonesimulator/Basho.app/mm_song_btn_dwn.png iPhone/mm_song_btn_dwn.png
-cCpResource build/Debug-iphonesimulator/Basho.app/mm_song_btn_dwn@2x.png iPhone/mm_song_btn_dwn@2x.png
-cCpResource build/Debug-iphonesimulator/Basho.app/mm_song_btn.png iPhone/mm_song_btn.png
-cCpResource build/Debug-iphonesimulator/Basho.app/mm_song_btn@2x.png iPhone/mm_song_btn@2x.png
-cCpResource build/Debug-iphonesimulator/Basho.app/mm_video_btn_dis.png iPhone/mm_video_btn_dis.png
-cCpResource build/Debug-iphonesimulator/Basho.app/mm_video_btn_dis@2x.png iPhone/mm_video_btn_dis@2x.png
-cCpResource build/Debug-iphonesimulator/Basho.app/mm_video_btn_dwn.png iPhone/mm_video_btn_dwn.png
-cCpResource build/Debug-iphonesimulator/Basho.app/mm_video_btn_dwn@2x.png iPhone/mm_video_btn_dwn@2x.png
-cCpResource build/Debug-iphonesimulator/Basho.app/mm_video_btn.png iPhone/mm_video_btn.png
-cCpResource build/Debug-iphonesimulator/Basho.app/mm_video_btn@2x.png iPhone/mm_video_btn@2x.png
-cCpResource build/Debug-iphonesimulator/Basho.app/mm_wheel_btn_dis.png iPhone/mm_wheel_btn_dis.png
-cCpResource build/Debug-iphonesimulator/Basho.app/mm_wheel_btn_dis@2x.png iPhone/mm_wheel_btn_dis@2x.png
-cCpResource build/Debug-iphonesimulator/Basho.app/mm_wheel_btn_dwn.png iPhone/mm_wheel_btn_dwn.png
-cCpResource build/Debug-iphonesimulator/Basho.app/mm_wheel_btn_dwn@2x.png iPhone/mm_wheel_btn_dwn@2x.png
-cCpResource build/Debug-iphonesimulator/Basho.app/mm_wheel_btn.png iPhone/mm_wheel_btn.png
-cCpResource build/Debug-iphonesimulator/Basho.app/mm_wheel_btn@2x.png iPhone/mm_wheel_btn@2x.png
-cCpResource build/Debug-iphonesimulator/Basho.app/mm_logo.png iPhone/mm_logo.png
-cCpResource build/Debug-iphonesimulator/Basho.app/mm_logo@2x.png iPhone/mm_logo@2x.png
-cCompileXIB /Users/pabloruiz/Documents/Basho/iPhone/GameWheel.xib
-cProcessPCH /var/folders/+Z/+ZQfZ8XeFHWil6yyYOwgS++++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Basho_Prefix-cbhzukhuumdpkbfvxtigqijvozbd/Basho_Prefix.pch.gch Basho_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
-cProcessPCH /var/folders/+Z/+ZQfZ8XeFHWil6yyYOwgS++++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Basho_Prefix-asmvrfbdoyfuubdeyazhivwosgkb/Basho_Prefix.pch.pth Basho_Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.analyzer
-cCompileC build/Basho.build/Debug-iphonesimulator/Basho.build/Objects-normal/i386/main.o /Users/pabloruiz/Documents/Basho/Shared/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/Basho.build/Debug-iphonesimulator/Basho.build/Objects-normal/i386/AppDelegate_iPhone.o /Users/pabloruiz/Documents/Basho/iPhone/AppDelegate_iPhone.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/Basho.build/Debug-iphonesimulator/Basho.build/Objects-normal/i386/AppDelegate_iPad.o /Users/pabloruiz/Documents/Basho/iPad/AppDelegate_iPad.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/Basho.build/Debug-iphonesimulator/Basho.build/Objects-normal/i386/MainMenu.o /Users/pabloruiz/Documents/Basho/iPhone/MainMenu.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/Basho.build/Debug-iphonesimulator/Basho.build/Objects-normal/i386/MainMenu_iPad.o /Users/pabloruiz/Documents/Basho/iPad/MainMenu_iPad.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/Basho.build/Debug-iphonesimulator/Basho.build/Objects-normal/i386/MainMenu_both.o /Users/pabloruiz/Documents/Basho/MainMenu_both.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/Basho.build/Debug-iphonesimulator/Basho.build/Objects-normal/i386/GameWheel.o /Users/pabloruiz/Documents/Basho/iPhone/GameWheel.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cAnalyze /Users/pabloruiz/Documents/Basho/Shared/main.m
-cLd /Users/pabloruiz/Documents/Basho/build/Debug-iphonesimulator/Basho.app/Basho normal i386
-cAnalyze /Users/pabloruiz/Documents/Basho/iPhone/AppDelegate_iPhone.m
-cAnalyze /Users/pabloruiz/Documents/Basho/iPad/AppDelegate_iPad.m
-cAnalyze /Users/pabloruiz/Documents/Basho/iPhone/MainMenu.m
-cAnalyze /Users/pabloruiz/Documents/Basho/iPad/MainMenu_iPad.m
-cAnalyze /Users/pabloruiz/Documents/Basho/MainMenu_both.m
-cAnalyze /Users/pabloruiz/Documents/Basho/iPhone/GameWheel.m
-cGenerateDSYMFile /Users/pabloruiz/Documents/Basho/build/Debug-iphonesimulator/Basho.app.dSYM /Users/pabloruiz/Documents/Basho/build/Debug-iphonesimulator/Basho.app/Basho
-cTouch /Users/pabloruiz/Documents/Basho/build/Debug-iphonesimulator/Basho.app
-
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk
-c000000004CC128950000000000000110
-t1287727253
-s272
-
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
-c000000004CC12246000000000029B310
-t1287725638
-s2732816
-
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/Foundation.framework/Foundation
-c000000004CC1226D000000000029D5D0
-t1287725677
-s2741712
-
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
-c000000004CC1225F0000000000001466
-t1287725663
-s5222
-
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h
-c000000004CC1281F0000000000000AA1
-t1287727135
-s2721
-
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/UIKit.framework/UIKit
-c000000004CC12883000000000074D7B0
-t1287727235
-s7657392
-
-N/Users/pabloruiz/Documents/Basho/Basho_Prefix.pch
-c000000004D56B2F500000000000000B3
-t1297527541
-s179
-i<Foundation/Foundation.h>
-i<UIKit/UIKit.h>
-
-N/Users/pabloruiz/Documents/Basho/MainMenu_both.h
-c000000004D56C2CA00000000000002CB
-t1297531594
-s715
-i<UIKit/UIKit.h>
-
-N/Users/pabloruiz/Documents/Basho/MainMenu_both.m
-c000000004D56C6D100000000000007A3
-t1297532625
-s1955
-i"MainMenu_both.h"
-
-N/Users/pabloruiz/Documents/Basho/Shared/main.m
-c000000004D56B2F50000000000000166
-t1297527541
-s358
-i<UIKit/UIKit.h>
-
-N/Users/pabloruiz/Documents/Basho/build/Basho.build/Debug-iphonesimulator/Basho.build/Objects-normal/i386/AppDelegate_iPad.o
-t1297533065
-s49768
-
-N/Users/pabloruiz/Documents/Basho/build/Basho.build/Debug-iphonesimulator/Basho.build/Objects-normal/i386/AppDelegate_iPhone.o
-t1297533065
-s50812
-
-N/Users/pabloruiz/Documents/Basho/build/Basho.build/Debug-iphonesimulator/Basho.build/Objects-normal/i386/Basho.LinkFileList
-c000000004D56C8860000000000000345
-t1297533062
-s837
-
-N/Users/pabloruiz/Documents/Basho/build/Basho.build/Debug-iphonesimulator/Basho.build/Objects-normal/i386/GameWheel.o
-t1297533065
-s37956
-
-N/Users/pabloruiz/Documents/Basho/build/Basho.build/Debug-iphonesimulator/Basho.build/Objects-normal/i386/MainMenu.o
-t1297533065
-s46120
-
-N/Users/pabloruiz/Documents/Basho/build/Basho.build/Debug-iphonesimulator/Basho.build/Objects-normal/i386/MainMenu_both.o
-t1297533065
-s45280
-
-N/Users/pabloruiz/Documents/Basho/build/Basho.build/Debug-iphonesimulator/Basho.build/Objects-normal/i386/MainMenu_iPad.o
-t1297533065
-s38224
-
-N/Users/pabloruiz/Documents/Basho/build/Basho.build/Debug-iphonesimulator/Basho.build/Objects-normal/i386/main.o
-t1297533065
-s6304
-
-N/Users/pabloruiz/Documents/Basho/build/Basho.build/Debug-iphonesimulator/Basho.build/StaticAnalyzer/normal/i386/AppDelegate_iPad.plist
-t1297533065
-s5678
-
-N/Users/pabloruiz/Documents/Basho/build/Basho.build/Debug-iphonesimulator/Basho.build/StaticAnalyzer/normal/i386/AppDelegate_iPhone.plist
-t1297533065
-s276
-
-N/Users/pabloruiz/Documents/Basho/build/Basho.build/Debug-iphonesimulator/Basho.build/StaticAnalyzer/normal/i386/GameWheel.plist
-t1297533065
-s276
-
-N/Users/pabloruiz/Documents/Basho/build/Basho.build/Debug-iphonesimulator/Basho.build/StaticAnalyzer/normal/i386/MainMenu.plist
-t1297533065
-s276
-
-N/Users/pabloruiz/Documents/Basho/build/Basho.build/Debug-iphonesimulator/Basho.build/StaticAnalyzer/normal/i386/MainMenu_both.plist
-t1297533065
-s276
-
-N/Users/pabloruiz/Documents/Basho/build/Basho.build/Debug-iphonesimulator/Basho.build/StaticAnalyzer/normal/i386/MainMenu_iPad.plist
-t1297533065
-s276
-
-N/Users/pabloruiz/Documents/Basho/build/Basho.build/Debug-iphonesimulator/Basho.build/StaticAnalyzer/normal/i386/main.plist
-t1297533065
-s276
-
-N/Users/pabloruiz/Documents/Basho/build/Debug-iphonesimulator/Basho.app
-t1297533065
-s1258
-
-N/Users/pabloruiz/Documents/Basho/build/Debug-iphonesimulator/Basho.app.dSYM
-t1297533065
-s102
-
-N/Users/pabloruiz/Documents/Basho/build/Debug-iphonesimulator/Basho.app/Basho
-t1297533065
-s27368
-
-N/Users/pabloruiz/Documents/Basho/build/Debug-iphonesimulator/Basho.app/GameWheel.nib
-t1297533064
-s764
-
-N/Users/pabloruiz/Documents/Basho/build/Debug-iphonesimulator/Basho.app/Info.plist
-t1297533062
-s843
-
-N/Users/pabloruiz/Documents/Basho/build/Debug-iphonesimulator/Basho.app/MainMenu.nib
-t1297533063
-s3130
-
-N/Users/pabloruiz/Documents/Basho/build/Debug-iphonesimulator/Basho.app/MainMenu_iPad.nib
-t1297533063
-s1059
-
-N/Users/pabloruiz/Documents/Basho/build/Debug-iphonesimulator/Basho.app/MainWindow_iPad.nib
-t1297533062
-s982
-
-N/Users/pabloruiz/Documents/Basho/build/Debug-iphonesimulator/Basho.app/MainWindow_iPhone.nib
-t1297533063
-s984
-
-N/Users/pabloruiz/Documents/Basho/build/Debug-iphonesimulator/Basho.app/PkgInfo
-t1297533062
-s8
-
-N/Users/pabloruiz/Documents/Basho/build/Debug-iphonesimulator/Basho.app/mm_background.png
-t1297533063
-s88444
-
-N/Users/pabloruiz/Documents/Basho/build/Debug-iphonesimulator/Basho.app/mm_background@2x.png
-t1297533063
-s274629
-
-N/Users/pabloruiz/Documents/Basho/build/Debug-iphonesimulator/Basho.app/mm_background_iPad.png
-t1297533063
-s321531
-
-N/Users/pabloruiz/Documents/Basho/build/Debug-iphonesimulator/Basho.app/mm_dress_btn.png
-t1297533063
-s11596
-
-N/Users/pabloruiz/Documents/Basho/build/Debug-iphonesimulator/Basho.app/mm_dress_btn@2x.png
-t1297533063
-s27809
-
-N/Users/pabloruiz/Documents/Basho/build/Debug-iphonesimulator/Basho.app/mm_dress_btn_dis.png
-t1297533063
-s10694
-
-N/Users/pabloruiz/Documents/Basho/build/Debug-iphonesimulator/Basho.app/mm_dress_btn_dis@2x.png
-t1297533063
-s23050
-
-N/Users/pabloruiz/Documents/Basho/build/Debug-iphonesimulator/Basho.app/mm_dress_btn_dwn.png
-t1297533063
-s11843
-
-N/Users/pabloruiz/Documents/Basho/build/Debug-iphonesimulator/Basho.app/mm_dress_btn_dwn@2x.png
-t1297533063
-s28953
-
-N/Users/pabloruiz/Documents/Basho/build/Debug-iphonesimulator/Basho.app/mm_logo.png
-t1297533063
-s37794
-
-N/Users/pabloruiz/Documents/Basho/build/Debug-iphonesimulator/Basho.app/mm_logo@2x.png
-t1297533063
-s93173
-
-N/Users/pabloruiz/Documents/Basho/build/Debug-iphonesimulator/Basho.app/mm_song_btn.png
-t1297533063
-s11525
-
-N/Users/pabloruiz/Documents/Basho/build/Debug-iphonesimulator/Basho.app/mm_song_btn@2x.png
-t1297533063
-s25731
-
-N/Users/pabloruiz/Documents/Basho/build/Debug-iphonesimulator/Basho.app/mm_song_btn_dwn.png
-t1297533063
-s12210
-
-N/Users/pabloruiz/Documents/Basho/build/Debug-iphonesimulator/Basho.app/mm_song_btn_dwn@2x.png
-t1297533063
-s27521
-
-N/Users/pabloruiz/Documents/Basho/build/Debug-iphonesimulator/Basho.app/mm_video_btn.png
-t1297533063
-s16678
-
-N/Users/pabloruiz/Documents/Basho/build/Debug-iphonesimulator/Basho.app/mm_video_btn@2x.png
-t1297533063
-s45129
-
-N/Users/pabloruiz/Documents/Basho/build/Debug-iphonesimulator/Basho.app/mm_video_btn_dis.png
-t1297533063
-s14826
-
-N/Users/pabloruiz/Documents/Basho/build/Debug-iphonesimulator/Basho.app/mm_video_btn_dis@2x.png
-t1297533063
-s34135
-
-N/Users/pabloruiz/Documents/Basho/build/Debug-iphonesimulator/Basho.app/mm_video_btn_dwn.png
-t1297533063
-s16883
-
-N/Users/pabloruiz/Documents/Basho/build/Debug-iphonesimulator/Basho.app/mm_video_btn_dwn@2x.png
-t1297533063
-s45970
-
-N/Users/pabloruiz/Documents/Basho/build/Debug-iphonesimulator/Basho.app/mm_wheel_btn.png
-t1297533063
-s12505
-
-N/Users/pabloruiz/Documents/Basho/build/Debug-iphonesimulator/Basho.app/mm_wheel_btn@2x.png
-t1297533063
-s29762
-
-N/Users/pabloruiz/Documents/Basho/build/Debug-iphonesimulator/Basho.app/mm_wheel_btn_dis.png
-t1297533063
-s11489
-
-N/Users/pabloruiz/Documents/Basho/build/Debug-iphonesimulator/Basho.app/mm_wheel_btn_dis@2x.png
-t1297533063
-s24587
-
-N/Users/pabloruiz/Documents/Basho/build/Debug-iphonesimulator/Basho.app/mm_wheel_btn_dwn.png
-t1297533063
-s13037
-
-N/Users/pabloruiz/Documents/Basho/build/Debug-iphonesimulator/Basho.app/mm_wheel_btn_dwn@2x.png
-t1297533063
-s31674
-
-N/Users/pabloruiz/Documents/Basho/iPad/AppDelegate_iPad.h
-c000000004D56B2F50000000000000140
-t1297527541
-s320
-i<UIKit/UIKit.h>
-
-N/Users/pabloruiz/Documents/Basho/iPad/AppDelegate_iPad.m
-c000000004D56B7930000000000000744
-t1297528723
-s1860
-i"AppDelegate_iPad.h"
-i"MainMenu_iPad.h"
-
-N/Users/pabloruiz/Documents/Basho/iPad/MainMenu_iPad.h
-c000000004D56C1DB0000000000000108
-t1297531355
-s264
-i<UIKit/UIKit.h>
-i"MainMenu_both.h"
-
-N/Users/pabloruiz/Documents/Basho/iPad/MainMenu_iPad.m
-c000000004D56B98B00000000000005F8
-t1297529227
-s1528
-i"MainMenu_iPad.h"
-
-N/Users/pabloruiz/Documents/Basho/iPad/MainMenu_iPad.xib
-c000000004D56C0190000000000004220
-t1297530905
-s16928
-
-N/Users/pabloruiz/Documents/Basho/iPad/MainWindow_iPad.xib
-c000000004D56B2F500000000000036D9
-t1297527541
-s14041
-
-N/Users/pabloruiz/Documents/Basho/iPad/mm_background.png
-c000000004D56B56B000000000001597C
-t1297528171
-s88444
-
-N/Users/pabloruiz/Documents/Basho/iPad/mm_background@2x.png
-c000000004D56B4AE00000000000430C5
-t1297527982
-s274629
-
-N/Users/pabloruiz/Documents/Basho/iPad/mm_background_iPad.png
-c000000004D56B464000000000004E7FB
-t1297527908
-s321531
-
-N/Users/pabloruiz/Documents/Basho/iPhone/../iPad/mm_background.png
-c000000004D56B56B000000000001597C
-t1297528171
-s88444
-
-N/Users/pabloruiz/Documents/Basho/iPhone/../iPad/mm_background@2x.png
-c000000004D56B4AE00000000000430C5
-t1297527982
-s274629
-
-N/Users/pabloruiz/Documents/Basho/iPhone/AppDelegate_iPhone.h
-c000000004D56C78D0000000000000169
-t1297532813
-s361
-i<UIKit/UIKit.h>
-i"MainMenu.h"
-
-N/Users/pabloruiz/Documents/Basho/iPhone/AppDelegate_iPhone.m
-c000000004D56C87B0000000000000A3A
-t1297533051
-s2618
-i"AppDelegate_iPhone.h"
-
-N/Users/pabloruiz/Documents/Basho/iPhone/GameWheel.h
-c000000004D56C6F400000000000000D3
-t1297532660
-s211
-i<UIKit/UIKit.h>
-
-N/Users/pabloruiz/Documents/Basho/iPhone/GameWheel.m
-c000000004D56C72E00000000000005E4
-t1297532718
-s1508
-i"GameWheel.h"
-
-N/Users/pabloruiz/Documents/Basho/iPhone/GameWheel.xib
-c000000004D56C71D0000000000003AF8
-t1297532701
-s15096
-
-N/Users/pabloruiz/Documents/Basho/iPhone/MainMenu.h
-c000000004D56C1DB00000000000000FE
-t1297531355
-s254
-i<UIKit/UIKit.h>
-i"MainMenu_both.h"
-
-N/Users/pabloruiz/Documents/Basho/iPhone/MainMenu.m
-c000000004D56C75F00000000000007D3
-t1297532767
-s2003
-i"MainMenu.h"
-i"AppDelegate_iPhone.h"
-i"GameWheel.h"
-
-N/Users/pabloruiz/Documents/Basho/iPhone/MainMenu.xib
-c000000004D56C2E400000000000086C1
-t1297531620
-s34497
-
-N/Users/pabloruiz/Documents/Basho/iPhone/MainWindow_iPhone.xib
-c000000004D56B8B8000000000000451D
-t1297529016
-s17693
-
-N/Users/pabloruiz/Documents/Basho/iPhone/mm_dress_btn.png
-c000000004D56BE030000000000002D4C
-t1297530371
-s11596
-
-N/Users/pabloruiz/Documents/Basho/iPhone/mm_dress_btn@2x.png
-c000000004D56BDA50000000000006CA1
-t1297530277
-s27809
-
-N/Users/pabloruiz/Documents/Basho/iPhone/mm_dress_btn_dis.png
-c000000004D56BDEF00000000000029C6
-t1297530351
-s10694
-
-N/Users/pabloruiz/Documents/Basho/iPhone/mm_dress_btn_dis@2x.png
-c000000004D56BDD50000000000005A0A
-t1297530325
-s23050
-
-N/Users/pabloruiz/Documents/Basho/iPhone/mm_dress_btn_dwn.png
-c000000004D56BDF90000000000002E43
-t1297530361
-s11843
-
-N/Users/pabloruiz/Documents/Basho/iPhone/mm_dress_btn_dwn@2x.png
-c000000004D56BDC10000000000007119
-t1297530305
-s28953
-
-N/Users/pabloruiz/Documents/Basho/iPhone/mm_logo.png
-c000000004D56C10F00000000000093A2
-t1297531151
-s37794
-
-N/Users/pabloruiz/Documents/Basho/iPhone/mm_logo@2x.png
-c000000004D56C0F90000000000016BF5
-t1297531129
-s93173
-
-N/Users/pabloruiz/Documents/Basho/iPhone/mm_song_btn.png
-c000000004D56BBBC0000000000002D05
-t1297529788
-s11525
-
-N/Users/pabloruiz/Documents/Basho/iPhone/mm_song_btn@2x.png
-c000000004D56BB9B0000000000006483
-t1297529755
-s25731
-
-N/Users/pabloruiz/Documents/Basho/iPhone/mm_song_btn_dwn.png
-c000000004D56BBDF0000000000002FB2
-t1297529823
-s12210
-
-N/Users/pabloruiz/Documents/Basho/iPhone/mm_song_btn_dwn@2x.png
-c000000004D56BBD10000000000006B81
-t1297529809
-s27521
-
-N/Users/pabloruiz/Documents/Basho/iPhone/mm_video_btn.png
-c000000004D56BE930000000000004126
-t1297530515
-s16678
-
-N/Users/pabloruiz/Documents/Basho/iPhone/mm_video_btn@2x.png
-c000000004D56BE50000000000000B049
-t1297530448
-s45129
-
-N/Users/pabloruiz/Documents/Basho/iPhone/mm_video_btn_dis.png
-c000000004D56BE7C00000000000039EA
-t1297530492
-s14826
-
-N/Users/pabloruiz/Documents/Basho/iPhone/mm_video_btn_dis@2x.png
-c000000004D56BE640000000000008557
-t1297530468
-s34135
-
-N/Users/pabloruiz/Documents/Basho/iPhone/mm_video_btn_dwn.png
-c000000004D56BE8B00000000000041F3
-t1297530507
-s16883
-
-N/Users/pabloruiz/Documents/Basho/iPhone/mm_video_btn_dwn@2x.png
-c000000004D56BE5A000000000000B392
-t1297530458
-s45970
-
-N/Users/pabloruiz/Documents/Basho/iPhone/mm_wheel_btn.png
-c000000004D56BCDF00000000000030D9
-t1297530079
-s12505
-
-N/Users/pabloruiz/Documents/Basho/iPhone/mm_wheel_btn@2x.png
-c000000004D56BC8F0000000000007442
-t1297529999
-s29762
-
-N/Users/pabloruiz/Documents/Basho/iPhone/mm_wheel_btn_dis.png
-c000000004D56BCCD0000000000002CE1
-t1297530061
-s11489
-
-N/Users/pabloruiz/Documents/Basho/iPhone/mm_wheel_btn_dis@2x.png
-c000000004D56BCB4000000000000600B
-t1297530036
-s24587
-
-N/Users/pabloruiz/Documents/Basho/iPhone/mm_wheel_btn_dwn.png
-c000000004D56BCD700000000000032ED
-t1297530071
-s13037
-
-N/Users/pabloruiz/Documents/Basho/iPhone/mm_wheel_btn_dwn@2x.png
-c000000004D56BCA60000000000007BBA
-t1297530022
-s31674
-
-N/var/folders/+Z/+ZQfZ8XeFHWil6yyYOwgS++++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Basho_Prefix-asmvrfbdoyfuubdeyazhivwosgkb/Basho_Prefix.pch.pth
-t1297532539
-s2783980
-
-N/var/folders/+Z/+ZQfZ8XeFHWil6yyYOwgS++++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Basho_Prefix-cbhzukhuumdpkbfvxtigqijvozbd/Basho_Prefix.pch.gch
-t1297533064
-s15453392
-
-NBasho-Info.plist
-c000000004D56BA1C000000000000055F
-t1297529372
-s1375
-
-CAnalyze /Users/pabloruiz/Documents/Basho/MainMenu_both.m
-s319225865.661315
-e319225865.741820
-r1
-xAnalyze
-x/Users/pabloruiz/Documents/Basho/MainMenu_both.m
-lSLF07#2@56"Analyze /Users/pabloruiz/Documents/Basho/MainMenu_both.m319225865#319225865#0(0"0(0#0#48"/Users/pabloruiz/Documents/Basho/MainMenu_both.m8623762432#1835"    cd /Users/pabloruiz/Documents/Basho    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -fvisibility=hidden -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/pabloruiz/Documents/Basho/build/Basho.build/Debug-iphonesimulator/Basho.build/Basho-generated-files.hmap -I/Users/pabloruiz/Documents/Basho/build/Basho.build/Debug-iphonesimulator/Basho.build/Basho-own-target-headers.hmap -I/Users/pabloruiz/Documents/Basho/build/Basho.build/Debug-iphonesimulator/Basho.build/Basho-all-target-headers.hmap -iquote /Users/pabloruiz/Documents/Basho/build/Basho.build/Debug-iphonesimulator/Basho.build/Basho-project-headers.hmap -F/Users/pabloruiz/Documents/Basho/build/Debug-iphonesimulator -I/Users/pabloruiz/Documents/Basho/build/Debug-iphonesimulator/include -I/Users/pabloruiz/Documents/Basho/build/Basho.build/Debug-iphonesimulator/Basho.build/DerivedSources/i386 -I/Users/pabloruiz/Documents/Basho/build/Basho.build/Debug-iphonesimulator/Basho.build/DerivedSources -include /var/folders/+Z/+ZQfZ8XeFHWil6yyYOwgS++++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Basho_Prefix-asmvrfbdoyfuubdeyazhivwosgkb/Basho_Prefix.pch --analyze /Users/pabloruiz/Documents/Basho/MainMenu_both.m -o /Users/pabloruiz/Documents/Basho/build/Basho.build/Debug-iphonesimulator/Basho.build/StaticAnalyzer/normal/i386/MainMenu_both.plist0#
-
-CAnalyze /Users/pabloruiz/Documents/Basho/Shared/main.m
-s319225865.476647
-e319225865.543225
-r1
-xAnalyze
-x/Users/pabloruiz/Documents/Basho/Shared/main.m
-lSLF07#2@54"Analyze /Users/pabloruiz/Documents/Basho/Shared/main.m319225865#319225865#0(0"0(0#0#46"/Users/pabloruiz/Documents/Basho/Shared/main.m8625105792#1824"    cd /Users/pabloruiz/Documents/Basho    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -fvisibility=hidden -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/pabloruiz/Documents/Basho/build/Basho.build/Debug-iphonesimulator/Basho.build/Basho-generated-files.hmap -I/Users/pabloruiz/Documents/Basho/build/Basho.build/Debug-iphonesimulator/Basho.build/Basho-own-target-headers.hmap -I/Users/pabloruiz/Documents/Basho/build/Basho.build/Debug-iphonesimulator/Basho.build/Basho-all-target-headers.hmap -iquote /Users/pabloruiz/Documents/Basho/build/Basho.build/Debug-iphonesimulator/Basho.build/Basho-project-headers.hmap -F/Users/pabloruiz/Documents/Basho/build/Debug-iphonesimulator -I/Users/pabloruiz/Documents/Basho/build/Debug-iphonesimulator/include -I/Users/pabloruiz/Documents/Basho/build/Basho.build/Debug-iphonesimulator/Basho.build/DerivedSources/i386 -I/Users/pabloruiz/Documents/Basho/build/Basho.build/Debug-iphonesimulator/Basho.build/DerivedSources -include /var/folders/+Z/+ZQfZ8XeFHWil6yyYOwgS++++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Basho_Prefix-asmvrfbdoyfuubdeyazhivwosgkb/Basho_Prefix.pch --analyze /Users/pabloruiz/Documents/Basho/Shared/main.m -o /Users/pabloruiz/Documents/Basho/build/Basho.build/Debug-iphonesimulator/Basho.build/StaticAnalyzer/normal/i386/main.plist0#
-
-CAnalyze /Users/pabloruiz/Documents/Basho/iPad/AppDelegate_iPad.m
-s319225865.573112
-e319225865.631133
-r1
-xAnalyze
-x/Users/pabloruiz/Documents/Basho/iPad/AppDelegate_iPad.m
-o/Users/pabloruiz/Documents/Basho/iPad/AppDelegate_iPad.m:26:23: warning: Potential leak of an object allocated on line 26 and stored into 'mm'
-o         MainMenu_iPad * mm = [[MainMenu_iPad alloc] 
-o                              ^
-o1 warning generated.
-lSLF07#2@64"Analyze /Users/pabloruiz/Documents/Basho/iPad/AppDelegate_iPad.m319225865#319225865#0(250"/Users/pabloruiz/Documents/Basho/iPad/AppDelegate_iPad.m:26:23: warning: Potential leak of an object allocated on line 26 and stored into 'mm'         MainMenu_iPad * mm = [[MainMenu_iPad alloc]                               ^1 warning generated.1(0@69"Potential leak of an object allocated on line 26 and stored into 'mm'319225865#18446744073709551615#0#5(17@0"319225865#18446744073709551615#0#0(6@56"/Users/pabloruiz/Documents/Basho/iPad/AppDelegate_iPad.m319221523#0#0#0#0#0"0(6@56"/Users/pabloruiz/Documents/Basho/iPad/AppDelegate_iPad.m319221523#0#0#0#0#1(3@6@56"/Users/pabloruiz/Documents/Basho/iPad/AppDelegate_iPad.m319221523#24#5#24#5#6@56"/Users/pabloruiz/Documents/Basho/iPad/AppDelegate_iPad.m319221523#26#2#26#2#17@0"319225865#18446744073709551615#0#0(6@56"/Users/pabloruiz/Documents/Basho/iPad/AppDelegate_iPad.m319221523#0#0#0#0#0"0(6@56"/Users/pabloruiz/Documents/Basho/iPad/AppDelegate_iPad.m319221523#0#0#0#0#1(3@6@56"/Users/pabloruiz/Documents/Basho/iPad/AppDelegate_iPad.m319221523#26#2#26#2#6@56"/Users/pabloruiz/Documents/Basho/iPad/AppDelegate_iPad.m319221523#26#23#27#52#21@78"Method returns an Objective-C object with a +1 retain count (owning reference)319225865#18446744073709551615#0#0(6@56"/Users/pabloruiz/Documents/Basho/iPad/AppDelegate_iPad.m319221523#26#23#0#0#0"1(6@56"/Users/pabloruiz/Documents/Basho/iPad/AppDelegate_iPad.m319221523#26#23#27#52#78"Method returns an Objective-C object with a +1 retain count (owning reference)17@0"319225865#18446744073709551615#0#0(6@56"/Users/pabloruiz/Documents/Basho/iPad/AppDelegate_iPad.m319221523#0#0#0#0#0"0(6@56"/Users/pabloruiz/Documents/Basho/iPad/AppDelegate_iPad.m319221523#0#0#0#0#1(3@6@56"/Users/pabloruiz/Documents/Basho/iPad/AppDelegate_iPad.m319221523#26#23#27#52#6@56"/Users/pabloruiz/Documents/Basho/iPad/AppDelegate_iPad.m319221523#30#5#30#10#21@134"Object allocated on line 26 and stored into 'mm' is no longer referenced after this point and has a retain count of +1 (object leaked)319225865#18446744073709551615#0#0(6@56"/Users/pabloruiz/Documents/Basho/iPad/AppDelegate_iPad.m319221523#30#5#0#0#0"1(6@56"/Users/pabloruiz/Documents/Basho/iPad/AppDelegate_iPad.m319221523#30#5#30#10#134"Object allocated on line 26 and stored into 'mm' is no longer referenced after this point and has a retain count of +1 (object leaked)6@56"/Users/pabloruiz/Documents/Basho/iPad/AppDelegate_iPad.m319221523#30#5#0#0#36"Memory (Core Foundation/Objective-C)0(4"Leak0#0#56"/Users/pabloruiz/Documents/Basho/iPad/AppDelegate_iPad.m8623348256#1846"    cd /Users/pabloruiz/Documents/Basho    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -fvisibility=hidden -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/pabloruiz/Documents/Basho/build/Basho.build/Debug-iphonesimulator/Basho.build/Basho-generated-files.hmap -I/Users/pabloruiz/Documents/Basho/build/Basho.build/Debug-iphonesimulator/Basho.build/Basho-own-target-headers.hmap -I/Users/pabloruiz/Documents/Basho/build/Basho.build/Debug-iphonesimulator/Basho.build/Basho-all-target-headers.hmap -iquote /Users/pabloruiz/Documents/Basho/build/Basho.build/Debug-iphonesimulator/Basho.build/Basho-project-headers.hmap -F/Users/pabloruiz/Documents/Basho/build/Debug-iphonesimulator -I/Users/pabloruiz/Documents/Basho/build/Debug-iphonesimulator/include -I/Users/pabloruiz/Documents/Basho/build/Basho.build/Debug-iphonesimulator/Basho.build/DerivedSources/i386 -I/Users/pabloruiz/Documents/Basho/build/Basho.build/Debug-iphonesimulator/Basho.build/DerivedSources -include /var/folders/+Z/+ZQfZ8XeFHWil6yyYOwgS++++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Basho_Prefix-asmvrfbdoyfuubdeyazhivwosgkb/Basho_Prefix.pch --analyze /Users/pabloruiz/Documents/Basho/iPad/AppDelegate_iPad.m -o /Users/pabloruiz/Documents/Basho/build/Basho.build/Debug-iphonesimulator/Basho.build/StaticAnalyzer/normal/i386/AppDelegate_iPad.plist0#
-
-CAnalyze /Users/pabloruiz/Documents/Basho/iPad/MainMenu_iPad.m
-s319225865.631365
-e319225865.718397
-r1
-xAnalyze
-x/Users/pabloruiz/Documents/Basho/iPad/MainMenu_iPad.m
-lSLF07#2@61"Analyze /Users/pabloruiz/Documents/Basho/iPad/MainMenu_iPad.m319225865#319225865#0(0"0(0#0#53"/Users/pabloruiz/Documents/Basho/iPad/MainMenu_iPad.m8624136576#1840"    cd /Users/pabloruiz/Documents/Basho    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -fvisibility=hidden -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/pabloruiz/Documents/Basho/build/Basho.build/Debug-iphonesimulator/Basho.build/Basho-generated-files.hmap -I/Users/pabloruiz/Documents/Basho/build/Basho.build/Debug-iphonesimulator/Basho.build/Basho-own-target-headers.hmap -I/Users/pabloruiz/Documents/Basho/build/Basho.build/Debug-iphonesimulator/Basho.build/Basho-all-target-headers.hmap -iquote /Users/pabloruiz/Documents/Basho/build/Basho.build/Debug-iphonesimulator/Basho.build/Basho-project-headers.hmap -F/Users/pabloruiz/Documents/Basho/build/Debug-iphonesimulator -I/Users/pabloruiz/Documents/Basho/build/Debug-iphonesimulator/include -I/Users/pabloruiz/Documents/Basho/build/Basho.build/Debug-iphonesimulator/Basho.build/DerivedSources/i386 -I/Users/pabloruiz/Documents/Basho/build/Basho.build/Debug-iphonesimulator/Basho.build/DerivedSources -include /var/folders/+Z/+ZQfZ8XeFHWil6yyYOwgS++++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Basho_Prefix-asmvrfbdoyfuubdeyazhivwosgkb/Basho_Prefix.pch --analyze /Users/pabloruiz/Documents/Basho/iPad/MainMenu_iPad.m -o /Users/pabloruiz/Documents/Basho/build/Basho.build/Debug-iphonesimulator/Basho.build/StaticAnalyzer/normal/i386/MainMenu_iPad.plist0#
-
-CAnalyze /Users/pabloruiz/Documents/Basho/iPhone/AppDelegate_iPhone.m
-s319225865.543317
-e319225865.597132
-r1
-xAnalyze
-x/Users/pabloruiz/Documents/Basho/iPhone/AppDelegate_iPhone.m
-lSLF07#2@68"Analyze /Users/pabloruiz/Documents/Basho/iPhone/AppDelegate_iPhone.m319225865#319225865#0(0"0(0#0#60"/Users/pabloruiz/Documents/Basho/iPhone/AppDelegate_iPhone.m8624368512#1852"    cd /Users/pabloruiz/Documents/Basho    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -fvisibility=hidden -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/pabloruiz/Documents/Basho/build/Basho.build/Debug-iphonesimulator/Basho.build/Basho-generated-files.hmap -I/Users/pabloruiz/Documents/Basho/build/Basho.build/Debug-iphonesimulator/Basho.build/Basho-own-target-headers.hmap -I/Users/pabloruiz/Documents/Basho/build/Basho.build/Debug-iphonesimulator/Basho.build/Basho-all-target-headers.hmap -iquote /Users/pabloruiz/Documents/Basho/build/Basho.build/Debug-iphonesimulator/Basho.build/Basho-project-headers.hmap -F/Users/pabloruiz/Documents/Basho/build/Debug-iphonesimulator -I/Users/pabloruiz/Documents/Basho/build/Debug-iphonesimulator/include -I/Users/pabloruiz/Documents/Basho/build/Basho.build/Debug-iphonesimulator/Basho.build/DerivedSources/i386 -I/Users/pabloruiz/Documents/Basho/build/Basho.build/Debug-iphonesimulator/Basho.build/DerivedSources -include /var/folders/+Z/+ZQfZ8XeFHWil6yyYOwgS++++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Basho_Prefix-asmvrfbdoyfuubdeyazhivwosgkb/Basho_Prefix.pch --analyze /Users/pabloruiz/Documents/Basho/iPhone/AppDelegate_iPhone.m -o /Users/pabloruiz/Documents/Basho/build/Basho.build/Debug-iphonesimulator/Basho.build/StaticAnalyzer/normal/i386/AppDelegate_iPhone.plist0#
-
-CAnalyze /Users/pabloruiz/Documents/Basho/iPhone/GameWheel.m
-s319225865.718493
-e319225865.784636
-r1
-xAnalyze
-x/Users/pabloruiz/Documents/Basho/iPhone/GameWheel.m
-lSLF07#2@59"Analyze /Users/pabloruiz/Documents/Basho/iPhone/GameWheel.m319225865#319225865#0(0"0(0#0#51"/Users/pabloruiz/Documents/Basho/iPhone/GameWheel.m8624658752#1834"    cd /Users/pabloruiz/Documents/Basho    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -fvisibility=hidden -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/pabloruiz/Documents/Basho/build/Basho.build/Debug-iphonesimulator/Basho.build/Basho-generated-files.hmap -I/Users/pabloruiz/Documents/Basho/build/Basho.build/Debug-iphonesimulator/Basho.build/Basho-own-target-headers.hmap -I/Users/pabloruiz/Documents/Basho/build/Basho.build/Debug-iphonesimulator/Basho.build/Basho-all-target-headers.hmap -iquote /Users/pabloruiz/Documents/Basho/build/Basho.build/Debug-iphonesimulator/Basho.build/Basho-project-headers.hmap -F/Users/pabloruiz/Documents/Basho/build/Debug-iphonesimulator -I/Users/pabloruiz/Documents/Basho/build/Debug-iphonesimulator/include -I/Users/pabloruiz/Documents/Basho/build/Basho.build/Debug-iphonesimulator/Basho.build/DerivedSources/i386 -I/Users/pabloruiz/Documents/Basho/build/Basho.build/Debug-iphonesimulator/Basho.build/DerivedSources -include /var/folders/+Z/+ZQfZ8XeFHWil6yyYOwgS++++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Basho_Prefix-asmvrfbdoyfuubdeyazhivwosgkb/Basho_Prefix.pch --analyze /Users/pabloruiz/Documents/Basho/iPhone/GameWheel.m -o /Users/pabloruiz/Documents/Basho/build/Basho.build/Debug-iphonesimulator/Basho.build/StaticAnalyzer/normal/i386/GameWheel.plist0#
-
-CAnalyze /Users/pabloruiz/Documents/Basho/iPhone/MainMenu.m
-s319225865.597226
-e319225865.661217
-r1
-xAnalyze
-x/Users/pabloruiz/Documents/Basho/iPhone/MainMenu.m
-lSLF07#2@58"Analyze /Users/pabloruiz/Documents/Basho/iPhone/MainMenu.m319225865#319225865#0(0"0(0#0#50"/Users/pabloruiz/Documents/Basho/iPhone/MainMenu.m8621637664#1832"    cd /Users/pabloruiz/Documents/Basho    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -fvisibility=hidden -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/pabloruiz/Documents/Basho/build/Basho.build/Debug-iphonesimulator/Basho.build/Basho-generated-files.hmap -I/Users/pabloruiz/Documents/Basho/build/Basho.build/Debug-iphonesimulator/Basho.build/Basho-own-target-headers.hmap -I/Users/pabloruiz/Documents/Basho/build/Basho.build/Debug-iphonesimulator/Basho.build/Basho-all-target-headers.hmap -iquote /Users/pabloruiz/Documents/Basho/build/Basho.build/Debug-iphonesimulator/Basho.build/Basho-project-headers.hmap -F/Users/pabloruiz/Documents/Basho/build/Debug-iphonesimulator -I/Users/pabloruiz/Documents/Basho/build/Debug-iphonesimulator/include -I/Users/pabloruiz/Documents/Basho/build/Basho.build/Debug-iphonesimulator/Basho.build/DerivedSources/i386 -I/Users/pabloruiz/Documents/Basho/build/Basho.build/Debug-iphonesimulator/Basho.build/DerivedSources -include /var/folders/+Z/+ZQfZ8XeFHWil6yyYOwgS++++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Basho_Prefix-asmvrfbdoyfuubdeyazhivwosgkb/Basho_Prefix.pch --analyze /Users/pabloruiz/Documents/Basho/iPhone/MainMenu.m -o /Users/pabloruiz/Documents/Basho/build/Basho.build/Debug-iphonesimulator/Basho.build/StaticAnalyzer/normal/i386/MainMenu.plist0#
-
-CCheck dependencies
-r0
-lSLF07#2@18"Check dependencies319225862#319225862#0(0"0(0#1#0"8624841216#0"0#
-
-CCompileC build/Basho.build/Debug-iphonesimulator/Basho.build/Objects-normal/i386/AppDelegate_iPad.o /Users/pabloruiz/Documents/Basho/iPad/AppDelegate_iPad.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s319225865.179377
-e319225865.301954
-r1
-xCompileC
-xbuild/Basho.build/Debug-iphonesimulator/Basho.build/Objects-normal/i386/AppDelegate_iPad.o
-x/Users/pabloruiz/Documents/Basho/iPad/AppDelegate_iPad.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@64"Compile /Users/pabloruiz/Documents/Basho/iPad/AppDelegate_iPad.m319225865#319225865#0(0"0(0#0#56"/Users/pabloruiz/Documents/Basho/iPad/AppDelegate_iPad.m8619659616#1837"    cd /Users/pabloruiz/Documents/Basho    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/pabloruiz/Documents/Basho/build/Basho.build/Debug-iphonesimulator/Basho.build/Basho-generated-files.hmap -I/Users/pabloruiz/Documents/Basho/build/Basho.build/Debug-iphonesimulator/Basho.build/Basho-own-target-headers.hmap -I/Users/pabloruiz/Documents/Basho/build/Basho.build/Debug-iphonesimulator/Basho.build/Basho-all-target-headers.hmap -iquote /Users/pabloruiz/Documents/Basho/build/Basho.build/Debug-iphonesimulator/Basho.build/Basho-project-headers.hmap -F/Users/pabloruiz/Documents/Basho/build/Debug-iphonesimulator -I/Users/pabloruiz/Documents/Basho/build/Debug-iphonesimulator/include -I/Users/pabloruiz/Documents/Basho/build/Basho.build/Debug-iphonesimulator/Basho.build/DerivedSources/i386 -I/Users/pabloruiz/Documents/Basho/build/Basho.build/Debug-iphonesimulator/Basho.build/DerivedSources -include /var/folders/+Z/+ZQfZ8XeFHWil6yyYOwgS++++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Basho_Prefix-cbhzukhuumdpkbfvxtigqijvozbd/Basho_Prefix.pch -c /Users/pabloruiz/Documents/Basho/iPad/AppDelegate_iPad.m -o /Users/pabloruiz/Documents/Basho/build/Basho.build/Debug-iphonesimulator/Basho.build/Objects-normal/i386/AppDelegate_iPad.o0#
-
-CCompileC build/Basho.build/Debug-iphonesimulator/Basho.build/Objects-normal/i386/AppDelegate_iPhone.o /Users/pabloruiz/Documents/Basho/iPhone/AppDelegate_iPhone.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s319225865.102833
-e319225865.197438
-r1
-xCompileC
-xbuild/Basho.build/Debug-iphonesimulator/Basho.build/Objects-normal/i386/AppDelegate_iPhone.o
-x/Users/pabloruiz/Documents/Basho/iPhone/AppDelegate_iPhone.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@68"Compile /Users/pabloruiz/Documents/Basho/iPhone/AppDelegate_iPhone.m319225865#319225865#0(0"0(0#0#60"/Users/pabloruiz/Documents/Basho/iPhone/AppDelegate_iPhone.m8624432192#1843"    cd /Users/pabloruiz/Documents/Basho    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/pabloruiz/Documents/Basho/build/Basho.build/Debug-iphonesimulator/Basho.build/Basho-generated-files.hmap -I/Users/pabloruiz/Documents/Basho/build/Basho.build/Debug-iphonesimulator/Basho.build/Basho-own-target-headers.hmap -I/Users/pabloruiz/Documents/Basho/build/Basho.build/Debug-iphonesimulator/Basho.build/Basho-all-target-headers.hmap -iquote /Users/pabloruiz/Documents/Basho/build/Basho.build/Debug-iphonesimulator/Basho.build/Basho-project-headers.hmap -F/Users/pabloruiz/Documents/Basho/build/Debug-iphonesimulator -I/Users/pabloruiz/Documents/Basho/build/Debug-iphonesimulator/include -I/Users/pabloruiz/Documents/Basho/build/Basho.build/Debug-iphonesimulator/Basho.build/DerivedSources/i386 -I/Users/pabloruiz/Documents/Basho/build/Basho.build/Debug-iphonesimulator/Basho.build/DerivedSources -include /var/folders/+Z/+ZQfZ8XeFHWil6yyYOwgS++++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Basho_Prefix-cbhzukhuumdpkbfvxtigqijvozbd/Basho_Prefix.pch -c /Users/pabloruiz/Documents/Basho/iPhone/AppDelegate_iPhone.m -o /Users/pabloruiz/Documents/Basho/build/Basho.build/Debug-iphonesimulator/Basho.build/Objects-normal/i386/AppDelegate_iPhone.o0#
-
-CCompileC build/Basho.build/Debug-iphonesimulator/Basho.build/Objects-normal/i386/GameWheel.o /Users/pabloruiz/Documents/Basho/iPhone/GameWheel.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s319225865.436262
-e319225865.539691
-r1
-xCompileC
-xbuild/Basho.build/Debug-iphonesimulator/Basho.build/Objects-normal/i386/GameWheel.o
-x/Users/pabloruiz/Documents/Basho/iPhone/GameWheel.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@59"Compile /Users/pabloruiz/Documents/Basho/iPhone/GameWheel.m319225865#319225865#0(0"0(0#0#51"/Users/pabloruiz/Documents/Basho/iPhone/GameWheel.m8624001312#1825"    cd /Users/pabloruiz/Documents/Basho    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/pabloruiz/Documents/Basho/build/Basho.build/Debug-iphonesimulator/Basho.build/Basho-generated-files.hmap -I/Users/pabloruiz/Documents/Basho/build/Basho.build/Debug-iphonesimulator/Basho.build/Basho-own-target-headers.hmap -I/Users/pabloruiz/Documents/Basho/build/Basho.build/Debug-iphonesimulator/Basho.build/Basho-all-target-headers.hmap -iquote /Users/pabloruiz/Documents/Basho/build/Basho.build/Debug-iphonesimulator/Basho.build/Basho-project-headers.hmap -F/Users/pabloruiz/Documents/Basho/build/Debug-iphonesimulator -I/Users/pabloruiz/Documents/Basho/build/Debug-iphonesimulator/include -I/Users/pabloruiz/Documents/Basho/build/Basho.build/Debug-iphonesimulator/Basho.build/DerivedSources/i386 -I/Users/pabloruiz/Documents/Basho/build/Basho.build/Debug-iphonesimulator/Basho.build/DerivedSources -include /var/folders/+Z/+ZQfZ8XeFHWil6yyYOwgS++++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Basho_Prefix-cbhzukhuumdpkbfvxtigqijvozbd/Basho_Prefix.pch -c /Users/pabloruiz/Documents/Basho/iPhone/GameWheel.m -o /Users/pabloruiz/Documents/Basho/build/Basho.build/Debug-iphonesimulator/Basho.build/Objects-normal/i386/GameWheel.o0#
-
-CCompileC build/Basho.build/Debug-iphonesimulator/Basho.build/Objects-normal/i386/MainMenu.o /Users/pabloruiz/Documents/Basho/iPhone/MainMenu.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s319225865.197542
-e319225865.307527
-r1
-xCompileC
-xbuild/Basho.build/Debug-iphonesimulator/Basho.build/Objects-normal/i386/MainMenu.o
-x/Users/pabloruiz/Documents/Basho/iPhone/MainMenu.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@58"Compile /Users/pabloruiz/Documents/Basho/iPhone/MainMenu.m319225865#319225865#0(0"0(0#0#50"/Users/pabloruiz/Documents/Basho/iPhone/MainMenu.m8610697504#1823"    cd /Users/pabloruiz/Documents/Basho    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/pabloruiz/Documents/Basho/build/Basho.build/Debug-iphonesimulator/Basho.build/Basho-generated-files.hmap -I/Users/pabloruiz/Documents/Basho/build/Basho.build/Debug-iphonesimulator/Basho.build/Basho-own-target-headers.hmap -I/Users/pabloruiz/Documents/Basho/build/Basho.build/Debug-iphonesimulator/Basho.build/Basho-all-target-headers.hmap -iquote /Users/pabloruiz/Documents/Basho/build/Basho.build/Debug-iphonesimulator/Basho.build/Basho-project-headers.hmap -F/Users/pabloruiz/Documents/Basho/build/Debug-iphonesimulator -I/Users/pabloruiz/Documents/Basho/build/Debug-iphonesimulator/include -I/Users/pabloruiz/Documents/Basho/build/Basho.build/Debug-iphonesimulator/Basho.build/DerivedSources/i386 -I/Users/pabloruiz/Documents/Basho/build/Basho.build/Debug-iphonesimulator/Basho.build/DerivedSources -include /var/folders/+Z/+ZQfZ8XeFHWil6yyYOwgS++++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Basho_Prefix-cbhzukhuumdpkbfvxtigqijvozbd/Basho_Prefix.pch -c /Users/pabloruiz/Documents/Basho/iPhone/MainMenu.m -o /Users/pabloruiz/Documents/Basho/build/Basho.build/Debug-iphonesimulator/Basho.build/Objects-normal/i386/MainMenu.o0#
-
-CCompileC build/Basho.build/Debug-iphonesimulator/Basho.build/Objects-normal/i386/MainMenu_both.o /Users/pabloruiz/Documents/Basho/MainMenu_both.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s319225865.307989
-e319225865.476541
-r1
-xCompileC
-xbuild/Basho.build/Debug-iphonesimulator/Basho.build/Objects-normal/i386/MainMenu_both.o
-x/Users/pabloruiz/Documents/Basho/MainMenu_both.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@56"Compile /Users/pabloruiz/Documents/Basho/MainMenu_both.m319225865#319225865#0(0"0(0#0#48"/Users/pabloruiz/Documents/Basho/MainMenu_both.m8624456192#1826"    cd /Users/pabloruiz/Documents/Basho    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/pabloruiz/Documents/Basho/build/Basho.build/Debug-iphonesimulator/Basho.build/Basho-generated-files.hmap -I/Users/pabloruiz/Documents/Basho/build/Basho.build/Debug-iphonesimulator/Basho.build/Basho-own-target-headers.hmap -I/Users/pabloruiz/Documents/Basho/build/Basho.build/Debug-iphonesimulator/Basho.build/Basho-all-target-headers.hmap -iquote /Users/pabloruiz/Documents/Basho/build/Basho.build/Debug-iphonesimulator/Basho.build/Basho-project-headers.hmap -F/Users/pabloruiz/Documents/Basho/build/Debug-iphonesimulator -I/Users/pabloruiz/Documents/Basho/build/Debug-iphonesimulator/include -I/Users/pabloruiz/Documents/Basho/build/Basho.build/Debug-iphonesimulator/Basho.build/DerivedSources/i386 -I/Users/pabloruiz/Documents/Basho/build/Basho.build/Debug-iphonesimulator/Basho.build/DerivedSources -include /var/folders/+Z/+ZQfZ8XeFHWil6yyYOwgS++++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Basho_Prefix-cbhzukhuumdpkbfvxtigqijvozbd/Basho_Prefix.pch -c /Users/pabloruiz/Documents/Basho/MainMenu_both.m -o /Users/pabloruiz/Documents/Basho/build/Basho.build/Debug-iphonesimulator/Basho.build/Objects-normal/i386/MainMenu_both.o0#
-
-CCompileC build/Basho.build/Debug-iphonesimulator/Basho.build/Objects-normal/i386/MainMenu_iPad.o /Users/pabloruiz/Documents/Basho/iPad/MainMenu_iPad.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s319225865.302060
-e319225865.436159
-r1
-xCompileC
-xbuild/Basho.build/Debug-iphonesimulator/Basho.build/Objects-normal/i386/MainMenu_iPad.o
-x/Users/pabloruiz/Documents/Basho/iPad/MainMenu_iPad.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@61"Compile /Users/pabloruiz/Documents/Basho/iPad/MainMenu_iPad.m319225865#319225865#0(0"0(0#0#53"/Users/pabloruiz/Documents/Basho/iPad/MainMenu_iPad.m8624658464#1831"    cd /Users/pabloruiz/Documents/Basho    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/pabloruiz/Documents/Basho/build/Basho.build/Debug-iphonesimulator/Basho.build/Basho-generated-files.hmap -I/Users/pabloruiz/Documents/Basho/build/Basho.build/Debug-iphonesimulator/Basho.build/Basho-own-target-headers.hmap -I/Users/pabloruiz/Documents/Basho/build/Basho.build/Debug-iphonesimulator/Basho.build/Basho-all-target-headers.hmap -iquote /Users/pabloruiz/Documents/Basho/build/Basho.build/Debug-iphonesimulator/Basho.build/Basho-project-headers.hmap -F/Users/pabloruiz/Documents/Basho/build/Debug-iphonesimulator -I/Users/pabloruiz/Documents/Basho/build/Debug-iphonesimulator/include -I/Users/pabloruiz/Documents/Basho/build/Basho.build/Debug-iphonesimulator/Basho.build/DerivedSources/i386 -I/Users/pabloruiz/Documents/Basho/build/Basho.build/Debug-iphonesimulator/Basho.build/DerivedSources -include /var/folders/+Z/+ZQfZ8XeFHWil6yyYOwgS++++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Basho_Prefix-cbhzukhuumdpkbfvxtigqijvozbd/Basho_Prefix.pch -c /Users/pabloruiz/Documents/Basho/iPad/MainMenu_iPad.m -o /Users/pabloruiz/Documents/Basho/build/Basho.build/Debug-iphonesimulator/Basho.build/Objects-normal/i386/MainMenu_iPad.o0#
-
-CCompileC build/Basho.build/Debug-iphonesimulator/Basho.build/Objects-normal/i386/main.o /Users/pabloruiz/Documents/Basho/Shared/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s319225865.101627
-e319225865.179273
-r1
-xCompileC
-xbuild/Basho.build/Debug-iphonesimulator/Basho.build/Objects-normal/i386/main.o
-x/Users/pabloruiz/Documents/Basho/Shared/main.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@54"Compile /Users/pabloruiz/Documents/Basho/Shared/main.m319225865#319225865#0(0"0(0#0#46"/Users/pabloruiz/Documents/Basho/Shared/main.m8624963776#1815"    cd /Users/pabloruiz/Documents/Basho    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/pabloruiz/Documents/Basho/build/Basho.build/Debug-iphonesimulator/Basho.build/Basho-generated-files.hmap -I/Users/pabloruiz/Documents/Basho/build/Basho.build/Debug-iphonesimulator/Basho.build/Basho-own-target-headers.hmap -I/Users/pabloruiz/Documents/Basho/build/Basho.build/Debug-iphonesimulator/Basho.build/Basho-all-target-headers.hmap -iquote /Users/pabloruiz/Documents/Basho/build/Basho.build/Debug-iphonesimulator/Basho.build/Basho-project-headers.hmap -F/Users/pabloruiz/Documents/Basho/build/Debug-iphonesimulator -I/Users/pabloruiz/Documents/Basho/build/Debug-iphonesimulator/include -I/Users/pabloruiz/Documents/Basho/build/Basho.build/Debug-iphonesimulator/Basho.build/DerivedSources/i386 -I/Users/pabloruiz/Documents/Basho/build/Basho.build/Debug-iphonesimulator/Basho.build/DerivedSources -include /var/folders/+Z/+ZQfZ8XeFHWil6yyYOwgS++++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Basho_Prefix-cbhzukhuumdpkbfvxtigqijvozbd/Basho_Prefix.pch -c /Users/pabloruiz/Documents/Basho/Shared/main.m -o /Users/pabloruiz/Documents/Basho/build/Basho.build/Debug-iphonesimulator/Basho.build/Objects-normal/i386/main.o0#
-
-CCompileXIB /Users/pabloruiz/Documents/Basho/iPad/MainMenu_iPad.xib
-s319225863.107416
-e319225863.574439
-r1
-xCompileXIB
-x/Users/pabloruiz/Documents/Basho/iPad/MainMenu_iPad.xib
-lSLF07#2@33"CompileXIB iPad/MainMenu_iPad.xib319225863#319225863#0(0"0(0#0#55"/Users/pabloruiz/Documents/Basho/iPad/MainMenu_iPad.xib8623929504#561"    cd /Users/pabloruiz/Documents/Basho    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.2    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/pabloruiz/Documents/Basho/build/Debug-iphonesimulator/Basho.app/MainMenu_iPad.nib /Users/pabloruiz/Documents/Basho/iPad/MainMenu_iPad.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk0#
-
-CCompileXIB /Users/pabloruiz/Documents/Basho/iPad/MainWindow_iPad.xib
-s319225862.576442
-e319225862.990691
-r1
-xCompileXIB
-x/Users/pabloruiz/Documents/Basho/iPad/MainWindow_iPad.xib
-lSLF07#2@35"CompileXIB iPad/MainWindow_iPad.xib319225862#319225862#0(0"0(0#0#57"/Users/pabloruiz/Documents/Basho/iPad/MainWindow_iPad.xib8623548416#565"    cd /Users/pabloruiz/Documents/Basho    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.2    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/pabloruiz/Documents/Basho/build/Debug-iphonesimulator/Basho.app/MainWindow_iPad.nib /Users/pabloruiz/Documents/Basho/iPad/MainWindow_iPad.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk0#
-
-CCompileXIB /Users/pabloruiz/Documents/Basho/iPhone/GameWheel.xib
-s319225863.676210
-e319225864.066610
-r1
-xCompileXIB
-x/Users/pabloruiz/Documents/Basho/iPhone/GameWheel.xib
-lSLF07#2@31"CompileXIB iPhone/GameWheel.xib319225863#319225864#0(0"0(0#0#53"/Users/pabloruiz/Documents/Basho/iPhone/GameWheel.xib8617885440#555"    cd /Users/pabloruiz/Documents/Basho    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.2    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/pabloruiz/Documents/Basho/build/Debug-iphonesimulator/Basho.app/GameWheel.nib /Users/pabloruiz/Documents/Basho/iPhone/GameWheel.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk0#
-
-CCompileXIB /Users/pabloruiz/Documents/Basho/iPhone/MainMenu.xib
-s319225862.990800
-e319225863.625751
-r1
-xCompileXIB
-x/Users/pabloruiz/Documents/Basho/iPhone/MainMenu.xib
-lSLF07#2@30"CompileXIB iPhone/MainMenu.xib319225862#319225863#0(0"0(0#0#52"/Users/pabloruiz/Documents/Basho/iPhone/MainMenu.xib8624396224#553"    cd /Users/pabloruiz/Documents/Basho    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.2    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/pabloruiz/Documents/Basho/build/Debug-iphonesimulator/Basho.app/MainMenu.nib /Users/pabloruiz/Documents/Basho/iPhone/MainMenu.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk0#
-
-CCompileXIB /Users/pabloruiz/Documents/Basho/iPhone/MainWindow_iPhone.xib
-s319225862.575310
-e319225863.107322
-r1
-xCompileXIB
-x/Users/pabloruiz/Documents/Basho/iPhone/MainWindow_iPhone.xib
-lSLF07#2@39"CompileXIB iPhone/MainWindow_iPhone.xib319225862#319225863#0(0"0(0#0#61"/Users/pabloruiz/Documents/Basho/iPhone/MainWindow_iPhone.xib8623256192#571"    cd /Users/pabloruiz/Documents/Basho    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.2    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/pabloruiz/Documents/Basho/build/Debug-iphonesimulator/Basho.app/MainWindow_iPhone.nib /Users/pabloruiz/Documents/Basho/iPhone/MainWindow_iPhone.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk0#
-
-CCpResource build/Debug-iphonesimulator/Basho.app/mm_background.png iPad/mm_background.png
-r0
-
-CCpResource build/Debug-iphonesimulator/Basho.app/mm_background.png iPhone/../iPad/mm_background.png
-s319225863.575624
-e319225863.606600
-r1
-xCpResource
-xbuild/Debug-iphonesimulator/Basho.app/mm_background.png
-xiPhone/../iPad/mm_background.png
-lSLF07#2@37"Copy iPhone/../iPad/mm_background.png319225863#319225863#0(0"0(0#0#65"/Users/pabloruiz/Documents/Basho/iPhone/../iPad/mm_background.png8624447776#470"    cd /Users/pabloruiz/Documents/Basho    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/pabloruiz/Documents/Basho/iPhone/../iPad/mm_background.png /Users/pabloruiz/Documents/Basho/build/Debug-iphonesimulator/Basho.app0#
-
-CCpResource build/Debug-iphonesimulator/Basho.app/mm_background@2x.png iPad/mm_background@2x.png
-r0
-
-CCpResource build/Debug-iphonesimulator/Basho.app/mm_background@2x.png iPhone/../iPad/mm_background@2x.png
-s319225863.580746
-e319225863.652144
-r1
-xCpResource
-xbuild/Debug-iphonesimulator/Basho.app/mm_background@2x.png
-xiPhone/../iPad/mm_background@2x.png
-lSLF07#2@40"Copy iPhone/../iPad/mm_background@2x.png319225863#319225863#0(0"0(0#0#68"/Users/pabloruiz/Documents/Basho/iPhone/../iPad/mm_background@2x.png8623987968#473"    cd /Users/pabloruiz/Documents/Basho    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/pabloruiz/Documents/Basho/iPhone/../iPad/mm_background@2x.png /Users/pabloruiz/Documents/Basho/build/Debug-iphonesimulator/Basho.app0#
-
-CCpResource build/Debug-iphonesimulator/Basho.app/mm_background_iPad.png iPad/mm_background_iPad.png
-s319225863.574533
-e319225863.625625
-r1
-xCpResource
-xbuild/Debug-iphonesimulator/Basho.app/mm_background_iPad.png
-xiPad/mm_background_iPad.png
-lSLF07#2@32"Copy iPad/mm_background_iPad.png319225863#319225863#0(0"0(0#0#60"/Users/pabloruiz/Documents/Basho/iPad/mm_background_iPad.png8624889088#465"    cd /Users/pabloruiz/Documents/Basho    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/pabloruiz/Documents/Basho/iPad/mm_background_iPad.png /Users/pabloruiz/Documents/Basho/build/Debug-iphonesimulator/Basho.app0#
-
-CCpResource build/Debug-iphonesimulator/Basho.app/mm_dress_btn.png iPhone/mm_dress_btn.png
-s319225863.598342
-e319225863.626287
-r1
-xCpResource
-xbuild/Debug-iphonesimulator/Basho.app/mm_dress_btn.png
-xiPhone/mm_dress_btn.png
-lSLF07#2@28"Copy iPhone/mm_dress_btn.png319225863#319225863#0(0"0(0#0#56"/Users/pabloruiz/Documents/Basho/iPhone/mm_dress_btn.png8618509152#461"    cd /Users/pabloruiz/Documents/Basho    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/pabloruiz/Documents/Basho/iPhone/mm_dress_btn.png /Users/pabloruiz/Documents/Basho/build/Debug-iphonesimulator/Basho.app0#
-
-CCpResource build/Debug-iphonesimulator/Basho.app/mm_dress_btn@2x.png iPhone/mm_dress_btn@2x.png
-s319225863.603000
-e319225863.626394
-r1
-xCpResource
-xbuild/Debug-iphonesimulator/Basho.app/mm_dress_btn@2x.png
-xiPhone/mm_dress_btn@2x.png
-lSLF07#2@31"Copy iPhone/mm_dress_btn@2x.png319225863#319225863#0(0"0(0#0#59"/Users/pabloruiz/Documents/Basho/iPhone/mm_dress_btn@2x.png8618171264#464"    cd /Users/pabloruiz/Documents/Basho    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/pabloruiz/Documents/Basho/iPhone/mm_dress_btn@2x.png /Users/pabloruiz/Documents/Basho/build/Debug-iphonesimulator/Basho.app0#
-
-CCpResource build/Debug-iphonesimulator/Basho.app/mm_dress_btn_dis.png iPhone/mm_dress_btn_dis.png
-s319225863.586848
-e319225863.606726
-r1
-xCpResource
-xbuild/Debug-iphonesimulator/Basho.app/mm_dress_btn_dis.png
-xiPhone/mm_dress_btn_dis.png
-lSLF07#2@32"Copy iPhone/mm_dress_btn_dis.png319225863#319225863#0(0"0(0#0#60"/Users/pabloruiz/Documents/Basho/iPhone/mm_dress_btn_dis.png8623733024#465"    cd /Users/pabloruiz/Documents/Basho    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/pabloruiz/Documents/Basho/iPhone/mm_dress_btn_dis.png /Users/pabloruiz/Documents/Basho/build/Debug-iphonesimulator/Basho.app0#
-
-CCpResource build/Debug-iphonesimulator/Basho.app/mm_dress_btn_dis@2x.png iPhone/mm_dress_btn_dis@2x.png
-s319225863.588063
-e319225863.606834
-r1
-xCpResource
-xbuild/Debug-iphonesimulator/Basho.app/mm_dress_btn_dis@2x.png
-xiPhone/mm_dress_btn_dis@2x.png
-lSLF07#2@35"Copy iPhone/mm_dress_btn_dis@2x.png319225863#319225863#0(0"0(0#0#63"/Users/pabloruiz/Documents/Basho/iPhone/mm_dress_btn_dis@2x.png8623384608#468"    cd /Users/pabloruiz/Documents/Basho    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/pabloruiz/Documents/Basho/iPhone/mm_dress_btn_dis@2x.png /Users/pabloruiz/Documents/Basho/build/Debug-iphonesimulator/Basho.app0#
-
-CCpResource build/Debug-iphonesimulator/Basho.app/mm_dress_btn_dwn.png iPhone/mm_dress_btn_dwn.png
-s319225863.588821
-e319225863.606975
-r1
-xCpResource
-xbuild/Debug-iphonesimulator/Basho.app/mm_dress_btn_dwn.png
-xiPhone/mm_dress_btn_dwn.png
-lSLF07#2@32"Copy iPhone/mm_dress_btn_dwn.png319225863#319225863#0(0"0(0#0#60"/Users/pabloruiz/Documents/Basho/iPhone/mm_dress_btn_dwn.png8623026272#465"    cd /Users/pabloruiz/Documents/Basho    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/pabloruiz/Documents/Basho/iPhone/mm_dress_btn_dwn.png /Users/pabloruiz/Documents/Basho/build/Debug-iphonesimulator/Basho.app0#
-
-CCpResource build/Debug-iphonesimulator/Basho.app/mm_dress_btn_dwn@2x.png iPhone/mm_dress_btn_dwn@2x.png
-s319225863.595126
-e319225863.626178
-r1
-xCpResource
-xbuild/Debug-iphonesimulator/Basho.app/mm_dress_btn_dwn@2x.png
-xiPhone/mm_dress_btn_dwn@2x.png
-lSLF07#2@35"Copy iPhone/mm_dress_btn_dwn@2x.png319225863#319225863#0(0"0(0#0#63"/Users/pabloruiz/Documents/Basho/iPhone/mm_dress_btn_dwn@2x.png8622315104#468"    cd /Users/pabloruiz/Documents/Basho    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/pabloruiz/Documents/Basho/iPhone/mm_dress_btn_dwn@2x.png /Users/pabloruiz/Documents/Basho/build/Debug-iphonesimulator/Basho.app0#
-
-CCpResource build/Debug-iphonesimulator/Basho.app/mm_logo.png iPhone/mm_logo.png
-s319225863.666568
-e319225863.681966
-r1
-xCpResource
-xbuild/Debug-iphonesimulator/Basho.app/mm_logo.png
-xiPhone/mm_logo.png
-lSLF07#2@23"Copy iPhone/mm_logo.png319225863#319225863#0(0"0(0#0#51"/Users/pabloruiz/Documents/Basho/iPhone/mm_logo.png8604055232#456"    cd /Users/pabloruiz/Documents/Basho    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/pabloruiz/Documents/Basho/iPhone/mm_logo.png /Users/pabloruiz/Documents/Basho/build/Debug-iphonesimulator/Basho.app0#
-
-CCpResource build/Debug-iphonesimulator/Basho.app/mm_logo@2x.png iPhone/mm_logo@2x.png
-s319225863.671091
-e319225863.685370
-r1
-xCpResource
-xbuild/Debug-iphonesimulator/Basho.app/mm_logo@2x.png
-xiPhone/mm_logo@2x.png
-lSLF07#2@26"Copy iPhone/mm_logo@2x.png319225863#319225863#0(0"0(0#0#54"/Users/pabloruiz/Documents/Basho/iPhone/mm_logo@2x.png8601291520#459"    cd /Users/pabloruiz/Documents/Basho    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/pabloruiz/Documents/Basho/iPhone/mm_logo@2x.png /Users/pabloruiz/Documents/Basho/build/Debug-iphonesimulator/Basho.app0#
-
-CCpResource build/Debug-iphonesimulator/Basho.app/mm_song_btn.png iPhone/mm_song_btn.png
-s319225863.613592
-e319225863.626069
-r1
-xCpResource
-xbuild/Debug-iphonesimulator/Basho.app/mm_song_btn.png
-xiPhone/mm_song_btn.png
-lSLF07#2@27"Copy iPhone/mm_song_btn.png319225863#319225863#0(0"0(0#0#55"/Users/pabloruiz/Documents/Basho/iPhone/mm_song_btn.png8624646880#460"    cd /Users/pabloruiz/Documents/Basho    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/pabloruiz/Documents/Basho/iPhone/mm_song_btn.png /Users/pabloruiz/Documents/Basho/build/Debug-iphonesimulator/Basho.app0#
-
-CCpResource build/Debug-iphonesimulator/Basho.app/mm_song_btn@2x.png iPhone/mm_song_btn@2x.png
-s319225863.615281
-e319225863.652468
-r1
-xCpResource
-xbuild/Debug-iphonesimulator/Basho.app/mm_song_btn@2x.png
-xiPhone/mm_song_btn@2x.png
-lSLF07#2@30"Copy iPhone/mm_song_btn@2x.png319225863#319225863#0(0"0(0#0#58"/Users/pabloruiz/Documents/Basho/iPhone/mm_song_btn@2x.png8624788736#463"    cd /Users/pabloruiz/Documents/Basho    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/pabloruiz/Documents/Basho/iPhone/mm_song_btn@2x.png /Users/pabloruiz/Documents/Basho/build/Debug-iphonesimulator/Basho.app0#
-
-CCpResource build/Debug-iphonesimulator/Basho.app/mm_song_btn_dwn.png iPhone/mm_song_btn_dwn.png
-s319225863.607049
-e319225863.625949
-r1
-xCpResource
-xbuild/Debug-iphonesimulator/Basho.app/mm_song_btn_dwn.png
-xiPhone/mm_song_btn_dwn.png
-lSLF07#2@31"Copy iPhone/mm_song_btn_dwn.png319225863#319225863#0(0"0(0#0#59"/Users/pabloruiz/Documents/Basho/iPhone/mm_song_btn_dwn.png8607710176#464"    cd /Users/pabloruiz/Documents/Basho    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/pabloruiz/Documents/Basho/iPhone/mm_song_btn_dwn.png /Users/pabloruiz/Documents/Basho/build/Debug-iphonesimulator/Basho.app0#
-
-CCpResource build/Debug-iphonesimulator/Basho.app/mm_song_btn_dwn@2x.png iPhone/mm_song_btn_dwn@2x.png
-s319225863.610229
-e319225863.652252
-r1
-xCpResource
-xbuild/Debug-iphonesimulator/Basho.app/mm_song_btn_dwn@2x.png
-xiPhone/mm_song_btn_dwn@2x.png
-lSLF07#2@34"Copy iPhone/mm_song_btn_dwn@2x.png319225863#319225863#0(0"0(0#0#62"/Users/pabloruiz/Documents/Basho/iPhone/mm_song_btn_dwn@2x.png8623650432#467"    cd /Users/pabloruiz/Documents/Basho    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/pabloruiz/Documents/Basho/iPhone/mm_song_btn_dwn@2x.png /Users/pabloruiz/Documents/Basho/build/Debug-iphonesimulator/Basho.app0#
-
-CCpResource build/Debug-iphonesimulator/Basho.app/mm_video_btn.png iPhone/mm_video_btn.png
-s319225863.643208
-e319225863.652577
-r1
-xCpResource
-xbuild/Debug-iphonesimulator/Basho.app/mm_video_btn.png
-xiPhone/mm_video_btn.png
-lSLF07#2@28"Copy iPhone/mm_video_btn.png319225863#319225863#0(0"0(0#0#56"/Users/pabloruiz/Documents/Basho/iPhone/mm_video_btn.png8611278720#461"    cd /Users/pabloruiz/Documents/Basho    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/pabloruiz/Documents/Basho/iPhone/mm_video_btn.png /Users/pabloruiz/Documents/Basho/build/Debug-iphonesimulator/Basho.app0#
-
-CCpResource build/Debug-iphonesimulator/Basho.app/mm_video_btn@2x.png iPhone/mm_video_btn@2x.png
-s319225863.644368
-e319225863.682077
-r1
-xCpResource
-xbuild/Debug-iphonesimulator/Basho.app/mm_video_btn@2x.png
-xiPhone/mm_video_btn@2x.png
-lSLF07#2@31"Copy iPhone/mm_video_btn@2x.png319225863#319225863#0(0"0(0#0#59"/Users/pabloruiz/Documents/Basho/iPhone/mm_video_btn@2x.png8610800768#464"    cd /Users/pabloruiz/Documents/Basho    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/pabloruiz/Documents/Basho/iPhone/mm_video_btn@2x.png /Users/pabloruiz/Documents/Basho/build/Debug-iphonesimulator/Basho.app0#
-
-CCpResource build/Debug-iphonesimulator/Basho.app/mm_video_btn_dis.png iPhone/mm_video_btn_dis.png
-s319225863.626470
-e319225863.651788
-r1
-xCpResource
-xbuild/Debug-iphonesimulator/Basho.app/mm_video_btn_dis.png
-xiPhone/mm_video_btn_dis.png
-lSLF07#2@32"Copy iPhone/mm_video_btn_dis.png319225863#319225863#0(0"0(0#0#60"/Users/pabloruiz/Documents/Basho/iPhone/mm_video_btn_dis.png8615893216#465"    cd /Users/pabloruiz/Documents/Basho    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/pabloruiz/Documents/Basho/iPhone/mm_video_btn_dis.png /Users/pabloruiz/Documents/Basho/build/Debug-iphonesimulator/Basho.app0#
-
-CCpResource build/Debug-iphonesimulator/Basho.app/mm_video_btn_dis@2x.png iPhone/mm_video_btn_dis@2x.png
-s319225863.628092
-e319225863.651916
-r1
-xCpResource
-xbuild/Debug-iphonesimulator/Basho.app/mm_video_btn_dis@2x.png
-xiPhone/mm_video_btn_dis@2x.png
-lSLF07#2@35"Copy iPhone/mm_video_btn_dis@2x.png319225863#319225863#0(0"0(0#0#63"/Users/pabloruiz/Documents/Basho/iPhone/mm_video_btn_dis@2x.png8615823040#468"    cd /Users/pabloruiz/Documents/Basho    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/pabloruiz/Documents/Basho/iPhone/mm_video_btn_dis@2x.png /Users/pabloruiz/Documents/Basho/build/Debug-iphonesimulator/Basho.app0#
-
-CCpResource build/Debug-iphonesimulator/Basho.app/mm_video_btn_dwn.png iPhone/mm_video_btn_dwn.png
-s319225863.634527
-e319225863.652029
-r1
-xCpResource
-xbuild/Debug-iphonesimulator/Basho.app/mm_video_btn_dwn.png
-xiPhone/mm_video_btn_dwn.png
-lSLF07#2@32"Copy iPhone/mm_video_btn_dwn.png319225863#319225863#0(0"0(0#0#60"/Users/pabloruiz/Documents/Basho/iPhone/mm_video_btn_dwn.png8615663520#465"    cd /Users/pabloruiz/Documents/Basho    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/pabloruiz/Documents/Basho/iPhone/mm_video_btn_dwn.png /Users/pabloruiz/Documents/Basho/build/Debug-iphonesimulator/Basho.app0#
-
-CCpResource build/Debug-iphonesimulator/Basho.app/mm_video_btn_dwn@2x.png iPhone/mm_video_btn_dwn@2x.png
-s319225863.637919
-e319225863.652358
-r1
-xCpResource
-xbuild/Debug-iphonesimulator/Basho.app/mm_video_btn_dwn@2x.png
-xiPhone/mm_video_btn_dwn@2x.png
-lSLF07#2@35"Copy iPhone/mm_video_btn_dwn@2x.png319225863#319225863#0(0"0(0#0#63"/Users/pabloruiz/Documents/Basho/iPhone/mm_video_btn_dwn@2x.png8612208864#468"    cd /Users/pabloruiz/Documents/Basho    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/pabloruiz/Documents/Basho/iPhone/mm_video_btn_dwn@2x.png /Users/pabloruiz/Documents/Basho/build/Debug-iphonesimulator/Basho.app0#
-
-CCpResource build/Debug-iphonesimulator/Basho.app/mm_wheel_btn.png iPhone/mm_wheel_btn.png
-s319225863.660847
-e319225863.681735
-r1
-xCpResource
-xbuild/Debug-iphonesimulator/Basho.app/mm_wheel_btn.png
-xiPhone/mm_wheel_btn.png
-lSLF07#2@28"Copy iPhone/mm_wheel_btn.png319225863#319225863#0(0"0(0#0#56"/Users/pabloruiz/Documents/Basho/iPhone/mm_wheel_btn.png8607411648#461"    cd /Users/pabloruiz/Documents/Basho    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/pabloruiz/Documents/Basho/iPhone/mm_wheel_btn.png /Users/pabloruiz/Documents/Basho/build/Debug-iphonesimulator/Basho.app0#
-
-CCpResource build/Debug-iphonesimulator/Basho.app/mm_wheel_btn@2x.png iPhone/mm_wheel_btn@2x.png
-s319225863.664212
-e319225863.681849
-r1
-xCpResource
-xbuild/Debug-iphonesimulator/Basho.app/mm_wheel_btn@2x.png
-xiPhone/mm_wheel_btn@2x.png
-lSLF07#2@31"Copy iPhone/mm_wheel_btn@2x.png319225863#319225863#0(0"0(0#0#59"/Users/pabloruiz/Documents/Basho/iPhone/mm_wheel_btn@2x.png8606835648#464"    cd /Users/pabloruiz/Documents/Basho    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/pabloruiz/Documents/Basho/iPhone/mm_wheel_btn@2x.png /Users/pabloruiz/Documents/Basho/build/Debug-iphonesimulator/Basho.app0#
-
-CCpResource build/Debug-iphonesimulator/Basho.app/mm_wheel_btn_dis.png iPhone/mm_wheel_btn_dis.png
-s319225863.650185
-e319225863.682191
-r1
-xCpResource
-xbuild/Debug-iphonesimulator/Basho.app/mm_wheel_btn_dis.png
-xiPhone/mm_wheel_btn_dis.png
-lSLF07#2@32"Copy iPhone/mm_wheel_btn_dis.png319225863#319225863#0(0"0(0#0#60"/Users/pabloruiz/Documents/Basho/iPhone/mm_wheel_btn_dis.png8610322336#465"    cd /Users/pabloruiz/Documents/Basho    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/pabloruiz/Documents/Basho/iPhone/mm_wheel_btn_dis.png /Users/pabloruiz/Documents/Basho/build/Debug-iphonesimulator/Basho.app0#
-
-CCpResource build/Debug-iphonesimulator/Basho.app/mm_wheel_btn_dis@2x.png iPhone/mm_wheel_btn_dis@2x.png
-s319225863.652746
-e319225863.681377
-r1
-xCpResource
-xbuild/Debug-iphonesimulator/Basho.app/mm_wheel_btn_dis@2x.png
-xiPhone/mm_wheel_btn_dis@2x.png
-lSLF07#2@35"Copy iPhone/mm_wheel_btn_dis@2x.png319225863#319225863#0(0"0(0#0#63"/Users/pabloruiz/Documents/Basho/iPhone/mm_wheel_btn_dis@2x.png8609654944#468"    cd /Users/pabloruiz/Documents/Basho    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/pabloruiz/Documents/Basho/iPhone/mm_wheel_btn_dis@2x.png /Users/pabloruiz/Documents/Basho/build/Debug-iphonesimulator/Basho.app0#
-
-CCpResource build/Debug-iphonesimulator/Basho.app/mm_wheel_btn_dwn.png iPhone/mm_wheel_btn_dwn.png
-s319225863.653842
-e319225863.681512
-r1
-xCpResource
-xbuild/Debug-iphonesimulator/Basho.app/mm_wheel_btn_dwn.png
-xiPhone/mm_wheel_btn_dwn.png
-lSLF07#2@32"Copy iPhone/mm_wheel_btn_dwn.png319225863#319225863#0(0"0(0#0#60"/Users/pabloruiz/Documents/Basho/iPhone/mm_wheel_btn_dwn.png8609202400#465"    cd /Users/pabloruiz/Documents/Basho    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/pabloruiz/Documents/Basho/iPhone/mm_wheel_btn_dwn.png /Users/pabloruiz/Documents/Basho/build/Debug-iphonesimulator/Basho.app0#
-
-CCpResource build/Debug-iphonesimulator/Basho.app/mm_wheel_btn_dwn@2x.png iPhone/mm_wheel_btn_dwn@2x.png
-s319225863.655836
-e319225863.681624
-r1
-xCpResource
-xbuild/Debug-iphonesimulator/Basho.app/mm_wheel_btn_dwn@2x.png
-xiPhone/mm_wheel_btn_dwn@2x.png
-lSLF07#2@35"Copy iPhone/mm_wheel_btn_dwn@2x.png319225863#319225863#0(0"0(0#0#63"/Users/pabloruiz/Documents/Basho/iPhone/mm_wheel_btn_dwn@2x.png8608978112#468"    cd /Users/pabloruiz/Documents/Basho    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/pabloruiz/Documents/Basho/iPhone/mm_wheel_btn_dwn@2x.png /Users/pabloruiz/Documents/Basho/build/Debug-iphonesimulator/Basho.app0#
-
-CGenerateDSYMFile /Users/pabloruiz/Documents/Basho/build/Debug-iphonesimulator/Basho.app.dSYM /Users/pabloruiz/Documents/Basho/build/Debug-iphonesimulator/Basho.app/Basho
-s319225865.741917
-e319225865.774673
-r1
-xGenerateDSYMFile
-x/Users/pabloruiz/Documents/Basho/build/Debug-iphonesimulator/Basho.app.dSYM
-x/Users/pabloruiz/Documents/Basho/build/Debug-iphonesimulator/Basho.app/Basho
-lSLF07#2@103"GenerateDSYMFile build/Debug-iphonesimulator/Basho.app.dSYM build/Debug-iphonesimulator/Basho.app/Basho319225865#319225865#0(0"0(0#0#76"/Users/pabloruiz/Documents/Basho/build/Debug-iphonesimulator/Basho.app/Basho8624148480#359"    cd /Users/pabloruiz/Documents/Basho    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil /Users/pabloruiz/Documents/Basho/build/Debug-iphonesimulator/Basho.app/Basho -o /Users/pabloruiz/Documents/Basho/build/Debug-iphonesimulator/Basho.app.dSYM0#
-
-CLd /Users/pabloruiz/Documents/Basho/build/Debug-iphonesimulator/Basho.app/Basho normal i386
-s319225865.539786
-e319225865.572930
-r1
-xLd
-x/Users/pabloruiz/Documents/Basho/build/Debug-iphonesimulator/Basho.app/Basho
-xnormal
-xi386
-lSLF07#2@81"Link /Users/pabloruiz/Documents/Basho/build/Debug-iphonesimulator/Basho.app/Basho319225865#319225865#0(0"0(0#0#0"8624474816#860"    cd /Users/pabloruiz/Documents/Basho    setenv MACOSX_DEPLOYMENT_TARGET 10.6    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -arch i386 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -L/Users/pabloruiz/Documents/Basho/build/Debug-iphonesimulator -F/Users/pabloruiz/Documents/Basho/build/Debug-iphonesimulator -filelist /Users/pabloruiz/Documents/Basho/build/Basho.build/Debug-iphonesimulator/Basho.build/Objects-normal/i386/Basho.LinkFileList -mmacosx-version-min=10.6 -Xlinker -objc_abi_version -Xlinker 2 -framework Foundation -framework UIKit -framework CoreGraphics -o /Users/pabloruiz/Documents/Basho/build/Debug-iphonesimulator/Basho.app/Basho0#
-
-CProcessInfoPlistFile /Users/pabloruiz/Documents/Basho/build/Debug-iphonesimulator/Basho.app/Info.plist Basho-Info.plist
-s319225862.552583
-e319225862.575214
-r1
-xProcessInfoPlistFile
-x/Users/pabloruiz/Documents/Basho/build/Debug-iphonesimulator/Basho.app/Info.plist
-xBasho-Info.plist
-lSLF07#2@24"Process Basho-Info.plist319225862#319225862#0(0"0(0#0#49"/Users/pabloruiz/Documents/Basho/Basho-Info.plist8620307744#455"    cd /Users/pabloruiz/Documents/Basho    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility Basho-Info.plist -genpkginfo /Users/pabloruiz/Documents/Basho/build/Debug-iphonesimulator/Basho.app/PkgInfo -expandbuildsettings -format binary -platform iphonesimulator -o /Users/pabloruiz/Documents/Basho/build/Debug-iphonesimulator/Basho.app/Info.plist0#
-
-CProcessPCH /var/folders/+Z/+ZQfZ8XeFHWil6yyYOwgS++++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Basho_Prefix-asmvrfbdoyfuubdeyazhivwosgkb/Basho_Prefix.pch.pth Basho_Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.analyzer
-s319225338.090367
-e319225339.348039
-r1
-xProcessPCH
-x/var/folders/+Z/+ZQfZ8XeFHWil6yyYOwgS++++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Basho_Prefix-asmvrfbdoyfuubdeyazhivwosgkb/Basho_Prefix.pch.pth
-xBasho_Prefix.pch
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.analyzer
-lSLF07#2@27"Precompile Basho_Prefix.pch319225338#319225339#0(0"0(0#0#49"/Users/pabloruiz/Documents/Basho/Basho_Prefix.pch8623794368#1699"    cd /Users/pabloruiz/Documents/Basho    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/clang -x objective-c-header -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -fvisibility=hidden -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/pabloruiz/Documents/Basho/build/Basho.build/Debug-iphonesimulator/Basho.build/Basho-generated-files.hmap -I/Users/pabloruiz/Documents/Basho/build/Basho.build/Debug-iphonesimulator/Basho.build/Basho-own-target-headers.hmap -I/Users/pabloruiz/Documents/Basho/build/Basho.build/Debug-iphonesimulator/Basho.build/Basho-all-target-headers.hmap -iquote /Users/pabloruiz/Documents/Basho/build/Basho.build/Debug-iphonesimulator/Basho.build/Basho-project-headers.hmap -F/Users/pabloruiz/Documents/Basho/build/Debug-iphonesimulator -I/Users/pabloruiz/Documents/Basho/build/Debug-iphonesimulator/include -I/Users/pabloruiz/Documents/Basho/build/Basho.build/Debug-iphonesimulator/Basho.build/DerivedSources/i386 -I/Users/pabloruiz/Documents/Basho/build/Basho.build/Debug-iphonesimulator/Basho.build/DerivedSources -c /Users/pabloruiz/Documents/Basho/Basho_Prefix.pch -o /var/folders/+Z/+ZQfZ8XeFHWil6yyYOwgS++++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Basho_Prefix-asmvrfbdoyfuubdeyazhivwosgkb/Basho_Prefix.pch.pth0#
-
-CProcessPCH /var/folders/+Z/+ZQfZ8XeFHWil6yyYOwgS++++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Basho_Prefix-cbhzukhuumdpkbfvxtigqijvozbd/Basho_Prefix.pch.gch Basho_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
-s319225864.067842
-e319225865.101514
-r1
-xProcessPCH
-x/var/folders/+Z/+ZQfZ8XeFHWil6yyYOwgS++++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Basho_Prefix-cbhzukhuumdpkbfvxtigqijvozbd/Basho_Prefix.pch.gch
-xBasho_Prefix.pch
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@27"Precompile Basho_Prefix.pch319225864#319225865#0(0"0(0#0#49"/Users/pabloruiz/Documents/Basho/Basho_Prefix.pch8624955776#1708"    cd /Users/pabloruiz/Documents/Basho    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/pabloruiz/Documents/Basho/build/Basho.build/Debug-iphonesimulator/Basho.build/Basho-generated-files.hmap -I/Users/pabloruiz/Documents/Basho/build/Basho.build/Debug-iphonesimulator/Basho.build/Basho-own-target-headers.hmap -I/Users/pabloruiz/Documents/Basho/build/Basho.build/Debug-iphonesimulator/Basho.build/Basho-all-target-headers.hmap -iquote /Users/pabloruiz/Documents/Basho/build/Basho.build/Debug-iphonesimulator/Basho.build/Basho-project-headers.hmap -F/Users/pabloruiz/Documents/Basho/build/Debug-iphonesimulator -I/Users/pabloruiz/Documents/Basho/build/Debug-iphonesimulator/include -I/Users/pabloruiz/Documents/Basho/build/Basho.build/Debug-iphonesimulator/Basho.build/DerivedSources/i386 -I/Users/pabloruiz/Documents/Basho/build/Basho.build/Debug-iphonesimulator/Basho.build/DerivedSources -c /Users/pabloruiz/Documents/Basho/Basho_Prefix.pch -o /var/folders/+Z/+ZQfZ8XeFHWil6yyYOwgS++++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Basho_Prefix-cbhzukhuumdpkbfvxtigqijvozbd/Basho_Prefix.pch.gch0#
-
-CTouch /Users/pabloruiz/Documents/Basho/build/Debug-iphonesimulator/Basho.app
-s319225865.784722
-e319225865.789281
-r1
-xTouch
-x/Users/pabloruiz/Documents/Basho/build/Debug-iphonesimulator/Basho.app
-lSLF07#2@76"Touch /Users/pabloruiz/Documents/Basho/build/Debug-iphonesimulator/Basho.app319225865#319225865#0(0"0(0#0#0"8622517856#264"    cd /Users/pabloruiz/Documents/Basho    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Users/pabloruiz/Documents/Basho/build/Debug-iphonesimulator/Basho.app0#
-

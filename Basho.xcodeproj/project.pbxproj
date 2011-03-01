@@ -191,6 +191,15 @@
 		10AA0B8A1307167900D11E6B /* mm_wheel_btn_dwn_iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 10AA0B7E1307167900D11E6B /* mm_wheel_btn_dwn_iPad.png */; };
 		10AA0B8B1307167900D11E6B /* mm_wheel_btn_iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 10AA0B7F1307167900D11E6B /* mm_wheel_btn_iPad.png */; };
 		10AA0B971307181700D11E6B /* GameWheelScene_iPad.m in Sources */ = {isa = PBXBuildFile; fileRef = 10AA0B961307181700D11E6B /* GameWheelScene_iPad.m */; };
+		10B32807131D584D0014A77D /* wheel_home.png in Resources */ = {isa = PBXBuildFile; fileRef = 10B32806131D584D0014A77D /* wheel_home.png */; };
+		10B32834131D5CD10014A77D /* wheel_snd_sunglasses.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 10B32833131D5CD10014A77D /* wheel_snd_sunglasses.m4a */; };
+		10B3285B131D5EAB0014A77D /* wheel_snd_pants.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 10B32854131D5EAB0014A77D /* wheel_snd_pants.m4a */; };
+		10B3285C131D5EAB0014A77D /* wheel_snd_necklace.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 10B32855131D5EAB0014A77D /* wheel_snd_necklace.m4a */; };
+		10B3285D131D5EAB0014A77D /* wheel_snd_jacket.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 10B32856131D5EAB0014A77D /* wheel_snd_jacket.m4a */; };
+		10B3285E131D5EAB0014A77D /* wheel_snd_phone.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 10B32857131D5EAB0014A77D /* wheel_snd_phone.m4a */; };
+		10B3285F131D5EAB0014A77D /* wheel_snd_hat.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 10B32858131D5EAB0014A77D /* wheel_snd_hat.m4a */; };
+		10B32860131D5EAB0014A77D /* wheel_snd_boots.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 10B32859131D5EAB0014A77D /* wheel_snd_boots.m4a */; };
+		10B32861131D5EAB0014A77D /* wheel_snd_backpack.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 10B3285A131D5EAB0014A77D /* wheel_snd_backpack.m4a */; };
 		10B569FF1306EB2B00AA7DCB /* MainMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 10B569FD1306EB2B00AA7DCB /* MainMenu.m */; };
 		10B56A001306EB2B00AA7DCB /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10B569FE1306EB2B00AA7DCB /* MainMenu.xib */; };
 		10B56A041306EB3F00AA7DCB /* MainMenu_iPad.m in Sources */ = {isa = PBXBuildFile; fileRef = 10B56A021306EB3F00AA7DCB /* MainMenu_iPad.m */; };
@@ -227,10 +236,6 @@
 		10B56B391306FE7400AA7DCB /* GameWheel.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10B56B371306FE7400AA7DCB /* GameWheel.xib */; };
 		10B56BA5130701A100AA7DCB /* GameWheel_iPad.m in Sources */ = {isa = PBXBuildFile; fileRef = 10B56BA3130701A100AA7DCB /* GameWheel_iPad.m */; };
 		10B56BA6130701A100AA7DCB /* GameWheel_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10B56BA4130701A100AA7DCB /* GameWheel_iPad.xib */; };
-		10E025011311557300549533 /* wheel_background-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 10E025001311557300549533 /* wheel_background-hd.png */; };
-		10E0250A1311562A00549533 /* wheel_background.png in Resources */ = {isa = PBXBuildFile; fileRef = 10E025091311562A00549533 /* wheel_background.png */; };
-		10E0250E131156B800549533 /* wheel_home.png in Resources */ = {isa = PBXBuildFile; fileRef = 10E0250D131156B800549533 /* wheel_home.png */; };
-		10E025181311573B00549533 /* wheel_dino.png in Resources */ = {isa = PBXBuildFile; fileRef = 10E025171311573B00549533 /* wheel_dino.png */; };
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
@@ -540,6 +545,18 @@
 		10AA0B7F1307167900D11E6B /* mm_wheel_btn_iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mm_wheel_btn_iPad.png; sourceTree = "<group>"; };
 		10AA0B951307181700D11E6B /* GameWheelScene_iPad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameWheelScene_iPad.h; sourceTree = "<group>"; };
 		10AA0B961307181700D11E6B /* GameWheelScene_iPad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameWheelScene_iPad.m; sourceTree = "<group>"; };
+		10B32803131D58330014A77D /* wheel_background-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "wheel_background-hd.png"; sourceTree = "<group>"; };
+		10B32804131D58330014A77D /* wheel_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wheel_background.png; sourceTree = "<group>"; };
+		10B32805131D58330014A77D /* wheel_dino.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wheel_dino.png; sourceTree = "<group>"; };
+		10B32806131D584D0014A77D /* wheel_home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wheel_home.png; sourceTree = "<group>"; };
+		10B32833131D5CD10014A77D /* wheel_snd_sunglasses.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = wheel_snd_sunglasses.m4a; sourceTree = "<group>"; };
+		10B32854131D5EAB0014A77D /* wheel_snd_pants.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = wheel_snd_pants.m4a; sourceTree = "<group>"; };
+		10B32855131D5EAB0014A77D /* wheel_snd_necklace.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = wheel_snd_necklace.m4a; sourceTree = "<group>"; };
+		10B32856131D5EAB0014A77D /* wheel_snd_jacket.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = wheel_snd_jacket.m4a; sourceTree = "<group>"; };
+		10B32857131D5EAB0014A77D /* wheel_snd_phone.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = wheel_snd_phone.m4a; sourceTree = "<group>"; };
+		10B32858131D5EAB0014A77D /* wheel_snd_hat.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = wheel_snd_hat.m4a; sourceTree = "<group>"; };
+		10B32859131D5EAB0014A77D /* wheel_snd_boots.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = wheel_snd_boots.m4a; sourceTree = "<group>"; };
+		10B3285A131D5EAB0014A77D /* wheel_snd_backpack.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = wheel_snd_backpack.m4a; sourceTree = "<group>"; };
 		10B569FC1306EB2B00AA7DCB /* MainMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainMenu.h; sourceTree = "<group>"; };
 		10B569FD1306EB2B00AA7DCB /* MainMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainMenu.m; sourceTree = "<group>"; };
 		10B569FE1306EB2B00AA7DCB /* MainMenu.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
@@ -581,10 +598,6 @@
 		10B56BA2130701A100AA7DCB /* GameWheel_iPad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameWheel_iPad.h; sourceTree = "<group>"; };
 		10B56BA3130701A100AA7DCB /* GameWheel_iPad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameWheel_iPad.m; sourceTree = "<group>"; };
 		10B56BA4130701A100AA7DCB /* GameWheel_iPad.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GameWheel_iPad.xib; sourceTree = "<group>"; };
-		10E025001311557300549533 /* wheel_background-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "wheel_background-hd.png"; sourceTree = "<group>"; };
-		10E025091311562A00549533 /* wheel_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wheel_background.png; sourceTree = "<group>"; };
-		10E0250D131156B800549533 /* wheel_home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wheel_home.png; sourceTree = "<group>"; };
-		10E025171311573B00549533 /* wheel_dino.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wheel_dino.png; sourceTree = "<group>"; };
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D6058910D05DD3D006BFB54 /* Basho.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Basho.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -1007,6 +1020,21 @@
 			name = MainMenu;
 			sourceTree = "<group>";
 		};
+		10B32831131D5CAA0014A77D /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				10B32854131D5EAB0014A77D /* wheel_snd_pants.m4a */,
+				10B32855131D5EAB0014A77D /* wheel_snd_necklace.m4a */,
+				10B32856131D5EAB0014A77D /* wheel_snd_jacket.m4a */,
+				10B32857131D5EAB0014A77D /* wheel_snd_phone.m4a */,
+				10B32858131D5EAB0014A77D /* wheel_snd_hat.m4a */,
+				10B32859131D5EAB0014A77D /* wheel_snd_boots.m4a */,
+				10B3285A131D5EAB0014A77D /* wheel_snd_backpack.m4a */,
+				10B32833131D5CD10014A77D /* wheel_snd_sunglasses.m4a */,
+			);
+			name = Sounds;
+			sourceTree = "<group>";
+		};
 		10B56A571306EE3A00AA7DCB /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -1065,6 +1093,10 @@
 		10E025081311561C00549533 /* wheel */ = {
 			isa = PBXGroup;
 			children = (
+				10B32806131D584D0014A77D /* wheel_home.png */,
+				10B32803131D58330014A77D /* wheel_background-hd.png */,
+				10B32804131D58330014A77D /* wheel_background.png */,
+				10B32805131D58330014A77D /* wheel_dino.png */,
 				102FDDC1131C893700CC0AEB /* wheel_basho_off-hd.png */,
 				102FDDC2131C893700CC0AEB /* wheel_basho_off.png */,
 				102FDDC4131C893700CC0AEB /* wheel_basho_on-hd.png */,
@@ -1109,10 +1141,6 @@
 				102FDDFF131C893800CC0AEB /* wheel_sound_off.png */,
 				102FDE01131C893800CC0AEB /* wheel_sound_on-hd.png */,
 				102FDE02131C893800CC0AEB /* wheel_sound_on.png */,
-				10E025171311573B00549533 /* wheel_dino.png */,
-				10E0250D131156B800549533 /* wheel_home.png */,
-				10E025091311562A00549533 /* wheel_background.png */,
-				10E025001311557300549533 /* wheel_background-hd.png */,
 			);
 			name = wheel;
 			sourceTree = "<group>";
@@ -1154,6 +1182,7 @@
 		28EEBF621118D79A00187D67 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				10B32831131D5CAA0014A77D /* Sounds */,
 				10AA0BD2130719D200D11E6B /* MainMenu */,
 				8D1107310486CEB800E47090 /* Basho-Info.plist */,
 			);
@@ -1293,10 +1322,6 @@
 				10AA0B891307167900D11E6B /* mm_wheel_btn_dis_iPad.png in Resources */,
 				10AA0B8A1307167900D11E6B /* mm_wheel_btn_dwn_iPad.png in Resources */,
 				10AA0B8B1307167900D11E6B /* mm_wheel_btn_iPad.png in Resources */,
-				10E025011311557300549533 /* wheel_background-hd.png in Resources */,
-				10E0250A1311562A00549533 /* wheel_background.png in Resources */,
-				10E0250E131156B800549533 /* wheel_home.png in Resources */,
-				10E025181311573B00549533 /* wheel_dino.png in Resources */,
 				102FDE03131C893800CC0AEB /* wheel_basho_off_iPad.png in Resources */,
 				102FDE04131C893800CC0AEB /* wheel_basho_off-hd.png in Resources */,
 				102FDE05131C893800CC0AEB /* wheel_basho_off.png in Resources */,
@@ -1364,6 +1389,15 @@
 				102FDE43131C893800CC0AEB /* wheel_sound_on_iPad.png in Resources */,
 				102FDE44131C893800CC0AEB /* wheel_sound_on-hd.png in Resources */,
 				102FDE45131C893800CC0AEB /* wheel_sound_on.png in Resources */,
+				10B32807131D584D0014A77D /* wheel_home.png in Resources */,
+				10B32834131D5CD10014A77D /* wheel_snd_sunglasses.m4a in Resources */,
+				10B3285B131D5EAB0014A77D /* wheel_snd_pants.m4a in Resources */,
+				10B3285C131D5EAB0014A77D /* wheel_snd_necklace.m4a in Resources */,
+				10B3285D131D5EAB0014A77D /* wheel_snd_jacket.m4a in Resources */,
+				10B3285E131D5EAB0014A77D /* wheel_snd_phone.m4a in Resources */,
+				10B3285F131D5EAB0014A77D /* wheel_snd_hat.m4a in Resources */,
+				10B32860131D5EAB0014A77D /* wheel_snd_boots.m4a in Resources */,
+				10B32861131D5EAB0014A77D /* wheel_snd_backpack.m4a in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

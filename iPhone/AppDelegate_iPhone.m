@@ -8,6 +8,7 @@
 
 #import "AppDelegate_iPhone.h"
 #import "cocos2d.h"
+#import "SimpleAudioEngine.h"
 
 @implementation AppDelegate_iPhone
 
@@ -19,6 +20,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {    
     
+	[SimpleAudioEngine sharedEngine];
+	
 	// Try to use CADisplayLink director
 	// if it fails (SDK < 3.1) use the default director
 	if( ! [CCDirector setDirectorType:kCCDirectorTypeDisplayLink] )

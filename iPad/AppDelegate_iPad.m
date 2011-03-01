@@ -8,6 +8,7 @@
 
 #import "AppDelegate_iPad.h"
 #import "MainMenu_iPad.h"
+#import "SimpleAudioEngine.h"
 
 @implementation AppDelegate_iPad
 
@@ -19,6 +20,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {    
     
+	[SimpleAudioEngine sharedEngine];
     // Override point for customization after application launch.
     
     [self.window makeKeyAndVisible];

@@ -17,6 +17,9 @@
 	GameWheel * viewController;
 	CCSprite * dino;
 	BOOL dinoSpinning;
+	BOOL playingSound;
+	int selectedSound;
+	CCMenu * tapButtons;
 }
 
 // returns a Scene that contains the HelloWorld as the only child
