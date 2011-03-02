@@ -23,6 +23,8 @@
 	CCMenu * tapButtons;
 	
 	BOOL bashoDirected;
+	
+	int score;
 }
 
 // returns a Scene that contains the HelloWorld as the only child

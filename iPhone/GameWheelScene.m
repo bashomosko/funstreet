@@ -12,6 +12,8 @@
 #import "GameManager.h"
 
 #define kPALABRA 1000
+#define kSCORE 1001
+#define kPointsAwarded 15
 
 #define BTN_BACKPACK @"backpack"
 #define BTN_BOOTS @"boots"
@@ -101,6 +103,8 @@
 		// Apple recommends to re-assign "self" with the "super" return value
 		if( (self=[super init] )) {
 			
+			score = 0;
+			
 			self.isTouchEnabled = YES;
 			viewController = vc;
 			bashoDirected = NO;
@@ -131,6 +135,7 @@
 			[basho setPosition:ccp(70,30)];
 			[menu setPosition:ccp(0,0)];
 			
+			[self loadScore];
 			[self loadButtons];
 			[self createPalabra];
 			
@@ -151,6 +156,7 @@
 {
 	bashoDirected = !bashoDirected;
 	
+	[self makeScoreAppear:bashoDirected];
 	if(bashoDirected)
 		[self selectItemForBasho];
 }
@@ -198,6 +204,29 @@
 	[self addChild:palabra z:1 tag:kPALABRA];
 	[palabra setPosition:ccp(420,20)];
 	[palabra setOpacity:0];
+}
+
+-(void)loadScore
+{
+	CCSprite * back = [CCSprite spriteWithFile:@"wheel_pointsField.png"];
+	[back setPosition:ccp(450,293)];
+	[self addChild:back];
+	
+	CCLabelTTF * scoreLbl = [CCLabelTTF labelWithString:@"0" fontName:@"Verdana" fontSize:30];
+	[scoreLbl setColor:ccBLACK];
+	[self addChild:scoreLbl z:1 tag:kSCORE];
+	[scoreLbl setPosition:ccp(450,293)];
+	[scoreLbl setOpacity:0];
+}
+
+-(void)makeScoreAppear:(BOOL)appear
+{
+	CCLabelTTF * scoreLbl = [self getChildByTag:kSCORE];
+	if(appear)
+		[scoreLbl setOpacity:255];
+	else
+		[scoreLbl setOpacity:0];
+
 }
 
 -(void)loadButtons
@@ -279,7 +308,7 @@
 		case BTN_NECKLACE_NUM:
 			word = BTN_NECKLACE_SPANISH;
 			sound =BTN_NECKLACE_SND;
-			bashoDirectedWrongSound = BTN_PANTS_SND_WRONG;
+			bashoDirectedWrongSound = BTN_NECKLACE_SND_WRONG;
 			break;
 		case BTN_PANTS_NUM:
 			word = BTN_PANTS_SPANISH;
@@ -300,6 +329,8 @@
 	}else {
 		if(bashoSelectedSound == selectedSound)
 		{
+			[self addPoints:kPointsAwarded];
+			
 			if([GameManager sharedGameManager].soundsEnabled)
 				[[SimpleAudioEngine sharedEngine] playEffect:sound];
 			[self showPalabra:word];
@@ -313,6 +344,13 @@
 
 	}
 
+}
+
+-(void)addPoints:(int)_points
+{
+	score += _points;
+	CCLabelTTF * scoreLbl = [self getChildByTag:kSCORE];
+	[scoreLbl setString:[NSString stringWithFormat:@"%d",score]];
 }
 
 -(void)showPalabra:(NSString *)word
