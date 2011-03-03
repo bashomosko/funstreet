@@ -8,12 +8,12 @@
 
 // When you import this file, you import all the cocos2d classes
 #import "cocos2d.h"
-#import "GameWheel_iPad.h"
+#import "GameWheelScene_both.h"
 
+@class GameWheelScene_both;
 // HelloWorld Layer
-@interface GameWheelScene_iPad : CCLayer
+@interface GameWheelScene_iPad : GameWheelScene_both
 {
-	GameWheel_iPad * viewController;
 }
 
 @end

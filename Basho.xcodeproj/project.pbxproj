@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		10108B7E132008C1001848A5 /* GameWheelScene_both.m in Sources */ = {isa = PBXBuildFile; fileRef = 10108B7D132008C1001848A5 /* GameWheelScene_both.m */; };
+		10108C8213201F62001848A5 /* wheel_background_iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 102FDDBF131C891800CC0AEB /* wheel_background_iPad.png */; };
 		102FDE03131C893800CC0AEB /* wheel_basho_off_iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 102FDDC0131C893700CC0AEB /* wheel_basho_off_iPad.png */; };
 		102FDE04131C893800CC0AEB /* wheel_basho_off-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 102FDDC1131C893700CC0AEB /* wheel_basho_off-hd.png */; };
 		102FDE05131C893800CC0AEB /* wheel_basho_off.png in Resources */ = {isa = PBXBuildFile; fileRef = 102FDDC2131C893700CC0AEB /* wheel_basho_off.png */; };
@@ -267,6 +269,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		10108B7C132008C1001848A5 /* GameWheelScene_both.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameWheelScene_both.h; sourceTree = "<group>"; };
+		10108B7D132008C1001848A5 /* GameWheelScene_both.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameWheelScene_both.m; sourceTree = "<group>"; };
 		102FDDBF131C891800CC0AEB /* wheel_background_iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = wheel_background_iPad.png; path = ../iPhone/wheel_background_iPad.png; sourceTree = "<group>"; };
 		102FDDC0131C893700CC0AEB /* wheel_basho_off_iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = wheel_basho_off_iPad.png; path = ../iPhone/wheel_basho_off_iPad.png; sourceTree = "<group>"; };
 		102FDDC1131C893700CC0AEB /* wheel_basho_off-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "wheel_basho_off-hd.png"; sourceTree = "<group>"; };
@@ -671,6 +675,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		10108B7B132008AA001848A5 /* wheel */ = {
+			isa = PBXGroup;
+			children = (
+				10108B7C132008C1001848A5 /* GameWheelScene_both.h */,
+				10108B7D132008C1001848A5 /* GameWheelScene_both.m */,
+			);
+			name = wheel;
+			sourceTree = "<group>";
+		};
 		102FDE46131C894200CC0AEB /* wheel */ = {
 			isa = PBXGroup;
 			children = (
@@ -1236,6 +1249,7 @@
 		28EEBF621118D79A00187D67 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				10108B7B132008AA001848A5 /* wheel */,
 				10B3297A131D87CB0014A77D /* GameManager.h */,
 				10B3297B131D87CB0014A77D /* GameManager.m */,
 				10B32831131D5CAA0014A77D /* Sounds */,
@@ -1338,6 +1352,7 @@
 				10B56A001306EB2B00AA7DCB /* MainMenu.xib in Resources */,
 				10B56A051306EB3F00AA7DCB /* MainMenu_iPad.xib in Resources */,
 				10B329E4131D97CD0014A77D /* wheel_background-hd.png in Resources */,
+				10108C8213201F62001848A5 /* wheel_background_iPad.png in Resources */,
 				10B329E5131D97CD0014A77D /* wheel_background.png in Resources */,
 				10B329E6131D97CD0014A77D /* wheel_dino.png in Resources */,
 				102FDE3A131C893800CC0AEB /* wheel_dino-hd.png in Resources */,
@@ -1591,6 +1606,7 @@
 				10AA095213070EEA00D11E6B /* GameWheelScene.m in Sources */,
 				10AA0B971307181700D11E6B /* GameWheelScene_iPad.m in Sources */,
 				10B3297C131D87CB0014A77D /* GameManager.m in Sources */,
+				10108B7E132008C1001848A5 /* GameWheelScene_both.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

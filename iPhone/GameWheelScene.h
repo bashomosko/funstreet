@@ -9,22 +9,13 @@
 
 // When you import this file, you import all the cocos2d classes
 #import "cocos2d.h"
-#import "GameWheel.h"
+#import "GameWheelScene_both.h"
+
+@class GameWheelScene_both;
 
 // HelloWorld Layer
-@interface GameWheelScene : CCLayer
+@interface GameWheelScene : GameWheelScene_both
 {
-	GameWheel * viewController;
-	CCSprite * dino;
-	BOOL dinoSpinning;
-	BOOL playingSound;
-	int selectedSound;
-	int bashoSelectedSound;
-	CCMenu * tapButtons;
-	
-	BOOL bashoDirected;
-	
-	int score;
 }
 
 // returns a Scene that contains the HelloWorld as the only child
