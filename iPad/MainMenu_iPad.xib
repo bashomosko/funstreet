@@ -127,7 +127,6 @@
 						<reference key="NSSuperview" ref="766721923"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
-						<bool key="IBUIEnabled">NO</bool>
 						<int key="IBUIContentHorizontalAlignment">0</int>
 						<int key="IBUIContentVerticalAlignment">0</int>
 						<reference key="IBUIFont" ref="659375238"/>
@@ -376,7 +375,7 @@
 					<bool key="EncodedWithXMLCoder">YES</bool>
 					<string>MainMenu_iPad</string>
 					<string>UIResponder</string>
-					<string>{{-246, 19}, {1039, 693}}</string>
+					<string>{{0, 63}, {1039, 693}}</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<object class="NSAffineTransform">

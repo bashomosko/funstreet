@@ -60,6 +60,11 @@
 
 -(IBAction) goToDress:(id)sender
 {
+	[UIView beginAnimations:nil context:nil];
+	[UIView setAnimationDelegate:self];
+	[UIView setAnimationDidStopSelector:@selector(loadDress)];
+	[self.view setAlpha:0];
+	[UIView commitAnimations];
 }
 
 -(IBAction) goToVideo:(id)sender

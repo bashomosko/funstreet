@@ -76,6 +76,13 @@
 		102FDE43131C893800CC0AEB /* wheel_sound_on_iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 102FDE00131C893800CC0AEB /* wheel_sound_on_iPad.png */; };
 		102FDE44131C893800CC0AEB /* wheel_sound_on-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 102FDE01131C893800CC0AEB /* wheel_sound_on-hd.png */; };
 		102FDE45131C893800CC0AEB /* wheel_sound_on.png in Resources */ = {isa = PBXBuildFile; fileRef = 102FDE02131C893800CC0AEB /* wheel_sound_on.png */; };
+		10A08C9413215091003F24AD /* GameDress_iPad.m in Sources */ = {isa = PBXBuildFile; fileRef = 10A08C9213215091003F24AD /* GameDress_iPad.m */; };
+		10A08C9513215091003F24AD /* GameDress_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10A08C9313215091003F24AD /* GameDress_iPad.xib */; };
+		10A08C98132150A7003F24AD /* GameDressScene_iPad.m in Sources */ = {isa = PBXBuildFile; fileRef = 10A08C97132150A7003F24AD /* GameDressScene_iPad.m */; };
+		10A08DB513215B10003F24AD /* dress_iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 10A08DB313215B10003F24AD /* dress_iPad.png */; };
+		10A08DB613215B10003F24AD /* dress_iPad.plist in Resources */ = {isa = PBXBuildFile; fileRef = 10A08DB413215B10003F24AD /* dress_iPad.plist */; };
+		10A08DC213215B3F003F24AD /* DressData_iPad.plist in Resources */ = {isa = PBXBuildFile; fileRef = 10A08DC113215B3F003F24AD /* DressData_iPad.plist */; };
+		10A08DC613215CC5003F24AD /* DDElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 10A08DC513215CC5003F24AD /* DDElement.m */; };
 		10AA08E513070E0400D11E6B /* CCAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 10AA080C13070E0400D11E6B /* CCAction.m */; };
 		10AA08E613070E0400D11E6B /* CCActionCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = 10AA080E13070E0400D11E6B /* CCActionCamera.m */; };
 		10AA08E713070E0400D11E6B /* CCActionEase.m in Sources */ = {isa = PBXBuildFile; fileRef = 10AA081013070E0400D11E6B /* CCActionEase.m */; };
@@ -339,6 +346,17 @@
 		102FDE00131C893800CC0AEB /* wheel_sound_on_iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = wheel_sound_on_iPad.png; path = ../iPhone/wheel_sound_on_iPad.png; sourceTree = "<group>"; };
 		102FDE01131C893800CC0AEB /* wheel_sound_on-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "wheel_sound_on-hd.png"; sourceTree = "<group>"; };
 		102FDE02131C893800CC0AEB /* wheel_sound_on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wheel_sound_on.png; sourceTree = "<group>"; };
+		10A08C9113215091003F24AD /* GameDress_iPad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameDress_iPad.h; sourceTree = "<group>"; };
+		10A08C9213215091003F24AD /* GameDress_iPad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameDress_iPad.m; sourceTree = "<group>"; };
+		10A08C9313215091003F24AD /* GameDress_iPad.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GameDress_iPad.xib; sourceTree = "<group>"; };
+		10A08C96132150A7003F24AD /* GameDressScene_iPad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameDressScene_iPad.h; sourceTree = "<group>"; };
+		10A08C97132150A7003F24AD /* GameDressScene_iPad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameDressScene_iPad.m; sourceTree = "<group>"; };
+		10A08DB313215B10003F24AD /* dress_iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dress_iPad.png; sourceTree = "<group>"; };
+		10A08DB413215B10003F24AD /* dress_iPad.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = dress_iPad.plist; sourceTree = "<group>"; };
+		10A08DC113215B3F003F24AD /* DressData_iPad.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = DressData_iPad.plist; sourceTree = "<group>"; };
+		10A08DC413215CC5003F24AD /* DDElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDElement.h; sourceTree = "<group>"; };
+		10A08DC513215CC5003F24AD /* DDElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDElement.m; sourceTree = "<group>"; };
+		10A08DC913215DA3003F24AD /* Config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Config.h; sourceTree = "<group>"; };
 		10AA080B13070E0300D11E6B /* CCAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCAction.h; sourceTree = "<group>"; };
 		10AA080C13070E0400D11E6B /* CCAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCAction.m; sourceTree = "<group>"; };
 		10AA080D13070E0400D11E6B /* CCActionCamera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCActionCamera.h; sourceTree = "<group>"; };
@@ -713,6 +731,30 @@
 				102FDDBF131C891800CC0AEB /* wheel_background_iPad.png */,
 			);
 			name = wheel;
+			sourceTree = "<group>";
+		};
+		10A08C9013215065003F24AD /* Game Dress */ = {
+			isa = PBXGroup;
+			children = (
+				10A08C9113215091003F24AD /* GameDress_iPad.h */,
+				10A08C9213215091003F24AD /* GameDress_iPad.m */,
+				10A08C9313215091003F24AD /* GameDress_iPad.xib */,
+				10A08C96132150A7003F24AD /* GameDressScene_iPad.h */,
+				10A08C97132150A7003F24AD /* GameDressScene_iPad.m */,
+				10A08DC413215CC5003F24AD /* DDElement.h */,
+				10A08DC513215CC5003F24AD /* DDElement.m */,
+			);
+			name = "Game Dress";
+			sourceTree = "<group>";
+		};
+		10A08CF013215426003F24AD /* dress */ = {
+			isa = PBXGroup;
+			children = (
+				10A08DC113215B3F003F24AD /* DressData_iPad.plist */,
+				10A08DB313215B10003F24AD /* dress_iPad.png */,
+				10A08DB413215B10003F24AD /* dress_iPad.plist */,
+			);
+			name = dress;
 			sourceTree = "<group>";
 		};
 		10AA080913070E0300D11E6B /* cocos2d Sources */ = {
@@ -1139,6 +1181,7 @@
 		10B56A581306EE4600AA7DCB /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				10A08CF013215426003F24AD /* dress */,
 				102FDE46131C894200CC0AEB /* wheel */,
 				10AA0B741307167900D11E6B /* mm_dress_btn_dis_iPad.png */,
 				10AA0B751307167900D11E6B /* mm_dress_btn_dwn_iPad.png */,
@@ -1236,6 +1279,7 @@
 		2860E32A111B888700E27156 /* iPad */ = {
 			isa = PBXGroup;
 			children = (
+				10A08C9013215065003F24AD /* Game Dress */,
 				10AA0BD0130719AC00D11E6B /* MainMenu */,
 				10AA0B731307148100D11E6B /* Game Wheel */,
 				2860E32B111B888700E27156 /* AppDelegate_iPad.h */,
@@ -1262,6 +1306,7 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				10A08DC913215DA3003F24AD /* Config.h */,
 				10AA080913070E0300D11E6B /* cocos2d Sources */,
 				2860E32A111B888700E27156 /* iPad */,
 				2860E324111B887F00E27156 /* iPhone */,
@@ -1488,6 +1533,10 @@
 				10B329CE131D95F50014A77D /* wheel_snd_pants_wrong.m4a in Resources */,
 				10B329CF131D95F50014A77D /* wheel_snd_phone_wrong.m4a in Resources */,
 				10B329D0131D95F50014A77D /* wheel_snd_sunglasses_wrong.m4a in Resources */,
+				10A08C9513215091003F24AD /* GameDress_iPad.xib in Resources */,
+				10A08DB513215B10003F24AD /* dress_iPad.png in Resources */,
+				10A08DB613215B10003F24AD /* dress_iPad.plist in Resources */,
+				10A08DC213215B3F003F24AD /* DressData_iPad.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1607,6 +1656,9 @@
 				10AA0B971307181700D11E6B /* GameWheelScene_iPad.m in Sources */,
 				10B3297C131D87CB0014A77D /* GameManager.m in Sources */,
 				10108B7E132008C1001848A5 /* GameWheelScene_both.m in Sources */,
+				10A08C9413215091003F24AD /* GameDress_iPad.m in Sources */,
+				10A08C98132150A7003F24AD /* GameDressScene_iPad.m in Sources */,
+				10A08DC613215CC5003F24AD /* DDElement.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
