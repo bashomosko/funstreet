@@ -21,14 +21,14 @@
 #define BTN_PANTS @"pants"
 #define BTN_SUNGLASSES @"sunglasses"
 
-#define BTN_BACKPACK_NUM 0
+#define BTN_BACKPACK_NUM 7
 #define BTN_BOOTS_NUM 1
-#define BTN_HAT_NUM 2
-#define BTN_PHONE_NUM 3
-#define BTN_JACKET_NUM 4
-#define BTN_NECKLACE_NUM 5
-#define BTN_PANTS_NUM 6
-#define BTN_SUNGLASSES_NUM 7
+#define BTN_HAT_NUM 5
+#define BTN_PHONE_NUM 6
+#define BTN_JACKET_NUM 3
+#define BTN_NECKLACE_NUM 2
+#define BTN_PANTS_NUM 0
+#define BTN_SUNGLASSES_NUM 4
 
 #define BTN_BACKPACK_SND @"wheel_snd_backpack.m4a"
 #define BTN_BOOTS_SND @"wheel_snd_boots.m4a"
@@ -71,6 +71,10 @@
 	int bashoSelectedSound;
 	GameDress_iPad * viewController;
 	NSMutableArray * ddElements;
+	NSMutableArray * dressPieces;
+	BOOL placingElement;
 }
+
+@property (nonatomic,readwrite) BOOL placingElement;
 
 @end

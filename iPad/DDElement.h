@@ -20,10 +20,14 @@
 	CGPoint dropPoint;
 	NSString * soundOkPath;
 	NSString * soundWrongPath;
+	NSString * dressed;
 	BOOL movableAfterPlaced;
 	BOOL placed;
+	int desiredZ;
 }
 @property (nonatomic,readwrite) touchState state;
 @property (nonatomic,retain) CCSprite * mySprite;
+@property (nonatomic,retain) NSString * dressed;
+@property (nonatomic,readwrite)int desiredZ;
 
 @end

@@ -13,6 +13,8 @@
 
 @implementation GameDressScene_iPad
 
+@synthesize placingElement;
+
 +(id) sceneWithDressVC:(GameDress_iPad *)vc
 {
     CCScene *scene = [CCScene node];
@@ -42,6 +44,7 @@
 			
 		bashoSelectedSound = 0;
 		ddElements = [[NSMutableArray alloc] initWithCapacity:4];
+		dressPieces= [[NSMutableArray alloc] initWithCapacity:8];
 		
 		[[ CCSpriteFrameCache sharedSpriteFrameCache] addSpriteFramesWithFile:@"dress_iPad.plist" textureFile:@"dress_iPad.png"];
 		
@@ -110,6 +113,15 @@
 
 -(void)selectItemForBasho
 {
+	placingElement = NO;
+	if(bashoSelectedSound >=8)
+	{
+		bashoSelectedSound = 0;
+		
+		//RESET DINO
+		[self schedule:@selector(resetDino) interval:3];
+		return;
+	}
 	
 	NSString * sound = nil;
 	switch (bashoSelectedSound)
@@ -145,8 +157,36 @@
 	[self loadScatteredElementsForItem:bashoSelectedSound];
 	
 	bashoSelectedSound ++;
+	
 }
 
+-(void)resetDino
+{
+	[self unschedule:@selector(resetDino)];
+	
+	CCSpriteBatchNode * sbn = [self getChildByTag:kSPRITEBATCH_ELEMS];
+	for(CCSprite * el in dressPieces)
+	{
+		[sbn removeChild:el cleanup:YES];
+	}
+	[dressPieces removeAllObjects];
+	
+	[self selectItemForBasho ];
+	
+}
+-(void)dressDino:(GameDressScene_iPad *)scene data:(void *)data
+{	
+	DDElement * item = (DDElement *)data;
+	CCSpriteBatchNode * sbn = [self getChildByTag:kSPRITEBATCH_ELEMS];
+
+	item.mySprite.opacity = 0;
+	
+	CCSprite * backpack = [CCSprite spriteWithSpriteFrameName:item.dressed];
+	[sbn addChild:backpack z:item.desiredZ];
+	[backpack setPosition:ccp(512,384)];
+	
+	[dressPieces addObject:backpack];
+}
 
 -(void)loadScatteredElementsForItem:(int)item
 {
@@ -160,15 +200,14 @@
 	
 	
 	NSMutableArray * btnImgs = [NSMutableArray arrayWithCapacity:8];
-	[btnImgs addObject:BTN_BACKPACK];
+	[btnImgs addObject:BTN_PANTS];
 	[btnImgs addObject:BTN_BOOTS];
+	[btnImgs addObject:BTN_NECKLACE];
+	[btnImgs addObject:BTN_JACKET];
+	[btnImgs addObject:BTN_SUNGLASSES];
 	[btnImgs addObject:BTN_HAT];
 	[btnImgs addObject:BTN_PHONE];
-	[btnImgs addObject:BTN_JACKET];
-	[btnImgs addObject:BTN_NECKLACE];
-	[btnImgs addObject:BTN_PANTS];
-	[btnImgs addObject:BTN_SUNGLASSES];
-	
+	[btnImgs addObject:BTN_BACKPACK];
 	
 	NSString *filePath = [[NSBundle mainBundle] pathForResource:@"DressData_iPad" ofType:@"plist"];
 	
@@ -189,11 +228,21 @@
 	
 	for(int i =0;i<4;i++)
 	{
+		
 		NSMutableDictionary * elem = [elements objectAtIndex:i];
 		
 		NSMutableDictionary * po = [positions objectAtIndex:i];
 		
 		[elem setObject:po forKey:@"coord-initial"];
+		
+		switch (item) {
+			case BTN_BOOTS_NUM:
+				[elem setObject:[NSNumber numberWithInt:2] forKey:@"desiredZ"];
+				break;
+			default:
+				[elem setObject:[NSNumber numberWithInt:3] forKey:@"desiredZ"];
+				break;
+		}
 		
 		DDElement * ddElement = [[DDElement alloc] initWithTheGame:self elementDict:elem];
 		[ddElements addObject:ddElement];
@@ -209,6 +258,7 @@
 
 -(void)dealloc
 {
+	[dressPieces release];
 	[ddElements release];
 	[super dealloc];
 }

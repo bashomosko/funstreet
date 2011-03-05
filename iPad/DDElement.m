@@ -5,7 +5,7 @@
 #import "SimpleAudioEngine.h"
 
 @implementation DDElement
-@synthesize state,mySprite;
+@synthesize state,mySprite,dressed,desiredZ;
 
 -(id) initWithTheGame:(GameDress_iPad *)ddm elementDict:(NSMutableDictionary *)element
 {
@@ -14,6 +14,7 @@
 		theGame = ddm;
 		
 		imagePath =[[element objectForKey:@"file-image"]retain];
+		dressed =[[element objectForKey:@"file-dressed"]retain];
 		
 		int xr = [[[element objectForKey:@"coord-drop"] objectForKey:@"x"] intValue];
 		int yr = [[[element objectForKey:@"coord-drop"] objectForKey:@"y"] intValue];
@@ -28,6 +29,8 @@
 		soundOkPath = [[element objectForKey:@"file-soundOk"]retain];
 		soundWrongPath = [[element objectForKey:@"file-soundWrong"]retain];
 		movableAfterPlaced = NO;
+		
+		desiredZ = [[element objectForKey:@"desiredZ"] intValue];
 		
 		CCSpriteBatchNode * sbn = [theGame getChildByTag:kSPRITEBATCH_ELEMS];
 		mySprite = [CCSprite spriteWithSpriteFrameName:imagePath];
@@ -84,6 +87,7 @@
 	if (state != kStateUngrabbed) return NO;
 	if ( ![self containsTouchLocation:touch]) return NO;
 	if(placed && !movableAfterPlaced) return NO;
+	if(theGame.placingElement) return NO;
 	
 	//if(placed && movableAfterPlaced)
 	//	theGame.elementsPlaced--;
@@ -120,7 +124,7 @@
 	
 	if(!(dropPoint.x == 0 && dropPoint.y == 0))
 	{
-		if(ccpDistance(mySprite.position,dropPoint) < 100)
+		if(ccpDistance(mySprite.position,dropPoint) < 100 )
 		{
 			mySprite.position = dropPoint;
 			//theGame.elementsPlaced++;
@@ -131,7 +135,8 @@
 			if([GameManager sharedGameManager].soundsEnabled)
 				[[SimpleAudioEngine sharedEngine] playEffect:soundOkPath];
 			placed = YES;
-			[theGame selectItemForBasho];
+			theGame.placingElement = YES;
+			[theGame runAction:[CCSequence actions:[CCCallFuncND actionWithTarget:theGame selector:@selector(dressDino: data:) data:(void*)self],[CCDelayTime actionWithDuration:1],[CCCallFunc actionWithTarget:theGame selector:@selector(selectItemForBasho)],nil]];
 		}else {
 			mySprite.position = initialCoord;
 			/*CCParticleSystemQuad * particles = [CCParticleSystemQuad particleWithFile:particleWrongPath];
@@ -155,6 +160,7 @@
 	[[SimpleAudioEngine sharedEngine] unloadEffect:soundOkPath];
 	[[SimpleAudioEngine sharedEngine] unloadEffect:soundWrongPath];
 	
+	[dressed release];
 	[imagePath release];
 	[soundOkPath release];
 	[soundWrongPath release];
