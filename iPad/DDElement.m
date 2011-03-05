@@ -5,7 +5,7 @@
 #import "SimpleAudioEngine.h"
 
 @implementation DDElement
-@synthesize state,mySprite,dressed,desiredZ;
+@synthesize state,mySprite,dressed,desiredZ,itemTag;
 
 -(id) initWithTheGame:(GameDress_iPad *)ddm elementDict:(NSMutableDictionary *)element
 {
@@ -31,6 +31,8 @@
 		movableAfterPlaced = NO;
 		
 		desiredZ = [[element objectForKey:@"desiredZ"] intValue];
+		itemTag= [[element objectForKey:@"itemTag"] intValue];
+
 		
 		CCSpriteBatchNode * sbn = [theGame getChildByTag:kSPRITEBATCH_ELEMS];
 		mySprite = [CCSprite spriteWithSpriteFrameName:imagePath];

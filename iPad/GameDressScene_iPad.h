@@ -11,6 +11,7 @@
 #import "GameDress_iPad.h"
 
 #define kSPRITEBATCH_ELEMS 1
+#define kBOXERS 2
 
 #define BTN_BACKPACK @"backpack"
 #define BTN_BOOTS @"boots"

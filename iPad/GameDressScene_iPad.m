@@ -53,6 +53,18 @@
 		
 		//[self loadScatteredElements];
 		
+		CCSprite * dino = [CCSprite spriteWithSpriteFrameName:@"dress_dino_iPad.png"];
+		[sbn addChild:dino];
+		[dino setPosition:ccp(512,384)];
+		
+		CCSprite * boxers = [CCSprite spriteWithSpriteFrameName:@"dress_boxers_iPad.png"];
+		[sbn addChild:boxers z:0 tag:kBOXERS];
+		[boxers setPosition:ccp(512,384)];
+		
+		CCSprite * shirt = [CCSprite spriteWithSpriteFrameName:@"dress_shirt_iPad.png"];
+		[sbn addChild:shirt];
+		[shirt setPosition:ccp(512,384)];
+		
 	/*	CCSprite * hat = [CCSprite spriteWithSpriteFrameName:@"BlueHatOn_iPad.png"];
 		[sbn addChild:hat];
 		[hat setPosition:ccp(512,384)];
@@ -178,6 +190,12 @@
 {	
 	DDElement * item = (DDElement *)data;
 	CCSpriteBatchNode * sbn = [self getChildByTag:kSPRITEBATCH_ELEMS];
+	
+	if(item.itemTag == BTN_PANTS_NUM)
+	{
+		CCSprite * boxers = [sbn getChildByTag:kBOXERS];
+		[sbn removeChild:boxers cleanup:YES];
+	}
 
 	item.mySprite.opacity = 0;
 	
@@ -234,6 +252,7 @@
 		NSMutableDictionary * po = [positions objectAtIndex:i];
 		
 		[elem setObject:po forKey:@"coord-initial"];
+		[elem setObject:[NSNumber numberWithInt:item] forKey:@"itemTag"];
 		
 		switch (item) {
 			case BTN_BOOTS_NUM:

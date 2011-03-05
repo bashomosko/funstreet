@@ -24,10 +24,12 @@
 	BOOL movableAfterPlaced;
 	BOOL placed;
 	int desiredZ;
+	int itemTag;
 }
 @property (nonatomic,readwrite) touchState state;
 @property (nonatomic,retain) CCSprite * mySprite;
 @property (nonatomic,retain) NSString * dressed;
 @property (nonatomic,readwrite)int desiredZ;
+@property (nonatomic,readwrite)int itemTag;
 
 @end
