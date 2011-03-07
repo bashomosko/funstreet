@@ -38,7 +38,7 @@
 			self.isTouchEnabled = YES;
 			viewController = vc;
 			
-			CCSprite * back = [CCSprite spriteWithFile:@"wheel_background_iPad.png"];
+			CCSprite * back = [CCSprite spriteWithFile:@"dress_background_iPad.png"];
 			[back setPosition:ccp(512,384)];
 			[self addChild:back];
 			
@@ -234,10 +234,10 @@
 	
 	NSMutableArray * positions = [NSMutableArray array];
 	
-	NSMutableDictionary * p1 = [NSMutableDictionary dictionaryWithObjects:[NSMutableArray arrayWithObjects:[NSNumber numberWithInt:200],[NSNumber numberWithInt:150],nil] forKeys:[NSMutableArray arrayWithObjects:@"x",@"y",nil]];
-	NSMutableDictionary * p2 = [NSMutableDictionary dictionaryWithObjects:[NSMutableArray arrayWithObjects:[NSNumber numberWithInt:200],[NSNumber numberWithInt:600],nil] forKeys:[NSMutableArray arrayWithObjects:@"x",@"y",nil]];
-	NSMutableDictionary * p3 = [NSMutableDictionary dictionaryWithObjects:[NSMutableArray arrayWithObjects:[NSNumber numberWithInt:800],[NSNumber numberWithInt:150],nil] forKeys:[NSMutableArray arrayWithObjects:@"x",@"y",nil]];
-	NSMutableDictionary * p4 = [NSMutableDictionary dictionaryWithObjects:[NSMutableArray arrayWithObjects:[NSNumber numberWithInt:800],[NSNumber numberWithInt:600],nil] forKeys:[NSMutableArray arrayWithObjects:@"x",@"y",nil]];
+	NSMutableDictionary * p1 = [NSMutableDictionary dictionaryWithObjects:[NSMutableArray arrayWithObjects:[NSNumber numberWithInt:180],[NSNumber numberWithInt:180],nil] forKeys:[NSMutableArray arrayWithObjects:@"x",@"y",nil]];
+	NSMutableDictionary * p2 = [NSMutableDictionary dictionaryWithObjects:[NSMutableArray arrayWithObjects:[NSNumber numberWithInt:180],[NSNumber numberWithInt:580],nil] forKeys:[NSMutableArray arrayWithObjects:@"x",@"y",nil]];
+	NSMutableDictionary * p3 = [NSMutableDictionary dictionaryWithObjects:[NSMutableArray arrayWithObjects:[NSNumber numberWithInt:820],[NSNumber numberWithInt:180],nil] forKeys:[NSMutableArray arrayWithObjects:@"x",@"y",nil]];
+	NSMutableDictionary * p4 = [NSMutableDictionary dictionaryWithObjects:[NSMutableArray arrayWithObjects:[NSNumber numberWithInt:820],[NSNumber numberWithInt:580],nil] forKeys:[NSMutableArray arrayWithObjects:@"x",@"y",nil]];
 	
 	[positions addObject:p1];
 	[positions addObject:p2];

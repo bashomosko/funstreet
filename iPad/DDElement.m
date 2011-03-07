@@ -36,7 +36,7 @@
 		
 		CCSpriteBatchNode * sbn = [theGame getChildByTag:kSPRITEBATCH_ELEMS];
 		mySprite = [CCSprite spriteWithSpriteFrameName:imagePath];
-		[sbn addChild:mySprite];
+		[sbn addChild:mySprite z:5];
 		[theGame addChild:self];
 		[mySprite setPosition:initialCoord];
 		

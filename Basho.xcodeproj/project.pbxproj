@@ -76,13 +76,14 @@
 		102FDE43131C893800CC0AEB /* wheel_sound_on_iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 102FDE00131C893800CC0AEB /* wheel_sound_on_iPad.png */; };
 		102FDE44131C893800CC0AEB /* wheel_sound_on-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 102FDE01131C893800CC0AEB /* wheel_sound_on-hd.png */; };
 		102FDE45131C893800CC0AEB /* wheel_sound_on.png in Resources */ = {isa = PBXBuildFile; fileRef = 102FDE02131C893800CC0AEB /* wheel_sound_on.png */; };
-		10582ECD1322A94A009121A3 /* dress_iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 10582ECB1322A94A009121A3 /* dress_iPad.png */; };
-		10582ECE1322A94A009121A3 /* dress_iPad.plist in Resources */ = {isa = PBXBuildFile; fileRef = 10582ECC1322A94A009121A3 /* dress_iPad.plist */; };
 		10A08C9413215091003F24AD /* GameDress_iPad.m in Sources */ = {isa = PBXBuildFile; fileRef = 10A08C9213215091003F24AD /* GameDress_iPad.m */; };
 		10A08C9513215091003F24AD /* GameDress_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10A08C9313215091003F24AD /* GameDress_iPad.xib */; };
 		10A08C98132150A7003F24AD /* GameDressScene_iPad.m in Sources */ = {isa = PBXBuildFile; fileRef = 10A08C97132150A7003F24AD /* GameDressScene_iPad.m */; };
 		10A08DC213215B3F003F24AD /* DressData_iPad.plist in Resources */ = {isa = PBXBuildFile; fileRef = 10A08DC113215B3F003F24AD /* DressData_iPad.plist */; };
 		10A08DC613215CC5003F24AD /* DDElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 10A08DC513215CC5003F24AD /* DDElement.m */; };
+		10A6BBFA13251A8700391C82 /* dress_iPad.plist in Resources */ = {isa = PBXBuildFile; fileRef = 10A6BBF813251A8700391C82 /* dress_iPad.plist */; };
+		10A6BBFB13251A8700391C82 /* dress_iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 10A6BBF913251A8700391C82 /* dress_iPad.png */; };
+		10A6BC0113251CB500391C82 /* dress_background_iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 10A6BC0013251CB500391C82 /* dress_background_iPad.png */; };
 		10AA08E513070E0400D11E6B /* CCAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 10AA080C13070E0400D11E6B /* CCAction.m */; };
 		10AA08E613070E0400D11E6B /* CCActionCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = 10AA080E13070E0400D11E6B /* CCActionCamera.m */; };
 		10AA08E713070E0400D11E6B /* CCActionEase.m in Sources */ = {isa = PBXBuildFile; fileRef = 10AA081013070E0400D11E6B /* CCActionEase.m */; };
@@ -346,8 +347,6 @@
 		102FDE00131C893800CC0AEB /* wheel_sound_on_iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = wheel_sound_on_iPad.png; path = ../iPhone/wheel_sound_on_iPad.png; sourceTree = "<group>"; };
 		102FDE01131C893800CC0AEB /* wheel_sound_on-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "wheel_sound_on-hd.png"; sourceTree = "<group>"; };
 		102FDE02131C893800CC0AEB /* wheel_sound_on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wheel_sound_on.png; sourceTree = "<group>"; };
-		10582ECB1322A94A009121A3 /* dress_iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dress_iPad.png; sourceTree = "<group>"; };
-		10582ECC1322A94A009121A3 /* dress_iPad.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = dress_iPad.plist; sourceTree = "<group>"; };
 		10A08C9113215091003F24AD /* GameDress_iPad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameDress_iPad.h; sourceTree = "<group>"; };
 		10A08C9213215091003F24AD /* GameDress_iPad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameDress_iPad.m; sourceTree = "<group>"; };
 		10A08C9313215091003F24AD /* GameDress_iPad.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GameDress_iPad.xib; sourceTree = "<group>"; };
@@ -357,6 +356,9 @@
 		10A08DC413215CC5003F24AD /* DDElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDElement.h; sourceTree = "<group>"; };
 		10A08DC513215CC5003F24AD /* DDElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDElement.m; sourceTree = "<group>"; };
 		10A08DC913215DA3003F24AD /* Config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Config.h; sourceTree = "<group>"; };
+		10A6BBF813251A8700391C82 /* dress_iPad.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = dress_iPad.plist; sourceTree = "<group>"; };
+		10A6BBF913251A8700391C82 /* dress_iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dress_iPad.png; sourceTree = "<group>"; };
+		10A6BC0013251CB500391C82 /* dress_background_iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dress_background_iPad.png; sourceTree = "<group>"; };
 		10AA080B13070E0300D11E6B /* CCAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCAction.h; sourceTree = "<group>"; };
 		10AA080C13070E0400D11E6B /* CCAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCAction.m; sourceTree = "<group>"; };
 		10AA080D13070E0400D11E6B /* CCActionCamera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCActionCamera.h; sourceTree = "<group>"; };
@@ -750,8 +752,9 @@
 		10A08CF013215426003F24AD /* dress */ = {
 			isa = PBXGroup;
 			children = (
-				10582ECB1322A94A009121A3 /* dress_iPad.png */,
-				10582ECC1322A94A009121A3 /* dress_iPad.plist */,
+				10A6BC0013251CB500391C82 /* dress_background_iPad.png */,
+				10A6BBF813251A8700391C82 /* dress_iPad.plist */,
+				10A6BBF913251A8700391C82 /* dress_iPad.png */,
 				10A08DC113215B3F003F24AD /* DressData_iPad.plist */,
 			);
 			name = dress;
@@ -1535,8 +1538,9 @@
 				10B329D0131D95F50014A77D /* wheel_snd_sunglasses_wrong.m4a in Resources */,
 				10A08C9513215091003F24AD /* GameDress_iPad.xib in Resources */,
 				10A08DC213215B3F003F24AD /* DressData_iPad.plist in Resources */,
-				10582ECD1322A94A009121A3 /* dress_iPad.png in Resources */,
-				10582ECE1322A94A009121A3 /* dress_iPad.plist in Resources */,
+				10A6BBFA13251A8700391C82 /* dress_iPad.plist in Resources */,
+				10A6BBFB13251A8700391C82 /* dress_iPad.png in Resources */,
+				10A6BC0113251CB500391C82 /* dress_background_iPad.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

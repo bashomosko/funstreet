@@ -14,7 +14,7 @@
 				<key>x</key>
 				<integer>512</integer>
 				<key>y</key>
-				<integer>384</integer>
+				<integer>184</integer>
 			</dict>
 			<key>file-soundOk</key>
 			<string>wheel_snd_pants.m4a</string>
@@ -31,7 +31,7 @@
 				<key>x</key>
 				<integer>512</integer>
 				<key>y</key>
-				<integer>384</integer>
+				<integer>184</integer>
 			</dict>
 			<key>file-soundOk</key>
 			<string>wheel_snd_pants.m4a</string>
@@ -48,7 +48,7 @@
 				<key>x</key>
 				<integer>512</integer>
 				<key>y</key>
-				<integer>384</integer>
+				<integer>184</integer>
 			</dict>
 			<key>file-soundOk</key>
 			<string>wheel_snd_pants.m4a</string>
@@ -65,7 +65,7 @@
 				<key>x</key>
 				<integer>512</integer>
 				<key>y</key>
-				<integer>384</integer>
+				<integer>184</integer>
 			</dict>
 			<key>file-soundOk</key>
 			<string>wheel_snd_pants.m4a</string>
@@ -94,7 +94,7 @@
 		</dict>
 		<dict>
 			<key>file-dressed</key>
-			<string>RedBackpackStrapOn_iPad.png</string>
+			<string>RedBackpackOn_iPad.png</string>
 			<key>file-image</key>
 			<string>RedBackpack_iPad.png</string>
 			<key>coord-drop</key>
@@ -111,7 +111,7 @@
 		</dict>
 		<dict>
 			<key>file-dressed</key>
-			<string>PurpleBackpackStrapOn_iPad.png</string>
+			<string>PurpleBackpackOn_iPad.png</string>
 			<key>file-image</key>
 			<string>PurpleBackpack_iPad.png</string>
 			<key>coord-drop</key>
@@ -128,7 +128,7 @@
 		</dict>
 		<dict>
 			<key>file-dressed</key>
-			<string>YellowBackpackStrapOn_iPad.png</string>
+			<string>YellowBackpackOn_iPad.png</string>
 			<key>file-image</key>
 			<string>YellowBackpack_iPad.png</string>
 			<key>coord-drop</key>
@@ -156,7 +156,7 @@
 				<key>x</key>
 				<integer>512</integer>
 				<key>y</key>
-				<integer>384</integer>
+				<integer>584</integer>
 			</dict>
 			<key>file-soundOk</key>
 			<string>wheel_snd_hat.m4a</string>
@@ -173,7 +173,7 @@
 				<key>x</key>
 				<integer>512</integer>
 				<key>y</key>
-				<integer>384</integer>
+				<integer>584</integer>
 			</dict>
 			<key>file-soundOk</key>
 			<string>wheel_snd_hat.m4a</string>
@@ -190,7 +190,7 @@
 				<key>x</key>
 				<integer>512</integer>
 				<key>y</key>
-				<integer>384</integer>
+				<integer>584</integer>
 			</dict>
 			<key>file-soundOk</key>
 			<string>wheel_snd_hat.m4a</string>
@@ -207,7 +207,7 @@
 				<key>x</key>
 				<integer>512</integer>
 				<key>y</key>
-				<integer>384</integer>
+				<integer>584</integer>
 			</dict>
 			<key>file-soundOk</key>
 			<string>wheel_snd_hat.m4a</string>
@@ -227,7 +227,7 @@
 				<key>x</key>
 				<integer>512</integer>
 				<key>y</key>
-				<integer>384</integer>
+				<integer>140</integer>
 			</dict>
 			<key>file-soundOk</key>
 			<string>wheel_snd_boots.m4a</string>
@@ -244,7 +244,7 @@
 				<key>x</key>
 				<integer>512</integer>
 				<key>y</key>
-				<integer>384</integer>
+				<integer>140</integer>
 			</dict>
 			<key>file-soundOk</key>
 			<string>wheel_snd_boots.m4a</string>
@@ -261,7 +261,7 @@
 				<key>x</key>
 				<integer>512</integer>
 				<key>y</key>
-				<integer>384</integer>
+				<integer>140</integer>
 			</dict>
 			<key>file-soundOk</key>
 			<string>wheel_snd_boots.m4a</string>
@@ -278,7 +278,7 @@
 				<key>x</key>
 				<integer>512</integer>
 				<key>y</key>
-				<integer>384</integer>
+				<integer>140</integer>
 			</dict>
 			<key>file-soundOk</key>
 			<string>wheel_snd_boots.m4a</string>
@@ -449,7 +449,7 @@
 		</dict>
 		<dict>
 			<key>file-dressed</key>
-			<string>RedPhoneRightHandOn_iPad.png</string>
+			<string>RedPhoneOn_iPad.png</string>
 			<key>file-image</key>
 			<string>RedPhone_iPad.png</string>
 			<key>coord-drop</key>
@@ -466,7 +466,7 @@
 		</dict>
 		<dict>
 			<key>file-dressed</key>
-			<string>PurplePhoneRightHandOn_iPad.png</string>
+			<string>PurplePhoneOn_iPad.png</string>
 			<key>file-image</key>
 			<string>PurplePhone_iPad.png</string>
 			<key>coord-drop</key>
@@ -483,7 +483,7 @@
 		</dict>
 		<dict>
 			<key>file-dressed</key>
-			<string>YellowPhoneRightHandOn_iPad.png</string>
+			<string>YellowPhoneOn_iPad.png</string>
 			<key>file-image</key>
 			<string>YellowPhone_iPad.png</string>
 			<key>coord-drop</key>
@@ -511,7 +511,7 @@
 				<key>x</key>
 				<integer>512</integer>
 				<key>y</key>
-				<integer>384</integer>
+				<integer>600</integer>
 			</dict>
 			<key>file-soundOk</key>
 			<string>wheel_snd_sunglasses.m4a</string>
@@ -528,7 +528,7 @@
 				<key>x</key>
 				<integer>512</integer>
 				<key>y</key>
-				<integer>384</integer>
+				<integer>600</integer>
 			</dict>
 			<key>file-soundOk</key>
 			<string>wheel_snd_sunglasses.m4a</string>
@@ -545,7 +545,7 @@
 				<key>x</key>
 				<integer>512</integer>
 				<key>y</key>
-				<integer>384</integer>
+				<integer>600</integer>
 			</dict>
 			<key>file-soundOk</key>
 			<string>wheel_snd_sunglasses.m4a</string>
@@ -562,7 +562,7 @@
 				<key>x</key>
 				<integer>512</integer>
 				<key>y</key>
-				<integer>384</integer>
+				<integer>600</integer>
 			</dict>
 			<key>file-soundOk</key>
 			<string>wheel_snd_sunglasses.m4a</string>
