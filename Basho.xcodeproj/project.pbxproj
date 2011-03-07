@@ -84,6 +84,11 @@
 		10A6BBFA13251A8700391C82 /* dress_iPad.plist in Resources */ = {isa = PBXBuildFile; fileRef = 10A6BBF813251A8700391C82 /* dress_iPad.plist */; };
 		10A6BBFB13251A8700391C82 /* dress_iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 10A6BBF913251A8700391C82 /* dress_iPad.png */; };
 		10A6BC0113251CB500391C82 /* dress_background_iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 10A6BC0013251CB500391C82 /* dress_background_iPad.png */; };
+		10A6BC88132595BA00391C82 /* GameVideo.m in Sources */ = {isa = PBXBuildFile; fileRef = 10A6BC86132595BA00391C82 /* GameVideo.m */; };
+		10A6BC89132595BA00391C82 /* GameVideo.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10A6BC87132595BA00391C82 /* GameVideo.xib */; };
+		10A6BC9D1325966700391C82 /* ARG.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 10A6BC9C1325966700391C82 /* ARG.mp4 */; };
+		10A6BCB91325978000391C82 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10A6BCB81325978000391C82 /* MediaPlayer.framework */; };
+		10A6BCEE13259EC400391C82 /* videoLyrics.plist in Resources */ = {isa = PBXBuildFile; fileRef = 10A6BCED13259EC400391C82 /* videoLyrics.plist */; };
 		10AA08E513070E0400D11E6B /* CCAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 10AA080C13070E0400D11E6B /* CCAction.m */; };
 		10AA08E613070E0400D11E6B /* CCActionCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = 10AA080E13070E0400D11E6B /* CCActionCamera.m */; };
 		10AA08E713070E0400D11E6B /* CCActionEase.m in Sources */ = {isa = PBXBuildFile; fileRef = 10AA081013070E0400D11E6B /* CCActionEase.m */; };
@@ -359,6 +364,12 @@
 		10A6BBF813251A8700391C82 /* dress_iPad.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = dress_iPad.plist; sourceTree = "<group>"; };
 		10A6BBF913251A8700391C82 /* dress_iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dress_iPad.png; sourceTree = "<group>"; };
 		10A6BC0013251CB500391C82 /* dress_background_iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dress_background_iPad.png; sourceTree = "<group>"; };
+		10A6BC85132595BA00391C82 /* GameVideo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameVideo.h; sourceTree = "<group>"; };
+		10A6BC86132595BA00391C82 /* GameVideo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameVideo.m; sourceTree = "<group>"; };
+		10A6BC87132595BA00391C82 /* GameVideo.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GameVideo.xib; sourceTree = "<group>"; };
+		10A6BC9C1325966700391C82 /* ARG.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = ARG.mp4; sourceTree = "<group>"; };
+		10A6BCB81325978000391C82 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		10A6BCED13259EC400391C82 /* videoLyrics.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = videoLyrics.plist; sourceTree = "<group>"; };
 		10AA080B13070E0300D11E6B /* CCAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCAction.h; sourceTree = "<group>"; };
 		10AA080C13070E0400D11E6B /* CCAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCAction.m; sourceTree = "<group>"; };
 		10AA080D13070E0400D11E6B /* CCActionCamera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCActionCamera.h; sourceTree = "<group>"; };
@@ -689,6 +700,7 @@
 				10AA0AF113070FE700D11E6B /* OpenGLES.framework in Frameworks */,
 				10AA0AF313070FE700D11E6B /* QuartzCore.framework in Frameworks */,
 				10AA0AF513070FE700D11E6B /* libz.dylib in Frameworks */,
+				10A6BCB91325978000391C82 /* MediaPlayer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -758,6 +770,25 @@
 				10A08DC113215B3F003F24AD /* DressData_iPad.plist */,
 			);
 			name = dress;
+			sourceTree = "<group>";
+		};
+		10A6BC83132595A600391C82 /* video */ = {
+			isa = PBXGroup;
+			children = (
+				10A6BC85132595BA00391C82 /* GameVideo.h */,
+				10A6BC86132595BA00391C82 /* GameVideo.m */,
+				10A6BC87132595BA00391C82 /* GameVideo.xib */,
+			);
+			name = video;
+			sourceTree = "<group>";
+		};
+		10A6BC8A132595FF00391C82 /* video */ = {
+			isa = PBXGroup;
+			children = (
+				10A6BC9C1325966700391C82 /* ARG.mp4 */,
+				10A6BCED13259EC400391C82 /* videoLyrics.plist */,
+			);
+			name = video;
 			sourceTree = "<group>";
 		};
 		10AA080913070E0300D11E6B /* cocos2d Sources */ = {
@@ -1150,6 +1181,7 @@
 		10B56A571306EE3A00AA7DCB /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				10A6BC8A132595FF00391C82 /* video */,
 				10E025081311561C00549533 /* wheel */,
 				10B56ACA1306F89F00AA7DCB /* mm_logo.png */,
 				10B56ACB1306F89F00AA7DCB /* mm_logo@2x.png */,
@@ -1269,6 +1301,7 @@
 		2860E324111B887F00E27156 /* iPhone */ = {
 			isa = PBXGroup;
 			children = (
+				10A6BC83132595A600391C82 /* video */,
 				10AA0BD1130719BA00D11E6B /* MainMenu */,
 				10AA0B66130713FE00D11E6B /* Game Wheel */,
 				2860E325111B887F00E27156 /* AppDelegate_iPhone.h */,
@@ -1317,6 +1350,7 @@
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
+				10A6BCB81325978000391C82 /* MediaPlayer.framework */,
 			);
 			name = CustomTemplate;
 			sourceTree = "<group>";
@@ -1541,6 +1575,9 @@
 				10A6BBFA13251A8700391C82 /* dress_iPad.plist in Resources */,
 				10A6BBFB13251A8700391C82 /* dress_iPad.png in Resources */,
 				10A6BC0113251CB500391C82 /* dress_background_iPad.png in Resources */,
+				10A6BC89132595BA00391C82 /* GameVideo.xib in Resources */,
+				10A6BC9D1325966700391C82 /* ARG.mp4 in Resources */,
+				10A6BCEE13259EC400391C82 /* videoLyrics.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1663,6 +1700,7 @@
 				10A08C9413215091003F24AD /* GameDress_iPad.m in Sources */,
 				10A08C98132150A7003F24AD /* GameDressScene_iPad.m in Sources */,
 				10A08DC613215CC5003F24AD /* DDElement.m in Sources */,
+				10A6BC88132595BA00391C82 /* GameVideo.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

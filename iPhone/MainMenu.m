@@ -9,6 +9,7 @@
 #import "MainMenu.h"
 #import "AppDelegate_iPhone.h"
 #import "GameWheel.h"
+#import "GameVideo.h"
 
 @implementation MainMenu
 
@@ -30,6 +31,22 @@
 }
 */
 
+-(void)loadVideo
+{
+	[self.view removeFromSuperview];
+	[self release];
+	
+	GameVideo * gw = [[GameVideo alloc] 
+					  initWithNibName:@"GameVideo" bundle:nil];
+	[gw.view setAlpha:0];
+	AppDelegate_iPhone * app = (AppDelegate_iPhone *)[[UIApplication sharedApplication] delegate];
+	UIWindow * w = app.window;
+	[w addSubview:gw.view];
+	
+	[UIView beginAnimations:nil context:nil];
+	[gw.view setAlpha:1];
+	[UIView commitAnimations];
+}
 
 -(void)loadWheel
 {

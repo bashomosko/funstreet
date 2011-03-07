@@ -251,9 +251,9 @@
 	};
 	10A08C97132150A7003F24AD /* GameDressScene_iPad.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1601, 3809}}";
-			sepNavSelRange = "{7939, 0}";
-			sepNavVisRange = "{7076, 1709}";
+			sepNavIntBoundsRect = "{{0, 0}, {1251, 3809}}";
+			sepNavSelRange = "{6447, 0}";
+			sepNavVisRange = "{4523, 650}";
 		};
 	};
 	10A08CB0132151FB003F24AD /* PBXTextBookmark */ = {
@@ -320,9 +320,9 @@
 	};
 	10A08DC513215CC5003F24AD /* DDElement.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {614, 2366}}";
-			sepNavSelRange = "{156, 0}";
-			sepNavVisRange = "{0, 299}";
+			sepNavIntBoundsRect = "{{0, 0}, {889, 2262}}";
+			sepNavSelRange = "{1259, 0}";
+			sepNavVisRange = "{159, 1342}";
 		};
 	};
 	10A08DC913215DA3003F24AD /* Config.h */ = {
@@ -491,6 +491,331 @@
 		vrLen = 503;
 		vrLoc = 1762;
 	};
+	10A6BC85132595BA00391C82 /* GameVideo.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {889, 526}}";
+			sepNavSelRange = "{256, 16}";
+			sepNavVisRange = "{0, 282}";
+		};
+	};
+	10A6BC86132595BA00391C82 /* GameVideo.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1139, 1469}}";
+			sepNavSelRange = "{3069, 0}";
+			sepNavVisRange = "{1985, 1115}";
+		};
+	};
+	10A6BC8B1325960600391C82 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 10B56B361306FE7400AA7DCB /* GameWheel.m */;
+		name = "GameWheel.m: 69";
+		rLen = 86;
+		rLoc = 2009;
+		rType = 0;
+		vrLen = 1130;
+		vrLoc = 1479;
+	};
+	10A6BC8C1325960600391C82 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 10A08C96132150A7003F24AD /* GameDressScene_iPad.h */;
+		name = "GameDressScene_iPad.h: 14";
+		rLen = 0;
+		rLoc = 272;
+		rType = 0;
+		vrLen = 1448;
+		vrLoc = 1158;
+	};
+	10A6BC8D1325960600391C82 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 10A6BC0013251CB500391C82 /* dress_background_iPad.png */;
+	};
+	10A6BC8E1325960600391C82 /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 10A6BBF813251A8700391C82 /* dress_iPad.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+		);
+		name = /Users/pabloruiz/Documents/Basho/iPad/dress_iPad.plist;
+		rLen = 0;
+		rLoc = 9223372036854775807;
+	};
+	10A6BC8F1325960600391C82 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 10AA0B961307181700D11E6B /* GameWheelScene_iPad.m */;
+		name = "GameWheelScene_iPad.m: 16";
+		rLen = 221;
+		rLoc = 312;
+		rType = 0;
+		vrLen = 2560;
+		vrLoc = 0;
+	};
+	10A6BC901325960600391C82 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 10A08C97132150A7003F24AD /* GameDressScene_iPad.m */;
+		name = "GameDressScene_iPad.m: 240";
+		rLen = 0;
+		rLoc = 7939;
+		rType = 0;
+		vrLen = 1709;
+		vrLoc = 7076;
+	};
+	10A6BC911325960600391C82 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 10A08DC513215CC5003F24AD /* DDElement.m */;
+		name = "DDElement.m: 39";
+		rLen = 0;
+		rLoc = 1259;
+		rType = 0;
+		vrLen = 1345;
+		vrLoc = 159;
+	};
+	10A6BC921325960600391C82 /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 10A08DC113215B3F003F24AD /* DressData_iPad.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+			sunglasses,
+			3,
+			"file-soundOk",
+		);
+		name = /Users/pabloruiz/Documents/Basho/iPad/DressData_iPad.plist;
+		rLen = 0;
+		rLoc = 9223372036854775807;
+	};
+	10A6BC931325960600391C82 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 10A6BC85132595BA00391C82 /* GameVideo.h */;
+		name = "GameVideo.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 211;
+		vrLoc = 0;
+	};
+	10A6BC941325960600391C82 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 10B569FD1306EB2B00AA7DCB /* MainMenu.m */;
+		name = "MainMenu.m: 12";
+		rLen = 0;
+		rLoc = 228;
+		rType = 0;
+		vrLen = 986;
+		vrLoc = 0;
+	};
+	10A6BC951325960600391C82 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 10B56AD11306F92600AA7DCB /* MainMenu_both.m */;
+		name = "MainMenu_both.m: 65";
+		rLen = 0;
+		rLoc = 1658;
+		rType = 0;
+		vrLen = 1186;
+		vrLoc = 0;
+	};
+	10A6BC961325960600391C82 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 10B56AD11306F92600AA7DCB /* MainMenu_both.m */;
+		name = "MainMenu_both.m: 74";
+		rLen = 0;
+		rLoc = 1889;
+		rType = 0;
+		vrLen = 1038;
+		vrLoc = 1251;
+	};
+	10A6BC991325960600391C82 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 10A08C97132150A7003F24AD /* GameDressScene_iPad.m */;
+		name = "GameDressScene_iPad.m: 217";
+		rLen = 0;
+		rLoc = 6447;
+		rType = 0;
+		vrLen = 701;
+		vrLoc = 4523;
+	};
+	10A6BCDE1325985A00391C82 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 10B56AD11306F92600AA7DCB /* MainMenu_both.m */;
+		name = "MainMenu_both.m: 74";
+		rLen = 0;
+		rLoc = 1889;
+		rType = 0;
+		vrLen = 1038;
+		vrLoc = 1251;
+	};
+	10A6BCDF1325985A00391C82 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 10B569FD1306EB2B00AA7DCB /* MainMenu.m */;
+		name = "MainMenu.m: 12";
+		rLen = 0;
+		rLoc = 228;
+		rType = 0;
+		vrLen = 986;
+		vrLoc = 0;
+	};
+	10A6BCE01325985A00391C82 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 10A6BC86132595BA00391C82 /* GameVideo.m */;
+	};
+	10A6BCE11325985A00391C82 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 10A6BC86132595BA00391C82 /* GameVideo.m */;
+		name = "GameVideo.m: 40";
+		rLen = 0;
+		rLoc = 1046;
+		rType = 0;
+		vrLen = 1013;
+		vrLoc = 595;
+	};
+	10A6BCE21325985A00391C82 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 10A08C97132150A7003F24AD /* GameDressScene_iPad.m */;
+		name = "GameDressScene_iPad.m: 217";
+		rLen = 0;
+		rLoc = 6447;
+		rType = 0;
+		vrLen = 701;
+		vrLoc = 4523;
+	};
+	10A6BCFC1325A1A700391C82 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 10A6BC85132595BA00391C82 /* GameVideo.h */;
+		name = "GameVideo.h: 15";
+		rLen = 16;
+		rLoc = 256;
+		rType = 0;
+		vrLen = 282;
+		vrLoc = 0;
+	};
+	10A6BCFD1325A1A700391C82 /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 10A6BCED13259EC400391C82 /* videoLyrics.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+			0,
+			duration,
+		);
+		name = /Users/pabloruiz/Documents/Basho/iPhone/videoLyrics.plist;
+		rLen = 0;
+		rLoc = 9223372036854775807;
+	};
+	10A6BCFE1325A1A700391C82 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 10A6BC86132595BA00391C82 /* GameVideo.m */;
+		name = "GameVideo.m: 79";
+		rLen = 0;
+		rLoc = 2320;
+		rType = 0;
+		vrLen = 1267;
+		vrLoc = 1219;
+	};
+	10A6BCFF1325A1A700391C82 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 10A6BC86132595BA00391C82 /* GameVideo.m */;
+		name = "GameVideo.m: 73";
+		rLen = 375;
+		rLoc = 1945;
+		rType = 0;
+		vrLen = 1072;
+		vrLoc = 1219;
+	};
+	10A6BD001325A1A700391C82 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 10A08C97132150A7003F24AD /* GameDressScene_iPad.m */;
+		name = "GameDressScene_iPad.m: 217";
+		rLen = 0;
+		rLoc = 6447;
+		rType = 0;
+		vrLen = 650;
+		vrLoc = 4523;
+	};
+	10A6BD041325A1DC00391C82 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 10A6BC86132595BA00391C82 /* GameVideo.m */;
+		name = "GameVideo.m: 66";
+		rLen = 0;
+		rLoc = 1886;
+		rType = 0;
+		vrLen = 1094;
+		vrLoc = 1219;
+	};
+	10A6BD051325A1DC00391C82 /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 10A6BCED13259EC400391C82 /* videoLyrics.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+			0,
+			duration,
+		);
+		name = /Users/pabloruiz/Documents/Basho/iPhone/videoLyrics.plist;
+		rLen = 1;
+		rLoc = 0;
+	};
+	10A6BD061325A1DC00391C82 /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 10A6BCED13259EC400391C82 /* videoLyrics.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+		);
+		name = /Users/pabloruiz/Documents/Basho/iPhone/videoLyrics.plist;
+		rLen = 0;
+		rLoc = 9223372036854775807;
+	};
+	10A6BD071325A1DC00391C82 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 10A08C97132150A7003F24AD /* GameDressScene_iPad.m */;
+		name = "GameDressScene_iPad.m: 217";
+		rLen = 0;
+		rLoc = 6447;
+		rType = 0;
+		vrLen = 650;
+		vrLoc = 4523;
+	};
+	10A6BD0D1325A20C00391C82 /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 10A6BCED13259EC400391C82 /* videoLyrics.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+		);
+		name = /Users/pabloruiz/Documents/Basho/iPhone/videoLyrics.plist;
+		rLen = 0;
+		rLoc = 9223372036854775807;
+	};
+	10A6BD0E1325A20C00391C82 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 10AA095113070EEA00D11E6B /* GameWheelScene.m */;
+		name = "GameWheelScene.m: 49";
+		rLen = 0;
+		rLoc = 2622;
+		rType = 0;
+		vrLen = 949;
+		vrLoc = 2005;
+	};
+	10A6BD0F1325A20C00391C82 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 10A6BC86132595BA00391C82 /* GameVideo.m */;
+		name = "GameVideo.m: 110";
+		rLen = 0;
+		rLoc = 3069;
+		rType = 0;
+		vrLen = 1115;
+		vrLoc = 1985;
+	};
+	10A6BD101325A20C00391C82 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 10A08C97132150A7003F24AD /* GameDressScene_iPad.m */;
+		name = "GameDressScene_iPad.m: 217";
+		rLen = 0;
+		rLoc = 6447;
+		rType = 0;
+		vrLen = 650;
+		vrLoc = 4523;
+	};
 	10AA082F13070E0400D11E6B /* ccConfig.h */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {889, 3692}}";
@@ -563,9 +888,9 @@
 	};
 	10AA095113070EEA00D11E6B /* GameWheelScene.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1559, 1859}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1559, 1612}}";
 			sepNavSelRange = "{2622, 0}";
-			sepNavVisRange = "{2107, 691}";
+			sepNavVisRange = "{2005, 949}";
 		};
 	};
 	10AA0B691307144C00D11E6B /* PBXTextBookmark */ = {
@@ -751,9 +1076,9 @@
 	};
 	10B569FD1306EB2B00AA7DCB /* MainMenu.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1139, 988}}";
-			sepNavSelRange = "{860, 0}";
-			sepNavVisRange = "{729, 863}";
+			sepNavIntBoundsRect = "{{0, 0}, {1139, 1274}}";
+			sepNavSelRange = "{228, 0}";
+			sepNavVisRange = "{0, 986}";
 		};
 	};
 	10B56A011306EB3F00AA7DCB /* MainMenu_iPad.h */ = {
@@ -807,9 +1132,9 @@
 	};
 	10B56AD11306F92600AA7DCB /* MainMenu_both.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1139, 1235}}";
-			sepNavSelRange = "{1658, 0}";
-			sepNavVisRange = "{0, 1186}";
+			sepNavIntBoundsRect = "{{0, 0}, {1139, 1274}}";
+			sepNavSelRange = "{1889, 0}";
+			sepNavVisRange = "{1251, 1038}";
 		};
 	};
 	10B56AED1306FCC300AA7DCB /* PlistBookmark */ = {
@@ -835,7 +1160,7 @@
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1139, 1872}}";
 			sepNavSelRange = "{2009, 86}";
-			sepNavVisRange = "{1762, 503}";
+			sepNavVisRange = "{1762, 418}";
 		};
 	};
 	10B56BA2130701A100AA7DCB /* GameWheel_iPad.h */ = {
@@ -858,7 +1183,7 @@
 		fRef = 10B569FD1306EB2B00AA7DCB /* MainMenu.m */;
 		name = "MainMenu.m: 39";
 		rLen = 0;
-		rLoc = 860;
+		rLoc = 1311;
 		rType = 0;
 		vrLen = 863;
 		vrLoc = 729;
@@ -1020,6 +1345,37 @@
 			10A4D09D132282A8006FCB6D = 10A4D09D132282A8006FCB6D /* PBXTextBookmark */;
 			10A6BC1113251E3100391C82 /* XCBuildMessageTextBookmark */ = 10A6BC1113251E3100391C82 /* XCBuildMessageTextBookmark */;
 			10A6BC1213251E3100391C82 /* PBXTextBookmark */ = 10A6BC1213251E3100391C82 /* PBXTextBookmark */;
+			10A6BC8B1325960600391C82 /* PBXTextBookmark */ = 10A6BC8B1325960600391C82 /* PBXTextBookmark */;
+			10A6BC8C1325960600391C82 /* PBXTextBookmark */ = 10A6BC8C1325960600391C82 /* PBXTextBookmark */;
+			10A6BC8D1325960600391C82 /* PBXBookmark */ = 10A6BC8D1325960600391C82 /* PBXBookmark */;
+			10A6BC8E1325960600391C82 /* PlistBookmark */ = 10A6BC8E1325960600391C82 /* PlistBookmark */;
+			10A6BC8F1325960600391C82 /* PBXTextBookmark */ = 10A6BC8F1325960600391C82 /* PBXTextBookmark */;
+			10A6BC901325960600391C82 /* PBXTextBookmark */ = 10A6BC901325960600391C82 /* PBXTextBookmark */;
+			10A6BC911325960600391C82 /* PBXTextBookmark */ = 10A6BC911325960600391C82 /* PBXTextBookmark */;
+			10A6BC921325960600391C82 /* PlistBookmark */ = 10A6BC921325960600391C82 /* PlistBookmark */;
+			10A6BC931325960600391C82 /* PBXTextBookmark */ = 10A6BC931325960600391C82 /* PBXTextBookmark */;
+			10A6BC941325960600391C82 /* PBXTextBookmark */ = 10A6BC941325960600391C82 /* PBXTextBookmark */;
+			10A6BC951325960600391C82 /* PBXTextBookmark */ = 10A6BC951325960600391C82 /* PBXTextBookmark */;
+			10A6BC961325960600391C82 /* PBXTextBookmark */ = 10A6BC961325960600391C82 /* PBXTextBookmark */;
+			10A6BC991325960600391C82 /* PBXTextBookmark */ = 10A6BC991325960600391C82 /* PBXTextBookmark */;
+			10A6BCDE1325985A00391C82 /* PBXTextBookmark */ = 10A6BCDE1325985A00391C82 /* PBXTextBookmark */;
+			10A6BCDF1325985A00391C82 /* PBXTextBookmark */ = 10A6BCDF1325985A00391C82 /* PBXTextBookmark */;
+			10A6BCE01325985A00391C82 /* PBXBookmark */ = 10A6BCE01325985A00391C82 /* PBXBookmark */;
+			10A6BCE11325985A00391C82 /* PBXTextBookmark */ = 10A6BCE11325985A00391C82 /* PBXTextBookmark */;
+			10A6BCE21325985A00391C82 /* PBXTextBookmark */ = 10A6BCE21325985A00391C82 /* PBXTextBookmark */;
+			10A6BCFC1325A1A700391C82 /* PBXTextBookmark */ = 10A6BCFC1325A1A700391C82 /* PBXTextBookmark */;
+			10A6BCFD1325A1A700391C82 /* PlistBookmark */ = 10A6BCFD1325A1A700391C82 /* PlistBookmark */;
+			10A6BCFE1325A1A700391C82 /* PBXTextBookmark */ = 10A6BCFE1325A1A700391C82 /* PBXTextBookmark */;
+			10A6BCFF1325A1A700391C82 /* PBXTextBookmark */ = 10A6BCFF1325A1A700391C82 /* PBXTextBookmark */;
+			10A6BD001325A1A700391C82 /* PBXTextBookmark */ = 10A6BD001325A1A700391C82 /* PBXTextBookmark */;
+			10A6BD041325A1DC00391C82 /* PBXTextBookmark */ = 10A6BD041325A1DC00391C82 /* PBXTextBookmark */;
+			10A6BD051325A1DC00391C82 /* PlistBookmark */ = 10A6BD051325A1DC00391C82 /* PlistBookmark */;
+			10A6BD061325A1DC00391C82 /* PlistBookmark */ = 10A6BD061325A1DC00391C82 /* PlistBookmark */;
+			10A6BD071325A1DC00391C82 /* PBXTextBookmark */ = 10A6BD071325A1DC00391C82 /* PBXTextBookmark */;
+			10A6BD0D1325A20C00391C82 /* PlistBookmark */ = 10A6BD0D1325A20C00391C82 /* PlistBookmark */;
+			10A6BD0E1325A20C00391C82 /* PBXTextBookmark */ = 10A6BD0E1325A20C00391C82 /* PBXTextBookmark */;
+			10A6BD0F1325A20C00391C82 /* PBXTextBookmark */ = 10A6BD0F1325A20C00391C82 /* PBXTextBookmark */;
+			10A6BD101325A20C00391C82 /* PBXTextBookmark */ = 10A6BD101325A20C00391C82 /* PBXTextBookmark */;
 			10AA0B691307144C00D11E6B = 10AA0B691307144C00D11E6B /* PBXTextBookmark */;
 			10AA0BD8130719ED00D11E6B = 10AA0BD8130719ED00D11E6B /* PBXTextBookmark */;
 			10AA0BD9130719ED00D11E6B = 10AA0BD9130719ED00D11E6B /* PBXTextBookmark */;

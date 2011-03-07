@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>duration</key>
+		<integer>5</integer>
+		<key>lyric</key>
+		<string>this is line 1</string>
+	</dict>
+	<dict>
+		<key>duration</key>
+		<integer>3</integer>
+		<key>lyric</key>
+		<string>this is line 2</string>
+	</dict>
+	<dict>
+		<key>duration</key>
+		<integer>5</integer>
+		<key>lyric</key>
+		<string>this is line 3</string>
+	</dict>
+	<dict>
+		<key>duration</key>
+		<integer>1</integer>
+		<key>lyric</key>
+		<string>this is line 4</string>
+	</dict>
+</array>
+</plist>
