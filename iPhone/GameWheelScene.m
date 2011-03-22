@@ -62,7 +62,7 @@
 			[dino setPosition:ccp(240,160)];
 			[self addChild:dino];
 			
-			CCMenuItemImage * backBtn = [CCMenuItemImage itemFromNormalImage:@"wheel_home.png" selectedImage:@"wheel_home.png" target:self selector:@selector(goBack)];
+			backBtn = [CCMenuItemImage itemFromNormalImage:@"wheel_home.png" selectedImage:@"wheel_home.png" target:self selector:@selector(goBack)];
 			
 			CCMenuItemImage * soundOff = [CCMenuItemImage itemFromNormalImage:@"wheel_sound_off.png" selectedImage:@"wheel_sound_on.png"];
 			CCMenuItemImage * soundOn = [CCMenuItemImage itemFromNormalImage:@"wheel_sound_on.png" selectedImage:@"wheel_sound_off.png"];

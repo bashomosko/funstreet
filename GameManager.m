@@ -72,6 +72,9 @@ static GameManager *sharedInstance = nil;
 	soundsEnabled = !soundsEnabled;
 }
 
+-(void)unlockGame:(int)game
+{
+}
 						  
 - (void)dealloc {
 	[super dealloc];

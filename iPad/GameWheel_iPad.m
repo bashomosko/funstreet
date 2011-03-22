@@ -93,6 +93,8 @@
 
 -(void)goToMenu
 {
+	[[CCScheduler sharedScheduler] unscheduleAllSelectors];
+	[[CCActionManager sharedManager] removeAllActions];
 	CCDirector *director = [CCDirector sharedDirector];
 	[[director openGLView] removeFromSuperview];
 	[director end];	

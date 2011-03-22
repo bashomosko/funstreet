@@ -134,6 +134,13 @@
 			[self addChild:particles];
 			[particles setPosition:mySprite.position];
 			[particles setAutoRemoveOnFinish:YES];*/
+			
+			CCSprite * smoke = [CCSprite spriteWithFile:@"Poof_iPad.png"];
+			[smoke setPosition:ccp(512,384)];
+			[theGame addChild:smoke z:20];
+			[smoke setScale:0];
+			[smoke runAction:[CCSequence actions:[CCScaleTo actionWithDuration:0.5 scale:2],[CCSpawn actions:[CCScaleTo actionWithDuration:0.5 scale:2],[CCFadeOut actionWithDuration:0.5],nil],[CCCallFuncN actionWithTarget:self selector:@selector(removeNode:)],nil]];
+			
 			if([GameManager sharedGameManager].soundsEnabled)
 				[[SimpleAudioEngine sharedEngine] playEffect:soundOkPath];
 			placed = YES;
@@ -155,6 +162,11 @@
 	//[theGame checkWinCondition];
 	
 	state = kStateUngrabbed;
+}
+
+-(void)removeNode:(CCNode *)node
+{
+	[node.parent removeChild:node cleanup:YES];
 }
 
 -(void)dealloc

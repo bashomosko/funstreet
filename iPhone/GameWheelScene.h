@@ -16,6 +16,7 @@
 // HelloWorld Layer
 @interface GameWheelScene : GameWheelScene_both
 {
+	CCMenuItemImage * backBtn;
 }
 
 // returns a Scene that contains the HelloWorld as the only child

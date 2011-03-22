@@ -4,27 +4,327 @@
 <array>
 	<dict>
 		<key>duration</key>
-		<integer>5</integer>
+		<integer>2</integer>
 		<key>lyric</key>
-		<string>this is line 1</string>
+		<string>1-2  1-2-3-4</string>
 	</dict>
 	<dict>
 		<key>duration</key>
-		<integer>3</integer>
+		<integer>2</integer>
 		<key>lyric</key>
-		<string>this is line 2</string>
+		<string>Quiero mis botas</string>
 	</dict>
 	<dict>
 		<key>duration</key>
-		<integer>5</integer>
+		<integer>2</integer>
 		<key>lyric</key>
-		<string>this is line 3</string>
+		<string>¿Dónde están?</string>
 	</dict>
 	<dict>
 		<key>duration</key>
-		<integer>1</integer>
+		<integer>2</integer>
 		<key>lyric</key>
-		<string>this is line 4</string>
+		<string>Quiero mis botas</string>
+	</dict>
+	<dict>
+		<key>duration</key>
+		<integer>2</integer>
+		<key>lyric</key>
+		<string>¿Dónde están?</string>
+	</dict>
+	<dict>
+		<key>duration</key>
+		<integer>2</integer>
+		<key>lyric</key>
+		<string>¿Debajo de la mesa?</string>
+	</dict>
+	<dict>
+		<key>duration</key>
+		<integer>2</integer>
+		<key>lyric</key>
+		<string>No están ahí</string>
+	</dict>
+	<dict>
+		<key>duration</key>
+		<integer>2</integer>
+		<key>lyric</key>
+		<string>¿Encima de la silla?</string>
+	</dict>
+	<dict>
+		<key>duration</key>
+		<integer>2</integer>
+		<key>lyric</key>
+		<string>No están ahí</string>
+	</dict>
+	<dict>
+		<key>duration</key>
+		<integer>2</integer>
+		<key>lyric</key>
+		<string>¿Adentro de la bolsa?</string>
+	</dict>
+	<dict>
+		<key>duration</key>
+		<integer>2</integer>
+		<key>lyric</key>
+		<string>No están ahí</string>
+	</dict>
+	<dict>
+		<key>duration</key>
+		<integer>2</integer>
+		<key>lyric</key>
+		<string>¿Dónde están mis botas?</string>
+	</dict>
+	<dict>
+		<key>duration</key>
+		<integer>2</integer>
+		<key>lyric</key>
+		<string>En mis pies, están aquí</string>
+	</dict>
+	<dict>
+		<key>duration</key>
+		<integer>2</integer>
+		<key>lyric</key>
+		<string>Quiero mi chaqueta</string>
+	</dict>
+	<dict>
+		<key>duration</key>
+		<integer>2</integer>
+		<key>lyric</key>
+		<string>¿Dónde está?</string>
+	</dict>
+	<dict>
+		<key>duration</key>
+		<integer>2</integer>
+		<key>lyric</key>
+		<string>Quiero mi chaqueta</string>
+	</dict>
+	<dict>
+		<key>duration</key>
+		<integer>2</integer>
+		<key>lyric</key>
+		<string>¿Dónde está?</string>
+	</dict>
+	<dict>
+		<key>duration</key>
+		<integer>2</integer>
+		<key>lyric</key>
+		<string>¿Debajo de la mesa?</string>
+	</dict>
+	<dict>
+		<key>duration</key>
+		<integer>2</integer>
+		<key>lyric</key>
+		<string>No están ahí</string>
+	</dict>
+	<dict>
+		<key>duration</key>
+		<integer>2</integer>
+		<key>lyric</key>
+		<string>¿Encima de la silla?</string>
+	</dict>
+	<dict>
+		<key>duration</key>
+		<integer>2</integer>
+		<key>lyric</key>
+		<string>No están ahí</string>
+	</dict>
+	<dict>
+		<key>duration</key>
+		<integer>2</integer>
+		<key>lyric</key>
+		<string>¿Adentro de la bolsa?</string>
+	</dict>
+	<dict>
+		<key>duration</key>
+		<integer>2</integer>
+		<key>lyric</key>
+		<string>No están ahí</string>
+	</dict>
+	<dict>
+		<key>duration</key>
+		<integer>2</integer>
+		<key>lyric</key>
+		<string>¿Dónde está mi chaqueta?</string>
+	</dict>
+	<dict>
+		<key>duration</key>
+		<integer>2</integer>
+		<key>lyric</key>
+		<string>En mi espalda está aquí</string>
+	</dict>
+	<dict>
+		<key>duration</key>
+		<integer>2</integer>
+		<key>lyric</key>
+		<string>Quiero mi gorra</string>
+	</dict>
+	<dict>
+		<key>duration</key>
+		<integer>2</integer>
+		<key>lyric</key>
+		<string>¿Dónde está?</string>
+	</dict>
+	<dict>
+		<key>duration</key>
+		<integer>2</integer>
+		<key>lyric</key>
+		<string>Quiero mi gorra</string>
+	</dict>
+	<dict>
+		<key>duration</key>
+		<integer>2</integer>
+		<key>lyric</key>
+		<string>¿Dónde está?</string>
+	</dict>
+	<dict>
+		<key>duration</key>
+		<integer>2</integer>
+		<key>lyric</key>
+		<string>¿Debajo de la mesa?</string>
+	</dict>
+	<dict>
+		<key>duration</key>
+		<integer>2</integer>
+		<key>lyric</key>
+		<string>No están ahí</string>
+	</dict>
+	<dict>
+		<key>duration</key>
+		<integer>2</integer>
+		<key>lyric</key>
+		<string>¿Encima de la silla?</string>
+	</dict>
+	<dict>
+		<key>duration</key>
+		<integer>2</integer>
+		<key>lyric</key>
+		<string>No están ahí</string>
+	</dict>
+	<dict>
+		<key>duration</key>
+		<integer>2</integer>
+		<key>lyric</key>
+		<string>¿Adentro de la bolsa?</string>
+	</dict>
+	<dict>
+		<key>duration</key>
+		<integer>2</integer>
+		<key>lyric</key>
+		<string>No están ahí</string>
+	</dict>
+	<dict>
+		<key>duration</key>
+		<integer>2</integer>
+		<key>lyric</key>
+		<string>¿Dónde está mi gorra?</string>
+	</dict>
+	<dict>
+		<key>duration</key>
+		<integer>2</integer>
+		<key>lyric</key>
+		<string>En mi cabeza, está aquí</string>
+	</dict>
+	<dict>
+		<key>duration</key>
+		<integer>2</integer>
+		<key>lyric</key>
+		<string>Quiero mi mochila</string>
+	</dict>
+	<dict>
+		<key>duration</key>
+		<integer>2</integer>
+		<key>lyric</key>
+		<string>¿Dónde está?</string>
+	</dict>
+	<dict>
+		<key>duration</key>
+		<integer>2</integer>
+		<key>lyric</key>
+		<string>Quiero mi mochila</string>
+	</dict>
+	<dict>
+		<key>duration</key>
+		<integer>2</integer>
+		<key>lyric</key>
+		<string>¿Dónde está?</string>
+	</dict>
+	<dict>
+		<key>duration</key>
+		<integer>2</integer>
+		<key>lyric</key>
+		<string>¿Debajo de la mesa?</string>
+	</dict>
+	<dict>
+		<key>duration</key>
+		<integer>2</integer>
+		<key>lyric</key>
+		<string>No están ahí</string>
+	</dict>
+	<dict>
+		<key>duration</key>
+		<integer>2</integer>
+		<key>lyric</key>
+		<string>¿Encima de la silla?</string>
+	</dict>
+	<dict>
+		<key>duration</key>
+		<integer>2</integer>
+		<key>lyric</key>
+		<string>No están ahí</string>
+	</dict>
+	<dict>
+		<key>duration</key>
+		<integer>2</integer>
+		<key>lyric</key>
+		<string>¿Adentro de la bolsa?</string>
+	</dict>
+	<dict>
+		<key>duration</key>
+		<integer>2</integer>
+		<key>lyric</key>
+		<string>No están ahí</string>
+	</dict>
+	<dict>
+		<key>duration</key>
+		<integer>2</integer>
+		<key>lyric</key>
+		<string>¿Dónde está mi mochila?</string>
+	</dict>
+	<dict>
+		<key>duration</key>
+		<integer>2</integer>
+		<key>lyric</key>
+		<string>¿Dónde está mi mochila?</string>
+	</dict>
+	<dict>
+		<key>duration</key>
+		<integer>2</integer>
+		<key>lyric</key>
+		<string>¿Dónde está mi mochila?</string>
+	</dict>
+	<dict>
+		<key>duration</key>
+		<integer>2</integer>
+		<key>lyric</key>
+		<string>En mis hombros, está aquí</string>
+	</dict>
+	<dict>
+		<key>duration</key>
+		<integer>2</integer>
+		<key>lyric</key>
+		<string>Hey, ya tengo mi mochila, ya tengo mis botas,</string>
+	</dict>
+	<dict>
+		<key>duration</key>
+		<integer>2</integer>
+		<key>lyric</key>
+		<string>ya tengo mi chaqueta, es hora de</string>
+	</dict>
+	<dict>
+		<key>duration</key>
+		<integer>2</integer>
+		<key>lyric</key>
+		<string>jugar ahí afuera.  ¡Vamos juntos amigos todos, vamonos!</string>
 	</dict>
 </array>
 </plist>

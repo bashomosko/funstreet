@@ -12,7 +12,7 @@
 
 #define kPALABRA 1000
 #define kSCORE 1001
-#define kPointsAwarded 15
+#define kPointsAwarded 5
 
 #define BTN_BACKPACK @"backpack"
 #define BTN_BOOTS @"boots"
@@ -80,11 +80,15 @@
 	CCMenu * tapButtons;
 	
 	BOOL bashoDirected;
+	NSMutableArray * bashoSelectedItems ;
 	
 	int score;
 	
 	BOOL isInIpad;
 	NSString * iPad;
+	
+	int currentAttempts;
+	BOOL maxedAttemps;
 	
 }
 

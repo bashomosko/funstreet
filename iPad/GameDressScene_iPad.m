@@ -65,63 +65,70 @@
 		[sbn addChild:shirt];
 		[shirt setPosition:ccp(512,384)];
 		
-	/*	CCSprite * hat = [CCSprite spriteWithSpriteFrameName:@"BlueHatOn_iPad.png"];
-		[sbn addChild:hat];
-		[hat setPosition:ccp(512,384)];
-		
-		CCSprite * backpack = [CCSprite spriteWithSpriteFrameName:@"BlueBackpackStrapOn_iPad.png"];
-		[sbn addChild:backpack];
-		[backpack setPosition:ccp(512,384)];
-		
-		CCSprite * boots = [CCSprite spriteWithSpriteFrameName:@"BlueBootsOn_iPad.png"];
-		[sbn addChild:boots];
-		[boots setPosition:ccp(512,384)];
-		
-		CCSprite * glasses = [CCSprite spriteWithSpriteFrameName:@"BlueGlassesOn_iPad.png"];
-		[sbn addChild:glasses];
-		[glasses setPosition:ccp(512,384)];
-		
-		CCSprite * jacket = [CCSprite spriteWithSpriteFrameName:@"BlueJacketOn_iPad.png"];
-		[sbn addChild:jacket];
-		[jacket setPosition:ccp(512,384)];
-		
-		CCSprite * necklace = [CCSprite spriteWithSpriteFrameName:@"BlueNecklaceOn_iPad.png"];
-		[sbn addChild:necklace];
-		[necklace setPosition:ccp(512,384)];
-		
-		CCSprite * pants = [CCSprite spriteWithSpriteFrameName:@"BluePantsOn_iPad.png"];
-		[sbn addChild:pants];
-		[pants setPosition:ccp(512,384)];
-		
-		CCSprite * phone = [CCSprite spriteWithSpriteFrameName:@"BluePhoneRightHandOn_iPad.png"];
-		[sbn addChild:phone];
-		[phone setPosition:ccp(512,384)];
-		*/
-		
 			CCMenuItemImage * backBtn = [CCMenuItemImage itemFromNormalImage:@"wheel_home_iPad.png" selectedImage:@"wheel_home_iPad.png" target:self selector:@selector(goBack)];
 			
-			/*CCMenuItemImage * soundOff = [CCMenuItemImage itemFromNormalImage:@"wheel_sound_off_iPad.png" selectedImage:@"wheel_sound_on_iPad.png"];
+			CCMenuItemImage * soundOff = [CCMenuItemImage itemFromNormalImage:@"wheel_sound_off_iPad.png" selectedImage:@"wheel_sound_on_iPad.png"];
 			CCMenuItemImage * soundOn = [CCMenuItemImage itemFromNormalImage:@"wheel_sound_on_iPad.png" selectedImage:@"wheel_sound_off_iPad.png"];
 			CCMenuItemToggle * sound = [CCMenuItemToggle itemWithTarget:self selector:@selector(turnSounds) items:soundOn,soundOff,nil];
 			
 			CCMenuItemImage * bashoOff = [CCMenuItemImage itemFromNormalImage:@"wheel_basho_off_iPad.png" selectedImage:@"wheel_basho_on_iPad.png"];
 			CCMenuItemImage * bashoOn = [CCMenuItemImage itemFromNormalImage:@"wheel_basho_on_iPad.png" selectedImage:@"wheel_basho_off_iPad.png"];
 			CCMenuItemToggle * basho = [CCMenuItemToggle itemWithTarget:self selector:@selector(turnBasho) items:bashoOff,bashoOn,nil];
-			*/
 			
-			CCMenu * menu = [CCMenu menuWithItems:backBtn/*,sound,basho*/,nil];
+			
+			CCMenu * menu = [CCMenu menuWithItems:backBtn,sound,basho,nil];
 			[self addChild:menu];
 			[backBtn setPosition:ccp(64,696)];
-			//[sound setPosition:ccp(43,48)];
-			//[basho setPosition:ccp(149,72)];
+			[sound setPosition:ccp(43,48)];
+			[basho setPosition:ccp(149,72)];
 			[menu setPosition:ccp(0,0)];
 			
 		[self selectItemForBasho];
 			
+		[self loadScore];
+		
 		}
 		return self;
 		
 }
+
+-(void)loadScore
+{
+	CCSprite * back = [CCSprite spriteWithFile:@"wheel_pointsField_iPad.png"];
+	[back setPosition:ccp(959,703)];
+	[self addChild:back];
+	
+	CCLabelTTF * scoreLbl = [CCLabelTTF labelWithString:@"0" fontName:@"Verdana" fontSize:60];
+	[scoreLbl setColor:ccBLACK];
+	[self addChild:scoreLbl z:1 tag:kSCORE];
+	[scoreLbl setPosition:ccp(959,703)];
+	[scoreLbl setOpacity:0];
+}
+
+-(void)turnSounds
+{
+	GameManager * gm = [GameManager sharedGameManager];
+	[gm turnSounds];
+}
+
+-(void)turnBasho
+{
+	bashoDirected = !bashoDirected;
+	
+	[self makeScoreAppear:bashoDirected];
+	
+}
+
+-(void)makeScoreAppear:(BOOL)appear
+{
+	CCLabelTTF * scoreLbl = [self getChildByTag:kSCORE];
+	if(appear)
+		[scoreLbl setOpacity:255];
+	else
+		[scoreLbl setOpacity:0];
+	
+}
+
 
 -(void)selectItemForBasho
 {
@@ -131,7 +138,23 @@
 		bashoSelectedSound = 0;
 		
 		//RESET DINO
-		[self schedule:@selector(resetDino) interval:3];
+		CCSprite * gloopbackground = [CCSprite spriteWithFile:@"3DStars_iPad_00000.pvr"];
+		[gloopbackground setPosition:ccp(512,384)];
+		[self addChild:gloopbackground];
+		//ANIMATION
+		NSMutableArray * gloopFrames = [[[NSMutableArray  alloc]init]autorelease];
+		for(int i = 0; i <= 15; i++) {
+			
+			CCSprite * sp = [CCSprite spriteWithFile:[NSString stringWithFormat:@"3DStars_iPad_%05d.pvr",i]];
+			CCSpriteFrame *frame = [CCSpriteFrame frameWithTexture:sp.texture rect:sp.textureRect];
+			[gloopFrames addObject:frame];
+		}
+		
+		CCAnimation * gloopAnimation = [CCAnimation animationWithFrames:gloopFrames delay:0.1f];
+		[gloopbackground runAction:[CCRepeatForever actionWithAction: [CCAnimate actionWithAnimation:gloopAnimation restoreOriginalFrame:NO] ]];
+		
+		
+		//[self schedule:@selector(resetDino) interval:3];
 		return;
 	}
 	

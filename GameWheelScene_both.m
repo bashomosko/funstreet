@@ -42,13 +42,52 @@
 	
 	[self makeScoreAppear:bashoDirected];
 	if(bashoDirected)
+	{
+		score = 0;
+		CCLabelTTF * scoreLbl = [self getChildByTag:kSCORE];
+		[scoreLbl setString:@"0"];
+		[bashoSelectedItems removeAllObjects];
+		[bashoSelectedItems addObject:[NSNumber numberWithInt:0]];
+		[bashoSelectedItems addObject:[NSNumber numberWithInt:1]];
+		[bashoSelectedItems addObject:[NSNumber numberWithInt:2]];
+		[bashoSelectedItems addObject:[NSNumber numberWithInt:3]];
+		[bashoSelectedItems addObject:[NSNumber numberWithInt:4]];
+		[bashoSelectedItems addObject:[NSNumber numberWithInt:5]];
+		[bashoSelectedItems addObject:[NSNumber numberWithInt:6]];
+		[bashoSelectedItems addObject:[NSNumber numberWithInt:7]];
+		
 		[self selectItemForBasho];
+	}else {
+		for (CCMenuItemImage * m in [tapButtons children])
+		{
+			[m setIsEnabled:YES];
+			m.opacity =255;
+			
+		}
+	}
+
+}
+
+-(void)showPoints
+{
+	CCMenuItemImage * backBtn2 = [CCMenuItemImage itemFromNormalImage:@"wheel_home_iPad.png" selectedImage:@"wheel_home_iPad.png" target:self selector:@selector(goBack)];
+	[backBtn2 setScale:5];
+		
+	CCMenu * menu = [CCMenu menuWithItems:backBtn2,nil];
+	[self addChild:menu];
+	[backBtn2 setPosition:ccp(500,500)];
+	[menu setPosition:ccp(0,0)];
+	
+	//[self goBack];
 }
 
 -(void)selectItemForBasho
-{
-	bashoSelectedSound = arc4random() %8;
+{	
+	currentAttempts =0;
 	
+	int indexBashoSelectedSound = arc4random() %[bashoSelectedItems count];
+	bashoSelectedSound = [[bashoSelectedItems objectAtIndex:indexBashoSelectedSound] intValue];
+	[bashoSelectedItems removeObjectAtIndex:indexBashoSelectedSound];
 	NSString * sound = nil;
 	switch (bashoSelectedSound)
 	{
@@ -93,6 +132,8 @@
 
 -(void)loadButtons
 {
+	bashoSelectedItems = [[NSMutableArray array]retain];
+		
 	NSMutableArray * btnImgs = [NSMutableArray arrayWithCapacity:8];
 	[btnImgs addObject:BTN_BACKPACK];
 	[btnImgs addObject:BTN_BOOTS];
@@ -183,17 +224,33 @@
 			[[SimpleAudioEngine sharedEngine] playEffect:sound];
 		[self showPalabra:word];
 	}else {
-		if(bashoSelectedSound == selectedSound)
+		
+		if(bashoSelectedSound == selectedSound )
 		{
-			[self addPoints:kPointsAwarded];
+			[self addPoints:kPointsAwarded - currentAttempts];
+			
+			if(maxedAttemps)
+			{
+				maxedAttemps = NO;
+				currentAttempts = 0;
+			}
 			
 			if([GameManager sharedGameManager].soundsEnabled)
 				[[SimpleAudioEngine sharedEngine] playEffect:sound];
 			[self showPalabra:word];
 			
-			[self runAction:[CCSequence actions:[CCDelayTime actionWithDuration:1],[CCCallFunc actionWithTarget:self selector:@selector(selectItemForBasho)],nil]];
+			[btn setIsEnabled:NO];
+			[btn setOpacity:90];
+			
+			if([bashoSelectedItems count]==0)
+			{
+				[[GameManager sharedGameManager] unlockGame:3];
+				[self showPoints];
+			}else
+				[self runAction:[CCSequence actions:[CCDelayTime actionWithDuration:1],[CCCallFunc actionWithTarget:self selector:@selector(selectItemForBasho)],nil]];
 			
 		}else {
+			currentAttempts ++;
 			if([GameManager sharedGameManager].soundsEnabled)
 				[[SimpleAudioEngine sharedEngine] playEffect:bashoDirectedWrongSound];
 		}
@@ -221,13 +278,19 @@
 	playingSound = NO;
 	for (CCMenuItemImage * m in [tapButtons children])
 	{
-		if([m isKindOfClass:[CCMenuItemImage class]])
+		if(m.opacity ==255 && [m isKindOfClass:[CCMenuItemImage class]])
 		{
 			[m setIsEnabled:YES];
 		}
 	}
 	CCLabelTTF * palabra = [self getChildByTag:kPALABRA];
 	[palabra setOpacity:0];
+	
+	if(currentAttempts >=5)
+	{
+		maxedAttemps = YES;
+		[self makeDinoSpin2:bashoSelectedSound];
+	}
 }
 
 -(void)ccTouchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
@@ -288,6 +351,7 @@
 	// cocos2d will automatically release all the children (Label)
 	
 	// don't forget to call "super dealloc"
+	[bashoSelectedItems release];
 	[super dealloc];
 }
 

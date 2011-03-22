@@ -30,7 +30,7 @@
 	NSBundle *bundle = [NSBundle mainBundle];
 	if (bundle) 
 	{
-		NSString *moviePath = [bundle pathForResource:@"ARG" ofType:@"mp4"];
+		NSString *moviePath = [bundle pathForResource:@"botas-2011" ofType:@"mp3"];
 		if (moviePath)
 		{
 			url = [NSURL fileURLWithPath:moviePath];

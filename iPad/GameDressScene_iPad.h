@@ -12,6 +12,7 @@
 
 #define kSPRITEBATCH_ELEMS 1
 #define kBOXERS 2
+#define kSCORE 1001
 
 #define BTN_BACKPACK @"backpack"
 #define BTN_BOOTS @"boots"
@@ -74,6 +75,7 @@
 	NSMutableArray * ddElements;
 	NSMutableArray * dressPieces;
 	BOOL placingElement;
+	BOOL bashoDirected;
 }
 
 @property (nonatomic,readwrite) BOOL placingElement;
