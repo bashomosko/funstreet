@@ -26,8 +26,8 @@
 	int desiredZ;
 	int itemTag;
 	
-	int itemNumber;
-	int colorNumber;
+	NSString * itemNumber;
+	NSString * colorNumber;
 }
 @property (nonatomic,readwrite) touchState state;
 @property (nonatomic,retain) CCSprite * mySprite;

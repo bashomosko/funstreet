@@ -68,7 +68,7 @@
 				<integer>184</integer>
 			</dict>
 			<key>file-soundOk</key>
-			<string>wheel_snd_pants.m4a</string>
+			<string>dress_snd_pants_yellow.mp3</string>
 			<key>file-soundWrong</key>
 			<string>star_wrong.aif</string>
 		</dict>

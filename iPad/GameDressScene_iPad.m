@@ -13,7 +13,7 @@
 
 @implementation GameDressScene_iPad
 
-@synthesize placingElement,colorNeeded,itemNeeded;
+@synthesize placingElement,colorNeeded,itemNeeded,bashoDirected;
 
 +(id) sceneWithDressVC:(GameDress_iPad *)vc bashoDirected:(BOOL)_bashoDirected
 {
@@ -86,6 +86,22 @@
 		[basho setPosition:ccp(149,72)];
 		[menu setPosition:ccp(0,0)];
 		
+		btnImgs = [[NSMutableArray arrayWithCapacity:8]retain];
+		[btnImgs addObject:BTN_PANTS];
+		[btnImgs addObject:BTN_BOOTS];
+		[btnImgs addObject:BTN_NECKLACE];
+		[btnImgs addObject:BTN_JACKET];
+		[btnImgs addObject:BTN_SUNGLASSES];
+		[btnImgs addObject:BTN_HAT];
+		[btnImgs addObject:BTN_PHONE];
+		[btnImgs addObject:BTN_BACKPACK];
+		
+		btnColor = [[NSMutableArray arrayWithCapacity:4]retain];
+		[btnColor addObject:@"Blue"];
+		[btnColor addObject:@"Red"];
+		[btnColor addObject:@"Purple"];
+		[btnColor addObject:@"Yellow"];
+		
 		[self selectItemForBasho];
 		
 		[self loadScore];
@@ -119,7 +135,7 @@
 {
 	bashoDirected = !bashoDirected;
 	
-	[[CCDirector sharedDirector] replaceScene:[CCTransitionFade transitionWithDuration:0.5 scene: [GameDressScene_iPad sceneWithDressVC:self bashoDirected:bashoDirected] withColor:ccWHITE]];
+	[[CCDirector sharedDirector] replaceScene:[CCTransitionFade transitionWithDuration:0.5 scene: [GameDressScene_iPad sceneWithDressVC:viewController bashoDirected:bashoDirected] withColor:ccWHITE]];
 	
 }
 
@@ -163,33 +179,45 @@
 	}
 	
 	NSString * sound = nil;
-	switch (bashoSelectedSound)
+	if(!bashoDirected)
 	{
-		case BTN_BACKPACK_NUM:
-			sound =BTN_BACKPACK_SND_WHERE;
-			break;
-		case BTN_BOOTS_NUM:
-			sound =BTN_BOOTS_SND_WHERE;
-			break;
-		case BTN_HAT_NUM:
-			sound =BTN_HAT_SND_WHERE;
-			break;
-		case BTN_PHONE_NUM:
-			sound =BTN_PHONE_SND_WHERE;
-			break;
-		case BTN_JACKET_NUM:
-			sound =BTN_JACKET_SND_WHERE;
-			break;
-		case BTN_NECKLACE_NUM:
-			sound =BTN_NECKLACE_SND_WHERE;
-			break;
-		case BTN_PANTS_NUM:
-			sound =BTN_PANTS_SND_WHERE;
-			break;
-		case BTN_SUNGLASSES_NUM:
-			sound =BTN_SUNGLASSES_SND_WHERE;
-			break;
+		
+		switch (bashoSelectedSound)
+		{
+			case BTN_BACKPACK_NUM:
+				sound =BTN_BACKPACK_SND_WHERE;
+				break;
+			case BTN_BOOTS_NUM:
+				sound =BTN_BOOTS_SND_WHERE;
+				break;
+			case BTN_HAT_NUM:
+				sound =BTN_HAT_SND_WHERE;
+				break;
+			case BTN_PHONE_NUM:
+				sound =BTN_PHONE_SND_WHERE;
+				break;
+			case BTN_JACKET_NUM:
+				sound =BTN_JACKET_SND_WHERE;
+				break;
+			case BTN_NECKLACE_NUM:
+				sound =BTN_NECKLACE_SND_WHERE;
+				break;
+			case BTN_PANTS_NUM:
+				sound =BTN_PANTS_SND_WHERE;
+				break;
+			case BTN_SUNGLASSES_NUM:
+				sound =BTN_SUNGLASSES_SND_WHERE;
+				break;
+		}
+	}else {
+		
+		itemNeeded = [btnImgs objectAtIndex:bashoSelectedSound];
+		colorNeededNumber = arc4random() % 4;
+		colorNeeded = [btnColor objectAtIndex:colorNeededNumber];
+		
+		sound = [NSString stringWithFormat:@"dress_snd_%@_%@_where.mp3",itemNeeded,colorNeeded];
 	}
+
 	if([GameManager sharedGameManager].soundsEnabled)
 		[[SimpleAudioEngine sharedEngine] playEffect:sound];
 	
@@ -243,23 +271,6 @@
 	}
 	[ddElements removeAllObjects];
 	
-	
-	btnImgs = [NSMutableArray arrayWithCapacity:8];
-	[btnImgs addObject:BTN_PANTS];
-	[btnImgs addObject:BTN_BOOTS];
-	[btnImgs addObject:BTN_NECKLACE];
-	[btnImgs addObject:BTN_JACKET];
-	[btnImgs addObject:BTN_SUNGLASSES];
-	[btnImgs addObject:BTN_HAT];
-	[btnImgs addObject:BTN_PHONE];
-	[btnImgs addObject:BTN_BACKPACK];
-	
-	btnColor = [NSMutableArray arrayWithCapacity:4];
-	[btnColor addObject:[NSNumber numberWithInt:0]];
-	[btnColor addObject:[NSNumber numberWithInt:1]];
-	[btnColor addObject:[NSNumber numberWithInt:2]];
-	[btnColor addObject:[NSNumber numberWithInt:3]];
-	
 	NSString *filePath = [[NSBundle mainBundle] pathForResource:@"DressData_iPad" ofType:@"plist"];
 	
 	NSMutableDictionary * elementsFile = [NSMutableDictionary dictionaryWithContentsOfFile:filePath];
@@ -267,13 +278,20 @@
 	
 	if(!bashoDirected)
 	{
+		for(int q2 = 0;q2 < 4;q2++)
+		{
+			NSMutableArray * arr =[elementsFile objectForKey:[btnImgs objectAtIndex:item]];
+			NSMutableDictionary * d = [arr objectAtIndex:q2];
+			[d setObject:[btnImgs objectAtIndex:item] forKey:@"itemNumber"];
+			[d setObject:[btnColor objectAtIndex:q2] forKey:@"colorNumber"];
+			
+			[arr replaceObjectAtIndex:q2 withObject:d];
+			[elementsFile setObject:arr forKey:[btnImgs objectAtIndex:item]];
+			
+		}
 		elements = [elementsFile objectForKey:[btnImgs objectAtIndex:item]];
 	}else{
-		
-		itemNeeded = item;
-		colorNeeded = arc4random() % 4;
-		
-		
+	
 		NSMutableArray * genElems = [NSMutableArray array];
 		
 		for(int q = 0;q<8;q++)
@@ -282,8 +300,8 @@
 			{
 				NSMutableArray * arr =[elementsFile objectForKey:[btnImgs objectAtIndex:q]];
 				NSMutableDictionary * d = [arr objectAtIndex:q2];
-				[d setObject:[NSNumber numberWithInt:q] forKey:@"itemNumber"];
-				[d setObject:[NSNumber numberWithInt:q2] forKey:@"colorNumber"];
+				[d setObject:[btnImgs objectAtIndex:q] forKey:@"itemNumber"];
+				[d setObject:[btnColor objectAtIndex:q2] forKey:@"colorNumber"];
 				
 				[arr replaceObjectAtIndex:q2 withObject:d];
 				[elementsFile setObject:arr forKey:[btnImgs objectAtIndex:q]];
@@ -294,7 +312,7 @@
 		}
 		elements = [NSMutableArray array];
 		
-		NSMutableDictionary * askedItem = [[elementsFile objectForKey:[btnImgs objectAtIndex:itemNeeded]]objectAtIndex:colorNeeded];
+		NSMutableDictionary * askedItem = [[elementsFile objectForKey:itemNeeded]objectAtIndex:colorNeededNumber];
 		[elements addObject:askedItem];
 		[genElems removeObject:askedItem];
 		
@@ -368,6 +386,8 @@
 
 -(void)dealloc
 {
+	[btnImgs release];
+	[btnColor release];
 	[dressPieces release];
 	[ddElements release];
 	[super dealloc];

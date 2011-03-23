@@ -26,15 +26,18 @@
 		
 		initialCoord = ccp(xi,yi);
 		
-		soundOkPath = [[element objectForKey:@"file-soundOk"]retain];
+		//soundOkPath = [[element objectForKey:@"file-soundOk"]retain];
 		soundWrongPath = [[element objectForKey:@"file-soundWrong"]retain];
 		movableAfterPlaced = NO;
 		
 		desiredZ = [[element objectForKey:@"desiredZ"] intValue];
 		itemTag= [[element objectForKey:@"itemTag"] intValue];
 		
-		itemNumber = [[element objectForKey:@"itemNumber"]intValue];
-		colorNumber = [[element objectForKey:@"colorNumber"] intValue];
+		itemNumber = [element objectForKey:@"itemNumber"];
+		colorNumber = [element objectForKey:@"colorNumber"];
+		
+		
+		soundOkPath = [[NSString stringWithFormat:@"dress_snd_%@_%@.mp3",itemNumber,colorNumber]retain];
 		
 		CCSpriteBatchNode * sbn = [theGame getChildByTag:kSPRITEBATCH_ELEMS];
 		mySprite = [CCSprite spriteWithSpriteFrameName:imagePath];
@@ -124,11 +127,9 @@
 	
 	location = [[CCDirector sharedDirector] convertToGL: location];
 	
-	
-	
 	if(!(dropPoint.x == 0 && dropPoint.y == 0))
 	{
-		if(ccpDistance(mySprite.position,dropPoint) < 100 && itemNumber == theGame.itemNeeded && colorNumber == theGame.colorNeeded)
+		if(ccpDistance(mySprite.position,dropPoint) < 100 &&( !theGame.bashoDirected || ([itemNumber isEqualToString:theGame.itemNeeded] && [colorNumber isEqualToString:theGame.colorNeeded])))
 		{
 			mySprite.position = dropPoint;
 			//theGame.elementsPlaced++;
@@ -147,7 +148,7 @@
 				[[SimpleAudioEngine sharedEngine] playEffect:soundOkPath];
 			placed = YES;
 			theGame.placingElement = YES;
-			[theGame runAction:[CCSequence actions:[CCCallFuncND actionWithTarget:theGame selector:@selector(dressDino: data:) data:(void*)self],[CCDelayTime actionWithDuration:1],[CCCallFunc actionWithTarget:theGame selector:@selector(selectItemForBasho)],nil]];
+			[theGame runAction:[CCSequence actions:[CCCallFuncND actionWithTarget:theGame selector:@selector(dressDino: data:) data:(void*)self],[CCDelayTime actionWithDuration:2.5],[CCCallFunc actionWithTarget:theGame selector:@selector(selectItemForBasho)],nil]];
 		}else {
 			mySprite.position = initialCoord;
 			/*CCParticleSystemQuad * particles = [CCParticleSystemQuad particleWithFile:particleWrongPath];

@@ -94,6 +94,134 @@
 		102FDE43131C893800CC0AEB /* wheel_sound_on_iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 102FDE00131C893800CC0AEB /* wheel_sound_on_iPad.png */; };
 		102FDE44131C893800CC0AEB /* wheel_sound_on-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 102FDE01131C893800CC0AEB /* wheel_sound_on-hd.png */; };
 		102FDE45131C893800CC0AEB /* wheel_sound_on.png in Resources */ = {isa = PBXBuildFile; fileRef = 102FDE02131C893800CC0AEB /* wheel_sound_on.png */; };
+		109D5FBD133A35F30061B1C3 /* wheel_snd_phone_where.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 109D5FB5133A35F30061B1C3 /* wheel_snd_phone_where.mp3 */; };
+		109D5FBE133A35F30061B1C3 /* wheel_snd_hat_where.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 109D5FB6133A35F30061B1C3 /* wheel_snd_hat_where.mp3 */; };
+		109D5FBF133A35F30061B1C3 /* wheel_snd_necklace_where.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 109D5FB7133A35F30061B1C3 /* wheel_snd_necklace_where.mp3 */; };
+		109D5FC0133A35F30061B1C3 /* wheel_snd_jacket_where.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 109D5FB8133A35F30061B1C3 /* wheel_snd_jacket_where.mp3 */; };
+		109D5FC1133A35F30061B1C3 /* wheel_snd_backpack_where.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 109D5FB9133A35F30061B1C3 /* wheel_snd_backpack_where.mp3 */; };
+		109D5FC2133A35F30061B1C3 /* wheel_snd_boots_where.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 109D5FBA133A35F30061B1C3 /* wheel_snd_boots_where.mp3 */; };
+		109D5FC3133A35F30061B1C3 /* wheel_snd_sunglasses_where.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 109D5FBB133A35F30061B1C3 /* wheel_snd_sunglasses_where.mp3 */; };
+		109D5FC4133A35F30061B1C3 /* wheel_snd_pants_where.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 109D5FBC133A35F30061B1C3 /* wheel_snd_pants_where.mp3 */; };
+		109D5FD5133A37300061B1C3 /* wheel_snd_jacket_wrong.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 109D5FCD133A37300061B1C3 /* wheel_snd_jacket_wrong.mp3 */; };
+		109D5FD6133A37300061B1C3 /* wheel_snd_hat_wrong.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 109D5FCE133A37300061B1C3 /* wheel_snd_hat_wrong.mp3 */; };
+		109D5FD7133A37300061B1C3 /* wheel_snd_backpack_wrong.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 109D5FCF133A37300061B1C3 /* wheel_snd_backpack_wrong.mp3 */; };
+		109D5FD8133A37300061B1C3 /* wheel_snd_boots_wrong.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 109D5FD0133A37300061B1C3 /* wheel_snd_boots_wrong.mp3 */; };
+		109D5FD9133A37300061B1C3 /* wheel_snd_sunglasses_wrong.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 109D5FD1133A37300061B1C3 /* wheel_snd_sunglasses_wrong.mp3 */; };
+		109D5FDA133A37300061B1C3 /* wheel_snd_necklace_wrong.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 109D5FD2133A37300061B1C3 /* wheel_snd_necklace_wrong.mp3 */; };
+		109D5FDB133A37300061B1C3 /* wheel_snd_phone_wrong.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 109D5FD3133A37300061B1C3 /* wheel_snd_phone_wrong.mp3 */; };
+		109D5FDC133A37300061B1C3 /* wheel_snd_pants_wrong.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 109D5FD4133A37300061B1C3 /* wheel_snd_pants_wrong.mp3 */; };
+		109D5FF2133A38280061B1C3 /* wheel_snd_necklace.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 109D5FEA133A38280061B1C3 /* wheel_snd_necklace.mp3 */; };
+		109D5FF3133A38280061B1C3 /* wheel_snd_phone.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 109D5FEB133A38280061B1C3 /* wheel_snd_phone.mp3 */; };
+		109D5FF4133A38280061B1C3 /* wheel_snd_jacket.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 109D5FEC133A38280061B1C3 /* wheel_snd_jacket.mp3 */; };
+		109D5FF5133A38280061B1C3 /* wheel_snd_hat.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 109D5FED133A38280061B1C3 /* wheel_snd_hat.mp3 */; };
+		109D5FF6133A38280061B1C3 /* wheel_snd_backpack.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 109D5FEE133A38280061B1C3 /* wheel_snd_backpack.mp3 */; };
+		109D5FF7133A38280061B1C3 /* wheel_snd_boots.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 109D5FEF133A38280061B1C3 /* wheel_snd_boots.mp3 */; };
+		109D5FF8133A38280061B1C3 /* wheel_snd_sunglasses.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 109D5FF0133A38280061B1C3 /* wheel_snd_sunglasses.mp3 */; };
+		109D5FF9133A38280061B1C3 /* wheel_snd_pants.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 109D5FF1133A38280061B1C3 /* wheel_snd_pants.mp3 */; };
+		109D609A133A5B150061B1C3 /* dress_snd_boots_Yellow.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 109D6033133A5B140061B1C3 /* dress_snd_boots_Yellow.mp3 */; };
+		109D609B133A5B150061B1C3 /* dress_snd_boots_Red.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 109D6034133A5B140061B1C3 /* dress_snd_boots_Red.mp3 */; };
+		109D609C133A5B150061B1C3 /* dress_snd_boots_Purple.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 109D6035133A5B140061B1C3 /* dress_snd_boots_Purple.mp3 */; };
+		109D609D133A5B150061B1C3 /* dress_snd_jacket_Yellow.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 109D6036133A5B140061B1C3 /* dress_snd_jacket_Yellow.mp3 */; };
+		109D609E133A5B150061B1C3 /* dress_snd_jacket_Blue.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 109D6037133A5B140061B1C3 /* dress_snd_jacket_Blue.mp3 */; };
+		109D609F133A5B150061B1C3 /* dress_snd_jacket_Red.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 109D6038133A5B140061B1C3 /* dress_snd_jacket_Red.mp3 */; };
+		109D60A0133A5B150061B1C3 /* dress_snd_jacket_Purple.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 109D6039133A5B140061B1C3 /* dress_snd_jacket_Purple.mp3 */; };
+		109D60A1133A5B150061B1C3 /* dress_snd_necklace_Yellow.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 109D603A133A5B140061B1C3 /* dress_snd_necklace_Yellow.mp3 */; };
+		109D60A2133A5B150061B1C3 /* dress_snd_necklace_Blue.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 109D603B133A5B140061B1C3 /* dress_snd_necklace_Blue.mp3 */; };
+		109D60A3133A5B150061B1C3 /* dress_snd_necklace_Red.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 109D603C133A5B140061B1C3 /* dress_snd_necklace_Red.mp3 */; };
+		109D60A4133A5B150061B1C3 /* dress_snd_necklace_Purple.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 109D603D133A5B140061B1C3 /* dress_snd_necklace_Purple.mp3 */; };
+		109D60A5133A5B150061B1C3 /* DOMINO Donde Esta Mi Chaqueta Amarillas .mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 109D603E133A5B140061B1C3 /* DOMINO Donde Esta Mi Chaqueta Amarillas .mp3 */; };
+		109D60A6133A5B150061B1C3 /* DOMINO Donde Esta Mi Chaqueta Azul.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 109D603F133A5B140061B1C3 /* DOMINO Donde Esta Mi Chaqueta Azul.mp3 */; };
+		109D60A7133A5B150061B1C3 /* DOMINO Donde Esta Mi Chaqueta Rosada.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 109D6040133A5B140061B1C3 /* DOMINO Donde Esta Mi Chaqueta Rosada.mp3 */; };
+		109D60A8133A5B150061B1C3 /* DOMINO Donde Esta Mi Chaqueta Violeta.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 109D6041133A5B140061B1C3 /* DOMINO Donde Esta Mi Chaqueta Violeta.mp3 */; };
+		109D60A9133A5B150061B1C3 /* DOMINO Donde Esta Mi Collar Amarilla.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 109D6042133A5B140061B1C3 /* DOMINO Donde Esta Mi Collar Amarilla.mp3 */; };
+		109D60AA133A5B150061B1C3 /* DOMINO Donde Esta Mi Collar Azul.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 109D6043133A5B140061B1C3 /* DOMINO Donde Esta Mi Collar Azul.mp3 */; };
+		109D60AB133A5B150061B1C3 /* DOMINO Donde Esta Mi Collar Rosada.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 109D6044133A5B140061B1C3 /* DOMINO Donde Esta Mi Collar Rosada.mp3 */; };
+		109D60AC133A5B150061B1C3 /* DOMINO Donde Esta Mi Collar Violeta.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 109D6045133A5B140061B1C3 /* DOMINO Donde Esta Mi Collar Violeta.mp3 */; };
+		109D60AD133A5B150061B1C3 /* DOMINO Donde Esta Mi Gorra Amarilla.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 109D6046133A5B140061B1C3 /* DOMINO Donde Esta Mi Gorra Amarilla.mp3 */; };
+		109D60AE133A5B150061B1C3 /* DOMINO Donde Esta Mi Gorra Azul.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 109D6047133A5B140061B1C3 /* DOMINO Donde Esta Mi Gorra Azul.mp3 */; };
+		109D60AF133A5B150061B1C3 /* DOMINO Donde Esta Mi Gorra Rosada.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 109D6048133A5B140061B1C3 /* DOMINO Donde Esta Mi Gorra Rosada.mp3 */; };
+		109D60B0133A5B150061B1C3 /* DOMINO Donde Esta Mi Gorra Violeta.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 109D6049133A5B140061B1C3 /* DOMINO Donde Esta Mi Gorra Violeta.mp3 */; };
+		109D60B1133A5B150061B1C3 /* DOMINO Donde Esta Mi Telefono Amarillo.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 109D604A133A5B140061B1C3 /* DOMINO Donde Esta Mi Telefono Amarillo.mp3 */; };
+		109D60B2133A5B150061B1C3 /* DOMINO Donde Esta Mi Telefono Azul.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 109D604B133A5B140061B1C3 /* DOMINO Donde Esta Mi Telefono Azul.mp3 */; };
+		109D60B3133A5B150061B1C3 /* DOMINO Donde Esta Mi Telefono Rosada.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 109D604C133A5B140061B1C3 /* DOMINO Donde Esta Mi Telefono Rosada.mp3 */; };
+		109D60B4133A5B150061B1C3 /* DOMINO Donde Esta Mi Telefono Violeta.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 109D604D133A5B140061B1C3 /* DOMINO Donde Esta Mi Telefono Violeta.mp3 */; };
+		109D60B5133A5B150061B1C3 /* DOMINO Donde Estan Mi Mochilla Amarilla.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 109D604E133A5B140061B1C3 /* DOMINO Donde Estan Mi Mochilla Amarilla.mp3 */; };
+		109D60B6133A5B150061B1C3 /* DOMINO Donde Estan Mi Mochilla Azul.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 109D604F133A5B140061B1C3 /* DOMINO Donde Estan Mi Mochilla Azul.mp3 */; };
+		109D60B7133A5B150061B1C3 /* DOMINO Donde Estan Mi Mochilla Rosada.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 109D6050133A5B140061B1C3 /* DOMINO Donde Estan Mi Mochilla Rosada.mp3 */; };
+		109D60B8133A5B150061B1C3 /* DOMINO Donde Estan Mi Mochilla Violeta.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 109D6051133A5B140061B1C3 /* DOMINO Donde Estan Mi Mochilla Violeta.mp3 */; };
+		109D60B9133A5B150061B1C3 /* DOMINO Donde Estan Mis Botas Amarillas.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 109D6052133A5B140061B1C3 /* DOMINO Donde Estan Mis Botas Amarillas.mp3 */; };
+		109D60BA133A5B150061B1C3 /* DOMINO Donde Estan Mis Botas Azules.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 109D6053133A5B140061B1C3 /* DOMINO Donde Estan Mis Botas Azules.mp3 */; };
+		109D60BB133A5B150061B1C3 /* DOMINO Donde Estan Mis Botas Rosadas.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 109D6054133A5B140061B1C3 /* DOMINO Donde Estan Mis Botas Rosadas.mp3 */; };
+		109D60BC133A5B150061B1C3 /* DOMINO Donde Estan Mis Botas Violetas.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 109D6055133A5B140061B1C3 /* DOMINO Donde Estan Mis Botas Violetas.mp3 */; };
+		109D60BD133A5B150061B1C3 /* DOMINO Donde Estan Mis Gafas Amarillas.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 109D6056133A5B140061B1C3 /* DOMINO Donde Estan Mis Gafas Amarillas.mp3 */; };
+		109D60BE133A5B150061B1C3 /* DOMINO Donde Estan Mis Gafas Azules.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 109D6057133A5B140061B1C3 /* DOMINO Donde Estan Mis Gafas Azules.mp3 */; };
+		109D60BF133A5B150061B1C3 /* DOMINO Donde Estan Mis Gafas Rosadas.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 109D6058133A5B140061B1C3 /* DOMINO Donde Estan Mis Gafas Rosadas.mp3 */; };
+		109D60C0133A5B150061B1C3 /* DOMINO Donde Estan Mis Gafas Violetas.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 109D6059133A5B140061B1C3 /* DOMINO Donde Estan Mis Gafas Violetas.mp3 */; };
+		109D60C1133A5B150061B1C3 /* dress_snd_pants_Yellow_where.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 109D605A133A5B140061B1C3 /* dress_snd_pants_Yellow_where.mp3 */; };
+		109D60C2133A5B150061B1C3 /* DOMINO Donde Estan Mis Pantalones Azules.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 109D605B133A5B140061B1C3 /* DOMINO Donde Estan Mis Pantalones Azules.mp3 */; };
+		109D60C3133A5B150061B1C3 /* DOMINO Donde Estan Mis Pantalones Rosadas.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 109D605C133A5B140061B1C3 /* DOMINO Donde Estan Mis Pantalones Rosadas.mp3 */; };
+		109D60C4133A5B150061B1C3 /* DOMINO Donde Estan Mis Pantalones Violetas.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 109D605D133A5B140061B1C3 /* DOMINO Donde Estan Mis Pantalones Violetas.mp3 */; };
+		109D60C5133A5B150061B1C3 /* DOMINO Esa Es La Chaqueta Amarilla.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 109D605E133A5B140061B1C3 /* DOMINO Esa Es La Chaqueta Amarilla.mp3 */; };
+		109D60C6133A5B150061B1C3 /* DOMINO Esa Es La Chaqueta Azul.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 109D605F133A5B140061B1C3 /* DOMINO Esa Es La Chaqueta Azul.mp3 */; };
+		109D60C7133A5B150061B1C3 /* DOMINO Esa Es La Chaqueta Rosada.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 109D6060133A5B140061B1C3 /* DOMINO Esa Es La Chaqueta Rosada.mp3 */; };
+		109D60C8133A5B150061B1C3 /* DOMINO Esa Es La Chaqueta Violeta.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 109D6061133A5B140061B1C3 /* DOMINO Esa Es La Chaqueta Violeta.mp3 */; };
+		109D60C9133A5B150061B1C3 /* DOMINO Esa Es La Gorra Amarilla.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 109D6062133A5B140061B1C3 /* DOMINO Esa Es La Gorra Amarilla.mp3 */; };
+		109D60CA133A5B150061B1C3 /* DOMINO Esa Es La Gorra Azul.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 109D6063133A5B140061B1C3 /* DOMINO Esa Es La Gorra Azul.mp3 */; };
+		109D60CB133A5B150061B1C3 /* DOMINO Esa Es La Gorra Rosada.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 109D6064133A5B140061B1C3 /* DOMINO Esa Es La Gorra Rosada.mp3 */; };
+		109D60CC133A5B150061B1C3 /* DOMINO Esa Es La Gorra Violeta.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 109D6065133A5B140061B1C3 /* DOMINO Esa Es La Gorra Violeta.mp3 */; };
+		109D60CD133A5B150061B1C3 /* DOMINO Esa Es La Mochilla Amarilla.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 109D6066133A5B140061B1C3 /* DOMINO Esa Es La Mochilla Amarilla.mp3 */; };
+		109D60CE133A5B150061B1C3 /* DOMINO Esa Es La Mochilla Azul.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 109D6067133A5B140061B1C3 /* DOMINO Esa Es La Mochilla Azul.mp3 */; };
+		109D60CF133A5B150061B1C3 /* DOMINO Esa Es La Mochilla Rosada.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 109D6068133A5B140061B1C3 /* DOMINO Esa Es La Mochilla Rosada.mp3 */; };
+		109D60D0133A5B150061B1C3 /* DOMINO Esa Es La Mochilla Violeta.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 109D6069133A5B140061B1C3 /* DOMINO Esa Es La Mochilla Violeta.mp3 */; };
+		109D60D1133A5B150061B1C3 /* DOMINO Esas Son Las Botas Amarillas.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 109D606A133A5B140061B1C3 /* DOMINO Esas Son Las Botas Amarillas.mp3 */; };
+		109D60D2133A5B150061B1C3 /* DOMINO Esas Son Las Botas Azules.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 109D606B133A5B140061B1C3 /* DOMINO Esas Son Las Botas Azules.mp3 */; };
+		109D60D3133A5B150061B1C3 /* DOMINO Esas Son Las Botas Rosadas.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 109D606C133A5B140061B1C3 /* DOMINO Esas Son Las Botas Rosadas.mp3 */; };
+		109D60D4133A5B150061B1C3 /* DOMINO Esas Son Las Botas Violetas.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 109D606D133A5B140061B1C3 /* DOMINO Esas Son Las Botas Violetas.mp3 */; };
+		109D60D5133A5B150061B1C3 /* DOMINO Eso Es El Collar Amarilla.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 109D606E133A5B140061B1C3 /* DOMINO Eso Es El Collar Amarilla.mp3 */; };
+		109D60D6133A5B150061B1C3 /* DOMINO Eso Es El Collar Azul.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 109D606F133A5B140061B1C3 /* DOMINO Eso Es El Collar Azul.mp3 */; };
+		109D60D7133A5B150061B1C3 /* DOMINO Eso Es El Collar Rosada.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 109D6070133A5B140061B1C3 /* DOMINO Eso Es El Collar Rosada.mp3 */; };
+		109D60D8133A5B150061B1C3 /* DOMINO Eso Es El Collar Violeta.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 109D6071133A5B140061B1C3 /* DOMINO Eso Es El Collar Violeta.mp3 */; };
+		109D60D9133A5B150061B1C3 /* DOMINO Eso Es El Telefono Amarillo .mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 109D6072133A5B140061B1C3 /* DOMINO Eso Es El Telefono Amarillo .mp3 */; };
+		109D60DA133A5B150061B1C3 /* DOMINO Eso Es El Telefono Azul.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 109D6073133A5B140061B1C3 /* DOMINO Eso Es El Telefono Azul.mp3 */; };
+		109D60DB133A5B150061B1C3 /* DOMINO Eso Es El Telefono Rosado.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 109D6074133A5B140061B1C3 /* DOMINO Eso Es El Telefono Rosado.mp3 */; };
+		109D60DC133A5B150061B1C3 /* DOMINO Eso Es El Telefono Violeta.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 109D6075133A5B140061B1C3 /* DOMINO Eso Es El Telefono Violeta.mp3 */; };
+		109D60DD133A5B150061B1C3 /* DOMINO Eso Son Las Gafas Amarillas.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 109D6076133A5B140061B1C3 /* DOMINO Eso Son Las Gafas Amarillas.mp3 */; };
+		109D60DE133A5B150061B1C3 /* DOMINO Eso Son Las Gafas Azules.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 109D6077133A5B140061B1C3 /* DOMINO Eso Son Las Gafas Azules.mp3 */; };
+		109D60DF133A5B150061B1C3 /* DOMINO Eso Son Las Gafas Rosadas.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 109D6078133A5B140061B1C3 /* DOMINO Eso Son Las Gafas Rosadas.mp3 */; };
+		109D60E0133A5B150061B1C3 /* DOMINO Eso Son Las Gafas Violetas.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 109D6079133A5B140061B1C3 /* DOMINO Eso Son Las Gafas Violetas.mp3 */; };
+		109D60E1133A5B150061B1C3 /* Domino_pantalones_amarillos.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 109D607A133A5B140061B1C3 /* Domino_pantalones_amarillos.mp3 */; };
+		109D60E2133A5B150061B1C3 /* DOMINO Eso Son Los Pantalones Azules.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 109D607B133A5B140061B1C3 /* DOMINO Eso Son Los Pantalones Azules.mp3 */; };
+		109D60E3133A5B150061B1C3 /* DOMINO Eso Son Los Pantalones Rosadas.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 109D607C133A5B140061B1C3 /* DOMINO Eso Son Los Pantalones Rosadas.mp3 */; };
+		109D60E4133A5B150061B1C3 /* DOMINO Eso Son Los Pantalones Violetas.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 109D607D133A5B140061B1C3 /* DOMINO Eso Son Los Pantalones Violetas.mp3 */; };
+		109D60E5133A5B150061B1C3 /* dress_snd_sunglasses_Yellow.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 109D607E133A5B150061B1C3 /* dress_snd_sunglasses_Yellow.mp3 */; };
+		109D60E6133A5B150061B1C3 /* dress_snd_sunglasses_Blue.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 109D607F133A5B150061B1C3 /* dress_snd_sunglasses_Blue.mp3 */; };
+		109D60E7133A5B150061B1C3 /* dress_snd_sunglasses_Red.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 109D6080133A5B150061B1C3 /* dress_snd_sunglasses_Red.mp3 */; };
+		109D60E8133A5B150061B1C3 /* dress_snd_sunglasses_Purple.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 109D6081133A5B150061B1C3 /* dress_snd_sunglasses_Purple.mp3 */; };
+		109D60E9133A5B150061B1C3 /* dress_snd_backpack_Yellow.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 109D6082133A5B150061B1C3 /* dress_snd_backpack_Yellow.mp3 */; };
+		109D60EA133A5B150061B1C3 /* dress_snd_backpack_Blue.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 109D6083133A5B150061B1C3 /* dress_snd_backpack_Blue.mp3 */; };
+		109D60EB133A5B150061B1C3 /* dress_snd_backpack_Red.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 109D6084133A5B150061B1C3 /* dress_snd_backpack_Red.mp3 */; };
+		109D60EC133A5B150061B1C3 /* dress_snd_backpack_Purple.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 109D6085133A5B150061B1C3 /* dress_snd_backpack_Purple.mp3 */; };
+		109D60ED133A5B150061B1C3 /* DOMINO Muy Bien.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 109D6086133A5B150061B1C3 /* DOMINO Muy Bien.mp3 */; };
+		109D60EE133A5B150061B1C3 /* dress_snd_jacket_where.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 109D6087133A5B150061B1C3 /* dress_snd_jacket_where.mp3 */; };
+		109D60EF133A5B150061B1C3 /* dress_snd_necklace_where.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 109D6088133A5B150061B1C3 /* dress_snd_necklace_where.mp3 */; };
+		109D60F0133A5B150061B1C3 /* dress_snd_hat_where.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 109D6089133A5B150061B1C3 /* dress_snd_hat_where.mp3 */; };
+		109D60F1133A5B150061B1C3 /* dress_snd_backpack_where.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 109D608A133A5B150061B1C3 /* dress_snd_backpack_where.mp3 */; };
+		109D60F2133A5B150061B1C3 /* dress_snd_phone_where.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 109D608B133A5B150061B1C3 /* dress_snd_phone_where.mp3 */; };
+		109D60F3133A5B150061B1C3 /* dress_snd_boots_where.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 109D608C133A5B150061B1C3 /* dress_snd_boots_where.mp3 */; };
+		109D60F4133A5B150061B1C3 /* dress_snd_sunglasses_where.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 109D608D133A5B150061B1C3 /* dress_snd_sunglasses_where.mp3 */; };
+		109D60F5133A5B150061B1C3 /* dress_snd_pants_where.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 109D608E133A5B150061B1C3 /* dress_snd_pants_where.mp3 */; };
+		109D60F6133A5B150061B1C3 /* DOMINO Orale.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 109D608F133A5B150061B1C3 /* DOMINO Orale.mp3 */; };
+		109D60F7133A5B150061B1C3 /* dress_snd_pants_Yellow.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 109D6090133A5B150061B1C3 /* dress_snd_pants_Yellow.mp3 */; };
+		109D60F8133A5B150061B1C3 /* dress_snd_pants_Blue.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 109D6091133A5B150061B1C3 /* dress_snd_pants_Blue.mp3 */; };
+		109D60F9133A5B150061B1C3 /* dress_snd_pants_Red.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 109D6092133A5B150061B1C3 /* dress_snd_pants_Red.mp3 */; };
+		109D60FA133A5B150061B1C3 /* dress_snd_pants_Purple.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 109D6093133A5B150061B1C3 /* dress_snd_pants_Purple.mp3 */; };
+		109D60FB133A5B150061B1C3 /* DOMINO Puntos.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 109D6094133A5B150061B1C3 /* DOMINO Puntos.mp3 */; };
+		109D60FC133A5B150061B1C3 /* DOMINO Se Me Callo La Ropa.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 109D6095133A5B150061B1C3 /* DOMINO Se Me Callo La Ropa.mp3 */; };
+		109D60FD133A5B150061B1C3 /* dress_snd_phone_Yellow.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 109D6096133A5B150061B1C3 /* dress_snd_phone_Yellow.mp3 */; };
+		109D60FE133A5B150061B1C3 /* dress_snd_phone_Blue.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 109D6097133A5B150061B1C3 /* dress_snd_phone_Blue.mp3 */; };
+		109D60FF133A5B150061B1C3 /* dress_snd_phone_Red.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 109D6098133A5B150061B1C3 /* dress_snd_phone_Red.mp3 */; };
+		109D6100133A5B150061B1C3 /* dress_snd_phone_Purple.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 109D6099133A5B150061B1C3 /* dress_snd_phone_Purple.mp3 */; };
+		109D6102133A5B410061B1C3 /* dress_snd_boots_Blue.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 109D6101133A5B410061B1C3 /* dress_snd_boots_Blue.mp3 */; };
 		10A08C9413215091003F24AD /* GameDress_iPad.m in Sources */ = {isa = PBXBuildFile; fileRef = 10A08C9213215091003F24AD /* GameDress_iPad.m */; };
 		10A08C9513215091003F24AD /* GameDress_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10A08C9313215091003F24AD /* GameDress_iPad.xib */; };
 		10A08C98132150A7003F24AD /* GameDressScene_iPad.m in Sources */ = {isa = PBXBuildFile; fileRef = 10A08C97132150A7003F24AD /* GameDressScene_iPad.m */; };
@@ -225,31 +353,7 @@
 		10AA0B8B1307167900D11E6B /* mm_wheel_btn_iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 10AA0B7F1307167900D11E6B /* mm_wheel_btn_iPad.png */; };
 		10AA0B971307181700D11E6B /* GameWheelScene_iPad.m in Sources */ = {isa = PBXBuildFile; fileRef = 10AA0B961307181700D11E6B /* GameWheelScene_iPad.m */; };
 		10B32807131D584D0014A77D /* wheel_home.png in Resources */ = {isa = PBXBuildFile; fileRef = 10B32806131D584D0014A77D /* wheel_home.png */; };
-		10B32834131D5CD10014A77D /* wheel_snd_sunglasses.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 10B32833131D5CD10014A77D /* wheel_snd_sunglasses.m4a */; };
-		10B3285B131D5EAB0014A77D /* wheel_snd_pants.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 10B32854131D5EAB0014A77D /* wheel_snd_pants.m4a */; };
-		10B3285C131D5EAB0014A77D /* wheel_snd_necklace.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 10B32855131D5EAB0014A77D /* wheel_snd_necklace.m4a */; };
-		10B3285D131D5EAB0014A77D /* wheel_snd_jacket.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 10B32856131D5EAB0014A77D /* wheel_snd_jacket.m4a */; };
-		10B3285E131D5EAB0014A77D /* wheel_snd_phone.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 10B32857131D5EAB0014A77D /* wheel_snd_phone.m4a */; };
-		10B3285F131D5EAB0014A77D /* wheel_snd_hat.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 10B32858131D5EAB0014A77D /* wheel_snd_hat.m4a */; };
-		10B32860131D5EAB0014A77D /* wheel_snd_boots.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 10B32859131D5EAB0014A77D /* wheel_snd_boots.m4a */; };
-		10B32861131D5EAB0014A77D /* wheel_snd_backpack.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 10B3285A131D5EAB0014A77D /* wheel_snd_backpack.m4a */; };
 		10B3297C131D87CB0014A77D /* GameManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 10B3297B131D87CB0014A77D /* GameManager.m */; };
-		10B329A3131D8F910014A77D /* wheel_snd_jacket_where.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 10B329A2131D8F910014A77D /* wheel_snd_jacket_where.m4a */; };
-		10B329AB131D90B50014A77D /* wheel_snd_backpack_where.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 10B329A4131D90B50014A77D /* wheel_snd_backpack_where.m4a */; };
-		10B329AC131D90B50014A77D /* wheel_snd_boots_where.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 10B329A5131D90B50014A77D /* wheel_snd_boots_where.m4a */; };
-		10B329AD131D90B50014A77D /* wheel_snd_hat_where.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 10B329A6131D90B50014A77D /* wheel_snd_hat_where.m4a */; };
-		10B329AE131D90B50014A77D /* wheel_snd_necklace_where.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 10B329A7131D90B50014A77D /* wheel_snd_necklace_where.m4a */; };
-		10B329AF131D90B50014A77D /* wheel_snd_pants_where.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 10B329A8131D90B50014A77D /* wheel_snd_pants_where.m4a */; };
-		10B329B0131D90B50014A77D /* wheel_snd_phone_where.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 10B329A9131D90B50014A77D /* wheel_snd_phone_where.m4a */; };
-		10B329B1131D90B50014A77D /* wheel_snd_sunglasses_where.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 10B329AA131D90B50014A77D /* wheel_snd_sunglasses_where.m4a */; };
-		10B329C9131D95F50014A77D /* wheel_snd_backpack_wrong.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 10B329C1131D95F50014A77D /* wheel_snd_backpack_wrong.m4a */; };
-		10B329CA131D95F50014A77D /* wheel_snd_boots_wrong.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 10B329C2131D95F50014A77D /* wheel_snd_boots_wrong.m4a */; };
-		10B329CB131D95F50014A77D /* wheel_snd_hat_wrong.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 10B329C3131D95F50014A77D /* wheel_snd_hat_wrong.m4a */; };
-		10B329CC131D95F50014A77D /* wheel_snd_jacket_wrong.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 10B329C4131D95F50014A77D /* wheel_snd_jacket_wrong.m4a */; };
-		10B329CD131D95F50014A77D /* wheel_snd_necklace_wrong.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 10B329C5131D95F50014A77D /* wheel_snd_necklace_wrong.m4a */; };
-		10B329CE131D95F50014A77D /* wheel_snd_pants_wrong.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 10B329C6131D95F50014A77D /* wheel_snd_pants_wrong.m4a */; };
-		10B329CF131D95F50014A77D /* wheel_snd_phone_wrong.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 10B329C7131D95F50014A77D /* wheel_snd_phone_wrong.m4a */; };
-		10B329D0131D95F50014A77D /* wheel_snd_sunglasses_wrong.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 10B329C8131D95F50014A77D /* wheel_snd_sunglasses_wrong.m4a */; };
 		10B329E4131D97CD0014A77D /* wheel_background-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 10B32803131D58330014A77D /* wheel_background-hd.png */; };
 		10B329E5131D97CD0014A77D /* wheel_background.png in Resources */ = {isa = PBXBuildFile; fileRef = 10B32804131D58330014A77D /* wheel_background.png */; };
 		10B329E6131D97CD0014A77D /* wheel_dino.png in Resources */ = {isa = PBXBuildFile; fileRef = 10B32805131D58330014A77D /* wheel_dino.png */; };
@@ -388,6 +492,134 @@
 		102FDE00131C893800CC0AEB /* wheel_sound_on_iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = wheel_sound_on_iPad.png; path = ../iPhone/wheel_sound_on_iPad.png; sourceTree = "<group>"; };
 		102FDE01131C893800CC0AEB /* wheel_sound_on-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "wheel_sound_on-hd.png"; sourceTree = "<group>"; };
 		102FDE02131C893800CC0AEB /* wheel_sound_on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wheel_sound_on.png; sourceTree = "<group>"; };
+		109D5FB5133A35F30061B1C3 /* wheel_snd_phone_where.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = wheel_snd_phone_where.mp3; sourceTree = "<group>"; };
+		109D5FB6133A35F30061B1C3 /* wheel_snd_hat_where.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = wheel_snd_hat_where.mp3; sourceTree = "<group>"; };
+		109D5FB7133A35F30061B1C3 /* wheel_snd_necklace_where.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = wheel_snd_necklace_where.mp3; sourceTree = "<group>"; };
+		109D5FB8133A35F30061B1C3 /* wheel_snd_jacket_where.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = wheel_snd_jacket_where.mp3; sourceTree = "<group>"; };
+		109D5FB9133A35F30061B1C3 /* wheel_snd_backpack_where.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = wheel_snd_backpack_where.mp3; sourceTree = "<group>"; };
+		109D5FBA133A35F30061B1C3 /* wheel_snd_boots_where.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = wheel_snd_boots_where.mp3; sourceTree = "<group>"; };
+		109D5FBB133A35F30061B1C3 /* wheel_snd_sunglasses_where.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = wheel_snd_sunglasses_where.mp3; sourceTree = "<group>"; };
+		109D5FBC133A35F30061B1C3 /* wheel_snd_pants_where.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = wheel_snd_pants_where.mp3; sourceTree = "<group>"; };
+		109D5FCD133A37300061B1C3 /* wheel_snd_jacket_wrong.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = wheel_snd_jacket_wrong.mp3; sourceTree = "<group>"; };
+		109D5FCE133A37300061B1C3 /* wheel_snd_hat_wrong.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = wheel_snd_hat_wrong.mp3; sourceTree = "<group>"; };
+		109D5FCF133A37300061B1C3 /* wheel_snd_backpack_wrong.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = wheel_snd_backpack_wrong.mp3; sourceTree = "<group>"; };
+		109D5FD0133A37300061B1C3 /* wheel_snd_boots_wrong.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = wheel_snd_boots_wrong.mp3; sourceTree = "<group>"; };
+		109D5FD1133A37300061B1C3 /* wheel_snd_sunglasses_wrong.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = wheel_snd_sunglasses_wrong.mp3; sourceTree = "<group>"; };
+		109D5FD2133A37300061B1C3 /* wheel_snd_necklace_wrong.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = wheel_snd_necklace_wrong.mp3; sourceTree = "<group>"; };
+		109D5FD3133A37300061B1C3 /* wheel_snd_phone_wrong.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = wheel_snd_phone_wrong.mp3; sourceTree = "<group>"; };
+		109D5FD4133A37300061B1C3 /* wheel_snd_pants_wrong.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = wheel_snd_pants_wrong.mp3; sourceTree = "<group>"; };
+		109D5FEA133A38280061B1C3 /* wheel_snd_necklace.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = wheel_snd_necklace.mp3; sourceTree = "<group>"; };
+		109D5FEB133A38280061B1C3 /* wheel_snd_phone.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = wheel_snd_phone.mp3; sourceTree = "<group>"; };
+		109D5FEC133A38280061B1C3 /* wheel_snd_jacket.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = wheel_snd_jacket.mp3; sourceTree = "<group>"; };
+		109D5FED133A38280061B1C3 /* wheel_snd_hat.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = wheel_snd_hat.mp3; sourceTree = "<group>"; };
+		109D5FEE133A38280061B1C3 /* wheel_snd_backpack.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = wheel_snd_backpack.mp3; sourceTree = "<group>"; };
+		109D5FEF133A38280061B1C3 /* wheel_snd_boots.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = wheel_snd_boots.mp3; sourceTree = "<group>"; };
+		109D5FF0133A38280061B1C3 /* wheel_snd_sunglasses.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = wheel_snd_sunglasses.mp3; sourceTree = "<group>"; };
+		109D5FF1133A38280061B1C3 /* wheel_snd_pants.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = wheel_snd_pants.mp3; sourceTree = "<group>"; };
+		109D6033133A5B140061B1C3 /* dress_snd_boots_Yellow.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = dress_snd_boots_Yellow.mp3; sourceTree = "<group>"; };
+		109D6034133A5B140061B1C3 /* dress_snd_boots_Red.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = dress_snd_boots_Red.mp3; sourceTree = "<group>"; };
+		109D6035133A5B140061B1C3 /* dress_snd_boots_Purple.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = dress_snd_boots_Purple.mp3; sourceTree = "<group>"; };
+		109D6036133A5B140061B1C3 /* dress_snd_jacket_Yellow.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = dress_snd_jacket_Yellow.mp3; sourceTree = "<group>"; };
+		109D6037133A5B140061B1C3 /* dress_snd_jacket_Blue.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = dress_snd_jacket_Blue.mp3; sourceTree = "<group>"; };
+		109D6038133A5B140061B1C3 /* dress_snd_jacket_Red.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = dress_snd_jacket_Red.mp3; sourceTree = "<group>"; };
+		109D6039133A5B140061B1C3 /* dress_snd_jacket_Purple.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = dress_snd_jacket_Purple.mp3; sourceTree = "<group>"; };
+		109D603A133A5B140061B1C3 /* dress_snd_necklace_Yellow.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = dress_snd_necklace_Yellow.mp3; sourceTree = "<group>"; };
+		109D603B133A5B140061B1C3 /* dress_snd_necklace_Blue.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = dress_snd_necklace_Blue.mp3; sourceTree = "<group>"; };
+		109D603C133A5B140061B1C3 /* dress_snd_necklace_Red.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = dress_snd_necklace_Red.mp3; sourceTree = "<group>"; };
+		109D603D133A5B140061B1C3 /* dress_snd_necklace_Purple.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = dress_snd_necklace_Purple.mp3; sourceTree = "<group>"; };
+		109D603E133A5B140061B1C3 /* DOMINO Donde Esta Mi Chaqueta Amarillas .mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "DOMINO Donde Esta Mi Chaqueta Amarillas .mp3"; sourceTree = "<group>"; };
+		109D603F133A5B140061B1C3 /* DOMINO Donde Esta Mi Chaqueta Azul.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "DOMINO Donde Esta Mi Chaqueta Azul.mp3"; sourceTree = "<group>"; };
+		109D6040133A5B140061B1C3 /* DOMINO Donde Esta Mi Chaqueta Rosada.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "DOMINO Donde Esta Mi Chaqueta Rosada.mp3"; sourceTree = "<group>"; };
+		109D6041133A5B140061B1C3 /* DOMINO Donde Esta Mi Chaqueta Violeta.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "DOMINO Donde Esta Mi Chaqueta Violeta.mp3"; sourceTree = "<group>"; };
+		109D6042133A5B140061B1C3 /* DOMINO Donde Esta Mi Collar Amarilla.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "DOMINO Donde Esta Mi Collar Amarilla.mp3"; sourceTree = "<group>"; };
+		109D6043133A5B140061B1C3 /* DOMINO Donde Esta Mi Collar Azul.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "DOMINO Donde Esta Mi Collar Azul.mp3"; sourceTree = "<group>"; };
+		109D6044133A5B140061B1C3 /* DOMINO Donde Esta Mi Collar Rosada.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "DOMINO Donde Esta Mi Collar Rosada.mp3"; sourceTree = "<group>"; };
+		109D6045133A5B140061B1C3 /* DOMINO Donde Esta Mi Collar Violeta.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "DOMINO Donde Esta Mi Collar Violeta.mp3"; sourceTree = "<group>"; };
+		109D6046133A5B140061B1C3 /* DOMINO Donde Esta Mi Gorra Amarilla.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "DOMINO Donde Esta Mi Gorra Amarilla.mp3"; sourceTree = "<group>"; };
+		109D6047133A5B140061B1C3 /* DOMINO Donde Esta Mi Gorra Azul.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "DOMINO Donde Esta Mi Gorra Azul.mp3"; sourceTree = "<group>"; };
+		109D6048133A5B140061B1C3 /* DOMINO Donde Esta Mi Gorra Rosada.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "DOMINO Donde Esta Mi Gorra Rosada.mp3"; sourceTree = "<group>"; };
+		109D6049133A5B140061B1C3 /* DOMINO Donde Esta Mi Gorra Violeta.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "DOMINO Donde Esta Mi Gorra Violeta.mp3"; sourceTree = "<group>"; };
+		109D604A133A5B140061B1C3 /* DOMINO Donde Esta Mi Telefono Amarillo.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "DOMINO Donde Esta Mi Telefono Amarillo.mp3"; sourceTree = "<group>"; };
+		109D604B133A5B140061B1C3 /* DOMINO Donde Esta Mi Telefono Azul.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "DOMINO Donde Esta Mi Telefono Azul.mp3"; sourceTree = "<group>"; };
+		109D604C133A5B140061B1C3 /* DOMINO Donde Esta Mi Telefono Rosada.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "DOMINO Donde Esta Mi Telefono Rosada.mp3"; sourceTree = "<group>"; };
+		109D604D133A5B140061B1C3 /* DOMINO Donde Esta Mi Telefono Violeta.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "DOMINO Donde Esta Mi Telefono Violeta.mp3"; sourceTree = "<group>"; };
+		109D604E133A5B140061B1C3 /* DOMINO Donde Estan Mi Mochilla Amarilla.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "DOMINO Donde Estan Mi Mochilla Amarilla.mp3"; sourceTree = "<group>"; };
+		109D604F133A5B140061B1C3 /* DOMINO Donde Estan Mi Mochilla Azul.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "DOMINO Donde Estan Mi Mochilla Azul.mp3"; sourceTree = "<group>"; };
+		109D6050133A5B140061B1C3 /* DOMINO Donde Estan Mi Mochilla Rosada.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "DOMINO Donde Estan Mi Mochilla Rosada.mp3"; sourceTree = "<group>"; };
+		109D6051133A5B140061B1C3 /* DOMINO Donde Estan Mi Mochilla Violeta.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "DOMINO Donde Estan Mi Mochilla Violeta.mp3"; sourceTree = "<group>"; };
+		109D6052133A5B140061B1C3 /* DOMINO Donde Estan Mis Botas Amarillas.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "DOMINO Donde Estan Mis Botas Amarillas.mp3"; sourceTree = "<group>"; };
+		109D6053133A5B140061B1C3 /* DOMINO Donde Estan Mis Botas Azules.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "DOMINO Donde Estan Mis Botas Azules.mp3"; sourceTree = "<group>"; };
+		109D6054133A5B140061B1C3 /* DOMINO Donde Estan Mis Botas Rosadas.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "DOMINO Donde Estan Mis Botas Rosadas.mp3"; sourceTree = "<group>"; };
+		109D6055133A5B140061B1C3 /* DOMINO Donde Estan Mis Botas Violetas.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "DOMINO Donde Estan Mis Botas Violetas.mp3"; sourceTree = "<group>"; };
+		109D6056133A5B140061B1C3 /* DOMINO Donde Estan Mis Gafas Amarillas.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "DOMINO Donde Estan Mis Gafas Amarillas.mp3"; sourceTree = "<group>"; };
+		109D6057133A5B140061B1C3 /* DOMINO Donde Estan Mis Gafas Azules.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "DOMINO Donde Estan Mis Gafas Azules.mp3"; sourceTree = "<group>"; };
+		109D6058133A5B140061B1C3 /* DOMINO Donde Estan Mis Gafas Rosadas.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "DOMINO Donde Estan Mis Gafas Rosadas.mp3"; sourceTree = "<group>"; };
+		109D6059133A5B140061B1C3 /* DOMINO Donde Estan Mis Gafas Violetas.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "DOMINO Donde Estan Mis Gafas Violetas.mp3"; sourceTree = "<group>"; };
+		109D605A133A5B140061B1C3 /* dress_snd_pants_Yellow_where.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = dress_snd_pants_Yellow_where.mp3; sourceTree = "<group>"; };
+		109D605B133A5B140061B1C3 /* DOMINO Donde Estan Mis Pantalones Azules.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "DOMINO Donde Estan Mis Pantalones Azules.mp3"; sourceTree = "<group>"; };
+		109D605C133A5B140061B1C3 /* DOMINO Donde Estan Mis Pantalones Rosadas.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "DOMINO Donde Estan Mis Pantalones Rosadas.mp3"; sourceTree = "<group>"; };
+		109D605D133A5B140061B1C3 /* DOMINO Donde Estan Mis Pantalones Violetas.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "DOMINO Donde Estan Mis Pantalones Violetas.mp3"; sourceTree = "<group>"; };
+		109D605E133A5B140061B1C3 /* DOMINO Esa Es La Chaqueta Amarilla.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "DOMINO Esa Es La Chaqueta Amarilla.mp3"; sourceTree = "<group>"; };
+		109D605F133A5B140061B1C3 /* DOMINO Esa Es La Chaqueta Azul.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "DOMINO Esa Es La Chaqueta Azul.mp3"; sourceTree = "<group>"; };
+		109D6060133A5B140061B1C3 /* DOMINO Esa Es La Chaqueta Rosada.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "DOMINO Esa Es La Chaqueta Rosada.mp3"; sourceTree = "<group>"; };
+		109D6061133A5B140061B1C3 /* DOMINO Esa Es La Chaqueta Violeta.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "DOMINO Esa Es La Chaqueta Violeta.mp3"; sourceTree = "<group>"; };
+		109D6062133A5B140061B1C3 /* DOMINO Esa Es La Gorra Amarilla.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "DOMINO Esa Es La Gorra Amarilla.mp3"; sourceTree = "<group>"; };
+		109D6063133A5B140061B1C3 /* DOMINO Esa Es La Gorra Azul.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "DOMINO Esa Es La Gorra Azul.mp3"; sourceTree = "<group>"; };
+		109D6064133A5B140061B1C3 /* DOMINO Esa Es La Gorra Rosada.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "DOMINO Esa Es La Gorra Rosada.mp3"; sourceTree = "<group>"; };
+		109D6065133A5B140061B1C3 /* DOMINO Esa Es La Gorra Violeta.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "DOMINO Esa Es La Gorra Violeta.mp3"; sourceTree = "<group>"; };
+		109D6066133A5B140061B1C3 /* DOMINO Esa Es La Mochilla Amarilla.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "DOMINO Esa Es La Mochilla Amarilla.mp3"; sourceTree = "<group>"; };
+		109D6067133A5B140061B1C3 /* DOMINO Esa Es La Mochilla Azul.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "DOMINO Esa Es La Mochilla Azul.mp3"; sourceTree = "<group>"; };
+		109D6068133A5B140061B1C3 /* DOMINO Esa Es La Mochilla Rosada.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "DOMINO Esa Es La Mochilla Rosada.mp3"; sourceTree = "<group>"; };
+		109D6069133A5B140061B1C3 /* DOMINO Esa Es La Mochilla Violeta.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "DOMINO Esa Es La Mochilla Violeta.mp3"; sourceTree = "<group>"; };
+		109D606A133A5B140061B1C3 /* DOMINO Esas Son Las Botas Amarillas.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "DOMINO Esas Son Las Botas Amarillas.mp3"; sourceTree = "<group>"; };
+		109D606B133A5B140061B1C3 /* DOMINO Esas Son Las Botas Azules.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "DOMINO Esas Son Las Botas Azules.mp3"; sourceTree = "<group>"; };
+		109D606C133A5B140061B1C3 /* DOMINO Esas Son Las Botas Rosadas.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "DOMINO Esas Son Las Botas Rosadas.mp3"; sourceTree = "<group>"; };
+		109D606D133A5B140061B1C3 /* DOMINO Esas Son Las Botas Violetas.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "DOMINO Esas Son Las Botas Violetas.mp3"; sourceTree = "<group>"; };
+		109D606E133A5B140061B1C3 /* DOMINO Eso Es El Collar Amarilla.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "DOMINO Eso Es El Collar Amarilla.mp3"; sourceTree = "<group>"; };
+		109D606F133A5B140061B1C3 /* DOMINO Eso Es El Collar Azul.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "DOMINO Eso Es El Collar Azul.mp3"; sourceTree = "<group>"; };
+		109D6070133A5B140061B1C3 /* DOMINO Eso Es El Collar Rosada.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "DOMINO Eso Es El Collar Rosada.mp3"; sourceTree = "<group>"; };
+		109D6071133A5B140061B1C3 /* DOMINO Eso Es El Collar Violeta.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "DOMINO Eso Es El Collar Violeta.mp3"; sourceTree = "<group>"; };
+		109D6072133A5B140061B1C3 /* DOMINO Eso Es El Telefono Amarillo .mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "DOMINO Eso Es El Telefono Amarillo .mp3"; sourceTree = "<group>"; };
+		109D6073133A5B140061B1C3 /* DOMINO Eso Es El Telefono Azul.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "DOMINO Eso Es El Telefono Azul.mp3"; sourceTree = "<group>"; };
+		109D6074133A5B140061B1C3 /* DOMINO Eso Es El Telefono Rosado.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "DOMINO Eso Es El Telefono Rosado.mp3"; sourceTree = "<group>"; };
+		109D6075133A5B140061B1C3 /* DOMINO Eso Es El Telefono Violeta.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "DOMINO Eso Es El Telefono Violeta.mp3"; sourceTree = "<group>"; };
+		109D6076133A5B140061B1C3 /* DOMINO Eso Son Las Gafas Amarillas.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "DOMINO Eso Son Las Gafas Amarillas.mp3"; sourceTree = "<group>"; };
+		109D6077133A5B140061B1C3 /* DOMINO Eso Son Las Gafas Azules.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "DOMINO Eso Son Las Gafas Azules.mp3"; sourceTree = "<group>"; };
+		109D6078133A5B140061B1C3 /* DOMINO Eso Son Las Gafas Rosadas.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "DOMINO Eso Son Las Gafas Rosadas.mp3"; sourceTree = "<group>"; };
+		109D6079133A5B140061B1C3 /* DOMINO Eso Son Las Gafas Violetas.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "DOMINO Eso Son Las Gafas Violetas.mp3"; sourceTree = "<group>"; };
+		109D607A133A5B140061B1C3 /* Domino_pantalones_amarillos.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Domino_pantalones_amarillos.mp3; sourceTree = "<group>"; };
+		109D607B133A5B140061B1C3 /* DOMINO Eso Son Los Pantalones Azules.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "DOMINO Eso Son Los Pantalones Azules.mp3"; sourceTree = "<group>"; };
+		109D607C133A5B140061B1C3 /* DOMINO Eso Son Los Pantalones Rosadas.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "DOMINO Eso Son Los Pantalones Rosadas.mp3"; sourceTree = "<group>"; };
+		109D607D133A5B140061B1C3 /* DOMINO Eso Son Los Pantalones Violetas.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "DOMINO Eso Son Los Pantalones Violetas.mp3"; sourceTree = "<group>"; };
+		109D607E133A5B150061B1C3 /* dress_snd_sunglasses_Yellow.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = dress_snd_sunglasses_Yellow.mp3; sourceTree = "<group>"; };
+		109D607F133A5B150061B1C3 /* dress_snd_sunglasses_Blue.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = dress_snd_sunglasses_Blue.mp3; sourceTree = "<group>"; };
+		109D6080133A5B150061B1C3 /* dress_snd_sunglasses_Red.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = dress_snd_sunglasses_Red.mp3; sourceTree = "<group>"; };
+		109D6081133A5B150061B1C3 /* dress_snd_sunglasses_Purple.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = dress_snd_sunglasses_Purple.mp3; sourceTree = "<group>"; };
+		109D6082133A5B150061B1C3 /* dress_snd_backpack_Yellow.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = dress_snd_backpack_Yellow.mp3; sourceTree = "<group>"; };
+		109D6083133A5B150061B1C3 /* dress_snd_backpack_Blue.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = dress_snd_backpack_Blue.mp3; sourceTree = "<group>"; };
+		109D6084133A5B150061B1C3 /* dress_snd_backpack_Red.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = dress_snd_backpack_Red.mp3; sourceTree = "<group>"; };
+		109D6085133A5B150061B1C3 /* dress_snd_backpack_Purple.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = dress_snd_backpack_Purple.mp3; sourceTree = "<group>"; };
+		109D6086133A5B150061B1C3 /* DOMINO Muy Bien.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "DOMINO Muy Bien.mp3"; sourceTree = "<group>"; };
+		109D6087133A5B150061B1C3 /* dress_snd_jacket_where.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = dress_snd_jacket_where.mp3; sourceTree = "<group>"; };
+		109D6088133A5B150061B1C3 /* dress_snd_necklace_where.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = dress_snd_necklace_where.mp3; sourceTree = "<group>"; };
+		109D6089133A5B150061B1C3 /* dress_snd_hat_where.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = dress_snd_hat_where.mp3; sourceTree = "<group>"; };
+		109D608A133A5B150061B1C3 /* dress_snd_backpack_where.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = dress_snd_backpack_where.mp3; sourceTree = "<group>"; };
+		109D608B133A5B150061B1C3 /* dress_snd_phone_where.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = dress_snd_phone_where.mp3; sourceTree = "<group>"; };
+		109D608C133A5B150061B1C3 /* dress_snd_boots_where.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = dress_snd_boots_where.mp3; sourceTree = "<group>"; };
+		109D608D133A5B150061B1C3 /* dress_snd_sunglasses_where.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = dress_snd_sunglasses_where.mp3; sourceTree = "<group>"; };
+		109D608E133A5B150061B1C3 /* dress_snd_pants_where.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = dress_snd_pants_where.mp3; sourceTree = "<group>"; };
+		109D608F133A5B150061B1C3 /* DOMINO Orale.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "DOMINO Orale.mp3"; sourceTree = "<group>"; };
+		109D6090133A5B150061B1C3 /* dress_snd_pants_Yellow.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = dress_snd_pants_Yellow.mp3; sourceTree = "<group>"; };
+		109D6091133A5B150061B1C3 /* dress_snd_pants_Blue.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = dress_snd_pants_Blue.mp3; sourceTree = "<group>"; };
+		109D6092133A5B150061B1C3 /* dress_snd_pants_Red.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = dress_snd_pants_Red.mp3; sourceTree = "<group>"; };
+		109D6093133A5B150061B1C3 /* dress_snd_pants_Purple.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = dress_snd_pants_Purple.mp3; sourceTree = "<group>"; };
+		109D6094133A5B150061B1C3 /* DOMINO Puntos.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "DOMINO Puntos.mp3"; sourceTree = "<group>"; };
+		109D6095133A5B150061B1C3 /* DOMINO Se Me Callo La Ropa.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "DOMINO Se Me Callo La Ropa.mp3"; sourceTree = "<group>"; };
+		109D6096133A5B150061B1C3 /* dress_snd_phone_Yellow.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = dress_snd_phone_Yellow.mp3; sourceTree = "<group>"; };
+		109D6097133A5B150061B1C3 /* dress_snd_phone_Blue.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = dress_snd_phone_Blue.mp3; sourceTree = "<group>"; };
+		109D6098133A5B150061B1C3 /* dress_snd_phone_Red.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = dress_snd_phone_Red.mp3; sourceTree = "<group>"; };
+		109D6099133A5B150061B1C3 /* dress_snd_phone_Purple.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = dress_snd_phone_Purple.mp3; sourceTree = "<group>"; };
+		109D6101133A5B410061B1C3 /* dress_snd_boots_Blue.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = dress_snd_boots_Blue.mp3; sourceTree = "<group>"; };
 		10A08C9113215091003F24AD /* GameDress_iPad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameDress_iPad.h; sourceTree = "<group>"; };
 		10A08C9213215091003F24AD /* GameDress_iPad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameDress_iPad.m; sourceTree = "<group>"; };
 		10A08C9313215091003F24AD /* GameDress_iPad.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GameDress_iPad.xib; sourceTree = "<group>"; };
@@ -640,32 +872,8 @@
 		10B32804131D58330014A77D /* wheel_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wheel_background.png; sourceTree = "<group>"; };
 		10B32805131D58330014A77D /* wheel_dino.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wheel_dino.png; sourceTree = "<group>"; };
 		10B32806131D584D0014A77D /* wheel_home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wheel_home.png; sourceTree = "<group>"; };
-		10B32833131D5CD10014A77D /* wheel_snd_sunglasses.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = wheel_snd_sunglasses.m4a; sourceTree = "<group>"; };
-		10B32854131D5EAB0014A77D /* wheel_snd_pants.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = wheel_snd_pants.m4a; sourceTree = "<group>"; };
-		10B32855131D5EAB0014A77D /* wheel_snd_necklace.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = wheel_snd_necklace.m4a; sourceTree = "<group>"; };
-		10B32856131D5EAB0014A77D /* wheel_snd_jacket.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = wheel_snd_jacket.m4a; sourceTree = "<group>"; };
-		10B32857131D5EAB0014A77D /* wheel_snd_phone.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = wheel_snd_phone.m4a; sourceTree = "<group>"; };
-		10B32858131D5EAB0014A77D /* wheel_snd_hat.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = wheel_snd_hat.m4a; sourceTree = "<group>"; };
-		10B32859131D5EAB0014A77D /* wheel_snd_boots.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = wheel_snd_boots.m4a; sourceTree = "<group>"; };
-		10B3285A131D5EAB0014A77D /* wheel_snd_backpack.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = wheel_snd_backpack.m4a; sourceTree = "<group>"; };
 		10B3297A131D87CB0014A77D /* GameManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameManager.h; sourceTree = "<group>"; };
 		10B3297B131D87CB0014A77D /* GameManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameManager.m; sourceTree = "<group>"; };
-		10B329A2131D8F910014A77D /* wheel_snd_jacket_where.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = wheel_snd_jacket_where.m4a; sourceTree = "<group>"; };
-		10B329A4131D90B50014A77D /* wheel_snd_backpack_where.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = wheel_snd_backpack_where.m4a; sourceTree = "<group>"; };
-		10B329A5131D90B50014A77D /* wheel_snd_boots_where.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = wheel_snd_boots_where.m4a; sourceTree = "<group>"; };
-		10B329A6131D90B50014A77D /* wheel_snd_hat_where.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = wheel_snd_hat_where.m4a; sourceTree = "<group>"; };
-		10B329A7131D90B50014A77D /* wheel_snd_necklace_where.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = wheel_snd_necklace_where.m4a; sourceTree = "<group>"; };
-		10B329A8131D90B50014A77D /* wheel_snd_pants_where.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = wheel_snd_pants_where.m4a; sourceTree = "<group>"; };
-		10B329A9131D90B50014A77D /* wheel_snd_phone_where.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = wheel_snd_phone_where.m4a; sourceTree = "<group>"; };
-		10B329AA131D90B50014A77D /* wheel_snd_sunglasses_where.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = wheel_snd_sunglasses_where.m4a; sourceTree = "<group>"; };
-		10B329C1131D95F50014A77D /* wheel_snd_backpack_wrong.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = wheel_snd_backpack_wrong.m4a; sourceTree = "<group>"; };
-		10B329C2131D95F50014A77D /* wheel_snd_boots_wrong.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = wheel_snd_boots_wrong.m4a; sourceTree = "<group>"; };
-		10B329C3131D95F50014A77D /* wheel_snd_hat_wrong.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = wheel_snd_hat_wrong.m4a; sourceTree = "<group>"; };
-		10B329C4131D95F50014A77D /* wheel_snd_jacket_wrong.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = wheel_snd_jacket_wrong.m4a; sourceTree = "<group>"; };
-		10B329C5131D95F50014A77D /* wheel_snd_necklace_wrong.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = wheel_snd_necklace_wrong.m4a; sourceTree = "<group>"; };
-		10B329C6131D95F50014A77D /* wheel_snd_pants_wrong.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = wheel_snd_pants_wrong.m4a; sourceTree = "<group>"; };
-		10B329C7131D95F50014A77D /* wheel_snd_phone_wrong.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = wheel_snd_phone_wrong.m4a; sourceTree = "<group>"; };
-		10B329C8131D95F50014A77D /* wheel_snd_sunglasses_wrong.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = wheel_snd_sunglasses_wrong.m4a; sourceTree = "<group>"; };
 		10B569FC1306EB2B00AA7DCB /* MainMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainMenu.h; sourceTree = "<group>"; };
 		10B569FD1306EB2B00AA7DCB /* MainMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainMenu.m; sourceTree = "<group>"; };
 		10B569FE1306EB2B00AA7DCB /* MainMenu.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
@@ -1204,30 +1412,134 @@
 		10B32831131D5CAA0014A77D /* Sounds */ = {
 			isa = PBXGroup;
 			children = (
-				10B329C1131D95F50014A77D /* wheel_snd_backpack_wrong.m4a */,
-				10B329C2131D95F50014A77D /* wheel_snd_boots_wrong.m4a */,
-				10B329C3131D95F50014A77D /* wheel_snd_hat_wrong.m4a */,
-				10B329C4131D95F50014A77D /* wheel_snd_jacket_wrong.m4a */,
-				10B329C5131D95F50014A77D /* wheel_snd_necklace_wrong.m4a */,
-				10B329C6131D95F50014A77D /* wheel_snd_pants_wrong.m4a */,
-				10B329C7131D95F50014A77D /* wheel_snd_phone_wrong.m4a */,
-				10B329C8131D95F50014A77D /* wheel_snd_sunglasses_wrong.m4a */,
-				10B329A4131D90B50014A77D /* wheel_snd_backpack_where.m4a */,
-				10B329A5131D90B50014A77D /* wheel_snd_boots_where.m4a */,
-				10B329A6131D90B50014A77D /* wheel_snd_hat_where.m4a */,
-				10B329A7131D90B50014A77D /* wheel_snd_necklace_where.m4a */,
-				10B329A8131D90B50014A77D /* wheel_snd_pants_where.m4a */,
-				10B329A9131D90B50014A77D /* wheel_snd_phone_where.m4a */,
-				10B329AA131D90B50014A77D /* wheel_snd_sunglasses_where.m4a */,
-				10B329A2131D8F910014A77D /* wheel_snd_jacket_where.m4a */,
-				10B32854131D5EAB0014A77D /* wheel_snd_pants.m4a */,
-				10B32855131D5EAB0014A77D /* wheel_snd_necklace.m4a */,
-				10B32856131D5EAB0014A77D /* wheel_snd_jacket.m4a */,
-				10B32857131D5EAB0014A77D /* wheel_snd_phone.m4a */,
-				10B32858131D5EAB0014A77D /* wheel_snd_hat.m4a */,
-				10B32859131D5EAB0014A77D /* wheel_snd_boots.m4a */,
-				10B3285A131D5EAB0014A77D /* wheel_snd_backpack.m4a */,
-				10B32833131D5CD10014A77D /* wheel_snd_sunglasses.m4a */,
+				109D6033133A5B140061B1C3 /* dress_snd_boots_Yellow.mp3 */,
+				109D6101133A5B410061B1C3 /* dress_snd_boots_Blue.mp3 */,
+				109D6034133A5B140061B1C3 /* dress_snd_boots_Red.mp3 */,
+				109D6035133A5B140061B1C3 /* dress_snd_boots_Purple.mp3 */,
+				109D6036133A5B140061B1C3 /* dress_snd_jacket_Yellow.mp3 */,
+				109D6037133A5B140061B1C3 /* dress_snd_jacket_Blue.mp3 */,
+				109D6038133A5B140061B1C3 /* dress_snd_jacket_Red.mp3 */,
+				109D6039133A5B140061B1C3 /* dress_snd_jacket_Purple.mp3 */,
+				109D603A133A5B140061B1C3 /* dress_snd_necklace_Yellow.mp3 */,
+				109D603B133A5B140061B1C3 /* dress_snd_necklace_Blue.mp3 */,
+				109D603C133A5B140061B1C3 /* dress_snd_necklace_Red.mp3 */,
+				109D603D133A5B140061B1C3 /* dress_snd_necklace_Purple.mp3 */,
+				109D603E133A5B140061B1C3 /* DOMINO Donde Esta Mi Chaqueta Amarillas .mp3 */,
+				109D603F133A5B140061B1C3 /* DOMINO Donde Esta Mi Chaqueta Azul.mp3 */,
+				109D6040133A5B140061B1C3 /* DOMINO Donde Esta Mi Chaqueta Rosada.mp3 */,
+				109D6041133A5B140061B1C3 /* DOMINO Donde Esta Mi Chaqueta Violeta.mp3 */,
+				109D6042133A5B140061B1C3 /* DOMINO Donde Esta Mi Collar Amarilla.mp3 */,
+				109D6043133A5B140061B1C3 /* DOMINO Donde Esta Mi Collar Azul.mp3 */,
+				109D6044133A5B140061B1C3 /* DOMINO Donde Esta Mi Collar Rosada.mp3 */,
+				109D6045133A5B140061B1C3 /* DOMINO Donde Esta Mi Collar Violeta.mp3 */,
+				109D6046133A5B140061B1C3 /* DOMINO Donde Esta Mi Gorra Amarilla.mp3 */,
+				109D6047133A5B140061B1C3 /* DOMINO Donde Esta Mi Gorra Azul.mp3 */,
+				109D6048133A5B140061B1C3 /* DOMINO Donde Esta Mi Gorra Rosada.mp3 */,
+				109D6049133A5B140061B1C3 /* DOMINO Donde Esta Mi Gorra Violeta.mp3 */,
+				109D604A133A5B140061B1C3 /* DOMINO Donde Esta Mi Telefono Amarillo.mp3 */,
+				109D604B133A5B140061B1C3 /* DOMINO Donde Esta Mi Telefono Azul.mp3 */,
+				109D604C133A5B140061B1C3 /* DOMINO Donde Esta Mi Telefono Rosada.mp3 */,
+				109D604D133A5B140061B1C3 /* DOMINO Donde Esta Mi Telefono Violeta.mp3 */,
+				109D604E133A5B140061B1C3 /* DOMINO Donde Estan Mi Mochilla Amarilla.mp3 */,
+				109D604F133A5B140061B1C3 /* DOMINO Donde Estan Mi Mochilla Azul.mp3 */,
+				109D6050133A5B140061B1C3 /* DOMINO Donde Estan Mi Mochilla Rosada.mp3 */,
+				109D6051133A5B140061B1C3 /* DOMINO Donde Estan Mi Mochilla Violeta.mp3 */,
+				109D6052133A5B140061B1C3 /* DOMINO Donde Estan Mis Botas Amarillas.mp3 */,
+				109D6053133A5B140061B1C3 /* DOMINO Donde Estan Mis Botas Azules.mp3 */,
+				109D6054133A5B140061B1C3 /* DOMINO Donde Estan Mis Botas Rosadas.mp3 */,
+				109D6055133A5B140061B1C3 /* DOMINO Donde Estan Mis Botas Violetas.mp3 */,
+				109D6056133A5B140061B1C3 /* DOMINO Donde Estan Mis Gafas Amarillas.mp3 */,
+				109D6057133A5B140061B1C3 /* DOMINO Donde Estan Mis Gafas Azules.mp3 */,
+				109D6058133A5B140061B1C3 /* DOMINO Donde Estan Mis Gafas Rosadas.mp3 */,
+				109D6059133A5B140061B1C3 /* DOMINO Donde Estan Mis Gafas Violetas.mp3 */,
+				109D605A133A5B140061B1C3 /* dress_snd_pants_Yellow_where.mp3 */,
+				109D605B133A5B140061B1C3 /* DOMINO Donde Estan Mis Pantalones Azules.mp3 */,
+				109D605C133A5B140061B1C3 /* DOMINO Donde Estan Mis Pantalones Rosadas.mp3 */,
+				109D605D133A5B140061B1C3 /* DOMINO Donde Estan Mis Pantalones Violetas.mp3 */,
+				109D605E133A5B140061B1C3 /* DOMINO Esa Es La Chaqueta Amarilla.mp3 */,
+				109D605F133A5B140061B1C3 /* DOMINO Esa Es La Chaqueta Azul.mp3 */,
+				109D6060133A5B140061B1C3 /* DOMINO Esa Es La Chaqueta Rosada.mp3 */,
+				109D6061133A5B140061B1C3 /* DOMINO Esa Es La Chaqueta Violeta.mp3 */,
+				109D6062133A5B140061B1C3 /* DOMINO Esa Es La Gorra Amarilla.mp3 */,
+				109D6063133A5B140061B1C3 /* DOMINO Esa Es La Gorra Azul.mp3 */,
+				109D6064133A5B140061B1C3 /* DOMINO Esa Es La Gorra Rosada.mp3 */,
+				109D6065133A5B140061B1C3 /* DOMINO Esa Es La Gorra Violeta.mp3 */,
+				109D6066133A5B140061B1C3 /* DOMINO Esa Es La Mochilla Amarilla.mp3 */,
+				109D6067133A5B140061B1C3 /* DOMINO Esa Es La Mochilla Azul.mp3 */,
+				109D6068133A5B140061B1C3 /* DOMINO Esa Es La Mochilla Rosada.mp3 */,
+				109D6069133A5B140061B1C3 /* DOMINO Esa Es La Mochilla Violeta.mp3 */,
+				109D606A133A5B140061B1C3 /* DOMINO Esas Son Las Botas Amarillas.mp3 */,
+				109D606B133A5B140061B1C3 /* DOMINO Esas Son Las Botas Azules.mp3 */,
+				109D606C133A5B140061B1C3 /* DOMINO Esas Son Las Botas Rosadas.mp3 */,
+				109D606D133A5B140061B1C3 /* DOMINO Esas Son Las Botas Violetas.mp3 */,
+				109D606E133A5B140061B1C3 /* DOMINO Eso Es El Collar Amarilla.mp3 */,
+				109D606F133A5B140061B1C3 /* DOMINO Eso Es El Collar Azul.mp3 */,
+				109D6070133A5B140061B1C3 /* DOMINO Eso Es El Collar Rosada.mp3 */,
+				109D6071133A5B140061B1C3 /* DOMINO Eso Es El Collar Violeta.mp3 */,
+				109D6072133A5B140061B1C3 /* DOMINO Eso Es El Telefono Amarillo .mp3 */,
+				109D6073133A5B140061B1C3 /* DOMINO Eso Es El Telefono Azul.mp3 */,
+				109D6074133A5B140061B1C3 /* DOMINO Eso Es El Telefono Rosado.mp3 */,
+				109D6075133A5B140061B1C3 /* DOMINO Eso Es El Telefono Violeta.mp3 */,
+				109D6076133A5B140061B1C3 /* DOMINO Eso Son Las Gafas Amarillas.mp3 */,
+				109D6077133A5B140061B1C3 /* DOMINO Eso Son Las Gafas Azules.mp3 */,
+				109D6078133A5B140061B1C3 /* DOMINO Eso Son Las Gafas Rosadas.mp3 */,
+				109D6079133A5B140061B1C3 /* DOMINO Eso Son Las Gafas Violetas.mp3 */,
+				109D607A133A5B140061B1C3 /* Domino_pantalones_amarillos.mp3 */,
+				109D607B133A5B140061B1C3 /* DOMINO Eso Son Los Pantalones Azules.mp3 */,
+				109D607C133A5B140061B1C3 /* DOMINO Eso Son Los Pantalones Rosadas.mp3 */,
+				109D607D133A5B140061B1C3 /* DOMINO Eso Son Los Pantalones Violetas.mp3 */,
+				109D607E133A5B150061B1C3 /* dress_snd_sunglasses_Yellow.mp3 */,
+				109D607F133A5B150061B1C3 /* dress_snd_sunglasses_Blue.mp3 */,
+				109D6080133A5B150061B1C3 /* dress_snd_sunglasses_Red.mp3 */,
+				109D6081133A5B150061B1C3 /* dress_snd_sunglasses_Purple.mp3 */,
+				109D6082133A5B150061B1C3 /* dress_snd_backpack_Yellow.mp3 */,
+				109D6083133A5B150061B1C3 /* dress_snd_backpack_Blue.mp3 */,
+				109D6084133A5B150061B1C3 /* dress_snd_backpack_Red.mp3 */,
+				109D6085133A5B150061B1C3 /* dress_snd_backpack_Purple.mp3 */,
+				109D6086133A5B150061B1C3 /* DOMINO Muy Bien.mp3 */,
+				109D6087133A5B150061B1C3 /* dress_snd_jacket_where.mp3 */,
+				109D6088133A5B150061B1C3 /* dress_snd_necklace_where.mp3 */,
+				109D6089133A5B150061B1C3 /* dress_snd_hat_where.mp3 */,
+				109D608A133A5B150061B1C3 /* dress_snd_backpack_where.mp3 */,
+				109D608B133A5B150061B1C3 /* dress_snd_phone_where.mp3 */,
+				109D608C133A5B150061B1C3 /* dress_snd_boots_where.mp3 */,
+				109D608D133A5B150061B1C3 /* dress_snd_sunglasses_where.mp3 */,
+				109D608E133A5B150061B1C3 /* dress_snd_pants_where.mp3 */,
+				109D608F133A5B150061B1C3 /* DOMINO Orale.mp3 */,
+				109D6090133A5B150061B1C3 /* dress_snd_pants_Yellow.mp3 */,
+				109D6091133A5B150061B1C3 /* dress_snd_pants_Blue.mp3 */,
+				109D6092133A5B150061B1C3 /* dress_snd_pants_Red.mp3 */,
+				109D6093133A5B150061B1C3 /* dress_snd_pants_Purple.mp3 */,
+				109D6094133A5B150061B1C3 /* DOMINO Puntos.mp3 */,
+				109D6095133A5B150061B1C3 /* DOMINO Se Me Callo La Ropa.mp3 */,
+				109D6096133A5B150061B1C3 /* dress_snd_phone_Yellow.mp3 */,
+				109D6097133A5B150061B1C3 /* dress_snd_phone_Blue.mp3 */,
+				109D6098133A5B150061B1C3 /* dress_snd_phone_Red.mp3 */,
+				109D6099133A5B150061B1C3 /* dress_snd_phone_Purple.mp3 */,
+				109D5FEA133A38280061B1C3 /* wheel_snd_necklace.mp3 */,
+				109D5FEB133A38280061B1C3 /* wheel_snd_phone.mp3 */,
+				109D5FEC133A38280061B1C3 /* wheel_snd_jacket.mp3 */,
+				109D5FED133A38280061B1C3 /* wheel_snd_hat.mp3 */,
+				109D5FEE133A38280061B1C3 /* wheel_snd_backpack.mp3 */,
+				109D5FEF133A38280061B1C3 /* wheel_snd_boots.mp3 */,
+				109D5FF0133A38280061B1C3 /* wheel_snd_sunglasses.mp3 */,
+				109D5FF1133A38280061B1C3 /* wheel_snd_pants.mp3 */,
+				109D5FCD133A37300061B1C3 /* wheel_snd_jacket_wrong.mp3 */,
+				109D5FCE133A37300061B1C3 /* wheel_snd_hat_wrong.mp3 */,
+				109D5FCF133A37300061B1C3 /* wheel_snd_backpack_wrong.mp3 */,
+				109D5FD0133A37300061B1C3 /* wheel_snd_boots_wrong.mp3 */,
+				109D5FD1133A37300061B1C3 /* wheel_snd_sunglasses_wrong.mp3 */,
+				109D5FD2133A37300061B1C3 /* wheel_snd_necklace_wrong.mp3 */,
+				109D5FD3133A37300061B1C3 /* wheel_snd_phone_wrong.mp3 */,
+				109D5FD4133A37300061B1C3 /* wheel_snd_pants_wrong.mp3 */,
+				109D5FB5133A35F30061B1C3 /* wheel_snd_phone_where.mp3 */,
+				109D5FB6133A35F30061B1C3 /* wheel_snd_hat_where.mp3 */,
+				109D5FB7133A35F30061B1C3 /* wheel_snd_necklace_where.mp3 */,
+				109D5FB8133A35F30061B1C3 /* wheel_snd_jacket_where.mp3 */,
+				109D5FB9133A35F30061B1C3 /* wheel_snd_backpack_where.mp3 */,
+				109D5FBA133A35F30061B1C3 /* wheel_snd_boots_where.mp3 */,
+				109D5FBB133A35F30061B1C3 /* wheel_snd_sunglasses_where.mp3 */,
+				109D5FBC133A35F30061B1C3 /* wheel_snd_pants_where.mp3 */,
 			);
 			name = Sounds;
 			sourceTree = "<group>";
@@ -1600,30 +1912,6 @@
 				102FDE44131C893800CC0AEB /* wheel_sound_on-hd.png in Resources */,
 				102FDE45131C893800CC0AEB /* wheel_sound_on.png in Resources */,
 				10B32807131D584D0014A77D /* wheel_home.png in Resources */,
-				10B32834131D5CD10014A77D /* wheel_snd_sunglasses.m4a in Resources */,
-				10B3285B131D5EAB0014A77D /* wheel_snd_pants.m4a in Resources */,
-				10B3285C131D5EAB0014A77D /* wheel_snd_necklace.m4a in Resources */,
-				10B3285D131D5EAB0014A77D /* wheel_snd_jacket.m4a in Resources */,
-				10B3285E131D5EAB0014A77D /* wheel_snd_phone.m4a in Resources */,
-				10B3285F131D5EAB0014A77D /* wheel_snd_hat.m4a in Resources */,
-				10B32860131D5EAB0014A77D /* wheel_snd_boots.m4a in Resources */,
-				10B32861131D5EAB0014A77D /* wheel_snd_backpack.m4a in Resources */,
-				10B329A3131D8F910014A77D /* wheel_snd_jacket_where.m4a in Resources */,
-				10B329AB131D90B50014A77D /* wheel_snd_backpack_where.m4a in Resources */,
-				10B329AC131D90B50014A77D /* wheel_snd_boots_where.m4a in Resources */,
-				10B329AD131D90B50014A77D /* wheel_snd_hat_where.m4a in Resources */,
-				10B329AE131D90B50014A77D /* wheel_snd_necklace_where.m4a in Resources */,
-				10B329AF131D90B50014A77D /* wheel_snd_pants_where.m4a in Resources */,
-				10B329B0131D90B50014A77D /* wheel_snd_phone_where.m4a in Resources */,
-				10B329B1131D90B50014A77D /* wheel_snd_sunglasses_where.m4a in Resources */,
-				10B329C9131D95F50014A77D /* wheel_snd_backpack_wrong.m4a in Resources */,
-				10B329CA131D95F50014A77D /* wheel_snd_boots_wrong.m4a in Resources */,
-				10B329CB131D95F50014A77D /* wheel_snd_hat_wrong.m4a in Resources */,
-				10B329CC131D95F50014A77D /* wheel_snd_jacket_wrong.m4a in Resources */,
-				10B329CD131D95F50014A77D /* wheel_snd_necklace_wrong.m4a in Resources */,
-				10B329CE131D95F50014A77D /* wheel_snd_pants_wrong.m4a in Resources */,
-				10B329CF131D95F50014A77D /* wheel_snd_phone_wrong.m4a in Resources */,
-				10B329D0131D95F50014A77D /* wheel_snd_sunglasses_wrong.m4a in Resources */,
 				10A08C9513215091003F24AD /* GameDress_iPad.xib in Resources */,
 				10A08DC213215B3F003F24AD /* DressData_iPad.plist in Resources */,
 				10A6BBFA13251A8700391C82 /* dress_iPad.plist in Resources */,
@@ -1650,6 +1938,134 @@
 				1024C4711338619B00F4D141 /* 3DStars_iPad_00013.pvr in Resources */,
 				1024C4721338619B00F4D141 /* 3DStars_iPad_00014.pvr in Resources */,
 				1024C4731338619B00F4D141 /* 3DStars_iPad_00015.pvr in Resources */,
+				109D5FBD133A35F30061B1C3 /* wheel_snd_phone_where.mp3 in Resources */,
+				109D5FBE133A35F30061B1C3 /* wheel_snd_hat_where.mp3 in Resources */,
+				109D5FBF133A35F30061B1C3 /* wheel_snd_necklace_where.mp3 in Resources */,
+				109D5FC0133A35F30061B1C3 /* wheel_snd_jacket_where.mp3 in Resources */,
+				109D5FC1133A35F30061B1C3 /* wheel_snd_backpack_where.mp3 in Resources */,
+				109D5FC2133A35F30061B1C3 /* wheel_snd_boots_where.mp3 in Resources */,
+				109D5FC3133A35F30061B1C3 /* wheel_snd_sunglasses_where.mp3 in Resources */,
+				109D5FC4133A35F30061B1C3 /* wheel_snd_pants_where.mp3 in Resources */,
+				109D5FD5133A37300061B1C3 /* wheel_snd_jacket_wrong.mp3 in Resources */,
+				109D5FD6133A37300061B1C3 /* wheel_snd_hat_wrong.mp3 in Resources */,
+				109D5FD7133A37300061B1C3 /* wheel_snd_backpack_wrong.mp3 in Resources */,
+				109D5FD8133A37300061B1C3 /* wheel_snd_boots_wrong.mp3 in Resources */,
+				109D5FD9133A37300061B1C3 /* wheel_snd_sunglasses_wrong.mp3 in Resources */,
+				109D5FDA133A37300061B1C3 /* wheel_snd_necklace_wrong.mp3 in Resources */,
+				109D5FDB133A37300061B1C3 /* wheel_snd_phone_wrong.mp3 in Resources */,
+				109D5FDC133A37300061B1C3 /* wheel_snd_pants_wrong.mp3 in Resources */,
+				109D5FF2133A38280061B1C3 /* wheel_snd_necklace.mp3 in Resources */,
+				109D5FF3133A38280061B1C3 /* wheel_snd_phone.mp3 in Resources */,
+				109D5FF4133A38280061B1C3 /* wheel_snd_jacket.mp3 in Resources */,
+				109D5FF5133A38280061B1C3 /* wheel_snd_hat.mp3 in Resources */,
+				109D5FF6133A38280061B1C3 /* wheel_snd_backpack.mp3 in Resources */,
+				109D5FF7133A38280061B1C3 /* wheel_snd_boots.mp3 in Resources */,
+				109D5FF8133A38280061B1C3 /* wheel_snd_sunglasses.mp3 in Resources */,
+				109D5FF9133A38280061B1C3 /* wheel_snd_pants.mp3 in Resources */,
+				109D60A5133A5B150061B1C3 /* DOMINO Donde Esta Mi Chaqueta Amarillas .mp3 in Resources */,
+				109D60A6133A5B150061B1C3 /* DOMINO Donde Esta Mi Chaqueta Azul.mp3 in Resources */,
+				109D60A7133A5B150061B1C3 /* DOMINO Donde Esta Mi Chaqueta Rosada.mp3 in Resources */,
+				109D60A8133A5B150061B1C3 /* DOMINO Donde Esta Mi Chaqueta Violeta.mp3 in Resources */,
+				109D60A9133A5B150061B1C3 /* DOMINO Donde Esta Mi Collar Amarilla.mp3 in Resources */,
+				109D60AA133A5B150061B1C3 /* DOMINO Donde Esta Mi Collar Azul.mp3 in Resources */,
+				109D60AB133A5B150061B1C3 /* DOMINO Donde Esta Mi Collar Rosada.mp3 in Resources */,
+				109D60AC133A5B150061B1C3 /* DOMINO Donde Esta Mi Collar Violeta.mp3 in Resources */,
+				109D60AD133A5B150061B1C3 /* DOMINO Donde Esta Mi Gorra Amarilla.mp3 in Resources */,
+				109D60AE133A5B150061B1C3 /* DOMINO Donde Esta Mi Gorra Azul.mp3 in Resources */,
+				109D60AF133A5B150061B1C3 /* DOMINO Donde Esta Mi Gorra Rosada.mp3 in Resources */,
+				109D60B0133A5B150061B1C3 /* DOMINO Donde Esta Mi Gorra Violeta.mp3 in Resources */,
+				109D60B1133A5B150061B1C3 /* DOMINO Donde Esta Mi Telefono Amarillo.mp3 in Resources */,
+				109D60B2133A5B150061B1C3 /* DOMINO Donde Esta Mi Telefono Azul.mp3 in Resources */,
+				109D60B3133A5B150061B1C3 /* DOMINO Donde Esta Mi Telefono Rosada.mp3 in Resources */,
+				109D60B4133A5B150061B1C3 /* DOMINO Donde Esta Mi Telefono Violeta.mp3 in Resources */,
+				109D60B5133A5B150061B1C3 /* DOMINO Donde Estan Mi Mochilla Amarilla.mp3 in Resources */,
+				109D60B6133A5B150061B1C3 /* DOMINO Donde Estan Mi Mochilla Azul.mp3 in Resources */,
+				109D60B7133A5B150061B1C3 /* DOMINO Donde Estan Mi Mochilla Rosada.mp3 in Resources */,
+				109D60B8133A5B150061B1C3 /* DOMINO Donde Estan Mi Mochilla Violeta.mp3 in Resources */,
+				109D60B9133A5B150061B1C3 /* DOMINO Donde Estan Mis Botas Amarillas.mp3 in Resources */,
+				109D60BA133A5B150061B1C3 /* DOMINO Donde Estan Mis Botas Azules.mp3 in Resources */,
+				109D60BB133A5B150061B1C3 /* DOMINO Donde Estan Mis Botas Rosadas.mp3 in Resources */,
+				109D60BC133A5B150061B1C3 /* DOMINO Donde Estan Mis Botas Violetas.mp3 in Resources */,
+				109D60BD133A5B150061B1C3 /* DOMINO Donde Estan Mis Gafas Amarillas.mp3 in Resources */,
+				109D60BE133A5B150061B1C3 /* DOMINO Donde Estan Mis Gafas Azules.mp3 in Resources */,
+				109D60BF133A5B150061B1C3 /* DOMINO Donde Estan Mis Gafas Rosadas.mp3 in Resources */,
+				109D60C0133A5B150061B1C3 /* DOMINO Donde Estan Mis Gafas Violetas.mp3 in Resources */,
+				109D60C1133A5B150061B1C3 /* dress_snd_pants_Yellow_where.mp3 in Resources */,
+				109D60C2133A5B150061B1C3 /* DOMINO Donde Estan Mis Pantalones Azules.mp3 in Resources */,
+				109D60C3133A5B150061B1C3 /* DOMINO Donde Estan Mis Pantalones Rosadas.mp3 in Resources */,
+				109D60C4133A5B150061B1C3 /* DOMINO Donde Estan Mis Pantalones Violetas.mp3 in Resources */,
+				109D60C5133A5B150061B1C3 /* DOMINO Esa Es La Chaqueta Amarilla.mp3 in Resources */,
+				109D60C6133A5B150061B1C3 /* DOMINO Esa Es La Chaqueta Azul.mp3 in Resources */,
+				109D60C7133A5B150061B1C3 /* DOMINO Esa Es La Chaqueta Rosada.mp3 in Resources */,
+				109D60C8133A5B150061B1C3 /* DOMINO Esa Es La Chaqueta Violeta.mp3 in Resources */,
+				109D60C9133A5B150061B1C3 /* DOMINO Esa Es La Gorra Amarilla.mp3 in Resources */,
+				109D60CA133A5B150061B1C3 /* DOMINO Esa Es La Gorra Azul.mp3 in Resources */,
+				109D60CB133A5B150061B1C3 /* DOMINO Esa Es La Gorra Rosada.mp3 in Resources */,
+				109D60CC133A5B150061B1C3 /* DOMINO Esa Es La Gorra Violeta.mp3 in Resources */,
+				109D60CD133A5B150061B1C3 /* DOMINO Esa Es La Mochilla Amarilla.mp3 in Resources */,
+				109D60CE133A5B150061B1C3 /* DOMINO Esa Es La Mochilla Azul.mp3 in Resources */,
+				109D60CF133A5B150061B1C3 /* DOMINO Esa Es La Mochilla Rosada.mp3 in Resources */,
+				109D60D0133A5B150061B1C3 /* DOMINO Esa Es La Mochilla Violeta.mp3 in Resources */,
+				109D60D1133A5B150061B1C3 /* DOMINO Esas Son Las Botas Amarillas.mp3 in Resources */,
+				109D60D2133A5B150061B1C3 /* DOMINO Esas Son Las Botas Azules.mp3 in Resources */,
+				109D60D3133A5B150061B1C3 /* DOMINO Esas Son Las Botas Rosadas.mp3 in Resources */,
+				109D60D4133A5B150061B1C3 /* DOMINO Esas Son Las Botas Violetas.mp3 in Resources */,
+				109D60D5133A5B150061B1C3 /* DOMINO Eso Es El Collar Amarilla.mp3 in Resources */,
+				109D60D6133A5B150061B1C3 /* DOMINO Eso Es El Collar Azul.mp3 in Resources */,
+				109D60D7133A5B150061B1C3 /* DOMINO Eso Es El Collar Rosada.mp3 in Resources */,
+				109D60D8133A5B150061B1C3 /* DOMINO Eso Es El Collar Violeta.mp3 in Resources */,
+				109D60D9133A5B150061B1C3 /* DOMINO Eso Es El Telefono Amarillo .mp3 in Resources */,
+				109D60DA133A5B150061B1C3 /* DOMINO Eso Es El Telefono Azul.mp3 in Resources */,
+				109D60DB133A5B150061B1C3 /* DOMINO Eso Es El Telefono Rosado.mp3 in Resources */,
+				109D60DC133A5B150061B1C3 /* DOMINO Eso Es El Telefono Violeta.mp3 in Resources */,
+				109D60DD133A5B150061B1C3 /* DOMINO Eso Son Las Gafas Amarillas.mp3 in Resources */,
+				109D60DE133A5B150061B1C3 /* DOMINO Eso Son Las Gafas Azules.mp3 in Resources */,
+				109D60DF133A5B150061B1C3 /* DOMINO Eso Son Las Gafas Rosadas.mp3 in Resources */,
+				109D60E0133A5B150061B1C3 /* DOMINO Eso Son Las Gafas Violetas.mp3 in Resources */,
+				109D60E1133A5B150061B1C3 /* Domino_pantalones_amarillos.mp3 in Resources */,
+				109D60E2133A5B150061B1C3 /* DOMINO Eso Son Los Pantalones Azules.mp3 in Resources */,
+				109D60E3133A5B150061B1C3 /* DOMINO Eso Son Los Pantalones Rosadas.mp3 in Resources */,
+				109D60E4133A5B150061B1C3 /* DOMINO Eso Son Los Pantalones Violetas.mp3 in Resources */,
+				109D6102133A5B410061B1C3 /* dress_snd_boots_Blue.mp3 in Resources */,
+				109D609A133A5B150061B1C3 /* dress_snd_boots_Yellow.mp3 in Resources */,
+				109D609B133A5B150061B1C3 /* dress_snd_boots_Red.mp3 in Resources */,
+				109D609C133A5B150061B1C3 /* dress_snd_boots_Purple.mp3 in Resources */,
+				109D609D133A5B150061B1C3 /* dress_snd_jacket_Yellow.mp3 in Resources */,
+				109D609E133A5B150061B1C3 /* dress_snd_jacket_Blue.mp3 in Resources */,
+				109D609F133A5B150061B1C3 /* dress_snd_jacket_Red.mp3 in Resources */,
+				109D60A0133A5B150061B1C3 /* dress_snd_jacket_Purple.mp3 in Resources */,
+				109D60A1133A5B150061B1C3 /* dress_snd_necklace_Yellow.mp3 in Resources */,
+				109D60A2133A5B150061B1C3 /* dress_snd_necklace_Blue.mp3 in Resources */,
+				109D60A3133A5B150061B1C3 /* dress_snd_necklace_Red.mp3 in Resources */,
+				109D60A4133A5B150061B1C3 /* dress_snd_necklace_Purple.mp3 in Resources */,
+				109D60E5133A5B150061B1C3 /* dress_snd_sunglasses_Yellow.mp3 in Resources */,
+				109D60E6133A5B150061B1C3 /* dress_snd_sunglasses_Blue.mp3 in Resources */,
+				109D60E7133A5B150061B1C3 /* dress_snd_sunglasses_Red.mp3 in Resources */,
+				109D60E8133A5B150061B1C3 /* dress_snd_sunglasses_Purple.mp3 in Resources */,
+				109D60E9133A5B150061B1C3 /* dress_snd_backpack_Yellow.mp3 in Resources */,
+				109D60EA133A5B150061B1C3 /* dress_snd_backpack_Blue.mp3 in Resources */,
+				109D60EB133A5B150061B1C3 /* dress_snd_backpack_Red.mp3 in Resources */,
+				109D60EC133A5B150061B1C3 /* dress_snd_backpack_Purple.mp3 in Resources */,
+				109D60F7133A5B150061B1C3 /* dress_snd_pants_Yellow.mp3 in Resources */,
+				109D60F8133A5B150061B1C3 /* dress_snd_pants_Blue.mp3 in Resources */,
+				109D60F9133A5B150061B1C3 /* dress_snd_pants_Red.mp3 in Resources */,
+				109D60FA133A5B150061B1C3 /* dress_snd_pants_Purple.mp3 in Resources */,
+				109D60FD133A5B150061B1C3 /* dress_snd_phone_Yellow.mp3 in Resources */,
+				109D60FE133A5B150061B1C3 /* dress_snd_phone_Blue.mp3 in Resources */,
+				109D60FF133A5B150061B1C3 /* dress_snd_phone_Red.mp3 in Resources */,
+				109D6100133A5B150061B1C3 /* dress_snd_phone_Purple.mp3 in Resources */,
+				109D60EE133A5B150061B1C3 /* dress_snd_jacket_where.mp3 in Resources */,
+				109D60EF133A5B150061B1C3 /* dress_snd_necklace_where.mp3 in Resources */,
+				109D60F0133A5B150061B1C3 /* dress_snd_hat_where.mp3 in Resources */,
+				109D60F1133A5B150061B1C3 /* dress_snd_backpack_where.mp3 in Resources */,
+				109D60F2133A5B150061B1C3 /* dress_snd_phone_where.mp3 in Resources */,
+				109D60F3133A5B150061B1C3 /* dress_snd_boots_where.mp3 in Resources */,
+				109D60F4133A5B150061B1C3 /* dress_snd_sunglasses_where.mp3 in Resources */,
+				109D60F5133A5B150061B1C3 /* dress_snd_pants_where.mp3 in Resources */,
+				109D60F6133A5B150061B1C3 /* DOMINO Orale.mp3 in Resources */,
+				109D60FB133A5B150061B1C3 /* DOMINO Puntos.mp3 in Resources */,
+				109D60FC133A5B150061B1C3 /* DOMINO Se Me Callo La Ropa.mp3 in Resources */,
+				109D60ED133A5B150061B1C3 /* DOMINO Muy Bien.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

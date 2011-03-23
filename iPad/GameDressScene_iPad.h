@@ -32,32 +32,32 @@
 #define BTN_PANTS_NUM 0
 #define BTN_SUNGLASSES_NUM 4
 
-#define BTN_BACKPACK_SND @"wheel_snd_backpack.m4a"
-#define BTN_BOOTS_SND @"wheel_snd_boots.m4a"
-#define BTN_HAT_SND @"wheel_snd_hat.m4a"
-#define BTN_PHONE_SND @"wheel_snd_phone.m4a"
-#define BTN_JACKET_SND @"wheel_snd_jacket.m4a"
-#define BTN_NECKLACE_SND @"wheel_snd_necklace.m4a"
-#define BTN_PANTS_SND @"wheel_snd_pants.m4a"
-#define BTN_SUNGLASSES_SND @"wheel_snd_sunglasses.m4a"
+#define BTN_BACKPACK_SND @"wheel_snd_backpack.mp3"
+#define BTN_BOOTS_SND @"wheel_snd_boots.mp3"
+#define BTN_HAT_SND @"wheel_snd_hat.mp3"
+#define BTN_PHONE_SND @"wheel_snd_phone.mp3"
+#define BTN_JACKET_SND @"wheel_snd_jacket.mp3"
+#define BTN_NECKLACE_SND @"wheel_snd_necklace.mp3"
+#define BTN_PANTS_SND @"wheel_snd_pants.mp3"
+#define BTN_SUNGLASSES_SND @"wheel_snd_sunglasses.mp3"
 
-#define BTN_BACKPACK_SND_WHERE @"wheel_snd_backpack_where.m4a"
-#define BTN_BOOTS_SND_WHERE @"wheel_snd_boots_where.m4a"
-#define BTN_HAT_SND_WHERE @"wheel_snd_hat_where.m4a"
-#define BTN_PHONE_SND_WHERE @"wheel_snd_phone_where.m4a"
-#define BTN_JACKET_SND_WHERE @"wheel_snd_jacket_where.m4a"
-#define BTN_NECKLACE_SND_WHERE @"wheel_snd_necklace_where.m4a"
-#define BTN_PANTS_SND_WHERE @"wheel_snd_pants_where.m4a"
-#define BTN_SUNGLASSES_SND_WHERE @"wheel_snd_sunglasses_where.m4a"
+#define BTN_BACKPACK_SND_WHERE @"dress_snd_backpack_where.mp3"
+#define BTN_BOOTS_SND_WHERE @"dress_snd_boots_where.mp3"
+#define BTN_HAT_SND_WHERE @"dress_snd_hat_where.mp3"
+#define BTN_PHONE_SND_WHERE @"dress_snd_phone_where.mp3"
+#define BTN_JACKET_SND_WHERE @"dress_snd_jacket_where.mp3"
+#define BTN_NECKLACE_SND_WHERE @"dress_snd_necklace_where.mp3"
+#define BTN_PANTS_SND_WHERE @"dress_snd_pants_where.mp3"
+#define BTN_SUNGLASSES_SND_WHERE @"dress_snd_sunglasses_where.mp3"
 
-#define BTN_BACKPACK_SND_WRONG @"wheel_snd_backpack_wrong.m4a"
-#define BTN_BOOTS_SND_WRONG @"wheel_snd_boots_wrong.m4a"
-#define BTN_HAT_SND_WRONG @"wheel_snd_hat_wrong.m4a"
-#define BTN_PHONE_SND_WRONG @"wheel_snd_phone_wrong.m4a"
-#define BTN_JACKET_SND_WRONG @"wheel_snd_jacket_wrong.m4a"
-#define BTN_NECKLACE_SND_WRONG @"wheel_snd_necklace_wrong.m4a"
-#define BTN_PANTS_SND_WRONG @"wheel_snd_pants_wrong.m4a"
-#define BTN_SUNGLASSES_SND_WRONG @"wheel_snd_sunglasses_wrong.m4a"
+#define BTN_BACKPACK_SND_WRONG @"wheel_snd_backpack_wrong.mp3"
+#define BTN_BOOTS_SND_WRONG @"wheel_snd_boots_wrong.mp3"
+#define BTN_HAT_SND_WRONG @"wheel_snd_hat_wrong.mp3"
+#define BTN_PHONE_SND_WRONG @"wheel_snd_phone_wrong.mp3"
+#define BTN_JACKET_SND_WRONG @"wheel_snd_jacket_wrong.mp3"
+#define BTN_NECKLACE_SND_WRONG @"wheel_snd_necklace_wrong.mp3"
+#define BTN_PANTS_SND_WRONG @"wheel_snd_pants_wrong.mp3"
+#define BTN_SUNGLASSES_SND_WRONG @"wheel_snd_sunglasses_wrong.mp3"
 
 #define BTN_BACKPACK_SPANISH @"Mochila"
 #define BTN_BOOTS_SPANISH @"Botas"
@@ -79,12 +79,14 @@
 	
 	NSMutableArray * btnImgs;
 	NSMutableArray * btnColor;
-	int itemNeeded;
-	int colorNeeded;
+	NSString * itemNeeded;
+	NSString * colorNeeded;
+	int colorNeededNumber;
 }
 
 @property (nonatomic,readwrite) BOOL placingElement;
-@property (nonatomic,readwrite) int itemNeeded;
-@property (nonatomic,readwrite) int colorNeeded;
+@property (nonatomic,readwrite) BOOL bashoDirected;
+@property (nonatomic,retain) NSString * itemNeeded;
+@property (nonatomic,retain) NSString * colorNeeded;
 
 @end
