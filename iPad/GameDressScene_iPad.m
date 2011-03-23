@@ -13,35 +13,38 @@
 
 @implementation GameDressScene_iPad
 
-@synthesize placingElement;
+@synthesize placingElement,colorNeeded,itemNeeded;
 
-+(id) sceneWithDressVC:(GameDress_iPad *)vc
++(id) sceneWithDressVC:(GameDress_iPad *)vc bashoDirected:(BOOL)_bashoDirected
 {
     CCScene *scene = [CCScene node];
-    GameDressScene_iPad *layer = [GameDressScene_iPad nodeWithDressVC:vc];
+    GameDressScene_iPad *layer = [GameDressScene_iPad nodeWithDressVC:vc bashoDirected:_bashoDirected];
     [scene addChild: layer];
     return scene;
 }
 
-+(id) nodeWithDressVC:(GameDress_iPad *)vc
++(id) nodeWithDressVC:(GameDress_iPad *)vc bashoDirected:(BOOL)_bashoDirected
 {
-	return [[[self alloc] initWithDressVC:vc] autorelease];
+	return [[[self alloc] initWithDressVC:vc bashoDirected:_bashoDirected] autorelease];
 }
 
--(id) initWithDressVC:(GameDress_iPad *)vc
+-(id) initWithDressVC:(GameDress_iPad *)vc bashoDirected:(BOOL)_bashoDirected
 {
 	if( (self=[super init] )) {
 		self.isTouchEnabled = YES;
-			
-			//[self loadDeviceType];
-			
-			self.isTouchEnabled = YES;
-			viewController = vc;
-			
-			CCSprite * back = [CCSprite spriteWithFile:@"dress_background_iPad.png"];
-			[back setPosition:ccp(512,384)];
-			[self addChild:back];
-			
+		
+		bashoDirected = _bashoDirected;
+		
+		
+		//[self loadDeviceType];
+		
+		self.isTouchEnabled = YES;
+		viewController = vc;
+		
+		CCSprite * back = [CCSprite spriteWithFile:@"dress_background_iPad.png"];
+		[back setPosition:ccp(512,384)];
+		[self addChild:back];
+		
 		bashoSelectedSound = 0;
 		ddElements = [[NSMutableArray alloc] initWithCapacity:4];
 		dressPieces= [[NSMutableArray alloc] initWithCapacity:8];
@@ -65,31 +68,32 @@
 		[sbn addChild:shirt];
 		[shirt setPosition:ccp(512,384)];
 		
-			CCMenuItemImage * backBtn = [CCMenuItemImage itemFromNormalImage:@"wheel_home_iPad.png" selectedImage:@"wheel_home_iPad.png" target:self selector:@selector(goBack)];
-			
-			CCMenuItemImage * soundOff = [CCMenuItemImage itemFromNormalImage:@"wheel_sound_off_iPad.png" selectedImage:@"wheel_sound_on_iPad.png"];
-			CCMenuItemImage * soundOn = [CCMenuItemImage itemFromNormalImage:@"wheel_sound_on_iPad.png" selectedImage:@"wheel_sound_off_iPad.png"];
-			CCMenuItemToggle * sound = [CCMenuItemToggle itemWithTarget:self selector:@selector(turnSounds) items:soundOn,soundOff,nil];
-			
-			CCMenuItemImage * bashoOff = [CCMenuItemImage itemFromNormalImage:@"wheel_basho_off_iPad.png" selectedImage:@"wheel_basho_on_iPad.png"];
-			CCMenuItemImage * bashoOn = [CCMenuItemImage itemFromNormalImage:@"wheel_basho_on_iPad.png" selectedImage:@"wheel_basho_off_iPad.png"];
-			CCMenuItemToggle * basho = [CCMenuItemToggle itemWithTarget:self selector:@selector(turnBasho) items:bashoOff,bashoOn,nil];
-			
-			
-			CCMenu * menu = [CCMenu menuWithItems:backBtn,sound,basho,nil];
-			[self addChild:menu];
-			[backBtn setPosition:ccp(64,696)];
-			[sound setPosition:ccp(43,48)];
-			[basho setPosition:ccp(149,72)];
-			[menu setPosition:ccp(0,0)];
-			
+		CCMenuItemImage * backBtn = [CCMenuItemImage itemFromNormalImage:@"wheel_home_iPad.png" selectedImage:@"wheel_home_iPad.png" target:self selector:@selector(goBack)];
+		
+		CCMenuItemImage * soundOff = [CCMenuItemImage itemFromNormalImage:@"wheel_sound_off_iPad.png" selectedImage:@"wheel_sound_on_iPad.png"];
+		CCMenuItemImage * soundOn = [CCMenuItemImage itemFromNormalImage:@"wheel_sound_on_iPad.png" selectedImage:@"wheel_sound_off_iPad.png"];
+		CCMenuItemToggle * sound = [CCMenuItemToggle itemWithTarget:self selector:@selector(turnSounds) items:soundOn,soundOff,nil];
+		
+		CCMenuItemImage * bashoOff = [CCMenuItemImage itemFromNormalImage:@"wheel_basho_off_iPad.png" selectedImage:@"wheel_basho_on_iPad.png"];
+		CCMenuItemImage * bashoOn = [CCMenuItemImage itemFromNormalImage:@"wheel_basho_on_iPad.png" selectedImage:@"wheel_basho_off_iPad.png"];
+		CCMenuItemToggle * basho = [CCMenuItemToggle itemWithTarget:self selector:@selector(turnBasho) items:bashoOff,bashoOn,nil];
+		
+		
+		CCMenu * menu = [CCMenu menuWithItems:backBtn,sound,basho,nil];
+		[self addChild:menu];
+		[backBtn setPosition:ccp(64,696)];
+		[sound setPosition:ccp(43,48)];
+		[basho setPosition:ccp(149,72)];
+		[menu setPosition:ccp(0,0)];
+		
 		[self selectItemForBasho];
-			
+		
 		[self loadScore];
+		[self makeScoreAppear:bashoDirected];
 		
-		}
-		return self;
-		
+	}
+	return self;
+	
 }
 
 -(void)loadScore
@@ -115,7 +119,7 @@
 {
 	bashoDirected = !bashoDirected;
 	
-	[self makeScoreAppear:bashoDirected];
+	[[CCDirector sharedDirector] replaceScene:[CCTransitionFade transitionWithDuration:0.5 scene: [GameDressScene_iPad sceneWithDressVC:self bashoDirected:bashoDirected] withColor:ccWHITE]];
 	
 }
 
@@ -240,7 +244,7 @@
 	[ddElements removeAllObjects];
 	
 	
-	NSMutableArray * btnImgs = [NSMutableArray arrayWithCapacity:8];
+	btnImgs = [NSMutableArray arrayWithCapacity:8];
 	[btnImgs addObject:BTN_PANTS];
 	[btnImgs addObject:BTN_BOOTS];
 	[btnImgs addObject:BTN_NECKLACE];
@@ -250,11 +254,60 @@
 	[btnImgs addObject:BTN_PHONE];
 	[btnImgs addObject:BTN_BACKPACK];
 	
+	btnColor = [NSMutableArray arrayWithCapacity:4];
+	[btnColor addObject:[NSNumber numberWithInt:0]];
+	[btnColor addObject:[NSNumber numberWithInt:1]];
+	[btnColor addObject:[NSNumber numberWithInt:2]];
+	[btnColor addObject:[NSNumber numberWithInt:3]];
+	
 	NSString *filePath = [[NSBundle mainBundle] pathForResource:@"DressData_iPad" ofType:@"plist"];
 	
 	NSMutableDictionary * elementsFile = [NSMutableDictionary dictionaryWithContentsOfFile:filePath];
-	NSMutableDictionary * elements = [elementsFile objectForKey:[btnImgs objectAtIndex:item]];
+	NSMutableArray * elements=nil;
 	
+	if(!bashoDirected)
+	{
+		elements = [elementsFile objectForKey:[btnImgs objectAtIndex:item]];
+	}else{
+		
+		itemNeeded = item;
+		colorNeeded = arc4random() % 4;
+		
+		
+		NSMutableArray * genElems = [NSMutableArray array];
+		
+		for(int q = 0;q<8;q++)
+		{
+			for(int q2 = 0;q2 < 4;q2++)
+			{
+				NSMutableArray * arr =[elementsFile objectForKey:[btnImgs objectAtIndex:q]];
+				NSMutableDictionary * d = [arr objectAtIndex:q2];
+				[d setObject:[NSNumber numberWithInt:q] forKey:@"itemNumber"];
+				[d setObject:[NSNumber numberWithInt:q2] forKey:@"colorNumber"];
+				
+				[arr replaceObjectAtIndex:q2 withObject:d];
+				[elementsFile setObject:arr forKey:[btnImgs objectAtIndex:q]];
+				
+			}
+			
+			[genElems addObjectsFromArray:[elementsFile objectForKey:[btnImgs objectAtIndex:q]]];
+		}
+		elements = [NSMutableArray array];
+		
+		NSMutableDictionary * askedItem = [[elementsFile objectForKey:[btnImgs objectAtIndex:itemNeeded]]objectAtIndex:colorNeeded];
+		[elements addObject:askedItem];
+		[genElems removeObject:askedItem];
+		
+		for(int i =0;i<3;i++)
+		{
+			int itemN = arc4random() % [genElems count];
+			NSMutableDictionary * ele = [genElems objectAtIndex:itemN];
+			[elements addObject:ele];
+			[genElems removeObjectAtIndex:itemN];
+		}
+		
+		elements = [self shuffle:elements];
+	}
 	NSMutableArray * positions = [NSMutableArray array];
 	
 	NSMutableDictionary * p1 = [NSMutableDictionary dictionaryWithObjects:[NSMutableArray arrayWithObjects:[NSNumber numberWithInt:180],[NSNumber numberWithInt:180],nil] forKeys:[NSMutableArray arrayWithObjects:@"x",@"y",nil]];
@@ -292,6 +345,21 @@
 	}
 
 }
+
+- (NSMutableArray *) shuffle:(NSMutableArray *)array
+{
+	// create temporary autoreleased mutable array
+	NSMutableArray *tmpArray = [NSMutableArray arrayWithCapacity:[array count]];
+	
+	for (id anObject in array)
+	{
+		NSUInteger randomPos = arc4random()%([tmpArray count]+1);
+		[tmpArray insertObject:anObject atIndex:randomPos];
+	}
+	
+	return [NSArray arrayWithArray:tmpArray];  // non-mutable autoreleased copy
+}
+
 
 -(void)goBack
 {

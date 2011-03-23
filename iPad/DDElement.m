@@ -32,7 +32,9 @@
 		
 		desiredZ = [[element objectForKey:@"desiredZ"] intValue];
 		itemTag= [[element objectForKey:@"itemTag"] intValue];
-
+		
+		itemNumber = [[element objectForKey:@"itemNumber"]intValue];
+		colorNumber = [[element objectForKey:@"colorNumber"] intValue];
 		
 		CCSpriteBatchNode * sbn = [theGame getChildByTag:kSPRITEBATCH_ELEMS];
 		mySprite = [CCSprite spriteWithSpriteFrameName:imagePath];
@@ -126,7 +128,7 @@
 	
 	if(!(dropPoint.x == 0 && dropPoint.y == 0))
 	{
-		if(ccpDistance(mySprite.position,dropPoint) < 100 )
+		if(ccpDistance(mySprite.position,dropPoint) < 100 && itemNumber == theGame.itemNeeded && colorNumber == theGame.colorNeeded)
 		{
 			mySprite.position = dropPoint;
 			//theGame.elementsPlaced++;

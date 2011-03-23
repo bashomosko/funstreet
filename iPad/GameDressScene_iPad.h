@@ -76,8 +76,15 @@
 	NSMutableArray * dressPieces;
 	BOOL placingElement;
 	BOOL bashoDirected;
+	
+	NSMutableArray * btnImgs;
+	NSMutableArray * btnColor;
+	int itemNeeded;
+	int colorNeeded;
 }
 
 @property (nonatomic,readwrite) BOOL placingElement;
+@property (nonatomic,readwrite) int itemNeeded;
+@property (nonatomic,readwrite) int colorNeeded;
 
 @end

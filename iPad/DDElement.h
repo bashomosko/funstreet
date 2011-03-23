@@ -25,6 +25,9 @@
 	BOOL placed;
 	int desiredZ;
 	int itemTag;
+	
+	int itemNumber;
+	int colorNumber;
 }
 @property (nonatomic,readwrite) touchState state;
 @property (nonatomic,retain) CCSprite * mySprite;
