@@ -317,7 +317,7 @@
 							<real>308</real>
 						</array>
 						<key>RubberWindowFrame</key>
-						<string>8 115 1280 653 0 0 1280 778 </string>
+						<string>9 -4 1280 653 0 0 1280 778 </string>
 					</dict>
 					<key>Module</key>
 					<string>PBXSmartGroupTreeModule</string>
@@ -347,7 +347,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>109D61B9133A765D0061B1C3</string>
+										<string>109D61C1133A77620061B1C3</string>
 										<key>history</key>
 										<array>
 											<string>10B56A491306EDB900AA7DCB</string>
@@ -441,7 +441,7 @@
 								<key>Frame</key>
 								<string>{{0, 0}, {950, 552}}</string>
 								<key>RubberWindowFrame</key>
-								<string>8 115 1280 653 0 0 1280 778 </string>
+								<string>9 -4 1280 653 0 0 1280 778 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
@@ -461,7 +461,7 @@
 								<key>Frame</key>
 								<string>{{0, 557}, {950, 55}}</string>
 								<key>RubberWindowFrame</key>
-								<string>8 115 1280 653 0 0 1280 778 </string>
+								<string>9 -4 1280 653 0 0 1280 778 </string>
 							</dict>
 							<key>Module</key>
 							<string>XCDetailModule</string>
@@ -634,7 +634,7 @@
 		<string>/Users/pabloruiz/Documents/Basho/Basho.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
-	<string>8 115 1280 653 0 0 1280 778 </string>
+	<string>9 -4 1280 653 0 0 1280 778 </string>
 	<key>WindowToolsV3</key>
 	<array>
 		<dict>
@@ -848,7 +848,7 @@
 			<key>WindowToolGUID</key>
 			<string>1CD10A99069EF8BA00B06720</string>
 			<key>WindowToolIsVisible</key>
-			<true/>
+			<false/>
 		</dict>
 		<dict>
 			<key>FirstTimeWindowDisplayed</key>
@@ -1005,7 +1005,7 @@
 			<key>WindowToolGUID</key>
 			<string>1C78EAAD065D492600B07095</string>
 			<key>WindowToolIsVisible</key>
-			<true/>
+			<false/>
 		</dict>
 		<dict>
 			<key>Identifier</key>
