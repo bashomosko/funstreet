@@ -27,7 +27,7 @@
 		initialCoord = ccp(xi,yi);
 		
 		//soundOkPath = [[element objectForKey:@"file-soundOk"]retain];
-		soundWrongPath = [[element objectForKey:@"file-soundWrong"]retain];
+		//soundWrongPath = [[element objectForKey:@"file-soundWrong"]retain];
 		movableAfterPlaced = NO;
 		
 		desiredZ = [[element objectForKey:@"desiredZ"] intValue];
@@ -38,6 +38,7 @@
 		
 		
 		soundOkPath = [[NSString stringWithFormat:@"dress_snd_%@_%@.mp3",itemNumber,colorNumber]retain];
+		soundWrongPath = [[NSString stringWithFormat:@"dress_snd_%@_%@_wrong.mp3",itemNumber,colorNumber]retain];
 		
 		CCSpriteBatchNode * sbn = [theGame getChildByTag:kSPRITEBATCH_ELEMS];
 		mySprite = [CCSprite spriteWithSpriteFrameName:imagePath];
@@ -148,8 +149,11 @@
 				[[SimpleAudioEngine sharedEngine] playEffect:soundOkPath];
 			placed = YES;
 			theGame.placingElement = YES;
+			[theGame addPoints];
 			[theGame runAction:[CCSequence actions:[CCCallFuncND actionWithTarget:theGame selector:@selector(dressDino: data:) data:(void*)self],[CCDelayTime actionWithDuration:2.5],[CCCallFunc actionWithTarget:theGame selector:@selector(selectItemForBasho)],nil]];
 		}else {
+			if([GameManager sharedGameManager].soundsEnabled)
+				[[SimpleAudioEngine sharedEngine] playEffect:soundWrongPath];
 			mySprite.position = initialCoord;
 			/*CCParticleSystemQuad * particles = [CCParticleSystemQuad particleWithFile:particleWrongPath];
 			[self addChild:particles];

@@ -222,6 +222,48 @@
 		109D60FF133A5B150061B1C3 /* dress_snd_phone_Red.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 109D6098133A5B150061B1C3 /* dress_snd_phone_Red.mp3 */; };
 		109D6100133A5B150061B1C3 /* dress_snd_phone_Purple.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 109D6099133A5B150061B1C3 /* dress_snd_phone_Purple.mp3 */; };
 		109D6102133A5B410061B1C3 /* dress_snd_boots_Blue.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 109D6101133A5B410061B1C3 /* dress_snd_boots_Blue.mp3 */; };
+		10A06586133BB3E40059187D /* GameVideo_iPad.m in Sources */ = {isa = PBXBuildFile; fileRef = 10A06584133BB3E40059187D /* GameVideo_iPad.m */; };
+		10A06587133BB3E40059187D /* GameVideo_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10A06585133BB3E40059187D /* GameVideo_iPad.xib */; };
+		10A065F0133BBDCB0059187D /* DOMINO 1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 10A065C8133BBDCB0059187D /* DOMINO 1.mp3 */; };
+		10A065F1133BBDCB0059187D /* DOMINO 2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 10A065C9133BBDCB0059187D /* DOMINO 2.mp3 */; };
+		10A065F2133BBDCB0059187D /* DOMINO 3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 10A065CA133BBDCB0059187D /* DOMINO 3.mp3 */; };
+		10A065F3133BBDCB0059187D /* DOMINO 4.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 10A065CB133BBDCB0059187D /* DOMINO 4.mp3 */; };
+		10A065F4133BBDCB0059187D /* DOMINO 5.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 10A065CC133BBDCB0059187D /* DOMINO 5.mp3 */; };
+		10A065F5133BBDCB0059187D /* DOMINO 6.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 10A065CD133BBDCB0059187D /* DOMINO 6.mp3 */; };
+		10A065F6133BBDCB0059187D /* DOMINO 7.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 10A065CE133BBDCB0059187D /* DOMINO 7.mp3 */; };
+		10A065F7133BBDCB0059187D /* DOMINO 8.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 10A065CF133BBDCB0059187D /* DOMINO 8.mp3 */; };
+		10A065F8133BBDCB0059187D /* DOMINO 9.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 10A065D0133BBDCB0059187D /* DOMINO 9.mp3 */; };
+		10A065F9133BBDCB0059187D /* DOMINO 10.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 10A065D1133BBDCB0059187D /* DOMINO 10.mp3 */; };
+		10A065FA133BBDCB0059187D /* DOMINO 11.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 10A065D2133BBDCB0059187D /* DOMINO 11.mp3 */; };
+		10A065FB133BBDCB0059187D /* DOMINO 12.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 10A065D3133BBDCB0059187D /* DOMINO 12.mp3 */; };
+		10A065FC133BBDCB0059187D /* DOMINO 13.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 10A065D4133BBDCB0059187D /* DOMINO 13.mp3 */; };
+		10A065FD133BBDCB0059187D /* DOMINO 14.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 10A065D5133BBDCB0059187D /* DOMINO 14.mp3 */; };
+		10A065FE133BBDCB0059187D /* DOMINO 15.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 10A065D6133BBDCB0059187D /* DOMINO 15.mp3 */; };
+		10A065FF133BBDCB0059187D /* DOMINO 16.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 10A065D7133BBDCB0059187D /* DOMINO 16.mp3 */; };
+		10A06600133BBDCB0059187D /* DOMINO 17.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 10A065D8133BBDCB0059187D /* DOMINO 17.mp3 */; };
+		10A06601133BBDCB0059187D /* DOMINO 18.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 10A065D9133BBDCB0059187D /* DOMINO 18.mp3 */; };
+		10A06602133BBDCB0059187D /* DOMINO 19.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 10A065DA133BBDCB0059187D /* DOMINO 19.mp3 */; };
+		10A06603133BBDCB0059187D /* DOMINO 20.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 10A065DB133BBDCB0059187D /* DOMINO 20.mp3 */; };
+		10A06604133BBDCB0059187D /* DOMINO 21.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 10A065DC133BBDCB0059187D /* DOMINO 21.mp3 */; };
+		10A06605133BBDCB0059187D /* DOMINO 22.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 10A065DD133BBDCB0059187D /* DOMINO 22.mp3 */; };
+		10A06606133BBDCB0059187D /* DOMINO 23.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 10A065DE133BBDCB0059187D /* DOMINO 23.mp3 */; };
+		10A06607133BBDCB0059187D /* DOMINO 24.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 10A065DF133BBDCB0059187D /* DOMINO 24.mp3 */; };
+		10A06608133BBDCB0059187D /* DOMINO 25.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 10A065E0133BBDCB0059187D /* DOMINO 25.mp3 */; };
+		10A06609133BBDCB0059187D /* DOMINO 26.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 10A065E1133BBDCB0059187D /* DOMINO 26.mp3 */; };
+		10A0660A133BBDCB0059187D /* DOMINO 27.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 10A065E2133BBDCB0059187D /* DOMINO 27.mp3 */; };
+		10A0660B133BBDCB0059187D /* DOMINO 28.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 10A065E3133BBDCB0059187D /* DOMINO 28.mp3 */; };
+		10A0660C133BBDCB0059187D /* DOMINO 29.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 10A065E4133BBDCB0059187D /* DOMINO 29.mp3 */; };
+		10A0660D133BBDCB0059187D /* DOMINO 30.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 10A065E5133BBDCB0059187D /* DOMINO 30.mp3 */; };
+		10A0660E133BBDCB0059187D /* DOMINO 31.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 10A065E6133BBDCB0059187D /* DOMINO 31.mp3 */; };
+		10A0660F133BBDCB0059187D /* DOMINO 32.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 10A065E7133BBDCB0059187D /* DOMINO 32.mp3 */; };
+		10A06610133BBDCB0059187D /* DOMINO 33.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 10A065E8133BBDCB0059187D /* DOMINO 33.mp3 */; };
+		10A06611133BBDCB0059187D /* DOMINO 34.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 10A065E9133BBDCB0059187D /* DOMINO 34.mp3 */; };
+		10A06612133BBDCB0059187D /* DOMINO 35.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 10A065EA133BBDCB0059187D /* DOMINO 35.mp3 */; };
+		10A06613133BBDCB0059187D /* DOMINO 36.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 10A065EB133BBDCB0059187D /* DOMINO 36.mp3 */; };
+		10A06614133BBDCB0059187D /* DOMINO 37.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 10A065EC133BBDCB0059187D /* DOMINO 37.mp3 */; };
+		10A06615133BBDCB0059187D /* DOMINO 38.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 10A065ED133BBDCB0059187D /* DOMINO 38.mp3 */; };
+		10A06616133BBDCB0059187D /* DOMINO 39.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 10A065EE133BBDCB0059187D /* DOMINO 39.mp3 */; };
+		10A06617133BBDCB0059187D /* DOMINO 40.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 10A065EF133BBDCB0059187D /* DOMINO 40.mp3 */; };
 		10A08C9413215091003F24AD /* GameDress_iPad.m in Sources */ = {isa = PBXBuildFile; fileRef = 10A08C9213215091003F24AD /* GameDress_iPad.m */; };
 		10A08C9513215091003F24AD /* GameDress_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10A08C9313215091003F24AD /* GameDress_iPad.xib */; };
 		10A08C98132150A7003F24AD /* GameDressScene_iPad.m in Sources */ = {isa = PBXBuildFile; fileRef = 10A08C97132150A7003F24AD /* GameDressScene_iPad.m */; };
@@ -620,6 +662,49 @@
 		109D6098133A5B150061B1C3 /* dress_snd_phone_Red.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = dress_snd_phone_Red.mp3; sourceTree = "<group>"; };
 		109D6099133A5B150061B1C3 /* dress_snd_phone_Purple.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = dress_snd_phone_Purple.mp3; sourceTree = "<group>"; };
 		109D6101133A5B410061B1C3 /* dress_snd_boots_Blue.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = dress_snd_boots_Blue.mp3; sourceTree = "<group>"; };
+		10A06583133BB3E40059187D /* GameVideo_iPad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameVideo_iPad.h; sourceTree = "<group>"; };
+		10A06584133BB3E40059187D /* GameVideo_iPad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameVideo_iPad.m; sourceTree = "<group>"; };
+		10A06585133BB3E40059187D /* GameVideo_iPad.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GameVideo_iPad.xib; sourceTree = "<group>"; };
+		10A065C8133BBDCB0059187D /* DOMINO 1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "DOMINO 1.mp3"; sourceTree = "<group>"; };
+		10A065C9133BBDCB0059187D /* DOMINO 2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "DOMINO 2.mp3"; sourceTree = "<group>"; };
+		10A065CA133BBDCB0059187D /* DOMINO 3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "DOMINO 3.mp3"; sourceTree = "<group>"; };
+		10A065CB133BBDCB0059187D /* DOMINO 4.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "DOMINO 4.mp3"; sourceTree = "<group>"; };
+		10A065CC133BBDCB0059187D /* DOMINO 5.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "DOMINO 5.mp3"; sourceTree = "<group>"; };
+		10A065CD133BBDCB0059187D /* DOMINO 6.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "DOMINO 6.mp3"; sourceTree = "<group>"; };
+		10A065CE133BBDCB0059187D /* DOMINO 7.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "DOMINO 7.mp3"; sourceTree = "<group>"; };
+		10A065CF133BBDCB0059187D /* DOMINO 8.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "DOMINO 8.mp3"; sourceTree = "<group>"; };
+		10A065D0133BBDCB0059187D /* DOMINO 9.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "DOMINO 9.mp3"; sourceTree = "<group>"; };
+		10A065D1133BBDCB0059187D /* DOMINO 10.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "DOMINO 10.mp3"; sourceTree = "<group>"; };
+		10A065D2133BBDCB0059187D /* DOMINO 11.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "DOMINO 11.mp3"; sourceTree = "<group>"; };
+		10A065D3133BBDCB0059187D /* DOMINO 12.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "DOMINO 12.mp3"; sourceTree = "<group>"; };
+		10A065D4133BBDCB0059187D /* DOMINO 13.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "DOMINO 13.mp3"; sourceTree = "<group>"; };
+		10A065D5133BBDCB0059187D /* DOMINO 14.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "DOMINO 14.mp3"; sourceTree = "<group>"; };
+		10A065D6133BBDCB0059187D /* DOMINO 15.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "DOMINO 15.mp3"; sourceTree = "<group>"; };
+		10A065D7133BBDCB0059187D /* DOMINO 16.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "DOMINO 16.mp3"; sourceTree = "<group>"; };
+		10A065D8133BBDCB0059187D /* DOMINO 17.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "DOMINO 17.mp3"; sourceTree = "<group>"; };
+		10A065D9133BBDCB0059187D /* DOMINO 18.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "DOMINO 18.mp3"; sourceTree = "<group>"; };
+		10A065DA133BBDCB0059187D /* DOMINO 19.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "DOMINO 19.mp3"; sourceTree = "<group>"; };
+		10A065DB133BBDCB0059187D /* DOMINO 20.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "DOMINO 20.mp3"; sourceTree = "<group>"; };
+		10A065DC133BBDCB0059187D /* DOMINO 21.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "DOMINO 21.mp3"; sourceTree = "<group>"; };
+		10A065DD133BBDCB0059187D /* DOMINO 22.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "DOMINO 22.mp3"; sourceTree = "<group>"; };
+		10A065DE133BBDCB0059187D /* DOMINO 23.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "DOMINO 23.mp3"; sourceTree = "<group>"; };
+		10A065DF133BBDCB0059187D /* DOMINO 24.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "DOMINO 24.mp3"; sourceTree = "<group>"; };
+		10A065E0133BBDCB0059187D /* DOMINO 25.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "DOMINO 25.mp3"; sourceTree = "<group>"; };
+		10A065E1133BBDCB0059187D /* DOMINO 26.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "DOMINO 26.mp3"; sourceTree = "<group>"; };
+		10A065E2133BBDCB0059187D /* DOMINO 27.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "DOMINO 27.mp3"; sourceTree = "<group>"; };
+		10A065E3133BBDCB0059187D /* DOMINO 28.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "DOMINO 28.mp3"; sourceTree = "<group>"; };
+		10A065E4133BBDCB0059187D /* DOMINO 29.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "DOMINO 29.mp3"; sourceTree = "<group>"; };
+		10A065E5133BBDCB0059187D /* DOMINO 30.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "DOMINO 30.mp3"; sourceTree = "<group>"; };
+		10A065E6133BBDCB0059187D /* DOMINO 31.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "DOMINO 31.mp3"; sourceTree = "<group>"; };
+		10A065E7133BBDCB0059187D /* DOMINO 32.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "DOMINO 32.mp3"; sourceTree = "<group>"; };
+		10A065E8133BBDCB0059187D /* DOMINO 33.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "DOMINO 33.mp3"; sourceTree = "<group>"; };
+		10A065E9133BBDCB0059187D /* DOMINO 34.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "DOMINO 34.mp3"; sourceTree = "<group>"; };
+		10A065EA133BBDCB0059187D /* DOMINO 35.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "DOMINO 35.mp3"; sourceTree = "<group>"; };
+		10A065EB133BBDCB0059187D /* DOMINO 36.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "DOMINO 36.mp3"; sourceTree = "<group>"; };
+		10A065EC133BBDCB0059187D /* DOMINO 37.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "DOMINO 37.mp3"; sourceTree = "<group>"; };
+		10A065ED133BBDCB0059187D /* DOMINO 38.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "DOMINO 38.mp3"; sourceTree = "<group>"; };
+		10A065EE133BBDCB0059187D /* DOMINO 39.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "DOMINO 39.mp3"; sourceTree = "<group>"; };
+		10A065EF133BBDCB0059187D /* DOMINO 40.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "DOMINO 40.mp3"; sourceTree = "<group>"; };
 		10A08C9113215091003F24AD /* GameDress_iPad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameDress_iPad.h; sourceTree = "<group>"; };
 		10A08C9213215091003F24AD /* GameDress_iPad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameDress_iPad.m; sourceTree = "<group>"; };
 		10A08C9313215091003F24AD /* GameDress_iPad.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GameDress_iPad.xib; sourceTree = "<group>"; };
@@ -989,6 +1074,63 @@
 				102FDDBF131C891800CC0AEB /* wheel_background_iPad.png */,
 			);
 			name = wheel;
+			sourceTree = "<group>";
+		};
+		10A06581133BB3AF0059187D /* video */ = {
+			isa = PBXGroup;
+			children = (
+				10A06583133BB3E40059187D /* GameVideo_iPad.h */,
+				10A06584133BB3E40059187D /* GameVideo_iPad.m */,
+				10A06585133BB3E40059187D /* GameVideo_iPad.xib */,
+			);
+			name = video;
+			sourceTree = "<group>";
+		};
+		10A065C7133BBDAC0059187D /* points sounds */ = {
+			isa = PBXGroup;
+			children = (
+				10A065C8133BBDCB0059187D /* DOMINO 1.mp3 */,
+				10A065C9133BBDCB0059187D /* DOMINO 2.mp3 */,
+				10A065CA133BBDCB0059187D /* DOMINO 3.mp3 */,
+				10A065CB133BBDCB0059187D /* DOMINO 4.mp3 */,
+				10A065CC133BBDCB0059187D /* DOMINO 5.mp3 */,
+				10A065CD133BBDCB0059187D /* DOMINO 6.mp3 */,
+				10A065CE133BBDCB0059187D /* DOMINO 7.mp3 */,
+				10A065CF133BBDCB0059187D /* DOMINO 8.mp3 */,
+				10A065D0133BBDCB0059187D /* DOMINO 9.mp3 */,
+				10A065D1133BBDCB0059187D /* DOMINO 10.mp3 */,
+				10A065D2133BBDCB0059187D /* DOMINO 11.mp3 */,
+				10A065D3133BBDCB0059187D /* DOMINO 12.mp3 */,
+				10A065D4133BBDCB0059187D /* DOMINO 13.mp3 */,
+				10A065D5133BBDCB0059187D /* DOMINO 14.mp3 */,
+				10A065D6133BBDCB0059187D /* DOMINO 15.mp3 */,
+				10A065D7133BBDCB0059187D /* DOMINO 16.mp3 */,
+				10A065D8133BBDCB0059187D /* DOMINO 17.mp3 */,
+				10A065D9133BBDCB0059187D /* DOMINO 18.mp3 */,
+				10A065DA133BBDCB0059187D /* DOMINO 19.mp3 */,
+				10A065DB133BBDCB0059187D /* DOMINO 20.mp3 */,
+				10A065DC133BBDCB0059187D /* DOMINO 21.mp3 */,
+				10A065DD133BBDCB0059187D /* DOMINO 22.mp3 */,
+				10A065DE133BBDCB0059187D /* DOMINO 23.mp3 */,
+				10A065DF133BBDCB0059187D /* DOMINO 24.mp3 */,
+				10A065E0133BBDCB0059187D /* DOMINO 25.mp3 */,
+				10A065E1133BBDCB0059187D /* DOMINO 26.mp3 */,
+				10A065E2133BBDCB0059187D /* DOMINO 27.mp3 */,
+				10A065E3133BBDCB0059187D /* DOMINO 28.mp3 */,
+				10A065E4133BBDCB0059187D /* DOMINO 29.mp3 */,
+				10A065E5133BBDCB0059187D /* DOMINO 30.mp3 */,
+				10A065E6133BBDCB0059187D /* DOMINO 31.mp3 */,
+				10A065E7133BBDCB0059187D /* DOMINO 32.mp3 */,
+				10A065E8133BBDCB0059187D /* DOMINO 33.mp3 */,
+				10A065E9133BBDCB0059187D /* DOMINO 34.mp3 */,
+				10A065EA133BBDCB0059187D /* DOMINO 35.mp3 */,
+				10A065EB133BBDCB0059187D /* DOMINO 36.mp3 */,
+				10A065EC133BBDCB0059187D /* DOMINO 37.mp3 */,
+				10A065ED133BBDCB0059187D /* DOMINO 38.mp3 */,
+				10A065EE133BBDCB0059187D /* DOMINO 39.mp3 */,
+				10A065EF133BBDCB0059187D /* DOMINO 40.mp3 */,
+			);
+			name = "points sounds";
 			sourceTree = "<group>";
 		};
 		10A08C9013215065003F24AD /* Game Dress */ = {
@@ -1412,6 +1554,7 @@
 		10B32831131D5CAA0014A77D /* Sounds */ = {
 			isa = PBXGroup;
 			children = (
+				10A065C7133BBDAC0059187D /* points sounds */,
 				109D6033133A5B140061B1C3 /* dress_snd_boots_Yellow.mp3 */,
 				109D6101133A5B410061B1C3 /* dress_snd_boots_Blue.mp3 */,
 				109D6034133A5B140061B1C3 /* dress_snd_boots_Red.mp3 */,
@@ -1681,6 +1824,7 @@
 		2860E32A111B888700E27156 /* iPad */ = {
 			isa = PBXGroup;
 			children = (
+				10A06581133BB3AF0059187D /* video */,
 				10A08C9013215065003F24AD /* Game Dress */,
 				10AA0BD0130719AC00D11E6B /* MainMenu */,
 				10AA0B731307148100D11E6B /* Game Wheel */,
@@ -2066,6 +2210,47 @@
 				109D60FB133A5B150061B1C3 /* DOMINO Puntos.mp3 in Resources */,
 				109D60FC133A5B150061B1C3 /* DOMINO Se Me Callo La Ropa.mp3 in Resources */,
 				109D60ED133A5B150061B1C3 /* DOMINO Muy Bien.mp3 in Resources */,
+				10A06587133BB3E40059187D /* GameVideo_iPad.xib in Resources */,
+				10A065F0133BBDCB0059187D /* DOMINO 1.mp3 in Resources */,
+				10A065F1133BBDCB0059187D /* DOMINO 2.mp3 in Resources */,
+				10A065F2133BBDCB0059187D /* DOMINO 3.mp3 in Resources */,
+				10A065F3133BBDCB0059187D /* DOMINO 4.mp3 in Resources */,
+				10A065F4133BBDCB0059187D /* DOMINO 5.mp3 in Resources */,
+				10A065F5133BBDCB0059187D /* DOMINO 6.mp3 in Resources */,
+				10A065F6133BBDCB0059187D /* DOMINO 7.mp3 in Resources */,
+				10A065F7133BBDCB0059187D /* DOMINO 8.mp3 in Resources */,
+				10A065F8133BBDCB0059187D /* DOMINO 9.mp3 in Resources */,
+				10A065F9133BBDCB0059187D /* DOMINO 10.mp3 in Resources */,
+				10A065FA133BBDCB0059187D /* DOMINO 11.mp3 in Resources */,
+				10A065FB133BBDCB0059187D /* DOMINO 12.mp3 in Resources */,
+				10A065FC133BBDCB0059187D /* DOMINO 13.mp3 in Resources */,
+				10A065FD133BBDCB0059187D /* DOMINO 14.mp3 in Resources */,
+				10A065FE133BBDCB0059187D /* DOMINO 15.mp3 in Resources */,
+				10A065FF133BBDCB0059187D /* DOMINO 16.mp3 in Resources */,
+				10A06600133BBDCB0059187D /* DOMINO 17.mp3 in Resources */,
+				10A06601133BBDCB0059187D /* DOMINO 18.mp3 in Resources */,
+				10A06602133BBDCB0059187D /* DOMINO 19.mp3 in Resources */,
+				10A06603133BBDCB0059187D /* DOMINO 20.mp3 in Resources */,
+				10A06604133BBDCB0059187D /* DOMINO 21.mp3 in Resources */,
+				10A06605133BBDCB0059187D /* DOMINO 22.mp3 in Resources */,
+				10A06606133BBDCB0059187D /* DOMINO 23.mp3 in Resources */,
+				10A06607133BBDCB0059187D /* DOMINO 24.mp3 in Resources */,
+				10A06608133BBDCB0059187D /* DOMINO 25.mp3 in Resources */,
+				10A06609133BBDCB0059187D /* DOMINO 26.mp3 in Resources */,
+				10A0660A133BBDCB0059187D /* DOMINO 27.mp3 in Resources */,
+				10A0660B133BBDCB0059187D /* DOMINO 28.mp3 in Resources */,
+				10A0660C133BBDCB0059187D /* DOMINO 29.mp3 in Resources */,
+				10A0660D133BBDCB0059187D /* DOMINO 30.mp3 in Resources */,
+				10A0660E133BBDCB0059187D /* DOMINO 31.mp3 in Resources */,
+				10A0660F133BBDCB0059187D /* DOMINO 32.mp3 in Resources */,
+				10A06610133BBDCB0059187D /* DOMINO 33.mp3 in Resources */,
+				10A06611133BBDCB0059187D /* DOMINO 34.mp3 in Resources */,
+				10A06612133BBDCB0059187D /* DOMINO 35.mp3 in Resources */,
+				10A06613133BBDCB0059187D /* DOMINO 36.mp3 in Resources */,
+				10A06614133BBDCB0059187D /* DOMINO 37.mp3 in Resources */,
+				10A06615133BBDCB0059187D /* DOMINO 38.mp3 in Resources */,
+				10A06616133BBDCB0059187D /* DOMINO 39.mp3 in Resources */,
+				10A06617133BBDCB0059187D /* DOMINO 40.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2189,6 +2374,7 @@
 				10A08C98132150A7003F24AD /* GameDressScene_iPad.m in Sources */,
 				10A08DC613215CC5003F24AD /* DDElement.m in Sources */,
 				10A6BC88132595BA00391C82 /* GameVideo.m in Sources */,
+				10A06586133BB3E40059187D /* GameVideo_iPad.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -32,81 +32,13 @@
 {
 	if( (self=[super init] )) {
 		self.isTouchEnabled = YES;
+		self.isAccelerometerEnabled = YES;
 		
 		bashoDirected = _bashoDirected;
-		
-		
-		//[self loadDeviceType];
-		
-		self.isTouchEnabled = YES;
 		viewController = vc;
 		
-		CCSprite * back = [CCSprite spriteWithFile:@"dress_background_iPad.png"];
-		[back setPosition:ccp(512,384)];
-		[self addChild:back];
-		
-		bashoSelectedSound = 0;
-		ddElements = [[NSMutableArray alloc] initWithCapacity:4];
-		dressPieces= [[NSMutableArray alloc] initWithCapacity:8];
-		
-		[[ CCSpriteFrameCache sharedSpriteFrameCache] addSpriteFramesWithFile:@"dress_iPad.plist" textureFile:@"dress_iPad.png"];
-		
-		CCSpriteBatchNode * sbn = [CCSpriteBatchNode batchNodeWithFile:@"dress_iPad.png"];
-		[self addChild:sbn z:1 tag:kSPRITEBATCH_ELEMS];
-		
-		//[self loadScatteredElements];
-		
-		CCSprite * dino = [CCSprite spriteWithSpriteFrameName:@"dress_dino_iPad.png"];
-		[sbn addChild:dino];
-		[dino setPosition:ccp(512,384)];
-		
-		CCSprite * boxers = [CCSprite spriteWithSpriteFrameName:@"dress_boxers_iPad.png"];
-		[sbn addChild:boxers z:0 tag:kBOXERS];
-		[boxers setPosition:ccp(512,384)];
-		
-		CCSprite * shirt = [CCSprite spriteWithSpriteFrameName:@"dress_shirt_iPad.png"];
-		[sbn addChild:shirt];
-		[shirt setPosition:ccp(512,384)];
-		
-		CCMenuItemImage * backBtn = [CCMenuItemImage itemFromNormalImage:@"wheel_home_iPad.png" selectedImage:@"wheel_home_iPad.png" target:self selector:@selector(goBack)];
-		
-		CCMenuItemImage * soundOff = [CCMenuItemImage itemFromNormalImage:@"wheel_sound_off_iPad.png" selectedImage:@"wheel_sound_on_iPad.png"];
-		CCMenuItemImage * soundOn = [CCMenuItemImage itemFromNormalImage:@"wheel_sound_on_iPad.png" selectedImage:@"wheel_sound_off_iPad.png"];
-		CCMenuItemToggle * sound = [CCMenuItemToggle itemWithTarget:self selector:@selector(turnSounds) items:soundOn,soundOff,nil];
-		
-		CCMenuItemImage * bashoOff = [CCMenuItemImage itemFromNormalImage:@"wheel_basho_off_iPad.png" selectedImage:@"wheel_basho_on_iPad.png"];
-		CCMenuItemImage * bashoOn = [CCMenuItemImage itemFromNormalImage:@"wheel_basho_on_iPad.png" selectedImage:@"wheel_basho_off_iPad.png"];
-		CCMenuItemToggle * basho = [CCMenuItemToggle itemWithTarget:self selector:@selector(turnBasho) items:bashoOff,bashoOn,nil];
-		
-		
-		CCMenu * menu = [CCMenu menuWithItems:backBtn,sound,basho,nil];
-		[self addChild:menu];
-		[backBtn setPosition:ccp(64,696)];
-		[sound setPosition:ccp(43,48)];
-		[basho setPosition:ccp(149,72)];
-		[menu setPosition:ccp(0,0)];
-		
-		btnImgs = [[NSMutableArray arrayWithCapacity:8]retain];
-		[btnImgs addObject:BTN_PANTS];
-		[btnImgs addObject:BTN_BOOTS];
-		[btnImgs addObject:BTN_NECKLACE];
-		[btnImgs addObject:BTN_JACKET];
-		[btnImgs addObject:BTN_SUNGLASSES];
-		[btnImgs addObject:BTN_HAT];
-		[btnImgs addObject:BTN_PHONE];
-		[btnImgs addObject:BTN_BACKPACK];
-		
-		btnColor = [[NSMutableArray arrayWithCapacity:4]retain];
-		[btnColor addObject:@"Blue"];
-		[btnColor addObject:@"Red"];
-		[btnColor addObject:@"Purple"];
-		[btnColor addObject:@"Yellow"];
-		
-		[self selectItemForBasho];
-		
-		[self loadScore];
-		[self makeScoreAppear:bashoDirected];
-		
+		//[self loadVideo];
+		[self beginGame];
 	}
 	return self;
 	
@@ -124,6 +56,175 @@
 	[scoreLbl setPosition:ccp(959,703)];
 	[scoreLbl setOpacity:0];
 }
+
+-(void)loadVideo
+{
+	NSURL * url;
+	NSBundle *bundle = [NSBundle mainBundle];
+	if (bundle) 
+	{
+		NSString *moviePath = [bundle pathForResource:@"ARG" ofType:@"mp4"];
+		if (moviePath)
+		{
+			url = [NSURL fileURLWithPath:moviePath];
+		}
+	}
+	
+	introVideo = [[MPMoviePlayerController alloc] initWithContentURL:url];
+	[[[CCDirector sharedDirector] openGLView] addSubview:introVideo.view];
+	[introVideo.view setFrame:CGRectMake(0,0,1024,768)];
+	[introVideo setControlStyle:MPMovieControlStyleNone];
+	
+	[[NSNotificationCenter defaultCenter]
+	 addObserver:self
+	 selector:@selector(videoPlayerDidFinishPlaying:)
+						name:MPMoviePlayerPlaybackDidFinishNotification
+						object:introVideo];
+						
+	
+	[introVideo play];
+}
+
+-(void) videoPlayerDidFinishPlaying: (NSNotification*)aNotification
+{
+	MPMoviePlayerController * introVideo = [aNotification object];
+	[[NSNotificationCenter defaultCenter] removeObserver:self name:MPMoviePlayerPlaybackDidFinishNotification object:introVideo];
+	[introVideo stop];
+	[introVideo.view removeFromSuperview];
+	[introVideo release];
+	
+	[self beginGame];
+}
+
+-(void)playFinishVideo
+{
+	if(bashoDirected)
+	{
+		NSURL * url;
+		NSBundle *bundle = [NSBundle mainBundle];
+		if (bundle) 
+		{
+			NSString *moviePath = [bundle pathForResource:@"ARG" ofType:@"mp4"];
+			if (moviePath)
+			{
+				url = [NSURL fileURLWithPath:moviePath];
+			}
+		}
+		
+		finishVideo = [[MPMoviePlayerController alloc] initWithContentURL:url];
+		[[[CCDirector sharedDirector] openGLView] addSubview:finishVideo.view];
+		[finishVideo.view setFrame:CGRectMake(0,0,1024,768)];
+		[finishVideo setControlStyle:MPMovieControlStyleNone];
+		
+		[[NSNotificationCenter defaultCenter]
+		 addObserver:self
+		 selector:@selector(finishVideoDidFinishPlaying:)
+		 name:MPMoviePlayerPlaybackDidFinishNotification
+		 object:finishVideo];
+		
+		
+		[finishVideo play];
+	}else {
+		[self resetDino];
+	}
+	
+}
+
+-(void) finishVideoDidFinishPlaying: (NSNotification*)aNotification
+{
+	MPMoviePlayerController * finishVideo = [aNotification object];
+	[[NSNotificationCenter defaultCenter] removeObserver:self name:MPMoviePlayerPlaybackDidFinishNotification object:finishVideo];
+	[finishVideo stop];
+	[finishVideo.view removeFromSuperview];
+	[finishVideo release];
+	
+	[self showDinoPoints];
+}
+
+-(void)showDinoPoints
+{
+	[[SimpleAudioEngine sharedEngine] playEffect:[NSString stringWithFormat:@"DOMINO %d.mp3",points]];
+	[self addFinishMenu];
+}
+
+-(void)addFinishMenu
+{
+	
+}
+
+-(void)beginGame
+{
+	//[self loadDeviceType];
+	
+	self.isTouchEnabled = YES;
+
+	CCSprite * back = [CCSprite spriteWithFile:@"dress_background_iPad.png"];
+	[back setPosition:ccp(512,384)];
+	[self addChild:back];
+	
+	bashoSelectedSound = 0;
+	ddElements = [[NSMutableArray alloc] initWithCapacity:4];
+	dressPieces= [[NSMutableArray alloc] initWithCapacity:8];
+	
+	[[ CCSpriteFrameCache sharedSpriteFrameCache] addSpriteFramesWithFile:@"dress_iPad.plist" textureFile:@"dress_iPad.png"];
+	
+	CCSpriteBatchNode * sbn = [CCSpriteBatchNode batchNodeWithFile:@"dress_iPad.png"];
+	[self addChild:sbn z:1 tag:kSPRITEBATCH_ELEMS];
+	
+	//[self loadScatteredElements];
+	
+	CCSprite * dino = [CCSprite spriteWithSpriteFrameName:@"dress_dino_iPad.png"];
+	[sbn addChild:dino];
+	[dino setPosition:ccp(512,384)];
+	
+	CCSprite * boxers = [CCSprite spriteWithSpriteFrameName:@"dress_boxers_iPad.png"];
+	[sbn addChild:boxers z:0 tag:kBOXERS];
+	[boxers setPosition:ccp(512,384)];
+	
+	CCSprite * shirt = [CCSprite spriteWithSpriteFrameName:@"dress_shirt_iPad.png"];
+	[sbn addChild:shirt];
+	[shirt setPosition:ccp(512,384)];
+	
+	CCMenuItemImage * backBtn = [CCMenuItemImage itemFromNormalImage:@"wheel_home_iPad.png" selectedImage:@"wheel_home_iPad.png" target:self selector:@selector(goBack)];
+	
+	CCMenuItemImage * soundOff = [CCMenuItemImage itemFromNormalImage:@"wheel_sound_off_iPad.png" selectedImage:@"wheel_sound_on_iPad.png"];
+	CCMenuItemImage * soundOn = [CCMenuItemImage itemFromNormalImage:@"wheel_sound_on_iPad.png" selectedImage:@"wheel_sound_off_iPad.png"];
+	CCMenuItemToggle * sound = [CCMenuItemToggle itemWithTarget:self selector:@selector(turnSounds) items:soundOn,soundOff,nil];
+	
+	CCMenuItemImage * bashoOff = [CCMenuItemImage itemFromNormalImage:@"wheel_basho_off_iPad.png" selectedImage:@"wheel_basho_on_iPad.png"];
+	CCMenuItemImage * bashoOn = [CCMenuItemImage itemFromNormalImage:@"wheel_basho_on_iPad.png" selectedImage:@"wheel_basho_off_iPad.png"];
+	CCMenuItemToggle * basho = [CCMenuItemToggle itemWithTarget:self selector:@selector(turnBasho) items:bashoOff,bashoOn,nil];
+	
+	
+	CCMenu * menu = [CCMenu menuWithItems:backBtn,sound,basho,nil];
+	[self addChild:menu];
+	[backBtn setPosition:ccp(64,696)];
+	[sound setPosition:ccp(43,48)];
+	[basho setPosition:ccp(149,72)];
+	[menu setPosition:ccp(0,0)];
+	
+	btnImgs = [[NSMutableArray arrayWithCapacity:8]retain];
+	[btnImgs addObject:BTN_PANTS];
+	[btnImgs addObject:BTN_BOOTS];
+	[btnImgs addObject:BTN_NECKLACE];
+	[btnImgs addObject:BTN_JACKET];
+	[btnImgs addObject:BTN_SUNGLASSES];
+	[btnImgs addObject:BTN_HAT];
+	[btnImgs addObject:BTN_PHONE];
+	[btnImgs addObject:BTN_BACKPACK];
+	
+	btnColor = [[NSMutableArray arrayWithCapacity:4]retain];
+	[btnColor addObject:@"Blue"];
+	[btnColor addObject:@"Red"];
+	[btnColor addObject:@"Purple"];
+	[btnColor addObject:@"Yellow"];
+	
+	[self selectItemForBasho];
+	
+	[self loadScore];
+	[self makeScoreAppear:bashoDirected];
+}
+
 
 -(void)turnSounds
 {
@@ -155,6 +256,14 @@
 	placingElement = NO;
 	if(bashoSelectedSound >=8)
 	{
+		CCSpriteBatchNode * sbn = [self getChildByTag:kSPRITEBATCH_ELEMS];
+		for(DDElement * el in ddElements)
+		{
+			[sbn removeChild:el.mySprite cleanup:YES];
+			[self removeChild:el cleanup:YES];
+		}
+		[ddElements removeAllObjects];
+		
 		bashoSelectedSound = 0;
 		
 		//RESET DINO
@@ -171,10 +280,8 @@
 		}
 		
 		CCAnimation * gloopAnimation = [CCAnimation animationWithFrames:gloopFrames delay:0.1f];
-		[gloopbackground runAction:[CCRepeatForever actionWithAction: [CCAnimate actionWithAnimation:gloopAnimation restoreOriginalFrame:NO] ]];
+		[gloopbackground runAction:[CCSequence actions:[CCRepeat actionWithAction:[CCAnimate actionWithAnimation:gloopAnimation restoreOriginalFrame:NO] times:2],[CCCallFuncN actionWithTarget:self selector:@selector(removeAnim:)],[CCCallFunc actionWithTarget:self selector:@selector(playFinishVideo)],nil]];
 		
-		
-		//[self schedule:@selector(resetDino) interval:3];
 		return;
 	}
 	
@@ -227,10 +334,20 @@
 	
 }
 
+-(void)removeAnim:(CCNode *)n
+{
+	[n.parent removeChild:n cleanup:YES];
+}
+
+-(void)addPoints
+{
+	points += 5;
+	CCLabelTTF * scoreLbl = [self getChildByTag:kSCORE];
+	[scoreLbl setString:[NSString stringWithFormat:@"%d",points]];
+}
+
 -(void)resetDino
 {
-	[self unschedule:@selector(resetDino)];
-	
 	CCSpriteBatchNode * sbn = [self getChildByTag:kSPRITEBATCH_ELEMS];
 	for(CCSprite * el in dressPieces)
 	{
@@ -384,8 +501,57 @@
 	[viewController goToMenu];
 }
 
+- (void) onEnter
+{
+	[super onEnter];
+	[[UIAccelerometer sharedAccelerometer] setUpdateInterval:(1.0 / 60)];
+	
+}
+
+-(void)onShake
+{
+	[[CCDirector sharedDirector] replaceScene:[CCTransitionFade transitionWithDuration:0.5 scene: [GameDressScene_iPad sceneWithDressVC:viewController bashoDirected:bashoDirected] withColor:ccWHITE]];
+
+}
+
+- (void)accelerometer:(UIAccelerometer*)accelerometer didAccelerate:(UIAcceleration*)acceleration
+{	
+	if (lastAcceleration)
+    {
+        if (!histeresisExcited && AccelerationIsShaking(lastAcceleration, acceleration, 0.35)) 
+        {
+            histeresisExcited = YES;
+			[self onShake];
+        }
+        else if (histeresisExcited && !AccelerationIsShaking(lastAcceleration, acceleration, 0.2))
+        {
+            histeresisExcited = NO;
+        }
+    }
+	
+    [lastAcceleration release];
+    lastAcceleration = [acceleration retain];
+	
+}
+
+
+static BOOL AccelerationIsShaking(UIAcceleration* last, UIAcceleration* current, double threshold) 
+{
+    double
+    deltaX = fabs(last.x - current.x),
+    deltaY = fabs(last.y - current.y),
+    deltaZ = fabs(last.z - current.z);
+	
+    return
+    (deltaX > threshold && deltaY > threshold) ||
+    (deltaX > threshold && deltaZ > threshold) ||
+    (deltaY > threshold && deltaZ > threshold);
+}
+
+
 -(void)dealloc
 {
+	[lastAcceleration release];
 	[btnImgs release];
 	[btnColor release];
 	[dressPieces release];

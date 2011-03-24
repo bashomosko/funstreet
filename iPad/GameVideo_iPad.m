@@ -1,25 +1,25 @@
-//
-//  GameVideo.m
+    //
+//  GameVideo_iPad.m
 //  Basho
 //
-//  Created by Pablo Ruiz on 07/03/11.
+//  Created by Pablo Ruiz on 24/03/11.
 //  Copyright 2011 __MyCompanyName__. All rights reserved.
 //
 
-#import "GameVideo.h"
+#import "GameVideo_iPad.h"
 
-@implementation GameVideo
+@implementation GameVideo_iPad
 
 // The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
 /*
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization.
-    }
-    return self;
-}
-*/
+ - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
+ self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+ if (self) {
+ // Custom initialization.
+ }
+ return self;
+ }
+ */
 
 
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
@@ -36,22 +36,21 @@
 		}
 	}
 	
-	MPMoviePlayerController * video = [[MPMoviePlayerController alloc] initWithContentURL:url];
+	video = [[MPMoviePlayerController alloc] initWithContentURL:url];
 	[self.view addSubview:video.view];
-	[video.view setFrame:CGRectMake(0,0,480,320)];
+	[video.view setFrame:CGRectMake(0,0,1024,768)];
 	//[video.view setTransform:CGAffineTransformMakeRotation(M_PI/ 2)];
-	[video play];
-	
+	[video play];	
 	NSString *filePath = [[NSBundle mainBundle] pathForResource:@"videoLyrics" ofType:@"plist"];
 	
 	lyricLines = [[NSMutableArray arrayWithContentsOfFile:filePath]retain];
 	
 	currentLyricLine = 0;
 	
-	lyrics = [[UILabel alloc] initWithFrame:CGRectMake(0,280,480,40)];
+	lyrics = [[UILabel alloc] initWithFrame:CGRectMake(0,680,1024,80)];
 	
 	[lyrics setText:@""];
-	[lyrics setFont:[UIFont fontWithName:@"Helvetica" size:18]];
+	[lyrics setFont:[UIFont fontWithName:@"Helvetica" size:30]];
 	[lyrics setBackgroundColor:[UIColor clearColor]];
 	[lyrics setTextColor:[UIColor whiteColor]];
 	[lyrics setShadowColor:[UIColor blackColor]];
@@ -113,3 +112,4 @@
 
 
 @end
+

@@ -10,7 +10,7 @@
 #import "AppDelegate_iPad.h"
 #import "GameWheel_iPad.h"
 #import "GameDress_iPad.h"
-
+#import "GameVideo_iPad.h"
 
 @implementation MainMenu_iPad
 
@@ -66,6 +66,23 @@
 	
 	GameDress_iPad * gw = [[GameDress_iPad alloc] 
 						   initWithNibName:@"GameDress_iPad" bundle:nil];
+	[gw.view setAlpha:0];
+	AppDelegate_iPad * app = (AppDelegate_iPad *)[[UIApplication sharedApplication] delegate];
+	UIWindow * w = app.window;
+	[w addSubview:gw.view];
+	
+	[UIView beginAnimations:nil context:nil];
+	[gw.view setAlpha:1];
+	[UIView commitAnimations];
+}
+
+-(void)loadVideo
+{
+	[self.view removeFromSuperview];
+	[self release];
+	
+	GameVideo_iPad * gw = [[GameVideo_iPad alloc] 
+					  initWithNibName:@"GameVideo_iPad" bundle:nil];
 	[gw.view setAlpha:0];
 	AppDelegate_iPad * app = (AppDelegate_iPad *)[[UIApplication sharedApplication] delegate];
 	UIWindow * w = app.window;

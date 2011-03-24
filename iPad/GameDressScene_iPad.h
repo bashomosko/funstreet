@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "cocos2d.h"
 #import "GameDress_iPad.h"
+#import <MediaPlayer/MediaPlayer.h>
 
 #define kSPRITEBATCH_ELEMS 1
 #define kBOXERS 2
@@ -82,11 +83,23 @@
 	NSString * itemNeeded;
 	NSString * colorNeeded;
 	int colorNeededNumber;
+	MPMoviePlayerController * introVideo;
+	MPMoviePlayerController * finishVideo;
+	
+	int points;
+	
+	//ACCEL
+	///
+	BOOL histeresisExcited;
+    UIAcceleration* lastAcceleration;
 }
 
 @property (nonatomic,readwrite) BOOL placingElement;
 @property (nonatomic,readwrite) BOOL bashoDirected;
 @property (nonatomic,retain) NSString * itemNeeded;
 @property (nonatomic,retain) NSString * colorNeeded;
+
+static BOOL AccelerationIsShaking(UIAcceleration* last, UIAcceleration* current, double threshold) ;
+
 
 @end
