@@ -266,15 +266,31 @@
 		
 		bashoSelectedSound = 0;
 		
+		NSString * fileName = nil;
+		switch (arc4random() %4) {
+			case 1:
+				fileName = @"Arrows_iPad_1024x1024_";
+				break;
+			case 2:
+				fileName = @"Flowers_iPad_1024x1024_";
+				break;
+			case 3:
+				fileName = @"LayeredStars_iPad_1024x1024_";
+				break;
+			case 4:
+				fileName = @"Spirals_iPad_1024x1024_";
+				break;
+		}
+		
 		//RESET DINO
-		CCSprite * gloopbackground = [CCSprite spriteWithFile:@"3DStars_iPad_00000.pvr"];
+		CCSprite * gloopbackground = [CCSprite spriteWithFile:[NSString stringWithFormat:@"%@00000.png.pvr",fileName]];
 		[gloopbackground setPosition:ccp(512,384)];
 		[self addChild:gloopbackground];
 		//ANIMATION
 		NSMutableArray * gloopFrames = [[[NSMutableArray  alloc]init]autorelease];
 		for(int i = 0; i <= 15; i++) {
 			
-			CCSprite * sp = [CCSprite spriteWithFile:[NSString stringWithFormat:@"3DStars_iPad_%05d.pvr",i]];
+			CCSprite * sp = [CCSprite spriteWithFile:[NSString stringWithFormat:@"%@%05d.png.pvr",fileName,i]];
 			CCSpriteFrame *frame = [CCSpriteFrame frameWithTexture:sp.texture rect:sp.textureRect];
 			[gloopFrames addObject:frame];
 		}

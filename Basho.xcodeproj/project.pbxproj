@@ -222,6 +222,70 @@
 		109D60FF133A5B150061B1C3 /* dress_snd_phone_Red.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 109D6098133A5B150061B1C3 /* dress_snd_phone_Red.mp3 */; };
 		109D6100133A5B150061B1C3 /* dress_snd_phone_Purple.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 109D6099133A5B150061B1C3 /* dress_snd_phone_Purple.mp3 */; };
 		109D6102133A5B410061B1C3 /* dress_snd_boots_Blue.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 109D6101133A5B410061B1C3 /* dress_snd_boots_Blue.mp3 */; };
+		109E5DAB1340CB2300EEF48A /* Arrows_iPad_1024x1024_00000.png.pvr in Resources */ = {isa = PBXBuildFile; fileRef = 109E5D6B1340CB2300EEF48A /* Arrows_iPad_1024x1024_00000.png.pvr */; };
+		109E5DAC1340CB2300EEF48A /* Arrows_iPad_1024x1024_00001.png.pvr in Resources */ = {isa = PBXBuildFile; fileRef = 109E5D6C1340CB2300EEF48A /* Arrows_iPad_1024x1024_00001.png.pvr */; };
+		109E5DAD1340CB2300EEF48A /* Arrows_iPad_1024x1024_00002.png.pvr in Resources */ = {isa = PBXBuildFile; fileRef = 109E5D6D1340CB2300EEF48A /* Arrows_iPad_1024x1024_00002.png.pvr */; };
+		109E5DAE1340CB2300EEF48A /* Arrows_iPad_1024x1024_00003.png.pvr in Resources */ = {isa = PBXBuildFile; fileRef = 109E5D6E1340CB2300EEF48A /* Arrows_iPad_1024x1024_00003.png.pvr */; };
+		109E5DAF1340CB2300EEF48A /* Arrows_iPad_1024x1024_00004.png.pvr in Resources */ = {isa = PBXBuildFile; fileRef = 109E5D6F1340CB2300EEF48A /* Arrows_iPad_1024x1024_00004.png.pvr */; };
+		109E5DB01340CB2300EEF48A /* Arrows_iPad_1024x1024_00005.png.pvr in Resources */ = {isa = PBXBuildFile; fileRef = 109E5D701340CB2300EEF48A /* Arrows_iPad_1024x1024_00005.png.pvr */; };
+		109E5DB11340CB2300EEF48A /* Arrows_iPad_1024x1024_00006.png.pvr in Resources */ = {isa = PBXBuildFile; fileRef = 109E5D711340CB2300EEF48A /* Arrows_iPad_1024x1024_00006.png.pvr */; };
+		109E5DB21340CB2300EEF48A /* Arrows_iPad_1024x1024_00007.png.pvr in Resources */ = {isa = PBXBuildFile; fileRef = 109E5D721340CB2300EEF48A /* Arrows_iPad_1024x1024_00007.png.pvr */; };
+		109E5DB31340CB2300EEF48A /* Arrows_iPad_1024x1024_00008.png.pvr in Resources */ = {isa = PBXBuildFile; fileRef = 109E5D731340CB2300EEF48A /* Arrows_iPad_1024x1024_00008.png.pvr */; };
+		109E5DB41340CB2300EEF48A /* Arrows_iPad_1024x1024_00009.png.pvr in Resources */ = {isa = PBXBuildFile; fileRef = 109E5D741340CB2300EEF48A /* Arrows_iPad_1024x1024_00009.png.pvr */; };
+		109E5DB51340CB2300EEF48A /* Arrows_iPad_1024x1024_00010.png.pvr in Resources */ = {isa = PBXBuildFile; fileRef = 109E5D751340CB2300EEF48A /* Arrows_iPad_1024x1024_00010.png.pvr */; };
+		109E5DB61340CB2300EEF48A /* Arrows_iPad_1024x1024_00011.png.pvr in Resources */ = {isa = PBXBuildFile; fileRef = 109E5D761340CB2300EEF48A /* Arrows_iPad_1024x1024_00011.png.pvr */; };
+		109E5DB71340CB2300EEF48A /* Arrows_iPad_1024x1024_00012.png.pvr in Resources */ = {isa = PBXBuildFile; fileRef = 109E5D771340CB2300EEF48A /* Arrows_iPad_1024x1024_00012.png.pvr */; };
+		109E5DB81340CB2300EEF48A /* Arrows_iPad_1024x1024_00013.png.pvr in Resources */ = {isa = PBXBuildFile; fileRef = 109E5D781340CB2300EEF48A /* Arrows_iPad_1024x1024_00013.png.pvr */; };
+		109E5DB91340CB2300EEF48A /* Arrows_iPad_1024x1024_00014.png.pvr in Resources */ = {isa = PBXBuildFile; fileRef = 109E5D791340CB2300EEF48A /* Arrows_iPad_1024x1024_00014.png.pvr */; };
+		109E5DBA1340CB2300EEF48A /* Arrows_iPad_1024x1024_00015.png.pvr in Resources */ = {isa = PBXBuildFile; fileRef = 109E5D7A1340CB2300EEF48A /* Arrows_iPad_1024x1024_00015.png.pvr */; };
+		109E5DBB1340CB2300EEF48A /* Flowers_iPad_1024x1024_00000.png.pvr in Resources */ = {isa = PBXBuildFile; fileRef = 109E5D7B1340CB2300EEF48A /* Flowers_iPad_1024x1024_00000.png.pvr */; };
+		109E5DBC1340CB2300EEF48A /* Flowers_iPad_1024x1024_00001.png.pvr in Resources */ = {isa = PBXBuildFile; fileRef = 109E5D7C1340CB2300EEF48A /* Flowers_iPad_1024x1024_00001.png.pvr */; };
+		109E5DBD1340CB2300EEF48A /* Flowers_iPad_1024x1024_00002.png.pvr in Resources */ = {isa = PBXBuildFile; fileRef = 109E5D7D1340CB2300EEF48A /* Flowers_iPad_1024x1024_00002.png.pvr */; };
+		109E5DBE1340CB2300EEF48A /* Flowers_iPad_1024x1024_00003.png.pvr in Resources */ = {isa = PBXBuildFile; fileRef = 109E5D7E1340CB2300EEF48A /* Flowers_iPad_1024x1024_00003.png.pvr */; };
+		109E5DBF1340CB2300EEF48A /* Flowers_iPad_1024x1024_00004.png.pvr in Resources */ = {isa = PBXBuildFile; fileRef = 109E5D7F1340CB2300EEF48A /* Flowers_iPad_1024x1024_00004.png.pvr */; };
+		109E5DC01340CB2300EEF48A /* Flowers_iPad_1024x1024_00005.png.pvr in Resources */ = {isa = PBXBuildFile; fileRef = 109E5D801340CB2300EEF48A /* Flowers_iPad_1024x1024_00005.png.pvr */; };
+		109E5DC11340CB2300EEF48A /* Flowers_iPad_1024x1024_00006.png.pvr in Resources */ = {isa = PBXBuildFile; fileRef = 109E5D811340CB2300EEF48A /* Flowers_iPad_1024x1024_00006.png.pvr */; };
+		109E5DC21340CB2300EEF48A /* Flowers_iPad_1024x1024_00007.png.pvr in Resources */ = {isa = PBXBuildFile; fileRef = 109E5D821340CB2300EEF48A /* Flowers_iPad_1024x1024_00007.png.pvr */; };
+		109E5DC31340CB2300EEF48A /* Flowers_iPad_1024x1024_00008.png.pvr in Resources */ = {isa = PBXBuildFile; fileRef = 109E5D831340CB2300EEF48A /* Flowers_iPad_1024x1024_00008.png.pvr */; };
+		109E5DC41340CB2300EEF48A /* Flowers_iPad_1024x1024_00009.png.pvr in Resources */ = {isa = PBXBuildFile; fileRef = 109E5D841340CB2300EEF48A /* Flowers_iPad_1024x1024_00009.png.pvr */; };
+		109E5DC51340CB2300EEF48A /* Flowers_iPad_1024x1024_00010.png.pvr in Resources */ = {isa = PBXBuildFile; fileRef = 109E5D851340CB2300EEF48A /* Flowers_iPad_1024x1024_00010.png.pvr */; };
+		109E5DC61340CB2300EEF48A /* Flowers_iPad_1024x1024_00011.png.pvr in Resources */ = {isa = PBXBuildFile; fileRef = 109E5D861340CB2300EEF48A /* Flowers_iPad_1024x1024_00011.png.pvr */; };
+		109E5DC71340CB2300EEF48A /* Flowers_iPad_1024x1024_00012.png.pvr in Resources */ = {isa = PBXBuildFile; fileRef = 109E5D871340CB2300EEF48A /* Flowers_iPad_1024x1024_00012.png.pvr */; };
+		109E5DC81340CB2300EEF48A /* Flowers_iPad_1024x1024_00013.png.pvr in Resources */ = {isa = PBXBuildFile; fileRef = 109E5D881340CB2300EEF48A /* Flowers_iPad_1024x1024_00013.png.pvr */; };
+		109E5DC91340CB2300EEF48A /* Flowers_iPad_1024x1024_00014.png.pvr in Resources */ = {isa = PBXBuildFile; fileRef = 109E5D891340CB2300EEF48A /* Flowers_iPad_1024x1024_00014.png.pvr */; };
+		109E5DCA1340CB2300EEF48A /* Flowers_iPad_1024x1024_00015.png.pvr in Resources */ = {isa = PBXBuildFile; fileRef = 109E5D8A1340CB2300EEF48A /* Flowers_iPad_1024x1024_00015.png.pvr */; };
+		109E5DCB1340CB2300EEF48A /* LayeredStars_iPad_1024x1024_00000.png.pvr in Resources */ = {isa = PBXBuildFile; fileRef = 109E5D8B1340CB2300EEF48A /* LayeredStars_iPad_1024x1024_00000.png.pvr */; };
+		109E5DCC1340CB2300EEF48A /* LayeredStars_iPad_1024x1024_00001.png.pvr in Resources */ = {isa = PBXBuildFile; fileRef = 109E5D8C1340CB2300EEF48A /* LayeredStars_iPad_1024x1024_00001.png.pvr */; };
+		109E5DCD1340CB2300EEF48A /* LayeredStars_iPad_1024x1024_00002.png.pvr in Resources */ = {isa = PBXBuildFile; fileRef = 109E5D8D1340CB2300EEF48A /* LayeredStars_iPad_1024x1024_00002.png.pvr */; };
+		109E5DCE1340CB2300EEF48A /* LayeredStars_iPad_1024x1024_00003.png.pvr in Resources */ = {isa = PBXBuildFile; fileRef = 109E5D8E1340CB2300EEF48A /* LayeredStars_iPad_1024x1024_00003.png.pvr */; };
+		109E5DCF1340CB2300EEF48A /* LayeredStars_iPad_1024x1024_00004.png.pvr in Resources */ = {isa = PBXBuildFile; fileRef = 109E5D8F1340CB2300EEF48A /* LayeredStars_iPad_1024x1024_00004.png.pvr */; };
+		109E5DD01340CB2300EEF48A /* LayeredStars_iPad_1024x1024_00005.png.pvr in Resources */ = {isa = PBXBuildFile; fileRef = 109E5D901340CB2300EEF48A /* LayeredStars_iPad_1024x1024_00005.png.pvr */; };
+		109E5DD11340CB2300EEF48A /* LayeredStars_iPad_1024x1024_00006.png.pvr in Resources */ = {isa = PBXBuildFile; fileRef = 109E5D911340CB2300EEF48A /* LayeredStars_iPad_1024x1024_00006.png.pvr */; };
+		109E5DD21340CB2300EEF48A /* LayeredStars_iPad_1024x1024_00007.png.pvr in Resources */ = {isa = PBXBuildFile; fileRef = 109E5D921340CB2300EEF48A /* LayeredStars_iPad_1024x1024_00007.png.pvr */; };
+		109E5DD31340CB2300EEF48A /* LayeredStars_iPad_1024x1024_00008.png.pvr in Resources */ = {isa = PBXBuildFile; fileRef = 109E5D931340CB2300EEF48A /* LayeredStars_iPad_1024x1024_00008.png.pvr */; };
+		109E5DD41340CB2300EEF48A /* LayeredStars_iPad_1024x1024_00009.png.pvr in Resources */ = {isa = PBXBuildFile; fileRef = 109E5D941340CB2300EEF48A /* LayeredStars_iPad_1024x1024_00009.png.pvr */; };
+		109E5DD51340CB2300EEF48A /* LayeredStars_iPad_1024x1024_00010.png.pvr in Resources */ = {isa = PBXBuildFile; fileRef = 109E5D951340CB2300EEF48A /* LayeredStars_iPad_1024x1024_00010.png.pvr */; };
+		109E5DD61340CB2300EEF48A /* LayeredStars_iPad_1024x1024_00011.png.pvr in Resources */ = {isa = PBXBuildFile; fileRef = 109E5D961340CB2300EEF48A /* LayeredStars_iPad_1024x1024_00011.png.pvr */; };
+		109E5DD71340CB2300EEF48A /* LayeredStars_iPad_1024x1024_00012.png.pvr in Resources */ = {isa = PBXBuildFile; fileRef = 109E5D971340CB2300EEF48A /* LayeredStars_iPad_1024x1024_00012.png.pvr */; };
+		109E5DD81340CB2300EEF48A /* LayeredStars_iPad_1024x1024_00013.png.pvr in Resources */ = {isa = PBXBuildFile; fileRef = 109E5D981340CB2300EEF48A /* LayeredStars_iPad_1024x1024_00013.png.pvr */; };
+		109E5DD91340CB2300EEF48A /* LayeredStars_iPad_1024x1024_00014.png.pvr in Resources */ = {isa = PBXBuildFile; fileRef = 109E5D991340CB2300EEF48A /* LayeredStars_iPad_1024x1024_00014.png.pvr */; };
+		109E5DDA1340CB2300EEF48A /* LayeredStars_iPad_1024x1024_00015.png.pvr in Resources */ = {isa = PBXBuildFile; fileRef = 109E5D9A1340CB2300EEF48A /* LayeredStars_iPad_1024x1024_00015.png.pvr */; };
+		109E5DDB1340CB2300EEF48A /* Spirals_iPad_1024x1024_00000.png.pvr in Resources */ = {isa = PBXBuildFile; fileRef = 109E5D9B1340CB2300EEF48A /* Spirals_iPad_1024x1024_00000.png.pvr */; };
+		109E5DDC1340CB2300EEF48A /* Spirals_iPad_1024x1024_00001.png.pvr in Resources */ = {isa = PBXBuildFile; fileRef = 109E5D9C1340CB2300EEF48A /* Spirals_iPad_1024x1024_00001.png.pvr */; };
+		109E5DDD1340CB2300EEF48A /* Spirals_iPad_1024x1024_00002.png.pvr in Resources */ = {isa = PBXBuildFile; fileRef = 109E5D9D1340CB2300EEF48A /* Spirals_iPad_1024x1024_00002.png.pvr */; };
+		109E5DDE1340CB2300EEF48A /* Spirals_iPad_1024x1024_00003.png.pvr in Resources */ = {isa = PBXBuildFile; fileRef = 109E5D9E1340CB2300EEF48A /* Spirals_iPad_1024x1024_00003.png.pvr */; };
+		109E5DDF1340CB2300EEF48A /* Spirals_iPad_1024x1024_00004.png.pvr in Resources */ = {isa = PBXBuildFile; fileRef = 109E5D9F1340CB2300EEF48A /* Spirals_iPad_1024x1024_00004.png.pvr */; };
+		109E5DE01340CB2300EEF48A /* Spirals_iPad_1024x1024_00005.png.pvr in Resources */ = {isa = PBXBuildFile; fileRef = 109E5DA01340CB2300EEF48A /* Spirals_iPad_1024x1024_00005.png.pvr */; };
+		109E5DE11340CB2300EEF48A /* Spirals_iPad_1024x1024_00006.png.pvr in Resources */ = {isa = PBXBuildFile; fileRef = 109E5DA11340CB2300EEF48A /* Spirals_iPad_1024x1024_00006.png.pvr */; };
+		109E5DE21340CB2300EEF48A /* Spirals_iPad_1024x1024_00007.png.pvr in Resources */ = {isa = PBXBuildFile; fileRef = 109E5DA21340CB2300EEF48A /* Spirals_iPad_1024x1024_00007.png.pvr */; };
+		109E5DE31340CB2300EEF48A /* Spirals_iPad_1024x1024_00008.png.pvr in Resources */ = {isa = PBXBuildFile; fileRef = 109E5DA31340CB2300EEF48A /* Spirals_iPad_1024x1024_00008.png.pvr */; };
+		109E5DE41340CB2300EEF48A /* Spirals_iPad_1024x1024_00009.png.pvr in Resources */ = {isa = PBXBuildFile; fileRef = 109E5DA41340CB2300EEF48A /* Spirals_iPad_1024x1024_00009.png.pvr */; };
+		109E5DE51340CB2300EEF48A /* Spirals_iPad_1024x1024_00010.png.pvr in Resources */ = {isa = PBXBuildFile; fileRef = 109E5DA51340CB2300EEF48A /* Spirals_iPad_1024x1024_00010.png.pvr */; };
+		109E5DE61340CB2300EEF48A /* Spirals_iPad_1024x1024_00011.png.pvr in Resources */ = {isa = PBXBuildFile; fileRef = 109E5DA61340CB2300EEF48A /* Spirals_iPad_1024x1024_00011.png.pvr */; };
+		109E5DE71340CB2300EEF48A /* Spirals_iPad_1024x1024_00012.png.pvr in Resources */ = {isa = PBXBuildFile; fileRef = 109E5DA71340CB2300EEF48A /* Spirals_iPad_1024x1024_00012.png.pvr */; };
+		109E5DE81340CB2300EEF48A /* Spirals_iPad_1024x1024_00013.png.pvr in Resources */ = {isa = PBXBuildFile; fileRef = 109E5DA81340CB2300EEF48A /* Spirals_iPad_1024x1024_00013.png.pvr */; };
+		109E5DE91340CB2300EEF48A /* Spirals_iPad_1024x1024_00014.png.pvr in Resources */ = {isa = PBXBuildFile; fileRef = 109E5DA91340CB2300EEF48A /* Spirals_iPad_1024x1024_00014.png.pvr */; };
+		109E5DEA1340CB2300EEF48A /* Spirals_iPad_1024x1024_00015.png.pvr in Resources */ = {isa = PBXBuildFile; fileRef = 109E5DAA1340CB2300EEF48A /* Spirals_iPad_1024x1024_00015.png.pvr */; };
 		10A06586133BB3E40059187D /* GameVideo_iPad.m in Sources */ = {isa = PBXBuildFile; fileRef = 10A06584133BB3E40059187D /* GameVideo_iPad.m */; };
 		10A06587133BB3E40059187D /* GameVideo_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10A06585133BB3E40059187D /* GameVideo_iPad.xib */; };
 		10A065F0133BBDCB0059187D /* DOMINO 1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 10A065C8133BBDCB0059187D /* DOMINO 1.mp3 */; };
@@ -662,6 +726,70 @@
 		109D6098133A5B150061B1C3 /* dress_snd_phone_Red.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = dress_snd_phone_Red.mp3; sourceTree = "<group>"; };
 		109D6099133A5B150061B1C3 /* dress_snd_phone_Purple.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = dress_snd_phone_Purple.mp3; sourceTree = "<group>"; };
 		109D6101133A5B410061B1C3 /* dress_snd_boots_Blue.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = dress_snd_boots_Blue.mp3; sourceTree = "<group>"; };
+		109E5D6B1340CB2300EEF48A /* Arrows_iPad_1024x1024_00000.png.pvr */ = {isa = PBXFileReference; lastKnownFileType = file; path = Arrows_iPad_1024x1024_00000.png.pvr; sourceTree = "<group>"; };
+		109E5D6C1340CB2300EEF48A /* Arrows_iPad_1024x1024_00001.png.pvr */ = {isa = PBXFileReference; lastKnownFileType = file; path = Arrows_iPad_1024x1024_00001.png.pvr; sourceTree = "<group>"; };
+		109E5D6D1340CB2300EEF48A /* Arrows_iPad_1024x1024_00002.png.pvr */ = {isa = PBXFileReference; lastKnownFileType = file; path = Arrows_iPad_1024x1024_00002.png.pvr; sourceTree = "<group>"; };
+		109E5D6E1340CB2300EEF48A /* Arrows_iPad_1024x1024_00003.png.pvr */ = {isa = PBXFileReference; lastKnownFileType = file; path = Arrows_iPad_1024x1024_00003.png.pvr; sourceTree = "<group>"; };
+		109E5D6F1340CB2300EEF48A /* Arrows_iPad_1024x1024_00004.png.pvr */ = {isa = PBXFileReference; lastKnownFileType = file; path = Arrows_iPad_1024x1024_00004.png.pvr; sourceTree = "<group>"; };
+		109E5D701340CB2300EEF48A /* Arrows_iPad_1024x1024_00005.png.pvr */ = {isa = PBXFileReference; lastKnownFileType = file; path = Arrows_iPad_1024x1024_00005.png.pvr; sourceTree = "<group>"; };
+		109E5D711340CB2300EEF48A /* Arrows_iPad_1024x1024_00006.png.pvr */ = {isa = PBXFileReference; lastKnownFileType = file; path = Arrows_iPad_1024x1024_00006.png.pvr; sourceTree = "<group>"; };
+		109E5D721340CB2300EEF48A /* Arrows_iPad_1024x1024_00007.png.pvr */ = {isa = PBXFileReference; lastKnownFileType = file; path = Arrows_iPad_1024x1024_00007.png.pvr; sourceTree = "<group>"; };
+		109E5D731340CB2300EEF48A /* Arrows_iPad_1024x1024_00008.png.pvr */ = {isa = PBXFileReference; lastKnownFileType = file; path = Arrows_iPad_1024x1024_00008.png.pvr; sourceTree = "<group>"; };
+		109E5D741340CB2300EEF48A /* Arrows_iPad_1024x1024_00009.png.pvr */ = {isa = PBXFileReference; lastKnownFileType = file; path = Arrows_iPad_1024x1024_00009.png.pvr; sourceTree = "<group>"; };
+		109E5D751340CB2300EEF48A /* Arrows_iPad_1024x1024_00010.png.pvr */ = {isa = PBXFileReference; lastKnownFileType = file; path = Arrows_iPad_1024x1024_00010.png.pvr; sourceTree = "<group>"; };
+		109E5D761340CB2300EEF48A /* Arrows_iPad_1024x1024_00011.png.pvr */ = {isa = PBXFileReference; lastKnownFileType = file; path = Arrows_iPad_1024x1024_00011.png.pvr; sourceTree = "<group>"; };
+		109E5D771340CB2300EEF48A /* Arrows_iPad_1024x1024_00012.png.pvr */ = {isa = PBXFileReference; lastKnownFileType = file; path = Arrows_iPad_1024x1024_00012.png.pvr; sourceTree = "<group>"; };
+		109E5D781340CB2300EEF48A /* Arrows_iPad_1024x1024_00013.png.pvr */ = {isa = PBXFileReference; lastKnownFileType = file; path = Arrows_iPad_1024x1024_00013.png.pvr; sourceTree = "<group>"; };
+		109E5D791340CB2300EEF48A /* Arrows_iPad_1024x1024_00014.png.pvr */ = {isa = PBXFileReference; lastKnownFileType = file; path = Arrows_iPad_1024x1024_00014.png.pvr; sourceTree = "<group>"; };
+		109E5D7A1340CB2300EEF48A /* Arrows_iPad_1024x1024_00015.png.pvr */ = {isa = PBXFileReference; lastKnownFileType = file; path = Arrows_iPad_1024x1024_00015.png.pvr; sourceTree = "<group>"; };
+		109E5D7B1340CB2300EEF48A /* Flowers_iPad_1024x1024_00000.png.pvr */ = {isa = PBXFileReference; lastKnownFileType = file; path = Flowers_iPad_1024x1024_00000.png.pvr; sourceTree = "<group>"; };
+		109E5D7C1340CB2300EEF48A /* Flowers_iPad_1024x1024_00001.png.pvr */ = {isa = PBXFileReference; lastKnownFileType = file; path = Flowers_iPad_1024x1024_00001.png.pvr; sourceTree = "<group>"; };
+		109E5D7D1340CB2300EEF48A /* Flowers_iPad_1024x1024_00002.png.pvr */ = {isa = PBXFileReference; lastKnownFileType = file; path = Flowers_iPad_1024x1024_00002.png.pvr; sourceTree = "<group>"; };
+		109E5D7E1340CB2300EEF48A /* Flowers_iPad_1024x1024_00003.png.pvr */ = {isa = PBXFileReference; lastKnownFileType = file; path = Flowers_iPad_1024x1024_00003.png.pvr; sourceTree = "<group>"; };
+		109E5D7F1340CB2300EEF48A /* Flowers_iPad_1024x1024_00004.png.pvr */ = {isa = PBXFileReference; lastKnownFileType = file; path = Flowers_iPad_1024x1024_00004.png.pvr; sourceTree = "<group>"; };
+		109E5D801340CB2300EEF48A /* Flowers_iPad_1024x1024_00005.png.pvr */ = {isa = PBXFileReference; lastKnownFileType = file; path = Flowers_iPad_1024x1024_00005.png.pvr; sourceTree = "<group>"; };
+		109E5D811340CB2300EEF48A /* Flowers_iPad_1024x1024_00006.png.pvr */ = {isa = PBXFileReference; lastKnownFileType = file; path = Flowers_iPad_1024x1024_00006.png.pvr; sourceTree = "<group>"; };
+		109E5D821340CB2300EEF48A /* Flowers_iPad_1024x1024_00007.png.pvr */ = {isa = PBXFileReference; lastKnownFileType = file; path = Flowers_iPad_1024x1024_00007.png.pvr; sourceTree = "<group>"; };
+		109E5D831340CB2300EEF48A /* Flowers_iPad_1024x1024_00008.png.pvr */ = {isa = PBXFileReference; lastKnownFileType = file; path = Flowers_iPad_1024x1024_00008.png.pvr; sourceTree = "<group>"; };
+		109E5D841340CB2300EEF48A /* Flowers_iPad_1024x1024_00009.png.pvr */ = {isa = PBXFileReference; lastKnownFileType = file; path = Flowers_iPad_1024x1024_00009.png.pvr; sourceTree = "<group>"; };
+		109E5D851340CB2300EEF48A /* Flowers_iPad_1024x1024_00010.png.pvr */ = {isa = PBXFileReference; lastKnownFileType = file; path = Flowers_iPad_1024x1024_00010.png.pvr; sourceTree = "<group>"; };
+		109E5D861340CB2300EEF48A /* Flowers_iPad_1024x1024_00011.png.pvr */ = {isa = PBXFileReference; lastKnownFileType = file; path = Flowers_iPad_1024x1024_00011.png.pvr; sourceTree = "<group>"; };
+		109E5D871340CB2300EEF48A /* Flowers_iPad_1024x1024_00012.png.pvr */ = {isa = PBXFileReference; lastKnownFileType = file; path = Flowers_iPad_1024x1024_00012.png.pvr; sourceTree = "<group>"; };
+		109E5D881340CB2300EEF48A /* Flowers_iPad_1024x1024_00013.png.pvr */ = {isa = PBXFileReference; lastKnownFileType = file; path = Flowers_iPad_1024x1024_00013.png.pvr; sourceTree = "<group>"; };
+		109E5D891340CB2300EEF48A /* Flowers_iPad_1024x1024_00014.png.pvr */ = {isa = PBXFileReference; lastKnownFileType = file; path = Flowers_iPad_1024x1024_00014.png.pvr; sourceTree = "<group>"; };
+		109E5D8A1340CB2300EEF48A /* Flowers_iPad_1024x1024_00015.png.pvr */ = {isa = PBXFileReference; lastKnownFileType = file; path = Flowers_iPad_1024x1024_00015.png.pvr; sourceTree = "<group>"; };
+		109E5D8B1340CB2300EEF48A /* LayeredStars_iPad_1024x1024_00000.png.pvr */ = {isa = PBXFileReference; lastKnownFileType = file; path = LayeredStars_iPad_1024x1024_00000.png.pvr; sourceTree = "<group>"; };
+		109E5D8C1340CB2300EEF48A /* LayeredStars_iPad_1024x1024_00001.png.pvr */ = {isa = PBXFileReference; lastKnownFileType = file; path = LayeredStars_iPad_1024x1024_00001.png.pvr; sourceTree = "<group>"; };
+		109E5D8D1340CB2300EEF48A /* LayeredStars_iPad_1024x1024_00002.png.pvr */ = {isa = PBXFileReference; lastKnownFileType = file; path = LayeredStars_iPad_1024x1024_00002.png.pvr; sourceTree = "<group>"; };
+		109E5D8E1340CB2300EEF48A /* LayeredStars_iPad_1024x1024_00003.png.pvr */ = {isa = PBXFileReference; lastKnownFileType = file; path = LayeredStars_iPad_1024x1024_00003.png.pvr; sourceTree = "<group>"; };
+		109E5D8F1340CB2300EEF48A /* LayeredStars_iPad_1024x1024_00004.png.pvr */ = {isa = PBXFileReference; lastKnownFileType = file; path = LayeredStars_iPad_1024x1024_00004.png.pvr; sourceTree = "<group>"; };
+		109E5D901340CB2300EEF48A /* LayeredStars_iPad_1024x1024_00005.png.pvr */ = {isa = PBXFileReference; lastKnownFileType = file; path = LayeredStars_iPad_1024x1024_00005.png.pvr; sourceTree = "<group>"; };
+		109E5D911340CB2300EEF48A /* LayeredStars_iPad_1024x1024_00006.png.pvr */ = {isa = PBXFileReference; lastKnownFileType = file; path = LayeredStars_iPad_1024x1024_00006.png.pvr; sourceTree = "<group>"; };
+		109E5D921340CB2300EEF48A /* LayeredStars_iPad_1024x1024_00007.png.pvr */ = {isa = PBXFileReference; lastKnownFileType = file; path = LayeredStars_iPad_1024x1024_00007.png.pvr; sourceTree = "<group>"; };
+		109E5D931340CB2300EEF48A /* LayeredStars_iPad_1024x1024_00008.png.pvr */ = {isa = PBXFileReference; lastKnownFileType = file; path = LayeredStars_iPad_1024x1024_00008.png.pvr; sourceTree = "<group>"; };
+		109E5D941340CB2300EEF48A /* LayeredStars_iPad_1024x1024_00009.png.pvr */ = {isa = PBXFileReference; lastKnownFileType = file; path = LayeredStars_iPad_1024x1024_00009.png.pvr; sourceTree = "<group>"; };
+		109E5D951340CB2300EEF48A /* LayeredStars_iPad_1024x1024_00010.png.pvr */ = {isa = PBXFileReference; lastKnownFileType = file; path = LayeredStars_iPad_1024x1024_00010.png.pvr; sourceTree = "<group>"; };
+		109E5D961340CB2300EEF48A /* LayeredStars_iPad_1024x1024_00011.png.pvr */ = {isa = PBXFileReference; lastKnownFileType = file; path = LayeredStars_iPad_1024x1024_00011.png.pvr; sourceTree = "<group>"; };
+		109E5D971340CB2300EEF48A /* LayeredStars_iPad_1024x1024_00012.png.pvr */ = {isa = PBXFileReference; lastKnownFileType = file; path = LayeredStars_iPad_1024x1024_00012.png.pvr; sourceTree = "<group>"; };
+		109E5D981340CB2300EEF48A /* LayeredStars_iPad_1024x1024_00013.png.pvr */ = {isa = PBXFileReference; lastKnownFileType = file; path = LayeredStars_iPad_1024x1024_00013.png.pvr; sourceTree = "<group>"; };
+		109E5D991340CB2300EEF48A /* LayeredStars_iPad_1024x1024_00014.png.pvr */ = {isa = PBXFileReference; lastKnownFileType = file; path = LayeredStars_iPad_1024x1024_00014.png.pvr; sourceTree = "<group>"; };
+		109E5D9A1340CB2300EEF48A /* LayeredStars_iPad_1024x1024_00015.png.pvr */ = {isa = PBXFileReference; lastKnownFileType = file; path = LayeredStars_iPad_1024x1024_00015.png.pvr; sourceTree = "<group>"; };
+		109E5D9B1340CB2300EEF48A /* Spirals_iPad_1024x1024_00000.png.pvr */ = {isa = PBXFileReference; lastKnownFileType = file; path = Spirals_iPad_1024x1024_00000.png.pvr; sourceTree = "<group>"; };
+		109E5D9C1340CB2300EEF48A /* Spirals_iPad_1024x1024_00001.png.pvr */ = {isa = PBXFileReference; lastKnownFileType = file; path = Spirals_iPad_1024x1024_00001.png.pvr; sourceTree = "<group>"; };
+		109E5D9D1340CB2300EEF48A /* Spirals_iPad_1024x1024_00002.png.pvr */ = {isa = PBXFileReference; lastKnownFileType = file; path = Spirals_iPad_1024x1024_00002.png.pvr; sourceTree = "<group>"; };
+		109E5D9E1340CB2300EEF48A /* Spirals_iPad_1024x1024_00003.png.pvr */ = {isa = PBXFileReference; lastKnownFileType = file; path = Spirals_iPad_1024x1024_00003.png.pvr; sourceTree = "<group>"; };
+		109E5D9F1340CB2300EEF48A /* Spirals_iPad_1024x1024_00004.png.pvr */ = {isa = PBXFileReference; lastKnownFileType = file; path = Spirals_iPad_1024x1024_00004.png.pvr; sourceTree = "<group>"; };
+		109E5DA01340CB2300EEF48A /* Spirals_iPad_1024x1024_00005.png.pvr */ = {isa = PBXFileReference; lastKnownFileType = file; path = Spirals_iPad_1024x1024_00005.png.pvr; sourceTree = "<group>"; };
+		109E5DA11340CB2300EEF48A /* Spirals_iPad_1024x1024_00006.png.pvr */ = {isa = PBXFileReference; lastKnownFileType = file; path = Spirals_iPad_1024x1024_00006.png.pvr; sourceTree = "<group>"; };
+		109E5DA21340CB2300EEF48A /* Spirals_iPad_1024x1024_00007.png.pvr */ = {isa = PBXFileReference; lastKnownFileType = file; path = Spirals_iPad_1024x1024_00007.png.pvr; sourceTree = "<group>"; };
+		109E5DA31340CB2300EEF48A /* Spirals_iPad_1024x1024_00008.png.pvr */ = {isa = PBXFileReference; lastKnownFileType = file; path = Spirals_iPad_1024x1024_00008.png.pvr; sourceTree = "<group>"; };
+		109E5DA41340CB2300EEF48A /* Spirals_iPad_1024x1024_00009.png.pvr */ = {isa = PBXFileReference; lastKnownFileType = file; path = Spirals_iPad_1024x1024_00009.png.pvr; sourceTree = "<group>"; };
+		109E5DA51340CB2300EEF48A /* Spirals_iPad_1024x1024_00010.png.pvr */ = {isa = PBXFileReference; lastKnownFileType = file; path = Spirals_iPad_1024x1024_00010.png.pvr; sourceTree = "<group>"; };
+		109E5DA61340CB2300EEF48A /* Spirals_iPad_1024x1024_00011.png.pvr */ = {isa = PBXFileReference; lastKnownFileType = file; path = Spirals_iPad_1024x1024_00011.png.pvr; sourceTree = "<group>"; };
+		109E5DA71340CB2300EEF48A /* Spirals_iPad_1024x1024_00012.png.pvr */ = {isa = PBXFileReference; lastKnownFileType = file; path = Spirals_iPad_1024x1024_00012.png.pvr; sourceTree = "<group>"; };
+		109E5DA81340CB2300EEF48A /* Spirals_iPad_1024x1024_00013.png.pvr */ = {isa = PBXFileReference; lastKnownFileType = file; path = Spirals_iPad_1024x1024_00013.png.pvr; sourceTree = "<group>"; };
+		109E5DA91340CB2300EEF48A /* Spirals_iPad_1024x1024_00014.png.pvr */ = {isa = PBXFileReference; lastKnownFileType = file; path = Spirals_iPad_1024x1024_00014.png.pvr; sourceTree = "<group>"; };
+		109E5DAA1340CB2300EEF48A /* Spirals_iPad_1024x1024_00015.png.pvr */ = {isa = PBXFileReference; lastKnownFileType = file; path = Spirals_iPad_1024x1024_00015.png.pvr; sourceTree = "<group>"; };
 		10A06583133BB3E40059187D /* GameVideo_iPad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameVideo_iPad.h; sourceTree = "<group>"; };
 		10A06584133BB3E40059187D /* GameVideo_iPad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameVideo_iPad.m; sourceTree = "<group>"; };
 		10A06585133BB3E40059187D /* GameVideo_iPad.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GameVideo_iPad.xib; sourceTree = "<group>"; };
@@ -1150,6 +1278,70 @@
 		10A08CF013215426003F24AD /* dress */ = {
 			isa = PBXGroup;
 			children = (
+				109E5D6B1340CB2300EEF48A /* Arrows_iPad_1024x1024_00000.png.pvr */,
+				109E5D6C1340CB2300EEF48A /* Arrows_iPad_1024x1024_00001.png.pvr */,
+				109E5D6D1340CB2300EEF48A /* Arrows_iPad_1024x1024_00002.png.pvr */,
+				109E5D6E1340CB2300EEF48A /* Arrows_iPad_1024x1024_00003.png.pvr */,
+				109E5D6F1340CB2300EEF48A /* Arrows_iPad_1024x1024_00004.png.pvr */,
+				109E5D701340CB2300EEF48A /* Arrows_iPad_1024x1024_00005.png.pvr */,
+				109E5D711340CB2300EEF48A /* Arrows_iPad_1024x1024_00006.png.pvr */,
+				109E5D721340CB2300EEF48A /* Arrows_iPad_1024x1024_00007.png.pvr */,
+				109E5D731340CB2300EEF48A /* Arrows_iPad_1024x1024_00008.png.pvr */,
+				109E5D741340CB2300EEF48A /* Arrows_iPad_1024x1024_00009.png.pvr */,
+				109E5D751340CB2300EEF48A /* Arrows_iPad_1024x1024_00010.png.pvr */,
+				109E5D761340CB2300EEF48A /* Arrows_iPad_1024x1024_00011.png.pvr */,
+				109E5D771340CB2300EEF48A /* Arrows_iPad_1024x1024_00012.png.pvr */,
+				109E5D781340CB2300EEF48A /* Arrows_iPad_1024x1024_00013.png.pvr */,
+				109E5D791340CB2300EEF48A /* Arrows_iPad_1024x1024_00014.png.pvr */,
+				109E5D7A1340CB2300EEF48A /* Arrows_iPad_1024x1024_00015.png.pvr */,
+				109E5D7B1340CB2300EEF48A /* Flowers_iPad_1024x1024_00000.png.pvr */,
+				109E5D7C1340CB2300EEF48A /* Flowers_iPad_1024x1024_00001.png.pvr */,
+				109E5D7D1340CB2300EEF48A /* Flowers_iPad_1024x1024_00002.png.pvr */,
+				109E5D7E1340CB2300EEF48A /* Flowers_iPad_1024x1024_00003.png.pvr */,
+				109E5D7F1340CB2300EEF48A /* Flowers_iPad_1024x1024_00004.png.pvr */,
+				109E5D801340CB2300EEF48A /* Flowers_iPad_1024x1024_00005.png.pvr */,
+				109E5D811340CB2300EEF48A /* Flowers_iPad_1024x1024_00006.png.pvr */,
+				109E5D821340CB2300EEF48A /* Flowers_iPad_1024x1024_00007.png.pvr */,
+				109E5D831340CB2300EEF48A /* Flowers_iPad_1024x1024_00008.png.pvr */,
+				109E5D841340CB2300EEF48A /* Flowers_iPad_1024x1024_00009.png.pvr */,
+				109E5D851340CB2300EEF48A /* Flowers_iPad_1024x1024_00010.png.pvr */,
+				109E5D861340CB2300EEF48A /* Flowers_iPad_1024x1024_00011.png.pvr */,
+				109E5D871340CB2300EEF48A /* Flowers_iPad_1024x1024_00012.png.pvr */,
+				109E5D881340CB2300EEF48A /* Flowers_iPad_1024x1024_00013.png.pvr */,
+				109E5D891340CB2300EEF48A /* Flowers_iPad_1024x1024_00014.png.pvr */,
+				109E5D8A1340CB2300EEF48A /* Flowers_iPad_1024x1024_00015.png.pvr */,
+				109E5D8B1340CB2300EEF48A /* LayeredStars_iPad_1024x1024_00000.png.pvr */,
+				109E5D8C1340CB2300EEF48A /* LayeredStars_iPad_1024x1024_00001.png.pvr */,
+				109E5D8D1340CB2300EEF48A /* LayeredStars_iPad_1024x1024_00002.png.pvr */,
+				109E5D8E1340CB2300EEF48A /* LayeredStars_iPad_1024x1024_00003.png.pvr */,
+				109E5D8F1340CB2300EEF48A /* LayeredStars_iPad_1024x1024_00004.png.pvr */,
+				109E5D901340CB2300EEF48A /* LayeredStars_iPad_1024x1024_00005.png.pvr */,
+				109E5D911340CB2300EEF48A /* LayeredStars_iPad_1024x1024_00006.png.pvr */,
+				109E5D921340CB2300EEF48A /* LayeredStars_iPad_1024x1024_00007.png.pvr */,
+				109E5D931340CB2300EEF48A /* LayeredStars_iPad_1024x1024_00008.png.pvr */,
+				109E5D941340CB2300EEF48A /* LayeredStars_iPad_1024x1024_00009.png.pvr */,
+				109E5D951340CB2300EEF48A /* LayeredStars_iPad_1024x1024_00010.png.pvr */,
+				109E5D961340CB2300EEF48A /* LayeredStars_iPad_1024x1024_00011.png.pvr */,
+				109E5D971340CB2300EEF48A /* LayeredStars_iPad_1024x1024_00012.png.pvr */,
+				109E5D981340CB2300EEF48A /* LayeredStars_iPad_1024x1024_00013.png.pvr */,
+				109E5D991340CB2300EEF48A /* LayeredStars_iPad_1024x1024_00014.png.pvr */,
+				109E5D9A1340CB2300EEF48A /* LayeredStars_iPad_1024x1024_00015.png.pvr */,
+				109E5D9B1340CB2300EEF48A /* Spirals_iPad_1024x1024_00000.png.pvr */,
+				109E5D9C1340CB2300EEF48A /* Spirals_iPad_1024x1024_00001.png.pvr */,
+				109E5D9D1340CB2300EEF48A /* Spirals_iPad_1024x1024_00002.png.pvr */,
+				109E5D9E1340CB2300EEF48A /* Spirals_iPad_1024x1024_00003.png.pvr */,
+				109E5D9F1340CB2300EEF48A /* Spirals_iPad_1024x1024_00004.png.pvr */,
+				109E5DA01340CB2300EEF48A /* Spirals_iPad_1024x1024_00005.png.pvr */,
+				109E5DA11340CB2300EEF48A /* Spirals_iPad_1024x1024_00006.png.pvr */,
+				109E5DA21340CB2300EEF48A /* Spirals_iPad_1024x1024_00007.png.pvr */,
+				109E5DA31340CB2300EEF48A /* Spirals_iPad_1024x1024_00008.png.pvr */,
+				109E5DA41340CB2300EEF48A /* Spirals_iPad_1024x1024_00009.png.pvr */,
+				109E5DA51340CB2300EEF48A /* Spirals_iPad_1024x1024_00010.png.pvr */,
+				109E5DA61340CB2300EEF48A /* Spirals_iPad_1024x1024_00011.png.pvr */,
+				109E5DA71340CB2300EEF48A /* Spirals_iPad_1024x1024_00012.png.pvr */,
+				109E5DA81340CB2300EEF48A /* Spirals_iPad_1024x1024_00013.png.pvr */,
+				109E5DA91340CB2300EEF48A /* Spirals_iPad_1024x1024_00014.png.pvr */,
+				109E5DAA1340CB2300EEF48A /* Spirals_iPad_1024x1024_00015.png.pvr */,
 				1024C44713385D8000F4D141 /* 3DStars_iPad_00000.pvr */,
 				1024C44F133860EC00F4D141 /* 3DStars_iPad_00001.pvr */,
 				1024C450133860EC00F4D141 /* 3DStars_iPad_00002.pvr */,
@@ -2251,6 +2443,70 @@
 				10A06615133BBDCB0059187D /* DOMINO 38.mp3 in Resources */,
 				10A06616133BBDCB0059187D /* DOMINO 39.mp3 in Resources */,
 				10A06617133BBDCB0059187D /* DOMINO 40.mp3 in Resources */,
+				109E5DAB1340CB2300EEF48A /* Arrows_iPad_1024x1024_00000.png.pvr in Resources */,
+				109E5DAC1340CB2300EEF48A /* Arrows_iPad_1024x1024_00001.png.pvr in Resources */,
+				109E5DAD1340CB2300EEF48A /* Arrows_iPad_1024x1024_00002.png.pvr in Resources */,
+				109E5DAE1340CB2300EEF48A /* Arrows_iPad_1024x1024_00003.png.pvr in Resources */,
+				109E5DAF1340CB2300EEF48A /* Arrows_iPad_1024x1024_00004.png.pvr in Resources */,
+				109E5DB01340CB2300EEF48A /* Arrows_iPad_1024x1024_00005.png.pvr in Resources */,
+				109E5DB11340CB2300EEF48A /* Arrows_iPad_1024x1024_00006.png.pvr in Resources */,
+				109E5DB21340CB2300EEF48A /* Arrows_iPad_1024x1024_00007.png.pvr in Resources */,
+				109E5DB31340CB2300EEF48A /* Arrows_iPad_1024x1024_00008.png.pvr in Resources */,
+				109E5DB41340CB2300EEF48A /* Arrows_iPad_1024x1024_00009.png.pvr in Resources */,
+				109E5DB51340CB2300EEF48A /* Arrows_iPad_1024x1024_00010.png.pvr in Resources */,
+				109E5DB61340CB2300EEF48A /* Arrows_iPad_1024x1024_00011.png.pvr in Resources */,
+				109E5DB71340CB2300EEF48A /* Arrows_iPad_1024x1024_00012.png.pvr in Resources */,
+				109E5DB81340CB2300EEF48A /* Arrows_iPad_1024x1024_00013.png.pvr in Resources */,
+				109E5DB91340CB2300EEF48A /* Arrows_iPad_1024x1024_00014.png.pvr in Resources */,
+				109E5DBA1340CB2300EEF48A /* Arrows_iPad_1024x1024_00015.png.pvr in Resources */,
+				109E5DBB1340CB2300EEF48A /* Flowers_iPad_1024x1024_00000.png.pvr in Resources */,
+				109E5DBC1340CB2300EEF48A /* Flowers_iPad_1024x1024_00001.png.pvr in Resources */,
+				109E5DBD1340CB2300EEF48A /* Flowers_iPad_1024x1024_00002.png.pvr in Resources */,
+				109E5DBE1340CB2300EEF48A /* Flowers_iPad_1024x1024_00003.png.pvr in Resources */,
+				109E5DBF1340CB2300EEF48A /* Flowers_iPad_1024x1024_00004.png.pvr in Resources */,
+				109E5DC01340CB2300EEF48A /* Flowers_iPad_1024x1024_00005.png.pvr in Resources */,
+				109E5DC11340CB2300EEF48A /* Flowers_iPad_1024x1024_00006.png.pvr in Resources */,
+				109E5DC21340CB2300EEF48A /* Flowers_iPad_1024x1024_00007.png.pvr in Resources */,
+				109E5DC31340CB2300EEF48A /* Flowers_iPad_1024x1024_00008.png.pvr in Resources */,
+				109E5DC41340CB2300EEF48A /* Flowers_iPad_1024x1024_00009.png.pvr in Resources */,
+				109E5DC51340CB2300EEF48A /* Flowers_iPad_1024x1024_00010.png.pvr in Resources */,
+				109E5DC61340CB2300EEF48A /* Flowers_iPad_1024x1024_00011.png.pvr in Resources */,
+				109E5DC71340CB2300EEF48A /* Flowers_iPad_1024x1024_00012.png.pvr in Resources */,
+				109E5DC81340CB2300EEF48A /* Flowers_iPad_1024x1024_00013.png.pvr in Resources */,
+				109E5DC91340CB2300EEF48A /* Flowers_iPad_1024x1024_00014.png.pvr in Resources */,
+				109E5DCA1340CB2300EEF48A /* Flowers_iPad_1024x1024_00015.png.pvr in Resources */,
+				109E5DCB1340CB2300EEF48A /* LayeredStars_iPad_1024x1024_00000.png.pvr in Resources */,
+				109E5DCC1340CB2300EEF48A /* LayeredStars_iPad_1024x1024_00001.png.pvr in Resources */,
+				109E5DCD1340CB2300EEF48A /* LayeredStars_iPad_1024x1024_00002.png.pvr in Resources */,
+				109E5DCE1340CB2300EEF48A /* LayeredStars_iPad_1024x1024_00003.png.pvr in Resources */,
+				109E5DCF1340CB2300EEF48A /* LayeredStars_iPad_1024x1024_00004.png.pvr in Resources */,
+				109E5DD01340CB2300EEF48A /* LayeredStars_iPad_1024x1024_00005.png.pvr in Resources */,
+				109E5DD11340CB2300EEF48A /* LayeredStars_iPad_1024x1024_00006.png.pvr in Resources */,
+				109E5DD21340CB2300EEF48A /* LayeredStars_iPad_1024x1024_00007.png.pvr in Resources */,
+				109E5DD31340CB2300EEF48A /* LayeredStars_iPad_1024x1024_00008.png.pvr in Resources */,
+				109E5DD41340CB2300EEF48A /* LayeredStars_iPad_1024x1024_00009.png.pvr in Resources */,
+				109E5DD51340CB2300EEF48A /* LayeredStars_iPad_1024x1024_00010.png.pvr in Resources */,
+				109E5DD61340CB2300EEF48A /* LayeredStars_iPad_1024x1024_00011.png.pvr in Resources */,
+				109E5DD71340CB2300EEF48A /* LayeredStars_iPad_1024x1024_00012.png.pvr in Resources */,
+				109E5DD81340CB2300EEF48A /* LayeredStars_iPad_1024x1024_00013.png.pvr in Resources */,
+				109E5DD91340CB2300EEF48A /* LayeredStars_iPad_1024x1024_00014.png.pvr in Resources */,
+				109E5DDA1340CB2300EEF48A /* LayeredStars_iPad_1024x1024_00015.png.pvr in Resources */,
+				109E5DDB1340CB2300EEF48A /* Spirals_iPad_1024x1024_00000.png.pvr in Resources */,
+				109E5DDC1340CB2300EEF48A /* Spirals_iPad_1024x1024_00001.png.pvr in Resources */,
+				109E5DDD1340CB2300EEF48A /* Spirals_iPad_1024x1024_00002.png.pvr in Resources */,
+				109E5DDE1340CB2300EEF48A /* Spirals_iPad_1024x1024_00003.png.pvr in Resources */,
+				109E5DDF1340CB2300EEF48A /* Spirals_iPad_1024x1024_00004.png.pvr in Resources */,
+				109E5DE01340CB2300EEF48A /* Spirals_iPad_1024x1024_00005.png.pvr in Resources */,
+				109E5DE11340CB2300EEF48A /* Spirals_iPad_1024x1024_00006.png.pvr in Resources */,
+				109E5DE21340CB2300EEF48A /* Spirals_iPad_1024x1024_00007.png.pvr in Resources */,
+				109E5DE31340CB2300EEF48A /* Spirals_iPad_1024x1024_00008.png.pvr in Resources */,
+				109E5DE41340CB2300EEF48A /* Spirals_iPad_1024x1024_00009.png.pvr in Resources */,
+				109E5DE51340CB2300EEF48A /* Spirals_iPad_1024x1024_00010.png.pvr in Resources */,
+				109E5DE61340CB2300EEF48A /* Spirals_iPad_1024x1024_00011.png.pvr in Resources */,
+				109E5DE71340CB2300EEF48A /* Spirals_iPad_1024x1024_00012.png.pvr in Resources */,
+				109E5DE81340CB2300EEF48A /* Spirals_iPad_1024x1024_00013.png.pvr in Resources */,
+				109E5DE91340CB2300EEF48A /* Spirals_iPad_1024x1024_00014.png.pvr in Resources */,
+				109E5DEA1340CB2300EEF48A /* Spirals_iPad_1024x1024_00015.png.pvr in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
