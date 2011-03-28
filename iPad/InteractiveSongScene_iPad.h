@@ -1,0 +1,21 @@
+//
+//  InteractiveSongScene_iPad.h
+//  Basho
+//
+//  Created by Pablo Ruiz on 28/03/11.
+//  Copyright 2011 __MyCompanyName__. All rights reserved.
+//
+
+#import <Foundation/Foundation.h>
+#import "cocos2d.h"
+
+#import "InteractiveSong_iPad.h"
+
+@class InteractiveSong_iPad;
+
+@interface InteractiveSongScene_iPad : CCLayer {
+
+	InteractiveSong_iPad * viewController;
+}
+
+@end

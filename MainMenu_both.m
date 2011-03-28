@@ -46,6 +46,11 @@
 
 -(IBAction) goToSong:(id)sender
 {
+	[UIView beginAnimations:nil context:nil];
+	[UIView setAnimationDelegate:self];
+	[UIView setAnimationDidStopSelector:@selector(loadSong)];
+	[self.view setAlpha:0];
+	[UIView commitAnimations];
 }
 
 -(IBAction) goToWheel:(id)sender

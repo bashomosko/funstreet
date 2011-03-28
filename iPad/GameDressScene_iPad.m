@@ -268,16 +268,16 @@
 		
 		NSString * fileName = nil;
 		switch (arc4random() %4) {
-			case 1:
+			case 0:
 				fileName = @"Arrows_iPad_1024x1024_";
 				break;
-			case 2:
+			case 1:
 				fileName = @"Flowers_iPad_1024x1024_";
 				break;
-			case 3:
+			case 2:
 				fileName = @"LayeredStars_iPad_1024x1024_";
 				break;
-			case 4:
+			case 3:
 				fileName = @"Spirals_iPad_1024x1024_";
 				break;
 		}

@@ -286,6 +286,10 @@
 		109E5DE81340CB2300EEF48A /* Spirals_iPad_1024x1024_00013.png.pvr in Resources */ = {isa = PBXBuildFile; fileRef = 109E5DA81340CB2300EEF48A /* Spirals_iPad_1024x1024_00013.png.pvr */; };
 		109E5DE91340CB2300EEF48A /* Spirals_iPad_1024x1024_00014.png.pvr in Resources */ = {isa = PBXBuildFile; fileRef = 109E5DA91340CB2300EEF48A /* Spirals_iPad_1024x1024_00014.png.pvr */; };
 		109E5DEA1340CB2300EEF48A /* Spirals_iPad_1024x1024_00015.png.pvr in Resources */ = {isa = PBXBuildFile; fileRef = 109E5DAA1340CB2300EEF48A /* Spirals_iPad_1024x1024_00015.png.pvr */; };
+		109E5FB513413F2900EEF48A /* InteractiveSong_iPad.m in Sources */ = {isa = PBXBuildFile; fileRef = 109E5FB313413F2900EEF48A /* InteractiveSong_iPad.m */; };
+		109E5FB613413F2900EEF48A /* InteractiveSong_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 109E5FB413413F2900EEF48A /* InteractiveSong_iPad.xib */; };
+		109E5FB913413F3900EEF48A /* InteractiveSongScene_iPad.m in Sources */ = {isa = PBXBuildFile; fileRef = 109E5FB813413F3900EEF48A /* InteractiveSongScene_iPad.m */; };
+		109E5FD61341413C00EEF48A /* song_background_iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 109E5FD51341413C00EEF48A /* song_background_iPad.png */; };
 		10A06586133BB3E40059187D /* GameVideo_iPad.m in Sources */ = {isa = PBXBuildFile; fileRef = 10A06584133BB3E40059187D /* GameVideo_iPad.m */; };
 		10A06587133BB3E40059187D /* GameVideo_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10A06585133BB3E40059187D /* GameVideo_iPad.xib */; };
 		10A065F0133BBDCB0059187D /* DOMINO 1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 10A065C8133BBDCB0059187D /* DOMINO 1.mp3 */; };
@@ -790,6 +794,12 @@
 		109E5DA81340CB2300EEF48A /* Spirals_iPad_1024x1024_00013.png.pvr */ = {isa = PBXFileReference; lastKnownFileType = file; path = Spirals_iPad_1024x1024_00013.png.pvr; sourceTree = "<group>"; };
 		109E5DA91340CB2300EEF48A /* Spirals_iPad_1024x1024_00014.png.pvr */ = {isa = PBXFileReference; lastKnownFileType = file; path = Spirals_iPad_1024x1024_00014.png.pvr; sourceTree = "<group>"; };
 		109E5DAA1340CB2300EEF48A /* Spirals_iPad_1024x1024_00015.png.pvr */ = {isa = PBXFileReference; lastKnownFileType = file; path = Spirals_iPad_1024x1024_00015.png.pvr; sourceTree = "<group>"; };
+		109E5FB213413F2900EEF48A /* InteractiveSong_iPad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InteractiveSong_iPad.h; sourceTree = "<group>"; };
+		109E5FB313413F2900EEF48A /* InteractiveSong_iPad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InteractiveSong_iPad.m; sourceTree = "<group>"; };
+		109E5FB413413F2900EEF48A /* InteractiveSong_iPad.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InteractiveSong_iPad.xib; sourceTree = "<group>"; };
+		109E5FB713413F3900EEF48A /* InteractiveSongScene_iPad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InteractiveSongScene_iPad.h; sourceTree = "<group>"; };
+		109E5FB813413F3900EEF48A /* InteractiveSongScene_iPad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InteractiveSongScene_iPad.m; sourceTree = "<group>"; };
+		109E5FD51341413C00EEF48A /* song_background_iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = song_background_iPad.png; sourceTree = "<group>"; };
 		10A06583133BB3E40059187D /* GameVideo_iPad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameVideo_iPad.h; sourceTree = "<group>"; };
 		10A06584133BB3E40059187D /* GameVideo_iPad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameVideo_iPad.m; sourceTree = "<group>"; };
 		10A06585133BB3E40059187D /* GameVideo_iPad.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GameVideo_iPad.xib; sourceTree = "<group>"; };
@@ -1202,6 +1212,26 @@
 				102FDDBF131C891800CC0AEB /* wheel_background_iPad.png */,
 			);
 			name = wheel;
+			sourceTree = "<group>";
+		};
+		109E5FB013413EA100EEF48A /* InteractiveSong */ = {
+			isa = PBXGroup;
+			children = (
+				109E5FB213413F2900EEF48A /* InteractiveSong_iPad.h */,
+				109E5FB313413F2900EEF48A /* InteractiveSong_iPad.m */,
+				109E5FB413413F2900EEF48A /* InteractiveSong_iPad.xib */,
+				109E5FB713413F3900EEF48A /* InteractiveSongScene_iPad.h */,
+				109E5FB813413F3900EEF48A /* InteractiveSongScene_iPad.m */,
+			);
+			name = InteractiveSong;
+			sourceTree = "<group>";
+		};
+		109E5FC6134140BA00EEF48A /* interactiveSong */ = {
+			isa = PBXGroup;
+			children = (
+				109E5FD51341413C00EEF48A /* song_background_iPad.png */,
+			);
+			name = interactiveSong;
 			sourceTree = "<group>";
 		};
 		10A06581133BB3AF0059187D /* video */ = {
@@ -1917,6 +1947,7 @@
 		10B56A581306EE4600AA7DCB /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				109E5FC6134140BA00EEF48A /* interactiveSong */,
 				10A08CF013215426003F24AD /* dress */,
 				102FDE46131C894200CC0AEB /* wheel */,
 				10AA0B741307167900D11E6B /* mm_dress_btn_dis_iPad.png */,
@@ -2016,6 +2047,7 @@
 		2860E32A111B888700E27156 /* iPad */ = {
 			isa = PBXGroup;
 			children = (
+				109E5FB013413EA100EEF48A /* InteractiveSong */,
 				10A06581133BB3AF0059187D /* video */,
 				10A08C9013215065003F24AD /* Game Dress */,
 				10AA0BD0130719AC00D11E6B /* MainMenu */,
@@ -2507,6 +2539,8 @@
 				109E5DE81340CB2300EEF48A /* Spirals_iPad_1024x1024_00013.png.pvr in Resources */,
 				109E5DE91340CB2300EEF48A /* Spirals_iPad_1024x1024_00014.png.pvr in Resources */,
 				109E5DEA1340CB2300EEF48A /* Spirals_iPad_1024x1024_00015.png.pvr in Resources */,
+				109E5FB613413F2900EEF48A /* InteractiveSong_iPad.xib in Resources */,
+				109E5FD61341413C00EEF48A /* song_background_iPad.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2631,6 +2665,8 @@
 				10A08DC613215CC5003F24AD /* DDElement.m in Sources */,
 				10A6BC88132595BA00391C82 /* GameVideo.m in Sources */,
 				10A06586133BB3E40059187D /* GameVideo_iPad.m in Sources */,
+				109E5FB513413F2900EEF48A /* InteractiveSong_iPad.m in Sources */,
+				109E5FB913413F3900EEF48A /* InteractiveSongScene_iPad.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
