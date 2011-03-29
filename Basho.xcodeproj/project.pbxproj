@@ -94,6 +94,13 @@
 		102FDE43131C893800CC0AEB /* wheel_sound_on_iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 102FDE00131C893800CC0AEB /* wheel_sound_on_iPad.png */; };
 		102FDE44131C893800CC0AEB /* wheel_sound_on-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 102FDE01131C893800CC0AEB /* wheel_sound_on-hd.png */; };
 		102FDE45131C893800CC0AEB /* wheel_sound_on.png in Resources */ = {isa = PBXBuildFile; fileRef = 102FDE02131C893800CC0AEB /* wheel_sound_on.png */; };
+		10947024134254430058A30F /* song_backpack_iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 10947021134254430058A30F /* song_backpack_iPad.png */; };
+		10947025134254430058A30F /* song_boots_iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 10947022134254430058A30F /* song_boots_iPad.png */; };
+		10947026134254430058A30F /* song_hat_iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 10947023134254430058A30F /* song_hat_iPad.png */; };
+		1094703113425B760058A30F /* song_jacket_placed_iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 1094703013425B760058A30F /* song_jacket_placed_iPad.png */; };
+		1094703E134273C30058A30F /* song_basho_iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 1094703D134273C30058A30F /* song_basho_iPad.png */; };
+		109470471342762D0058A30F /* song_backpack_placed_iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 109470451342762D0058A30F /* song_backpack_placed_iPad.png */; };
+		109470481342762D0058A30F /* song_boots_placed_iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 109470461342762D0058A30F /* song_boots_placed_iPad.png */; };
 		109D5FBD133A35F30061B1C3 /* wheel_snd_phone_where.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 109D5FB5133A35F30061B1C3 /* wheel_snd_phone_where.mp3 */; };
 		109D5FBE133A35F30061B1C3 /* wheel_snd_hat_where.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 109D5FB6133A35F30061B1C3 /* wheel_snd_hat_where.mp3 */; };
 		109D5FBF133A35F30061B1C3 /* wheel_snd_necklace_where.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 109D5FB7133A35F30061B1C3 /* wheel_snd_necklace_where.mp3 */; };
@@ -290,6 +297,9 @@
 		109E5FB613413F2900EEF48A /* InteractiveSong_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 109E5FB413413F2900EEF48A /* InteractiveSong_iPad.xib */; };
 		109E5FB913413F3900EEF48A /* InteractiveSongScene_iPad.m in Sources */ = {isa = PBXBuildFile; fileRef = 109E5FB813413F3900EEF48A /* InteractiveSongScene_iPad.m */; };
 		109E5FD61341413C00EEF48A /* song_background_iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 109E5FD51341413C00EEF48A /* song_background_iPad.png */; };
+		109E626B134208F200EEF48A /* InteractiveElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 109E626A134208F200EEF48A /* InteractiveElement.m */; };
+		109E627913420B8800EEF48A /* songItems_iPad.plist in Resources */ = {isa = PBXBuildFile; fileRef = 109E627813420B8800EEF48A /* songItems_iPad.plist */; };
+		109E627D13420C2200EEF48A /* song_jacket_iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 109E627C13420C2200EEF48A /* song_jacket_iPad.png */; };
 		10A06586133BB3E40059187D /* GameVideo_iPad.m in Sources */ = {isa = PBXBuildFile; fileRef = 10A06584133BB3E40059187D /* GameVideo_iPad.m */; };
 		10A06587133BB3E40059187D /* GameVideo_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10A06585133BB3E40059187D /* GameVideo_iPad.xib */; };
 		10A065F0133BBDCB0059187D /* DOMINO 1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 10A065C8133BBDCB0059187D /* DOMINO 1.mp3 */; };
@@ -602,6 +612,13 @@
 		102FDE00131C893800CC0AEB /* wheel_sound_on_iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = wheel_sound_on_iPad.png; path = ../iPhone/wheel_sound_on_iPad.png; sourceTree = "<group>"; };
 		102FDE01131C893800CC0AEB /* wheel_sound_on-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "wheel_sound_on-hd.png"; sourceTree = "<group>"; };
 		102FDE02131C893800CC0AEB /* wheel_sound_on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wheel_sound_on.png; sourceTree = "<group>"; };
+		10947021134254430058A30F /* song_backpack_iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = song_backpack_iPad.png; sourceTree = "<group>"; };
+		10947022134254430058A30F /* song_boots_iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = song_boots_iPad.png; sourceTree = "<group>"; };
+		10947023134254430058A30F /* song_hat_iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = song_hat_iPad.png; sourceTree = "<group>"; };
+		1094703013425B760058A30F /* song_jacket_placed_iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = song_jacket_placed_iPad.png; sourceTree = "<group>"; };
+		1094703D134273C30058A30F /* song_basho_iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = song_basho_iPad.png; sourceTree = "<group>"; };
+		109470451342762D0058A30F /* song_backpack_placed_iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = song_backpack_placed_iPad.png; sourceTree = "<group>"; };
+		109470461342762D0058A30F /* song_boots_placed_iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = song_boots_placed_iPad.png; sourceTree = "<group>"; };
 		109D5FB5133A35F30061B1C3 /* wheel_snd_phone_where.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = wheel_snd_phone_where.mp3; sourceTree = "<group>"; };
 		109D5FB6133A35F30061B1C3 /* wheel_snd_hat_where.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = wheel_snd_hat_where.mp3; sourceTree = "<group>"; };
 		109D5FB7133A35F30061B1C3 /* wheel_snd_necklace_where.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = wheel_snd_necklace_where.mp3; sourceTree = "<group>"; };
@@ -800,6 +817,10 @@
 		109E5FB713413F3900EEF48A /* InteractiveSongScene_iPad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InteractiveSongScene_iPad.h; sourceTree = "<group>"; };
 		109E5FB813413F3900EEF48A /* InteractiveSongScene_iPad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InteractiveSongScene_iPad.m; sourceTree = "<group>"; };
 		109E5FD51341413C00EEF48A /* song_background_iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = song_background_iPad.png; sourceTree = "<group>"; };
+		109E6269134208F200EEF48A /* InteractiveElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InteractiveElement.h; sourceTree = "<group>"; };
+		109E626A134208F200EEF48A /* InteractiveElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InteractiveElement.m; sourceTree = "<group>"; };
+		109E627813420B8800EEF48A /* songItems_iPad.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = songItems_iPad.plist; sourceTree = "<group>"; };
+		109E627C13420C2200EEF48A /* song_jacket_iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = song_jacket_iPad.png; sourceTree = "<group>"; };
 		10A06583133BB3E40059187D /* GameVideo_iPad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameVideo_iPad.h; sourceTree = "<group>"; };
 		10A06584133BB3E40059187D /* GameVideo_iPad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameVideo_iPad.m; sourceTree = "<group>"; };
 		10A06585133BB3E40059187D /* GameVideo_iPad.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GameVideo_iPad.xib; sourceTree = "<group>"; };
@@ -1222,6 +1243,8 @@
 				109E5FB413413F2900EEF48A /* InteractiveSong_iPad.xib */,
 				109E5FB713413F3900EEF48A /* InteractiveSongScene_iPad.h */,
 				109E5FB813413F3900EEF48A /* InteractiveSongScene_iPad.m */,
+				109E6269134208F200EEF48A /* InteractiveElement.h */,
+				109E626A134208F200EEF48A /* InteractiveElement.m */,
 			);
 			name = InteractiveSong;
 			sourceTree = "<group>";
@@ -1229,7 +1252,16 @@
 		109E5FC6134140BA00EEF48A /* interactiveSong */ = {
 			isa = PBXGroup;
 			children = (
+				109470451342762D0058A30F /* song_backpack_placed_iPad.png */,
+				109470461342762D0058A30F /* song_boots_placed_iPad.png */,
+				1094703D134273C30058A30F /* song_basho_iPad.png */,
+				1094703013425B760058A30F /* song_jacket_placed_iPad.png */,
+				10947021134254430058A30F /* song_backpack_iPad.png */,
+				10947022134254430058A30F /* song_boots_iPad.png */,
+				10947023134254430058A30F /* song_hat_iPad.png */,
+				109E627C13420C2200EEF48A /* song_jacket_iPad.png */,
 				109E5FD51341413C00EEF48A /* song_background_iPad.png */,
+				109E627813420B8800EEF48A /* songItems_iPad.plist */,
 			);
 			name = interactiveSong;
 			sourceTree = "<group>";
@@ -2541,6 +2573,15 @@
 				109E5DEA1340CB2300EEF48A /* Spirals_iPad_1024x1024_00015.png.pvr in Resources */,
 				109E5FB613413F2900EEF48A /* InteractiveSong_iPad.xib in Resources */,
 				109E5FD61341413C00EEF48A /* song_background_iPad.png in Resources */,
+				109E627913420B8800EEF48A /* songItems_iPad.plist in Resources */,
+				109E627D13420C2200EEF48A /* song_jacket_iPad.png in Resources */,
+				10947024134254430058A30F /* song_backpack_iPad.png in Resources */,
+				10947025134254430058A30F /* song_boots_iPad.png in Resources */,
+				10947026134254430058A30F /* song_hat_iPad.png in Resources */,
+				1094703113425B760058A30F /* song_jacket_placed_iPad.png in Resources */,
+				1094703E134273C30058A30F /* song_basho_iPad.png in Resources */,
+				109470471342762D0058A30F /* song_backpack_placed_iPad.png in Resources */,
+				109470481342762D0058A30F /* song_boots_placed_iPad.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2667,6 +2708,7 @@
 				10A06586133BB3E40059187D /* GameVideo_iPad.m in Sources */,
 				109E5FB513413F2900EEF48A /* InteractiveSong_iPad.m in Sources */,
 				109E5FB913413F3900EEF48A /* InteractiveSongScene_iPad.m in Sources */,
+				109E626B134208F200EEF48A /* InteractiveElement.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

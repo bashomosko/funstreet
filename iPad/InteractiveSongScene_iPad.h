@@ -16,6 +16,9 @@
 @interface InteractiveSongScene_iPad : CCLayer {
 
 	InteractiveSong_iPad * viewController;
+	NSMutableArray * iElements;
+	
+	int currentElem;
 }
 
 @end

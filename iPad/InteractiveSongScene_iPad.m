@@ -7,7 +7,8 @@
 //
 
 #import "InteractiveSongScene_iPad.h"
-
+#import "InteractiveElement.h"
+#import "SimpleAudioEngine.h"
 
 @implementation InteractiveSongScene_iPad
 
@@ -31,9 +32,15 @@
 		//self.isAccelerometerEnabled = YES;
 		viewController = vc;
 		
+		[[SimpleAudioEngine sharedEngine] playBackgroundMusic:@"botas-2011.mp3" loop:NO];
+		
 		CCSprite * back = [CCSprite spriteWithFile:@"song_background_iPad.png"];
 		[back setPosition:ccp(512,384)];
 		[self addChild:back];
+		
+		CCSprite * basho = [CCSprite spriteWithFile:@"song_basho_iPad.png"];
+		[basho setPosition:ccp(512,384)];
+		[self addChild:basho];
 		
 		CCMenuItemImage * backBtn = [CCMenuItemImage itemFromNormalImage:@"wheel_home_iPad.png" selectedImage:@"wheel_home_iPad.png" target:self selector:@selector(goBack)];
 		
@@ -42,14 +49,52 @@
 		[backBtn setPosition:ccp(64,696)];
 		[menu setPosition:ccp(0,0)];
 		
+		iElements = [[NSMutableArray alloc] init];
+		
+		NSString *filePath = [[NSBundle mainBundle] pathForResource:@"songItems_iPad" ofType:@"plist"];
+		
+		NSMutableArray * elementsFile = [NSMutableArray arrayWithContentsOfFile:filePath];
+		
+		for(int i = 0; i<4;i++)
+		{
+			NSMutableDictionary * elem = [elementsFile objectAtIndex:i];
+			InteractiveElement * iElement = [[InteractiveElement alloc] initWithTheGame:self elementDict:elem];
+			[iElements addObject:iElement];
+			[iElement release];
+		}
+		
+		currentElem = 0;
+		
+		InteractiveElement * iel = [iElements objectAtIndex:currentElem];
+		[iel runAction:[CCSequence actions:[CCDelayTime actionWithDuration:12],[CCCallFunc actionWithTarget:iel selector:@selector(callMeIn)],nil]];
+		
 	}
 	return self;
 	
 }
 
+-(void)callNextElement
+{
+	if(currentElem < [iElements count]-1)
+	{
+		currentElem ++;
+	
+		InteractiveElement * iel = [iElements objectAtIndex:currentElem];
+		[iel callMeIn];
+	}
+}
+
 -(void)goBack
 {
+	
+	[[SimpleAudioEngine sharedEngine] stopBackgroundMusic];
 	[viewController goToMenu];
+}
+
+-(void)dealloc
+{
+	[iElements release];
+	[super dealloc];
 }
 
 @end
