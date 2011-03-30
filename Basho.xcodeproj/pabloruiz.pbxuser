@@ -348,7 +348,7 @@
 		fRef = 109E626A134208F200EEF48A /* InteractiveElement.m */;
 		name = "InteractiveElement.m: 250";
 		rLen = 0;
-		rLoc = 12789;
+		rLoc = 12791;
 		rType = 0;
 		vrLen = 1240;
 		vrLoc = 11914;
@@ -358,7 +358,7 @@
 		fRef = 109E626A134208F200EEF48A /* InteractiveElement.m */;
 		name = "InteractiveElement.m: 250";
 		rLen = 0;
-		rLoc = 12789;
+		rLoc = 12791;
 		rType = 0;
 		vrLen = 1158;
 		vrLoc = 11996;
@@ -378,7 +378,7 @@
 		fRef = 109E626A134208F200EEF48A /* InteractiveElement.m */;
 		name = "InteractiveElement.m: 191";
 		rLen = 0;
-		rLoc = 9603;
+		rLoc = 9605;
 		rType = 0;
 		vrLen = 2539;
 		vrLoc = 7497;
@@ -388,10 +388,20 @@
 		fRef = 109E626A134208F200EEF48A /* InteractiveElement.m */;
 		name = "InteractiveElement.m: 191";
 		rLen = 0;
-		rLoc = 9601;
+		rLoc = 9603;
 		rType = 0;
 		vrLen = 2455;
 		vrLoc = 8150;
+	};
+	109C4A291343EECC0002C307 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 109E626A134208F200EEF48A /* InteractiveElement.m */;
+		name = "InteractiveElement.m: 177";
+		rLen = 5;
+		rLoc = 8605;
+		rType = 0;
+		vrLen = 2313;
+		vrLoc = 7494;
 	};
 	109D5E411339957E0061B1C3 /* GameDressScene_iPad.m:434 */ = {
 		isa = PBXFileBreakpoint;
@@ -556,9 +566,9 @@
 	};
 	109E626A134208F200EEF48A /* InteractiveElement.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1461, 4433}}";
-			sepNavSelRange = "{9601, 0}";
-			sepNavVisRange = "{8150, 2455}";
+			sepNavIntBoundsRect = "{{0, 0}, {1461, 4355}}";
+			sepNavSelRange = "{8605, 5}";
+			sepNavVisRange = "{7494, 2313}";
 		};
 	};
 	109E628213420DBA00EEF48A /* PBXTextBookmark */ = {
@@ -1456,6 +1466,7 @@
 			109C4A161343EC390002C307 /* PBXTextBookmark */ = 109C4A161343EC390002C307 /* PBXTextBookmark */;
 			109C4A241343ED4C0002C307 /* PBXTextBookmark */ = 109C4A241343ED4C0002C307 /* PBXTextBookmark */;
 			109C4A271343EDEB0002C307 /* PBXTextBookmark */ = 109C4A271343EDEB0002C307 /* PBXTextBookmark */;
+			109C4A291343EECC0002C307 /* PBXTextBookmark */ = 109C4A291343EECC0002C307 /* PBXTextBookmark */;
 			109D5FE2133A37E60061B1C3 = 109D5FE2133A37E60061B1C3 /* PBXTextBookmark */;
 			109E5FC8134140C100EEF48A = 109E5FC8134140C100EEF48A /* PBXTextBookmark */;
 			109E5FC9134140C100EEF48A = 109E5FC9134140C100EEF48A /* PBXTextBookmark */;

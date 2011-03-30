@@ -131,7 +131,7 @@
 							 [CCCallFunc actionWithTarget:self selector:@selector(permissionToTouchNO)],
 							 [CCJumpTo actionWithDuration:1 position:ccp(385,230) height:200 jumps:1],
 							 [CCCallFunc actionWithTarget:self selector:@selector(permissionToTouchYES)],
-							 [CCDelayTime actionWithDuration:2],
+							 [CCDelayTime actionWithDuration:2.5],
 							 [CCCallFunc actionWithTarget:self selector:@selector(permissionToTouchNO)],
 							 [CCDelayTime actionWithDuration:3],
 							 [CCJumpTo actionWithDuration:1 position:ccp(179,385) height:250 jumps:1],
