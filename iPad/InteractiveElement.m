@@ -161,7 +161,7 @@
 	if([elemName isEqualToString:@"hat"])
 	{
 		[mySprite runAction:[CCSequence actions:
-							 [CCDelayTime actionWithDuration:6.5],
+							 [CCDelayTime actionWithDuration:5.5],
 							 [CCCallFunc actionWithTarget:self selector:@selector(permissionToTouchYES)],
 							 [CCDelayTime actionWithDuration:0.5],
 							 [CCCallFunc actionWithTarget:self selector:@selector(permissionToTouchNO)],
@@ -188,7 +188,7 @@
 							 [CCCallFunc actionWithTarget:self selector:@selector(permissionToTouchYES)],
 							 [CCDelayTime actionWithDuration:1],
 							 [CCCallFunc actionWithTarget:self selector:@selector(permissionToTouchNO)],
-							 [CCDelayTime actionWithDuration:8],
+							 [CCDelayTime actionWithDuration:5.5],
 							 [CCCallFunc actionWithTarget:theGame selector:@selector(callNextElement)],
 							 nil
 							 ]];
