@@ -10,6 +10,8 @@
 #import "InteractiveElement.h"
 #import "SimpleAudioEngine.h"
 
+#define kSCORE 1
+
 @implementation InteractiveSongScene_iPad
 
 +(id) sceneWithSongVC:(InteractiveSong_iPad *)vc
@@ -66,11 +68,32 @@
 		currentElem = 0;
 		
 		InteractiveElement * iel = [iElements objectAtIndex:currentElem];
-		[iel runAction:[CCSequence actions:[CCDelayTime actionWithDuration:12],[CCCallFunc actionWithTarget:iel selector:@selector(callMeIn)],nil]];
+		[iel runAction:[CCSequence actions:[CCDelayTime actionWithDuration:0],[CCCallFunc actionWithTarget:iel selector:@selector(callMeIn)],nil]];
 		
+		[self loadScore];
 	}
 	return self;
 	
+}
+
+-(void)loadScore
+{
+	CCSprite * back = [CCSprite spriteWithFile:@"wheel_pointsField_iPad.png"];
+	[back setPosition:ccp(959,703)];
+	[self addChild:back];
+	
+	CCLabelTTF * scoreLbl = [CCLabelTTF labelWithString:@"0" fontName:@"Verdana" fontSize:60];
+	[scoreLbl setColor:ccBLACK];
+	[self addChild:scoreLbl z:1 tag:kSCORE];
+	[scoreLbl setPosition:ccp(959,703)];
+	//[scoreLbl setOpacity:0];
+}
+
+-(void)addPoints:(int)p
+{
+	points += p;
+	CCLabelTTF * scoreLbl = [self getChildByTag:kSCORE];
+	[scoreLbl setString:[NSString stringWithFormat:@"%d",points]];
 }
 
 -(void)callNextElement

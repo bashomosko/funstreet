@@ -29,6 +29,9 @@
 	NSString * soundWrongPath;
 	
 	NSString * elemName;
+	
+	BOOL permissionToTouch;
+	int touchNumber;
 }
 @property (nonatomic,readwrite) touchState state;
 @property (nonatomic,retain) CCSprite * mySprite;

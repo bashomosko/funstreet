@@ -19,6 +19,8 @@
 	NSMutableArray * iElements;
 	
 	int currentElem;
+	
+	int points;
 }
 
 @end
