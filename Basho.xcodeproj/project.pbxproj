@@ -347,6 +347,15 @@
 		10A08C98132150A7003F24AD /* GameDressScene_iPad.m in Sources */ = {isa = PBXBuildFile; fileRef = 10A08C97132150A7003F24AD /* GameDressScene_iPad.m */; };
 		10A08DC213215B3F003F24AD /* DressData_iPad.plist in Resources */ = {isa = PBXBuildFile; fileRef = 10A08DC113215B3F003F24AD /* DressData_iPad.plist */; };
 		10A08DC613215CC5003F24AD /* DDElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 10A08DC513215CC5003F24AD /* DDElement.m */; };
+		10A2E5911347614800E723D5 /* Puntos_iPad-H.264.mov in Resources */ = {isa = PBXBuildFile; fileRef = 10A2E5881347614800E723D5 /* Puntos_iPad-H.264.mov */; };
+		10A2E5991347614800E723D5 /* PuntosEndFrame_iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 10A2E5901347614800E723D5 /* PuntosEndFrame_iPad.png */; };
+		10A2E5B6134766DE00E723D5 /* PuntosDomino_iPad_00001.png.pvr in Resources */ = {isa = PBXBuildFile; fileRef = 10A2E5B0134766DE00E723D5 /* PuntosDomino_iPad_00001.png.pvr */; };
+		10A2E5B7134766DE00E723D5 /* PuntosDomino_iPad_00002.png.pvr in Resources */ = {isa = PBXBuildFile; fileRef = 10A2E5B1134766DE00E723D5 /* PuntosDomino_iPad_00002.png.pvr */; };
+		10A2E5B8134766DE00E723D5 /* PuntosDomino_iPad_00003.png.pvr in Resources */ = {isa = PBXBuildFile; fileRef = 10A2E5B2134766DE00E723D5 /* PuntosDomino_iPad_00003.png.pvr */; };
+		10A2E5B9134766DE00E723D5 /* PuntosDomino_iPad_00004.png.pvr in Resources */ = {isa = PBXBuildFile; fileRef = 10A2E5B3134766DE00E723D5 /* PuntosDomino_iPad_00004.png.pvr */; };
+		10A2E5BA134766DE00E723D5 /* PuntosDomino_iPad_00005.png.pvr in Resources */ = {isa = PBXBuildFile; fileRef = 10A2E5B4134766DE00E723D5 /* PuntosDomino_iPad_00005.png.pvr */; };
+		10A2E5BB134766DE00E723D5 /* PuntosDomino_iPad_00006.png.pvr in Resources */ = {isa = PBXBuildFile; fileRef = 10A2E5B5134766DE00E723D5 /* PuntosDomino_iPad_00006.png.pvr */; };
+		10A2E5BD1347672800E723D5 /* PuntosDomino_iPad_00000.png.pvr in Resources */ = {isa = PBXBuildFile; fileRef = 10A2E5BC1347672800E723D5 /* PuntosDomino_iPad_00000.png.pvr */; };
 		10A6BBFA13251A8700391C82 /* dress_iPad.plist in Resources */ = {isa = PBXBuildFile; fileRef = 10A6BBF813251A8700391C82 /* dress_iPad.plist */; };
 		10A6BBFB13251A8700391C82 /* dress_iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 10A6BBF913251A8700391C82 /* dress_iPad.png */; };
 		10A6BC0113251CB500391C82 /* dress_background_iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 10A6BC0013251CB500391C82 /* dress_background_iPad.png */; };
@@ -873,6 +882,15 @@
 		10A08DC413215CC5003F24AD /* DDElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDElement.h; sourceTree = "<group>"; };
 		10A08DC513215CC5003F24AD /* DDElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDElement.m; sourceTree = "<group>"; };
 		10A08DC913215DA3003F24AD /* Config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Config.h; sourceTree = "<group>"; };
+		10A2E5881347614800E723D5 /* Puntos_iPad-H.264.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = "Puntos_iPad-H.264.mov"; sourceTree = "<group>"; };
+		10A2E5901347614800E723D5 /* PuntosEndFrame_iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PuntosEndFrame_iPad.png; sourceTree = "<group>"; };
+		10A2E5B0134766DE00E723D5 /* PuntosDomino_iPad_00001.png.pvr */ = {isa = PBXFileReference; lastKnownFileType = file; path = PuntosDomino_iPad_00001.png.pvr; sourceTree = "<group>"; };
+		10A2E5B1134766DE00E723D5 /* PuntosDomino_iPad_00002.png.pvr */ = {isa = PBXFileReference; lastKnownFileType = file; path = PuntosDomino_iPad_00002.png.pvr; sourceTree = "<group>"; };
+		10A2E5B2134766DE00E723D5 /* PuntosDomino_iPad_00003.png.pvr */ = {isa = PBXFileReference; lastKnownFileType = file; path = PuntosDomino_iPad_00003.png.pvr; sourceTree = "<group>"; };
+		10A2E5B3134766DE00E723D5 /* PuntosDomino_iPad_00004.png.pvr */ = {isa = PBXFileReference; lastKnownFileType = file; path = PuntosDomino_iPad_00004.png.pvr; sourceTree = "<group>"; };
+		10A2E5B4134766DE00E723D5 /* PuntosDomino_iPad_00005.png.pvr */ = {isa = PBXFileReference; lastKnownFileType = file; path = PuntosDomino_iPad_00005.png.pvr; sourceTree = "<group>"; };
+		10A2E5B5134766DE00E723D5 /* PuntosDomino_iPad_00006.png.pvr */ = {isa = PBXFileReference; lastKnownFileType = file; path = PuntosDomino_iPad_00006.png.pvr; sourceTree = "<group>"; };
+		10A2E5BC1347672800E723D5 /* PuntosDomino_iPad_00000.png.pvr */ = {isa = PBXFileReference; lastKnownFileType = file; path = PuntosDomino_iPad_00000.png.pvr; sourceTree = "<group>"; };
 		10A6BBF813251A8700391C82 /* dress_iPad.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = dress_iPad.plist; sourceTree = "<group>"; };
 		10A6BBF913251A8700391C82 /* dress_iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dress_iPad.png; sourceTree = "<group>"; };
 		10A6BC0013251CB500391C82 /* dress_background_iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dress_background_iPad.png; sourceTree = "<group>"; };
@@ -1429,6 +1447,22 @@
 			name = dress;
 			sourceTree = "<group>";
 		};
+		10A2E5861347612A00E723D5 /* video */ = {
+			isa = PBXGroup;
+			children = (
+				10A2E5BC1347672800E723D5 /* PuntosDomino_iPad_00000.png.pvr */,
+				10A2E5B0134766DE00E723D5 /* PuntosDomino_iPad_00001.png.pvr */,
+				10A2E5B1134766DE00E723D5 /* PuntosDomino_iPad_00002.png.pvr */,
+				10A2E5B2134766DE00E723D5 /* PuntosDomino_iPad_00003.png.pvr */,
+				10A2E5B3134766DE00E723D5 /* PuntosDomino_iPad_00004.png.pvr */,
+				10A2E5B4134766DE00E723D5 /* PuntosDomino_iPad_00005.png.pvr */,
+				10A2E5B5134766DE00E723D5 /* PuntosDomino_iPad_00006.png.pvr */,
+				10A2E5881347614800E723D5 /* Puntos_iPad-H.264.mov */,
+				10A2E5901347614800E723D5 /* PuntosEndFrame_iPad.png */,
+			);
+			name = video;
+			sourceTree = "<group>";
+		};
 		10A6BC83132595A600391C82 /* video */ = {
 			isa = PBXGroup;
 			children = (
@@ -1979,6 +2013,7 @@
 		10B56A581306EE4600AA7DCB /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				10A2E5861347612A00E723D5 /* video */,
 				109E5FC6134140BA00EEF48A /* interactiveSong */,
 				10A08CF013215426003F24AD /* dress */,
 				102FDE46131C894200CC0AEB /* wheel */,
@@ -2582,6 +2617,15 @@
 				1094703E134273C30058A30F /* song_basho_iPad.png in Resources */,
 				109470471342762D0058A30F /* song_backpack_placed_iPad.png in Resources */,
 				109470481342762D0058A30F /* song_boots_placed_iPad.png in Resources */,
+				10A2E5911347614800E723D5 /* Puntos_iPad-H.264.mov in Resources */,
+				10A2E5991347614800E723D5 /* PuntosEndFrame_iPad.png in Resources */,
+				10A2E5B6134766DE00E723D5 /* PuntosDomino_iPad_00001.png.pvr in Resources */,
+				10A2E5B7134766DE00E723D5 /* PuntosDomino_iPad_00002.png.pvr in Resources */,
+				10A2E5B8134766DE00E723D5 /* PuntosDomino_iPad_00003.png.pvr in Resources */,
+				10A2E5B9134766DE00E723D5 /* PuntosDomino_iPad_00004.png.pvr in Resources */,
+				10A2E5BA134766DE00E723D5 /* PuntosDomino_iPad_00005.png.pvr in Resources */,
+				10A2E5BB134766DE00E723D5 /* PuntosDomino_iPad_00006.png.pvr in Resources */,
+				10A2E5BD1347672800E723D5 /* PuntosDomino_iPad_00000.png.pvr in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

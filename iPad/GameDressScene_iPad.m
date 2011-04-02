@@ -104,7 +104,7 @@
 		NSBundle *bundle = [NSBundle mainBundle];
 		if (bundle) 
 		{
-			NSString *moviePath = [bundle pathForResource:@"ARG" ofType:@"mp4"];
+			NSString *moviePath = [bundle pathForResource:@"Puntos_iPad-H.264" ofType:@"mov"];
 			if (moviePath)
 			{
 				url = [NSURL fileURLWithPath:moviePath];
@@ -132,6 +132,10 @@
 
 -(void) finishVideoDidFinishPlaying: (NSNotification*)aNotification
 {
+	CCSprite * back = [CCSprite spriteWithFile:@"PuntosEndFrame_iPad.png"];
+	[back setPosition:ccp(512,384)];
+	[self addChild:back z:20];
+	
 	MPMoviePlayerController * finishVideo = [aNotification object];
 	[[NSNotificationCenter defaultCenter] removeObserver:self name:MPMoviePlayerPlaybackDidFinishNotification object:finishVideo];
 	[finishVideo stop];
@@ -143,6 +147,33 @@
 
 -(void)showDinoPoints
 {
+	//RESET DINO
+	CCSprite * gloopbackground = [CCSprite spriteWithFile:[NSString stringWithFormat:@"PuntosDomino_iPad_00000.png.pvr"]];
+	[gloopbackground setPosition:ccp(512,384)];
+	[self addChild:gloopbackground z:21];
+	//ANIMATION
+	NSMutableArray * gloopFrames = [[[NSMutableArray  alloc]init]autorelease];
+	for(int i = 0; i <= 6; i++) {
+		
+		CCSprite * sp = [CCSprite spriteWithFile:[NSString stringWithFormat:@"PuntosDomino_iPad_%05d.png.pvr",i]];
+		CCSpriteFrame *frame = [CCSpriteFrame frameWithTexture:sp.texture rect:sp.textureRect];
+		[gloopFrames addObject:frame];
+	}
+	
+	CCAnimation * gloopAnimation = [CCAnimation animationWithFrames:gloopFrames delay:0.05f];
+	[gloopbackground runAction:[CCSequence actions:[CCAnimate actionWithAnimation:gloopAnimation restoreOriginalFrame:NO],[CCCallFunc actionWithTarget:self selector:@selector(addDinoPoints)],nil]];
+	
+	
+	
+}
+
+-(void)addDinoPoints
+{
+	CCLabelTTF * scoreLbl = [CCLabelTTF labelWithString:[NSString stringWithFormat:@"%d",points] fontName:@"Verdana" fontSize:200];
+	[scoreLbl setColor:ccBLACK];
+	[self addChild:scoreLbl z:22];
+	[scoreLbl setPosition:ccp(450,530)];
+	
 	[[SimpleAudioEngine sharedEngine] playEffect:[NSString stringWithFormat:@"DOMINO %d.mp3",points]];
 	[self addFinishMenu];
 }
@@ -254,7 +285,7 @@
 -(void)selectItemForBasho
 {
 	placingElement = NO;
-	if(bashoSelectedSound >=8)
+	if(bashoSelectedSound >=1)
 	{
 		CCSpriteBatchNode * sbn = [self getChildByTag:kSPRITEBATCH_ELEMS];
 		for(DDElement * el in ddElements)
