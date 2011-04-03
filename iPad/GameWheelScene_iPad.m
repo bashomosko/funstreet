@@ -49,7 +49,7 @@
 		// Apple recommends to re-assign "self" with the "super" return value
 		if( (self=[super init] )) {
 			
-			score = 0;
+			points = 0;
 			
 			[self loadDeviceType];
 			
@@ -93,6 +93,8 @@
     }
     return self;
 }
+
+
 
 -(void)createPalabra
 {

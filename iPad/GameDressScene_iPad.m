@@ -285,7 +285,7 @@
 -(void)selectItemForBasho
 {
 	placingElement = NO;
-	if(bashoSelectedSound >=1)
+	if(bashoSelectedSound >=8)
 	{
 		CCSpriteBatchNode * sbn = [self getChildByTag:kSPRITEBATCH_ELEMS];
 		for(DDElement * el in ddElements)

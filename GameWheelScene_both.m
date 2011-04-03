@@ -30,6 +30,130 @@
 	//*************************************************//
 }
 
+-(void)loadVideo
+{
+	NSURL * url;
+	NSBundle *bundle = [NSBundle mainBundle];
+	if (bundle) 
+	{
+		NSString *moviePath = [bundle pathForResource:@"ARG" ofType:@"mp4"];
+		if (moviePath)
+		{
+			url = [NSURL fileURLWithPath:moviePath];
+		}
+	}
+	
+	introVideo = [[MPMoviePlayerController alloc] initWithContentURL:url];
+	[[[CCDirector sharedDirector] openGLView] addSubview:introVideo.view];
+	[introVideo.view setFrame:CGRectMake(0,0,1024,768)];
+	[introVideo setControlStyle:MPMovieControlStyleNone];
+	
+	[[NSNotificationCenter defaultCenter]
+	 addObserver:self
+	 selector:@selector(videoPlayerDidFinishPlaying:)
+	 name:MPMoviePlayerPlaybackDidFinishNotification
+	 object:introVideo];
+	
+	
+	[introVideo play];
+}
+
+-(void) videoPlayerDidFinishPlaying: (NSNotification*)aNotification
+{
+	MPMoviePlayerController * introVideo = [aNotification object];
+	[[NSNotificationCenter defaultCenter] removeObserver:self name:MPMoviePlayerPlaybackDidFinishNotification object:introVideo];
+	[introVideo stop];
+	[introVideo.view removeFromSuperview];
+	[introVideo release];
+	
+	[self beginGame];
+}
+
+-(void)playFinishVideo
+{
+	
+	NSURL * url;
+	NSBundle *bundle = [NSBundle mainBundle];
+	if (bundle) 
+	{
+		NSString *moviePath = [bundle pathForResource:@"Puntos_iPad-H.264" ofType:@"mov"];
+		if (moviePath)
+		{
+			url = [NSURL fileURLWithPath:moviePath];
+		}
+	}
+	
+	finishVideo = [[MPMoviePlayerController alloc] initWithContentURL:url];
+	[[[CCDirector sharedDirector] openGLView] addSubview:finishVideo.view];
+	[finishVideo.view setFrame:CGRectMake(0,0,1024,768)];
+	[finishVideo setControlStyle:MPMovieControlStyleNone];
+	
+	[[NSNotificationCenter defaultCenter]
+	 addObserver:self
+	 selector:@selector(finishVideoDidFinishPlaying:)
+	 name:MPMoviePlayerPlaybackDidFinishNotification
+	 object:finishVideo];
+	
+	
+	[finishVideo play];
+	
+	
+}
+
+-(void) finishVideoDidFinishPlaying: (NSNotification*)aNotification
+{
+	CCSprite * back = [CCSprite spriteWithFile:@"PuntosEndFrame_iPad.png"];
+	[back setPosition:ccp(512,384)];
+	[self addChild:back z:20];
+	
+	MPMoviePlayerController * finishVideo = [aNotification object];
+	[[NSNotificationCenter defaultCenter] removeObserver:self name:MPMoviePlayerPlaybackDidFinishNotification object:finishVideo];
+	[finishVideo stop];
+	[finishVideo.view removeFromSuperview];
+	[finishVideo release];
+	
+	[self showDinoPoints];
+}
+
+-(void)showDinoPoints
+{
+	//RESET DINO
+	CCSprite * gloopbackground = [CCSprite spriteWithFile:[NSString stringWithFormat:@"PuntosDomino_iPad_00000.png.pvr"]];
+	[gloopbackground setPosition:ccp(512,384)];
+	[self addChild:gloopbackground z:21];
+	//ANIMATION
+	NSMutableArray * gloopFrames = [[[NSMutableArray  alloc]init]autorelease];
+	for(int i = 0; i <= 6; i++) {
+		
+		CCSprite * sp = [CCSprite spriteWithFile:[NSString stringWithFormat:@"PuntosDomino_iPad_%05d.png.pvr",i]];
+		CCSpriteFrame *frame = [CCSpriteFrame frameWithTexture:sp.texture rect:sp.textureRect];
+		[gloopFrames addObject:frame];
+	}
+	
+	CCAnimation * gloopAnimation = [CCAnimation animationWithFrames:gloopFrames delay:0.05f];
+	[gloopbackground runAction:[CCSequence actions:[CCAnimate actionWithAnimation:gloopAnimation restoreOriginalFrame:NO],[CCCallFunc actionWithTarget:self selector:@selector(addDinoPoints)],nil]];
+	
+	
+	
+}
+
+-(void)addDinoPoints
+{
+	CCLabelTTF * scoreLbl = [CCLabelTTF labelWithString:[NSString stringWithFormat:@"%d",points] fontName:@"Verdana" fontSize:200];
+	[scoreLbl setColor:ccBLACK];
+	[self addChild:scoreLbl z:22];
+	[scoreLbl setPosition:ccp(450,530)];
+	
+	[[SimpleAudioEngine sharedEngine] playEffect:[NSString stringWithFormat:@"DOMINO %d.mp3",points]];
+	[self addFinishMenu];
+}
+
+-(void)addFinishMenu
+{
+	
+}
+
+
 -(void)turnSounds
 {
 	GameManager * gm = [GameManager sharedGameManager];
@@ -43,7 +167,7 @@
 	[self makeScoreAppear:bashoDirected];
 	if(bashoDirected)
 	{
-		score = 0;
+		points = 0;
 		CCLabelTTF * scoreLbl = [self getChildByTag:kSCORE];
 		[scoreLbl setString:@"0"];
 		[bashoSelectedItems removeAllObjects];
@@ -70,13 +194,14 @@
 
 -(void)showPoints
 {
-	CCMenuItemImage * backBtn2 = [CCMenuItemImage itemFromNormalImage:@"wheel_home_iPad.png" selectedImage:@"wheel_home_iPad.png" target:self selector:@selector(goBack)];
+	[self playFinishVideo];
+	/*CCMenuItemImage * backBtn2 = [CCMenuItemImage itemFromNormalImage:@"wheel_home_iPad.png" selectedImage:@"wheel_home_iPad.png" target:self selector:@selector(goBack)];
 	[backBtn2 setScale:5];
 		
 	CCMenu * menu = [CCMenu menuWithItems:backBtn2,nil];
 	[self addChild:menu];
 	[backBtn2 setPosition:ccp(500,500)];
-	[menu setPosition:ccp(0,0)];
+	[menu setPosition:ccp(0,0)];*/
 	
 	//[self goBack];
 }
@@ -261,9 +386,9 @@
 
 -(void)addPoints:(int)_points
 {
-	score += _points;
+	points += _points;
 	CCLabelTTF * scoreLbl = [self getChildByTag:kSCORE];
-	[scoreLbl setString:[NSString stringWithFormat:@"%d",score]];
+	[scoreLbl setString:[NSString stringWithFormat:@"%d",points]];
 }
 
 -(void)showPalabra:(NSString *)word

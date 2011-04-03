@@ -7,6 +7,8 @@
 //
 
 #import "GameVideo_iPad.h"
+#import "MainMenu_iPad.h"
+#import "AppDelegate_iPad.h"
 
 @implementation GameVideo_iPad
 
@@ -63,6 +65,14 @@
 	
 	[self showLyricLine];
 	
+	UIButton * skip = [UIButton buttonWithType:UIButtonTypeCustom];
+	[skip setFrame:CGRectMake(0,0,106,106)];
+	[skip setImage:[UIImage imageNamed:@"wheel_home_iPad.png"] forState:UIControlStateNormal];
+	[skip setImage:[UIImage imageNamed:@"wheel_home_iPad.png"] forState:UIControlStateHighlighted];
+	[skip addTarget:self action:@selector(goBack) forControlEvents:UIControlEventTouchUpInside];
+	[video.view addSubview:skip];
+	
+	
     [super viewDidLoad];
 	
 	
@@ -101,6 +111,32 @@
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
+}
+
+-(void)goBack
+{
+	[[NSNotificationCenter defaultCenter] removeObserver:self
+													name:MPMoviePlayerPlaybackDidFinishNotification object:video];
+	[video stop];
+	[video.view removeFromSuperview];
+	[self goToMenu];
+}
+
+-(void)goToMenu
+{
+	[self.view removeFromSuperview];
+	[self release];
+	
+	MainMenu_iPad * gw = [[MainMenu_iPad alloc] 
+						  initWithNibName:@"MainMenu_iPad" bundle:nil];
+	[gw.view setAlpha:0];
+	AppDelegate_iPad * app = (AppDelegate_iPad *)[[UIApplication sharedApplication] delegate];
+	UIWindow * w = app.window;
+	[w addSubview:gw.view];
+	
+	[UIView beginAnimations:nil context:nil];
+	[gw.view setAlpha:1];
+	[UIView commitAnimations];
 }
 
 

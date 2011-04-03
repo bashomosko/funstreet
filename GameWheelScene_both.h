@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "cocos2d.h"
 #import "GameWheel.h"
+#import <MediaPlayer/MediaPlayer.h>
 
 #define kPALABRA 1000
 #define kSCORE 1001
@@ -82,13 +83,16 @@
 	BOOL bashoDirected;
 	NSMutableArray * bashoSelectedItems ;
 	
-	int score;
+	int points;
 	
 	BOOL isInIpad;
 	NSString * iPad;
 	
 	int currentAttempts;
 	BOOL maxedAttemps;
+	
+	MPMoviePlayerController * introVideo;
+	MPMoviePlayerController * finishVideo;
 	
 }
 

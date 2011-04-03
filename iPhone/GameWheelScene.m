@@ -46,49 +46,55 @@
 		if( (self=[super init] )) {
 			
 			
-			[self loadDeviceType];
-			
-			score = 0;
-			
 			self.isTouchEnabled = YES;
 			viewController = vc;
-			bashoDirected = NO;
 			
-			CCSprite * back = [CCSprite spriteWithFile:@"wheel_background.png"];
-			[back setPosition:ccp(240,160)];
-			[self addChild:back];
+			[self loadDeviceType];
 			
-			dino = [CCSprite spriteWithFile:@"wheel_dino.png"];
-			[dino setPosition:ccp(240,160)];
-			[self addChild:dino];
-			
-			backBtn = [CCMenuItemImage itemFromNormalImage:@"wheel_home.png" selectedImage:@"wheel_home.png" target:self selector:@selector(goBack)];
-			
-			CCMenuItemImage * soundOff = [CCMenuItemImage itemFromNormalImage:@"wheel_sound_off.png" selectedImage:@"wheel_sound_on.png"];
-			CCMenuItemImage * soundOn = [CCMenuItemImage itemFromNormalImage:@"wheel_sound_on.png" selectedImage:@"wheel_sound_off.png"];
-			CCMenuItemToggle * sound = [CCMenuItemToggle itemWithTarget:self selector:@selector(turnSounds) items:soundOn,soundOff,nil];
-			
-			CCMenuItemImage * bashoOff = [CCMenuItemImage itemFromNormalImage:@"wheel_basho_off.png" selectedImage:@"wheel_basho_on.png"];
-			CCMenuItemImage * bashoOn = [CCMenuItemImage itemFromNormalImage:@"wheel_basho_on.png" selectedImage:@"wheel_basho_off.png"];
-			CCMenuItemToggle * basho = [CCMenuItemToggle itemWithTarget:self selector:@selector(turnBasho) items:bashoOff,bashoOn,nil];
-			
-			
-			CCMenu * menu = [CCMenu menuWithItems:backBtn,sound,basho,nil];
-			[self addChild:menu];
-			[backBtn setPosition:ccp(30,290)];
-			[sound setPosition:ccp(20,20)];
-			[basho setPosition:ccp(70,30)];
-			[menu setPosition:ccp(0,0)];
-			
-			[self loadScore];
-			[self loadButtons];
-			[self createPalabra];
+			[self beginGame];
 			
 		}
 		return self;
 		
     }
     return self;
+}
+
+-(void)beginGame
+{
+	points = 0;
+	
+	bashoDirected = NO;
+	
+	CCSprite * back = [CCSprite spriteWithFile:@"wheel_background.png"];
+	[back setPosition:ccp(240,160)];
+	[self addChild:back];
+	
+	dino = [CCSprite spriteWithFile:@"wheel_dino.png"];
+	[dino setPosition:ccp(240,160)];
+	[self addChild:dino];
+	
+	backBtn = [CCMenuItemImage itemFromNormalImage:@"wheel_home.png" selectedImage:@"wheel_home.png" target:self selector:@selector(goBack)];
+	
+	CCMenuItemImage * soundOff = [CCMenuItemImage itemFromNormalImage:@"wheel_sound_off.png" selectedImage:@"wheel_sound_on.png"];
+	CCMenuItemImage * soundOn = [CCMenuItemImage itemFromNormalImage:@"wheel_sound_on.png" selectedImage:@"wheel_sound_off.png"];
+	CCMenuItemToggle * sound = [CCMenuItemToggle itemWithTarget:self selector:@selector(turnSounds) items:soundOn,soundOff,nil];
+	
+	CCMenuItemImage * bashoOff = [CCMenuItemImage itemFromNormalImage:@"wheel_basho_off.png" selectedImage:@"wheel_basho_on.png"];
+	CCMenuItemImage * bashoOn = [CCMenuItemImage itemFromNormalImage:@"wheel_basho_on.png" selectedImage:@"wheel_basho_off.png"];
+	CCMenuItemToggle * basho = [CCMenuItemToggle itemWithTarget:self selector:@selector(turnBasho) items:bashoOff,bashoOn,nil];
+	
+	
+	CCMenu * menu = [CCMenu menuWithItems:backBtn,sound,basho,nil];
+	[self addChild:menu];
+	[backBtn setPosition:ccp(30,290)];
+	[sound setPosition:ccp(20,20)];
+	[basho setPosition:ccp(70,30)];
+	[menu setPosition:ccp(0,0)];
+	
+	[self loadScore];
+	[self loadButtons];
+	[self createPalabra];
 }
 
 

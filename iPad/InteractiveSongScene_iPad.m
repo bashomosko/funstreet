@@ -34,46 +34,175 @@
 		//self.isAccelerometerEnabled = YES;
 		viewController = vc;
 		
-		[[SimpleAudioEngine sharedEngine] playBackgroundMusic:@"botas-2011.mp3" loop:NO];
-		
-		CCSprite * back = [CCSprite spriteWithFile:@"song_background_iPad.png"];
-		[back setPosition:ccp(512,384)];
-		[self addChild:back];
-		
-		CCSprite * basho = [CCSprite spriteWithFile:@"song_basho_iPad.png"];
-		[basho setPosition:ccp(512,384)];
-		[self addChild:basho];
-		
-		CCMenuItemImage * backBtn = [CCMenuItemImage itemFromNormalImage:@"wheel_home_iPad.png" selectedImage:@"wheel_home_iPad.png" target:self selector:@selector(goBack)];
-		
-		CCMenu * menu = [CCMenu menuWithItems:backBtn,nil];
-		[self addChild:menu];
-		[backBtn setPosition:ccp(64,696)];
-		[menu setPosition:ccp(0,0)];
-		
-		iElements = [[NSMutableArray alloc] init];
-		
-		NSString *filePath = [[NSBundle mainBundle] pathForResource:@"songItems_iPad" ofType:@"plist"];
-		
-		NSMutableArray * elementsFile = [NSMutableArray arrayWithContentsOfFile:filePath];
-		
-		for(int i = 0; i<4;i++)
-		{
-			NSMutableDictionary * elem = [elementsFile objectAtIndex:i];
-			InteractiveElement * iElement = [[InteractiveElement alloc] initWithTheGame:self elementDict:elem];
-			[iElements addObject:iElement];
-			[iElement release];
-		}
-		
-		currentElem = 0;
-		
-		InteractiveElement * iel = [iElements objectAtIndex:currentElem];
-		[iel runAction:[CCSequence actions:[CCDelayTime actionWithDuration:0],[CCCallFunc actionWithTarget:iel selector:@selector(callMeIn)],nil]];
-		
-		[self loadScore];
+		[self beginGame];
 	}
 	return self;
 	
+}
+
+-(void)loadVideo
+{
+	NSURL * url;
+	NSBundle *bundle = [NSBundle mainBundle];
+	if (bundle) 
+	{
+		NSString *moviePath = [bundle pathForResource:@"ARG" ofType:@"mp4"];
+		if (moviePath)
+		{
+			url = [NSURL fileURLWithPath:moviePath];
+		}
+	}
+	
+	introVideo = [[MPMoviePlayerController alloc] initWithContentURL:url];
+	[[[CCDirector sharedDirector] openGLView] addSubview:introVideo.view];
+	[introVideo.view setFrame:CGRectMake(0,0,1024,768)];
+	[introVideo setControlStyle:MPMovieControlStyleNone];
+	
+	[[NSNotificationCenter defaultCenter]
+	 addObserver:self
+	 selector:@selector(videoPlayerDidFinishPlaying:)
+	 name:MPMoviePlayerPlaybackDidFinishNotification
+	 object:introVideo];
+	
+	
+	[introVideo play];
+}
+
+-(void) videoPlayerDidFinishPlaying: (NSNotification*)aNotification
+{
+	MPMoviePlayerController * introVideo = [aNotification object];
+	[[NSNotificationCenter defaultCenter] removeObserver:self name:MPMoviePlayerPlaybackDidFinishNotification object:introVideo];
+	[introVideo stop];
+	[introVideo.view removeFromSuperview];
+	[introVideo release];
+	
+	[self beginGame];
+}
+
+-(void)playFinishVideo
+{
+	
+	NSURL * url;
+	NSBundle *bundle = [NSBundle mainBundle];
+	if (bundle) 
+	{
+		NSString *moviePath = [bundle pathForResource:@"Puntos_iPad-H.264" ofType:@"mov"];
+		if (moviePath)
+		{
+			url = [NSURL fileURLWithPath:moviePath];
+		}
+	}
+	
+	finishVideo = [[MPMoviePlayerController alloc] initWithContentURL:url];
+	[[[CCDirector sharedDirector] openGLView] addSubview:finishVideo.view];
+	[finishVideo.view setFrame:CGRectMake(0,0,1024,768)];
+	[finishVideo setControlStyle:MPMovieControlStyleNone];
+	
+	[[NSNotificationCenter defaultCenter]
+	 addObserver:self
+	 selector:@selector(finishVideoDidFinishPlaying:)
+	 name:MPMoviePlayerPlaybackDidFinishNotification
+	 object:finishVideo];
+	
+	
+	[finishVideo play];
+	
+	
+}
+
+-(void) finishVideoDidFinishPlaying: (NSNotification*)aNotification
+{
+	CCSprite * back = [CCSprite spriteWithFile:@"PuntosEndFrame_iPad.png"];
+	[back setPosition:ccp(512,384)];
+	[self addChild:back z:20];
+	
+	MPMoviePlayerController * finishVideo = [aNotification object];
+	[[NSNotificationCenter defaultCenter] removeObserver:self name:MPMoviePlayerPlaybackDidFinishNotification object:finishVideo];
+	[finishVideo stop];
+	[finishVideo.view removeFromSuperview];
+	[finishVideo release];
+	
+	[self showDinoPoints];
+}
+
+-(void)showDinoPoints
+{
+	//RESET DINO
+	CCSprite * gloopbackground = [CCSprite spriteWithFile:[NSString stringWithFormat:@"PuntosDomino_iPad_00000.png.pvr"]];
+	[gloopbackground setPosition:ccp(512,384)];
+	[self addChild:gloopbackground z:21];
+	//ANIMATION
+	NSMutableArray * gloopFrames = [[[NSMutableArray  alloc]init]autorelease];
+	for(int i = 0; i <= 6; i++) {
+		
+		CCSprite * sp = [CCSprite spriteWithFile:[NSString stringWithFormat:@"PuntosDomino_iPad_%05d.png.pvr",i]];
+		CCSpriteFrame *frame = [CCSpriteFrame frameWithTexture:sp.texture rect:sp.textureRect];
+		[gloopFrames addObject:frame];
+	}
+	
+	CCAnimation * gloopAnimation = [CCAnimation animationWithFrames:gloopFrames delay:0.05f];
+	[gloopbackground runAction:[CCSequence actions:[CCAnimate actionWithAnimation:gloopAnimation restoreOriginalFrame:NO],[CCCallFunc actionWithTarget:self selector:@selector(addDinoPoints)],nil]];
+	
+	
+	
+}
+
+-(void)addDinoPoints
+{
+	CCLabelTTF * scoreLbl = [CCLabelTTF labelWithString:[NSString stringWithFormat:@"%d",points] fontName:@"Verdana" fontSize:200];
+	[scoreLbl setColor:ccBLACK];
+	[self addChild:scoreLbl z:22];
+	[scoreLbl setPosition:ccp(450,530)];
+	
+	[[SimpleAudioEngine sharedEngine] playEffect:[NSString stringWithFormat:@"DOMINO %d.mp3",points]];
+	[self addFinishMenu];
+}
+
+-(void)addFinishMenu
+{
+	
+}
+
+
+-(void)beginGame
+{
+	[[SimpleAudioEngine sharedEngine] playBackgroundMusic:@"botas-2011.mp3" loop:NO];
+	
+	CCSprite * back = [CCSprite spriteWithFile:@"song_background_iPad.png"];
+	[back setPosition:ccp(512,384)];
+	[self addChild:back];
+	
+	CCSprite * basho = [CCSprite spriteWithFile:@"song_basho_iPad.png"];
+	[basho setPosition:ccp(512,384)];
+	[self addChild:basho];
+	
+	CCMenuItemImage * backBtn = [CCMenuItemImage itemFromNormalImage:@"wheel_home_iPad.png" selectedImage:@"wheel_home_iPad.png" target:self selector:@selector(goBack)];
+	
+	CCMenu * menu = [CCMenu menuWithItems:backBtn,nil];
+	[self addChild:menu];
+	[backBtn setPosition:ccp(64,696)];
+	[menu setPosition:ccp(0,0)];
+	
+	iElements = [[NSMutableArray alloc] init];
+	
+	NSString *filePath = [[NSBundle mainBundle] pathForResource:@"songItems_iPad" ofType:@"plist"];
+	
+	NSMutableArray * elementsFile = [NSMutableArray arrayWithContentsOfFile:filePath];
+	
+	for(int i = 0; i<4;i++)
+	{
+		NSMutableDictionary * elem = [elementsFile objectAtIndex:i];
+		InteractiveElement * iElement = [[InteractiveElement alloc] initWithTheGame:self elementDict:elem];
+		[iElements addObject:iElement];
+		[iElement release];
+	}
+	
+	currentElem = 0;
+	
+	InteractiveElement * iel = [iElements objectAtIndex:currentElem];
+	[iel runAction:[CCSequence actions:[CCDelayTime actionWithDuration:0],[CCCallFunc actionWithTarget:iel selector:@selector(callMeIn)],nil]];
+	
+	[self loadScore];
 }
 
 -(void)loadScore
@@ -88,6 +217,8 @@
 	[scoreLbl setPosition:ccp(959,703)];
 	//[scoreLbl setOpacity:0];
 }
+
+
 
 -(void)addPoints:(int)p
 {
@@ -104,7 +235,10 @@
 	
 		InteractiveElement * iel = [iElements objectAtIndex:currentElem];
 		[iel callMeIn];
+	}else {
+		[self playFinishVideo];
 	}
+
 }
 
 -(void)goBack

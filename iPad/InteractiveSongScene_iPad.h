@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "cocos2d.h"
-
+#import <MediaPlayer/MediaPlayer.h>
 #import "InteractiveSong_iPad.h"
 
 @class InteractiveSong_iPad;
@@ -21,6 +21,9 @@
 	int currentElem;
 	
 	int points;
+	
+	MPMoviePlayerController * introVideo;
+	MPMoviePlayerController * finishVideo;
 }
 
 @end
