@@ -63,7 +63,7 @@
 	[CCTexture2D setDefaultAlphaPixelFormat:kCCTexture2DPixelFormat_RGBA8888];
 	
 	// Removes the startup flicker
-	[self removeStartupFlicker];
+	//[self removeStartupFlicker];
 	
 	// Run the intro Scene
 	[[CCDirector sharedDirector] runWithScene: [GameDressScene_iPad sceneWithDressVC:self bashoDirected:NO]];	
@@ -110,6 +110,31 @@
 	[UIView beginAnimations:nil context:nil];
 	[gw.view setAlpha:1];
 	[UIView commitAnimations];
+}
+
+-(void)goToNextGame
+{
+	[[CCScheduler sharedScheduler] unscheduleAllSelectors];
+	[[CCActionManager sharedManager] removeAllActions];
+	CCDirector *director = [CCDirector sharedDirector];
+	[[director openGLView] removeFromSuperview];
+	[director end];	
+	
+	[self.view removeFromSuperview];
+	[self release];
+	
+	MainMenu_iPad * gw = [[MainMenu_iPad alloc] 
+						  initWithNibName:@"MainMenu_iPad" bundle:nil];
+	[gw.view setAlpha:0];
+	AppDelegate_iPad * app = (AppDelegate_iPad *)[[UIApplication sharedApplication] delegate];
+	UIWindow * w = app.window;
+	[w addSubview:gw.view];
+	
+	[UIView beginAnimations:nil context:nil];
+	[gw.view setAlpha:0.01];
+	[UIView commitAnimations];
+	
+	[gw goToVideo:nil];
 }
 
 // Override to allow orientations other than the default portrait orientation.

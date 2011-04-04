@@ -11,7 +11,7 @@
 #import "AppDelegate_iPad.h"
 #import "MainMenu_iPad.h"
 #import "InteractiveSongScene_iPad.h"
-
+#import "GameWheel_iPad.h"
 
 @implementation InteractiveSong_iPad
 
@@ -113,6 +113,32 @@
 	[UIView beginAnimations:nil context:nil];
 	[gw.view setAlpha:1];
 	[UIView commitAnimations];
+}
+
+
+-(void)goToNextGame
+{
+	[[CCScheduler sharedScheduler] unscheduleAllSelectors];
+	[[CCActionManager sharedManager] removeAllActions];
+	CCDirector *director = [CCDirector sharedDirector];
+	[[director openGLView] removeFromSuperview];
+	[director end];	
+	
+	[self.view removeFromSuperview];
+	[self release];
+	
+	MainMenu_iPad * gw = [[MainMenu_iPad alloc] 
+						  initWithNibName:@"MainMenu_iPad" bundle:nil];
+	[gw.view setAlpha:0];
+	AppDelegate_iPad * app = (AppDelegate_iPad *)[[UIApplication sharedApplication] delegate];
+	UIWindow * w = app.window;
+	[w addSubview:gw.view];
+	
+	[UIView beginAnimations:nil context:nil];
+	[gw.view setAlpha:0.01];
+	[UIView commitAnimations];
+	
+	[gw goToWheel:nil];
 }
 
 // Override to allow orientations other than the default portrait orientation.

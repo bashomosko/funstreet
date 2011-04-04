@@ -94,7 +94,11 @@
     return self;
 }
 
-
+-(void)replay
+{
+	[[CCDirector sharedDirector] replaceScene:[CCTransitionFade transitionWithDuration:0.5 scene: [GameWheelScene_iPad sceneWithWheelVC:viewController] withColor:ccWHITE]];
+	
+}
 
 -(void)createPalabra
 {

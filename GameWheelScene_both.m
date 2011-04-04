@@ -97,15 +97,14 @@
 	
 	[finishVideo play];
 	
+	CCSprite * back = [CCSprite spriteWithFile:@"PuntosEndFrame_iPad.png"];
+	[back setPosition:ccp(512,384)];
+	[self addChild:back z:20];
 	
 }
 
 -(void) finishVideoDidFinishPlaying: (NSNotification*)aNotification
 {
-	CCSprite * back = [CCSprite spriteWithFile:@"PuntosEndFrame_iPad.png"];
-	[back setPosition:ccp(512,384)];
-	[self addChild:back z:20];
-	
 	MPMoviePlayerController * finishVideo = [aNotification object];
 	[[NSNotificationCenter defaultCenter] removeObserver:self name:MPMoviePlayerPlaybackDidFinishNotification object:finishVideo];
 	[finishVideo stop];
@@ -150,7 +149,19 @@
 
 -(void)addFinishMenu
 {
+	CCMenuItemImage * home = [CCMenuItemImage itemFromNormalImage:@"btn_home_iPad.png" selectedImage:@"btn_home_dwn_iPad.png" target:self selector:@selector(goBack)];
+	CCMenuItemImage * replay = [CCMenuItemImage itemFromNormalImage:@"btn_replay_iPad.png" selectedImage:@"btn_replay_dwn_iPad.png" target:self selector:@selector(replay)];
+	CCMenuItemImage * next = [CCMenuItemImage itemFromNormalImage:@"btn_next_iPad.png" selectedImage:@"btn_next_dwn_iPad.png" target:self selector:@selector(nextGame)];
 	
+	CCMenu * menu = [CCMenu menuWithItems:home,replay,next,nil];
+	[self addChild:menu z:23];
+	[menu alignItemsHorizontallyWithPadding:20];
+	[menu setPosition:ccp(512,150)];
+}
+
+-(void)nextGame
+{
+	[viewController goToNextGame];
 }
 
 
