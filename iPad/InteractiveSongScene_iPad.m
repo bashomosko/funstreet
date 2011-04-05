@@ -35,7 +35,7 @@
 		viewController = vc;
 		
 		[self beginGame];
-		[self addFinishMenu];
+		//[self addFinishMenu];
 	}
 	return self;
 	
