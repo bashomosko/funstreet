@@ -129,7 +129,8 @@
 		[back setPosition:ccp(512,384)];
 		[self addChild:back z:20];
 	}else {
-		[self resetDino];
+		[self replay];
+		//[self resetDino];
 	}
 	
 }
@@ -192,7 +193,7 @@
 
 -(void)replay
 {
-	[[CCDirector sharedDirector] replaceScene:[CCTransitionFade transitionWithDuration:0.5 scene: [GameDressScene_iPad sceneWithDressVC:viewController bashoDirected:NO] withColor:ccWHITE]];
+	[[CCDirector sharedDirector] replaceScene:[CCTransitionFade transitionWithDuration:0.5 scene: [GameDressScene_iPad sceneWithDressVC:viewController bashoDirected:YES] withColor:ccWHITE]];
 	
 }
 
