@@ -9,9 +9,9 @@
 	};
 	10108B7D132008C1001848A5 /* GameWheelScene_both.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1209, 6526}}";
-			sepNavSelRange = "{11252, 0}";
-			sepNavVisRange = "{10820, 1080}";
+			sepNavIntBoundsRect = "{{0, 0}, {1636, 6227}}";
+			sepNavSelRange = "{6229, 15}";
+			sepNavVisRange = "{5044, 1042}";
 		};
 	};
 	10108C8713201F67001848A5 /* PBXBookmark */ = {
@@ -226,7 +226,7 @@
 		ignoreCount = 0;
 		lineNumber = 496;
 		location = Basho;
-		modificationTime = 323876328.303156;
+		modificationTime = 323876466.008676;
 		originalNumberOfMultipleMatches = 1;
 		state = 2;
 	};
@@ -244,7 +244,7 @@
 		ignoreCount = 0;
 		lineNumber = 149;
 		location = Basho;
-		modificationTime = 323876328.303226;
+		modificationTime = 323876466.008705;
 		originalNumberOfMultipleMatches = 1;
 		state = 2;
 	};
@@ -271,9 +271,9 @@
 	};
 	109E5FB813413F3900EEF48A /* InteractiveSongScene_iPad.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1636, 4316}}";
-			sepNavSelRange = "{4394, 0}";
-			sepNavVisRange = "{3454, 1473}";
+			sepNavIntBoundsRect = "{{0, 0}, {1636, 4160}}";
+			sepNavSelRange = "{4879, 0}";
+			sepNavVisRange = "{4573, 875}";
 		};
 	};
 	109E5FC8134140C100EEF48A /* PBXTextBookmark */ = {
@@ -457,9 +457,9 @@
 	};
 	10A08C97132150A7003F24AD /* GameDressScene_iPad.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1636, 8151}}";
-			sepNavSelRange = "{5041, 35}";
-			sepNavVisRange = "{4230, 1569}";
+			sepNavIntBoundsRect = "{{0, 0}, {1636, 8203}}";
+			sepNavSelRange = "{5561, 0}";
+			sepNavVisRange = "{5232, 730}";
 			sepNavWindowFrame = "{{157, 87}, {844, 547}}";
 		};
 	};
@@ -1297,7 +1297,7 @@
 		fRef = 109E5FB813413F3900EEF48A /* InteractiveSongScene_iPad.m */;
 		name = "InteractiveSongScene_iPad.m: 260";
 		rLen = 21;
-		rLoc = 8264;
+		rLoc = 8257;
 		rType = 0;
 		vrLen = 953;
 		vrLoc = 7296;
@@ -1307,7 +1307,7 @@
 		fRef = 109E5FB813413F3900EEF48A /* InteractiveSongScene_iPad.m */;
 		name = "InteractiveSongScene_iPad.m: 254";
 		rLen = 0;
-		rLoc = 8139;
+		rLoc = 8132;
 		rType = 0;
 		vrLen = 957;
 		vrLoc = 7296;
@@ -1317,7 +1317,7 @@
 		fRef = 109E5FB813413F3900EEF48A /* InteractiveSongScene_iPad.m */;
 		name = "InteractiveSongScene_iPad.m: 254";
 		rLen = 0;
-		rLoc = 8139;
+		rLoc = 8132;
 		rType = 0;
 		vrLen = 957;
 		vrLoc = 7296;
@@ -1591,10 +1591,27 @@
 		fRef = 10108B7D132008C1001848A5 /* GameWheelScene_both.m */;
 		name = "GameWheelScene_both.m: 390";
 		rLen = 0;
-		rLoc = 11252;
+		rLoc = 11245;
 		rType = 0;
 		vrLen = 1080;
 		vrLoc = 10820;
+	};
+	10EE6C2E134DFFB40041B7A5 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 10108B7D132008C1001848A5 /* GameWheelScene_both.m */;
+		rLen = 1;
+		rLoc = 211;
+		rType = 1;
+	};
+	10EE6C2F134DFFB40041B7A5 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 10108B7D132008C1001848A5 /* GameWheelScene_both.m */;
+		name = "GameWheelScene_both.m: 214";
+		rLen = 15;
+		rLoc = 6229;
+		rType = 0;
+		vrLen = 1042;
+		vrLoc = 5044;
 	};
 	1D6058900D05DD3D006BFB54 /* Basho */ = {
 		activeExec = 0;
@@ -1832,6 +1849,8 @@
 			10EE6BD4134DF5D70041B7A5 /* PBXTextBookmark */ = 10EE6BD4134DF5D70041B7A5 /* PBXTextBookmark */;
 			10EE6BD5134DF5D70041B7A5 /* PBXTextBookmark */ = 10EE6BD5134DF5D70041B7A5 /* PBXTextBookmark */;
 			10EE6BD9134DF6700041B7A5 /* PBXTextBookmark */ = 10EE6BD9134DF6700041B7A5 /* PBXTextBookmark */;
+			10EE6C2E134DFFB40041B7A5 /* PBXTextBookmark */ = 10EE6C2E134DFFB40041B7A5 /* PBXTextBookmark */;
+			10EE6C2F134DFFB40041B7A5 /* PBXTextBookmark */ = 10EE6C2F134DFFB40041B7A5 /* PBXTextBookmark */;
 		};
 		sourceControlManager = 10B569F31306EA9600AA7DCB /* Source Control */;
 		userBuildSettings = {

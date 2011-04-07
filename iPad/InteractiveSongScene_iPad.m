@@ -168,7 +168,7 @@
 	[self addChild:scoreLbl z:22];
 	[scoreLbl setPosition:ccp(450,530)];
 	
-	[[SimpleAudioEngine sharedEngine] playEffect:[NSString stringWithFormat:@"DOMINO %d.mp3",points]];
+	[[SimpleAudioEngine sharedEngine] playEffect:[NSString stringWithFormat:@"%d.mp3",points]];
 	[self addFinishMenu];
 }
 

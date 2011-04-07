@@ -229,6 +229,8 @@
 			<key>Layout</key>
 			<array>
 				<dict>
+					<key>BecomeActive</key>
+					<true/>
 					<key>ContentConfiguration</key>
 					<dict>
 						<key>PBXBottomSmartGroupGIDs</key>
@@ -285,6 +287,8 @@
 								<string>10A6BC8A132595FF00391C82</string>
 								<string>28EEBF621118D79A00187D67</string>
 								<string>10108B7B132008AA001848A5</string>
+								<string>10B32831131D5CAA0014A77D</string>
+								<string>10A065C7133BBDAC0059187D</string>
 								<string>10AA0BD2130719D200D11E6B</string>
 								<string>29B97323FDCFA39411CA2CEA</string>
 								<string>1C37FBAC04509CD000000102</string>
@@ -294,14 +298,14 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>253</integer>
-									<integer>251</integer>
+									<integer>344</integer>
+									<integer>256</integer>
 									<integer>250</integer>
 									<integer>0</integer>
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 4108}, {346, 594}}</string>
+							<string>{{0, 5472}, {346, 594}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -331,8 +335,6 @@
 					<key>Dock</key>
 					<array>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -350,7 +352,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>10EE6BD9134DF6700041B7A5</string>
+										<string>10EE6C2F134DFFB40041B7A5</string>
 										<key>history</key>
 										<array>
 											<string>10B56A491306EDB900AA7DCB</string>
@@ -446,7 +448,7 @@
 											<string>10EE6BBE134DF3FE0041B7A5</string>
 											<string>10EE6BD2134DF5D70041B7A5</string>
 											<string>10EE6BD3134DF5D70041B7A5</string>
-											<string>10EE6BD4134DF5D70041B7A5</string>
+											<string>10EE6C2E134DFFB40041B7A5</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -644,13 +646,12 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>10EE6BDA134DF6700041B7A5</string>
 		<string>10EE6BAD134DED090041B7A5</string>
 		<string>10EE6BAE134DED090041B7A5</string>
 		<string>1C78EAAD065D492600B07095</string>
-		<string>1C530D57069F1CE1000CFCEE</string>
 		<string>10B569EA1306EA9600AA7DCB</string>
 		<string>1CD10A99069EF8BA00B06720</string>
+		<string>1C530D57069F1CE1000CFCEE</string>
 		<string>/Users/pabloruiz/Documents/Basho/Basho.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
@@ -893,7 +894,7 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CDD528C0622207200134675</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>InteractiveSongScene_iPad.m</string>
+										<string>GameWheelScene_both.m</string>
 										<key>StatusBarVisibility</key>
 										<true/>
 									</dict>
