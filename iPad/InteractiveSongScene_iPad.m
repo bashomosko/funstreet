@@ -34,7 +34,8 @@
 		//self.isAccelerometerEnabled = YES;
 		viewController = vc;
 		
-		[self beginGame];
+		//[self beginGame];
+		[self loadVideo];
 		//[self addFinishMenu];
 	}
 	return self;
@@ -47,7 +48,7 @@
 	NSBundle *bundle = [NSBundle mainBundle];
 	if (bundle) 
 	{
-		NSString *moviePath = [bundle pathForResource:@"ARG" ofType:@"mp4"];
+		NSString *moviePath = [bundle pathForResource:@"intro_1_iPad" ofType:@"mov"];
 		if (moviePath)
 		{
 			url = [NSURL fileURLWithPath:moviePath];
@@ -222,6 +223,46 @@
 	[iel runAction:[CCSequence actions:[CCDelayTime actionWithDuration:0],[CCCallFunc actionWithTarget:iel selector:@selector(callMeIn)],nil]];
 	
 	[self loadScore];
+	
+	
+	//LYRICS
+	
+	NSString *lyricPath = [[NSBundle mainBundle] pathForResource:@"videoLyrics" ofType:@"plist"];
+	
+	lyricLines = [[NSMutableArray arrayWithContentsOfFile:lyricPath]retain];
+	
+	currentLyricLine = 0;
+	
+	lyrics = [CCLabelBMFont bitmapFontAtlasWithString:@"" fntFile:@"interactive_lyrics_iPad.fnt"];
+	[self addChild:lyrics];
+	[lyrics setPosition:ccp(512,50)];
+	
+	[self showLyricLine];
+	
+}
+
+-(void)showLyricLine
+{
+	if([lyricLines count]>currentLyricLine)
+	{
+		NSMutableDictionary * line = [lyricLines objectAtIndex:currentLyricLine];
+		NSString * text = [line objectForKey:@"lyric"];
+		float duration = [[line objectForKey:@"duration"] floatValue];
+		
+		[lyrics setString:text];
+		ccColor3B cOrig = {204,0,106};
+		[lyrics setColor:cOrig];
+		
+		/*if([[lyrics children] count]>5)
+		{
+			CCSprite * l1 = [[lyrics children] objectAtIndex:5];
+			
+			ccColor3B c = {255,255,0};
+			[l1 setColor:c];
+		}*/
+		[self performSelector:@selector(showLyricLine) withObject:nil afterDelay:duration];
+		currentLyricLine++;
+	}
 }
 
 -(void)loadScore
@@ -269,6 +310,7 @@
 
 -(void)dealloc
 {
+	[lyricLines release];
 	[iElements release];
 	[super dealloc];
 }

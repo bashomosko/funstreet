@@ -24,6 +24,10 @@
 	
 	MPMoviePlayerController * introVideo;
 	MPMoviePlayerController * finishVideo;
+	
+	CCLabelBMFont * lyrics;
+	NSMutableArray * lyricLines;
+	int currentLyricLine;
 }
 
 @end

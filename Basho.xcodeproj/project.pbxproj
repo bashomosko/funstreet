@@ -528,6 +528,9 @@
 		10B56B391306FE7400AA7DCB /* GameWheel.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10B56B371306FE7400AA7DCB /* GameWheel.xib */; };
 		10B56BA5130701A100AA7DCB /* GameWheel_iPad.m in Sources */ = {isa = PBXBuildFile; fileRef = 10B56BA3130701A100AA7DCB /* GameWheel_iPad.m */; };
 		10B56BA6130701A100AA7DCB /* GameWheel_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10B56BA4130701A100AA7DCB /* GameWheel_iPad.xib */; };
+		10EE6A80134D383F0041B7A5 /* intro_1_iPad.mov in Resources */ = {isa = PBXBuildFile; fileRef = 10EE6A7F134D383F0041B7A5 /* intro_1_iPad.mov */; };
+		10EE6AA2134D3E250041B7A5 /* interactive_lyrics_iPad.fnt in Resources */ = {isa = PBXBuildFile; fileRef = 10EE6AA0134D3E250041B7A5 /* interactive_lyrics_iPad.fnt */; };
+		10EE6AA3134D3E250041B7A5 /* interactive_lyrics_iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 10EE6AA1134D3E250041B7A5 /* interactive_lyrics_iPad.png */; };
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
@@ -1189,6 +1192,9 @@
 		10B56BA2130701A100AA7DCB /* GameWheel_iPad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameWheel_iPad.h; sourceTree = "<group>"; };
 		10B56BA3130701A100AA7DCB /* GameWheel_iPad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameWheel_iPad.m; sourceTree = "<group>"; };
 		10B56BA4130701A100AA7DCB /* GameWheel_iPad.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GameWheel_iPad.xib; sourceTree = "<group>"; };
+		10EE6A7F134D383F0041B7A5 /* intro_1_iPad.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = intro_1_iPad.mov; sourceTree = "<group>"; };
+		10EE6AA0134D3E250041B7A5 /* interactive_lyrics_iPad.fnt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = interactive_lyrics_iPad.fnt; sourceTree = "<group>"; };
+		10EE6AA1134D3E250041B7A5 /* interactive_lyrics_iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = interactive_lyrics_iPad.png; sourceTree = "<group>"; };
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D6058910D05DD3D006BFB54 /* Basho.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Basho.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -1462,6 +1468,8 @@
 		10A2E5861347612A00E723D5 /* video */ = {
 			isa = PBXGroup;
 			children = (
+				10EE6AA0134D3E250041B7A5 /* interactive_lyrics_iPad.fnt */,
+				10EE6AA1134D3E250041B7A5 /* interactive_lyrics_iPad.png */,
 				10A2E7001349F7ED00E723D5 /* btn_home_dwn_iPad.png */,
 				10A2E7011349F7ED00E723D5 /* btn_home_iPad.png */,
 				10A2E7021349F7ED00E723D5 /* btn_next_dwn_iPad.png */,
@@ -2031,6 +2039,7 @@
 		10B56A581306EE4600AA7DCB /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				10EE6A89134D3B730041B7A5 /* intro */,
 				10A2E5861347612A00E723D5 /* video */,
 				109E5FC6134140BA00EEF48A /* interactiveSong */,
 				10A08CF013215426003F24AD /* dress */,
@@ -2105,6 +2114,14 @@
 				102FDE02131C893800CC0AEB /* wheel_sound_on.png */,
 			);
 			name = wheel;
+			sourceTree = "<group>";
+		};
+		10EE6A89134D3B730041B7A5 /* intro */ = {
+			isa = PBXGroup;
+			children = (
+				10EE6A7F134D383F0041B7A5 /* intro_1_iPad.mov */,
+			);
+			name = intro;
 			sourceTree = "<group>";
 		};
 		19C28FACFE9D520D11CA2CBB /* Products */ = {
@@ -2650,6 +2667,9 @@
 				10A2E7091349F7ED00E723D5 /* btn_next_iPad.png in Resources */,
 				10A2E70A1349F7ED00E723D5 /* btn_replay_dwn_iPad.png in Resources */,
 				10A2E70B1349F7ED00E723D5 /* btn_replay_iPad.png in Resources */,
+				10EE6A80134D383F0041B7A5 /* intro_1_iPad.mov in Resources */,
+				10EE6AA2134D3E250041B7A5 /* interactive_lyrics_iPad.fnt in Resources */,
+				10EE6AA3134D3E250041B7A5 /* interactive_lyrics_iPad.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
