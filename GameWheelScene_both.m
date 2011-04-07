@@ -76,7 +76,7 @@
 	NSBundle *bundle = [NSBundle mainBundle];
 	if (bundle) 
 	{
-		NSString *moviePath = [bundle pathForResource:@"Puntos_iPad-H.264" ofType:@"mov"];
+		NSString *moviePath = [bundle pathForResource:@"Puntos_iPad" ofType:@"mov"];
 		if (moviePath)
 		{
 			url = [NSURL fileURLWithPath:moviePath];
@@ -97,10 +97,16 @@
 	
 	[finishVideo play];
 	
+	[self runAction:[CCSequence actions:[CCDelayTime actionWithDuration:3],[CCCallFunc actionWithTarget:self selector:@selector(showBashoStillImage)],nil]];
+
+	
+}
+
+-(void)showBashoStillImage
+{
 	CCSprite * back = [CCSprite spriteWithFile:@"PuntosEndFrame_iPad.png"];
 	[back setPosition:ccp(512,384)];
 	[self addChild:back z:20];
-	
 }
 
 -(void) finishVideoDidFinishPlaying: (NSNotification*)aNotification
@@ -130,9 +136,9 @@
 	}
 	
 	CCAnimation * gloopAnimation = [CCAnimation animationWithFrames:gloopFrames delay:0.05f];
-	[gloopbackground runAction:[CCSequence actions:[CCAnimate actionWithAnimation:gloopAnimation restoreOriginalFrame:NO],[CCCallFunc actionWithTarget:self selector:@selector(addDinoPoints)],nil]];
+	[gloopbackground runAction:[CCSequence actions:[CCAnimate actionWithAnimation:gloopAnimation restoreOriginalFrame:NO],[CCDelayTime actionWithDuration:2],[CCCallFunc actionWithTarget:self selector:@selector(addDinoPoints)],nil]];
 	
-	
+	[[SimpleAudioEngine sharedEngine] playEffect:@"pointsaudiosting.mp3"];
 	
 }
 
@@ -381,7 +387,7 @@
 			if([bashoSelectedItems count]==0)
 			{
 				[[GameManager sharedGameManager] unlockGame:3];
-				[self showPoints];
+				[self runAction:[CCSequence actions:[CCDelayTime actionWithDuration:1],[CCCallFunc actionWithTarget:self selector:@selector(showPoints)],nil]];
 			}else
 				[self runAction:[CCSequence actions:[CCDelayTime actionWithDuration:1],[CCCallFunc actionWithTarget:self selector:@selector(selectItemForBasho)],nil]];
 			
