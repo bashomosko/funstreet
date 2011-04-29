@@ -447,6 +447,7 @@
 		10AA0B8A1307167900D11E6B /* mm_wheel_btn_dwn_iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 10AA0B7E1307167900D11E6B /* mm_wheel_btn_dwn_iPad.png */; };
 		10AA0B8B1307167900D11E6B /* mm_wheel_btn_iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 10AA0B7F1307167900D11E6B /* mm_wheel_btn_iPad.png */; };
 		10AA0B971307181700D11E6B /* GameWheelScene_iPad.m in Sources */ = {isa = PBXBuildFile; fileRef = 10AA0B961307181700D11E6B /* GameWheelScene_iPad.m */; };
+		10B0A46A136AF4DD00A027F4 /* README.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 10B0A469136AF4DD00A027F4 /* README.rtf */; };
 		10B32807131D584D0014A77D /* wheel_home.png in Resources */ = {isa = PBXBuildFile; fileRef = 10B32806131D584D0014A77D /* wheel_home.png */; };
 		10B3297C131D87CB0014A77D /* GameManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 10B3297B131D87CB0014A77D /* GameManager.m */; };
 		10B329E4131D97CD0014A77D /* wheel_background-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 10B32803131D58330014A77D /* wheel_background-hd.png */; };
@@ -1107,6 +1108,7 @@
 		10AA0B7F1307167900D11E6B /* mm_wheel_btn_iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mm_wheel_btn_iPad.png; sourceTree = "<group>"; };
 		10AA0B951307181700D11E6B /* GameWheelScene_iPad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameWheelScene_iPad.h; sourceTree = "<group>"; };
 		10AA0B961307181700D11E6B /* GameWheelScene_iPad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameWheelScene_iPad.m; sourceTree = "<group>"; };
+		10B0A469136AF4DD00A027F4 /* README.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = README.rtf; sourceTree = "<group>"; };
 		10B32803131D58330014A77D /* wheel_background-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "wheel_background-hd.png"; sourceTree = "<group>"; };
 		10B32804131D58330014A77D /* wheel_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wheel_background.png; sourceTree = "<group>"; };
 		10B32805131D58330014A77D /* wheel_dino.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wheel_dino.png; sourceTree = "<group>"; };
@@ -2184,6 +2186,7 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				10B0A469136AF4DD00A027F4 /* README.rtf */,
 				10A08DC913215DA3003F24AD /* Config.h */,
 				10AA080913070E0300D11E6B /* cocos2d Sources */,
 				2860E32A111B888700E27156 /* iPad */,
@@ -2678,6 +2681,7 @@
 				10EE6C29134DFA050041B7A5 /* 38.mp3 in Resources */,
 				10EE6C2A134DFA050041B7A5 /* 39.mp3 in Resources */,
 				10EE6C2B134DFA050041B7A5 /* 40.mp3 in Resources */,
+				10B0A46A136AF4DD00A027F4 /* README.rtf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
