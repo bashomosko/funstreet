@@ -93,6 +93,16 @@
 	
 	MPMoviePlayerController * introVideo;
 	MPMoviePlayerController * finishVideo;
+    
+    float forceApplied;
+    CGPoint initPoint;
+    BOOL fromMovement;
+    float actualAngle;
+    float initialAngle;
+    BOOL isDragging;
+    float time;
+    float friction;
+    BOOL clockWise;
 	
 }
 

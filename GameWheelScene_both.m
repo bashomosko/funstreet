@@ -435,13 +435,6 @@
 	}
 }
 
--(void)ccTouchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
-{
-	UITouch *touch = [touches anyObject];
-	if (bashoDirected) return;
-	
-	[self makeDinoSpin2:-1];
-}
 
 -(void)makeDinoSpin:(CCMenuItemImage *)btn
 {
@@ -476,6 +469,38 @@
 
 -(void)stopSpinning
 {
+    float offset = 22.5;
+    float angle = dino.rotation;
+    int loops = 0;
+    
+    float realDinoAngle = 0;
+    if(angle >= 0)
+    {
+        loops = (int)floor(angle / 360);
+        realDinoAngle = angle - (loops * 360);
+    }else
+    {
+        loops = (int)ceil(angle / 360);
+        realDinoAngle = 360 + (angle - (loops * 360));
+    }
+    NSLog(@"realAngle %.2f",realDinoAngle);
+    if((realDinoAngle >0 && realDinoAngle <=offset) || (realDinoAngle<360 && realDinoAngle >360-offset))
+        selectedSound =0;
+    else if(realDinoAngle >45-offset && realDinoAngle <=90-offset)
+        selectedSound =1;
+    if(realDinoAngle >90-offset && realDinoAngle <=135-offset)
+        selectedSound =2;
+    if(realDinoAngle >135-offset && realDinoAngle <=180-offset)
+        selectedSound =3;
+    if(realDinoAngle >180-offset && realDinoAngle <=225-offset)
+        selectedSound =4;
+    if(realDinoAngle >225-offset && realDinoAngle <=270-offset)
+        selectedSound =5;
+    if(realDinoAngle >270-offset && realDinoAngle <=315-offset)
+        selectedSound =6;
+    if(realDinoAngle >315-offset && realDinoAngle <=360-offset)
+        selectedSound =7;
+    
 	dinoSpinning = NO;
 	[self listenSound:[tapButtons getChildByTag:selectedSound]];
 	
@@ -484,6 +509,181 @@
 -(void)goBack
 {
 	[viewController goToMenu];
+}
+
+-(void)ccTouchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
+{
+	UITouch *touch = [touches anyObject];
+    CGPoint location = [touch locationInView: [touch view]];
+    location = [[CCDirector sharedDirector] convertToGL: location];	
+	if (bashoDirected) return;
+    if(dinoSpinning) return;
+    
+	dinoSpinning = YES;
+	//[self makeDinoSpin2:-1];
+    [self schedule:@selector(updateTime) interval:0.3];
+    
+	forceApplied=0;
+	initPoint=location;
+	
+	fromMovement=YES;
+	
+	actualAngle = CC_RADIANS_TO_DEGREES(-(atan2(location.y-dino.position.y,location.x-dino.position.x)));
+	
+	initialAngle=0;
+	
+	isDragging=YES;
+}
+
+/*- (void)ccTouchesMoved:(UITouch *)touches withEvent:(UIEvent *)event
+{
+	[dino stopAllActions];
+	
+	UITouch *touch = [touches anyObject];
+    CGPoint location = [touch locationInView: [touch view]];
+    location = [[CCDirector sharedDirector] convertToGL: location];	
+	
+	float angle = CC_RADIANS_TO_DEGREES(-(atan2(location.y - dino.position.y, location.x - dino.position.x)));
+	
+	isDragging=YES;
+	
+	dino.rotation =dino.rotation - (actualAngle-angle);
+	
+	actualAngle = angle;
+	
+}*/
+
+- (void)ccTouchesEnded:(UITouch *)touches withEvent:(UIEvent *)event
+{		
+	UITouch *touch = [touches anyObject];
+    CGPoint location = [touch locationInView: [touch view]];
+    location = [[CCDirector sharedDirector] convertToGL: location];	
+	
+	isDragging=NO;
+	
+	float distance = abs((initPoint.x-location.x) + (initPoint.y-location.y));
+    
+	CGPoint aux = ccpNormalize(ccp(location.x-initPoint.x,location.y-initPoint.y));
+    
+	int dir=0;
+    
+	if (fabsl(aux.x) >= fabsl(aux.y))
+	{
+		if (aux.x>=0) {
+			dir=1;
+		}
+		else {
+			dir=2;
+		}
+	}
+	else {
+		if (aux.y>=0) {
+			dir=3;
+		}
+		else {
+			dir=4;
+		}
+	}
+    
+	if (dir==1)
+	{
+		distance=-distance;
+	}	
+	
+	if ((dir==1||dir==2)&&(initPoint.y>=dino.position.y)) {
+		distance=-distance;
+	}
+	
+	if (dir==3)
+	{
+		distance=-distance;
+	}	
+	
+	if ((dir==3||dir==4)&&(initPoint.x<=dino.position.x)) {
+		distance=-distance;
+	}
+	
+	if (abs(forceApplied)<5000&&time==0) {
+		
+		if (abs(forceApplied)<abs(forceApplied + (distance*10))&&abs(distance)>10) {
+			//[[PhantomAppDelegate get] playSound:@"fizz.caf"];
+		}
+		
+		forceApplied = forceApplied + (distance*20);
+		
+	}
+	
+	[self unschedule:@selector(updateTime)];
+	time=0;
+	
+}
+
+
+- (void)update:(ccTime)dt
+{
+    float prevForceApplied = forceApplied;
+
+	if (forceApplied==0) {
+		return;
+	}
+	
+	if (forceApplied>0) {
+		forceApplied=forceApplied-friction;
+		
+		if (forceApplied==0&&fromMovement) {
+			forceApplied=forceApplied-800;
+			fromMovement=NO;
+		}
+	}
+	else {
+		forceApplied=forceApplied+friction;
+		
+		if (forceApplied==0&&fromMovement) {
+			forceApplied=forceApplied+800;
+			fromMovement=NO;
+		}
+	}	
+	
+	dino.rotation=dino.rotation+(0.001*forceApplied);
+	
+    if(prevForceApplied >0 && forceApplied <0 || prevForceApplied<0 && forceApplied >0)
+    {
+        forceApplied = 0;
+        NSLog(@"stopped at %.2f !",dino.rotation);
+    
+        [self stopSpinning];
+    }
+}
+
+
+
+-(void)loadSpinningStuff
+{
+    friction=0;
+    
+    time=0;
+    
+    isDragging=NO;
+    
+    forceApplied=0;
+    clockWise=YES;
+    
+    fromMovement=YES;
+    
+    [self schedule:@selector(startFriction) interval:2];
+    
+    [self scheduleUpdate];
+    
+
+}
+
+-(void)startFriction {
+	[self unschedule:@selector(startFriction)];
+	friction=200;
+}
+
+-(void)updateTime {
+	time++;
 }
 
 - (void) dealloc

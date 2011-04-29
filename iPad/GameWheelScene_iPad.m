@@ -86,6 +86,7 @@
 			[self loadScore];
 			[self loadButtons];
 			[self createPalabra];
+            [self loadSpinningStuff];
 			
 		}
 		return self;
