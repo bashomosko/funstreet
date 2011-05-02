@@ -12,6 +12,23 @@
 #import "GameManager.h"
 
 
+@implementation NSMutableArray (Shuffling)
+
+- (void)shuffle
+{
+    
+    NSUInteger count = [self count];
+    for (NSUInteger i = 0; i < count; ++i) {
+        // Select a random element between i and end of array to swap with.
+        int nElements = count - i;
+        int n = (arc4random() % nElements) + i;
+        [self exchangeObjectAtIndex:i withObjectAtIndex:n];
+    }
+}
+
+@end
+
+
 @implementation GameWheelScene_both
 
 -(void)loadDeviceType
@@ -229,35 +246,10 @@
 	
 	int indexBashoSelectedSound = arc4random() %[bashoSelectedItems count];
 	bashoSelectedSound = [[bashoSelectedItems objectAtIndex:indexBashoSelectedSound] intValue];
+    NSString * sound = [NSString stringWithFormat:@"wheel_snd_%@_where.mp3",[[buttonsData objectAtIndex:bashoSelectedSound] objectForKey:@"image"]];
 	[bashoSelectedItems removeObjectAtIndex:indexBashoSelectedSound];
-	NSString * sound = nil;
-	switch (bashoSelectedSound)
-	{
-		case BTN_BACKPACK_NUM:
-			sound =BTN_BACKPACK_SND_WHERE;
-			break;
-		case BTN_BOOTS_NUM:
-			sound =BTN_BOOTS_SND_WHERE;
-			break;
-		case BTN_HAT_NUM:
-			sound =BTN_HAT_SND_WHERE;
-			break;
-		case BTN_PHONE_NUM:
-			sound =BTN_PHONE_SND_WHERE;
-			break;
-		case BTN_JACKET_NUM:
-			sound =BTN_JACKET_SND_WHERE;
-			break;
-		case BTN_NECKLACE_NUM:
-			sound =BTN_NECKLACE_SND_WHERE;
-			break;
-		case BTN_PANTS_NUM:
-			sound =BTN_PANTS_SND_WHERE;
-			break;
-		case BTN_SUNGLASSES_NUM:
-			sound =BTN_SUNGLASSES_SND_WHERE;
-			break;
-	}
+    
+    
 	if([GameManager sharedGameManager].soundsEnabled)
 		[[SimpleAudioEngine sharedEngine] playEffect:sound];
 }
@@ -276,7 +268,7 @@
 {
 	bashoSelectedItems = [[NSMutableArray array]retain];
 		
-	NSMutableArray * btnImgs = [NSMutableArray arrayWithCapacity:8];
+	/*NSMutableArray * btnImgs = [NSMutableArray arrayWithCapacity:8];
 	[btnImgs addObject:BTN_BACKPACK];
 	[btnImgs addObject:BTN_BOOTS];
 	[btnImgs addObject:BTN_HAT];
@@ -285,20 +277,26 @@
 	[btnImgs addObject:BTN_NECKLACE];
 	[btnImgs addObject:BTN_PANTS];
 	[btnImgs addObject:BTN_SUNGLASSES];
-	
+	*/
 	
 	NSMutableArray * btnPos = [self loadBtnPos];
 	
+    NSString *filePath = [[NSBundle mainBundle] pathForResource:@"WheelItems" ofType:@"plist"];
+	buttonsData = [[[NSMutableDictionary dictionaryWithContentsOfFile:filePath]objectForKey:@"items"]retain];
+    
+    [buttonsData shuffle];
 	
 	tapButtons = [CCMenu menuWithItems:nil];
 	for (int i = 0;i<8;i++)
 	{
-		NSString * btnImg = [NSString stringWithFormat:@"wheel_btn_%@%@.png",[btnImgs objectAtIndex:i],iPad];
-		NSString * btnImgSel = [NSString stringWithFormat:@"wheel_btn_%@_dwn%@.png",[btnImgs objectAtIndex:i],iPad];
+        NSString * btnName = [[buttonsData objectAtIndex:i] objectForKey:@"image"];
+		NSString * btnImg = [NSString stringWithFormat:@"wheel_btn_%@%@.png",btnName,iPad];
+		NSString * btnImgSel = [NSString stringWithFormat:@"wheel_btn_%@_dwn%@.png",btnName,iPad];
 		
 		CCMenuItemImage * btn = [CCMenuItemImage itemFromNormalImage:btnImg selectedImage:btnImgSel disabledImage:btnImgSel target:self selector:@selector(makeDinoSpin:)];
 		[tapButtons addChild:btn z:1 tag:i];
 		btn.position = ccp([[[btnPos objectAtIndex:i] objectForKey:@"x"] intValue],[[[btnPos objectAtIndex:i] objectForKey:@"y"] intValue]);
+        btn.userData = [buttonsData objectAtIndex:i];
 	}
 	[self addChild:tapButtons];
 	[tapButtons setPosition:ccp(0,0)];
@@ -316,50 +314,13 @@
 	NSString * sound = nil;
 	
 	playingSound = YES;
-	[self runAction:[CCSequence actions:[CCDelayTime actionWithDuration:1],[CCCallFunc actionWithTarget:self selector:@selector(stopPlayingSound)],nil]];
-	switch (btn.tag)
-	{
-		case BTN_BACKPACK_NUM:
-			word = BTN_BACKPACK_SPANISH;
-			sound =BTN_BACKPACK_SND;
-			bashoDirectedWrongSound = BTN_BACKPACK_SND_WRONG;
-			break;
-		case BTN_BOOTS_NUM:
-			word = BTN_BOOTS_SPANISH;
-			sound =BTN_BOOTS_SND;
-			bashoDirectedWrongSound = BTN_BOOTS_SND_WRONG;
-			break;
-		case BTN_HAT_NUM:
-			word = BTN_HAT_SPANISH;
-			sound =BTN_HAT_SND;
-			bashoDirectedWrongSound = BTN_HAT_SND_WRONG;
-			break;
-		case BTN_PHONE_NUM:
-			word = BTN_PHONE_SPANISH;
-			sound =BTN_PHONE_SND;
-			bashoDirectedWrongSound = BTN_PHONE_SND_WRONG;
-			break;
-		case BTN_JACKET_NUM:
-			word = BTN_JACKET_SPANISH;
-			sound =BTN_JACKET_SND;
-			bashoDirectedWrongSound = BTN_JACKET_SND_WRONG;
-			break;
-		case BTN_NECKLACE_NUM:
-			word = BTN_NECKLACE_SPANISH;
-			sound =BTN_NECKLACE_SND;
-			bashoDirectedWrongSound = BTN_NECKLACE_SND_WRONG;
-			break;
-		case BTN_PANTS_NUM:
-			word = BTN_PANTS_SPANISH;
-			sound =BTN_PANTS_SND;
-			bashoDirectedWrongSound = BTN_PANTS_SND_WRONG;
-			break;
-		case BTN_SUNGLASSES_NUM:
-			word = BTN_SUNGLASSES_SPANISH;
-			sound =BTN_SUNGLASSES_SND;
-			bashoDirectedWrongSound = BTN_SUNGLASSES_SND_WRONG;
-			break;
-	}
+	[self runAction:[CCSequence actions:[CCDelayTime actionWithDuration:2.5],[CCCallFunc actionWithTarget:self selector:@selector(stopPlayingSound)],nil]];
+   
+    NSMutableDictionary * userData = (NSMutableDictionary *)btn.userData;
+    word =[NSMutableString stringWithFormat:@"%@",[userData objectForKey:@"espText"]];
+    bashoDirectedWrongSound =[NSMutableString stringWithFormat:@"wheel_snd_%@_wrong.mp3",[userData objectForKey:@"image"]];
+    sound =[NSMutableString stringWithFormat:@"wheel_snd_%@.mp3",[userData objectForKey:@"image"]];
+    
 	if(!bashoDirected)
 	{
 		if([GameManager sharedGameManager].soundsEnabled)
@@ -413,6 +374,8 @@
 	CCLabelTTF * palabra = [self getChildByTag:kPALABRA];
 	[palabra setString:word];
 	[palabra runAction:[CCFadeIn actionWithDuration:0.8]];
+    CCSprite * palabraBck = [self getChildByTag:kPALABRABCK];
+	[palabraBck runAction:[CCFadeIn actionWithDuration:0.8]];
 }
 
 -(void)stopPlayingSound
@@ -427,6 +390,8 @@
 	}
 	CCLabelTTF * palabra = [self getChildByTag:kPALABRA];
 	[palabra setOpacity:0];
+    CCSprite * palabraBck = [self getChildByTag:kPALABRABCK];
+	[palabraBck setOpacity:0];
 	
 	if(currentAttempts >=5)
 	{
@@ -511,12 +476,17 @@
 	[viewController goToMenu];
 }
 
+-(void)goSettings
+{
+    
+}
+
 -(void)ccTouchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
 {
 	UITouch *touch = [touches anyObject];
     CGPoint location = [touch locationInView: [touch view]];
     location = [[CCDirector sharedDirector] convertToGL: location];	
-	if (bashoDirected) return;
+	//if (bashoDirected) return;
     if(dinoSpinning) return;
     
 	dinoSpinning = YES;
@@ -694,6 +664,7 @@
 	
 	// don't forget to call "super dealloc"
 	[bashoSelectedItems release];
+    [buttonsData release];
 	[super dealloc];
 }
 

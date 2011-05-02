@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>items</key>
+	<array>
+		<dict>
+			<key>image</key>
+			<string>jacket</string>
+			<key>espText</key>
+			<string>Chaqueta</string>
+		</dict>
+		<dict>
+			<key>espText</key>
+			<string>Gorra</string>
+			<key>image</key>
+			<string>hat</string>
+		</dict>
+		<dict>
+			<key>espText</key>
+			<string>Pantalones</string>
+			<key>image</key>
+			<string>pants</string>
+		</dict>
+		<dict>
+			<key>espText</key>
+			<string>Anteojos</string>
+			<key>image</key>
+			<string>sunglasses</string>
+		</dict>
+		<dict>
+			<key>espText</key>
+			<string>Botas</string>
+			<key>image</key>
+			<string>boots</string>
+		</dict>
+		<dict>
+			<key>espText</key>
+			<string>Mochila</string>
+			<key>image</key>
+			<string>backpack</string>
+		</dict>
+		<dict>
+			<key>espText</key>
+			<string>Collar</string>
+			<key>image</key>
+			<string>necklace</string>
+		</dict>
+		<dict>
+			<key>espText</key>
+			<string>Telefono</string>
+			<key>image</key>
+			<string>phone</string>
+		</dict>
+	</array>
+</dict>
+</plist>

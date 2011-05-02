@@ -66,6 +66,8 @@
 			[self addChild:dino];
 			
 			CCMenuItemImage * backBtn = [CCMenuItemImage itemFromNormalImage:@"wheel_home_iPad.png" selectedImage:@"wheel_home_iPad.png" target:self selector:@selector(goBack)];
+            
+            CCMenuItemImage * settingsBtn = [CCMenuItemImage itemFromNormalImage:@"wheel_settings_iPad.png" selectedImage:@"wheel_settings_iPad.png" target:self selector:@selector(goSettings)];
 			
 			CCMenuItemImage * soundOff = [CCMenuItemImage itemFromNormalImage:@"wheel_sound_off_iPad.png" selectedImage:@"wheel_sound_on_iPad.png"];
 			CCMenuItemImage * soundOn = [CCMenuItemImage itemFromNormalImage:@"wheel_sound_on_iPad.png" selectedImage:@"wheel_sound_off_iPad.png"];
@@ -76,11 +78,12 @@
 			CCMenuItemToggle * basho = [CCMenuItemToggle itemWithTarget:self selector:@selector(turnBasho) items:bashoOff,bashoOn,nil];
 			
 			
-			CCMenu * menu = [CCMenu menuWithItems:backBtn,sound,basho,nil];
+			CCMenu * menu = [CCMenu menuWithItems:backBtn,sound,basho,settingsBtn,nil];
 			[self addChild:menu];
 			[backBtn setPosition:ccp(64,696)];
-			[sound setPosition:ccp(43,48)];
-			[basho setPosition:ccp(149,72)];
+            [settingsBtn setPosition:ccp(50,48)];
+			[sound setPosition:ccp(50,120)];
+			[basho setPosition:ccp(50,200)];
 			[menu setPosition:ccp(0,0)];
 			
 			[self loadScore];
@@ -103,10 +106,14 @@
 
 -(void)createPalabra
 {
+    CCSprite * palabraBck = [CCSprite spriteWithFile:@"wheel_wordbackground_iPad.png"];
+    [self addChild:palabraBck z:1 tag:kPALABRABCK];
+    [palabraBck setPosition:ccp(870,60)];
+	[palabraBck setOpacity:0];
 	CCLabelTTF * palabra = [CCLabelTTF labelWithString:@"MOCHILA" fontName:@"Verdana" fontSize:40];
 	[palabra setColor:ccBLACK];
 	[self addChild:palabra z:1 tag:kPALABRA];
-	[palabra setPosition:ccp(895,48)];
+	[palabra setPosition:ccp(870,60)];
 	[palabra setOpacity:0];
 }
 
