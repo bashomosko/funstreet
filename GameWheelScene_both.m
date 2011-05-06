@@ -198,7 +198,7 @@
 {
 	bashoDirected = !bashoDirected;
 	
-	[self makeScoreAppear:bashoDirected];
+	//[self makeScoreAppear:bashoDirected];
 	if(bashoDirected)
 	{
 		points = 0;

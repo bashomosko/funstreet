@@ -26,12 +26,13 @@
 }
 */
 
-/*
+
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [scroll setContentSize:CGSizeMake(2048,768)];
 }
-*/
+
 
 
 // Override to allow orientations other than the default portrait orientation.

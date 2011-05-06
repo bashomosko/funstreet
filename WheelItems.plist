@@ -5,52 +5,52 @@
 	<key>items</key>
 	<array>
 		<dict>
-			<key>image</key>
-			<string>jacket</string>
 			<key>espText</key>
-			<string>Chaqueta</string>
+			<string>Cerdo</string>
+			<key>image</key>
+			<string>pig</string>
 		</dict>
 		<dict>
 			<key>espText</key>
-			<string>Gorra</string>
+			<string>Vaca</string>
 			<key>image</key>
-			<string>hat</string>
+			<string>cow</string>
 		</dict>
 		<dict>
 			<key>espText</key>
-			<string>Pantalones</string>
+			<string>Abeja</string>
 			<key>image</key>
-			<string>pants</string>
+			<string>bee</string>
 		</dict>
 		<dict>
 			<key>espText</key>
-			<string>Anteojos</string>
+			<string>Pato</string>
 			<key>image</key>
-			<string>sunglasses</string>
+			<string>duck</string>
 		</dict>
 		<dict>
 			<key>espText</key>
-			<string>Botas</string>
+			<string>Perro</string>
 			<key>image</key>
-			<string>boots</string>
+			<string>dog</string>
 		</dict>
 		<dict>
 			<key>espText</key>
-			<string>Mochila</string>
+			<string>Gallina</string>
 			<key>image</key>
-			<string>backpack</string>
+			<string>chicken</string>
 		</dict>
 		<dict>
 			<key>espText</key>
-			<string>Collar</string>
+			<string>Gato</string>
 			<key>image</key>
-			<string>necklace</string>
+			<string>cat</string>
 		</dict>
 		<dict>
 			<key>espText</key>
-			<string>Telefono</string>
+			<string>Caballo</string>
 			<key>image</key>
-			<string>phone</string>
+			<string>horse</string>
 		</dict>
 	</array>
 </dict>

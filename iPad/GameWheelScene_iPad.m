@@ -86,7 +86,7 @@
 			[basho setPosition:ccp(50,200)];
 			[menu setPosition:ccp(0,0)];
 			
-			[self loadScore];
+			//[self loadScore];
 			[self loadButtons];
 			[self createPalabra];
             [self loadSpinningStuff];
@@ -110,9 +110,8 @@
     [self addChild:palabraBck z:1 tag:kPALABRABCK];
     [palabraBck setPosition:ccp(870,60)];
 	[palabraBck setOpacity:0];
-	CCLabelTTF * palabra = [CCLabelTTF labelWithString:@"MOCHILA" fontName:@"Verdana" fontSize:40];
-	[palabra setColor:ccBLACK];
-	[self addChild:palabra z:1 tag:kPALABRA];
+	CCLabelTTF * palabra = [CCLabelBMFont labelWithString:@"a" fntFile:@"Wheel_text_iPad.fnt"];
+    [self addChild:palabra z:1 tag:kPALABRA];
 	[palabra setPosition:ccp(870,60)];
 	[palabra setOpacity:0];
 }
