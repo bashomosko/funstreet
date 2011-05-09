@@ -306,6 +306,7 @@
 {
 	if(playingSound || dinoSpinning) return;
 	
+	GameManager * gm = [GameManager sharedGameManager];
 	
 	[btn setIsEnabled:NO];
 	
@@ -319,7 +320,7 @@
     NSMutableDictionary * userData = (NSMutableDictionary *)btn.userData;
     word =[NSMutableString stringWithFormat:@"%@",[userData objectForKey:@"espText"]];
     bashoDirectedWrongSound =[NSMutableString stringWithFormat:@"wheel_snd_%@_wrong.mp3",[userData objectForKey:@"image"]];
-    sound =[NSMutableString stringWithFormat:@"wheel_snd_%@.mp3",[userData objectForKey:@"image"]];
+    sound =[NSMutableString stringWithFormat:@"wheel_snd_%@_%@.mp3",[userData objectForKey:@"image"],[gm languageString]];
     
 	if(!bashoDirected)
 	{

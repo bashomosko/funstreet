@@ -7,11 +7,11 @@
 //
 
 #import "SettingsViewController_iPad.h"
-
+#import "GameManager.h"
 
 @implementation SettingsViewController_iPad
 
-@synthesize closeBtn,rootVC;
+@synthesize closeBtn,rootVC,language;
 
  // The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
 /*
@@ -24,17 +24,28 @@
 }
 */
 
-/*
+
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
+	
+	GameManager * gm = [GameManager sharedGameManager];
+	[language setSelectedSegmentIndex:gm.language];
+	
     [super viewDidLoad];
 }
-*/
+
 
 
 -(IBAction) closeView
 {
 	[rootVC removeSettings];
+}
+
+
+-(IBAction) changeLanguage:(UISegmentedControl *)sender
+{
+	GameManager * gm = [GameManager sharedGameManager];
+	[gm setLanguage:sender.selectedSegmentIndex];
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
@@ -59,6 +70,7 @@
 
 
 - (void)dealloc {
+	[language release];
 	[closeBtn release];
     [super dealloc];
 }
