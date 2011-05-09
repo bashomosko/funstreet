@@ -11,7 +11,6 @@
 #import "GameWheel_iPad.h"
 #import "GameDress_iPad.h"
 #import "GameVideo_iPad.h"
-#import "InteractiveSong_iPad.h"
 
 @implementation MainMenu_iPad
 
@@ -44,22 +43,6 @@
 	return NO;
 }
 
--(void)loadSong
-{
-	[self.view removeFromSuperview];
-	[self release];
-	
-	InteractiveSong_iPad * gw = [[InteractiveSong_iPad alloc] 
-						   initWithNibName:@"InteractiveSong_iPad" bundle:nil];
-	[gw.view setAlpha:0];
-	AppDelegate_iPad * app = (AppDelegate_iPad *)[[UIApplication sharedApplication] delegate];
-	UIWindow * w = app.window;
-	[w addSubview:gw.view];
-	
-	[UIView beginAnimations:nil context:nil];
-	[gw.view setAlpha:1];
-	[UIView commitAnimations];
-}
 
 -(void)loadWheel
 {
