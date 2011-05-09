@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import <MediaPlayer/MediaPlayer.h>
 
 @interface MainMenu_both : UIViewController {
 	
@@ -18,6 +18,9 @@
     IBOutlet UIScrollView * scroll;
     IBOutlet UIImageView * door1;
     IBOutlet UIImageView * door2;
+	
+	MPMoviePlayerController * introVideo;
+
 }
 
 @property (nonatomic,retain) IBOutlet UIButton * btnSong;
@@ -32,5 +35,6 @@
 -(IBAction) goToWheel:(id)sender;
 -(IBAction) goToDress:(id)sender;
 -(IBAction) goToVideo:(id)sender;
+-(IBAction) goToSettings;
 
 @end

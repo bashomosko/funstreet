@@ -35,8 +35,51 @@
     
     
     [self animateDoors];
+	//[self playVideo];
     [super viewDidLoad];
+	
 }
+
+
+-(void)playVideo
+{
+	NSURL * url;
+	NSBundle *bundle = [NSBundle mainBundle];
+	if (bundle) 
+	{
+		NSString *moviePath = [bundle pathForResource:@"menu_iPad" ofType:@"mov"];
+		if (moviePath)
+		{
+			url = [NSURL fileURLWithPath:moviePath];
+		}
+	}
+	
+	introVideo = [[MPMoviePlayerController alloc] initWithContentURL:url];
+	[self.view addSubview:introVideo.view];
+	[introVideo.view setFrame:CGRectMake(0,0,1024,768)];
+	[introVideo setControlStyle:MPMovieControlStyleNone];
+	
+	[[NSNotificationCenter defaultCenter]
+	 addObserver:self
+	 selector:@selector(videoPlayerDidFinishPlaying:)
+	 name:MPMoviePlayerPlaybackDidFinishNotification
+	 object:introVideo];
+	
+	
+	[introVideo play];
+}
+
+-(void) videoPlayerDidFinishPlaying: (NSNotification*)aNotification
+{
+	MPMoviePlayerController * introVideo = [aNotification object];
+	[[NSNotificationCenter defaultCenter] removeObserver:self name:MPMoviePlayerPlaybackDidFinishNotification object:introVideo];
+	[introVideo stop];
+	[introVideo.view removeFromSuperview];
+	[introVideo release];
+	
+	//[self beginGame];
+}
+
 
 -(void)animateDoors
 {

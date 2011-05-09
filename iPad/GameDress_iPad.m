@@ -66,7 +66,7 @@
 	//[self removeStartupFlicker];
 	
 	// Run the intro Scene
-	[[CCDirector sharedDirector] runWithScene: [GameDressScene_iPad sceneWithDressVC:self bashoDirected:NO]];	
+	[[CCDirector sharedDirector] runWithScene: [GameDressScene_iPad sceneWithDressVC:self bashoDirected:NO playVid:YES]];	
 }
 
 - (void) removeStartupFlicker

@@ -8,9 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
+#import "SettingsViewController_iPad.h"
+
 
 @interface GameWheel_iPad : UIViewController {
 
+	SettingsViewController_iPad * sv;
 }
 
 @end

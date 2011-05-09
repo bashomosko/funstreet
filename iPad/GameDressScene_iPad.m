@@ -15,20 +15,20 @@
 
 @synthesize placingElement,colorNeeded,itemNeeded,bashoDirected;
 
-+(id) sceneWithDressVC:(GameDress_iPad *)vc bashoDirected:(BOOL)_bashoDirected
++(id) sceneWithDressVC:(GameDress_iPad *)vc bashoDirected:(BOOL)_bashoDirected playVid:(BOOL)playVid
 {
     CCScene *scene = [CCScene node];
-    GameDressScene_iPad *layer = [GameDressScene_iPad nodeWithDressVC:vc bashoDirected:_bashoDirected];
+    GameDressScene_iPad *layer = [GameDressScene_iPad nodeWithDressVC:vc bashoDirected:_bashoDirected playVid:playVid];
     [scene addChild: layer];
     return scene;
 }
 
-+(id) nodeWithDressVC:(GameDress_iPad *)vc bashoDirected:(BOOL)_bashoDirected
++(id) nodeWithDressVC:(GameDress_iPad *)vc bashoDirected:(BOOL)_bashoDirected playVid:(BOOL)playVid
 {
-	return [[[self alloc] initWithDressVC:vc bashoDirected:_bashoDirected] autorelease];
+	return [[[self alloc] initWithDressVC:vc bashoDirected:_bashoDirected playVid:playVid] autorelease];
 }
 
--(id) initWithDressVC:(GameDress_iPad *)vc bashoDirected:(BOOL)_bashoDirected
+-(id) initWithDressVC:(GameDress_iPad *)vc bashoDirected:(BOOL)_bashoDirected playVid:(BOOL)playVid
 {
 	if( (self=[super init] )) {
 		self.isTouchEnabled = YES;
@@ -37,8 +37,10 @@
 		bashoDirected = _bashoDirected;
 		viewController = vc;
 		
-		//[self loadVideo];
-		[self beginGame];
+		if(playVid)
+			[self loadVideo];
+		else
+			[self beginGame];
 	}
 	return self;
 	
@@ -63,7 +65,7 @@
 	NSBundle *bundle = [NSBundle mainBundle];
 	if (bundle) 
 	{
-		NSString *moviePath = [bundle pathForResource:@"ARG" ofType:@"mp4"];
+		NSString *moviePath = [bundle pathForResource:@"intro_2_iPad" ofType:@"mov"];
 		if (moviePath)
 		{
 			url = [NSURL fileURLWithPath:moviePath];
@@ -205,7 +207,7 @@
 
 -(void)replay
 {
-	[[CCDirector sharedDirector] replaceScene:[CCTransitionFade transitionWithDuration:0.5 scene: [GameDressScene_iPad sceneWithDressVC:viewController bashoDirected:YES] withColor:ccWHITE]];
+	[[CCDirector sharedDirector] replaceScene:[CCTransitionFade transitionWithDuration:0.5 scene: [GameDressScene_iPad sceneWithDressVC:viewController bashoDirected:YES playVid:NO] withColor:ccWHITE]];
 	
 }
 
@@ -298,7 +300,7 @@
 {
 	bashoDirected = !bashoDirected;
 	
-	[[CCDirector sharedDirector] replaceScene:[CCTransitionFade transitionWithDuration:0.5 scene: [GameDressScene_iPad sceneWithDressVC:viewController bashoDirected:bashoDirected] withColor:ccWHITE]];
+	[[CCDirector sharedDirector] replaceScene:[CCTransitionFade transitionWithDuration:0.5 scene: [GameDressScene_iPad sceneWithDressVC:viewController bashoDirected:bashoDirected playVid:NO] withColor:ccWHITE]];
 	
 }
 
@@ -588,7 +590,7 @@
 
 -(void)onShake
 {
-	[[CCDirector sharedDirector] replaceScene:[CCTransitionFade transitionWithDuration:0.5 scene: [GameDressScene_iPad sceneWithDressVC:viewController bashoDirected:bashoDirected] withColor:ccWHITE]];
+	[[CCDirector sharedDirector] replaceScene:[CCTransitionFade transitionWithDuration:0.5 scene: [GameDressScene_iPad sceneWithDressVC:viewController bashoDirected:bashoDirected playVid:NO] withColor:ccWHITE]];
 
 }
 

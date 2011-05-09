@@ -112,6 +112,19 @@
 	[UIView commitAnimations];
 }
 
+-(IBAction)goToSettings
+{
+	sv = [[SettingsViewController_iPad alloc] initWithNibName:@"SettingsViewController_iPad" bundle:nil];
+	sv.rootVC = self;
+	
+	[self.view addSubview:sv.view];
+}
+
+-(void)removeSettings
+{
+	[sv.view removeFromSuperview];
+	[sv release];
+}
 
 - (void)didReceiveMemoryWarning {
     // Releases the view if it doesn't have a superview.

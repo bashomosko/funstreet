@@ -53,7 +53,7 @@
 	NSBundle *bundle = [NSBundle mainBundle];
 	if (bundle) 
 	{
-		NSString *moviePath = [bundle pathForResource:@"ARG" ofType:@"mp4"];
+		NSString *moviePath = [bundle pathForResource:@"intro_1_iPad" ofType:@"mov"];
 		if (moviePath)
 		{
 			url = [NSURL fileURLWithPath:moviePath];
@@ -478,7 +478,7 @@
 
 -(void)goSettings
 {
-    
+    [viewController goToSettings];
 }
 
 -(void)ccTouchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
@@ -616,7 +616,7 @@
 	
 	dino.rotation=dino.rotation+(0.001*forceApplied);
 	
-    if(prevForceApplied >0 && forceApplied <0 || prevForceApplied<0 && forceApplied >0)
+    if((prevForceApplied >0 && forceApplied <0) || (prevForceApplied<0 && forceApplied >0))
     {
         forceApplied = 0;
         NSLog(@"stopped at %.2f !",dino.rotation);
@@ -625,7 +625,10 @@
     }
 }
 
-
+-(void)pushLever
+{
+	forceApplied = 13800 + arc4random() % 6000;;
+}
 
 -(void)loadSpinningStuff
 {
@@ -649,7 +652,7 @@
 
 -(void)startFriction {
 	[self unschedule:@selector(startFriction)];
-	friction=200;
+	friction=201;
 }
 
 -(void)updateTime {

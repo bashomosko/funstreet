@@ -139,6 +139,20 @@
 	[gw goToDress:nil];
 }
 
+-(void)goToSettings
+{
+	sv = [[SettingsViewController_iPad alloc] initWithNibName:@"SettingsViewController_iPad" bundle:nil];
+	sv.rootVC = self;
+	
+	[[[CCDirector sharedDirector] openGLView] addSubview:sv.view];
+}
+
+-(void)removeSettings
+{
+	[sv.view removeFromSuperview];
+	[sv release];
+}
+
 // Override to allow orientations other than the default portrait orientation.
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
     // Return YES for supported orientations.
