@@ -112,6 +112,8 @@
     
     NSMutableArray * buttonsData;
 	
+	CCSprite * leverImg;
+	
 }
 
 @end

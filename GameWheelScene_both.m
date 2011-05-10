@@ -628,7 +628,16 @@
 
 -(void)pushLever
 {
-	forceApplied = 13800 + arc4random() % 6000;;
+	if(!dinoSpinning)
+	{
+		dinoSpinning = YES;
+		[leverImg runAction:[CCSequence actions:[CCRotateTo actionWithDuration:0.5 angle:25],[CCCallFunc actionWithTarget:self selector:@selector(pushLever2)],[CCRotateTo actionWithDuration:1 angle:-25],nil]];
+	}
+}
+
+-(void)pushLever2
+{
+	forceApplied = 13800 + arc4random() % 6000;
 }
 
 -(void)loadSpinningStuff

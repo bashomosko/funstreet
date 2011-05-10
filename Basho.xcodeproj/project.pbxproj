@@ -112,6 +112,7 @@
 		1051CB3313788DF4002DACDF /* wheel_snd_pig_eng.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1051CB2B13788DF4002DACDF /* wheel_snd_pig_eng.mp3 */; };
 		1051CCA513796A83002DACDF /* dress_iPad.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1051CCA313796A83002DACDF /* dress_iPad.plist */; };
 		1051CCA613796A83002DACDF /* dress_iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 1051CCA413796A83002DACDF /* dress_iPad.png */; };
+		1051CD7D13797DCF002DACDF /* wheel_wheel_iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 1051CD7C13797DCF002DACDF /* wheel_wheel_iPad.png */; };
 		1087E4161372C4BE00C1168F /* Wheel_text_iPad.fnt in Resources */ = {isa = PBXBuildFile; fileRef = 1087E4141372C4BE00C1168F /* Wheel_text_iPad.fnt */; };
 		1087E4171372C4BE00C1168F /* Wheel_text_iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 1087E4151372C4BE00C1168F /* Wheel_text_iPad.png */; };
 		1087E4201372CBF900C1168F /* wheel_snd_bee_where.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1087E4181372CBF900C1168F /* wheel_snd_bee_where.mp3 */; };
@@ -701,6 +702,7 @@
 		1051CB2B13788DF4002DACDF /* wheel_snd_pig_eng.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = wheel_snd_pig_eng.mp3; sourceTree = "<group>"; };
 		1051CCA313796A83002DACDF /* dress_iPad.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = dress_iPad.plist; sourceTree = "<group>"; };
 		1051CCA413796A83002DACDF /* dress_iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dress_iPad.png; sourceTree = "<group>"; };
+		1051CD7C13797DCF002DACDF /* wheel_wheel_iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wheel_wheel_iPad.png; sourceTree = "<group>"; };
 		1087E4141372C4BE00C1168F /* Wheel_text_iPad.fnt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Wheel_text_iPad.fnt; path = iPhone/Wheel_text_iPad.fnt; sourceTree = SOURCE_ROOT; };
 		1087E4151372C4BE00C1168F /* Wheel_text_iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Wheel_text_iPad.png; path = iPhone/Wheel_text_iPad.png; sourceTree = SOURCE_ROOT; };
 		1087E4181372CBF900C1168F /* wheel_snd_bee_where.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = wheel_snd_bee_where.mp3; sourceTree = "<group>"; };
@@ -1377,6 +1379,7 @@
 				102FDDFD131C893800CC0AEB /* wheel_sound_off_iPad.png */,
 				102FDE00131C893800CC0AEB /* wheel_sound_on_iPad.png */,
 				102FDDBF131C891800CC0AEB /* wheel_background_iPad.png */,
+				1051CD7C13797DCF002DACDF /* wheel_wheel_iPad.png */,
 			);
 			name = wheel;
 			sourceTree = "<group>";
@@ -2924,6 +2927,7 @@
 				1051CB3313788DF4002DACDF /* wheel_snd_pig_eng.mp3 in Resources */,
 				1051CCA513796A83002DACDF /* dress_iPad.plist in Resources */,
 				1051CCA613796A83002DACDF /* dress_iPad.png in Resources */,
+				1051CD7D13797DCF002DACDF /* wheel_wheel_iPad.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

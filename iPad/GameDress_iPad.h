@@ -8,9 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
+#import "SettingsViewController_iPad.h"
 
 @interface GameDress_iPad : UIViewController {
 
+		SettingsViewController_iPad * sv;
 }
 
 @end

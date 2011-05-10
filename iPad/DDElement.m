@@ -149,7 +149,7 @@
 				[[SimpleAudioEngine sharedEngine] playEffect:soundOkPath];
 			placed = YES;
 			theGame.placingElement = YES;
-			[theGame addPoints];
+			//[theGame addPoints];
 			[theGame runAction:[CCSequence actions:[CCCallFuncND actionWithTarget:theGame selector:@selector(dressDino: data:) data:(void*)self],[CCDelayTime actionWithDuration:2.5],[CCCallFunc actionWithTarget:theGame selector:@selector(selectItemForBasho)],nil]];
 		}else {
 			if([GameManager sharedGameManager].soundsEnabled)

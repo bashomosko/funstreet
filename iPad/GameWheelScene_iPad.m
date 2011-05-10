@@ -75,6 +75,17 @@
 	[back setPosition:ccp(512,384)];
 	[self addChild:back];
 	
+	
+	leverImg = [CCSprite spriteWithFile:@"lever_iPad.png"];
+	[self addChild:leverImg];
+	[leverImg setPosition:ccp(390,420)];
+	[leverImg setAnchorPoint:ccp(0,0.5)];
+	[leverImg setRotation:-25];
+	
+	CCSprite * wheelwheel = [CCSprite spriteWithFile:@"wheel_wheel_iPad.png"];
+	[wheelwheel setPosition:ccp(512,384)];
+	[self addChild:wheelwheel];
+	
 	dino = [CCSprite spriteWithFile:@"wheel_dino_iPad.png"];
 	[dino setPosition:ccp(460,384)];
 	[self addChild:dino];
@@ -91,9 +102,8 @@
 	CCMenuItemImage * bashoOn = [CCMenuItemImage itemFromNormalImage:@"wheel_basho_on_iPad.png" selectedImage:@"wheel_basho_off_iPad.png"];
 	CCMenuItemToggle * basho = [CCMenuItemToggle itemWithTarget:self selector:@selector(turnBasho) items:bashoOff,bashoOn,nil];
 	
-	
 	CCMenuItemImage * lever = [CCMenuItemImage itemFromNormalImage:@"leverBtn_iPad.png" selectedImage:@"leverBtn_iPad.png" target:self selector:@selector(pushLever)];
-	
+	lever.opacity = 0;
 	CCMenu * menu = [CCMenu menuWithItems:backBtn,sound,basho,settingsBtn,lever,nil];
 	[self addChild:menu];
 	[backBtn setPosition:ccp(64,696)];
@@ -102,6 +112,8 @@
 	[basho setPosition:ccp(50,200)];
 	[lever setPosition:ccp(900,620)];
 	[menu setPosition:ccp(0,0)];
+	
+	
 	
 	//[self loadScore];
 	[self loadButtons];
@@ -153,11 +165,6 @@
 	[btnPos addObject:BTN_SUNGLASSES_POS];
 	
 	return btnPos;
-}
-
--(void)pushLever
-{
-	[super pushLever];
 }
 
 // on "dealloc" you need to release all your retained objects
