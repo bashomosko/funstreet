@@ -37,10 +37,12 @@
 		bashoDirected = _bashoDirected;
 		viewController = vc;
 		
-		if(playVid)
+		[self beginGame];
+		/*if(playVid)
 			[self loadVideo];
 		else
 			[self beginGame];
+		 */
 	}
 	return self;
 	
