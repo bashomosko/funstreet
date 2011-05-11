@@ -113,16 +113,26 @@
 		1051CCA513796A83002DACDF /* dress_iPad.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1051CCA313796A83002DACDF /* dress_iPad.plist */; };
 		1051CCA613796A83002DACDF /* dress_iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 1051CCA413796A83002DACDF /* dress_iPad.png */; };
 		1051CD7D13797DCF002DACDF /* wheel_wheel_iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 1051CD7C13797DCF002DACDF /* wheel_wheel_iPad.png */; };
+		1051CF2C137AB6C3002DACDF /* wheel_snd_bee_where_eng.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1051CF24137AB6C3002DACDF /* wheel_snd_bee_where_eng.mp3 */; };
+		1051CF2D137AB6C3002DACDF /* wheel_snd_cat_where_eng.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1051CF25137AB6C3002DACDF /* wheel_snd_cat_where_eng.mp3 */; };
+		1051CF2E137AB6C3002DACDF /* wheel_snd_chicken_where_eng.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1051CF26137AB6C3002DACDF /* wheel_snd_chicken_where_eng.mp3 */; };
+		1051CF2F137AB6C3002DACDF /* wheel_snd_cow_where_eng.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1051CF27137AB6C3002DACDF /* wheel_snd_cow_where_eng.mp3 */; };
+		1051CF30137AB6C3002DACDF /* wheel_snd_dog_where_eng.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1051CF28137AB6C3002DACDF /* wheel_snd_dog_where_eng.mp3 */; };
+		1051CF31137AB6C3002DACDF /* wheel_snd_duck_where_eng.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1051CF29137AB6C3002DACDF /* wheel_snd_duck_where_eng.mp3 */; };
+		1051CF32137AB6C3002DACDF /* wheel_snd_horse_where_eng.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1051CF2A137AB6C3002DACDF /* wheel_snd_horse_where_eng.mp3 */; };
+		1051CF33137AB6C3002DACDF /* wheel_snd_pig_where_eng.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1051CF2B137AB6C3002DACDF /* wheel_snd_pig_where_eng.mp3 */; };
+		1051CF55137ABBC7002DACDF /* RightAnswer.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1051CF53137ABBC6002DACDF /* RightAnswer.mp3 */; };
+		1051CF56137ABBC7002DACDF /* WrongAnswer.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1051CF54137ABBC7002DACDF /* WrongAnswer.mp3 */; };
 		1087E4161372C4BE00C1168F /* Wheel_text_iPad.fnt in Resources */ = {isa = PBXBuildFile; fileRef = 1087E4141372C4BE00C1168F /* Wheel_text_iPad.fnt */; };
 		1087E4171372C4BE00C1168F /* Wheel_text_iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 1087E4151372C4BE00C1168F /* Wheel_text_iPad.png */; };
-		1087E4201372CBF900C1168F /* wheel_snd_bee_where.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1087E4181372CBF900C1168F /* wheel_snd_bee_where.mp3 */; };
-		1087E4211372CBF900C1168F /* wheel_snd_horse_where.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1087E4191372CBF900C1168F /* wheel_snd_horse_where.mp3 */; };
-		1087E4221372CBF900C1168F /* wheel_snd_chicken_where.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1087E41A1372CBF900C1168F /* wheel_snd_chicken_where.mp3 */; };
-		1087E4231372CBF900C1168F /* wheel_snd_cat_where.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1087E41B1372CBF900C1168F /* wheel_snd_cat_where.mp3 */; };
-		1087E4241372CBF900C1168F /* wheel_snd_duck_where.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1087E41C1372CBF900C1168F /* wheel_snd_duck_where.mp3 */; };
-		1087E4251372CBF900C1168F /* wheel_snd_dog_where.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1087E41D1372CBF900C1168F /* wheel_snd_dog_where.mp3 */; };
-		1087E4261372CBF900C1168F /* wheel_snd_pig_where.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1087E41E1372CBF900C1168F /* wheel_snd_pig_where.mp3 */; };
-		1087E4271372CBF900C1168F /* wheel_snd_cow_where.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1087E41F1372CBF900C1168F /* wheel_snd_cow_where.mp3 */; };
+		1087E4201372CBF900C1168F /* wheel_snd_bee_where_esp.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1087E4181372CBF900C1168F /* wheel_snd_bee_where_esp.mp3 */; };
+		1087E4211372CBF900C1168F /* wheel_snd_horse_where_esp.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1087E4191372CBF900C1168F /* wheel_snd_horse_where_esp.mp3 */; };
+		1087E4221372CBF900C1168F /* wheel_snd_chicken_where_esp.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1087E41A1372CBF900C1168F /* wheel_snd_chicken_where_esp.mp3 */; };
+		1087E4231372CBF900C1168F /* wheel_snd_cat_where_esp.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1087E41B1372CBF900C1168F /* wheel_snd_cat_where_esp.mp3 */; };
+		1087E4241372CBF900C1168F /* wheel_snd_duck_where_esp.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1087E41C1372CBF900C1168F /* wheel_snd_duck_where_esp.mp3 */; };
+		1087E4251372CBF900C1168F /* wheel_snd_dog_where_esp.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1087E41D1372CBF900C1168F /* wheel_snd_dog_where_esp.mp3 */; };
+		1087E4261372CBF900C1168F /* wheel_snd_pig_where_esp.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1087E41E1372CBF900C1168F /* wheel_snd_pig_where_esp.mp3 */; };
+		1087E4271372CBF900C1168F /* wheel_snd_cow_where_esp.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1087E41F1372CBF900C1168F /* wheel_snd_cow_where_esp.mp3 */; };
 		1087E4421374104600C1168F /* mm_background1_iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 1087E4401374104600C1168F /* mm_background1_iPad.png */; };
 		1087E4431374104600C1168F /* mm_background2_iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 1087E4411374104600C1168F /* mm_background2_iPad.png */; };
 		109A4915136F39B60057428B /* WheelItems.plist in Resources */ = {isa = PBXBuildFile; fileRef = 109A4914136F39B60057428B /* WheelItems.plist */; };
@@ -703,16 +713,26 @@
 		1051CCA313796A83002DACDF /* dress_iPad.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = dress_iPad.plist; sourceTree = "<group>"; };
 		1051CCA413796A83002DACDF /* dress_iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dress_iPad.png; sourceTree = "<group>"; };
 		1051CD7C13797DCF002DACDF /* wheel_wheel_iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wheel_wheel_iPad.png; sourceTree = "<group>"; };
+		1051CF24137AB6C3002DACDF /* wheel_snd_bee_where_eng.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = wheel_snd_bee_where_eng.mp3; sourceTree = "<group>"; };
+		1051CF25137AB6C3002DACDF /* wheel_snd_cat_where_eng.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = wheel_snd_cat_where_eng.mp3; sourceTree = "<group>"; };
+		1051CF26137AB6C3002DACDF /* wheel_snd_chicken_where_eng.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = wheel_snd_chicken_where_eng.mp3; sourceTree = "<group>"; };
+		1051CF27137AB6C3002DACDF /* wheel_snd_cow_where_eng.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = wheel_snd_cow_where_eng.mp3; sourceTree = "<group>"; };
+		1051CF28137AB6C3002DACDF /* wheel_snd_dog_where_eng.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = wheel_snd_dog_where_eng.mp3; sourceTree = "<group>"; };
+		1051CF29137AB6C3002DACDF /* wheel_snd_duck_where_eng.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = wheel_snd_duck_where_eng.mp3; sourceTree = "<group>"; };
+		1051CF2A137AB6C3002DACDF /* wheel_snd_horse_where_eng.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = wheel_snd_horse_where_eng.mp3; sourceTree = "<group>"; };
+		1051CF2B137AB6C3002DACDF /* wheel_snd_pig_where_eng.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = wheel_snd_pig_where_eng.mp3; sourceTree = "<group>"; };
+		1051CF53137ABBC6002DACDF /* RightAnswer.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = RightAnswer.mp3; sourceTree = "<group>"; };
+		1051CF54137ABBC7002DACDF /* WrongAnswer.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = WrongAnswer.mp3; sourceTree = "<group>"; };
 		1087E4141372C4BE00C1168F /* Wheel_text_iPad.fnt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Wheel_text_iPad.fnt; path = iPhone/Wheel_text_iPad.fnt; sourceTree = SOURCE_ROOT; };
 		1087E4151372C4BE00C1168F /* Wheel_text_iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Wheel_text_iPad.png; path = iPhone/Wheel_text_iPad.png; sourceTree = SOURCE_ROOT; };
-		1087E4181372CBF900C1168F /* wheel_snd_bee_where.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = wheel_snd_bee_where.mp3; sourceTree = "<group>"; };
-		1087E4191372CBF900C1168F /* wheel_snd_horse_where.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = wheel_snd_horse_where.mp3; sourceTree = "<group>"; };
-		1087E41A1372CBF900C1168F /* wheel_snd_chicken_where.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = wheel_snd_chicken_where.mp3; sourceTree = "<group>"; };
-		1087E41B1372CBF900C1168F /* wheel_snd_cat_where.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = wheel_snd_cat_where.mp3; sourceTree = "<group>"; };
-		1087E41C1372CBF900C1168F /* wheel_snd_duck_where.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = wheel_snd_duck_where.mp3; sourceTree = "<group>"; };
-		1087E41D1372CBF900C1168F /* wheel_snd_dog_where.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = wheel_snd_dog_where.mp3; sourceTree = "<group>"; };
-		1087E41E1372CBF900C1168F /* wheel_snd_pig_where.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = wheel_snd_pig_where.mp3; sourceTree = "<group>"; };
-		1087E41F1372CBF900C1168F /* wheel_snd_cow_where.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = wheel_snd_cow_where.mp3; sourceTree = "<group>"; };
+		1087E4181372CBF900C1168F /* wheel_snd_bee_where_esp.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = wheel_snd_bee_where_esp.mp3; sourceTree = "<group>"; };
+		1087E4191372CBF900C1168F /* wheel_snd_horse_where_esp.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = wheel_snd_horse_where_esp.mp3; sourceTree = "<group>"; };
+		1087E41A1372CBF900C1168F /* wheel_snd_chicken_where_esp.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = wheel_snd_chicken_where_esp.mp3; sourceTree = "<group>"; };
+		1087E41B1372CBF900C1168F /* wheel_snd_cat_where_esp.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = wheel_snd_cat_where_esp.mp3; sourceTree = "<group>"; };
+		1087E41C1372CBF900C1168F /* wheel_snd_duck_where_esp.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = wheel_snd_duck_where_esp.mp3; sourceTree = "<group>"; };
+		1087E41D1372CBF900C1168F /* wheel_snd_dog_where_esp.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = wheel_snd_dog_where_esp.mp3; sourceTree = "<group>"; };
+		1087E41E1372CBF900C1168F /* wheel_snd_pig_where_esp.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = wheel_snd_pig_where_esp.mp3; sourceTree = "<group>"; };
+		1087E41F1372CBF900C1168F /* wheel_snd_cow_where_esp.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = wheel_snd_cow_where_esp.mp3; sourceTree = "<group>"; };
 		1087E4401374104600C1168F /* mm_background1_iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mm_background1_iPad.png; sourceTree = "<group>"; };
 		1087E4411374104600C1168F /* mm_background2_iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mm_background2_iPad.png; sourceTree = "<group>"; };
 		109A4914136F39B60057428B /* WheelItems.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = WheelItems.plist; sourceTree = "<group>"; };
@@ -1479,6 +1499,14 @@
 				1051CB2913788DF4002DACDF /* wheel_snd_duck_eng.mp3 */,
 				1051CB2A13788DF4002DACDF /* wheel_snd_horse_eng.mp3 */,
 				1051CB2B13788DF4002DACDF /* wheel_snd_pig_eng.mp3 */,
+				1051CF24137AB6C3002DACDF /* wheel_snd_bee_where_eng.mp3 */,
+				1051CF25137AB6C3002DACDF /* wheel_snd_cat_where_eng.mp3 */,
+				1051CF26137AB6C3002DACDF /* wheel_snd_chicken_where_eng.mp3 */,
+				1051CF27137AB6C3002DACDF /* wheel_snd_cow_where_eng.mp3 */,
+				1051CF28137AB6C3002DACDF /* wheel_snd_dog_where_eng.mp3 */,
+				1051CF29137AB6C3002DACDF /* wheel_snd_duck_where_eng.mp3 */,
+				1051CF2A137AB6C3002DACDF /* wheel_snd_horse_where_eng.mp3 */,
+				1051CF2B137AB6C3002DACDF /* wheel_snd_pig_where_eng.mp3 */,
 			);
 			name = "wheel - animals - english";
 			sourceTree = "<group>";
@@ -1516,14 +1544,14 @@
 		109A49C7137061780057428B /* wheel - animals - spanish */ = {
 			isa = PBXGroup;
 			children = (
-				1087E4181372CBF900C1168F /* wheel_snd_bee_where.mp3 */,
-				1087E4191372CBF900C1168F /* wheel_snd_horse_where.mp3 */,
-				1087E41A1372CBF900C1168F /* wheel_snd_chicken_where.mp3 */,
-				1087E41B1372CBF900C1168F /* wheel_snd_cat_where.mp3 */,
-				1087E41C1372CBF900C1168F /* wheel_snd_duck_where.mp3 */,
-				1087E41D1372CBF900C1168F /* wheel_snd_dog_where.mp3 */,
-				1087E41E1372CBF900C1168F /* wheel_snd_pig_where.mp3 */,
-				1087E41F1372CBF900C1168F /* wheel_snd_cow_where.mp3 */,
+				1087E4181372CBF900C1168F /* wheel_snd_bee_where_esp.mp3 */,
+				1087E4191372CBF900C1168F /* wheel_snd_horse_where_esp.mp3 */,
+				1087E41A1372CBF900C1168F /* wheel_snd_chicken_where_esp.mp3 */,
+				1087E41B1372CBF900C1168F /* wheel_snd_cat_where_esp.mp3 */,
+				1087E41C1372CBF900C1168F /* wheel_snd_duck_where_esp.mp3 */,
+				1087E41D1372CBF900C1168F /* wheel_snd_dog_where_esp.mp3 */,
+				1087E41E1372CBF900C1168F /* wheel_snd_pig_where_esp.mp3 */,
+				1087E41F1372CBF900C1168F /* wheel_snd_cow_where_esp.mp3 */,
 				109A49C81370619B0057428B /* wheel_snd_bee_esp.mp3 */,
 				109A49C91370619B0057428B /* wheel_snd_horse_esp.mp3 */,
 				109A49CA1370619B0057428B /* wheel_snd_chicken_esp.mp3 */,
@@ -2103,6 +2131,8 @@
 		10B32831131D5CAA0014A77D /* Sounds */ = {
 			isa = PBXGroup;
 			children = (
+				1051CF53137ABBC6002DACDF /* RightAnswer.mp3 */,
+				1051CF54137ABBC7002DACDF /* WrongAnswer.mp3 */,
 				1051CB1F13788DC8002DACDF /* wheel - animals - english */,
 				109A49C7137061780057428B /* wheel - animals - spanish */,
 				10A065C7133BBDAC0059187D /* points sounds */,
@@ -2876,14 +2906,14 @@
 				109A49D71370619B0057428B /* wheel_snd_cow_esp.mp3 in Resources */,
 				1087E4161372C4BE00C1168F /* Wheel_text_iPad.fnt in Resources */,
 				1087E4171372C4BE00C1168F /* Wheel_text_iPad.png in Resources */,
-				1087E4201372CBF900C1168F /* wheel_snd_bee_where.mp3 in Resources */,
-				1087E4211372CBF900C1168F /* wheel_snd_horse_where.mp3 in Resources */,
-				1087E4221372CBF900C1168F /* wheel_snd_chicken_where.mp3 in Resources */,
-				1087E4231372CBF900C1168F /* wheel_snd_cat_where.mp3 in Resources */,
-				1087E4241372CBF900C1168F /* wheel_snd_duck_where.mp3 in Resources */,
-				1087E4251372CBF900C1168F /* wheel_snd_dog_where.mp3 in Resources */,
-				1087E4261372CBF900C1168F /* wheel_snd_pig_where.mp3 in Resources */,
-				1087E4271372CBF900C1168F /* wheel_snd_cow_where.mp3 in Resources */,
+				1087E4201372CBF900C1168F /* wheel_snd_bee_where_esp.mp3 in Resources */,
+				1087E4211372CBF900C1168F /* wheel_snd_horse_where_esp.mp3 in Resources */,
+				1087E4221372CBF900C1168F /* wheel_snd_chicken_where_esp.mp3 in Resources */,
+				1087E4231372CBF900C1168F /* wheel_snd_cat_where_esp.mp3 in Resources */,
+				1087E4241372CBF900C1168F /* wheel_snd_duck_where_esp.mp3 in Resources */,
+				1087E4251372CBF900C1168F /* wheel_snd_dog_where_esp.mp3 in Resources */,
+				1087E4261372CBF900C1168F /* wheel_snd_pig_where_esp.mp3 in Resources */,
+				1087E4271372CBF900C1168F /* wheel_snd_cow_where_esp.mp3 in Resources */,
 				1087E4421374104600C1168F /* mm_background1_iPad.png in Resources */,
 				1087E4431374104600C1168F /* mm_background2_iPad.png in Resources */,
 				10C0435313741C37008FEE6D /* CityMenu_Page1_GlowingDoors_00000_iPad.png in Resources */,
@@ -2928,6 +2958,16 @@
 				1051CCA513796A83002DACDF /* dress_iPad.plist in Resources */,
 				1051CCA613796A83002DACDF /* dress_iPad.png in Resources */,
 				1051CD7D13797DCF002DACDF /* wheel_wheel_iPad.png in Resources */,
+				1051CF2C137AB6C3002DACDF /* wheel_snd_bee_where_eng.mp3 in Resources */,
+				1051CF2D137AB6C3002DACDF /* wheel_snd_cat_where_eng.mp3 in Resources */,
+				1051CF2E137AB6C3002DACDF /* wheel_snd_chicken_where_eng.mp3 in Resources */,
+				1051CF2F137AB6C3002DACDF /* wheel_snd_cow_where_eng.mp3 in Resources */,
+				1051CF30137AB6C3002DACDF /* wheel_snd_dog_where_eng.mp3 in Resources */,
+				1051CF31137AB6C3002DACDF /* wheel_snd_duck_where_eng.mp3 in Resources */,
+				1051CF32137AB6C3002DACDF /* wheel_snd_horse_where_eng.mp3 in Resources */,
+				1051CF33137AB6C3002DACDF /* wheel_snd_pig_where_eng.mp3 in Resources */,
+				1051CF55137ABBC7002DACDF /* RightAnswer.mp3 in Resources */,
+				1051CF56137ABBC7002DACDF /* WrongAnswer.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

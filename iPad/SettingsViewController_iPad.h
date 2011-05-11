@@ -17,7 +17,7 @@
 }
 
 
-@property (nonatomic,retain) UIViewController * rootVC;
+@property (nonatomic,assign) UIViewController * rootVC;
 @property (nonatomic,retain)IBOutlet UIButton * closeBtn;
 @property (nonatomic,retain)IBOutlet UISegmentedControl * language;
 

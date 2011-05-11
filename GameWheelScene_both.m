@@ -144,7 +144,7 @@
 	[gloopbackground setPosition:ccp(512,384)];
 	[self addChild:gloopbackground z:21];
 	//ANIMATION
-	NSMutableArray * gloopFrames = [[[NSMutableArray  alloc]init]autorelease];
+	NSMutableArray * gloopFrames = [NSMutableArray  arrayWithCapacity:6];
 	for(int i = 0; i <= 6; i++) {
 		
 		CCSprite * sp = [CCSprite spriteWithFile:[NSString stringWithFormat:@"PuntosDomino_iPad_%05d.png.pvr",i]];
@@ -242,11 +242,13 @@
 
 -(void)selectItemForBasho
 {	
+	GameManager * gm = [GameManager sharedGameManager];
+
 	currentAttempts =0;
 	
 	int indexBashoSelectedSound = arc4random() %[bashoSelectedItems count];
 	bashoSelectedSound = [[bashoSelectedItems objectAtIndex:indexBashoSelectedSound] intValue];
-    NSString * sound = [NSString stringWithFormat:@"wheel_snd_%@_where.mp3",[[buttonsData objectAtIndex:bashoSelectedSound] objectForKey:@"image"]];
+    NSString * sound = [NSString stringWithFormat:@"wheel_snd_%@_where_%@.mp3",[[buttonsData objectAtIndex:bashoSelectedSound] objectForKey:@"image"],[gm languageString]];
 	[bashoSelectedItems removeObjectAtIndex:indexBashoSelectedSound];
     
     
@@ -284,7 +286,7 @@
     NSString *filePath = [[NSBundle mainBundle] pathForResource:@"WheelItems" ofType:@"plist"];
 	buttonsData = [[[NSMutableDictionary dictionaryWithContentsOfFile:filePath]objectForKey:@"items"]retain];
     
-    [buttonsData shuffle];
+	//[buttonsData shuffle];
 	
 	tapButtons = [CCMenu menuWithItems:nil];
 	for (int i = 0;i<8;i++)
@@ -356,7 +358,10 @@
 		}else {
 			currentAttempts ++;
 			if([GameManager sharedGameManager].soundsEnabled)
-				[[SimpleAudioEngine sharedEngine] playEffect:bashoDirectedWrongSound];
+			{
+				[[SimpleAudioEngine sharedEngine] playEffect:@"WrongAnswer.mp3"];
+				//[[SimpleAudioEngine sharedEngine] playEffect:bashoDirectedWrongSound];
+			}
 		}
 		
 	}
@@ -489,6 +494,7 @@
     location = [[CCDirector sharedDirector] convertToGL: location];	
 	//if (bashoDirected) return;
     if(dinoSpinning) return;
+	if(playingSound)return;
     
 	dinoSpinning = YES;
 	//[self makeDinoSpin2:-1];
@@ -674,8 +680,9 @@
 	// in case you have something to dealloc, do it in this method
 	// in this particular example nothing needs to be released.
 	// cocos2d will automatically release all the children (Label)
-	
+	[SimpleAudioEngine end];
 	// don't forget to call "super dealloc"
+	[[SimpleAudioEngine sharedEngine] unloadEffect:@"WrongAnswer.mp3"];
 	[bashoSelectedItems release];
     [buttonsData release];
 	[super dealloc];

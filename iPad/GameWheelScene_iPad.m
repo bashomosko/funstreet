@@ -13,14 +13,14 @@
 #import "SimpleAudioEngine.h"
 #import "GameManager.h"
 
-#define BTN_BACKPACK_POS [NSMutableDictionary dictionaryWithObjects:[NSMutableArray arrayWithObjects:[NSNumber numberWithInt:(1024 *90) /480],[NSNumber numberWithInt:(768 *160) /320],nil] forKeys:[NSMutableArray arrayWithObjects:@"x",@"y",nil]]
-#define BTN_BOOTS_POS [NSMutableDictionary dictionaryWithObjects:[NSMutableArray arrayWithObjects:[NSNumber numberWithInt:(1024 *130) /480],[NSNumber numberWithInt:(768 *240) /320],nil] forKeys:[NSMutableArray arrayWithObjects:@"x",@"y",nil]]
-#define BTN_HAT_POS [NSMutableDictionary dictionaryWithObjects:[NSMutableArray arrayWithObjects:[NSNumber numberWithInt:(1024 *220) /480],[NSNumber numberWithInt:(768 *280) /320],nil] forKeys:[NSMutableArray arrayWithObjects:@"x",@"y",nil]]
-#define BTN_PHONE_POS [NSMutableDictionary dictionaryWithObjects:[NSMutableArray arrayWithObjects:[NSNumber numberWithInt:(1024 *310) /480],[NSNumber numberWithInt:(768 *240) /320],nil] forKeys:[NSMutableArray arrayWithObjects:@"x",@"y",nil]]
+#define BTN_BACKPACK_POS [NSMutableDictionary dictionaryWithObjects:[NSMutableArray arrayWithObjects:[NSNumber numberWithInt:(1024 *95) /480],[NSNumber numberWithInt:(768 *160) /320],nil] forKeys:[NSMutableArray arrayWithObjects:@"x",@"y",nil]]
+#define BTN_BOOTS_POS [NSMutableDictionary dictionaryWithObjects:[NSMutableArray arrayWithObjects:[NSNumber numberWithInt:(1024 *129) /480],[NSNumber numberWithInt:(768 *238) /320],nil] forKeys:[NSMutableArray arrayWithObjects:@"x",@"y",nil]]
+#define BTN_HAT_POS [NSMutableDictionary dictionaryWithObjects:[NSMutableArray arrayWithObjects:[NSNumber numberWithInt:(1024 *222) /480],[NSNumber numberWithInt:(768 *275) /320],nil] forKeys:[NSMutableArray arrayWithObjects:@"x",@"y",nil]]
+#define BTN_PHONE_POS [NSMutableDictionary dictionaryWithObjects:[NSMutableArray arrayWithObjects:[NSNumber numberWithInt:(1024 *317) /480],[NSNumber numberWithInt:(768 *238) /320],nil] forKeys:[NSMutableArray arrayWithObjects:@"x",@"y",nil]]
 #define BTN_JACKET_POS [NSMutableDictionary dictionaryWithObjects:[NSMutableArray arrayWithObjects:[NSNumber numberWithInt:(1024 *350) /480],[NSNumber numberWithInt:(768 *160) /320],nil] forKeys:[NSMutableArray arrayWithObjects:@"x",@"y",nil]]
-#define BTN_NECKLACE_POS [NSMutableDictionary dictionaryWithObjects:[NSMutableArray arrayWithObjects:[NSNumber numberWithInt:(1024 *310) /480],[NSNumber numberWithInt:(768 *80) /320],nil] forKeys:[NSMutableArray arrayWithObjects:@"x",@"y",nil]]
-#define BTN_PANTS_POS [NSMutableDictionary dictionaryWithObjects:[NSMutableArray arrayWithObjects:[NSNumber numberWithInt:(1024 *220) /480],[NSNumber numberWithInt:(768 *40) /320],nil] forKeys:[NSMutableArray arrayWithObjects:@"x",@"y",nil]]
-#define BTN_SUNGLASSES_POS [NSMutableDictionary dictionaryWithObjects:[NSMutableArray arrayWithObjects:[NSNumber numberWithInt:(1024 *130) /480],[NSNumber numberWithInt:(768 *80) /320],nil] forKeys:[NSMutableArray arrayWithObjects:@"x",@"y",nil]]
+#define BTN_NECKLACE_POS [NSMutableDictionary dictionaryWithObjects:[NSMutableArray arrayWithObjects:[NSNumber numberWithInt:(1024 *310) /480],[NSNumber numberWithInt:(768 *84) /320],nil] forKeys:[NSMutableArray arrayWithObjects:@"x",@"y",nil]]
+#define BTN_PANTS_POS [NSMutableDictionary dictionaryWithObjects:[NSMutableArray arrayWithObjects:[NSNumber numberWithInt:(1024 *222) /480],[NSNumber numberWithInt:(768 *47) /320],nil] forKeys:[NSMutableArray arrayWithObjects:@"x",@"y",nil]]
+#define BTN_SUNGLASSES_POS [NSMutableDictionary dictionaryWithObjects:[NSMutableArray arrayWithObjects:[NSNumber numberWithInt:(1024 *130) /480],[NSNumber numberWithInt:(768 *85) /320],nil] forKeys:[NSMutableArray arrayWithObjects:@"x",@"y",nil]]
 
 
 

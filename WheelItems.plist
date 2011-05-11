@@ -6,27 +6,27 @@
 	<array>
 		<dict>
 			<key>espText</key>
-			<string>Cerdo</string>
+			<string>Gato</string>
 			<key>image</key>
-			<string>pig</string>
-		</dict>
-		<dict>
-			<key>espText</key>
-			<string>Vaca</string>
-			<key>image</key>
-			<string>cow</string>
-		</dict>
-		<dict>
-			<key>espText</key>
-			<string>Abeja</string>
-			<key>image</key>
-			<string>bee</string>
+			<string>cat</string>
 		</dict>
 		<dict>
 			<key>espText</key>
 			<string>Pato</string>
 			<key>image</key>
 			<string>duck</string>
+		</dict>
+		<dict>
+			<key>espText</key>
+			<string>Caballo</string>
+			<key>image</key>
+			<string>horse</string>
+		</dict>
+		<dict>
+			<key>espText</key>
+			<string>Abeja</string>
+			<key>image</key>
+			<string>bee</string>
 		</dict>
 		<dict>
 			<key>espText</key>
@@ -42,15 +42,15 @@
 		</dict>
 		<dict>
 			<key>espText</key>
-			<string>Gato</string>
+			<string>Vaca</string>
 			<key>image</key>
-			<string>cat</string>
+			<string>cow</string>
 		</dict>
 		<dict>
 			<key>espText</key>
-			<string>Caballo</string>
+			<string>Cerdo</string>
 			<key>image</key>
-			<string>horse</string>
+			<string>pig</string>
 		</dict>
 	</array>
 </dict>
