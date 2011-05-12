@@ -2877,8 +2877,6 @@
 				10EE6C2A134DFA050041B7A5 /* 39.mp3 in Resources */,
 				10EE6C2B134DFA050041B7A5 /* 40.mp3 in Resources */,
 				10B0A46A136AF4DD00A027F4 /* README.rtf in Resources */,
-<<<<<<< HEAD
-=======
 				109A4915136F39B60057428B /* WheelItems.plist in Resources */,
 				109A4917136F64130057428B /* wheel_settings_iPad.png in Resources */,
 				109A4919136F6A010057428B /* wheel_wordbackground_iPad.png in Resources */,
@@ -2970,7 +2968,6 @@
 				1051CF33137AB6C3002DACDF /* wheel_snd_pig_where_eng.mp3 in Resources */,
 				1051CF55137ABBC7002DACDF /* RightAnswer.mp3 in Resources */,
 				1051CF56137ABBC7002DACDF /* WrongAnswer.mp3 in Resources */,
->>>>>>> develop
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
