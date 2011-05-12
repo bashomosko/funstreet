@@ -13,14 +13,14 @@
 #import "SimpleAudioEngine.h"
 #import "GameManager.h"
 
-#define BTN_BACKPACK_POS [NSMutableDictionary dictionaryWithObjects:[NSMutableArray arrayWithObjects:[NSNumber numberWithInt:(1024 *110) /480],[NSNumber numberWithInt:(768 *160) /320],nil] forKeys:[NSMutableArray arrayWithObjects:@"x",@"y",nil]]
-#define BTN_BOOTS_POS [NSMutableDictionary dictionaryWithObjects:[NSMutableArray arrayWithObjects:[NSNumber numberWithInt:(1024 *150) /480],[NSNumber numberWithInt:(768 *240) /320],nil] forKeys:[NSMutableArray arrayWithObjects:@"x",@"y",nil]]
-#define BTN_HAT_POS [NSMutableDictionary dictionaryWithObjects:[NSMutableArray arrayWithObjects:[NSNumber numberWithInt:(1024 *240) /480],[NSNumber numberWithInt:(768 *280) /320],nil] forKeys:[NSMutableArray arrayWithObjects:@"x",@"y",nil]]
-#define BTN_PHONE_POS [NSMutableDictionary dictionaryWithObjects:[NSMutableArray arrayWithObjects:[NSNumber numberWithInt:(1024 *330) /480],[NSNumber numberWithInt:(768 *240) /320],nil] forKeys:[NSMutableArray arrayWithObjects:@"x",@"y",nil]]
-#define BTN_JACKET_POS [NSMutableDictionary dictionaryWithObjects:[NSMutableArray arrayWithObjects:[NSNumber numberWithInt:(1024 *370) /480],[NSNumber numberWithInt:(768 *160) /320],nil] forKeys:[NSMutableArray arrayWithObjects:@"x",@"y",nil]]
-#define BTN_NECKLACE_POS [NSMutableDictionary dictionaryWithObjects:[NSMutableArray arrayWithObjects:[NSNumber numberWithInt:(1024 *330) /480],[NSNumber numberWithInt:(768 *80) /320],nil] forKeys:[NSMutableArray arrayWithObjects:@"x",@"y",nil]]
-#define BTN_PANTS_POS [NSMutableDictionary dictionaryWithObjects:[NSMutableArray arrayWithObjects:[NSNumber numberWithInt:(1024 *240) /480],[NSNumber numberWithInt:(768 *40) /320],nil] forKeys:[NSMutableArray arrayWithObjects:@"x",@"y",nil]]
-#define BTN_SUNGLASSES_POS [NSMutableDictionary dictionaryWithObjects:[NSMutableArray arrayWithObjects:[NSNumber numberWithInt:(1024 *150) /480],[NSNumber numberWithInt:(768 *80) /320],nil] forKeys:[NSMutableArray arrayWithObjects:@"x",@"y",nil]]
+#define BTN_BACKPACK_POS [NSMutableDictionary dictionaryWithObjects:[NSMutableArray arrayWithObjects:[NSNumber numberWithInt:(1024 *95) /480],[NSNumber numberWithInt:(768 *160) /320],nil] forKeys:[NSMutableArray arrayWithObjects:@"x",@"y",nil]]
+#define BTN_BOOTS_POS [NSMutableDictionary dictionaryWithObjects:[NSMutableArray arrayWithObjects:[NSNumber numberWithInt:(1024 *129) /480],[NSNumber numberWithInt:(768 *238) /320],nil] forKeys:[NSMutableArray arrayWithObjects:@"x",@"y",nil]]
+#define BTN_HAT_POS [NSMutableDictionary dictionaryWithObjects:[NSMutableArray arrayWithObjects:[NSNumber numberWithInt:(1024 *222) /480],[NSNumber numberWithInt:(768 *275) /320],nil] forKeys:[NSMutableArray arrayWithObjects:@"x",@"y",nil]]
+#define BTN_PHONE_POS [NSMutableDictionary dictionaryWithObjects:[NSMutableArray arrayWithObjects:[NSNumber numberWithInt:(1024 *317) /480],[NSNumber numberWithInt:(768 *238) /320],nil] forKeys:[NSMutableArray arrayWithObjects:@"x",@"y",nil]]
+#define BTN_JACKET_POS [NSMutableDictionary dictionaryWithObjects:[NSMutableArray arrayWithObjects:[NSNumber numberWithInt:(1024 *350) /480],[NSNumber numberWithInt:(768 *160) /320],nil] forKeys:[NSMutableArray arrayWithObjects:@"x",@"y",nil]]
+#define BTN_NECKLACE_POS [NSMutableDictionary dictionaryWithObjects:[NSMutableArray arrayWithObjects:[NSNumber numberWithInt:(1024 *310) /480],[NSNumber numberWithInt:(768 *84) /320],nil] forKeys:[NSMutableArray arrayWithObjects:@"x",@"y",nil]]
+#define BTN_PANTS_POS [NSMutableDictionary dictionaryWithObjects:[NSMutableArray arrayWithObjects:[NSNumber numberWithInt:(1024 *222) /480],[NSNumber numberWithInt:(768 *47) /320],nil] forKeys:[NSMutableArray arrayWithObjects:@"x",@"y",nil]]
+#define BTN_SUNGLASSES_POS [NSMutableDictionary dictionaryWithObjects:[NSMutableArray arrayWithObjects:[NSNumber numberWithInt:(1024 *130) /480],[NSNumber numberWithInt:(768 *85) /320],nil] forKeys:[NSMutableArray arrayWithObjects:@"x",@"y",nil]]
 
 
 
@@ -55,43 +55,70 @@
 			
 			self.isTouchEnabled = YES;
 			viewController = vc;
-			bashoDirected = NO;
 			
-			CCSprite * back = [CCSprite spriteWithFile:@"wheel_background_iPad.png"];
-			[back setPosition:ccp(512,384)];
-			[self addChild:back];
-			
-			dino = [CCSprite spriteWithFile:@"wheel_dino_iPad.png"];
-			[dino setPosition:ccp(512,384)];
-			[self addChild:dino];
-			
-			CCMenuItemImage * backBtn = [CCMenuItemImage itemFromNormalImage:@"wheel_home_iPad.png" selectedImage:@"wheel_home_iPad.png" target:self selector:@selector(goBack)];
-			
-			CCMenuItemImage * soundOff = [CCMenuItemImage itemFromNormalImage:@"wheel_sound_off_iPad.png" selectedImage:@"wheel_sound_on_iPad.png"];
-			CCMenuItemImage * soundOn = [CCMenuItemImage itemFromNormalImage:@"wheel_sound_on_iPad.png" selectedImage:@"wheel_sound_off_iPad.png"];
-			CCMenuItemToggle * sound = [CCMenuItemToggle itemWithTarget:self selector:@selector(turnSounds) items:soundOn,soundOff,nil];
-			
-			CCMenuItemImage * bashoOff = [CCMenuItemImage itemFromNormalImage:@"wheel_basho_off_iPad.png" selectedImage:@"wheel_basho_on_iPad.png"];
-			CCMenuItemImage * bashoOn = [CCMenuItemImage itemFromNormalImage:@"wheel_basho_on_iPad.png" selectedImage:@"wheel_basho_off_iPad.png"];
-			CCMenuItemToggle * basho = [CCMenuItemToggle itemWithTarget:self selector:@selector(turnBasho) items:bashoOff,bashoOn,nil];
-			
-			
-			CCMenu * menu = [CCMenu menuWithItems:backBtn,sound,basho,nil];
-			[self addChild:menu];
-			[backBtn setPosition:ccp(64,696)];
-			[sound setPosition:ccp(43,48)];
-			[basho setPosition:ccp(149,72)];
-			[menu setPosition:ccp(0,0)];
-			
-			[self loadScore];
-			[self loadButtons];
-			[self createPalabra];
+			//[self loadVideo];
+			[self beginGame];
 			
 		}
 		return self;
 		
     }
     return self;
+}
+
+
+-(void)beginGame
+{
+	bashoDirected = NO;
+	
+	CCSprite * back = [CCSprite spriteWithFile:@"wheel_background_iPad.png"];
+	[back setPosition:ccp(512,384)];
+	[self addChild:back];
+	
+	
+	leverImg = [CCSprite spriteWithFile:@"lever_iPad.png"];
+	[self addChild:leverImg];
+	[leverImg setPosition:ccp(390,420)];
+	[leverImg setAnchorPoint:ccp(0,0.5)];
+	[leverImg setRotation:-25];
+	
+	CCSprite * wheelwheel = [CCSprite spriteWithFile:@"wheel_wheel_iPad.png"];
+	[wheelwheel setPosition:ccp(512,384)];
+	[self addChild:wheelwheel];
+	
+	dino = [CCSprite spriteWithFile:@"wheel_dino_iPad.png"];
+	[dino setPosition:ccp(460,384)];
+	[self addChild:dino];
+	
+	CCMenuItemImage * backBtn = [CCMenuItemImage itemFromNormalImage:@"wheel_home_iPad.png" selectedImage:@"wheel_home_iPad.png" target:self selector:@selector(goBack)];
+	
+	CCMenuItemImage * settingsBtn = [CCMenuItemImage itemFromNormalImage:@"wheel_settings_iPad.png" selectedImage:@"wheel_settings_iPad.png" target:self selector:@selector(goSettings)];
+	
+	CCMenuItemImage * soundOff = [CCMenuItemImage itemFromNormalImage:@"wheel_sound_off_iPad.png" selectedImage:@"wheel_sound_on_iPad.png"];
+	CCMenuItemImage * soundOn = [CCMenuItemImage itemFromNormalImage:@"wheel_sound_on_iPad.png" selectedImage:@"wheel_sound_off_iPad.png"];
+	CCMenuItemToggle * sound = [CCMenuItemToggle itemWithTarget:self selector:@selector(turnSounds) items:soundOn,soundOff,nil];
+	
+	CCMenuItemImage * bashoOff = [CCMenuItemImage itemFromNormalImage:@"wheel_basho_off_iPad.png" selectedImage:@"wheel_basho_on_iPad.png"];
+	CCMenuItemImage * bashoOn = [CCMenuItemImage itemFromNormalImage:@"wheel_basho_on_iPad.png" selectedImage:@"wheel_basho_off_iPad.png"];
+	CCMenuItemToggle * basho = [CCMenuItemToggle itemWithTarget:self selector:@selector(turnBasho) items:bashoOff,bashoOn,nil];
+	
+	CCMenuItemImage * lever = [CCMenuItemImage itemFromNormalImage:@"leverBtn_iPad.png" selectedImage:@"leverBtn_iPad.png" target:self selector:@selector(pushLever)];
+	lever.opacity = 0;
+	CCMenu * menu = [CCMenu menuWithItems:backBtn,sound,basho,settingsBtn,lever,nil];
+	[self addChild:menu];
+	[backBtn setPosition:ccp(64,696)];
+	[settingsBtn setPosition:ccp(50,48)];
+	[sound setPosition:ccp(50,120)];
+	[basho setPosition:ccp(50,200)];
+	[lever setPosition:ccp(900,620)];
+	[menu setPosition:ccp(0,0)];
+	
+	
+	
+	//[self loadScore];
+	[self loadButtons];
+	[self createPalabra];
+	[self loadSpinningStuff];
 }
 
 -(void)replay
@@ -102,10 +129,13 @@
 
 -(void)createPalabra
 {
-	CCLabelTTF * palabra = [CCLabelTTF labelWithString:@"MOCHILA" fontName:@"Verdana" fontSize:40];
-	[palabra setColor:ccBLACK];
-	[self addChild:palabra z:1 tag:kPALABRA];
-	[palabra setPosition:ccp(895,48)];
+    CCSprite * palabraBck = [CCSprite spriteWithFile:@"wheel_wordbackground_iPad.png"];
+    [self addChild:palabraBck z:1 tag:kPALABRABCK];
+    [palabraBck setPosition:ccp(870,60)];
+	[palabraBck setOpacity:0];
+	CCLabelTTF * palabra = [CCLabelBMFont labelWithString:@"a" fntFile:@"Wheel_text_iPad.fnt"];
+    [self addChild:palabra z:1 tag:kPALABRA];
+	[palabra setPosition:ccp(870,60)];
 	[palabra setOpacity:0];
 }
 

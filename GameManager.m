@@ -5,7 +5,7 @@ static GameManager *sharedInstance = nil;
 
 @implementation GameManager
 
-@synthesize soundsEnabled;
+@synthesize soundsEnabled,languageString,language;
 
 + (GameManager *)sharedGameManager
 {
@@ -61,7 +61,9 @@ static GameManager *sharedInstance = nil;
 		[super init];	
 		
 		soundsEnabled = YES;
+		languageString = [[NSMutableString alloc] initWithCapacity:10];
 		
+		[self setLanguage:1];
 		
 		return self;
 	}
@@ -72,11 +74,25 @@ static GameManager *sharedInstance = nil;
 	soundsEnabled = !soundsEnabled;
 }
 
+-(void)setLanguage:(int)_language
+{
+	language = _language;
+	switch (language) {
+		case 0:
+			[languageString setString:@"eng"];
+			break;
+		case 1:
+			[languageString setString:@"esp"];
+			break;
+	}
+}
+
 -(void)unlockGame:(int)game
 {
 }
 						  
 - (void)dealloc {
+	[languageString release];
 	[super dealloc];
 }
 

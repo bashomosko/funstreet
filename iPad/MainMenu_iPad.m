@@ -11,7 +11,6 @@
 #import "GameWheel_iPad.h"
 #import "GameDress_iPad.h"
 #import "GameVideo_iPad.h"
-#import "InteractiveSong_iPad.h"
 
 @implementation MainMenu_iPad
 
@@ -26,12 +25,13 @@
 }
 */
 
-/*
+
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [scroll setContentSize:CGSizeMake(2048,768)];
 }
-*/
+
 
 
 // Override to allow orientations other than the default portrait orientation.
@@ -43,22 +43,6 @@
 	return NO;
 }
 
--(void)loadSong
-{
-	[self.view removeFromSuperview];
-	[self release];
-	
-	InteractiveSong_iPad * gw = [[InteractiveSong_iPad alloc] 
-						   initWithNibName:@"InteractiveSong_iPad" bundle:nil];
-	[gw.view setAlpha:0];
-	AppDelegate_iPad * app = (AppDelegate_iPad *)[[UIApplication sharedApplication] delegate];
-	UIWindow * w = app.window;
-	[w addSubview:gw.view];
-	
-	[UIView beginAnimations:nil context:nil];
-	[gw.view setAlpha:1];
-	[UIView commitAnimations];
-}
 
 -(void)loadWheel
 {
@@ -111,6 +95,19 @@
 	[UIView commitAnimations];
 }
 
+-(IBAction)goToSettings
+{
+	sv = [[SettingsViewController_iPad alloc] initWithNibName:@"SettingsViewController_iPad" bundle:nil];
+	sv.rootVC = self;
+	
+	[self.view addSubview:sv.view];
+}
+
+-(void)removeSettings
+{
+	[sv.view removeFromSuperview];
+	[sv release];
+}
 
 - (void)didReceiveMemoryWarning {
     // Releases the view if it doesn't have a superview.

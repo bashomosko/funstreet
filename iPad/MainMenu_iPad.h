@@ -8,11 +8,13 @@
 
 #import <UIKit/UIKit.h>
 #import "MainMenu_both.h"
+#import "SettingsViewController_iPad.h"
 
 @class MainMenu_both;
 
 @interface MainMenu_iPad : MainMenu_both {
 
+	SettingsViewController_iPad * sv;
 }
 
 @end

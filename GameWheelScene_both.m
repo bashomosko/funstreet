@@ -12,6 +12,23 @@
 #import "GameManager.h"
 
 
+@implementation NSMutableArray (Shuffling)
+
+- (void)shuffle
+{
+    
+    NSUInteger count = [self count];
+    for (NSUInteger i = 0; i < count; ++i) {
+        // Select a random element between i and end of array to swap with.
+        int nElements = count - i;
+        int n = (arc4random() % nElements) + i;
+        [self exchangeObjectAtIndex:i withObjectAtIndex:n];
+    }
+}
+
+@end
+
+
 @implementation GameWheelScene_both
 
 -(void)loadDeviceType
@@ -36,7 +53,7 @@
 	NSBundle *bundle = [NSBundle mainBundle];
 	if (bundle) 
 	{
-		NSString *moviePath = [bundle pathForResource:@"ARG" ofType:@"mp4"];
+		NSString *moviePath = [bundle pathForResource:@"intro_1_iPad" ofType:@"mov"];
 		if (moviePath)
 		{
 			url = [NSURL fileURLWithPath:moviePath];
@@ -127,7 +144,7 @@
 	[gloopbackground setPosition:ccp(512,384)];
 	[self addChild:gloopbackground z:21];
 	//ANIMATION
-	NSMutableArray * gloopFrames = [[[NSMutableArray  alloc]init]autorelease];
+	NSMutableArray * gloopFrames = [NSMutableArray  arrayWithCapacity:6];
 	for(int i = 0; i <= 6; i++) {
 		
 		CCSprite * sp = [CCSprite spriteWithFile:[NSString stringWithFormat:@"PuntosDomino_iPad_%05d.png.pvr",i]];
@@ -181,7 +198,7 @@
 {
 	bashoDirected = !bashoDirected;
 	
-	[self makeScoreAppear:bashoDirected];
+	//[self makeScoreAppear:bashoDirected];
 	if(bashoDirected)
 	{
 		points = 0;
@@ -225,39 +242,16 @@
 
 -(void)selectItemForBasho
 {	
+	GameManager * gm = [GameManager sharedGameManager];
+
 	currentAttempts =0;
 	
 	int indexBashoSelectedSound = arc4random() %[bashoSelectedItems count];
 	bashoSelectedSound = [[bashoSelectedItems objectAtIndex:indexBashoSelectedSound] intValue];
+    NSString * sound = [NSString stringWithFormat:@"wheel_snd_%@_where_%@.mp3",[[buttonsData objectAtIndex:bashoSelectedSound] objectForKey:@"image"],[gm languageString]];
 	[bashoSelectedItems removeObjectAtIndex:indexBashoSelectedSound];
-	NSString * sound = nil;
-	switch (bashoSelectedSound)
-	{
-		case BTN_BACKPACK_NUM:
-			sound =BTN_BACKPACK_SND_WHERE;
-			break;
-		case BTN_BOOTS_NUM:
-			sound =BTN_BOOTS_SND_WHERE;
-			break;
-		case BTN_HAT_NUM:
-			sound =BTN_HAT_SND_WHERE;
-			break;
-		case BTN_PHONE_NUM:
-			sound =BTN_PHONE_SND_WHERE;
-			break;
-		case BTN_JACKET_NUM:
-			sound =BTN_JACKET_SND_WHERE;
-			break;
-		case BTN_NECKLACE_NUM:
-			sound =BTN_NECKLACE_SND_WHERE;
-			break;
-		case BTN_PANTS_NUM:
-			sound =BTN_PANTS_SND_WHERE;
-			break;
-		case BTN_SUNGLASSES_NUM:
-			sound =BTN_SUNGLASSES_SND_WHERE;
-			break;
-	}
+    
+    
 	if([GameManager sharedGameManager].soundsEnabled)
 		[[SimpleAudioEngine sharedEngine] playEffect:sound];
 }
@@ -276,7 +270,7 @@
 {
 	bashoSelectedItems = [[NSMutableArray array]retain];
 		
-	NSMutableArray * btnImgs = [NSMutableArray arrayWithCapacity:8];
+	/*NSMutableArray * btnImgs = [NSMutableArray arrayWithCapacity:8];
 	[btnImgs addObject:BTN_BACKPACK];
 	[btnImgs addObject:BTN_BOOTS];
 	[btnImgs addObject:BTN_HAT];
@@ -285,20 +279,26 @@
 	[btnImgs addObject:BTN_NECKLACE];
 	[btnImgs addObject:BTN_PANTS];
 	[btnImgs addObject:BTN_SUNGLASSES];
-	
+	*/
 	
 	NSMutableArray * btnPos = [self loadBtnPos];
 	
+    NSString *filePath = [[NSBundle mainBundle] pathForResource:@"WheelItems" ofType:@"plist"];
+	buttonsData = [[[NSMutableDictionary dictionaryWithContentsOfFile:filePath]objectForKey:@"items"]retain];
+    
+	//[buttonsData shuffle];
 	
 	tapButtons = [CCMenu menuWithItems:nil];
 	for (int i = 0;i<8;i++)
 	{
-		NSString * btnImg = [NSString stringWithFormat:@"wheel_btn_%@%@.png",[btnImgs objectAtIndex:i],iPad];
-		NSString * btnImgSel = [NSString stringWithFormat:@"wheel_btn_%@_dwn%@.png",[btnImgs objectAtIndex:i],iPad];
+        NSString * btnName = [[buttonsData objectAtIndex:i] objectForKey:@"image"];
+		NSString * btnImg = [NSString stringWithFormat:@"wheel_btn_%@%@.png",btnName,iPad];
+		NSString * btnImgSel = [NSString stringWithFormat:@"wheel_btn_%@_dwn%@.png",btnName,iPad];
 		
 		CCMenuItemImage * btn = [CCMenuItemImage itemFromNormalImage:btnImg selectedImage:btnImgSel disabledImage:btnImgSel target:self selector:@selector(makeDinoSpin:)];
 		[tapButtons addChild:btn z:1 tag:i];
 		btn.position = ccp([[[btnPos objectAtIndex:i] objectForKey:@"x"] intValue],[[[btnPos objectAtIndex:i] objectForKey:@"y"] intValue]);
+        btn.userData = [buttonsData objectAtIndex:i];
 	}
 	[self addChild:tapButtons];
 	[tapButtons setPosition:ccp(0,0)];
@@ -308,6 +308,7 @@
 {
 	if(playingSound || dinoSpinning) return;
 	
+	GameManager * gm = [GameManager sharedGameManager];
 	
 	[btn setIsEnabled:NO];
 	
@@ -316,50 +317,13 @@
 	NSString * sound = nil;
 	
 	playingSound = YES;
-	[self runAction:[CCSequence actions:[CCDelayTime actionWithDuration:1],[CCCallFunc actionWithTarget:self selector:@selector(stopPlayingSound)],nil]];
-	switch (btn.tag)
-	{
-		case BTN_BACKPACK_NUM:
-			word = BTN_BACKPACK_SPANISH;
-			sound =BTN_BACKPACK_SND;
-			bashoDirectedWrongSound = BTN_BACKPACK_SND_WRONG;
-			break;
-		case BTN_BOOTS_NUM:
-			word = BTN_BOOTS_SPANISH;
-			sound =BTN_BOOTS_SND;
-			bashoDirectedWrongSound = BTN_BOOTS_SND_WRONG;
-			break;
-		case BTN_HAT_NUM:
-			word = BTN_HAT_SPANISH;
-			sound =BTN_HAT_SND;
-			bashoDirectedWrongSound = BTN_HAT_SND_WRONG;
-			break;
-		case BTN_PHONE_NUM:
-			word = BTN_PHONE_SPANISH;
-			sound =BTN_PHONE_SND;
-			bashoDirectedWrongSound = BTN_PHONE_SND_WRONG;
-			break;
-		case BTN_JACKET_NUM:
-			word = BTN_JACKET_SPANISH;
-			sound =BTN_JACKET_SND;
-			bashoDirectedWrongSound = BTN_JACKET_SND_WRONG;
-			break;
-		case BTN_NECKLACE_NUM:
-			word = BTN_NECKLACE_SPANISH;
-			sound =BTN_NECKLACE_SND;
-			bashoDirectedWrongSound = BTN_NECKLACE_SND_WRONG;
-			break;
-		case BTN_PANTS_NUM:
-			word = BTN_PANTS_SPANISH;
-			sound =BTN_PANTS_SND;
-			bashoDirectedWrongSound = BTN_PANTS_SND_WRONG;
-			break;
-		case BTN_SUNGLASSES_NUM:
-			word = BTN_SUNGLASSES_SPANISH;
-			sound =BTN_SUNGLASSES_SND;
-			bashoDirectedWrongSound = BTN_SUNGLASSES_SND_WRONG;
-			break;
-	}
+	[self runAction:[CCSequence actions:[CCDelayTime actionWithDuration:2.5],[CCCallFunc actionWithTarget:self selector:@selector(stopPlayingSound)],nil]];
+   
+    NSMutableDictionary * userData = (NSMutableDictionary *)btn.userData;
+    word =[NSMutableString stringWithFormat:@"%@",[userData objectForKey:@"espText"]];
+    bashoDirectedWrongSound =[NSMutableString stringWithFormat:@"wheel_snd_%@_wrong.mp3",[userData objectForKey:@"image"]];
+    sound =[NSMutableString stringWithFormat:@"wheel_snd_%@_%@.mp3",[userData objectForKey:@"image"],[gm languageString]];
+    
 	if(!bashoDirected)
 	{
 		if([GameManager sharedGameManager].soundsEnabled)
@@ -394,7 +358,10 @@
 		}else {
 			currentAttempts ++;
 			if([GameManager sharedGameManager].soundsEnabled)
-				[[SimpleAudioEngine sharedEngine] playEffect:bashoDirectedWrongSound];
+			{
+				[[SimpleAudioEngine sharedEngine] playEffect:@"WrongAnswer.mp3"];
+				//[[SimpleAudioEngine sharedEngine] playEffect:bashoDirectedWrongSound];
+			}
 		}
 		
 	}
@@ -413,6 +380,8 @@
 	CCLabelTTF * palabra = [self getChildByTag:kPALABRA];
 	[palabra setString:word];
 	[palabra runAction:[CCFadeIn actionWithDuration:0.8]];
+    CCSprite * palabraBck = [self getChildByTag:kPALABRABCK];
+	[palabraBck runAction:[CCFadeIn actionWithDuration:0.8]];
 }
 
 -(void)stopPlayingSound
@@ -427,6 +396,8 @@
 	}
 	CCLabelTTF * palabra = [self getChildByTag:kPALABRA];
 	[palabra setOpacity:0];
+    CCSprite * palabraBck = [self getChildByTag:kPALABRABCK];
+	[palabraBck setOpacity:0];
 	
 	if(currentAttempts >=5)
 	{
@@ -435,13 +406,6 @@
 	}
 }
 
--(void)ccTouchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
-{
-	UITouch *touch = [touches anyObject];
-	if (bashoDirected) return;
-	
-	[self makeDinoSpin2:-1];
-}
 
 -(void)makeDinoSpin:(CCMenuItemImage *)btn
 {
@@ -476,6 +440,38 @@
 
 -(void)stopSpinning
 {
+    float offset = 22.5;
+    float angle = dino.rotation;
+    int loops = 0;
+    
+    float realDinoAngle = 0;
+    if(angle >= 0)
+    {
+        loops = (int)floor(angle / 360);
+        realDinoAngle = angle - (loops * 360);
+    }else
+    {
+        loops = (int)ceil(angle / 360);
+        realDinoAngle = 360 + (angle - (loops * 360));
+    }
+    NSLog(@"realAngle %.2f",realDinoAngle);
+    if((realDinoAngle >0 && realDinoAngle <=offset) || (realDinoAngle<360 && realDinoAngle >360-offset))
+        selectedSound =0;
+    else if(realDinoAngle >45-offset && realDinoAngle <=90-offset)
+        selectedSound =1;
+    if(realDinoAngle >90-offset && realDinoAngle <=135-offset)
+        selectedSound =2;
+    if(realDinoAngle >135-offset && realDinoAngle <=180-offset)
+        selectedSound =3;
+    if(realDinoAngle >180-offset && realDinoAngle <=225-offset)
+        selectedSound =4;
+    if(realDinoAngle >225-offset && realDinoAngle <=270-offset)
+        selectedSound =5;
+    if(realDinoAngle >270-offset && realDinoAngle <=315-offset)
+        selectedSound =6;
+    if(realDinoAngle >315-offset && realDinoAngle <=360-offset)
+        selectedSound =7;
+    
 	dinoSpinning = NO;
 	[self listenSound:[tapButtons getChildByTag:selectedSound]];
 	
@@ -486,14 +482,209 @@
 	[viewController goToMenu];
 }
 
+-(void)goSettings
+{
+    [viewController goToSettings];
+}
+
+-(void)ccTouchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
+{
+	UITouch *touch = [touches anyObject];
+    CGPoint location = [touch locationInView: [touch view]];
+    location = [[CCDirector sharedDirector] convertToGL: location];	
+	//if (bashoDirected) return;
+    if(dinoSpinning) return;
+	if(playingSound)return;
+    
+	dinoSpinning = YES;
+	//[self makeDinoSpin2:-1];
+    [self schedule:@selector(updateTime) interval:0.3];
+    
+	forceApplied=0;
+	initPoint=location;
+	
+	fromMovement=YES;
+	
+	actualAngle = CC_RADIANS_TO_DEGREES(-(atan2(location.y-dino.position.y,location.x-dino.position.x)));
+	
+	initialAngle=0;
+	
+	isDragging=YES;
+}
+
+/*- (void)ccTouchesMoved:(UITouch *)touches withEvent:(UIEvent *)event
+{
+	[dino stopAllActions];
+	
+	UITouch *touch = [touches anyObject];
+    CGPoint location = [touch locationInView: [touch view]];
+    location = [[CCDirector sharedDirector] convertToGL: location];	
+	
+	float angle = CC_RADIANS_TO_DEGREES(-(atan2(location.y - dino.position.y, location.x - dino.position.x)));
+	
+	isDragging=YES;
+	
+	dino.rotation =dino.rotation - (actualAngle-angle);
+	
+	actualAngle = angle;
+	
+}*/
+
+- (void)ccTouchesEnded:(UITouch *)touches withEvent:(UIEvent *)event
+{		
+	UITouch *touch = [touches anyObject];
+    CGPoint location = [touch locationInView: [touch view]];
+    location = [[CCDirector sharedDirector] convertToGL: location];	
+	
+	isDragging=NO;
+	
+	float distance = abs((initPoint.x-location.x) + (initPoint.y-location.y));
+    
+	CGPoint aux = ccpNormalize(ccp(location.x-initPoint.x,location.y-initPoint.y));
+    
+	int dir=0;
+    
+	if (fabsl(aux.x) >= fabsl(aux.y))
+	{
+		if (aux.x>=0) {
+			dir=1;
+		}
+		else {
+			dir=2;
+		}
+	}
+	else {
+		if (aux.y>=0) {
+			dir=3;
+		}
+		else {
+			dir=4;
+		}
+	}
+    
+	if (dir==1)
+	{
+		distance=-distance;
+	}	
+	
+	if ((dir==1||dir==2)&&(initPoint.y>=dino.position.y)) {
+		distance=-distance;
+	}
+	
+	if (dir==3)
+	{
+		distance=-distance;
+	}	
+	
+	if ((dir==3||dir==4)&&(initPoint.x<=dino.position.x)) {
+		distance=-distance;
+	}
+	
+	if (abs(forceApplied)<5000&&time==0) {
+		
+		if (abs(forceApplied)<abs(forceApplied + (distance*10))&&abs(distance)>10) {
+			//[[PhantomAppDelegate get] playSound:@"fizz.caf"];
+		}
+		
+		forceApplied = forceApplied + (distance*20);
+		
+	}
+	
+	[self unschedule:@selector(updateTime)];
+	time=0;
+	
+}
+
+
+- (void)update:(ccTime)dt
+{
+    float prevForceApplied = forceApplied;
+
+	if (forceApplied==0) {
+		return;
+	}
+	
+	if (forceApplied>0) {
+		forceApplied=forceApplied-friction;
+		
+		if (forceApplied==0&&fromMovement) {
+			forceApplied=forceApplied-800;
+			fromMovement=NO;
+		}
+	}
+	else {
+		forceApplied=forceApplied+friction;
+		
+		if (forceApplied==0&&fromMovement) {
+			forceApplied=forceApplied+800;
+			fromMovement=NO;
+		}
+	}	
+	
+	dino.rotation=dino.rotation+(0.001*forceApplied);
+	
+    if((prevForceApplied >0 && forceApplied <0) || (prevForceApplied<0 && forceApplied >0))
+    {
+        forceApplied = 0;
+        NSLog(@"stopped at %.2f !",dino.rotation);
+    
+        [self stopSpinning];
+    }
+}
+
+-(void)pushLever
+{
+	if(!dinoSpinning)
+	{
+		dinoSpinning = YES;
+		[leverImg runAction:[CCSequence actions:[CCRotateTo actionWithDuration:0.5 angle:25],[CCCallFunc actionWithTarget:self selector:@selector(pushLever2)],[CCRotateTo actionWithDuration:1 angle:-25],nil]];
+	}
+}
+
+-(void)pushLever2
+{
+	forceApplied = 13800 + arc4random() % 6000;
+}
+
+-(void)loadSpinningStuff
+{
+    friction=0;
+    
+    time=0;
+    
+    isDragging=NO;
+    
+    forceApplied=0;
+    clockWise=YES;
+    
+    fromMovement=YES;
+    
+    [self schedule:@selector(startFriction) interval:2];
+    
+    [self scheduleUpdate];
+    
+
+}
+
+-(void)startFriction {
+	[self unschedule:@selector(startFriction)];
+	friction=201;
+}
+
+-(void)updateTime {
+	time++;
+}
+
 - (void) dealloc
 {
 	// in case you have something to dealloc, do it in this method
 	// in this particular example nothing needs to be released.
 	// cocos2d will automatically release all the children (Label)
-	
+	[SimpleAudioEngine end];
 	// don't forget to call "super dealloc"
+	[[SimpleAudioEngine sharedEngine] unloadEffect:@"WrongAnswer.mp3"];
 	[bashoSelectedItems release];
+    [buttonsData release];
 	[super dealloc];
 }
 

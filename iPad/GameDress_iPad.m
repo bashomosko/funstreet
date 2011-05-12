@@ -66,7 +66,7 @@
 	//[self removeStartupFlicker];
 	
 	// Run the intro Scene
-	[[CCDirector sharedDirector] runWithScene: [GameDressScene_iPad sceneWithDressVC:self bashoDirected:NO]];	
+	[[CCDirector sharedDirector] runWithScene: [GameDressScene_iPad sceneWithDressVC:self bashoDirected:NO playVid:YES]];	
 }
 
 - (void) removeStartupFlicker
@@ -135,6 +135,20 @@
 	[UIView commitAnimations];
 	
 	[gw goToVideo:nil];
+}
+
+-(void)goToSettings
+{
+	sv = [[SettingsViewController_iPad alloc] initWithNibName:@"SettingsViewController_iPad" bundle:nil];
+	sv.rootVC = self;
+	
+	[[[CCDirector sharedDirector] openGLView] addSubview:sv.view];
+}
+
+-(void)removeSettings
+{
+	[sv.view removeFromSuperview];
+	[sv release];
 }
 
 // Override to allow orientations other than the default portrait orientation.

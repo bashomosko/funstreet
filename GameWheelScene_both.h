@@ -12,6 +12,7 @@
 #import <MediaPlayer/MediaPlayer.h>
 
 #define kPALABRA 1000
+#define kPALABRABCK 999
 #define kSCORE 1001
 #define kPointsAwarded 5
 
@@ -70,6 +71,11 @@
 #define BTN_SUNGLASSES_SPANISH @"Anteojos"
 
 
+@interface NSMutableArray (Shuffling)
+- (void)shuffle;
+@end
+
+
 @interface GameWheelScene_both : CCLayer {
 
 	GameWheel * viewController;
@@ -93,6 +99,20 @@
 	
 	MPMoviePlayerController * introVideo;
 	MPMoviePlayerController * finishVideo;
+    
+    float forceApplied;
+    CGPoint initPoint;
+    BOOL fromMovement;
+    float actualAngle;
+    float initialAngle;
+    BOOL isDragging;
+    float time;
+    float friction;
+    BOOL clockWise;
+    
+    NSMutableArray * buttonsData;
+	
+	CCSprite * leverImg;
 	
 }
 

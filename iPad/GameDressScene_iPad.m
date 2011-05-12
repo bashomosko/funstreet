@@ -15,20 +15,20 @@
 
 @synthesize placingElement,colorNeeded,itemNeeded,bashoDirected;
 
-+(id) sceneWithDressVC:(GameDress_iPad *)vc bashoDirected:(BOOL)_bashoDirected
++(id) sceneWithDressVC:(GameDress_iPad *)vc bashoDirected:(BOOL)_bashoDirected playVid:(BOOL)playVid
 {
     CCScene *scene = [CCScene node];
-    GameDressScene_iPad *layer = [GameDressScene_iPad nodeWithDressVC:vc bashoDirected:_bashoDirected];
+    GameDressScene_iPad *layer = [GameDressScene_iPad nodeWithDressVC:vc bashoDirected:_bashoDirected playVid:playVid];
     [scene addChild: layer];
     return scene;
 }
 
-+(id) nodeWithDressVC:(GameDress_iPad *)vc bashoDirected:(BOOL)_bashoDirected
++(id) nodeWithDressVC:(GameDress_iPad *)vc bashoDirected:(BOOL)_bashoDirected playVid:(BOOL)playVid
 {
-	return [[[self alloc] initWithDressVC:vc bashoDirected:_bashoDirected] autorelease];
+	return [[[self alloc] initWithDressVC:vc bashoDirected:_bashoDirected playVid:playVid] autorelease];
 }
 
--(id) initWithDressVC:(GameDress_iPad *)vc bashoDirected:(BOOL)_bashoDirected
+-(id) initWithDressVC:(GameDress_iPad *)vc bashoDirected:(BOOL)_bashoDirected playVid:(BOOL)playVid
 {
 	if( (self=[super init] )) {
 		self.isTouchEnabled = YES;
@@ -37,8 +37,12 @@
 		bashoDirected = _bashoDirected;
 		viewController = vc;
 		
-		//[self loadVideo];
 		[self beginGame];
+		/*if(playVid)
+			[self loadVideo];
+		else
+			[self beginGame];
+		 */
 	}
 	return self;
 	
@@ -63,7 +67,7 @@
 	NSBundle *bundle = [NSBundle mainBundle];
 	if (bundle) 
 	{
-		NSString *moviePath = [bundle pathForResource:@"ARG" ofType:@"mp4"];
+		NSString *moviePath = [bundle pathForResource:@"intro_2_iPad" ofType:@"mov"];
 		if (moviePath)
 		{
 			url = [NSURL fileURLWithPath:moviePath];
@@ -205,7 +209,7 @@
 
 -(void)replay
 {
-	[[CCDirector sharedDirector] replaceScene:[CCTransitionFade transitionWithDuration:0.5 scene: [GameDressScene_iPad sceneWithDressVC:viewController bashoDirected:YES] withColor:ccWHITE]];
+	[[CCDirector sharedDirector] replaceScene:[CCTransitionFade transitionWithDuration:0.5 scene: [GameDressScene_iPad sceneWithDressVC:viewController bashoDirected:YES playVid:NO] withColor:ccWHITE]];
 	
 }
 
@@ -249,6 +253,8 @@
 	
 	CCMenuItemImage * backBtn = [CCMenuItemImage itemFromNormalImage:@"wheel_home_iPad.png" selectedImage:@"wheel_home_iPad.png" target:self selector:@selector(goBack)];
 	
+	CCMenuItemImage * settingsBtn = [CCMenuItemImage itemFromNormalImage:@"wheel_settings_iPad.png" selectedImage:@"wheel_settings_iPad.png" target:self selector:@selector(goSettings)];
+
 	CCMenuItemImage * soundOff = [CCMenuItemImage itemFromNormalImage:@"wheel_sound_off_iPad.png" selectedImage:@"wheel_sound_on_iPad.png"];
 	CCMenuItemImage * soundOn = [CCMenuItemImage itemFromNormalImage:@"wheel_sound_on_iPad.png" selectedImage:@"wheel_sound_off_iPad.png"];
 	CCMenuItemToggle * sound = [CCMenuItemToggle itemWithTarget:self selector:@selector(turnSounds) items:soundOn,soundOff,nil];
@@ -258,11 +264,12 @@
 	CCMenuItemToggle * basho = [CCMenuItemToggle itemWithTarget:self selector:@selector(turnBasho) items:bashoOff,bashoOn,nil];
 	
 	
-	CCMenu * menu = [CCMenu menuWithItems:backBtn,sound,basho,nil];
+	CCMenu * menu = [CCMenu menuWithItems:backBtn,sound,basho,settingsBtn, nil];
 	[self addChild:menu];
 	[backBtn setPosition:ccp(64,696)];
-	[sound setPosition:ccp(43,48)];
-	[basho setPosition:ccp(149,72)];
+	[settingsBtn setPosition:ccp(50,48)];
+	[sound setPosition:ccp(50,120)];
+	[basho setPosition:ccp(50,200)];
 	[menu setPosition:ccp(0,0)];
 	
 	btnImgs = [[NSMutableArray arrayWithCapacity:8]retain];
@@ -283,10 +290,14 @@
 	
 	[self selectItemForBasho];
 	
-	[self loadScore];
-	[self makeScoreAppear:bashoDirected];
+	//[self loadScore];
+	//[self makeScoreAppear:bashoDirected];
 }
 
+-(void)goSettings
+{
+    [viewController goToSettings];
+}
 
 -(void)turnSounds
 {
@@ -298,7 +309,7 @@
 {
 	bashoDirected = !bashoDirected;
 	
-	[[CCDirector sharedDirector] replaceScene:[CCTransitionFade transitionWithDuration:0.5 scene: [GameDressScene_iPad sceneWithDressVC:viewController bashoDirected:bashoDirected] withColor:ccWHITE]];
+	[[CCDirector sharedDirector] replaceScene:[CCTransitionFade transitionWithDuration:0.5 scene: [GameDressScene_iPad sceneWithDressVC:viewController bashoDirected:bashoDirected playVid:NO] withColor:ccWHITE]];
 	
 }
 
@@ -523,8 +534,8 @@
 	}
 	NSMutableArray * positions = [NSMutableArray array];
 	
-	NSMutableDictionary * p1 = [NSMutableDictionary dictionaryWithObjects:[NSMutableArray arrayWithObjects:[NSNumber numberWithInt:180],[NSNumber numberWithInt:180],nil] forKeys:[NSMutableArray arrayWithObjects:@"x",@"y",nil]];
-	NSMutableDictionary * p2 = [NSMutableDictionary dictionaryWithObjects:[NSMutableArray arrayWithObjects:[NSNumber numberWithInt:180],[NSNumber numberWithInt:580],nil] forKeys:[NSMutableArray arrayWithObjects:@"x",@"y",nil]];
+	NSMutableDictionary * p1 = [NSMutableDictionary dictionaryWithObjects:[NSMutableArray arrayWithObjects:[NSNumber numberWithInt:230],[NSNumber numberWithInt:180],nil] forKeys:[NSMutableArray arrayWithObjects:@"x",@"y",nil]];
+	NSMutableDictionary * p2 = [NSMutableDictionary dictionaryWithObjects:[NSMutableArray arrayWithObjects:[NSNumber numberWithInt:230],[NSNumber numberWithInt:580],nil] forKeys:[NSMutableArray arrayWithObjects:@"x",@"y",nil]];
 	NSMutableDictionary * p3 = [NSMutableDictionary dictionaryWithObjects:[NSMutableArray arrayWithObjects:[NSNumber numberWithInt:820],[NSNumber numberWithInt:180],nil] forKeys:[NSMutableArray arrayWithObjects:@"x",@"y",nil]];
 	NSMutableDictionary * p4 = [NSMutableDictionary dictionaryWithObjects:[NSMutableArray arrayWithObjects:[NSNumber numberWithInt:820],[NSNumber numberWithInt:580],nil] forKeys:[NSMutableArray arrayWithObjects:@"x",@"y",nil]];
 	
@@ -588,7 +599,7 @@
 
 -(void)onShake
 {
-	[[CCDirector sharedDirector] replaceScene:[CCTransitionFade transitionWithDuration:0.5 scene: [GameDressScene_iPad sceneWithDressVC:viewController bashoDirected:bashoDirected] withColor:ccWHITE]];
+	[[CCDirector sharedDirector] replaceScene:[CCTransitionFade transitionWithDuration:0.5 scene: [GameDressScene_iPad sceneWithDressVC:viewController bashoDirected:bashoDirected playVid:NO] withColor:ccWHITE]];
 
 }
 
