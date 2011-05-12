@@ -34,7 +34,7 @@
 - (void)viewDidLoad {
     
     
-    [self animateDoors];
+  //  [self animateDoors];
 	//[self playVideo];
     [super viewDidLoad];
 	
@@ -189,6 +189,8 @@
 
 
 - (void)dealloc {
+	[door1 stopAnimating];
+	[door2 stopAnimating];
 	[btnSong release];
 	[btnWheel release];
 	[btnVideo release];

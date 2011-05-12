@@ -123,6 +123,8 @@
 		1051CF33137AB6C3002DACDF /* wheel_snd_pig_where_eng.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1051CF2B137AB6C3002DACDF /* wheel_snd_pig_where_eng.mp3 */; };
 		1051CF55137ABBC7002DACDF /* RightAnswer.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1051CF53137ABBC6002DACDF /* RightAnswer.mp3 */; };
 		1051CF56137ABBC7002DACDF /* WrongAnswer.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1051CF54137ABBC7002DACDF /* WrongAnswer.mp3 */; };
+		1053C44F137C881000E7E3F9 /* RumiAnim1_iPad.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1053C44D137C881000E7E3F9 /* RumiAnim1_iPad.plist */; };
+		1053C450137C881000E7E3F9 /* RumiAnim1_iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 1053C44E137C881000E7E3F9 /* RumiAnim1_iPad.png */; };
 		1087E4161372C4BE00C1168F /* Wheel_text_iPad.fnt in Resources */ = {isa = PBXBuildFile; fileRef = 1087E4141372C4BE00C1168F /* Wheel_text_iPad.fnt */; };
 		1087E4171372C4BE00C1168F /* Wheel_text_iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 1087E4151372C4BE00C1168F /* Wheel_text_iPad.png */; };
 		1087E4201372CBF900C1168F /* wheel_snd_bee_where_esp.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1087E4181372CBF900C1168F /* wheel_snd_bee_where_esp.mp3 */; };
@@ -723,6 +725,8 @@
 		1051CF2B137AB6C3002DACDF /* wheel_snd_pig_where_eng.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = wheel_snd_pig_where_eng.mp3; sourceTree = "<group>"; };
 		1051CF53137ABBC6002DACDF /* RightAnswer.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = RightAnswer.mp3; sourceTree = "<group>"; };
 		1051CF54137ABBC7002DACDF /* WrongAnswer.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = WrongAnswer.mp3; sourceTree = "<group>"; };
+		1053C44D137C881000E7E3F9 /* RumiAnim1_iPad.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = RumiAnim1_iPad.plist; sourceTree = "<group>"; };
+		1053C44E137C881000E7E3F9 /* RumiAnim1_iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RumiAnim1_iPad.png; sourceTree = "<group>"; };
 		1087E4141372C4BE00C1168F /* Wheel_text_iPad.fnt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Wheel_text_iPad.fnt; path = iPhone/Wheel_text_iPad.fnt; sourceTree = SOURCE_ROOT; };
 		1087E4151372C4BE00C1168F /* Wheel_text_iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Wheel_text_iPad.png; path = iPhone/Wheel_text_iPad.png; sourceTree = SOURCE_ROOT; };
 		1087E4181372CBF900C1168F /* wheel_snd_bee_where_esp.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = wheel_snd_bee_where_esp.mp3; sourceTree = "<group>"; };
@@ -1638,6 +1642,8 @@
 		10A08CF013215426003F24AD /* dress */ = {
 			isa = PBXGroup;
 			children = (
+				1053C44D137C881000E7E3F9 /* RumiAnim1_iPad.plist */,
+				1053C44E137C881000E7E3F9 /* RumiAnim1_iPad.png */,
 				109E5D6B1340CB2300EEF48A /* Arrows_iPad_1024x1024_00000.png.pvr */,
 				109E5D6C1340CB2300EEF48A /* Arrows_iPad_1024x1024_00001.png.pvr */,
 				109E5D6D1340CB2300EEF48A /* Arrows_iPad_1024x1024_00002.png.pvr */,
@@ -2968,6 +2974,8 @@
 				1051CF33137AB6C3002DACDF /* wheel_snd_pig_where_eng.mp3 in Resources */,
 				1051CF55137ABBC7002DACDF /* RightAnswer.mp3 in Resources */,
 				1051CF56137ABBC7002DACDF /* WrongAnswer.mp3 in Resources */,
+				1053C44F137C881000E7E3F9 /* RumiAnim1_iPad.plist in Resources */,
+				1053C450137C881000E7E3F9 /* RumiAnim1_iPad.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

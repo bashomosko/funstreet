@@ -60,7 +60,7 @@
 	// make the OpenGLView a child of the view controller
 	[self setView:glView];
 	
-	[CCTexture2D setDefaultAlphaPixelFormat:kCCTexture2DPixelFormat_RGBA8888];
+	[CCTexture2D setDefaultAlphaPixelFormat:kCCTexture2DPixelFormat_RGBA4444];
 	
 	// Removes the startup flicker
 	//[self removeStartupFlicker];

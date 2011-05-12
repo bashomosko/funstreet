@@ -240,7 +240,7 @@
 	//[self loadScatteredElements];
 	
 	CCSprite * dino = [CCSprite spriteWithSpriteFrameName:@"dress_dino_iPad.png"];
-	[sbn addChild:dino];
+	[sbn addChild:dino z:0 tag:4190]; //DINO = 4190
 	[dino setPosition:ccp(512,384)];
 	
 	CCSprite * boxers = [CCSprite spriteWithSpriteFrameName:@"dress_boxers_iPad.png"];
@@ -290,8 +290,59 @@
 	
 	[self selectItemForBasho];
 	
+	[self schedule:@selector(playRandomDinoAnim) interval:10];
+	
 	//[self loadScore];
 	//[self makeScoreAppear:bashoDirected];
+}
+
+-(void)playRandomDinoAnim
+{
+	[[ CCSpriteFrameCache sharedSpriteFrameCache] addSpriteFramesWithFile:@"RumiAnim1_iPad.plist" textureFile:@"RumiAnim1_iPad.png"];
+	
+	CCSpriteBatchNode * animSbn = [CCSpriteBatchNode batchNodeWithFile:@"RumiAnim1_iPad.png"];
+	[self addChild:animSbn z:0 tag:545];
+	animSbn.userData = @"RumiAnim1_iPad.plist";
+	
+	//[self loadScatteredElements];
+	
+	CCSprite * dinoAnim = [CCSprite spriteWithSpriteFrameName:@"Game2_RumiEverythingAnim_00000.png"];
+	[animSbn addChild:dinoAnim];
+	[dinoAnim setPosition:ccp(512,384)];
+	
+	NSMutableArray *animFrames = [NSMutableArray array];
+	for(int i = 0; i < 20; i++) {
+		
+		CCSpriteFrame *frame = [[CCSpriteFrameCache sharedSpriteFrameCache] spriteFrameByName:[NSString stringWithFormat:@"Game2_RumiEverythingAnim_%05d.png",i]];
+		[animFrames addObject:frame];
+	}
+	
+	CCAnimation *animation = [CCAnimation animationWithFrames:animFrames];
+	// 14 frames * 1sec = 14 seconds
+	
+	CCSpriteBatchNode * sbn = [self getChildByTag:kSPRITEBATCH_ELEMS];
+	
+	CCSprite * dinosp = [sbn getChildByTag:4190];
+	[dinosp setVisible:NO];
+	
+	[dinoAnim runAction:[CCSequence actions:[CCAnimate actionWithDuration:1 animation:animation restoreOriginalFrame:YES],[CCCallFuncN actionWithTarget:self selector:@selector(removeRandomDinoAnim:)],nil]];
+	
+	
+}
+
+-(void)removeRandomDinoAnim:(CCSprite *)sp
+{
+	CCSpriteBatchNode * sbn = [self getChildByTag:kSPRITEBATCH_ELEMS];
+	
+	CCSprite * dinosp = [sbn getChildByTag:4190];
+	[dinosp setVisible:YES];
+	
+	CCSpriteBatchNode * animSbn = [self getChildByTag:545];
+	NSString * textToRemove = [NSString stringWithString:animSbn.userData];
+	[animSbn removeChild:sp cleanup:YES];
+	[self removeChild:animSbn cleanup:YES];
+	[[CCSpriteFrameCache sharedSpriteFrameCache] removeSpriteFramesFromFile:textToRemove];
+	
 }
 
 -(void)goSettings
@@ -587,6 +638,8 @@
 
 -(void)goBack
 {
+	[[CCSpriteFrameCache sharedSpriteFrameCache] removeSpriteFramesFromFile:@"dress_iPad.plist"];
+	[[CCSpriteFrameCache sharedSpriteFrameCache] removeUnusedSpriteFrames];
 	[viewController goToMenu];
 }
 
