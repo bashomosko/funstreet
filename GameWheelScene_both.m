@@ -190,12 +190,14 @@
 
 -(void)turnSounds
 {
+	if([GameManager sharedGameManager].onPause) return; 
 	GameManager * gm = [GameManager sharedGameManager];
 	[gm turnSounds];
 }
 
 -(void)turnBasho
 {
+	if([GameManager sharedGameManager].onPause) return; 
 	bashoDirected = !bashoDirected;
 	
 	//[self makeScoreAppear:bashoDirected];
@@ -306,6 +308,7 @@
 
 -(void)listenSound:(CCMenuItemImage *)btn
 {
+	if([GameManager sharedGameManager].onPause) return; 
 	if(playingSound || dinoSpinning) return;
 	
 	GameManager * gm = [GameManager sharedGameManager];
@@ -342,7 +345,15 @@
 			}
 			
 			if([GameManager sharedGameManager].soundsEnabled)
-				[[SimpleAudioEngine sharedEngine] playEffect:sound];
+			{
+				if(bashoDirected)
+				{
+					[[SimpleAudioEngine sharedEngine] playEffect:@"RightAnswer.mp3"];
+				}else {
+					[[SimpleAudioEngine sharedEngine] playEffect:sound];
+				}
+
+			}
 			[self showPalabra:word];
 			
 			[btn setIsEnabled:NO];
@@ -479,11 +490,14 @@
 
 -(void)goBack
 {
+	if([GameManager sharedGameManager].onPause) return; 
 	[viewController goToMenu];
 }
 
 -(void)goSettings
 {
+	if([GameManager sharedGameManager].onPause) return; 
+	[GameManager sharedGameManager].onPause = YES;
     [viewController goToSettings];
 }
 
@@ -495,6 +509,7 @@
 	//if (bashoDirected) return;
     if(dinoSpinning) return;
 	if(playingSound)return;
+	if([GameManager sharedGameManager].onPause) return; 
     
 	dinoSpinning = YES;
 	//[self makeDinoSpin2:-1];
@@ -510,6 +525,7 @@
 	initialAngle=0;
 	
 	isDragging=YES;
+	
 }
 
 /*- (void)ccTouchesMoved:(UITouch *)touches withEvent:(UIEvent *)event
@@ -586,7 +602,11 @@
 			//[[PhantomAppDelegate get] playSound:@"fizz.caf"];
 		}
 		
-		forceApplied = forceApplied + (distance*20);
+		forceApplied = forceApplied + (distance*100);
+		if(forceApplied > 15000)
+			forceApplied =15000;
+		if(forceApplied < -15000)
+			forceApplied = -15000;
 		
 	}
 	
@@ -634,6 +654,7 @@
 
 -(void)pushLever
 {
+	if([GameManager sharedGameManager].onPause) return; 
 	if(!dinoSpinning)
 	{
 		dinoSpinning = YES;
@@ -668,7 +689,7 @@
 
 -(void)startFriction {
 	[self unschedule:@selector(startFriction)];
-	friction=201;
+	friction=51;
 }
 
 -(void)updateTime {
@@ -680,7 +701,6 @@
 	// in case you have something to dealloc, do it in this method
 	// in this particular example nothing needs to be released.
 	// cocos2d will automatically release all the children (Label)
-	[SimpleAudioEngine end];
 	// don't forget to call "super dealloc"
 	[[SimpleAudioEngine sharedEngine] unloadEffect:@"WrongAnswer.mp3"];
 	[bashoSelectedItems release];

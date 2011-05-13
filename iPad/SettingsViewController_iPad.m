@@ -11,7 +11,7 @@
 
 @implementation SettingsViewController_iPad
 
-@synthesize closeBtn,rootVC,language;
+@synthesize closeBtn,rootVC,language,instructionLanguage,fxVolume,musicVolume;
 
  // The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
 /*
@@ -30,6 +30,9 @@
 	
 	GameManager * gm = [GameManager sharedGameManager];
 	[language setSelectedSegmentIndex:gm.language];
+	[instructionLanguage setSelectedSegmentIndex:gm.instructionsLanguage];
+	[fxVolume setSelectedSegmentIndex:gm.fxVolume];
+	[musicVolume setSelectedSegmentIndex:gm.musicVolume];
 	
     [super viewDidLoad];
 }
@@ -46,6 +49,24 @@
 {
 	GameManager * gm = [GameManager sharedGameManager];
 	[gm setLanguage:sender.selectedSegmentIndex];
+}
+
+-(IBAction) changeinstructionLanguage:(UISegmentedControl *)sender
+{
+	GameManager * gm = [GameManager sharedGameManager];
+	[gm setInstructionsLanguage:sender.selectedSegmentIndex];
+}
+
+-(IBAction) changeFxVolume:(UISegmentedControl *)sender
+{
+	GameManager * gm = [GameManager sharedGameManager];
+	[gm setFxVolume:sender.selectedSegmentIndex];
+}
+
+-(IBAction) changeMusicVolume:(UISegmentedControl *)sender
+{
+	GameManager * gm = [GameManager sharedGameManager];
+	[gm setMusicVolume:sender.selectedSegmentIndex];
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
@@ -71,6 +92,9 @@
 
 - (void)dealloc {
 	[language release];
+	[instructionLanguage release];
+	[fxVolume release];
+	[musicVolume release];
 	[closeBtn release];
     [super dealloc];
 }

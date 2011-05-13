@@ -11,6 +11,7 @@
 #import "AppDelegate_iPad.h"
 #import "MainMenu_iPad.h"
 #import "GameDressScene_iPad.h"
+#import "GameManager.h"
 
 @implementation GameDress_iPad
 
@@ -139,6 +140,7 @@
 
 -(void)goToSettings
 {
+	[GameManager sharedGameManager].onPause = YES;
 	sv = [[SettingsViewController_iPad alloc] initWithNibName:@"SettingsViewController_iPad" bundle:nil];
 	sv.rootVC = self;
 	
@@ -147,6 +149,7 @@
 
 -(void)removeSettings
 {
+	[GameManager sharedGameManager].onPause = NO;
 	[sv.view removeFromSuperview];
 	[sv release];
 }

@@ -7,6 +7,7 @@
 //
 
 #import "MainMenu_both.h"
+#import "SimpleAudioEngine.h"
 
 @implementation MainMenu_both
 
@@ -33,7 +34,7 @@
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
     
-    
+    [[SimpleAudioEngine sharedEngine] playBackgroundMusic:@"backgroundMusic.mp3"];
   //  [self animateDoors];
 	//[self playVideo];
     [super viewDidLoad];

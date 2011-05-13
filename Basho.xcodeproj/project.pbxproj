@@ -554,6 +554,7 @@
 		10C0436813741C37008FEE6D /* CityMenu_Page2_GlowingDoors_00009_iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 10C0435013741C37008FEE6D /* CityMenu_Page2_GlowingDoors_00009_iPad.png */; };
 		10C0436913741C37008FEE6D /* CityMenu_Page2_GlowingDoors_00010_iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 10C0435113741C37008FEE6D /* CityMenu_Page2_GlowingDoors_00010_iPad.png */; };
 		10C0436A13741C37008FEE6D /* CityMenu_Page2_GlowingDoors_00011_iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 10C0435213741C37008FEE6D /* CityMenu_Page2_GlowingDoors_00011_iPad.png */; };
+		10D2D26C137DA5B000334C4C /* backgroundMusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 10D2D26B137DA5B000334C4C /* backgroundMusic.mp3 */; };
 		10EE6B9D134DEB9A0041B7A5 /* Puntostodos_iPad.mov in Resources */ = {isa = PBXBuildFile; fileRef = 10EE6B9C134DEB9A0041B7A5 /* Puntostodos_iPad.mov */; };
 		10EE6BBC134DF3140041B7A5 /* pointsaudiosting.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 10EE6BBB134DF3140041B7A5 /* pointsaudiosting.mp3 */; };
 		10EE6C04134DFA050041B7A5 /* 1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 10EE6BDC134DFA050041B7A5 /* 1.mp3 */; };
@@ -1281,6 +1282,7 @@
 		10C0435013741C37008FEE6D /* CityMenu_Page2_GlowingDoors_00009_iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CityMenu_Page2_GlowingDoors_00009_iPad.png; sourceTree = "<group>"; };
 		10C0435113741C37008FEE6D /* CityMenu_Page2_GlowingDoors_00010_iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CityMenu_Page2_GlowingDoors_00010_iPad.png; sourceTree = "<group>"; };
 		10C0435213741C37008FEE6D /* CityMenu_Page2_GlowingDoors_00011_iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CityMenu_Page2_GlowingDoors_00011_iPad.png; sourceTree = "<group>"; };
+		10D2D26B137DA5B000334C4C /* backgroundMusic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = backgroundMusic.mp3; sourceTree = "<group>"; };
 		10EE6B9C134DEB9A0041B7A5 /* Puntostodos_iPad.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = Puntostodos_iPad.mov; sourceTree = "<group>"; };
 		10EE6BBB134DF3140041B7A5 /* pointsaudiosting.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = pointsaudiosting.mp3; sourceTree = "<group>"; };
 		10EE6BDC134DFA050041B7A5 /* 1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 1.mp3; sourceTree = "<group>"; };
@@ -2137,6 +2139,7 @@
 		10B32831131D5CAA0014A77D /* Sounds */ = {
 			isa = PBXGroup;
 			children = (
+				10D2D26B137DA5B000334C4C /* backgroundMusic.mp3 */,
 				1051CF53137ABBC6002DACDF /* RightAnswer.mp3 */,
 				1051CF54137ABBC7002DACDF /* WrongAnswer.mp3 */,
 				1051CB1F13788DC8002DACDF /* wheel - animals - english */,
@@ -2976,6 +2979,7 @@
 				1051CF56137ABBC7002DACDF /* WrongAnswer.mp3 in Resources */,
 				1053C44F137C881000E7E3F9 /* RumiAnim1_iPad.plist in Resources */,
 				1053C450137C881000E7E3F9 /* RumiAnim1_iPad.png in Resources */,
+				10D2D26C137DA5B000334C4C /* backgroundMusic.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

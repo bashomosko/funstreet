@@ -69,6 +69,7 @@
 
 -(void)beginGame
 {
+	
 	bashoDirected = NO;
 	
 	CCSprite * back = [CCSprite spriteWithFile:@"wheel_background_iPad.png"];
