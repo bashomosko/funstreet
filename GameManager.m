@@ -6,7 +6,8 @@ static GameManager *sharedInstance = nil;
 
 @implementation GameManager
 
-@synthesize soundsEnabled,languageString,language,instructionsLanguage, fxVolume, musicVolume,onPause;
+@synthesize soundsEnabled,languageString,language,instructionsLanguage, fxVolume, musicVolume,onPause,instructionsLanguageString;
+@synthesize playedMenuVideo;
 
 + (GameManager *)sharedGameManager
 {

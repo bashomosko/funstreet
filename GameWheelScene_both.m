@@ -53,7 +53,7 @@
 	NSBundle *bundle = [NSBundle mainBundle];
 	if (bundle) 
 	{
-		NSString *moviePath = [bundle pathForResource:@"intro_1_iPad" ofType:@"mov"];
+		NSString *moviePath = [bundle pathForResource:[NSString stringWithFormat:@"intro_1_%@_iPad",[GameManager sharedGameManager].instructionsLanguageString] ofType:@"mov"];
 		if (moviePath)
 		{
 			url = [NSURL fileURLWithPath:moviePath];
@@ -71,8 +71,24 @@
 	 name:MPMoviePlayerPlaybackDidFinishNotification
 	 object:introVideo];
 	
+	UIButton * skip = [UIButton buttonWithType:UIButtonTypeCustom];
+	[skip setFrame:CGRectMake(0,0,[CCDirector sharedDirector].winSize.width,[CCDirector sharedDirector].winSize.height)];
+	[skip addTarget:self action:@selector(skipMovie) forControlEvents:UIControlEventTouchUpInside];
+	[introVideo.view addSubview:skip];
+	
 	
 	[introVideo play];
+}
+
+-(void)skipMovie
+{
+	[[NSNotificationCenter defaultCenter] removeObserver:self
+													name:MPMoviePlayerPlaybackDidFinishNotification object:introVideo];
+	[introVideo stop];
+	[introVideo.view removeFromSuperview];
+	[introVideo release];
+	
+	[self beginGame];
 }
 
 -(void) videoPlayerDidFinishPlaying: (NSNotification*)aNotification
@@ -548,6 +564,10 @@
 
 - (void)ccTouchesEnded:(UITouch *)touches withEvent:(UIEvent *)event
 {		
+	if(dinoSpinning) return;
+	if(playingSound)return;
+	if([GameManager sharedGameManager].onPause) return;
+	
 	UITouch *touch = [touches anyObject];
     CGPoint location = [touch locationInView: [touch view]];
     location = [[CCDirector sharedDirector] convertToGL: location];	

@@ -37,12 +37,12 @@
 		bashoDirected = _bashoDirected;
 		viewController = vc;
 		
-		[self beginGame];
-		/*if(playVid)
+		//[self beginGame];
+		if(playVid)
 			[self loadVideo];
 		else
 			[self beginGame];
-		 */
+		 
 	}
 	return self;
 	
@@ -67,7 +67,7 @@
 	NSBundle *bundle = [NSBundle mainBundle];
 	if (bundle) 
 	{
-		NSString *moviePath = [bundle pathForResource:@"intro_2_iPad" ofType:@"mov"];
+		NSString *moviePath = [bundle pathForResource:[NSString stringWithFormat:@"intro_2_%@_iPad",[GameManager sharedGameManager].instructionsLanguageString] ofType:@"mov"];
 		if (moviePath)
 		{
 			url = [NSURL fileURLWithPath:moviePath];
@@ -84,9 +84,25 @@
 	 selector:@selector(videoPlayerDidFinishPlaying:)
 						name:MPMoviePlayerPlaybackDidFinishNotification
 						object:introVideo];
-						
+	
+	UIButton * skip = [UIButton buttonWithType:UIButtonTypeCustom];
+	[skip setFrame:CGRectMake(0,0,[CCDirector sharedDirector].winSize.width,[CCDirector sharedDirector].winSize.height)];
+	[skip addTarget:self action:@selector(skipMovie) forControlEvents:UIControlEventTouchUpInside];
+	[introVideo.view addSubview:skip];
+	
 	
 	[introVideo play];
+}
+
+-(void)skipMovie
+{
+	[[NSNotificationCenter defaultCenter] removeObserver:self
+													name:MPMoviePlayerPlaybackDidFinishNotification object:introVideo];
+	[introVideo stop];
+	[introVideo.view removeFromSuperview];
+	[introVideo release];
+	
+	[self beginGame];
 }
 
 -(void) videoPlayerDidFinishPlaying: (NSNotification*)aNotification
@@ -290,7 +306,7 @@
 	
 	[self selectItemForBasho];
 	
-	[self schedule:@selector(playRandomDinoAnim) interval:10];
+	[self schedule:@selector(playRandomDinoAnim) interval:arc4random() % 5+5];
 	
 	//[self loadScore];
 	//[self makeScoreAppear:bashoDirected];
@@ -298,22 +314,46 @@
 
 -(void)playRandomDinoAnim
 {
-	[[ CCSpriteFrameCache sharedSpriteFrameCache] addSpriteFramesWithFile:@"RumiAnim1_iPad.plist" textureFile:@"RumiAnim1_iPad.png"];
+	int animNum = arc4random() %4+1;
+	int animAmount = 0;
+	NSString * frameName = nil;
+	switch (animNum) {
+		case 1:
+			frameName = @"Game2_RumiEverythingAnim";
+			animAmount = 20;
+			break;
+		case 2:
+			frameName = @"Game2_RumiEyesBlinkAnim";
+			animAmount = 8;
+			break;
+		case 3:
+			frameName = @"Game2_RumiMouthAnim";
+			animAmount = 8;
+			break;
+		case 4:
+			frameName = @"Game2_RumiTailWagAnim";
+			animAmount = 8;
+			break;
+		default:
+			break;
+	}
 	
-	CCSpriteBatchNode * animSbn = [CCSpriteBatchNode batchNodeWithFile:@"RumiAnim1_iPad.png"];
+	[[ CCSpriteFrameCache sharedSpriteFrameCache] addSpriteFramesWithFile:[NSString stringWithFormat:@"RumiAnim%d_iPad.plist",animNum] textureFile:[NSString stringWithFormat:@"RumiAnim%d_iPad.png",animNum]];
+	
+	CCSpriteBatchNode * animSbn = [CCSpriteBatchNode batchNodeWithFile:[NSString stringWithFormat:@"RumiAnim%d_iPad.png",animNum]];
 	[self addChild:animSbn z:0 tag:545];
-	animSbn.userData = @"RumiAnim1_iPad.plist";
+	animSbn.userData = [[NSString stringWithFormat:@"RumiAnim%d_iPad.plist",animNum]retain];
 	
 	//[self loadScatteredElements];
 	
-	CCSprite * dinoAnim = [CCSprite spriteWithSpriteFrameName:@"Game2_RumiEverythingAnim_00000.png"];
+	CCSprite * dinoAnim = [CCSprite spriteWithSpriteFrameName:[NSString stringWithFormat:@"%@_00000.png",frameName]];
 	[animSbn addChild:dinoAnim];
 	[dinoAnim setPosition:ccp(512,384)];
 	
 	NSMutableArray *animFrames = [NSMutableArray array];
-	for(int i = 0; i < 20; i++) {
+	for(int i = 0; i < animAmount; i++) {
 		
-		CCSpriteFrame *frame = [[CCSpriteFrameCache sharedSpriteFrameCache] spriteFrameByName:[NSString stringWithFormat:@"Game2_RumiEverythingAnim_%05d.png",i]];
+		CCSpriteFrame *frame = [[CCSpriteFrameCache sharedSpriteFrameCache] spriteFrameByName:[NSString stringWithFormat:@"%@_%05d.png",frameName,i]];
 		[animFrames addObject:frame];
 	}
 	
@@ -339,6 +379,7 @@
 	
 	CCSpriteBatchNode * animSbn = [self getChildByTag:545];
 	NSString * textToRemove = [NSString stringWithString:animSbn.userData];
+	[animSbn.userData release];
 	[animSbn removeChild:sp cleanup:YES];
 	[self removeChild:animSbn cleanup:YES];
 	[[CCSpriteFrameCache sharedSpriteFrameCache] removeSpriteFramesFromFile:textToRemove];

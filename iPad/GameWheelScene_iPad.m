@@ -56,8 +56,8 @@
 			self.isTouchEnabled = YES;
 			viewController = vc;
 			
-			//[self loadVideo];
-			[self beginGame];
+			[self loadVideo];
+			//[self beginGame];
 			
 		}
 		return self;

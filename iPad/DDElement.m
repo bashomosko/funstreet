@@ -147,10 +147,12 @@
 			
 			if([GameManager sharedGameManager].soundsEnabled)
 			{
-				if(theGame.bashoDirected)
+				[[SimpleAudioEngine sharedEngine] playEffect:@"RightAnswer.mp3"];
+
+				/*if(theGame.bashoDirected)
 					[[SimpleAudioEngine sharedEngine] playEffect:@"RightAnswer.mp3"];
 				else
-					[[SimpleAudioEngine sharedEngine] playEffect:soundOkPath];
+					[[SimpleAudioEngine sharedEngine] playEffect:soundOkPath];*/
 			}
 			placed = YES;
 			theGame.placingElement = YES;
