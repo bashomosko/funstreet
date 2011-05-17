@@ -313,7 +313,7 @@
 		NSString * btnImg = [NSString stringWithFormat:@"wheel_btn_%@%@.png",btnName,iPad];
 		NSString * btnImgSel = [NSString stringWithFormat:@"wheel_btn_%@_dwn%@.png",btnName,iPad];
 		
-		CCMenuItemImage * btn = [CCMenuItemImage itemFromNormalImage:btnImg selectedImage:btnImgSel disabledImage:btnImgSel target:self selector:@selector(makeDinoSpin:)];
+		CCMenuItemImage * btn = [CCMenuItemImage itemFromNormalImage:btnImg selectedImage:btnImgSel disabledImage:btnImgSel target:self selector:@selector(playBtnEffect:)];
 		[tapButtons addChild:btn z:1 tag:i];
 		btn.position = ccp([[[btnPos objectAtIndex:i] objectForKey:@"x"] intValue],[[[btnPos objectAtIndex:i] objectForKey:@"y"] intValue]);
         btn.userData = [buttonsData objectAtIndex:i];
@@ -433,6 +433,14 @@
 	}
 }
 
+-(void)playBtnEffect:(CCMenuItemImage *)btn
+{
+	if(playingSound || dinoSpinning) return;
+	[btn setIsEnabled:NO];
+	selectedSound = btn.tag;
+	[self listenSound:[tapButtons getChildByTag:selectedSound]];
+	
+}
 
 -(void)makeDinoSpin:(CCMenuItemImage *)btn
 {
@@ -522,11 +530,27 @@
 	UITouch *touch = [touches anyObject];
     CGPoint location = [touch locationInView: [touch view]];
     location = [[CCDirector sharedDirector] convertToGL: location];	
+	
 	//if (bashoDirected) return;
-    if(dinoSpinning) return;
+    if(dinoSpinning)
+	{
+		if(CGRectContainsPoint([dino boundingBox],location))
+		{
+			forceApplied = 0;
+			[self stopSpinning];
+		}
+		return;
+		
+	}
 	if(playingSound)return;
 	if([GameManager sharedGameManager].onPause) return; 
-    
+	
+	if(CGRectContainsPoint([leverBtn boundingBox], location)) 
+	{
+		beganDraggingLever = YES;
+		return;
+    }
+	
 	dinoSpinning = YES;
 	//[self makeDinoSpin2:-1];
     [self schedule:@selector(updateTime) interval:0.3];
@@ -544,26 +568,54 @@
 	
 }
 
-/*- (void)ccTouchesMoved:(UITouch *)touches withEvent:(UIEvent *)event
+- (void)ccTouchesMoved:(UITouch *)touches withEvent:(UIEvent *)event
 {
-	[dino stopAllActions];
+	//[dino stopAllActions];
 	
 	UITouch *touch = [touches anyObject];
     CGPoint location = [touch locationInView: [touch view]];
     location = [[CCDirector sharedDirector] convertToGL: location];	
 	
-	float angle = CC_RADIANS_TO_DEGREES(-(atan2(location.y - dino.position.y, location.x - dino.position.x)));
+	/*float angle = CC_RADIANS_TO_DEGREES(-(atan2(location.y - dino.position.y, location.x - dino.position.x)));
 	
 	isDragging=YES;
 	
 	dino.rotation =dino.rotation - (actualAngle-angle);
 	
 	actualAngle = angle;
+	*/
+	if(CGRectContainsPoint(CGRectMake(800, 0, 224, 768), location) && beganDraggingLever)
+	{
+		//leverBtn.position = ccp(leverBtn.position.x, location.y);
+		CGPoint orig = ccp(512,384);
+		CGPoint finalVect = ccp(location.x-orig.x,location.y-orig.y);
+		
+		float angle = atan2(-finalVect.y,finalVect.x);
+		
+		leverImg.rotation = CC_RADIANS_TO_DEGREES(angle);
+		NSLog(@"%.2f",leverImg.rotation);
+		if(leverImg.rotation < -26) leverImg.rotation = -26;
+		if(leverImg.rotation > 32) leverImg.rotation = 32;
+	}
 	
-}*/
+}
 
 - (void)ccTouchesEnded:(UITouch *)touches withEvent:(UIEvent *)event
 {		
+	if(beganDraggingLever)
+	{
+		beganDraggingLever = NO;
+		if(leverImg.rotation > 25)
+		{
+			[self pushLever];
+			return;
+		}else {
+			[leverImg runAction:[CCRotateTo actionWithDuration:0.5 angle:-25]];
+			return;
+		}
+
+	}
+	
 	if(dinoSpinning) return;
 	if(playingSound)return;
 	if([GameManager sharedGameManager].onPause) return;
@@ -641,8 +693,12 @@
     float prevForceApplied = forceApplied;
 
 	if (forceApplied==0) {
+		dinoSpinning = NO;
 		return;
+	}else {
+		dinoSpinning = YES;
 	}
+
 	
 	if (forceApplied>0) {
 		forceApplied=forceApplied-friction;
@@ -678,13 +734,13 @@
 	if(!dinoSpinning)
 	{
 		dinoSpinning = YES;
-		[leverImg runAction:[CCSequence actions:[CCRotateTo actionWithDuration:0.5 angle:25],[CCCallFunc actionWithTarget:self selector:@selector(pushLever2)],[CCRotateTo actionWithDuration:1 angle:-25],nil]];
+		[leverImg runAction:[CCSequence actions:[CCCallFunc actionWithTarget:self selector:@selector(pushLever2)],[CCRotateTo actionWithDuration:3 angle:-25],nil]];
 	}
 }
 
 -(void)pushLever2
 {
-	forceApplied = 13800 + arc4random() % 6000;
+	forceApplied = 13800 + arc4random() % 2000;
 }
 
 -(void)loadSpinningStuff

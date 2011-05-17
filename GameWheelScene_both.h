@@ -113,6 +113,9 @@
     NSMutableArray * buttonsData;
 	
 	CCSprite * leverImg;
+	CCSprite * leverBtn;
+	
+	BOOL beganDraggingLever;
 	
 }
 
