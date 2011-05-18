@@ -5,6 +5,10 @@
 	<key>pants</key>
 	<array>
 		<dict>
+			<key>text_esp</key>
+			<string>Pantalones</string>
+			<key>text_eng</key>
+			<string>Pants</string>
 			<key>file-dressed</key>
 			<string>BluePantsOn_iPad.png</string>
 			<key>file-image</key>
@@ -22,6 +26,10 @@
 			<string>star_wrong.aif</string>
 		</dict>
 		<dict>
+			<key>text_eng</key>
+			<string>Pants</string>
+			<key>text_esp</key>
+			<string>Pantalones</string>
 			<key>file-dressed</key>
 			<string>RedPantsOn_iPad.png</string>
 			<key>file-image</key>
@@ -39,6 +47,10 @@
 			<string>star_wrong.aif</string>
 		</dict>
 		<dict>
+			<key>text_eng</key>
+			<string>Pants</string>
+			<key>text_esp</key>
+			<string>Pantalones</string>
 			<key>file-dressed</key>
 			<string>PurplePantsOn_iPad.png</string>
 			<key>file-image</key>
@@ -56,6 +68,10 @@
 			<string>star_wrong.aif</string>
 		</dict>
 		<dict>
+			<key>text_eng</key>
+			<string>Pants</string>
+			<key>text_esp</key>
+			<string>Pantalones</string>
 			<key>file-dressed</key>
 			<string>YellowPantsOn_iPad.png</string>
 			<key>file-image</key>

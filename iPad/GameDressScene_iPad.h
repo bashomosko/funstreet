@@ -69,6 +69,9 @@
 #define BTN_PANTS_SPANISH @"Pantalones"
 #define BTN_SUNGLASSES_SPANISH @"Anteojos"
 
+#define kPALABRA 1000
+#define kPALABRABCK 999
+
 @interface GameDressScene_iPad : CCLayer
 {
 	int bashoSelectedSound;

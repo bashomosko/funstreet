@@ -5,7 +5,7 @@
 #import "SimpleAudioEngine.h"
 
 @implementation DDElement
-@synthesize state,mySprite,dressed,desiredZ,itemTag;
+@synthesize state,mySprite,dressed,desiredZ,itemTag,itemText,itemNumber,colorNumber;
 
 -(id) initWithTheGame:(GameDress_iPad *)ddm elementDict:(NSMutableDictionary *)element
 {
@@ -35,6 +35,7 @@
 		
 		itemNumber = [element objectForKey:@"itemNumber"];
 		colorNumber = [element objectForKey:@"colorNumber"];
+		itemText = [element objectForKey:@"text_esp"];
 		
 		
 		soundOkPath = [[NSString stringWithFormat:@"dress_snd_%@_%@.mp3",itemNumber,colorNumber]retain];
@@ -148,7 +149,7 @@
 			if([GameManager sharedGameManager].soundsEnabled)
 			{
 				[[SimpleAudioEngine sharedEngine] playEffect:@"RightAnswer.mp3"];
-
+				[theGame hidePalabra];
 				/*if(theGame.bashoDirected)
 					[[SimpleAudioEngine sharedEngine] playEffect:@"RightAnswer.mp3"];
 				else

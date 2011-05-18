@@ -216,7 +216,7 @@
 						<key>_historyCapacity</key>
 						<integer>0</integer>
 						<key>bookmark</key>
-						<string>10D2DEBE1383F4F400334C4C</string>
+						<string>10D2DEF01384017B00334C4C</string>
 						<key>history</key>
 						<array>
 							<string>10D2D93413818E7D00334C4C</string>
@@ -310,12 +310,11 @@
 								<string>10A08C9013215065003F24AD</string>
 								<string>10AA0BD0130719AC00D11E6B</string>
 								<string>10AA0B731307148100D11E6B</string>
+								<string>10B56A581306EE4600AA7DCB</string>
+								<string>10A08CF013215426003F24AD</string>
 								<string>2860E324111B887F00E27156</string>
 								<string>28EEBF621118D79A00187D67</string>
 								<string>10108B7B132008AA001848A5</string>
-								<string>10B32831131D5CAA0014A77D</string>
-								<string>10D2DD981383419C00334C4C</string>
-								<string>1051CB1F13788DC8002DACDF</string>
 								<string>10AA0BD2130719D200D11E6B</string>
 								<string>29B97323FDCFA39411CA2CEA</string>
 								<string>1C37FBAC04509CD000000102</string>
@@ -325,14 +324,15 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>43</integer>
-									<integer>41</integer>
-									<integer>40</integer>
+									<integer>129</integer>
+									<integer>36</integer>
+									<integer>31</integer>
+									<integer>4</integer>
 									<integer>0</integer>
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 243}, {292, 594}}</string>
+							<string>{{0, 1977}, {292, 594}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -369,7 +369,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>GameWheelScene_both.m</string>
+								<string>GameDressScene_iPad.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -377,11 +377,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>GameWheelScene_both.m</string>
+										<string>GameDressScene_iPad.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>10D2DEBD1383F4F400334C4C</string>
+										<string>10D2DEEF1384017B00334C4C</string>
 										<key>history</key>
 										<array>
 											<string>10B56A4A1306EDB900AA7DCB</string>
@@ -445,27 +445,21 @@
 											<string>1051CD04137976D3002DACDF</string>
 											<string>1051CD0A137976D3002DACDF</string>
 											<string>1051CD0B137976D3002DACDF</string>
-											<string>1051CD1F137977BE002DACDF</string>
 											<string>1051CD8013797E06002DACDF</string>
 											<string>1051CD8113797E06002DACDF</string>
 											<string>1051CF8D137AC551002DACDF</string>
-											<string>1051CFC3137AC913002DACDF</string>
 											<string>1053C455137C895D00E7E3F9</string>
 											<string>1053C459137C895D00E7E3F9</string>
 											<string>1053C45A137C895D00E7E3F9</string>
 											<string>1053C45B137C895D00E7E3F9</string>
 											<string>1053C45E137C895D00E7E3F9</string>
 											<string>1053C47D137C8F3D00E7E3F9</string>
-											<string>10D2D1E6137D969400334C4C</string>
 											<string>10D2D202137D986700334C4C</string>
 											<string>10D2D278137DA72A00334C4C</string>
-											<string>10D2D2A3137DAFE600334C4C</string>
 											<string>10D2D2A5137DAFE600334C4C</string>
 											<string>10D2D2A6137DAFE600334C4C</string>
 											<string>10D2D2A7137DAFE600334C4C</string>
-											<string>10D2D893138146D100334C4C</string>
 											<string>10D2D8E11381537300334C4C</string>
-											<string>10D2D8F51381542A00334C4C</string>
 											<string>10D2D90713815D2500334C4C</string>
 											<string>10D2D90A13815D2500334C4C</string>
 											<string>10D2D90B13815D2500334C4C</string>
@@ -479,13 +473,19 @@
 											<string>10D2DCE91382EBFF00334C4C</string>
 											<string>10D2DCEA1382EBFF00334C4C</string>
 											<string>10D2DE0D13836E8200334C4C</string>
-											<string>10D2DE0E13836E8200334C4C</string>
 											<string>10D2DE1013836E8200334C4C</string>
-											<string>10D2DE2D1383DF1600334C4C</string>
-											<string>10D2DE8A1383EC7700334C4C</string>
-											<string>10D2DE8B1383EC7700334C4C</string>
 											<string>10D2DEB71383F42000334C4C</string>
-											<string>10D2DEBC1383F4F400334C4C</string>
+											<string>10D2DEC81383FB0A00334C4C</string>
+											<string>10D2DEC91383FB0A00334C4C</string>
+											<string>10D2DECA1383FB0A00334C4C</string>
+											<string>10D2DECB1383FB0A00334C4C</string>
+											<string>10D2DECC1383FB0A00334C4C</string>
+											<string>10D2DECD1383FB0A00334C4C</string>
+											<string>10D2DED61384001500334C4C</string>
+											<string>10D2DED91384001500334C4C</string>
+											<string>10D2DEEC1384017B00334C4C</string>
+											<string>10D2DEED1384017B00334C4C</string>
+											<string>10D2DEEE1384017B00334C4C</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -683,6 +683,7 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
+		<string>10D2DEF11384017B00334C4C</string>
 		<string>1C530D57069F1CE1000CFCEE</string>
 		<string>10D2DD021382EEC400334C4C</string>
 		<string>10D2DCFB1382EC7000334C4C</string>

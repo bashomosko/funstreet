@@ -304,12 +304,45 @@
 	[btnColor addObject:@"Purple"];
 	[btnColor addObject:@"Yellow"];
 	
+	[self createPalabra];
+	
 	[self selectItemForBasho];
 	
 	[self schedule:@selector(playRandomDinoAnim) interval:arc4random() % 5+5];
 	
+	
 	//[self loadScore];
 	//[self makeScoreAppear:bashoDirected];
+}
+
+
+-(void)createPalabra
+{
+    CCSprite * palabraBck = [CCSprite spriteWithFile:@"wheel_wordbackground_iPad.png"];
+    [self addChild:palabraBck z:1 tag:kPALABRABCK];
+    [palabraBck setPosition:ccp(870,60)];
+	[palabraBck setOpacity:0];
+	CCLabelTTF * palabra = [CCLabelBMFont labelWithString:@"a" fntFile:@"Wheel_text_iPad.fnt"];
+    [self addChild:palabra z:1 tag:kPALABRA];
+	[palabra setPosition:ccp(870,60)];
+	[palabra setOpacity:0];
+}
+
+-(void)showPalabra:(NSString *)word
+{
+	CCLabelTTF * palabra = [self getChildByTag:kPALABRA];
+	[palabra setString:word];
+	[palabra runAction:[CCFadeIn actionWithDuration:0.8]];
+    CCSprite * palabraBck = [self getChildByTag:kPALABRABCK];
+	[palabraBck runAction:[CCFadeIn actionWithDuration:0.8]];
+}
+
+-(void)hidePalabra
+{
+	CCLabelTTF * palabra = [self getChildByTag:kPALABRA];
+	[palabra runAction:[CCSequence actions:[CCDelayTime actionWithDuration:1.5],[CCFadeTo actionWithDuration:0.5 opacity:0],nil]];
+    CCSprite * palabraBck = [self getChildByTag:kPALABRABCK];
+	[palabraBck runAction:[CCSequence actions:[CCDelayTime actionWithDuration:1.5],[CCFadeTo actionWithDuration:0.5 opacity:0],nil]];	
 }
 
 -(void)playRandomDinoAnim
@@ -655,8 +688,14 @@
 				break;
 		}
 		
+		
 		DDElement * ddElement = [[DDElement alloc] initWithTheGame:self elementDict:elem];
 		[ddElements addObject:ddElement];
+		
+		if (!bashoDirected ||(bashoDirected && [ddElement.itemNumber isEqualToString:itemNeeded] && [ddElement.colorNumber isEqualToString:colorNeeded]))
+			[self showPalabra:ddElement.itemText];
+		
+		
 		[ddElement release];
 	}
 
