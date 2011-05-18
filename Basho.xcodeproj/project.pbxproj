@@ -491,29 +491,13 @@
 		10B56BA5130701A100AA7DCB /* GameWheel_iPad.m in Sources */ = {isa = PBXBuildFile; fileRef = 10B56BA3130701A100AA7DCB /* GameWheel_iPad.m */; };
 		10B56BA6130701A100AA7DCB /* GameWheel_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10B56BA4130701A100AA7DCB /* GameWheel_iPad.xib */; };
 		10C0435313741C37008FEE6D /* CityMenu_Page1_GlowingDoors_00000_iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 10C0433B13741C37008FEE6D /* CityMenu_Page1_GlowingDoors_00000_iPad.png */; };
-		10C0435413741C37008FEE6D /* CityMenu_Page1_GlowingDoors_00001_iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 10C0433C13741C37008FEE6D /* CityMenu_Page1_GlowingDoors_00001_iPad.png */; };
-		10C0435513741C37008FEE6D /* CityMenu_Page1_GlowingDoors_00002_iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 10C0433D13741C37008FEE6D /* CityMenu_Page1_GlowingDoors_00002_iPad.png */; };
-		10C0435613741C37008FEE6D /* CityMenu_Page1_GlowingDoors_00003_iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 10C0433E13741C37008FEE6D /* CityMenu_Page1_GlowingDoors_00003_iPad.png */; };
-		10C0435713741C37008FEE6D /* CityMenu_Page1_GlowingDoors_00004_iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 10C0433F13741C37008FEE6D /* CityMenu_Page1_GlowingDoors_00004_iPad.png */; };
-		10C0435813741C37008FEE6D /* CityMenu_Page1_GlowingDoors_00005_iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 10C0434013741C37008FEE6D /* CityMenu_Page1_GlowingDoors_00005_iPad.png */; };
-		10C0435913741C37008FEE6D /* CityMenu_Page1_GlowingDoors_00006_iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 10C0434113741C37008FEE6D /* CityMenu_Page1_GlowingDoors_00006_iPad.png */; };
-		10C0435A13741C37008FEE6D /* CityMenu_Page1_GlowingDoors_00007_iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 10C0434213741C37008FEE6D /* CityMenu_Page1_GlowingDoors_00007_iPad.png */; };
-		10C0435B13741C37008FEE6D /* CityMenu_Page1_GlowingDoors_00008_iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 10C0434313741C37008FEE6D /* CityMenu_Page1_GlowingDoors_00008_iPad.png */; };
-		10C0435C13741C37008FEE6D /* CityMenu_Page1_GlowingDoors_00009_iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 10C0434413741C37008FEE6D /* CityMenu_Page1_GlowingDoors_00009_iPad.png */; };
-		10C0435D13741C37008FEE6D /* CityMenu_Page1_GlowingDoors_00010_iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 10C0434513741C37008FEE6D /* CityMenu_Page1_GlowingDoors_00010_iPad.png */; };
-		10C0435E13741C37008FEE6D /* CityMenu_Page1_GlowingDoors_00011_iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 10C0434613741C37008FEE6D /* CityMenu_Page1_GlowingDoors_00011_iPad.png */; };
+		10C0435513741C37008FEE6D /* CityMenu_Page1_GlowingDoors_00001_iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 10C0433D13741C37008FEE6D /* CityMenu_Page1_GlowingDoors_00001_iPad.png */; };
+		10C0435713741C37008FEE6D /* CityMenu_Page1_GlowingDoors_00002_iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 10C0433F13741C37008FEE6D /* CityMenu_Page1_GlowingDoors_00002_iPad.png */; };
+		10C0435913741C37008FEE6D /* CityMenu_Page1_GlowingDoors_00003_iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 10C0434113741C37008FEE6D /* CityMenu_Page1_GlowingDoors_00003_iPad.png */; };
 		10C0435F13741C37008FEE6D /* CityMenu_Page2_GlowingDoors_00000_iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 10C0434713741C37008FEE6D /* CityMenu_Page2_GlowingDoors_00000_iPad.png */; };
-		10C0436013741C37008FEE6D /* CityMenu_Page2_GlowingDoors_00001_iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 10C0434813741C37008FEE6D /* CityMenu_Page2_GlowingDoors_00001_iPad.png */; };
-		10C0436113741C37008FEE6D /* CityMenu_Page2_GlowingDoors_00002_iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 10C0434913741C37008FEE6D /* CityMenu_Page2_GlowingDoors_00002_iPad.png */; };
-		10C0436213741C37008FEE6D /* CityMenu_Page2_GlowingDoors_00003_iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 10C0434A13741C37008FEE6D /* CityMenu_Page2_GlowingDoors_00003_iPad.png */; };
-		10C0436313741C37008FEE6D /* CityMenu_Page2_GlowingDoors_00004_iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 10C0434B13741C37008FEE6D /* CityMenu_Page2_GlowingDoors_00004_iPad.png */; };
-		10C0436413741C37008FEE6D /* CityMenu_Page2_GlowingDoors_00005_iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 10C0434C13741C37008FEE6D /* CityMenu_Page2_GlowingDoors_00005_iPad.png */; };
-		10C0436513741C37008FEE6D /* CityMenu_Page2_GlowingDoors_00006_iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 10C0434D13741C37008FEE6D /* CityMenu_Page2_GlowingDoors_00006_iPad.png */; };
-		10C0436613741C37008FEE6D /* CityMenu_Page2_GlowingDoors_00007_iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 10C0434E13741C37008FEE6D /* CityMenu_Page2_GlowingDoors_00007_iPad.png */; };
-		10C0436713741C37008FEE6D /* CityMenu_Page2_GlowingDoors_00008_iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 10C0434F13741C37008FEE6D /* CityMenu_Page2_GlowingDoors_00008_iPad.png */; };
-		10C0436813741C37008FEE6D /* CityMenu_Page2_GlowingDoors_00009_iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 10C0435013741C37008FEE6D /* CityMenu_Page2_GlowingDoors_00009_iPad.png */; };
-		10C0436913741C37008FEE6D /* CityMenu_Page2_GlowingDoors_00010_iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 10C0435113741C37008FEE6D /* CityMenu_Page2_GlowingDoors_00010_iPad.png */; };
-		10C0436A13741C37008FEE6D /* CityMenu_Page2_GlowingDoors_00011_iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 10C0435213741C37008FEE6D /* CityMenu_Page2_GlowingDoors_00011_iPad.png */; };
+		10C0436113741C37008FEE6D /* CityMenu_Page2_GlowingDoors_00001_iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 10C0434913741C37008FEE6D /* CityMenu_Page2_GlowingDoors_00001_iPad.png */; };
+		10C0436313741C37008FEE6D /* CityMenu_Page2_GlowingDoors_00002_iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 10C0434B13741C37008FEE6D /* CityMenu_Page2_GlowingDoors_00002_iPad.png */; };
+		10C0436513741C37008FEE6D /* CityMenu_Page2_GlowingDoors_00003_iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 10C0434D13741C37008FEE6D /* CityMenu_Page2_GlowingDoors_00003_iPad.png */; };
 		10D2D26C137DA5B000334C4C /* backgroundMusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 10D2D26B137DA5B000334C4C /* backgroundMusic.mp3 */; };
 		10D2D88B138145B800334C4C /* intro_2_esp_iPad.mov in Resources */ = {isa = PBXBuildFile; fileRef = 10D2D88A138145B800334C4C /* intro_2_esp_iPad.mov */; };
 		10D2D88D138145F500334C4C /* menu_esp_iPad.mov in Resources */ = {isa = PBXBuildFile; fileRef = 10D2D88C138145F500334C4C /* menu_esp_iPad.mov */; };
@@ -1276,29 +1260,13 @@
 		10B56BA3130701A100AA7DCB /* GameWheel_iPad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameWheel_iPad.m; sourceTree = "<group>"; };
 		10B56BA4130701A100AA7DCB /* GameWheel_iPad.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GameWheel_iPad.xib; sourceTree = "<group>"; };
 		10C0433B13741C37008FEE6D /* CityMenu_Page1_GlowingDoors_00000_iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CityMenu_Page1_GlowingDoors_00000_iPad.png; sourceTree = "<group>"; };
-		10C0433C13741C37008FEE6D /* CityMenu_Page1_GlowingDoors_00001_iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CityMenu_Page1_GlowingDoors_00001_iPad.png; sourceTree = "<group>"; };
-		10C0433D13741C37008FEE6D /* CityMenu_Page1_GlowingDoors_00002_iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CityMenu_Page1_GlowingDoors_00002_iPad.png; sourceTree = "<group>"; };
-		10C0433E13741C37008FEE6D /* CityMenu_Page1_GlowingDoors_00003_iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CityMenu_Page1_GlowingDoors_00003_iPad.png; sourceTree = "<group>"; };
-		10C0433F13741C37008FEE6D /* CityMenu_Page1_GlowingDoors_00004_iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CityMenu_Page1_GlowingDoors_00004_iPad.png; sourceTree = "<group>"; };
-		10C0434013741C37008FEE6D /* CityMenu_Page1_GlowingDoors_00005_iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CityMenu_Page1_GlowingDoors_00005_iPad.png; sourceTree = "<group>"; };
-		10C0434113741C37008FEE6D /* CityMenu_Page1_GlowingDoors_00006_iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CityMenu_Page1_GlowingDoors_00006_iPad.png; sourceTree = "<group>"; };
-		10C0434213741C37008FEE6D /* CityMenu_Page1_GlowingDoors_00007_iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CityMenu_Page1_GlowingDoors_00007_iPad.png; sourceTree = "<group>"; };
-		10C0434313741C37008FEE6D /* CityMenu_Page1_GlowingDoors_00008_iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CityMenu_Page1_GlowingDoors_00008_iPad.png; sourceTree = "<group>"; };
-		10C0434413741C37008FEE6D /* CityMenu_Page1_GlowingDoors_00009_iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CityMenu_Page1_GlowingDoors_00009_iPad.png; sourceTree = "<group>"; };
-		10C0434513741C37008FEE6D /* CityMenu_Page1_GlowingDoors_00010_iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CityMenu_Page1_GlowingDoors_00010_iPad.png; sourceTree = "<group>"; };
-		10C0434613741C37008FEE6D /* CityMenu_Page1_GlowingDoors_00011_iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CityMenu_Page1_GlowingDoors_00011_iPad.png; sourceTree = "<group>"; };
+		10C0433D13741C37008FEE6D /* CityMenu_Page1_GlowingDoors_00001_iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CityMenu_Page1_GlowingDoors_00001_iPad.png; sourceTree = "<group>"; };
+		10C0433F13741C37008FEE6D /* CityMenu_Page1_GlowingDoors_00002_iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CityMenu_Page1_GlowingDoors_00002_iPad.png; sourceTree = "<group>"; };
+		10C0434113741C37008FEE6D /* CityMenu_Page1_GlowingDoors_00003_iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CityMenu_Page1_GlowingDoors_00003_iPad.png; sourceTree = "<group>"; };
 		10C0434713741C37008FEE6D /* CityMenu_Page2_GlowingDoors_00000_iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CityMenu_Page2_GlowingDoors_00000_iPad.png; sourceTree = "<group>"; };
-		10C0434813741C37008FEE6D /* CityMenu_Page2_GlowingDoors_00001_iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CityMenu_Page2_GlowingDoors_00001_iPad.png; sourceTree = "<group>"; };
-		10C0434913741C37008FEE6D /* CityMenu_Page2_GlowingDoors_00002_iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CityMenu_Page2_GlowingDoors_00002_iPad.png; sourceTree = "<group>"; };
-		10C0434A13741C37008FEE6D /* CityMenu_Page2_GlowingDoors_00003_iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CityMenu_Page2_GlowingDoors_00003_iPad.png; sourceTree = "<group>"; };
-		10C0434B13741C37008FEE6D /* CityMenu_Page2_GlowingDoors_00004_iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CityMenu_Page2_GlowingDoors_00004_iPad.png; sourceTree = "<group>"; };
-		10C0434C13741C37008FEE6D /* CityMenu_Page2_GlowingDoors_00005_iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CityMenu_Page2_GlowingDoors_00005_iPad.png; sourceTree = "<group>"; };
-		10C0434D13741C37008FEE6D /* CityMenu_Page2_GlowingDoors_00006_iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CityMenu_Page2_GlowingDoors_00006_iPad.png; sourceTree = "<group>"; };
-		10C0434E13741C37008FEE6D /* CityMenu_Page2_GlowingDoors_00007_iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CityMenu_Page2_GlowingDoors_00007_iPad.png; sourceTree = "<group>"; };
-		10C0434F13741C37008FEE6D /* CityMenu_Page2_GlowingDoors_00008_iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CityMenu_Page2_GlowingDoors_00008_iPad.png; sourceTree = "<group>"; };
-		10C0435013741C37008FEE6D /* CityMenu_Page2_GlowingDoors_00009_iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CityMenu_Page2_GlowingDoors_00009_iPad.png; sourceTree = "<group>"; };
-		10C0435113741C37008FEE6D /* CityMenu_Page2_GlowingDoors_00010_iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CityMenu_Page2_GlowingDoors_00010_iPad.png; sourceTree = "<group>"; };
-		10C0435213741C37008FEE6D /* CityMenu_Page2_GlowingDoors_00011_iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CityMenu_Page2_GlowingDoors_00011_iPad.png; sourceTree = "<group>"; };
+		10C0434913741C37008FEE6D /* CityMenu_Page2_GlowingDoors_00001_iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CityMenu_Page2_GlowingDoors_00001_iPad.png; sourceTree = "<group>"; };
+		10C0434B13741C37008FEE6D /* CityMenu_Page2_GlowingDoors_00002_iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CityMenu_Page2_GlowingDoors_00002_iPad.png; sourceTree = "<group>"; };
+		10C0434D13741C37008FEE6D /* CityMenu_Page2_GlowingDoors_00003_iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CityMenu_Page2_GlowingDoors_00003_iPad.png; sourceTree = "<group>"; };
 		10D2D26B137DA5B000334C4C /* backgroundMusic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = backgroundMusic.mp3; sourceTree = "<group>"; };
 		10D2D88A138145B800334C4C /* intro_2_esp_iPad.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = intro_2_esp_iPad.mov; sourceTree = "<group>"; };
 		10D2D88C138145F500334C4C /* menu_esp_iPad.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = menu_esp_iPad.mov; sourceTree = "<group>"; };
@@ -1548,29 +1516,13 @@
 				1087E4401374104600C1168F /* mm_background1_iPad.png */,
 				1087E4411374104600C1168F /* mm_background2_iPad.png */,
 				10C0433B13741C37008FEE6D /* CityMenu_Page1_GlowingDoors_00000_iPad.png */,
-				10C0433C13741C37008FEE6D /* CityMenu_Page1_GlowingDoors_00001_iPad.png */,
-				10C0433D13741C37008FEE6D /* CityMenu_Page1_GlowingDoors_00002_iPad.png */,
-				10C0433E13741C37008FEE6D /* CityMenu_Page1_GlowingDoors_00003_iPad.png */,
-				10C0433F13741C37008FEE6D /* CityMenu_Page1_GlowingDoors_00004_iPad.png */,
-				10C0434013741C37008FEE6D /* CityMenu_Page1_GlowingDoors_00005_iPad.png */,
-				10C0434113741C37008FEE6D /* CityMenu_Page1_GlowingDoors_00006_iPad.png */,
-				10C0434213741C37008FEE6D /* CityMenu_Page1_GlowingDoors_00007_iPad.png */,
-				10C0434313741C37008FEE6D /* CityMenu_Page1_GlowingDoors_00008_iPad.png */,
-				10C0434413741C37008FEE6D /* CityMenu_Page1_GlowingDoors_00009_iPad.png */,
-				10C0434513741C37008FEE6D /* CityMenu_Page1_GlowingDoors_00010_iPad.png */,
-				10C0434613741C37008FEE6D /* CityMenu_Page1_GlowingDoors_00011_iPad.png */,
+				10C0433D13741C37008FEE6D /* CityMenu_Page1_GlowingDoors_00001_iPad.png */,
+				10C0433F13741C37008FEE6D /* CityMenu_Page1_GlowingDoors_00002_iPad.png */,
+				10C0434113741C37008FEE6D /* CityMenu_Page1_GlowingDoors_00003_iPad.png */,
 				10C0434713741C37008FEE6D /* CityMenu_Page2_GlowingDoors_00000_iPad.png */,
-				10C0434813741C37008FEE6D /* CityMenu_Page2_GlowingDoors_00001_iPad.png */,
-				10C0434913741C37008FEE6D /* CityMenu_Page2_GlowingDoors_00002_iPad.png */,
-				10C0434A13741C37008FEE6D /* CityMenu_Page2_GlowingDoors_00003_iPad.png */,
-				10C0434B13741C37008FEE6D /* CityMenu_Page2_GlowingDoors_00004_iPad.png */,
-				10C0434C13741C37008FEE6D /* CityMenu_Page2_GlowingDoors_00005_iPad.png */,
-				10C0434D13741C37008FEE6D /* CityMenu_Page2_GlowingDoors_00006_iPad.png */,
-				10C0434E13741C37008FEE6D /* CityMenu_Page2_GlowingDoors_00007_iPad.png */,
-				10C0434F13741C37008FEE6D /* CityMenu_Page2_GlowingDoors_00008_iPad.png */,
-				10C0435013741C37008FEE6D /* CityMenu_Page2_GlowingDoors_00009_iPad.png */,
-				10C0435113741C37008FEE6D /* CityMenu_Page2_GlowingDoors_00010_iPad.png */,
-				10C0435213741C37008FEE6D /* CityMenu_Page2_GlowingDoors_00011_iPad.png */,
+				10C0434913741C37008FEE6D /* CityMenu_Page2_GlowingDoors_00001_iPad.png */,
+				10C0434B13741C37008FEE6D /* CityMenu_Page2_GlowingDoors_00002_iPad.png */,
+				10C0434D13741C37008FEE6D /* CityMenu_Page2_GlowingDoors_00003_iPad.png */,
 			);
 			name = "main menu";
 			sourceTree = "<group>";
@@ -3081,29 +3033,13 @@
 				1087E4421374104600C1168F /* mm_background1_iPad.png in Resources */,
 				1087E4431374104600C1168F /* mm_background2_iPad.png in Resources */,
 				10C0435313741C37008FEE6D /* CityMenu_Page1_GlowingDoors_00000_iPad.png in Resources */,
-				10C0435413741C37008FEE6D /* CityMenu_Page1_GlowingDoors_00001_iPad.png in Resources */,
-				10C0435513741C37008FEE6D /* CityMenu_Page1_GlowingDoors_00002_iPad.png in Resources */,
-				10C0435613741C37008FEE6D /* CityMenu_Page1_GlowingDoors_00003_iPad.png in Resources */,
-				10C0435713741C37008FEE6D /* CityMenu_Page1_GlowingDoors_00004_iPad.png in Resources */,
-				10C0435813741C37008FEE6D /* CityMenu_Page1_GlowingDoors_00005_iPad.png in Resources */,
-				10C0435913741C37008FEE6D /* CityMenu_Page1_GlowingDoors_00006_iPad.png in Resources */,
-				10C0435A13741C37008FEE6D /* CityMenu_Page1_GlowingDoors_00007_iPad.png in Resources */,
-				10C0435B13741C37008FEE6D /* CityMenu_Page1_GlowingDoors_00008_iPad.png in Resources */,
-				10C0435C13741C37008FEE6D /* CityMenu_Page1_GlowingDoors_00009_iPad.png in Resources */,
-				10C0435D13741C37008FEE6D /* CityMenu_Page1_GlowingDoors_00010_iPad.png in Resources */,
-				10C0435E13741C37008FEE6D /* CityMenu_Page1_GlowingDoors_00011_iPad.png in Resources */,
+				10C0435513741C37008FEE6D /* CityMenu_Page1_GlowingDoors_00001_iPad.png in Resources */,
+				10C0435713741C37008FEE6D /* CityMenu_Page1_GlowingDoors_00002_iPad.png in Resources */,
+				10C0435913741C37008FEE6D /* CityMenu_Page1_GlowingDoors_00003_iPad.png in Resources */,
 				10C0435F13741C37008FEE6D /* CityMenu_Page2_GlowingDoors_00000_iPad.png in Resources */,
-				10C0436013741C37008FEE6D /* CityMenu_Page2_GlowingDoors_00001_iPad.png in Resources */,
-				10C0436113741C37008FEE6D /* CityMenu_Page2_GlowingDoors_00002_iPad.png in Resources */,
-				10C0436213741C37008FEE6D /* CityMenu_Page2_GlowingDoors_00003_iPad.png in Resources */,
-				10C0436313741C37008FEE6D /* CityMenu_Page2_GlowingDoors_00004_iPad.png in Resources */,
-				10C0436413741C37008FEE6D /* CityMenu_Page2_GlowingDoors_00005_iPad.png in Resources */,
-				10C0436513741C37008FEE6D /* CityMenu_Page2_GlowingDoors_00006_iPad.png in Resources */,
-				10C0436613741C37008FEE6D /* CityMenu_Page2_GlowingDoors_00007_iPad.png in Resources */,
-				10C0436713741C37008FEE6D /* CityMenu_Page2_GlowingDoors_00008_iPad.png in Resources */,
-				10C0436813741C37008FEE6D /* CityMenu_Page2_GlowingDoors_00009_iPad.png in Resources */,
-				10C0436913741C37008FEE6D /* CityMenu_Page2_GlowingDoors_00010_iPad.png in Resources */,
-				10C0436A13741C37008FEE6D /* CityMenu_Page2_GlowingDoors_00011_iPad.png in Resources */,
+				10C0436113741C37008FEE6D /* CityMenu_Page2_GlowingDoors_00001_iPad.png in Resources */,
+				10C0436313741C37008FEE6D /* CityMenu_Page2_GlowingDoors_00002_iPad.png in Resources */,
+				10C0436513741C37008FEE6D /* CityMenu_Page2_GlowingDoors_00003_iPad.png in Resources */,
 				1051C94613786084002DACDF /* SettingsViewController_iPad.xib in Resources */,
 				1051C95C1378609D002DACDF /* settingsbackground.png in Resources */,
 				1051C9E013786B9B002DACDF /* intro_2_eng_iPad.mov in Resources */,

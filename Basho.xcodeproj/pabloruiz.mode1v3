@@ -216,10 +216,10 @@
 						<key>_historyCapacity</key>
 						<integer>0</integer>
 						<key>bookmark</key>
-						<string>10D2DFDA13841BE700334C4C</string>
+						<string>10D2DFF91384455C00334C4C</string>
 						<key>history</key>
 						<array>
-							<string>10D2D93413818E7D00334C4C</string>
+							<string>10D2DFDC13841C1F00334C4C</string>
 						</array>
 					</dict>
 					<key>SplitCount</key>
@@ -270,6 +270,8 @@
 			<key>Layout</key>
 			<array>
 				<dict>
+					<key>BecomeActive</key>
+					<true/>
 					<key>ContentConfiguration</key>
 					<dict>
 						<key>PBXBottomSmartGroupGIDs</key>
@@ -327,8 +329,8 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>15</integer>
-									<integer>10</integer>
+									<integer>21</integer>
+									<integer>18</integer>
 									<integer>4</integer>
 									<integer>0</integer>
 								</array>
@@ -364,8 +366,6 @@
 					<key>Dock</key>
 					<array>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -383,7 +383,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>10D2DFD913841BE700334C4C</string>
+										<string>10D2DFF61384455C00334C4C</string>
 										<key>history</key>
 										<array>
 											<string>10B56A4A1306EDB900AA7DCB</string>
@@ -487,7 +487,7 @@
 											<string>10D2DF3C1384139300334C4C</string>
 											<string>10D2DFD613841BE700334C4C</string>
 											<string>10D2DFD713841BE700334C4C</string>
-											<string>10D2DFD813841BE700334C4C</string>
+											<string>10D2DFDB13841C1F00334C4C</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -499,14 +499,14 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 0}, {966, 488}}</string>
+								<string>{{0, 0}, {966, 484}}</string>
 								<key>RubberWindowFrame</key>
 								<string>0 117 1280 653 0 0 1280 778 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
 							<key>Proportion</key>
-							<string>488pt</string>
+							<string>484pt</string>
 						</dict>
 						<dict>
 							<key>ContentConfiguration</key>
@@ -519,14 +519,14 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 493}, {966, 119}}</string>
+								<string>{{0, 489}, {966, 123}}</string>
 								<key>RubberWindowFrame</key>
 								<string>0 117 1280 653 0 0 1280 778 </string>
 							</dict>
 							<key>Module</key>
 							<string>XCDetailModule</string>
 							<key>Proportion</key>
-							<string>119pt</string>
+							<string>123pt</string>
 						</dict>
 					</array>
 					<key>Proportion</key>
@@ -545,9 +545,9 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>10D2DCDB1382E76C00334C4C</string>
+				<string>10D2DFF71384455C00334C4C</string>
 				<string>1CE0B1FE06471DED0097A5F4</string>
-				<string>10D2DCDC1382E76C00334C4C</string>
+				<string>10D2DFF81384455C00334C4C</string>
 				<string>1CE0B20306471E060097A5F4</string>
 				<string>1CE0B20506471E060097A5F4</string>
 			</array>
@@ -685,12 +685,7 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>1C530D57069F1CE1000CFCEE</string>
-		<string>10D2DD021382EEC400334C4C</string>
-		<string>10D2DCFB1382EC7000334C4C</string>
-		<string>1C78EAAD065D492600B07095</string>
 		<string>10B569EA1306EA9600AA7DCB</string>
-		<string>1CD10A99069EF8BA00B06720</string>
 		<string>1053C480137C8F3D00E7E3F9</string>
 		<string>/Users/pabloruiz/Documents/Basho/Basho.xcodeproj</string>
 	</array>
@@ -772,7 +767,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>10B569EA1306EA9600AA7DCB</string>
-				<string>10D2DCDE1382E76C00334C4C</string>
+				<string>10D2DFFA1384455C00334C4C</string>
 				<string>1CD0528F0623707200166675</string>
 				<string>XCMainBuildResultsModuleGUID</string>
 			</array>

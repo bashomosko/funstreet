@@ -87,6 +87,7 @@
 	[introVideo stop];
 	[introVideo.view removeFromSuperview];
 	[introVideo release];
+	 [self animateDoors];
 }
 
 -(void) videoPlayerDidFinishPlaying: (NSNotification*)aNotification
@@ -97,6 +98,7 @@
 	[introVideo.view removeFromSuperview];
 	[introVideo release];
 	
+	 [self animateDoors];
 	//[self beginGame];
 }
 
@@ -109,10 +111,16 @@
         format = @"EyePulseAnim_%05d-iPhone.png";
     }*/
     
+	int j = -1;
     NSMutableArray* images = [[NSMutableArray alloc] init];
-    for(int i=0; i<=11; i++)
+    for(int i=0; i<=5; i++)
     {
-        NSString* name = [NSString stringWithFormat:format, i];
+		if (i<=3) {
+			j++;
+		}else {
+			j--;
+		}
+        NSString* name = [NSString stringWithFormat:format, j];
         NSString *filePath = [[NSBundle mainBundle] pathForResource:name ofType:@"png"];
         UIImage* image = [[UIImage alloc] initWithContentsOfFile:filePath];
         [images addObject:image];
@@ -120,21 +128,23 @@
     }
     door1.animationImages = images;
     [images release];
-    door1.animationDuration = 1;
+    door1.animationDuration = 0.8;
     door1.animationRepeatCount = 0; //this is a looping animation
     [door1 startAnimating];
     
-    
+
     NSString* format2 = @"CityMenu_Page2_GlowingDoors_%05d_iPad";
-    /* if([viewController iPad] == FALSE)
-     {
-     format = @"EyePulseAnim_%05d-iPhone.png";
-     }*/
-    
+   
+    j =-1;
     NSMutableArray* images2 = [[NSMutableArray alloc] init];
-    for(int i=0; i<=11; i++)
+    for(int i=0; i<=5; i++)
     {
-        NSString* name = [NSString stringWithFormat:format2, i];
+		if (i<=3) {
+			j++;
+		}else {
+			j--;
+		}
+        NSString* name = [NSString stringWithFormat:format2, j];
         NSString *filePath = [[NSBundle mainBundle] pathForResource:name ofType:@"png"];
         UIImage* image = [[UIImage alloc] initWithContentsOfFile:filePath];
         [images2 addObject:image];
@@ -142,7 +152,7 @@
     }
     door2.animationImages = images2;
     [images2 release];
-    door2.animationDuration = 1;
+    door2.animationDuration = 0.8;
     door2.animationRepeatCount = 0; //this is a looping animation
     [door2 startAnimating];
     
