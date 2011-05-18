@@ -243,13 +243,35 @@
 		friction =51;
 		forceApplied = 0;
 		for (CCMenuItemImage * m in [tapButtons children])
-		{
-			[m setIsEnabled:YES];
-			m.opacity =255;
-			
-		}
+		 {
+			 [m setIsEnabled:YES];
+			 m.opacity =255;
+			 
+		 }
 	}
 
+}
+
+-(void)resetTapButtons
+{
+	for (CCMenuItemImage * m in [tapButtons children])
+	{
+		[m setIsEnabled:YES];
+		m.opacity =255;
+		
+	}
+	
+	[bashoSelectedItems removeAllObjects];
+	[bashoSelectedItems addObject:[NSNumber numberWithInt:0]];
+	[bashoSelectedItems addObject:[NSNumber numberWithInt:1]];
+	[bashoSelectedItems addObject:[NSNumber numberWithInt:2]];
+	[bashoSelectedItems addObject:[NSNumber numberWithInt:3]];
+	[bashoSelectedItems addObject:[NSNumber numberWithInt:4]];
+	[bashoSelectedItems addObject:[NSNumber numberWithInt:5]];
+	[bashoSelectedItems addObject:[NSNumber numberWithInt:6]];
+	[bashoSelectedItems addObject:[NSNumber numberWithInt:7]];
+	
+	[self autoPushLever:NO];
 }
 
 -(void)showPoints
@@ -353,7 +375,7 @@
 	NSString * sound = nil;
 	
 	playingSound = YES;
-	[self runAction:[CCSequence actions:[CCDelayTime actionWithDuration:2.5],[CCCallFunc actionWithTarget:self selector:@selector(stopPlayingSound)],nil]];
+	[self runAction:[CCSequence actions:[CCDelayTime actionWithDuration:1],[CCCallFunc actionWithTarget:self selector:@selector(stopPlayingSound)],nil]];
    
     NSMutableDictionary * userData = (NSMutableDictionary *)btn.userData;
     word =[NSMutableString stringWithFormat:@"%@",[userData objectForKey:@"espText"]];
@@ -396,8 +418,9 @@
 			
 			if([bashoSelectedItems count]==0)
 			{
-				//[[GameManager sharedGameManager] unlockGame:3];
-				//[self runAction:[CCSequence actions:[CCDelayTime actionWithDuration:1],[CCCallFunc actionWithTarget:self selector:@selector(showPoints)],nil]];
+				//ANIMATE CHARACTERS
+				[self animateAllAnimals];
+				[self runAction:[CCSequence actions:[CCDelayTime actionWithDuration:2],[CCCallFunc actionWithTarget:self selector:@selector(resetTapButtons)],nil]];
 			}else
 			{
 				dinoSpinning = NO;
@@ -415,6 +438,11 @@
 		}
 		
 	}
+	
+}
+
+-(void)animateAllAnimals
+{
 	
 }
 
@@ -445,9 +473,10 @@
 		}
 	}
 	CCLabelTTF * palabra = [self getChildByTag:kPALABRA];
-	[palabra setOpacity:0];
+	[palabra runAction:[CCSequence actions:[CCDelayTime actionWithDuration:1.5],[CCFadeTo actionWithDuration:0.5 opacity:0],nil]];
     CCSprite * palabraBck = [self getChildByTag:kPALABRABCK];
-	[palabraBck setOpacity:0];
+	[palabraBck runAction:[CCSequence actions:[CCDelayTime actionWithDuration:1.5],[CCFadeTo actionWithDuration:0.5 opacity:0],nil]];
+
 	
 	/*if(currentAttempts >=5)
 	{
@@ -464,7 +493,7 @@
 	//[btn setIsEnabled:NO];
 	selectedSound = btn.tag;
 	
-	if(bashoDirected)
+	if(bashoDirected && bashoSelectedSound == selectedSound)
 	{
 		stopWhenRotationReached = YES;
 		//forceApplied = 0;
@@ -865,7 +894,7 @@
 	{
 		dinoSpinning = YES;
 		if(alreadySelected)
-			[leverImg runAction:[CCSequence actions:[CCRotateTo actionWithDuration:0.8 angle:32],[CCCallFunc actionWithTarget:self selector:@selector(selectItemForBashoAlreadySelected)],[CCCallFunc actionWithTarget:self selector:@selector(autoPushLever2)],[CCRotateTo actionWithDuration:3 angle:-25],nil]];
+			[leverImg runAction:[CCSequence actions:[CCCallFunc actionWithTarget:self selector:@selector(selectItemForBashoAlreadySelected)],[CCCallFunc actionWithTarget:self selector:@selector(autoPushLever2)],nil]];
 		else
 			[leverImg runAction:[CCSequence actions:[CCRotateTo actionWithDuration:0.8 angle:32],[CCCallFunc actionWithTarget:self selector:@selector(selectItemForBasho)],[CCCallFunc actionWithTarget:self selector:@selector(autoPushLever2)],[CCRotateTo actionWithDuration:3 angle:-25],nil]];
 

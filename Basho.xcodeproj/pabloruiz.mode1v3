@@ -216,7 +216,7 @@
 						<key>_historyCapacity</key>
 						<integer>0</integer>
 						<key>bookmark</key>
-						<string>10D2DE8E1383EC7700334C4C</string>
+						<string>10D2DEBE1383F4F400334C4C</string>
 						<key>history</key>
 						<array>
 							<string>10D2D93413818E7D00334C4C</string>
@@ -381,7 +381,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>10D2DE8D1383EC7700334C4C</string>
+										<string>10D2DEBD1383F4F400334C4C</string>
 										<key>history</key>
 										<array>
 											<string>10B56A4A1306EDB900AA7DCB</string>
@@ -481,11 +481,11 @@
 											<string>10D2DE0D13836E8200334C4C</string>
 											<string>10D2DE0E13836E8200334C4C</string>
 											<string>10D2DE1013836E8200334C4C</string>
-											<string>10D2DE1113836E8200334C4C</string>
 											<string>10D2DE2D1383DF1600334C4C</string>
 											<string>10D2DE8A1383EC7700334C4C</string>
 											<string>10D2DE8B1383EC7700334C4C</string>
-											<string>10D2DE8C1383EC7700334C4C</string>
+											<string>10D2DEB71383F42000334C4C</string>
+											<string>10D2DEBC1383F4F400334C4C</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -907,7 +907,7 @@
 			<key>WindowToolGUID</key>
 			<string>1CD10A99069EF8BA00B06720</string>
 			<key>WindowToolIsVisible</key>
-			<true/>
+			<false/>
 		</dict>
 		<dict>
 			<key>FirstTimeWindowDisplayed</key>
