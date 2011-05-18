@@ -3,6 +3,7 @@
 #import "DDElement.h"
 #import "GameManager.h"
 #import "SimpleAudioEngine.h"
+#import "GameManager.h"
 
 @implementation DDElement
 @synthesize state,mySprite,dressed,desiredZ,itemTag,itemText,itemNumber,colorNumber;
@@ -35,7 +36,7 @@
 		
 		itemNumber = [element objectForKey:@"itemNumber"];
 		colorNumber = [element objectForKey:@"colorNumber"];
-		itemText = [element objectForKey:@"text_esp"];
+		itemText = [element objectForKey:[NSString stringWithFormat:@"text_%@",[GameManager sharedGameManager].languageString]];
 		
 		
 		soundOkPath = [[NSString stringWithFormat:@"dress_snd_%@_%@.mp3",itemNumber,colorNumber]retain];

@@ -216,7 +216,7 @@
 						<key>_historyCapacity</key>
 						<integer>0</integer>
 						<key>bookmark</key>
-						<string>10D2DEF01384017B00334C4C</string>
+						<string>10D2DFDA13841BE700334C4C</string>
 						<key>history</key>
 						<array>
 							<string>10D2D93413818E7D00334C4C</string>
@@ -315,6 +315,9 @@
 								<string>2860E324111B887F00E27156</string>
 								<string>28EEBF621118D79A00187D67</string>
 								<string>10108B7B132008AA001848A5</string>
+								<string>10B32831131D5CAA0014A77D</string>
+								<string>10D2DF1813840F6700334C4C</string>
+								<string>10D2DF40138413CE00334C4C</string>
 								<string>10AA0BD2130719D200D11E6B</string>
 								<string>29B97323FDCFA39411CA2CEA</string>
 								<string>1C37FBAC04509CD000000102</string>
@@ -324,15 +327,14 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>129</integer>
-									<integer>36</integer>
-									<integer>31</integer>
+									<integer>15</integer>
+									<integer>10</integer>
 									<integer>4</integer>
 									<integer>0</integer>
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 1977}, {292, 594}}</string>
+							<string>{{0, 0}, {292, 594}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -381,7 +383,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>10D2DEEF1384017B00334C4C</string>
+										<string>10D2DFD913841BE700334C4C</string>
 										<key>history</key>
 										<array>
 											<string>10B56A4A1306EDB900AA7DCB</string>
@@ -480,12 +482,12 @@
 											<string>10D2DECA1383FB0A00334C4C</string>
 											<string>10D2DECB1383FB0A00334C4C</string>
 											<string>10D2DECC1383FB0A00334C4C</string>
-											<string>10D2DECD1383FB0A00334C4C</string>
 											<string>10D2DED61384001500334C4C</string>
-											<string>10D2DED91384001500334C4C</string>
-											<string>10D2DEEC1384017B00334C4C</string>
-											<string>10D2DEED1384017B00334C4C</string>
-											<string>10D2DEEE1384017B00334C4C</string>
+											<string>10D2DF3B1384139300334C4C</string>
+											<string>10D2DF3C1384139300334C4C</string>
+											<string>10D2DFD613841BE700334C4C</string>
+											<string>10D2DFD713841BE700334C4C</string>
+											<string>10D2DFD813841BE700334C4C</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -683,7 +685,6 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>10D2DEF11384017B00334C4C</string>
 		<string>1C530D57069F1CE1000CFCEE</string>
 		<string>10D2DD021382EEC400334C4C</string>
 		<string>10D2DCFB1382EC7000334C4C</string>
@@ -926,12 +927,14 @@
 							<key>Dock</key>
 							<array>
 								<dict>
+									<key>BecomeActive</key>
+									<true/>
 									<key>ContentConfiguration</key>
 									<dict>
 										<key>PBXProjectModuleGUID</key>
 										<string>1CDD528C0622207200134675</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>GameWheelScene_iPad.m</string>
+										<string>DDElement.m</string>
 										<key>StatusBarVisibility</key>
 										<true/>
 									</dict>
@@ -952,8 +955,6 @@
 							<string>212pt</string>
 						</dict>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -999,7 +1000,7 @@
 			<key>WindowToolGUID</key>
 			<string>1C530D57069F1CE1000CFCEE</string>
 			<key>WindowToolIsVisible</key>
-			<false/>
+			<true/>
 		</dict>
 		<dict>
 			<key>Identifier</key>

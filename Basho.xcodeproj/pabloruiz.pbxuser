@@ -9,9 +9,9 @@
 	};
 	10108B7D132008C1001848A5 /* GameWheelScene_both.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1216, 12389}}";
-			sepNavSelRange = "{14588, 376}";
-			sepNavVisRange = "{34, 709}";
+			sepNavIntBoundsRect = "{{0, 0}, {897, 12298}}";
+			sepNavSelRange = "{14922, 0}";
+			sepNavVisRange = "{12312, 432}";
 		};
 	};
 	10108C8713201F67001848A5 /* PBXBookmark */ = {
@@ -358,7 +358,7 @@
 		vrLen = 1515;
 		vrLoc = 1792;
 	};
-	109D5E411339957E0061B1C3 /* GameDressScene_iPad.m:632 */ = {
+	109D5E411339957E0061B1C3 /* GameDressScene_iPad.m:607 */ = {
 		isa = PBXFileBreakpoint;
 		actions = (
 		);
@@ -370,9 +370,9 @@
 		functionName = "-loadScatteredElementsForItem:";
 		hitCount = 0;
 		ignoreCount = 0;
-		lineNumber = 632;
+		lineNumber = 607;
 		location = Basho;
-		modificationTime = 327417938.952472;
+		modificationTime = 327424823.117901;
 		originalNumberOfMultipleMatches = 1;
 		state = 2;
 	};
@@ -454,16 +454,16 @@
 	};
 	10A08C96132150A7003F24AD /* GameDressScene_iPad.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {905, 1365}}";
-			sepNavSelRange = "{2460, 0}";
-			sepNavVisRange = "{1691, 1058}";
+			sepNavIntBoundsRect = "{{0, 0}, {905, 1209}}";
+			sepNavSelRange = "{768, 0}";
+			sepNavVisRange = "{567, 1296}";
 		};
 	};
 	10A08C97132150A7003F24AD /* GameDressScene_iPad.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {785, 10556}}";
-			sepNavSelRange = "{23227, 0}";
-			sepNavVisRange = "{18627, 1077}";
+			sepNavIntBoundsRect = "{{0, 0}, {810, 10270}}";
+			sepNavSelRange = "{22864, 0}";
+			sepNavVisRange = "{18744, 1171}";
 			sepNavWindowFrame = "{{157, 87}, {844, 547}}";
 		};
 	};
@@ -499,14 +499,14 @@
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {905, 559}}";
 			sepNavSelRange = "{726, 0}";
-			sepNavVisRange = "{106, 681}";
+			sepNavVisRange = "{106, 786}";
 		};
 	};
 	10A08DC513215CC5003F24AD /* DDElement.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1944, 2405}}";
-			sepNavSelRange = "{1241, 0}";
-			sepNavVisRange = "{615, 1278}";
+			sepNavIntBoundsRect = "{{0, 0}, {1944, 2600}}";
+			sepNavSelRange = "{1265, 0}";
+			sepNavVisRange = "{0, 1097}";
 		};
 	};
 	10A08DC913215DA3003F24AD /* Config.h */ = {
@@ -810,9 +810,9 @@
 	};
 	10AA0B961307181700D11E6B /* GameWheelScene_iPad.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1734, 2314}}";
-			sepNavSelRange = "{5726, 11}";
-			sepNavVisRange = "{5287, 1002}";
+			sepNavIntBoundsRect = "{{0, 0}, {1307, 2392}}";
+			sepNavSelRange = "{5330, 0}";
+			sepNavVisRange = "{5087, 298}";
 			sepNavWindowFrame = "{{38, 205}, {844, 547}}";
 		};
 	};
@@ -880,7 +880,7 @@
 		argumentStrings = (
 		);
 		autoAttachOnCrash = 1;
-		breakpointsEnabled = 1;
+		breakpointsEnabled = 0;
 		configStateDict = {
 		};
 		customDataFormattersEnabled = 1;
@@ -1028,7 +1028,7 @@
 		ignoreCount = 0;
 		lineNumber = 787;
 		location = Basho;
-		modificationTime = 327417938.958123;
+		modificationTime = 327424823.118991;
 		originalNumberOfMultipleMatches = 1;
 		state = 2;
 	};
@@ -1130,7 +1130,7 @@
 		fRef = 10A08C97132150A7003F24AD /* GameDressScene_iPad.m */;
 		name = "GameDressScene_iPad.m: 642";
 		rLen = 0;
-		rLoc = 23227;
+		rLoc = 22864;
 		rType = 0;
 		vrLen = 969;
 		vrLoc = 19927;
@@ -1140,7 +1140,7 @@
 		fRef = 10A08DC513215CC5003F24AD /* DDElement.m */;
 		name = "DDElement.m: 155";
 		rLen = 0;
-		rLoc = 5134;
+		rLoc = 5232;
 		rType = 0;
 		vrLen = 1655;
 		vrLoc = 4010;
@@ -1219,8 +1219,8 @@
 		isa = PBXTextBookmark;
 		fRef = 10A08C96132150A7003F24AD /* GameDressScene_iPad.h */;
 		name = "GameDressScene_iPad.h: 36";
-		rLen = 16;
-		rLoc = 778;
+		rLen = 0;
+		rLoc = 768;
 		rType = 0;
 		vrLen = 883;
 		vrLoc = 2254;
@@ -1298,7 +1298,7 @@
 		fRef = 10A08C97132150A7003F24AD /* GameDressScene_iPad.m */;
 		name = "GameDressScene_iPad.m: 361";
 		rLen = 0;
-		rLoc = 13329;
+		rLoc = 13354;
 		rType = 0;
 		vrLen = 1238;
 		vrLoc = 10846;
@@ -1328,7 +1328,7 @@
 		fRef = 10A08C97132150A7003F24AD /* GameDressScene_iPad.m */;
 		name = "GameDressScene_iPad.m: 683";
 		rLen = 0;
-		rLoc = 23227;
+		rLoc = 22864;
 		rType = 0;
 		vrLen = 1627;
 		vrLoc = 19467;
@@ -1348,7 +1348,7 @@
 		fRef = 10A08C97132150A7003F24AD /* GameDressScene_iPad.m */;
 		name = "GameDressScene_iPad.m: 683";
 		rLen = 0;
-		rLoc = 23227;
+		rLoc = 22864;
 		rType = 0;
 		vrLen = 1627;
 		vrLoc = 19467;
@@ -1448,7 +1448,7 @@
 		fRef = 10A08C97132150A7003F24AD /* GameDressScene_iPad.m */;
 		name = "GameDressScene_iPad.m: 683";
 		rLen = 0;
-		rLoc = 23227;
+		rLoc = 22864;
 		rType = 0;
 		vrLen = 1627;
 		vrLoc = 19467;
@@ -1468,7 +1468,7 @@
 		fRef = 10A08C97132150A7003F24AD /* GameDressScene_iPad.m */;
 		name = "GameDressScene_iPad.m: 683";
 		rLen = 0;
-		rLoc = 23227;
+		rLoc = 22864;
 		rType = 0;
 		vrLen = 1627;
 		vrLoc = 19467;
@@ -1488,7 +1488,7 @@
 		fRef = 10A08C97132150A7003F24AD /* GameDressScene_iPad.m */;
 		name = "GameDressScene_iPad.m: 683";
 		rLen = 0;
-		rLoc = 23227;
+		rLoc = 22864;
 		rType = 0;
 		vrLen = 1559;
 		vrLoc = 19467;
@@ -1528,7 +1528,7 @@
 		fRef = 10A08C97132150A7003F24AD /* GameDressScene_iPad.m */;
 		name = "GameDressScene_iPad.m: 683";
 		rLen = 0;
-		rLoc = 23227;
+		rLoc = 22864;
 		rType = 0;
 		vrLen = 1627;
 		vrLoc = 19467;
@@ -1548,7 +1548,7 @@
 		fRef = 10A08C97132150A7003F24AD /* GameDressScene_iPad.m */;
 		name = "GameDressScene_iPad.m: 683";
 		rLen = 0;
-		rLoc = 23227;
+		rLoc = 22864;
 		rType = 0;
 		vrLen = 1559;
 		vrLoc = 19467;
@@ -1568,7 +1568,7 @@
 		fRef = 10A08C97132150A7003F24AD /* GameDressScene_iPad.m */;
 		name = "GameDressScene_iPad.m: 683";
 		rLen = 0;
-		rLoc = 23227;
+		rLoc = 22864;
 		rType = 0;
 		vrLen = 1559;
 		vrLoc = 19467;
@@ -1588,7 +1588,7 @@
 		fRef = 10A08C97132150A7003F24AD /* GameDressScene_iPad.m */;
 		name = "GameDressScene_iPad.m: 683";
 		rLen = 0;
-		rLoc = 23227;
+		rLoc = 22864;
 		rType = 0;
 		vrLen = 1559;
 		vrLoc = 19467;
@@ -1608,7 +1608,7 @@
 		fRef = 10A08C97132150A7003F24AD /* GameDressScene_iPad.m */;
 		name = "GameDressScene_iPad.m: 683";
 		rLen = 0;
-		rLoc = 23227;
+		rLoc = 22864;
 		rType = 0;
 		vrLen = 1559;
 		vrLoc = 19467;
@@ -1628,7 +1628,7 @@
 		fRef = 10A08C97132150A7003F24AD /* GameDressScene_iPad.m */;
 		name = "GameDressScene_iPad.m: 683";
 		rLen = 0;
-		rLoc = 23227;
+		rLoc = 22864;
 		rType = 0;
 		vrLen = 1559;
 		vrLoc = 19467;
@@ -1658,7 +1658,7 @@
 		fRef = 10A08C97132150A7003F24AD /* GameDressScene_iPad.m */;
 		name = "GameDressScene_iPad.m: 683";
 		rLen = 0;
-		rLoc = 23227;
+		rLoc = 22864;
 		rType = 0;
 		vrLen = 1559;
 		vrLoc = 19467;
@@ -1688,7 +1688,7 @@
 		fRef = 10A08C97132150A7003F24AD /* GameDressScene_iPad.m */;
 		name = "GameDressScene_iPad.m: 683";
 		rLen = 0;
-		rLoc = 23227;
+		rLoc = 22864;
 		rType = 0;
 		vrLen = 1559;
 		vrLoc = 19467;
@@ -1718,7 +1718,7 @@
 		fRef = 10A08C97132150A7003F24AD /* GameDressScene_iPad.m */;
 		name = "GameDressScene_iPad.m: 683";
 		rLen = 0;
-		rLoc = 23227;
+		rLoc = 22864;
 		rType = 0;
 		vrLen = 1559;
 		vrLoc = 19467;
@@ -1738,7 +1738,7 @@
 		fRef = 10A08C97132150A7003F24AD /* GameDressScene_iPad.m */;
 		name = "GameDressScene_iPad.m: 683";
 		rLen = 0;
-		rLoc = 23227;
+		rLoc = 22864;
 		rType = 0;
 		vrLen = 1559;
 		vrLoc = 19467;
@@ -1768,7 +1768,7 @@
 		fRef = 10A08C97132150A7003F24AD /* GameDressScene_iPad.m */;
 		name = "GameDressScene_iPad.m: 683";
 		rLen = 0;
-		rLoc = 23227;
+		rLoc = 22864;
 		rType = 0;
 		vrLen = 1559;
 		vrLoc = 19467;
@@ -1788,7 +1788,7 @@
 		fRef = 10A08C97132150A7003F24AD /* GameDressScene_iPad.m */;
 		name = "GameDressScene_iPad.m: 683";
 		rLen = 0;
-		rLoc = 23227;
+		rLoc = 22864;
 		rType = 0;
 		vrLen = 1559;
 		vrLoc = 19467;
@@ -1818,7 +1818,7 @@
 		fRef = 10A08C97132150A7003F24AD /* GameDressScene_iPad.m */;
 		name = "GameDressScene_iPad.m: 683";
 		rLen = 0;
-		rLoc = 23227;
+		rLoc = 22864;
 		rType = 0;
 		vrLen = 1559;
 		vrLoc = 19467;
@@ -1848,7 +1848,7 @@
 		fRef = 10A08C97132150A7003F24AD /* GameDressScene_iPad.m */;
 		name = "GameDressScene_iPad.m: 683";
 		rLen = 0;
-		rLoc = 23227;
+		rLoc = 22864;
 		rType = 0;
 		vrLen = 1559;
 		vrLoc = 19467;
@@ -1878,7 +1878,7 @@
 		fRef = 10A08C97132150A7003F24AD /* GameDressScene_iPad.m */;
 		name = "GameDressScene_iPad.m: 683";
 		rLen = 0;
-		rLoc = 23227;
+		rLoc = 22864;
 		rType = 0;
 		vrLen = 1559;
 		vrLoc = 19467;
@@ -1905,7 +1905,7 @@
 		fRef = 10A08C97132150A7003F24AD /* GameDressScene_iPad.m */;
 		name = "GameDressScene_iPad.m: 683";
 		rLen = 0;
-		rLoc = 23227;
+		rLoc = 22864;
 		rType = 0;
 		vrLen = 1559;
 		vrLoc = 19467;
@@ -1925,7 +1925,7 @@
 		fRef = 10A08C97132150A7003F24AD /* GameDressScene_iPad.m */;
 		name = "GameDressScene_iPad.m: 683";
 		rLen = 0;
-		rLoc = 23227;
+		rLoc = 22864;
 		rType = 0;
 		vrLen = 1559;
 		vrLoc = 19467;
@@ -1945,7 +1945,7 @@
 		fRef = 10A08C97132150A7003F24AD /* GameDressScene_iPad.m */;
 		name = "GameDressScene_iPad.m: 683";
 		rLen = 0;
-		rLoc = 23227;
+		rLoc = 22864;
 		rType = 0;
 		vrLen = 1559;
 		vrLoc = 19467;
@@ -1955,7 +1955,7 @@
 		fRef = 10A08C97132150A7003F24AD /* GameDressScene_iPad.m */;
 		name = "GameDressScene_iPad.m: 361";
 		rLen = 0;
-		rLoc = 13329;
+		rLoc = 13354;
 		rType = 0;
 		vrLen = 1057;
 		vrLoc = 2330;
@@ -1995,7 +1995,7 @@
 		fRef = 10A08C97132150A7003F24AD /* GameDressScene_iPad.m */;
 		name = "GameDressScene_iPad.m: 683";
 		rLen = 0;
-		rLoc = 23227;
+		rLoc = 22864;
 		rType = 0;
 		vrLen = 1627;
 		vrLoc = 19467;
@@ -2035,7 +2035,7 @@
 		fRef = 10A08C97132150A7003F24AD /* GameDressScene_iPad.m */;
 		name = "GameDressScene_iPad.m: 683";
 		rLen = 0;
-		rLoc = 23227;
+		rLoc = 22864;
 		rType = 0;
 		vrLen = 1559;
 		vrLoc = 19467;
@@ -2055,7 +2055,7 @@
 		fRef = 10A08C97132150A7003F24AD /* GameDressScene_iPad.m */;
 		name = "GameDressScene_iPad.m: 683";
 		rLen = 0;
-		rLoc = 23227;
+		rLoc = 22864;
 		rType = 0;
 		vrLen = 1559;
 		vrLoc = 19467;
@@ -2075,7 +2075,7 @@
 		fRef = 10A08C97132150A7003F24AD /* GameDressScene_iPad.m */;
 		name = "GameDressScene_iPad.m: 683";
 		rLen = 0;
-		rLoc = 23227;
+		rLoc = 22864;
 		rType = 0;
 		vrLen = 1559;
 		vrLoc = 19467;
@@ -2105,7 +2105,7 @@
 		fRef = 10A08C97132150A7003F24AD /* GameDressScene_iPad.m */;
 		name = "GameDressScene_iPad.m: 683";
 		rLen = 0;
-		rLoc = 23227;
+		rLoc = 22864;
 		rType = 0;
 		vrLen = 1559;
 		vrLoc = 19467;
@@ -2125,7 +2125,7 @@
 		fRef = 10A08C97132150A7003F24AD /* GameDressScene_iPad.m */;
 		name = "GameDressScene_iPad.m: 683";
 		rLen = 0;
-		rLoc = 23227;
+		rLoc = 22864;
 		rType = 0;
 		vrLen = 1559;
 		vrLoc = 19467;
@@ -2145,7 +2145,7 @@
 		fRef = 10A08C97132150A7003F24AD /* GameDressScene_iPad.m */;
 		name = "GameDressScene_iPad.m: 683";
 		rLen = 0;
-		rLoc = 23227;
+		rLoc = 22864;
 		rType = 0;
 		vrLen = 1559;
 		vrLoc = 19467;
@@ -2165,7 +2165,7 @@
 		fRef = 10A08C97132150A7003F24AD /* GameDressScene_iPad.m */;
 		name = "GameDressScene_iPad.m: 683";
 		rLen = 0;
-		rLoc = 23227;
+		rLoc = 22864;
 		rType = 0;
 		vrLen = 1627;
 		vrLoc = 19467;
@@ -2195,7 +2195,7 @@
 		fRef = 10A08C97132150A7003F24AD /* GameDressScene_iPad.m */;
 		name = "GameDressScene_iPad.m: 683";
 		rLen = 0;
-		rLoc = 23227;
+		rLoc = 22864;
 		rType = 0;
 		vrLen = 1559;
 		vrLoc = 19467;
@@ -2215,7 +2215,7 @@
 		fRef = 10A08C97132150A7003F24AD /* GameDressScene_iPad.m */;
 		name = "GameDressScene_iPad.m: 683";
 		rLen = 0;
-		rLoc = 23227;
+		rLoc = 22864;
 		rType = 0;
 		vrLen = 1559;
 		vrLoc = 19467;
@@ -2242,7 +2242,7 @@
 		fRef = 10A08C97132150A7003F24AD /* GameDressScene_iPad.m */;
 		name = "GameDressScene_iPad.m: 683";
 		rLen = 0;
-		rLoc = 23227;
+		rLoc = 22864;
 		rType = 0;
 		vrLen = 1627;
 		vrLoc = 19467;
@@ -2272,7 +2272,7 @@
 		fRef = 10A08C97132150A7003F24AD /* GameDressScene_iPad.m */;
 		name = "GameDressScene_iPad.m: 683";
 		rLen = 0;
-		rLoc = 23227;
+		rLoc = 22864;
 		rType = 0;
 		vrLen = 1627;
 		vrLoc = 19467;
@@ -2322,7 +2322,7 @@
 		fRef = 10A08C97132150A7003F24AD /* GameDressScene_iPad.m */;
 		name = "GameDressScene_iPad.m: 683";
 		rLen = 0;
-		rLoc = 23227;
+		rLoc = 22864;
 		rType = 0;
 		vrLen = 1627;
 		vrLoc = 19467;
@@ -2349,7 +2349,7 @@
 		fRef = 10A08C97132150A7003F24AD /* GameDressScene_iPad.m */;
 		name = "GameDressScene_iPad.m: 683";
 		rLen = 0;
-		rLoc = 23227;
+		rLoc = 22864;
 		rType = 0;
 		vrLen = 1559;
 		vrLoc = 19467;
@@ -2396,7 +2396,7 @@
 		fRef = 10A08C97132150A7003F24AD /* GameDressScene_iPad.m */;
 		name = "GameDressScene_iPad.m: 683";
 		rLen = 0;
-		rLoc = 23227;
+		rLoc = 22864;
 		rType = 0;
 		vrLen = 1559;
 		vrLoc = 19467;
@@ -2416,7 +2416,7 @@
 		fRef = 10A08C97132150A7003F24AD /* GameDressScene_iPad.m */;
 		name = "GameDressScene_iPad.m: 683";
 		rLen = 0;
-		rLoc = 23227;
+		rLoc = 22864;
 		rType = 0;
 		vrLen = 1627;
 		vrLoc = 19467;
@@ -2456,7 +2456,7 @@
 		fRef = 10A08C97132150A7003F24AD /* GameDressScene_iPad.m */;
 		name = "GameDressScene_iPad.m: 361";
 		rLen = 0;
-		rLoc = 13329;
+		rLoc = 13354;
 		rType = 0;
 		vrLen = 1057;
 		vrLoc = 2330;
@@ -2516,7 +2516,7 @@
 		fRef = 10A08C97132150A7003F24AD /* GameDressScene_iPad.m */;
 		name = "GameDressScene_iPad.m: 683";
 		rLen = 0;
-		rLoc = 23227;
+		rLoc = 22864;
 		rType = 0;
 		vrLen = 1627;
 		vrLoc = 19467;
@@ -2535,7 +2535,7 @@
 		ignoreCount = 0;
 		lineNumber = 241;
 		location = Basho;
-		modificationTime = 327417938.960495;
+		modificationTime = 327424823.119825;
 		originalNumberOfMultipleMatches = 1;
 		state = 1;
 	};
@@ -2574,7 +2574,7 @@
 		fRef = 10A08C97132150A7003F24AD /* GameDressScene_iPad.m */;
 		name = "GameDressScene_iPad.m: 683";
 		rLen = 0;
-		rLoc = 23227;
+		rLoc = 22864;
 		rType = 0;
 		vrLen = 1627;
 		vrLoc = 19467;
@@ -2611,7 +2611,7 @@
 		fRef = 10A08C97132150A7003F24AD /* GameDressScene_iPad.m */;
 		name = "GameDressScene_iPad.m: 683";
 		rLen = 0;
-		rLoc = 23227;
+		rLoc = 22864;
 		rType = 0;
 		vrLen = 1627;
 		vrLoc = 19467;
@@ -2651,7 +2651,7 @@
 		fRef = 10A08C97132150A7003F24AD /* GameDressScene_iPad.m */;
 		name = "GameDressScene_iPad.m: 683";
 		rLen = 0;
-		rLoc = 23227;
+		rLoc = 22864;
 		rType = 0;
 		vrLen = 1627;
 		vrLoc = 19467;
@@ -2681,7 +2681,7 @@
 		fRef = 10A08C97132150A7003F24AD /* GameDressScene_iPad.m */;
 		name = "GameDressScene_iPad.m: 683";
 		rLen = 0;
-		rLoc = 23227;
+		rLoc = 22864;
 		rType = 0;
 		vrLen = 1627;
 		vrLoc = 19467;
@@ -2711,7 +2711,7 @@
 		fRef = 10A08C97132150A7003F24AD /* GameDressScene_iPad.m */;
 		name = "GameDressScene_iPad.m: 683";
 		rLen = 0;
-		rLoc = 23227;
+		rLoc = 22864;
 		rType = 0;
 		vrLen = 1627;
 		vrLoc = 19467;
@@ -2731,7 +2731,7 @@
 		fRef = 10A08C97132150A7003F24AD /* GameDressScene_iPad.m */;
 		name = "GameDressScene_iPad.m: 683";
 		rLen = 0;
-		rLoc = 23227;
+		rLoc = 22864;
 		rType = 0;
 		vrLen = 1627;
 		vrLoc = 19467;
@@ -2751,7 +2751,7 @@
 		fRef = 10A08C97132150A7003F24AD /* GameDressScene_iPad.m */;
 		name = "GameDressScene_iPad.m: 683";
 		rLen = 0;
-		rLoc = 23227;
+		rLoc = 22864;
 		rType = 0;
 		vrLen = 1559;
 		vrLoc = 19467;
@@ -2771,7 +2771,7 @@
 		fRef = 10A08C97132150A7003F24AD /* GameDressScene_iPad.m */;
 		name = "GameDressScene_iPad.m: 683";
 		rLen = 0;
-		rLoc = 23227;
+		rLoc = 22864;
 		rType = 0;
 		vrLen = 1627;
 		vrLoc = 19467;
@@ -2790,7 +2790,7 @@
 		ignoreCount = 0;
 		lineNumber = 637;
 		location = Basho;
-		modificationTime = 327417938.962833;
+		modificationTime = 327424823.120821;
 		originalNumberOfMultipleMatches = 1;
 		state = 1;
 	};
@@ -2819,7 +2819,7 @@
 		fRef = 10A08C97132150A7003F24AD /* GameDressScene_iPad.m */;
 		name = "GameDressScene_iPad.m: 683";
 		rLen = 0;
-		rLoc = 23227;
+		rLoc = 22864;
 		rType = 0;
 		vrLen = 1627;
 		vrLoc = 19467;
@@ -2839,7 +2839,7 @@
 		fRef = 10A08C97132150A7003F24AD /* GameDressScene_iPad.m */;
 		name = "GameDressScene_iPad.m: 683";
 		rLen = 0;
-		rLoc = 23227;
+		rLoc = 22864;
 		rType = 0;
 		vrLen = 1627;
 		vrLoc = 19467;
@@ -2869,7 +2869,7 @@
 		fRef = 10A08C97132150A7003F24AD /* GameDressScene_iPad.m */;
 		name = "GameDressScene_iPad.m: 683";
 		rLen = 0;
-		rLoc = 23227;
+		rLoc = 22864;
 		rType = 0;
 		vrLen = 1627;
 		vrLoc = 19467;
@@ -2899,7 +2899,7 @@
 		fRef = 10A08C97132150A7003F24AD /* GameDressScene_iPad.m */;
 		name = "GameDressScene_iPad.m: 683";
 		rLen = 0;
-		rLoc = 23227;
+		rLoc = 22864;
 		rType = 0;
 		vrLen = 1627;
 		vrLoc = 19467;
@@ -2918,7 +2918,7 @@
 		ignoreCount = 0;
 		lineNumber = 706;
 		location = Basho;
-		modificationTime = 327417938.966263;
+		modificationTime = 327424823.121864;
 		originalNumberOfMultipleMatches = 1;
 		state = 1;
 	};
@@ -2947,7 +2947,7 @@
 		fRef = 10A08C97132150A7003F24AD /* GameDressScene_iPad.m */;
 		name = "GameDressScene_iPad.m: 683";
 		rLen = 0;
-		rLoc = 23227;
+		rLoc = 22864;
 		rType = 0;
 		vrLen = 1627;
 		vrLoc = 19467;
@@ -2966,7 +2966,7 @@
 		ignoreCount = 0;
 		lineNumber = 627;
 		location = Basho;
-		modificationTime = 327417938.968372;
+		modificationTime = 327424823.123018;
 		originalNumberOfMultipleMatches = 1;
 		state = 1;
 	};
@@ -2984,7 +2984,7 @@
 		ignoreCount = 0;
 		lineNumber = 713;
 		location = Basho;
-		modificationTime = 327417938.97054;
+		modificationTime = 327424823.124082;
 		originalNumberOfMultipleMatches = 1;
 		state = 1;
 	};
@@ -3002,7 +3002,7 @@
 		ignoreCount = 0;
 		lineNumber = 667;
 		location = Basho;
-		modificationTime = 327417938.97214;
+		modificationTime = 327424823.125553;
 		originalNumberOfMultipleMatches = 1;
 		state = 1;
 	};
@@ -3051,7 +3051,7 @@
 		fRef = 10A08C97132150A7003F24AD /* GameDressScene_iPad.m */;
 		name = "GameDressScene_iPad.m: 683";
 		rLen = 0;
-		rLoc = 23227;
+		rLoc = 22864;
 		rType = 0;
 		vrLen = 1627;
 		vrLoc = 19467;
@@ -3071,7 +3071,7 @@
 		fRef = 10A08C97132150A7003F24AD /* GameDressScene_iPad.m */;
 		name = "GameDressScene_iPad.m: 683";
 		rLen = 0;
-		rLoc = 23227;
+		rLoc = 22864;
 		rType = 0;
 		vrLen = 1627;
 		vrLoc = 19467;
@@ -3098,7 +3098,7 @@
 		fRef = 10A08C97132150A7003F24AD /* GameDressScene_iPad.m */;
 		name = "GameDressScene_iPad.m: 683";
 		rLen = 0;
-		rLoc = 23227;
+		rLoc = 22864;
 		rType = 0;
 		vrLen = 1627;
 		vrLoc = 19467;
@@ -3118,7 +3118,7 @@
 		fRef = 10A08C97132150A7003F24AD /* GameDressScene_iPad.m */;
 		name = "GameDressScene_iPad.m: 683";
 		rLen = 0;
-		rLoc = 23227;
+		rLoc = 22864;
 		rType = 0;
 		vrLen = 1627;
 		vrLoc = 19467;
@@ -3145,7 +3145,7 @@
 		fRef = 10A08C97132150A7003F24AD /* GameDressScene_iPad.m */;
 		name = "GameDressScene_iPad.m: 683";
 		rLen = 0;
-		rLoc = 23227;
+		rLoc = 22864;
 		rType = 0;
 		vrLen = 1627;
 		vrLoc = 19467;
@@ -3165,7 +3165,7 @@
 		fRef = 10A08C97132150A7003F24AD /* GameDressScene_iPad.m */;
 		name = "GameDressScene_iPad.m: 683";
 		rLen = 0;
-		rLoc = 23227;
+		rLoc = 22864;
 		rType = 0;
 		vrLen = 1627;
 		vrLoc = 19467;
@@ -3205,7 +3205,7 @@
 		fRef = 10A08C97132150A7003F24AD /* GameDressScene_iPad.m */;
 		name = "GameDressScene_iPad.m: 683";
 		rLen = 0;
-		rLoc = 23227;
+		rLoc = 22864;
 		rType = 0;
 		vrLen = 1627;
 		vrLoc = 19467;
@@ -3224,7 +3224,7 @@
 		ignoreCount = 0;
 		lineNumber = 423;
 		location = Basho;
-		modificationTime = 327417938.974397;
+		modificationTime = 327424823.126628;
 		originalNumberOfMultipleMatches = 1;
 		state = 1;
 	};
@@ -3263,7 +3263,7 @@
 		fRef = 10A08C97132150A7003F24AD /* GameDressScene_iPad.m */;
 		name = "GameDressScene_iPad.m: 683";
 		rLen = 0;
-		rLoc = 23227;
+		rLoc = 22864;
 		rType = 0;
 		vrLen = 1627;
 		vrLoc = 19467;
@@ -3293,7 +3293,7 @@
 		fRef = 10A08C97132150A7003F24AD /* GameDressScene_iPad.m */;
 		name = "GameDressScene_iPad.m: 683";
 		rLen = 0;
-		rLoc = 23227;
+		rLoc = 22864;
 		rType = 0;
 		vrLen = 1627;
 		vrLoc = 19467;
@@ -3353,7 +3353,7 @@
 		fRef = 10A08C96132150A7003F24AD /* GameDressScene_iPad.h */;
 		name = "GameDressScene_iPad.h: 73";
 		rLen = 0;
-		rLoc = 2460;
+		rLoc = 2031;
 		rType = 0;
 		vrLen = 1058;
 		vrLoc = 1691;
@@ -3373,7 +3373,7 @@
 		fRef = 10A08DC513215CC5003F24AD /* DDElement.m */;
 		name = "DDElement.m: 151";
 		rLen = 0;
-		rLoc = 4956;
+		rLoc = 5054;
 		rType = 0;
 		vrLen = 1680;
 		vrLoc = 3775;
@@ -3383,7 +3383,7 @@
 		fRef = 10A08C97132150A7003F24AD /* GameDressScene_iPad.m */;
 		name = "GameDressScene_iPad.m: 445";
 		rLen = 0;
-		rLoc = 14855;
+		rLoc = 14880;
 		rType = 0;
 		vrLen = 655;
 		vrLoc = 14291;
@@ -3393,7 +3393,7 @@
 		fRef = 10A08C97132150A7003F24AD /* GameDressScene_iPad.m */;
 		name = "GameDressScene_iPad.m: 345";
 		rLen = 0;
-		rLoc = 11800;
+		rLoc = 11825;
 		rType = 0;
 		vrLen = 998;
 		vrLoc = 11076;
@@ -3403,7 +3403,7 @@
 		fRef = 10A08C97132150A7003F24AD /* GameDressScene_iPad.m */;
 		name = "GameDressScene_iPad.m: 718";
 		rLen = 0;
-		rLoc = 23227;
+		rLoc = 22864;
 		rType = 0;
 		vrLen = 1071;
 		vrLoc = 19469;
@@ -3426,7 +3426,7 @@
 		fRef = 10A08C97132150A7003F24AD /* GameDressScene_iPad.m */;
 		name = "GameDressScene_iPad.m: 696";
 		rLen = 0;
-		rLoc = 22591;
+		rLoc = 22228;
 		rType = 0;
 		vrLen = 959;
 		vrLoc = 21818;
@@ -3460,7 +3460,7 @@
 		fRef = 10A08DC513215CC5003F24AD /* DDElement.m */;
 		name = "DDElement.m: 38";
 		rLen = 0;
-		rLoc = 1286;
+		rLoc = 1300;
 		rType = 0;
 		vrLen = 1462;
 		vrLoc = 390;
@@ -3470,7 +3470,7 @@
 		fRef = 10A08DC513215CC5003F24AD /* DDElement.m */;
 		name = "DDElement.m: 38";
 		rLen = 0;
-		rLoc = 1286;
+		rLoc = 1300;
 		rType = 0;
 		vrLen = 1400;
 		vrLoc = 845;
@@ -3480,7 +3480,7 @@
 		fRef = 10A08C97132150A7003F24AD /* GameDressScene_iPad.m */;
 		name = "GameDressScene_iPad.m: 722";
 		rLen = 0;
-		rLoc = 23227;
+		rLoc = 22864;
 		rType = 0;
 		vrLen = 1081;
 		vrLoc = 18627;
@@ -3490,7 +3490,7 @@
 		fRef = 10A08DC513215CC5003F24AD /* DDElement.m */;
 		name = "DDElement.m: 38";
 		rLen = 0;
-		rLoc = 1286;
+		rLoc = 1300;
 		rType = 0;
 		vrLen = 1262;
 		vrLoc = 983;
@@ -3500,12 +3500,12 @@
 		fRef = 10A08C97132150A7003F24AD /* GameDressScene_iPad.m */;
 		name = "GameDressScene_iPad.m: 722";
 		rLen = 0;
-		rLoc = 23227;
+		rLoc = 22864;
 		rType = 0;
 		vrLen = 1077;
 		vrLoc = 18627;
 	};
-	10D2DEE2138400B200334C4C /* DDElement.m:38 */ = {
+	10D2DEE2138400B200334C4C /* DDElement.m:39 */ = {
 		isa = PBXFileBreakpoint;
 		actions = (
 		);
@@ -3517,9 +3517,9 @@
 		functionName = "-initWithTheGame:elementDict:";
 		hitCount = 1;
 		ignoreCount = 0;
-		lineNumber = 38;
+		lineNumber = 39;
 		location = Basho;
-		modificationTime = 327418039.562241;
+		modificationTime = 327424840.519068;
 		originalNumberOfMultipleMatches = 1;
 		state = 1;
 	};
@@ -3528,7 +3528,7 @@
 		fRef = 10A08DC513215CC5003F24AD /* DDElement.m */;
 		name = "DDElement.m: 38";
 		rLen = 0;
-		rLoc = 1286;
+		rLoc = 1300;
 		rType = 0;
 		vrLen = 1184;
 		vrLoc = 727;
@@ -3538,7 +3538,7 @@
 		fRef = 10A08DC513215CC5003F24AD /* DDElement.m */;
 		name = "DDElement.m: 38";
 		rLen = 0;
-		rLoc = 1286;
+		rLoc = 1300;
 		rType = 0;
 		vrLen = 1184;
 		vrLoc = 727;
@@ -3548,12 +3548,12 @@
 		fRef = 10A08C97132150A7003F24AD /* GameDressScene_iPad.m */;
 		name = "GameDressScene_iPad.m: 722";
 		rLen = 0;
-		rLoc = 23227;
+		rLoc = 22864;
 		rType = 0;
 		vrLen = 1077;
 		vrLoc = 18627;
 	};
-	10D2DEE7138400E000334C4C /* GameDressScene_iPad.m:695 */ = {
+	10D2DEE7138400E000334C4C /* GameDressScene_iPad.m:670 */ = {
 		isa = PBXFileBreakpoint;
 		actions = (
 		);
@@ -3563,11 +3563,11 @@
 		delayBeforeContinue = 0;
 		fileReference = 10A08C97132150A7003F24AD /* GameDressScene_iPad.m */;
 		functionName = "-loadScatteredElementsForItem:";
-		hitCount = 1;
+		hitCount = 0;
 		ignoreCount = 0;
-		lineNumber = 695;
+		lineNumber = 670;
 		location = Basho;
-		modificationTime = 327418083.054054;
+		modificationTime = 327424823.128773;
 		originalNumberOfMultipleMatches = 1;
 		state = 1;
 	};
@@ -3586,7 +3586,7 @@
 		fRef = 10A08DC513215CC5003F24AD /* DDElement.m */;
 		name = "DDElement.m: 38";
 		rLen = 0;
-		rLoc = 1241;
+		rLoc = 1265;
 		rType = 0;
 		vrLen = 1278;
 		vrLoc = 615;
@@ -3596,7 +3596,7 @@
 		fRef = 10A08C97132150A7003F24AD /* GameDressScene_iPad.m */;
 		name = "GameDressScene_iPad.m: 692";
 		rLen = 0;
-		rLoc = 22280;
+		rLoc = 21917;
 		rType = 0;
 		vrLen = 867;
 		vrLoc = 21938;
@@ -3606,7 +3606,7 @@
 		fRef = 10A08C97132150A7003F24AD /* GameDressScene_iPad.m */;
 		name = "GameDressScene_iPad.m: 695";
 		rLen = 0;
-		rLoc = 22427;
+		rLoc = 22064;
 		rType = 0;
 		vrLen = 963;
 		vrLoc = 21941;
@@ -3616,10 +3616,443 @@
 		fRef = 10A08C97132150A7003F24AD /* GameDressScene_iPad.m */;
 		name = "GameDressScene_iPad.m: 722";
 		rLen = 0;
-		rLoc = 23227;
+		rLoc = 22864;
 		rType = 0;
 		vrLen = 1077;
 		vrLoc = 18627;
+	};
+	10D2DEF4138406E100334C4C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 10A08DC513215CC5003F24AD /* DDElement.m */;
+		name = "DDElement.m: 38";
+		rLen = 0;
+		rLoc = 1265;
+		rType = 0;
+		vrLen = 1406;
+		vrLoc = 449;
+	};
+	10D2DEF5138406E100334C4C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 10A08C96132150A7003F24AD /* GameDressScene_iPad.h */;
+		name = "GameDressScene_iPad.h: 73";
+		rLen = 0;
+		rLoc = 2031;
+		rType = 0;
+		vrLen = 1146;
+		vrLoc = 1628;
+	};
+	10D2DEF6138406E100334C4C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 10A08C97132150A7003F24AD /* GameDressScene_iPad.m */;
+		name = "GameDressScene_iPad.m: 329";
+		rLen = 0;
+		rLoc = 11125;
+		rType = 0;
+		vrLen = 911;
+		vrLoc = 10338;
+	};
+	10D2DEF7138406E100334C4C /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 10A08DC113215B3F003F24AD /* DressData_iPad.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+			pants,
+			0,
+			"coord-drop",
+		);
+		name = /Users/pabloruiz/Documents/Basho/iPad/DressData_iPad.plist;
+		rLen = 0;
+		rLoc = 9223372036854775807;
+	};
+	10D2DEF8138406E100334C4C /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 10A08DC113215B3F003F24AD /* DressData_iPad.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+			sunglasses,
+			3,
+			text_esp,
+		);
+		name = /Users/pabloruiz/Documents/Basho/iPad/DressData_iPad.plist;
+		rLen = 0;
+		rLoc = 9223372036854775807;
+	};
+	10D2DEF9138406E100334C4C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 10A08C97132150A7003F24AD /* GameDressScene_iPad.m */;
+		name = "GameDressScene_iPad.m: 723";
+		rLen = 0;
+		rLoc = 22864;
+		rType = 0;
+		vrLen = 1081;
+		vrLoc = 18652;
+	};
+	10D2DEFC13840C5200334C4C /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 10A08DC113215B3F003F24AD /* DressData_iPad.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+			sunglasses,
+			3,
+			text_esp,
+		);
+		name = /Users/pabloruiz/Documents/Basho/iPad/DressData_iPad.plist;
+		rLen = 0;
+		rLoc = 9223372036854775807;
+	};
+	10D2DEFD13840C5200334C4C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 10A08DC413215CC5003F24AD /* DDElement.h */;
+		name = "DDElement.h: 36";
+		rLen = 0;
+		rLoc = 726;
+		rType = 0;
+		vrLen = 765;
+		vrLoc = 74;
+	};
+	10D2DEFE13840C5200334C4C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 10A08DC413215CC5003F24AD /* DDElement.h */;
+		name = "DDElement.h: 36";
+		rLen = 0;
+		rLoc = 726;
+		rType = 0;
+		vrLen = 732;
+		vrLoc = 107;
+	};
+	10D2DEFF13840C5200334C4C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 10A08C97132150A7003F24AD /* GameDressScene_iPad.m */;
+		name = "GameDressScene_iPad.m: 723";
+		rLen = 0;
+		rLoc = 22864;
+		rType = 0;
+		vrLen = 1077;
+		vrLoc = 18652;
+	};
+	10D2DF0313840DFC00334C4C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 10A08DC413215CC5003F24AD /* DDElement.h */;
+		name = "DDElement.h: 36";
+		rLen = 0;
+		rLoc = 726;
+		rType = 0;
+		vrLen = 732;
+		vrLoc = 107;
+	};
+	10D2DF0413840DFC00334C4C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 10A08DC513215CC5003F24AD /* DDElement.m */;
+		name = "DDElement.m: 39";
+		rLen = 0;
+		rLoc = 1265;
+		rType = 0;
+		vrLen = 1342;
+		vrLoc = 665;
+	};
+	10D2DF0513840DFC00334C4C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 10A08C97132150A7003F24AD /* GameDressScene_iPad.m */;
+		name = "GameDressScene_iPad.m: 510";
+		rLen = 0;
+		rLoc = 16707;
+		rType = 0;
+		vrLen = 854;
+		vrLoc = 16560;
+	};
+	10D2DF0613840DFC00334C4C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 10A08C96132150A7003F24AD /* GameDressScene_iPad.h */;
+		name = "GameDressScene_iPad.h: 45";
+		rLen = 57;
+		rLoc = 770;
+		rType = 0;
+		vrLen = 1511;
+		vrLoc = 594;
+	};
+	10D2DF0713840DFC00334C4C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 10A08C96132150A7003F24AD /* GameDressScene_iPad.h */;
+		name = "GameDressScene_iPad.h: 51";
+		rLen = 0;
+		rLoc = 1131;
+		rType = 0;
+		vrLen = 1458;
+		vrLoc = 640;
+	};
+	10D2DF0813840DFC00334C4C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 10A08C97132150A7003F24AD /* GameDressScene_iPad.m */;
+		name = "GameDressScene_iPad.m: 723";
+		rLen = 0;
+		rLoc = 22864;
+		rType = 0;
+		vrLen = 1077;
+		vrLoc = 18652;
+	};
+	10D2DF0B13840E7800334C4C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 10A08C97132150A7003F24AD /* GameDressScene_iPad.m */;
+		name = "GameDressScene_iPad.m: 528";
+		rLen = 0;
+		rLoc = 16707;
+		rType = 0;
+		vrLen = 663;
+		vrLoc = 16554;
+	};
+	10D2DF0C13840E7800334C4C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 10A08C96132150A7003F24AD /* GameDressScene_iPad.h */;
+		rLen = 1;
+		rLoc = 41;
+		rType = 1;
+	};
+	10D2DF0D13840E7800334C4C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 10A08C96132150A7003F24AD /* GameDressScene_iPad.h */;
+		name = "GameDressScene_iPad.h: 52";
+		rLen = 0;
+		rLoc = 1192;
+		rType = 0;
+		vrLen = 1474;
+		vrLoc = 770;
+	};
+	10D2DF0E13840E7800334C4C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 10A08C97132150A7003F24AD /* GameDressScene_iPad.m */;
+		name = "GameDressScene_iPad.m: 723";
+		rLen = 0;
+		rLoc = 22864;
+		rType = 0;
+		vrLen = 1077;
+		vrLoc = 18652;
+	};
+	10D2DF1113840EC000334C4C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 10A08C96132150A7003F24AD /* GameDressScene_iPad.h */;
+		name = "GameDressScene_iPad.h: 41";
+		rLen = 0;
+		rLoc = 768;
+		rType = 0;
+		vrLen = 1474;
+		vrLoc = 770;
+	};
+	10D2DF1213840EC000334C4C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 10A08C97132150A7003F24AD /* GameDressScene_iPad.m */;
+		name = "GameDressScene_iPad.m: 506";
+		rLen = 0;
+		rLoc = 16707;
+		rType = 0;
+		vrLen = 1103;
+		vrLoc = 16095;
+	};
+	10D2DF1313840EC000334C4C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 10A08C97132150A7003F24AD /* GameDressScene_iPad.m */;
+		name = "GameDressScene_iPad.m: 696";
+		rLen = 0;
+		rLoc = 22864;
+		rType = 0;
+		vrLen = 1144;
+		vrLoc = 18675;
+	};
+	10D2DF1613840F2300334C4C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 10A08C97132150A7003F24AD /* GameDressScene_iPad.m */;
+		name = "GameDressScene_iPad.m: 506";
+		rLen = 0;
+		rLoc = 16594;
+		rType = 0;
+		vrLen = 1009;
+		vrLoc = 16189;
+	};
+	10D2DF1713840F2300334C4C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 10A08C97132150A7003F24AD /* GameDressScene_iPad.m */;
+		name = "GameDressScene_iPad.m: 696";
+		rLen = 0;
+		rLoc = 22864;
+		rType = 0;
+		vrLen = 1141;
+		vrLoc = 18675;
+	};
+	10D2DF3B1384139300334C4C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 10A08C96132150A7003F24AD /* GameDressScene_iPad.h */;
+		name = "GameDressScene_iPad.h: 34";
+		rLen = 0;
+		rLoc = 768;
+		rType = 0;
+		vrLen = 1296;
+		vrLoc = 567;
+	};
+	10D2DF3C1384139300334C4C /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 10A08DC113215B3F003F24AD /* DressData_iPad.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+			sunglasses,
+			3,
+			text_esp,
+		);
+		name = /Users/pabloruiz/Documents/Basho/iPad/DressData_iPad.plist;
+		rLen = 0;
+		rLoc = 9223372036854775807;
+	};
+	10D2DF3D1384139300334C4C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 10A08C97132150A7003F24AD /* GameDressScene_iPad.m */;
+		name = "GameDressScene_iPad.m: 506";
+		rLen = 0;
+		rLoc = 16610;
+		rType = 0;
+		vrLen = 1100;
+		vrLoc = 16098;
+	};
+	10D2DF3E1384139300334C4C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 10A08C97132150A7003F24AD /* GameDressScene_iPad.m */;
+		name = "GameDressScene_iPad.m: 507";
+		rLen = 0;
+		rLoc = 16705;
+		rType = 0;
+		vrLen = 1123;
+		vrLoc = 16091;
+	};
+	10D2DF3F1384139300334C4C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 10A08C97132150A7003F24AD /* GameDressScene_iPad.m */;
+		name = "GameDressScene_iPad.m: 697";
+		rLen = 0;
+		rLoc = 22864;
+		rType = 0;
+		vrLen = 1141;
+		vrLoc = 18733;
+	};
+	10D2DF41138415CD00334C4C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 10A08C97132150A7003F24AD /* GameDressScene_iPad.m */;
+		name = "GameDressScene_iPad.m: 502";
+		rLen = 0;
+		rLoc = 16499;
+		rType = 0;
+		vrLen = 1123;
+		vrLoc = 16091;
+	};
+	10D2DF42138415CD00334C4C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 10A08C97132150A7003F24AD /* GameDressScene_iPad.m */;
+		name = "GameDressScene_iPad.m: 697";
+		rLen = 0;
+		rLoc = 22864;
+		rType = 0;
+		vrLen = 1141;
+		vrLoc = 18733;
+	};
+	10D2DFCA13841AF900334C4C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 10A08C97132150A7003F24AD /* GameDressScene_iPad.m */;
+		name = "GameDressScene_iPad.m: 497";
+		rLen = 0;
+		rLoc = 16111;
+		rType = 0;
+		vrLen = 1351;
+		vrLoc = 15826;
+	};
+	10D2DFCB13841AF900334C4C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 10A08C97132150A7003F24AD /* GameDressScene_iPad.m */;
+		name = "GameDressScene_iPad.m: 497";
+		rLen = 0;
+		rLoc = 16111;
+		rType = 0;
+		vrLen = 1351;
+		vrLoc = 15826;
+	};
+	10D2DFCC13841AF900334C4C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 10A08C97132150A7003F24AD /* GameDressScene_iPad.m */;
+		name = "GameDressScene_iPad.m: 697";
+		rLen = 0;
+		rLoc = 22864;
+		rType = 0;
+		vrLen = 1141;
+		vrLoc = 18733;
+	};
+	10D2DFD113841B3100334C4C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 10A08C97132150A7003F24AD /* GameDressScene_iPad.m */;
+		name = "GameDressScene_iPad.m: 514";
+		rLen = 0;
+		rLoc = 17020;
+		rType = 0;
+		vrLen = 1372;
+		vrLoc = 15859;
+	};
+	10D2DFD213841B3100334C4C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 10A08C97132150A7003F24AD /* GameDressScene_iPad.m */;
+		name = "GameDressScene_iPad.m: 697";
+		rLen = 0;
+		rLoc = 22864;
+		rType = 0;
+		vrLen = 1137;
+		vrLoc = 18750;
+	};
+	10D2DFD613841BE700334C4C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 10A08DC513215CC5003F24AD /* DDElement.m */;
+		name = "DDElement.m: 39";
+		rLen = 0;
+		rLoc = 1265;
+		rType = 0;
+		vrLen = 1097;
+		vrLoc = 0;
+	};
+	10D2DFD713841BE700334C4C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 10A08DC413215CC5003F24AD /* DDElement.h */;
+		name = "DDElement.h: 36";
+		rLen = 0;
+		rLoc = 726;
+		rType = 0;
+		vrLen = 786;
+		vrLoc = 106;
+	};
+	10D2DFD813841BE700334C4C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 10A08C97132150A7003F24AD /* GameDressScene_iPad.m */;
+		name = "GameDressScene_iPad.m: 498";
+		rLen = 6;
+		rLoc = 16466;
+		rType = 0;
+		vrLen = 1435;
+		vrLoc = 15453;
+	};
+	10D2DFD913841BE700334C4C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 10A08C97132150A7003F24AD /* GameDressScene_iPad.m */;
+		name = "GameDressScene_iPad.m: 498";
+		rLen = 0;
+		rLoc = 16440;
+		rType = 0;
+		vrLen = 1593;
+		vrLoc = 15540;
+	};
+	10D2DFDA13841BE700334C4C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 10A08C97132150A7003F24AD /* GameDressScene_iPad.m */;
+		name = "GameDressScene_iPad.m: 697";
+		rLen = 0;
+		rLoc = 22864;
+		rType = 0;
+		vrLen = 1171;
+		vrLoc = 18744;
 	};
 	10E0252A1311586A00549533 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
@@ -3712,7 +4145,7 @@
 			1D6058900D05DD3D006BFB54 /* Basho */,
 		);
 		breakpoints = (
-			109D5E411339957E0061B1C3 /* GameDressScene_iPad.m:632 */,
+			109D5E411339957E0061B1C3 /* GameDressScene_iPad.m:607 */,
 			10D2D1E0137D964300334C4C /* GameWheelScene_both.m:787 */,
 			10D2DE1713836F1D00334C4C /* GameWheelScene_both.m:241 */,
 			10D2DE4F1383E48100334C4C /* GameWheelScene_both.m:637 */,
@@ -3721,8 +4154,8 @@
 			10D2DE831383EBEA00334C4C /* GameWheelScene_both.m:713 */,
 			10D2DE851383EC3600334C4C /* GameWheelScene_both.m:667 */,
 			10D2DEB21383F35D00334C4C /* GameWheelScene_both.m:423 */,
-			10D2DEE2138400B200334C4C /* DDElement.m:38 */,
-			10D2DEE7138400E000334C4C /* GameDressScene_iPad.m:695 */,
+			10D2DEE2138400B200334C4C /* DDElement.m:39 */,
+			10D2DEE7138400E000334C4C /* GameDressScene_iPad.m:670 */,
 		);
 		codeSenseManager = 10B569F41306EA9600AA7DCB /* Code sense */;
 		executables = (
@@ -4104,6 +4537,48 @@
 			10D2DEEE1384017B00334C4C /* PBXTextBookmark */ = 10D2DEEE1384017B00334C4C /* PBXTextBookmark */;
 			10D2DEEF1384017B00334C4C /* PBXTextBookmark */ = 10D2DEEF1384017B00334C4C /* PBXTextBookmark */;
 			10D2DEF01384017B00334C4C /* PBXTextBookmark */ = 10D2DEF01384017B00334C4C /* PBXTextBookmark */;
+			10D2DEF4138406E100334C4C /* PBXTextBookmark */ = 10D2DEF4138406E100334C4C /* PBXTextBookmark */;
+			10D2DEF5138406E100334C4C /* PBXTextBookmark */ = 10D2DEF5138406E100334C4C /* PBXTextBookmark */;
+			10D2DEF6138406E100334C4C /* PBXTextBookmark */ = 10D2DEF6138406E100334C4C /* PBXTextBookmark */;
+			10D2DEF7138406E100334C4C /* PlistBookmark */ = 10D2DEF7138406E100334C4C /* PlistBookmark */;
+			10D2DEF8138406E100334C4C /* PlistBookmark */ = 10D2DEF8138406E100334C4C /* PlistBookmark */;
+			10D2DEF9138406E100334C4C /* PBXTextBookmark */ = 10D2DEF9138406E100334C4C /* PBXTextBookmark */;
+			10D2DEFC13840C5200334C4C /* PlistBookmark */ = 10D2DEFC13840C5200334C4C /* PlistBookmark */;
+			10D2DEFD13840C5200334C4C /* PBXTextBookmark */ = 10D2DEFD13840C5200334C4C /* PBXTextBookmark */;
+			10D2DEFE13840C5200334C4C /* PBXTextBookmark */ = 10D2DEFE13840C5200334C4C /* PBXTextBookmark */;
+			10D2DEFF13840C5200334C4C /* PBXTextBookmark */ = 10D2DEFF13840C5200334C4C /* PBXTextBookmark */;
+			10D2DF0313840DFC00334C4C /* PBXTextBookmark */ = 10D2DF0313840DFC00334C4C /* PBXTextBookmark */;
+			10D2DF0413840DFC00334C4C /* PBXTextBookmark */ = 10D2DF0413840DFC00334C4C /* PBXTextBookmark */;
+			10D2DF0513840DFC00334C4C /* PBXTextBookmark */ = 10D2DF0513840DFC00334C4C /* PBXTextBookmark */;
+			10D2DF0613840DFC00334C4C /* PBXTextBookmark */ = 10D2DF0613840DFC00334C4C /* PBXTextBookmark */;
+			10D2DF0713840DFC00334C4C /* PBXTextBookmark */ = 10D2DF0713840DFC00334C4C /* PBXTextBookmark */;
+			10D2DF0813840DFC00334C4C /* PBXTextBookmark */ = 10D2DF0813840DFC00334C4C /* PBXTextBookmark */;
+			10D2DF0B13840E7800334C4C /* PBXTextBookmark */ = 10D2DF0B13840E7800334C4C /* PBXTextBookmark */;
+			10D2DF0C13840E7800334C4C /* PBXTextBookmark */ = 10D2DF0C13840E7800334C4C /* PBXTextBookmark */;
+			10D2DF0D13840E7800334C4C /* PBXTextBookmark */ = 10D2DF0D13840E7800334C4C /* PBXTextBookmark */;
+			10D2DF0E13840E7800334C4C /* PBXTextBookmark */ = 10D2DF0E13840E7800334C4C /* PBXTextBookmark */;
+			10D2DF1113840EC000334C4C /* PBXTextBookmark */ = 10D2DF1113840EC000334C4C /* PBXTextBookmark */;
+			10D2DF1213840EC000334C4C /* PBXTextBookmark */ = 10D2DF1213840EC000334C4C /* PBXTextBookmark */;
+			10D2DF1313840EC000334C4C /* PBXTextBookmark */ = 10D2DF1313840EC000334C4C /* PBXTextBookmark */;
+			10D2DF1613840F2300334C4C /* PBXTextBookmark */ = 10D2DF1613840F2300334C4C /* PBXTextBookmark */;
+			10D2DF1713840F2300334C4C /* PBXTextBookmark */ = 10D2DF1713840F2300334C4C /* PBXTextBookmark */;
+			10D2DF3B1384139300334C4C /* PBXTextBookmark */ = 10D2DF3B1384139300334C4C /* PBXTextBookmark */;
+			10D2DF3C1384139300334C4C /* PlistBookmark */ = 10D2DF3C1384139300334C4C /* PlistBookmark */;
+			10D2DF3D1384139300334C4C /* PBXTextBookmark */ = 10D2DF3D1384139300334C4C /* PBXTextBookmark */;
+			10D2DF3E1384139300334C4C /* PBXTextBookmark */ = 10D2DF3E1384139300334C4C /* PBXTextBookmark */;
+			10D2DF3F1384139300334C4C /* PBXTextBookmark */ = 10D2DF3F1384139300334C4C /* PBXTextBookmark */;
+			10D2DF41138415CD00334C4C /* PBXTextBookmark */ = 10D2DF41138415CD00334C4C /* PBXTextBookmark */;
+			10D2DF42138415CD00334C4C /* PBXTextBookmark */ = 10D2DF42138415CD00334C4C /* PBXTextBookmark */;
+			10D2DFCA13841AF900334C4C /* PBXTextBookmark */ = 10D2DFCA13841AF900334C4C /* PBXTextBookmark */;
+			10D2DFCB13841AF900334C4C /* PBXTextBookmark */ = 10D2DFCB13841AF900334C4C /* PBXTextBookmark */;
+			10D2DFCC13841AF900334C4C /* PBXTextBookmark */ = 10D2DFCC13841AF900334C4C /* PBXTextBookmark */;
+			10D2DFD113841B3100334C4C /* PBXTextBookmark */ = 10D2DFD113841B3100334C4C /* PBXTextBookmark */;
+			10D2DFD213841B3100334C4C /* PBXTextBookmark */ = 10D2DFD213841B3100334C4C /* PBXTextBookmark */;
+			10D2DFD613841BE700334C4C /* PBXTextBookmark */ = 10D2DFD613841BE700334C4C /* PBXTextBookmark */;
+			10D2DFD713841BE700334C4C /* PBXTextBookmark */ = 10D2DFD713841BE700334C4C /* PBXTextBookmark */;
+			10D2DFD813841BE700334C4C /* PBXTextBookmark */ = 10D2DFD813841BE700334C4C /* PBXTextBookmark */;
+			10D2DFD913841BE700334C4C /* PBXTextBookmark */ = 10D2DFD913841BE700334C4C /* PBXTextBookmark */;
+			10D2DFDA13841BE700334C4C /* PBXTextBookmark */ = 10D2DFDA13841BE700334C4C /* PBXTextBookmark */;
 			10E0252A1311586A00549533 = 10E0252A1311586A00549533 /* PBXTextBookmark */;
 			10EE6A92134D3CEA0041B7A5 = 10EE6A92134D3CEA0041B7A5 /* PlistBookmark */;
 			10EE6A96134D3CEA0041B7A5 = 10EE6A96134D3CEA0041B7A5 /* PBXTextBookmark */;

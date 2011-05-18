@@ -326,6 +326,7 @@
     [self addChild:palabra z:1 tag:kPALABRA];
 	[palabra setPosition:ccp(870,60)];
 	[palabra setOpacity:0];
+	[palabra setScale:0.7];
 }
 
 -(void)showPalabra:(NSString *)word
@@ -494,49 +495,23 @@
 		}
 		
 		CCAnimation * gloopAnimation = [CCAnimation animationWithFrames:gloopFrames delay:0.1f];
-		[gloopbackground runAction:[CCSequence actions:[CCRepeat actionWithAction:[CCAnimate actionWithAnimation:gloopAnimation restoreOriginalFrame:NO] times:2],[CCCallFuncN actionWithTarget:self selector:@selector(removeAnim:)],[CCCallFunc actionWithTarget:self selector:@selector(playFinishVideo)],nil]];
+		[gloopbackground runAction:[CCSequence actions:[CCRepeat actionWithAction:[CCAnimate actionWithAnimation:gloopAnimation restoreOriginalFrame:NO] times:2],[CCCallFuncN actionWithTarget:self selector:@selector(removeAnim:)],[CCCallFunc actionWithTarget:self selector:@selector(replay)],nil]];
 		
 		return;
 	}
 	
+	
 	NSString * sound = nil;
 	if(!bashoDirected)
 	{
-		
-		switch (bashoSelectedSound)
-		{
-			case BTN_BACKPACK_NUM:
-				sound =BTN_BACKPACK_SND_WHERE;
-				break;
-			case BTN_BOOTS_NUM:
-				sound =BTN_BOOTS_SND_WHERE;
-				break;
-			case BTN_HAT_NUM:
-				sound =BTN_HAT_SND_WHERE;
-				break;
-			case BTN_PHONE_NUM:
-				sound =BTN_PHONE_SND_WHERE;
-				break;
-			case BTN_JACKET_NUM:
-				sound =BTN_JACKET_SND_WHERE;
-				break;
-			case BTN_NECKLACE_NUM:
-				sound =BTN_NECKLACE_SND_WHERE;
-				break;
-			case BTN_PANTS_NUM:
-				sound =BTN_PANTS_SND_WHERE;
-				break;
-			case BTN_SUNGLASSES_NUM:
-				sound =BTN_SUNGLASSES_SND_WHERE;
-				break;
-		}
+		sound = [NSString stringWithFormat:@"dress_snd_%@_where_%@.mp3",[btnImgs objectAtIndex:bashoSelectedSound],[GameManager sharedGameManager].languageString];
 	}else {
 		
 		itemNeeded = [btnImgs objectAtIndex:bashoSelectedSound];
 		colorNeededNumber = arc4random() % 4;
 		colorNeeded = [btnColor objectAtIndex:colorNeededNumber];
 		
-		sound = [NSString stringWithFormat:@"dress_snd_%@_%@_where.mp3",itemNeeded,colorNeeded];
+		sound = [NSString stringWithFormat:@"dress_snd_%@_%@_where_%@.mp3",itemNeeded,colorNeeded,[GameManager sharedGameManager].languageString];
 	}
 
 	if([GameManager sharedGameManager].soundsEnabled)
