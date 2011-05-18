@@ -705,7 +705,7 @@
 {		
 	if(!couldBeginTouch) 
 	{
-		return;
+		//return;
 	}
 	if(beganDraggingLever)
 	{

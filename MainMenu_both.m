@@ -41,7 +41,10 @@
 	{
 		[GameManager sharedGameManager].playedMenuVideo = YES;
 		[self playVideo];
+	}else {
+		[self animateDoors];
 	}
+
     [super viewDidLoad];
 	
 }
