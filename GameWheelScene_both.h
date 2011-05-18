@@ -116,6 +116,8 @@
 	CCSprite * leverBtn;
 	
 	BOOL beganDraggingLever;
+	BOOL wasDragging;
+	BOOL couldBeginTouch;
 	
 }
 

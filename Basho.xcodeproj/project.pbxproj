@@ -564,6 +564,14 @@
 		10D2D90013815B1B00334C4C /* RumiAnim3_iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 10D2D8FE13815B1B00334C4C /* RumiAnim3_iPad.png */; };
 		10D2D90313815B7D00334C4C /* RumiAnim4_iPad.plist in Resources */ = {isa = PBXBuildFile; fileRef = 10D2D90113815B7D00334C4C /* RumiAnim4_iPad.plist */; };
 		10D2D90413815B7D00334C4C /* RumiAnim4_iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 10D2D90213815B7D00334C4C /* RumiAnim4_iPad.png */; };
+		10D2DDA4138341B900334C4C /* wheel_snd_bee_sfx.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 10D2DD9C138341B900334C4C /* wheel_snd_bee_sfx.mp3 */; };
+		10D2DDA5138341B900334C4C /* wheel_snd_cat_sfx.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 10D2DD9D138341B900334C4C /* wheel_snd_cat_sfx.mp3 */; };
+		10D2DDA6138341B900334C4C /* wheel_snd_chicken_sfx.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 10D2DD9E138341B900334C4C /* wheel_snd_chicken_sfx.mp3 */; };
+		10D2DDA7138341B900334C4C /* wheel_snd_cow_sfx.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 10D2DD9F138341B900334C4C /* wheel_snd_cow_sfx.mp3 */; };
+		10D2DDA8138341B900334C4C /* wheel_snd_dog_sfx.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 10D2DDA0138341B900334C4C /* wheel_snd_dog_sfx.mp3 */; };
+		10D2DDA9138341B900334C4C /* wheel_snd_duck_sfx.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 10D2DDA1138341B900334C4C /* wheel_snd_duck_sfx.mp3 */; };
+		10D2DDAA138341B900334C4C /* wheel_snd_horse_sfx.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 10D2DDA2138341B900334C4C /* wheel_snd_horse_sfx.mp3 */; };
+		10D2DDAB138341B900334C4C /* wheel_snd_pig_sfx.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 10D2DDA3138341B900334C4C /* wheel_snd_pig_sfx.mp3 */; };
 		10EE6B9D134DEB9A0041B7A5 /* Puntostodos_iPad.mov in Resources */ = {isa = PBXBuildFile; fileRef = 10EE6B9C134DEB9A0041B7A5 /* Puntostodos_iPad.mov */; };
 		10EE6BBC134DF3140041B7A5 /* pointsaudiosting.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 10EE6BBB134DF3140041B7A5 /* pointsaudiosting.mp3 */; };
 		10EE6C04134DFA050041B7A5 /* 1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 10EE6BDC134DFA050041B7A5 /* 1.mp3 */; };
@@ -1301,6 +1309,14 @@
 		10D2D8FE13815B1B00334C4C /* RumiAnim3_iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RumiAnim3_iPad.png; sourceTree = "<group>"; };
 		10D2D90113815B7D00334C4C /* RumiAnim4_iPad.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = RumiAnim4_iPad.plist; sourceTree = "<group>"; };
 		10D2D90213815B7D00334C4C /* RumiAnim4_iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RumiAnim4_iPad.png; sourceTree = "<group>"; };
+		10D2DD9C138341B900334C4C /* wheel_snd_bee_sfx.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = wheel_snd_bee_sfx.mp3; sourceTree = "<group>"; };
+		10D2DD9D138341B900334C4C /* wheel_snd_cat_sfx.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = wheel_snd_cat_sfx.mp3; sourceTree = "<group>"; };
+		10D2DD9E138341B900334C4C /* wheel_snd_chicken_sfx.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = wheel_snd_chicken_sfx.mp3; sourceTree = "<group>"; };
+		10D2DD9F138341B900334C4C /* wheel_snd_cow_sfx.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = wheel_snd_cow_sfx.mp3; sourceTree = "<group>"; };
+		10D2DDA0138341B900334C4C /* wheel_snd_dog_sfx.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = wheel_snd_dog_sfx.mp3; sourceTree = "<group>"; };
+		10D2DDA1138341B900334C4C /* wheel_snd_duck_sfx.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = wheel_snd_duck_sfx.mp3; sourceTree = "<group>"; };
+		10D2DDA2138341B900334C4C /* wheel_snd_horse_sfx.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = wheel_snd_horse_sfx.mp3; sourceTree = "<group>"; };
+		10D2DDA3138341B900334C4C /* wheel_snd_pig_sfx.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = wheel_snd_pig_sfx.mp3; sourceTree = "<group>"; };
 		10EE6B9C134DEB9A0041B7A5 /* Puntostodos_iPad.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = Puntostodos_iPad.mov; sourceTree = "<group>"; };
 		10EE6BBB134DF3140041B7A5 /* pointsaudiosting.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = pointsaudiosting.mp3; sourceTree = "<group>"; };
 		10EE6BDC134DFA050041B7A5 /* 1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 1.mp3; sourceTree = "<group>"; };
@@ -2166,6 +2182,7 @@
 				10D2D26B137DA5B000334C4C /* backgroundMusic.mp3 */,
 				1051CF53137ABBC6002DACDF /* RightAnswer.mp3 */,
 				1051CF54137ABBC7002DACDF /* WrongAnswer.mp3 */,
+				10D2DD981383419C00334C4C /* wheel - animals - sfx */,
 				1051CB1F13788DC8002DACDF /* wheel - animals - english */,
 				109A49C7137061780057428B /* wheel - animals - spanish */,
 				10A065C7133BBDAC0059187D /* points sounds */,
@@ -2322,6 +2339,21 @@
 				102FDE46131C894200CC0AEB /* wheel */,
 			);
 			name = Resources;
+			sourceTree = "<group>";
+		};
+		10D2DD981383419C00334C4C /* wheel - animals - sfx */ = {
+			isa = PBXGroup;
+			children = (
+				10D2DD9C138341B900334C4C /* wheel_snd_bee_sfx.mp3 */,
+				10D2DD9D138341B900334C4C /* wheel_snd_cat_sfx.mp3 */,
+				10D2DD9E138341B900334C4C /* wheel_snd_chicken_sfx.mp3 */,
+				10D2DD9F138341B900334C4C /* wheel_snd_cow_sfx.mp3 */,
+				10D2DDA0138341B900334C4C /* wheel_snd_dog_sfx.mp3 */,
+				10D2DDA1138341B900334C4C /* wheel_snd_duck_sfx.mp3 */,
+				10D2DDA2138341B900334C4C /* wheel_snd_horse_sfx.mp3 */,
+				10D2DDA3138341B900334C4C /* wheel_snd_pig_sfx.mp3 */,
+			);
+			name = "wheel - animals - sfx";
 			sourceTree = "<group>";
 		};
 		10E025081311561C00549533 /* wheel */ = {
@@ -3016,6 +3048,14 @@
 				10D2D90013815B1B00334C4C /* RumiAnim3_iPad.png in Resources */,
 				10D2D90313815B7D00334C4C /* RumiAnim4_iPad.plist in Resources */,
 				10D2D90413815B7D00334C4C /* RumiAnim4_iPad.png in Resources */,
+				10D2DDA4138341B900334C4C /* wheel_snd_bee_sfx.mp3 in Resources */,
+				10D2DDA5138341B900334C4C /* wheel_snd_cat_sfx.mp3 in Resources */,
+				10D2DDA6138341B900334C4C /* wheel_snd_chicken_sfx.mp3 in Resources */,
+				10D2DDA7138341B900334C4C /* wheel_snd_cow_sfx.mp3 in Resources */,
+				10D2DDA8138341B900334C4C /* wheel_snd_dog_sfx.mp3 in Resources */,
+				10D2DDA9138341B900334C4C /* wheel_snd_duck_sfx.mp3 in Resources */,
+				10D2DDAA138341B900334C4C /* wheel_snd_horse_sfx.mp3 in Resources */,
+				10D2DDAB138341B900334C4C /* wheel_snd_pig_sfx.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

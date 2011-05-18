@@ -216,7 +216,7 @@
 						<key>_historyCapacity</key>
 						<integer>0</integer>
 						<key>bookmark</key>
-						<string>10D2DD921382FD2A00334C4C</string>
+						<string>10D2DE23138371BD00334C4C</string>
 						<key>history</key>
 						<array>
 							<string>10D2D93413818E7D00334C4C</string>
@@ -314,6 +314,8 @@
 								<string>28EEBF621118D79A00187D67</string>
 								<string>10108B7B132008AA001848A5</string>
 								<string>10B32831131D5CAA0014A77D</string>
+								<string>10D2DD981383419C00334C4C</string>
+								<string>1051CB1F13788DC8002DACDF</string>
 								<string>10AA0BD2130719D200D11E6B</string>
 								<string>29B97323FDCFA39411CA2CEA</string>
 								<string>1C37FBAC04509CD000000102</string>
@@ -323,14 +325,14 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>27</integer>
-									<integer>22</integer>
-									<integer>4</integer>
+									<integer>43</integer>
+									<integer>41</integer>
+									<integer>40</integer>
 									<integer>0</integer>
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 202}, {292, 594}}</string>
+							<string>{{0, 169}, {292, 594}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -379,7 +381,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>10D2DD911382FD2A00334C4C</string>
+										<string>10D2DE22138371BD00334C4C</string>
 										<key>history</key>
 										<array>
 											<string>10B56A4A1306EDB900AA7DCB</string>
@@ -456,7 +458,6 @@
 											<string>1053C47D137C8F3D00E7E3F9</string>
 											<string>10D2D1E6137D969400334C4C</string>
 											<string>10D2D202137D986700334C4C</string>
-											<string>10D2D203137D986700334C4C</string>
 											<string>10D2D278137DA72A00334C4C</string>
 											<string>10D2D2A3137DAFE600334C4C</string>
 											<string>10D2D2A5137DAFE600334C4C</string>
@@ -464,7 +465,6 @@
 											<string>10D2D2A7137DAFE600334C4C</string>
 											<string>10D2D893138146D100334C4C</string>
 											<string>10D2D8E11381537300334C4C</string>
-											<string>10D2D8E21381537300334C4C</string>
 											<string>10D2D8F51381542A00334C4C</string>
 											<string>10D2D90713815D2500334C4C</string>
 											<string>10D2D90A13815D2500334C4C</string>
@@ -479,10 +479,13 @@
 											<string>10D2DCE91382EBFF00334C4C</string>
 											<string>10D2DCEA1382EBFF00334C4C</string>
 											<string>10D2DCEB1382EBFF00334C4C</string>
-											<string>10D2DCFE1382EEC400334C4C</string>
-											<string>10D2DD641382F6E000334C4C</string>
-											<string>10D2DD6B1382F77D00334C4C</string>
-											<string>10D2DD901382FD2A00334C4C</string>
+											<string>10D2DE0D13836E8200334C4C</string>
+											<string>10D2DE0E13836E8200334C4C</string>
+											<string>10D2DE0F13836E8200334C4C</string>
+											<string>10D2DE1013836E8200334C4C</string>
+											<string>10D2DE1113836E8200334C4C</string>
+											<string>10D2DE20138371BD00334C4C</string>
+											<string>10D2DE21138371BD00334C4C</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -680,7 +683,6 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>10D2DD931382FD2A00334C4C</string>
 		<string>1C530D57069F1CE1000CFCEE</string>
 		<string>10D2DD021382EEC400334C4C</string>
 		<string>10D2DCFB1382EC7000334C4C</string>
@@ -905,7 +907,7 @@
 			<key>WindowToolGUID</key>
 			<string>1CD10A99069EF8BA00B06720</string>
 			<key>WindowToolIsVisible</key>
-			<false/>
+			<true/>
 		</dict>
 		<dict>
 			<key>FirstTimeWindowDisplayed</key>
@@ -928,7 +930,7 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CDD528C0622207200134675</string>
 										<key>PBXProjectModuleLabel</key>
-										<string></string>
+										<string>GameWheelScene_iPad.m</string>
 										<key>StatusBarVisibility</key>
 										<true/>
 									</dict>
@@ -996,7 +998,7 @@
 			<key>WindowToolGUID</key>
 			<string>1C530D57069F1CE1000CFCEE</string>
 			<key>WindowToolIsVisible</key>
-			<true/>
+			<false/>
 		</dict>
 		<dict>
 			<key>Identifier</key>

@@ -216,9 +216,12 @@
 	if([GameManager sharedGameManager].onPause) return; 
 	bashoDirected = !bashoDirected;
 	
+	forceApplied = 0;
+	dinoSpinning = NO;
 	//[self makeScoreAppear:bashoDirected];
 	if(bashoDirected)
 	{
+		friction = 0;
 		points = 0;
 		CCLabelTTF * scoreLbl = [self getChildByTag:kSCORE];
 		[scoreLbl setString:@"0"];
@@ -232,8 +235,10 @@
 		[bashoSelectedItems addObject:[NSNumber numberWithInt:6]];
 		[bashoSelectedItems addObject:[NSNumber numberWithInt:7]];
 		
-		[self selectItemForBasho];
+		[self autoPushLever:NO];
 	}else {
+		friction =51;
+		forceApplied = 0;
 		for (CCMenuItemImage * m in [tapButtons children])
 		{
 			[m setIsEnabled:YES];
@@ -256,6 +261,15 @@
 	[menu setPosition:ccp(0,0)];*/
 	
 	//[self goBack];
+}
+
+-(void)selectItemForBashoAlreadySelected
+{	
+	GameManager * gm = [GameManager sharedGameManager];
+	NSString * sound = [NSString stringWithFormat:@"wheel_snd_%@_where_%@.mp3",[[buttonsData objectAtIndex:bashoSelectedSound] objectForKey:@"image"],[gm languageString]];
+	
+	if([GameManager sharedGameManager].soundsEnabled)
+		[[SimpleAudioEngine sharedEngine] playEffect:sound];
 }
 
 -(void)selectItemForBasho
@@ -325,7 +339,7 @@
 -(void)listenSound:(CCMenuItemImage *)btn
 {
 	if([GameManager sharedGameManager].onPause) return; 
-	if(playingSound || dinoSpinning) return;
+	if((playingSound && !bashoDirected) || (dinoSpinning && !bashoDirected)) return;
 	
 	GameManager * gm = [GameManager sharedGameManager];
 	
@@ -341,8 +355,10 @@
     NSMutableDictionary * userData = (NSMutableDictionary *)btn.userData;
     word =[NSMutableString stringWithFormat:@"%@",[userData objectForKey:@"espText"]];
     bashoDirectedWrongSound =[NSMutableString stringWithFormat:@"wheel_snd_%@_wrong.mp3",[userData objectForKey:@"image"]];
-    sound =[NSMutableString stringWithFormat:@"wheel_snd_%@_%@.mp3",[userData objectForKey:@"image"],[gm languageString]];
-    
+    //sound =[NSMutableString stringWithFormat:@"wheel_snd_%@_%@.mp3",[userData objectForKey:@"image"],[gm languageString]];
+	sound =[NSMutableString stringWithFormat:@"wheel_snd_%@_sfx.mp3",[userData objectForKey:@"image"]];
+
+	
 	if(!bashoDirected)
 	{
 		if([GameManager sharedGameManager].soundsEnabled)
@@ -377,11 +393,13 @@
 			
 			if([bashoSelectedItems count]==0)
 			{
-				[[GameManager sharedGameManager] unlockGame:3];
-				[self runAction:[CCSequence actions:[CCDelayTime actionWithDuration:1],[CCCallFunc actionWithTarget:self selector:@selector(showPoints)],nil]];
+				//[[GameManager sharedGameManager] unlockGame:3];
+				//[self runAction:[CCSequence actions:[CCDelayTime actionWithDuration:1],[CCCallFunc actionWithTarget:self selector:@selector(showPoints)],nil]];
 			}else
-				[self runAction:[CCSequence actions:[CCDelayTime actionWithDuration:1],[CCCallFunc actionWithTarget:self selector:@selector(selectItemForBasho)],nil]];
-			
+			{
+				dinoSpinning = NO;
+				[self runAction:[CCSequence actions:[CCDelayTime actionWithDuration:1],[CCCallFunc actionWithTarget:self selector:@selector(autoPushLeverFromAction)],nil]];
+			}
 		}else {
 			currentAttempts ++;
 			if([GameManager sharedGameManager].soundsEnabled)
@@ -389,6 +407,8 @@
 				[[SimpleAudioEngine sharedEngine] playEffect:@"WrongAnswer.mp3"];
 				//[[SimpleAudioEngine sharedEngine] playEffect:bashoDirectedWrongSound];
 			}
+			dinoSpinning = NO;
+			[self autoPushLever:YES];
 		}
 		
 	}
@@ -426,16 +446,21 @@
     CCSprite * palabraBck = [self getChildByTag:kPALABRABCK];
 	[palabraBck setOpacity:0];
 	
-	if(currentAttempts >=5)
+	/*if(currentAttempts >=5)
 	{
 		maxedAttemps = YES;
 		[self makeDinoSpin2:bashoSelectedSound];
-	}
+	}*/
 }
 
 -(void)playBtnEffect:(CCMenuItemImage *)btn
 {
-	if(playingSound || dinoSpinning) return;
+	if(playingSound || (dinoSpinning && !bashoDirected)) return;
+	if(bashoDirected)
+	{
+		forceApplied = 0;
+	}
+	
 	[btn setIsEnabled:NO];
 	selectedSound = btn.tag;
 	[self listenSound:[tapButtons getChildByTag:selectedSound]];
@@ -545,7 +570,7 @@
 	if(playingSound)return;
 	if([GameManager sharedGameManager].onPause) return; 
 	
-	if(CGRectContainsPoint([leverBtn boundingBox], location)) 
+	if(CGRectContainsPoint([leverBtn boundingBox], location) && !bashoDirected) 
 	{
 		beganDraggingLever = YES;
 		return;
@@ -565,6 +590,8 @@
 	initialAngle=0;
 	
 	isDragging=YES;
+	wasDragging = YES;
+	couldBeginTouch = YES;
 	
 }
 
@@ -602,6 +629,11 @@
 
 - (void)ccTouchesEnded:(UITouch *)touches withEvent:(UIEvent *)event
 {		
+	if(!couldBeginTouch) 
+	{
+		couldBeginTouch = NO;
+		return;
+	}
 	if(beganDraggingLever)
 	{
 		beganDraggingLever = NO;
@@ -684,7 +716,7 @@
 	
 	[self unschedule:@selector(updateTime)];
 	time=0;
-	
+	couldBeginTouch = NO;
 }
 
 
@@ -724,7 +756,11 @@
         forceApplied = 0;
         NSLog(@"stopped at %.2f !",dino.rotation);
     
-        [self stopSpinning];
+		if(wasDragging)
+		{
+			wasDragging = NO;
+			[self stopSpinning];
+		}
     }
 }
 
@@ -734,13 +770,48 @@
 	if(!dinoSpinning)
 	{
 		dinoSpinning = YES;
+		[self stopSpinning];
 		[leverImg runAction:[CCSequence actions:[CCCallFunc actionWithTarget:self selector:@selector(pushLever2)],[CCRotateTo actionWithDuration:3 angle:-25],nil]];
+	}
+}
+
+-(void)autoPushLeverAlready
+{
+	if([GameManager sharedGameManager].onPause) return; 
+	if(!dinoSpinning)
+	{
+		dinoSpinning = YES;
+		[leverImg runAction:[CCSequence actions:[CCRotateTo actionWithDuration:0.8 angle:32],[CCCallFunc actionWithTarget:self selector:@selector(selectItemForBashoAlreadySelected)],[CCCallFunc actionWithTarget:self selector:@selector(autoPushLever2)],[CCRotateTo actionWithDuration:3 angle:-25],nil]];
+	}
+}
+
+-(void)autoPushLeverFromAction
+{
+	[self autoPushLever:NO];
+}
+-(void)autoPushLever:(BOOL)alreadySelected
+{
+	if([GameManager sharedGameManager].onPause) return; 
+	if(!dinoSpinning)
+	{
+		dinoSpinning = YES;
+		if(alreadySelected)
+			[leverImg runAction:[CCSequence actions:[CCRotateTo actionWithDuration:0.8 angle:32],[CCCallFunc actionWithTarget:self selector:@selector(selectItemForBashoAlreadySelected)],[CCCallFunc actionWithTarget:self selector:@selector(autoPushLever2)],[CCRotateTo actionWithDuration:3 angle:-25],nil]];
+		else
+			[leverImg runAction:[CCSequence actions:[CCRotateTo actionWithDuration:0.8 angle:32],[CCCallFunc actionWithTarget:self selector:@selector(selectItemForBasho)],[CCCallFunc actionWithTarget:self selector:@selector(autoPushLever2)],[CCRotateTo actionWithDuration:3 angle:-25],nil]];
+
 	}
 }
 
 -(void)pushLever2
 {
 	forceApplied = 13800 + arc4random() % 2000;
+}
+
+-(void)autoPushLever2
+{
+	forceApplied = 6000;
+	friction = 0;
 }
 
 -(void)loadSpinningStuff
@@ -756,7 +827,7 @@
     
     fromMovement=YES;
     
-    [self schedule:@selector(startFriction) interval:2];
+    [self startFriction];
     
     [self scheduleUpdate];
     
@@ -764,7 +835,6 @@
 }
 
 -(void)startFriction {
-	[self unschedule:@selector(startFriction)];
 	friction=51;
 }
 
