@@ -49,6 +49,7 @@
 
 -(void)loadVideo
 {
+	[GameManager sharedGameManager].onPause = YES;
 	NSURL * url;
 	NSBundle *bundle = [NSBundle mainBundle];
 	if (bundle) 
@@ -82,6 +83,7 @@
 
 -(void)skipMovie
 {
+	[GameManager sharedGameManager].onPause = NO;
 	[[NSNotificationCenter defaultCenter] removeObserver:self
 													name:MPMoviePlayerPlaybackDidFinishNotification object:introVideo];
 	[introVideo stop];
@@ -93,6 +95,7 @@
 
 -(void) videoPlayerDidFinishPlaying: (NSNotification*)aNotification
 {
+	[GameManager sharedGameManager].onPause = NO;
 	MPMoviePlayerController * introVideo = [aNotification object];
 	[[NSNotificationCenter defaultCenter] removeObserver:self name:MPMoviePlayerPlaybackDidFinishNotification object:introVideo];
 	[introVideo stop];
@@ -343,7 +346,7 @@
 	
 	GameManager * gm = [GameManager sharedGameManager];
 	
-	[btn setIsEnabled:NO];
+	//[btn setIsEnabled:NO];
 	
 	NSString * word = nil;
 	NSString * bashoDirectedWrongSound = nil;
@@ -455,15 +458,23 @@
 
 -(void)playBtnEffect:(CCMenuItemImage *)btn
 {
-	if(playingSound || (dinoSpinning && !bashoDirected)) return;
+	stopWhenRotationReached = NO;
+	if(stopWhenRotationReached ||playingSound || (dinoSpinning && !bashoDirected)) return;
+	
+	//[btn setIsEnabled:NO];
+	selectedSound = btn.tag;
+	
 	if(bashoDirected)
 	{
-		forceApplied = 0;
+		stopWhenRotationReached = YES;
+		//forceApplied = 0;
+	}else {
+		[self listenSound:[tapButtons getChildByTag:selectedSound]];
 	}
+
 	
-	[btn setIsEnabled:NO];
-	selectedSound = btn.tag;
-	[self listenSound:[tapButtons getChildByTag:selectedSound]];
+	
+	
 	
 }
 
@@ -495,6 +506,38 @@
 	{
 		[dino runAction:[CCSequence actions:[CCEaseSineInOut actionWithAction:[CCRotateTo actionWithDuration:rotTime angle:randAngle]],[CCCallFunc actionWithTarget:self selector:@selector(stopSpinning)],nil]];
 		dinoSpinning = YES;
+	}
+}
+
+-(float)getAngleForButton
+{
+	float offset = 22.5;
+    
+	switch (selectedSound) {
+		case 0:
+			return 1;
+			break;
+		case 1:
+			return 45+offset;
+			break;
+		case 2:
+			return 90+offset;
+			break;
+		case 3:
+			return 135+offset;
+			break;
+		case 4:
+			return 180+offset;
+			break;
+		case 5:
+			return 225+offset;
+			break;
+		case 6:
+			return 270+offset;
+			break;
+		case 7:
+			return 315+offset;
+			break;
 	}
 }
 
@@ -559,7 +602,7 @@
 	//if (bashoDirected) return;
     if(dinoSpinning)
 	{
-		if(CGRectContainsPoint([dino boundingBox],location))
+		if(CGRectContainsPoint([dino boundingBox],location) && !stopWhenRotationReached)
 		{
 			forceApplied = 0;
 			[self stopSpinning];
@@ -572,6 +615,7 @@
 	
 	if(CGRectContainsPoint([leverBtn boundingBox], location) && !bashoDirected) 
 	{
+		couldBeginTouch = YES;
 		beganDraggingLever = YES;
 		return;
     }
@@ -591,7 +635,7 @@
 	
 	isDragging=YES;
 	wasDragging = YES;
-	couldBeginTouch = YES;
+	
 	
 }
 
@@ -627,11 +671,11 @@
 	
 }
 
+
 - (void)ccTouchesEnded:(UITouch *)touches withEvent:(UIEvent *)event
 {		
 	if(!couldBeginTouch) 
 	{
-		couldBeginTouch = NO;
 		return;
 	}
 	if(beganDraggingLever)
@@ -723,6 +767,31 @@
 - (void)update:(ccTime)dt
 {
     float prevForceApplied = forceApplied;
+	
+	if(stopWhenRotationReached)
+	{
+		float rot = [self getAngleForButton];
+		float angle = dino.rotation;
+		int loops = 0;
+		
+		float realDinoAngle = 0;
+		if(angle >= 0)
+		{
+			loops = (int)floor(angle / 360);
+			realDinoAngle = angle - (loops * 360);
+		}else
+		{
+			loops = (int)ceil(angle / 360);
+			realDinoAngle = 360 + (angle - (loops * 360));
+		}
+		
+		if(realDinoAngle - rot <20 && realDinoAngle - rot >-20)
+		{
+			forceApplied =0;
+			stopWhenRotationReached = NO;
+			[self listenSound:[tapButtons getChildByTag:selectedSound]];
+		}
+	}
 
 	if (forceApplied==0) {
 		dinoSpinning = NO;
@@ -816,6 +885,7 @@
 
 -(void)loadSpinningStuff
 {
+	dino.rotation = arc4random() % 360;
     friction=0;
     
     time=0;

@@ -118,6 +118,7 @@
 	BOOL beganDraggingLever;
 	BOOL wasDragging;
 	BOOL couldBeginTouch;
+	BOOL stopWhenRotationReached;
 	
 }
 
