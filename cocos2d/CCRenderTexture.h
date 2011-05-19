@@ -59,15 +59,13 @@ enum
 	CCSprite*			sprite_;
 	
 	GLenum				pixelFormat_;
-	GLfloat				clearColor_[4];
-
 }
 
 /** The CCSprite being used.
  The sprite, by default, will use the following blending function: GL_ONE, GL_ONE_MINUS_SRC_ALPHA.
  The blending function can be changed in runtime by calling:
-	- [[renderTexture sprite] setBlendFunc:(ccBlendFunc){GL_ONE, GL_ONE_MINUS_SRC_ALPHA}];
-*/
+ - [[renderTexture sprite] setBlendFunc:(ccBlendFunc){GL_ONE, GL_ONE_MINUS_SRC_ALPHA}];
+ */
 @property (nonatomic,readwrite, assign) CCSprite* sprite;
 
 /** creates a RenderTexture object with width and height in Points and a pixel format, only RGB and RGBA formats are valid */
@@ -100,9 +98,12 @@ enum
 -(BOOL)saveBuffer:(NSString*)name format:(int)format;
 /* get buffer as UIImage, can only save a render buffer which has a RGBA8888 pixel format */
 -(NSData*)getUIImageAsDataFromBuffer:(int) format;
+/* get buffer as UIImage */
+-(UIImage *)getUIImageFromBuffer;
 
 #endif // __IPHONE_OS_VERSION_MAX_ALLOWED
 
 @end
+
 
 

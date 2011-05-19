@@ -10,6 +10,7 @@
 #import "cocos2d.h"
 #import "GameDress_iPad.h"
 #import <MediaPlayer/MediaPlayer.h>
+#import "GameDressSceneSnapshot_iPad.h"
 
 #define kSPRITEBATCH_ELEMS 1
 #define kBOXERS 2
@@ -86,6 +87,8 @@
 	///
 	BOOL histeresisExcited;
     UIAcceleration* lastAcceleration;
+	
+	CCRenderTexture * target;
 }
 
 @property (nonatomic,readwrite) BOOL placingElement;

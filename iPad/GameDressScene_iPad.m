@@ -228,7 +228,18 @@
 
 -(void)replay
 {
-	[[CCDirector sharedDirector] replaceScene:[CCTransitionFade transitionWithDuration:0.5 scene: [GameDressScene_iPad sceneWithDressVC:viewController bashoDirected:YES playVid:NO] withColor:ccWHITE]];
+	for(CCSprite * piece in dressPieces)
+	{
+		[target begin];
+		[piece visit];
+		[target end];
+	}
+	
+	[target saveBuffer:@"pirulo"];
+	UIImage * savedImg = [target getUIImageFromBuffer];
+	[[CCDirector sharedDirector] replaceScene:[CCTransitionFade transitionWithDuration:0.5 scene: [GameDressSceneSnapshot_iPad sceneWithDressVC:viewController dinoImage:savedImg] withColor:ccWHITE]];
+
+	//[[CCDirector sharedDirector] replaceScene:[CCTransitionFade transitionWithDuration:0.5 scene: [GameDressScene_iPad sceneWithDressVC:viewController bashoDirected:YES playVid:NO] withColor:ccWHITE]];
 	
 }
 
@@ -250,6 +261,9 @@
 	bashoSelectedSound = 0;
 	ddElements = [[NSMutableArray alloc] initWithCapacity:4];
 	dressPieces= [[NSMutableArray alloc] initWithCapacity:8];
+	
+	target = [[CCRenderTexture renderTextureWithWidth:1024 height:768] retain];
+	[target setPosition:ccp(512,384)];
 	
 	[[ CCSpriteFrameCache sharedSpriteFrameCache] addSpriteFramesWithFile:@"dress_iPad.plist" textureFile:@"dress_iPad.png"];
 	
@@ -568,6 +582,7 @@
 	[backpack setPosition:ccp(512,384)];
 	
 	[dressPieces addObject:backpack];
+	
 }
 
 -(void)loadScatteredElementsForItem:(int)item
@@ -751,6 +766,7 @@ static BOOL AccelerationIsShaking(UIAcceleration* last, UIAcceleration* current,
 
 -(void)dealloc
 {
+	[target release];
 	[lastAcceleration release];
 	[btnImgs release];
 	[btnColor release];

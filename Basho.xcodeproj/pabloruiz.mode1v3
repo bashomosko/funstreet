@@ -197,48 +197,7 @@
 	<key>Notifications</key>
 	<array/>
 	<key>OpenEditors</key>
-	<array>
-		<dict>
-			<key>Content</key>
-			<dict>
-				<key>PBXProjectModuleGUID</key>
-				<string>1053C480137C8F3D00E7E3F9</string>
-				<key>PBXProjectModuleLabel</key>
-				<string>GameDressScene_iPad.m</string>
-				<key>PBXSplitModuleInNavigatorKey</key>
-				<dict>
-					<key>Split0</key>
-					<dict>
-						<key>PBXProjectModuleGUID</key>
-						<string>1053C481137C8F3D00E7E3F9</string>
-						<key>PBXProjectModuleLabel</key>
-						<string>GameDressScene_iPad.m</string>
-						<key>_historyCapacity</key>
-						<integer>0</integer>
-						<key>bookmark</key>
-						<string>10D2E184138556A700334C4C</string>
-						<key>history</key>
-						<array>
-							<string>10D2E06213846D9E00334C4C</string>
-						</array>
-					</dict>
-					<key>SplitCount</key>
-					<string>1</string>
-				</dict>
-				<key>StatusBarVisibility</key>
-				<true/>
-			</dict>
-			<key>Geometry</key>
-			<dict>
-				<key>Frame</key>
-				<string>{{0, 20}, {844, 450}}</string>
-				<key>PBXModuleWindowStatusBarHidden2</key>
-				<false/>
-				<key>RubberWindowFrame</key>
-				<string>157 143 844 491 0 0 1280 778 </string>
-			</dict>
-		</dict>
-	</array>
+	<array/>
 	<key>PerspectiveWidths</key>
 	<array>
 		<integer>-1</integer>
@@ -270,6 +229,8 @@
 			<key>Layout</key>
 			<array>
 				<dict>
+					<key>BecomeActive</key>
+					<true/>
 					<key>ContentConfiguration</key>
 					<dict>
 						<key>PBXBottomSmartGroupGIDs</key>
@@ -325,8 +286,8 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>7</integer>
-									<integer>5</integer>
+									<integer>19</integer>
+									<integer>10</integer>
 									<integer>4</integer>
 									<integer>0</integer>
 								</array>
@@ -351,7 +312,7 @@
 							<real>334</real>
 						</array>
 						<key>RubberWindowFrame</key>
-						<string>-1 114 1280 653 0 0 1280 778 </string>
+						<string>-11 114 1280 653 0 0 1280 778 </string>
 					</dict>
 					<key>Module</key>
 					<string>PBXSmartGroupTreeModule</string>
@@ -362,14 +323,12 @@
 					<key>Dock</key>
 					<array>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>SettingsViewController_iPad.m</string>
+								<string>GameDressSceneSnapshot_iPad.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -377,11 +336,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>SettingsViewController_iPad.m</string>
+										<string>GameDressSceneSnapshot_iPad.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>10D2E183138556A700334C4C</string>
+										<string>10D2E2511385655C00334C4C</string>
 										<key>history</key>
 										<array>
 											<string>10B56A4A1306EDB900AA7DCB</string>
@@ -469,14 +428,10 @@
 											<string>10D2DCEA1382EBFF00334C4C</string>
 											<string>10D2DE0D13836E8200334C4C</string>
 											<string>10D2DE1013836E8200334C4C</string>
-											<string>10D2DEC81383FB0A00334C4C</string>
 											<string>10D2DECA1383FB0A00334C4C</string>
 											<string>10D2DECC1383FB0A00334C4C</string>
 											<string>10D2DED61384001500334C4C</string>
-											<string>10D2DF3B1384139300334C4C</string>
 											<string>10D2DF3C1384139300334C4C</string>
-											<string>10D2DFD613841BE700334C4C</string>
-											<string>10D2DFD713841BE700334C4C</string>
 											<string>10D2E035138458DE00334C4C</string>
 											<string>10D2E036138458DE00334C4C</string>
 											<string>10D2E037138458DE00334C4C</string>
@@ -490,9 +445,17 @@
 											<string>10D2E165138551FD00334C4C</string>
 											<string>10D2E167138551FD00334C4C</string>
 											<string>10D2E16E1385523A00334C4C</string>
-											<string>10D2E1761385563500334C4C</string>
 											<string>10D2E181138556A700334C4C</string>
-											<string>10D2E182138556A700334C4C</string>
+											<string>10D2E2081385605800334C4C</string>
+											<string>10D2E21C1385621B00334C4C</string>
+											<string>10D2E21D1385621B00334C4C</string>
+											<string>10D2E21E1385621B00334C4C</string>
+											<string>10D2E241138564E800334C4C</string>
+											<string>10D2E243138564E800334C4C</string>
+											<string>10D2E248138564FF00334C4C</string>
+											<string>10D2E24E1385655C00334C4C</string>
+											<string>10D2E24F1385655C00334C4C</string>
+											<string>10D2E2501385655C00334C4C</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -506,7 +469,7 @@
 								<key>Frame</key>
 								<string>{{0, 0}, {924, 480}}</string>
 								<key>RubberWindowFrame</key>
-								<string>-1 114 1280 653 0 0 1280 778 </string>
+								<string>-11 114 1280 653 0 0 1280 778 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
@@ -526,7 +489,7 @@
 								<key>Frame</key>
 								<string>{{0, 485}, {924, 127}}</string>
 								<key>RubberWindowFrame</key>
-								<string>-1 114 1280 653 0 0 1280 778 </string>
+								<string>-11 114 1280 653 0 0 1280 778 </string>
 							</dict>
 							<key>Module</key>
 							<string>XCDetailModule</string>
@@ -690,14 +653,15 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>1C78EAAD065D492600B07095</string>
+		<string>10D2E2231385621B00334C4C</string>
+		<string>10D2E2241385621B00334C4C</string>
 		<string>1CD10A99069EF8BA00B06720</string>
 		<string>10B569EA1306EA9600AA7DCB</string>
-		<string>1053C480137C8F3D00E7E3F9</string>
 		<string>/Users/pabloruiz/Documents/Basho/Basho.xcodeproj</string>
+		<string>1C78EAAD065D492600B07095</string>
 	</array>
 	<key>WindowString</key>
-	<string>-1 114 1280 653 0 0 1280 778 </string>
+	<string>-11 114 1280 653 0 0 1280 778 </string>
 	<key>WindowToolsV3</key>
 	<array>
 		<dict>
@@ -718,7 +682,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CD0528F0623707200166675</string>
 								<key>PBXProjectModuleLabel</key>
-								<string></string>
+								<string>GameDressSceneSnapshot_iPad.m</string>
 								<key>StatusBarVisibility</key>
 								<true/>
 							</dict>
@@ -735,6 +699,8 @@
 							<string>149pt</string>
 						</dict>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -787,7 +753,7 @@
 			<key>WindowToolGUID</key>
 			<string>10B569EA1306EA9600AA7DCB</string>
 			<key>WindowToolIsVisible</key>
-			<false/>
+			<true/>
 		</dict>
 		<dict>
 			<key>FirstTimeWindowDisplayed</key>
@@ -1021,6 +987,8 @@
 					<key>Dock</key>
 					<array>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -1066,7 +1034,7 @@
 			<key>WindowToolGUID</key>
 			<string>1C78EAAD065D492600B07095</string>
 			<key>WindowToolIsVisible</key>
-			<false/>
+			<true/>
 		</dict>
 		<dict>
 			<key>Identifier</key>

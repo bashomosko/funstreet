@@ -596,6 +596,7 @@
 		10D2DFC0138415EB00334C4C /* dress_snd_necklace_Yellow_where_eng.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 10D2DF80138415EB00334C4C /* dress_snd_necklace_Yellow_where_eng.mp3 */; };
 		10D2DFC1138415EB00334C4C /* dress_snd_pants_Yellow_where_eng.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 10D2DF81138415EB00334C4C /* dress_snd_pants_Yellow_where_eng.mp3 */; };
 		10D2DFC2138415EB00334C4C /* dress_snd_phone_Yellow_where_eng.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 10D2DF82138415EB00334C4C /* dress_snd_phone_Yellow_where_eng.mp3 */; };
+		10D2E2301385634000334C4C /* GameDressSceneSnapshot_iPad.m in Sources */ = {isa = PBXBuildFile; fileRef = 10D2E22F1385634000334C4C /* GameDressSceneSnapshot_iPad.m */; };
 		10EE6B9D134DEB9A0041B7A5 /* Puntostodos_iPad.mov in Resources */ = {isa = PBXBuildFile; fileRef = 10EE6B9C134DEB9A0041B7A5 /* Puntostodos_iPad.mov */; };
 		10EE6BBC134DF3140041B7A5 /* pointsaudiosting.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 10EE6BBB134DF3140041B7A5 /* pointsaudiosting.mp3 */; };
 		10EE6C04134DFA050041B7A5 /* 1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 10EE6BDC134DFA050041B7A5 /* 1.mp3 */; };
@@ -1365,6 +1366,8 @@
 		10D2DF80138415EB00334C4C /* dress_snd_necklace_Yellow_where_eng.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = dress_snd_necklace_Yellow_where_eng.mp3; sourceTree = "<group>"; };
 		10D2DF81138415EB00334C4C /* dress_snd_pants_Yellow_where_eng.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = dress_snd_pants_Yellow_where_eng.mp3; sourceTree = "<group>"; };
 		10D2DF82138415EB00334C4C /* dress_snd_phone_Yellow_where_eng.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = dress_snd_phone_Yellow_where_eng.mp3; sourceTree = "<group>"; };
+		10D2E22E1385634000334C4C /* GameDressSceneSnapshot_iPad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameDressSceneSnapshot_iPad.h; sourceTree = "<group>"; };
+		10D2E22F1385634000334C4C /* GameDressSceneSnapshot_iPad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameDressSceneSnapshot_iPad.m; sourceTree = "<group>"; };
 		10EE6B9C134DEB9A0041B7A5 /* Puntostodos_iPad.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = Puntostodos_iPad.mov; sourceTree = "<group>"; };
 		10EE6BBB134DF3140041B7A5 /* pointsaudiosting.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = pointsaudiosting.mp3; sourceTree = "<group>"; };
 		10EE6BDC134DFA050041B7A5 /* 1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 1.mp3; sourceTree = "<group>"; };
@@ -1703,6 +1706,8 @@
 				10A08C97132150A7003F24AD /* GameDressScene_iPad.m */,
 				10A08DC413215CC5003F24AD /* DDElement.h */,
 				10A08DC513215CC5003F24AD /* DDElement.m */,
+				10D2E22E1385634000334C4C /* GameDressSceneSnapshot_iPad.h */,
+				10D2E22F1385634000334C4C /* GameDressSceneSnapshot_iPad.m */,
 			);
 			name = "Game Dress";
 			sourceTree = "<group>";
@@ -3293,6 +3298,7 @@
 				10A6BC88132595BA00391C82 /* GameVideo.m in Sources */,
 				10A06586133BB3E40059187D /* GameVideo_iPad.m in Sources */,
 				1051C94513786084002DACDF /* SettingsViewController_iPad.m in Sources */,
+				10D2E2301385634000334C4C /* GameDressSceneSnapshot_iPad.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
