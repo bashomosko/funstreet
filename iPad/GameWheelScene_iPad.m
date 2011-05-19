@@ -56,8 +56,12 @@
 			self.isTouchEnabled = YES;
 			viewController = vc;
 			
-			[self loadVideo];
-			//[self beginGame];
+			if(![GameManager sharedGameManager].playedGame1Video)
+			{
+				[[GameManager sharedGameManager] setPlayedGame1Video:YES];
+				[self loadVideo];
+			}else
+				[self beginGame];
 			
 		}
 		return self;

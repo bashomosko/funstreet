@@ -38,8 +38,11 @@
 		viewController = vc;
 		
 		//[self beginGame];
-		if(playVid)
+		if(![GameManager sharedGameManager].playedGame2Video)
+		{
+			[[GameManager sharedGameManager] setPlayedGame2Video:YES];
 			[self loadVideo];
+		}
 		else
 			[self beginGame];
 		 

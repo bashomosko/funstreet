@@ -39,7 +39,7 @@
   //  [self animateDoors];
 	if(![GameManager sharedGameManager].playedMenuVideo)
 	{
-		[GameManager sharedGameManager].playedMenuVideo = YES;
+		[[GameManager sharedGameManager] setPlayedMenuVideo:YES];
 		[self playVideo];
 	}else {
 		[self animateDoors];

@@ -54,6 +54,9 @@
 -(IBAction) changeinstructionLanguage:(UISegmentedControl *)sender
 {
 	GameManager * gm = [GameManager sharedGameManager];
+	[gm setPlayedMenuVideo:NO];
+	[gm setPlayedGame1Video:NO];
+	[gm setPlayedGame2Video:NO];
 	[gm setInstructionsLanguage:sender.selectedSegmentIndex];
 }
 

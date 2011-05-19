@@ -7,7 +7,7 @@ static GameManager *sharedInstance = nil;
 @implementation GameManager
 
 @synthesize soundsEnabled,languageString,language,instructionsLanguage, fxVolume, musicVolume,onPause,instructionsLanguageString;
-@synthesize playedMenuVideo;
+@synthesize playedMenuVideo,playedGame1Video,playedGame2Video;
 
 + (GameManager *)sharedGameManager
 {
@@ -66,13 +66,54 @@ static GameManager *sharedInstance = nil;
 		languageString = [[NSMutableString alloc] initWithCapacity:10];
 		instructionsLanguageString = [[NSMutableString alloc] initWithCapacity:10];
 		
-		[self setLanguage:1];
-		[self setInstructionsLanguage:1];
-		[self setMusicVolume:1];
-		[self setFxVolume:1];
+		NSUserDefaults * ud = [NSUserDefaults standardUserDefaults];
+		BOOL alreadyPlayed = [[ud objectForKey:@"alreadyPlayed"]boolValue];
+		
+		if(alreadyPlayed)
+		{
+			playedMenuVideo = [[ud objectForKey:@"playedMenuVideo"]boolValue];
+			playedGame1Video = [[ud objectForKey:@"playedGame1Video"]boolValue];
+			playedGame2Video = [[ud objectForKey:@"playedGame2Video"]boolValue];
+			[self setLanguage:[[ud objectForKey:@"language"]intValue]];
+			[self setInstructionsLanguage:[[ud objectForKey:@"instructionsLanguage"]intValue]];
+			[self setMusicVolume:[[ud objectForKey:@"musicVolume"]intValue]];
+			[self setFxVolume:[[ud objectForKey:@"fxVolume"]intValue]];
+		}else
+		{
+			[ud setObject:[NSNumber numberWithBool:YES] forKey:@"alreadyPlayed"];
+			[self setLanguage:0];
+			[self setInstructionsLanguage:0];
+			[self setMusicVolume:1];
+			[self setFxVolume:1];
+			playedMenuVideo = NO;
+			playedGame1Video = NO;
+			playedGame2Video = NO;
+		}
+		
 		
 		return self;
 	}
+}
+
+-(void)setPlayedMenuVideo:(BOOL)played
+{
+	playedMenuVideo = played;
+	NSUserDefaults * ud = [NSUserDefaults standardUserDefaults];
+	[ud setObject:[NSNumber numberWithBool:playedMenuVideo] forKey:@"playedMenuVideo"];
+}
+
+-(void)setPlayedGame1Video:(BOOL)played
+{
+	playedGame1Video = played;
+	NSUserDefaults * ud = [NSUserDefaults standardUserDefaults];
+	[ud setObject:[NSNumber numberWithBool:playedGame1Video] forKey:@"playedGame1Video"];
+}
+
+-(void)setPlayedGame2Video:(BOOL)played
+{
+	playedGame2Video = played;
+	NSUserDefaults * ud = [NSUserDefaults standardUserDefaults];
+	[ud setObject:[NSNumber numberWithBool:playedGame2Video] forKey:@"playedGame2Video"];
 }
 
 -(void)turnSounds
@@ -89,6 +130,8 @@ static GameManager *sharedInstance = nil;
 -(void)setLanguage:(int)_language
 {
 	language = _language;
+	NSUserDefaults * ud = [NSUserDefaults standardUserDefaults];
+	[ud setObject:[NSNumber numberWithInt:language] forKey:@"language"];
 	switch (language) {
 		case 0:
 			[languageString setString:@"eng"];
@@ -102,6 +145,8 @@ static GameManager *sharedInstance = nil;
 -(void)setInstructionsLanguage:(int)_language
 {
 	instructionsLanguage = _language;
+	NSUserDefaults * ud = [NSUserDefaults standardUserDefaults];
+	[ud setObject:[NSNumber numberWithInt:instructionsLanguage] forKey:@"instructionsLanguage"];
 	switch (instructionsLanguage) {
 		case 0:
 			[instructionsLanguageString setString:@"eng"];
@@ -115,6 +160,8 @@ static GameManager *sharedInstance = nil;
 -(void)setFxVolume:(int)vol
 {
 	fxVolume = vol;
+	NSUserDefaults * ud = [NSUserDefaults standardUserDefaults];
+	[ud setObject:[NSNumber numberWithInt:fxVolume] forKey:@"fxVolume"];
 	switch (vol) {
 		case 0:
 			[[SimpleAudioEngine sharedEngine] setEffectsVolume:0.1];
@@ -131,6 +178,8 @@ static GameManager *sharedInstance = nil;
 -(void)setMusicVolume:(int)vol
 {
 	musicVolume = vol;
+	NSUserDefaults * ud = [NSUserDefaults standardUserDefaults];
+	[ud setObject:[NSNumber numberWithInt:musicVolume] forKey:@"musicVolume"];
 	switch (vol) {
 		case 0:
 			[[SimpleAudioEngine sharedEngine] setBackgroundMusicVolume:0.1];
