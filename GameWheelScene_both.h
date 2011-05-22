@@ -119,6 +119,7 @@
 	BOOL wasDragging;
 	BOOL couldBeginTouch;
 	BOOL stopWhenRotationReached;
+	BOOL canDragDino;
 	
 }
 

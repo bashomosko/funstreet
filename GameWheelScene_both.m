@@ -361,7 +361,7 @@
 	[tapButtons setPosition:ccp(0,0)];
 }
 
--(void)listenSound:(CCMenuItemImage *)btn
+-(void)listenSound:(CCMenuItemImage *)btn withWord:(BOOL)withWord
 {
 	if([GameManager sharedGameManager].onPause) return; 
 	if((playingSound && !bashoDirected) || (dinoSpinning && !bashoDirected)) return;
@@ -373,22 +373,25 @@
 	NSString * word = nil;
 	NSString * bashoDirectedWrongSound = nil;
 	NSString * sound = nil;
+	NSString * wordSound = nil;
 	
 	playingSound = YES;
-	[self runAction:[CCSequence actions:[CCDelayTime actionWithDuration:1],[CCCallFunc actionWithTarget:self selector:@selector(stopPlayingSound)],nil]];
+	[self runAction:[CCSequence actions:[CCDelayTime actionWithDuration:2],[CCCallFunc actionWithTarget:self selector:@selector(stopPlayingSound)],nil]];
    
     NSMutableDictionary * userData = (NSMutableDictionary *)btn.userData;
     word =[NSMutableString stringWithFormat:@"%@",[userData objectForKey:@"espText"]];
     bashoDirectedWrongSound =[NSMutableString stringWithFormat:@"wheel_snd_%@_wrong.mp3",[userData objectForKey:@"image"]];
     //sound =[NSMutableString stringWithFormat:@"wheel_snd_%@_%@.mp3",[userData objectForKey:@"image"],[gm languageString]];
 	sound =[NSMutableString stringWithFormat:@"wheel_snd_%@_sfx.mp3",[userData objectForKey:@"image"]];
-
+	
+	if(withWord)
+		wordSound =[[NSMutableString stringWithFormat:@"wheel_snd_%@_%@.mp3",[userData objectForKey:@"image"],[GameManager sharedGameManager].languageString]retain];
 	
 	if(!bashoDirected)
 	{
 		if([GameManager sharedGameManager].soundsEnabled)
 			[[SimpleAudioEngine sharedEngine] playEffect:sound];
-		[self showPalabra:word];
+		[self showPalabra:word sound:wordSound];
 	}else {
 		
 		if(bashoSelectedSound == selectedSound )
@@ -411,7 +414,7 @@
 				}
 
 			}
-			[self showPalabra:word];
+			[self showPalabra:word sound:wordSound];
 			
 			[btn setIsEnabled:NO];
 			[btn setOpacity:90];
@@ -453,13 +456,26 @@
 	[scoreLbl setString:[NSString stringWithFormat:@"%d",points]];
 }
 
--(void)showPalabra:(NSString *)word
+-(void)showPalabra:(NSString *)word sound:(NSString *)wordSound
 {
-	CCLabelTTF * palabra = [self getChildByTag:kPALABRA];
-	[palabra setString:word];
-	[palabra runAction:[CCFadeIn actionWithDuration:0.8]];
-    CCSprite * palabraBck = [self getChildByTag:kPALABRABCK];
-	[palabraBck runAction:[CCFadeIn actionWithDuration:0.8]];
+	if(wordSound)
+	{
+		CCLabelTTF * palabra = [self getChildByTag:kPALABRA];
+		[palabra setString:word];
+		[palabra runAction:[CCSequence actions:[CCDelayTime actionWithDuration:2.2],[CCFadeIn actionWithDuration:0.8],nil]];
+		CCSprite * palabraBck = [self getChildByTag:kPALABRABCK];
+		[palabraBck runAction:[CCSequence actions:[CCDelayTime actionWithDuration:2.2],[CCFadeIn actionWithDuration:0.8],nil]];
+		
+		[self runAction:[CCSequence actions:[CCDelayTime actionWithDuration:2.2],[CCCallFuncND actionWithTarget:self selector:@selector(playWordSound: data:)data:(void*)wordSound],nil]];
+	}
+}
+
+-(void)playWordSound:(CCLayer *)l data:(void *)data
+{	
+	NSString * wordSound = (NSString *)data;
+	if([GameManager sharedGameManager].soundsEnabled && wordSound)
+		[[SimpleAudioEngine sharedEngine] playEffect:wordSound];
+	[wordSound release];
 }
 
 -(void)stopPlayingSound
@@ -498,7 +514,7 @@
 		stopWhenRotationReached = YES;
 		//forceApplied = 0;
 	}else {
-		[self listenSound:[tapButtons getChildByTag:selectedSound]];
+		[self listenSound:[tapButtons getChildByTag:selectedSound] withWord:NO];
 	}
 
 	
@@ -605,7 +621,7 @@
         selectedSound =7;
     
 	dinoSpinning = NO;
-	[self listenSound:[tapButtons getChildByTag:selectedSound]];
+	[self listenSound:[tapButtons getChildByTag:selectedSound] withWord:YES];
 	
 }
 
@@ -628,13 +644,17 @@
     CGPoint location = [touch locationInView: [touch view]];
     location = [[CCDirector sharedDirector] convertToGL: location];	
 	
+	canDragDino = YES;
 	//if (bashoDirected) return;
     if(dinoSpinning)
 	{
 		if(CGRectContainsPoint([dino boundingBox],location) && !stopWhenRotationReached)
 		{
+			canDragDino = NO;
 			forceApplied = 0;
-			[self stopSpinning];
+			dinoSpinning = NO;
+			if(bashoDirected)
+				[self stopSpinning];
 		}
 		return;
 		
@@ -676,14 +696,6 @@
     CGPoint location = [touch locationInView: [touch view]];
     location = [[CCDirector sharedDirector] convertToGL: location];	
 	
-	/*float angle = CC_RADIANS_TO_DEGREES(-(atan2(location.y - dino.position.y, location.x - dino.position.x)));
-	
-	isDragging=YES;
-	
-	dino.rotation =dino.rotation - (actualAngle-angle);
-	
-	actualAngle = angle;
-	*/
 	if(CGRectContainsPoint(CGRectMake(800, 0, 224, 768), location) && beganDraggingLever)
 	{
 		//leverBtn.position = ccp(leverBtn.position.x, location.y);
@@ -696,17 +708,29 @@
 		NSLog(@"%.2f",leverImg.rotation);
 		if(leverImg.rotation < -26) leverImg.rotation = -26;
 		if(leverImg.rotation > 32) leverImg.rotation = 32;
+	}else if(canDragDino && !bashoDirected){
+		float angle = CC_RADIANS_TO_DEGREES(-(atan2(location.y - dino.position.y, location.x - dino.position.x)));
+		
+		isDragging=YES;
+		
+		dino.rotation =dino.rotation - (actualAngle-angle);
+		
+		actualAngle = angle;
 	}
+
 	
 }
 
 
 - (void)ccTouchesEnded:(UITouch *)touches withEvent:(UIEvent *)event
-{		
-	if(!couldBeginTouch) 
-	{
-		//return;
-	}
+{	
+	UITouch *touch = [touches anyObject];
+    CGPoint location = [touch locationInView: [touch view]];
+    location = [[CCDirector sharedDirector] convertToGL: location];	
+	
+	if(!canDragDino)
+		return;
+		
 	if(beganDraggingLever)
 	{
 		beganDraggingLever = NO;
@@ -724,10 +748,6 @@
 	if(dinoSpinning) return;
 	if(playingSound)return;
 	if([GameManager sharedGameManager].onPause) return;
-	
-	UITouch *touch = [touches anyObject];
-    CGPoint location = [touch locationInView: [touch view]];
-    location = [[CCDirector sharedDirector] convertToGL: location];	
 	
 	isDragging=NO;
 	
@@ -818,7 +838,7 @@
 		{
 			forceApplied =0;
 			stopWhenRotationReached = NO;
-			[self listenSound:[tapButtons getChildByTag:selectedSound]];
+			[self listenSound:[tapButtons getChildByTag:selectedSound] withWord:YES];
 		}
 	}
 
@@ -857,7 +877,7 @@
 		if(wasDragging)
 		{
 			wasDragging = NO;
-			[self stopSpinning];
+			//[self stopSpinning];
 		}
     }
 }

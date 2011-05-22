@@ -639,6 +639,7 @@
 		10EE6C29134DFA050041B7A5 /* 38.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 10EE6C01134DFA050041B7A5 /* 38.mp3 */; };
 		10EE6C2A134DFA050041B7A5 /* 39.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 10EE6C02134DFA050041B7A5 /* 39.mp3 */; };
 		10EE6C2B134DFA050041B7A5 /* 40.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 10EE6C03134DFA050041B7A5 /* 40.mp3 */; };
+		10FD52D61386AEFA00D9B984 /* backgroundMusicAnimales.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 10FD52D51386AEFA00D9B984 /* backgroundMusicAnimales.mp3 */; };
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
@@ -1410,6 +1411,7 @@
 		10EE6C01134DFA050041B7A5 /* 38.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 38.mp3; sourceTree = "<group>"; };
 		10EE6C02134DFA050041B7A5 /* 39.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 39.mp3; sourceTree = "<group>"; };
 		10EE6C03134DFA050041B7A5 /* 40.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 40.mp3; sourceTree = "<group>"; };
+		10FD52D51386AEFA00D9B984 /* backgroundMusicAnimales.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = backgroundMusicAnimales.mp3; sourceTree = "<group>"; };
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D6058910D05DD3D006BFB54 /* Basho.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Basho.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -2218,6 +2220,7 @@
 			children = (
 				10D2DF1813840F6700334C4C /* dress - clothes - where */,
 				10D2D26B137DA5B000334C4C /* backgroundMusic.mp3 */,
+				10FD52D51386AEFA00D9B984 /* backgroundMusicAnimales.mp3 */,
 				1051CF53137ABBC6002DACDF /* RightAnswer.mp3 */,
 				1051CF54137ABBC7002DACDF /* WrongAnswer.mp3 */,
 				10D2DD981383419C00334C4C /* wheel - animals - sfx */,
@@ -3173,6 +3176,7 @@
 				10D2DFC0138415EB00334C4C /* dress_snd_necklace_Yellow_where_eng.mp3 in Resources */,
 				10D2DFC1138415EB00334C4C /* dress_snd_pants_Yellow_where_eng.mp3 in Resources */,
 				10D2DFC2138415EB00334C4C /* dress_snd_phone_Yellow_where_eng.mp3 in Resources */,
+				10FD52D61386AEFA00D9B984 /* backgroundMusicAnimales.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
