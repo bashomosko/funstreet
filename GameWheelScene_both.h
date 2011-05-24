@@ -121,6 +121,8 @@
 	BOOL stopWhenRotationReached;
 	BOOL canDragDino;
 	
+	CCSpriteBatchNode * animalAnimSB;
+	
 }
 
 @end

@@ -384,6 +384,8 @@
     //sound =[NSMutableString stringWithFormat:@"wheel_snd_%@_%@.mp3",[userData objectForKey:@"image"],[gm languageString]];
 	sound =[NSMutableString stringWithFormat:@"wheel_snd_%@_sfx.mp3",[userData objectForKey:@"image"]];
 	
+	[self playAnimForAnimal:btn];
+	
 	if(withWord)
 		wordSound =[[NSMutableString stringWithFormat:@"wheel_snd_%@_%@.mp3",[userData objectForKey:@"image"],[GameManager sharedGameManager].languageString]retain];
 	
@@ -427,7 +429,7 @@
 			}else
 			{
 				dinoSpinning = NO;
-				[self runAction:[CCSequence actions:[CCDelayTime actionWithDuration:1],[CCCallFunc actionWithTarget:self selector:@selector(autoPushLeverFromAction)],nil]];
+				[self runAction:[CCSequence actions:[CCDelayTime actionWithDuration:2.5],[CCCallFunc actionWithTarget:self selector:@selector(autoPushLeverFromAction)],nil]];
 			}
 		}else {
 			currentAttempts ++;
@@ -444,9 +446,45 @@
 	
 }
 
+-(void)playAnimForAnimal:(CCMenuItemImage *)btn
+{
+	NSMutableDictionary * userData = (NSMutableDictionary *)btn.userData;
+	NSString * animal = [userData objectForKey:@"image"];
+	int framesNum = [[userData objectForKey:@"frames"] intValue];
+	
+	[btn setVisible:NO];
+	
+	CCSprite * itemAnim = [CCSprite spriteWithSpriteFrameName:[NSString stringWithFormat:@"SeeNSay_%@_ANIM_00000.png",animal]];
+	[animalAnimSB addChild:itemAnim];
+	[itemAnim setPosition:ccp(512,384)];
+	
+	NSMutableArray *animFrames = [NSMutableArray array];
+	for(int i = 0; i <= framesNum; i++) {
+		
+		CCSpriteFrame *frame = [[CCSpriteFrameCache sharedSpriteFrameCache] spriteFrameByName:[NSString stringWithFormat:@"SeeNSay_%@_ANIM_%05d.png",animal,i]];
+		[animFrames addObject:frame];
+	}
+	
+	CCAnimation *animation = [CCAnimation animationWithFrames:animFrames];
+	
+		
+	[itemAnim runAction:[CCSequence actions:[CCAnimate actionWithDuration:1 animation:animation restoreOriginalFrame:NO],[CCCallFuncND actionWithTarget:self selector:@selector(removeAnimalsAnim: data:) data:(void *)btn],nil]];
+	
+}
+
+-(void)removeAnimalsAnim:(CCNode *)n data:(void*)data
+{
+	CCMenuItemImage * btn = (CCMenuItemImage *)data;
+	[btn setVisible:YES];
+	[n.parent removeChild:n cleanup:YES];
+}
+
 -(void)animateAllAnimals
 {
-	
+	for(CCMenuItemImage * m in tapButtons)
+	{
+		[self playAnimForAnimal:m];
+	}
 }
 
 -(void)addPoints:(int)_points
@@ -734,6 +772,9 @@
 	if(beganDraggingLever)
 	{
 		beganDraggingLever = NO;
+		if([GameManager sharedGameManager].soundsEnabled)
+			[[SimpleAudioEngine sharedEngine] playEffect:@"lever-sfx.mp3"];
+		
 		if(leverImg.rotation > 25)
 		{
 			[self pushLever];
@@ -967,7 +1008,10 @@
 	// in this particular example nothing needs to be released.
 	// cocos2d will automatically release all the children (Label)
 	// don't forget to call "super dealloc"
+	[SimpleAudioEngine end];
 	[[SimpleAudioEngine sharedEngine] unloadEffect:@"WrongAnswer.mp3"];
+	[[SimpleAudioEngine sharedEngine] unloadEffect:@"lever-sfx.mp3"];
+	
 	[bashoSelectedItems release];
     [buttonsData release];
 	[super dealloc];

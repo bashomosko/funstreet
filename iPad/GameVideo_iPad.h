@@ -10,10 +10,14 @@
 #import <MediaPlayer/MediaPlayer.h>
 
 @interface GameVideo_iPad : UIViewController {
-	UILabel * lyrics;
-	NSMutableArray * lyricLines;
-	int currentLyricLine;
+
 	MPMoviePlayerController * video;
+	
+	IBOutlet UIImageView * curtainL;
+	IBOutlet UIImageView * curtainR;
 }
+
+@property (nonatomic,retain) IBOutlet UIImageView * curtainL;
+@property (nonatomic,retain)IBOutlet UIImageView * curtainR;
 
 @end
