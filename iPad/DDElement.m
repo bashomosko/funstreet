@@ -164,6 +164,7 @@
 			if([GameManager sharedGameManager].soundsEnabled)
 				[[SimpleAudioEngine sharedEngine] playEffect:@"WrongAnswer.mp3"];
 			mySprite.position = initialCoord;
+			[self shakeMismatch];
 			/*CCParticleSystemQuad * particles = [CCParticleSystemQuad particleWithFile:particleWrongPath];
 			[self addChild:particles];
 			[particles setPosition:mySprite.position];
@@ -178,6 +179,24 @@
 	//[theGame checkWinCondition];
 	
 	state = kStateUngrabbed;
+}
+
+-(void)shakeMismatch
+{
+    CGPoint initPos = mySprite.position;
+    
+	[mySprite runAction:[CCSequence actions:[CCRepeat actionWithAction:[CCSequence actions:
+																		[CCMoveBy actionWithDuration:0.05 position:ccp(5,5)],
+																		[CCMoveBy actionWithDuration:0.05 position:ccp(-5,-5)],
+																		[CCMoveBy actionWithDuration:0.05 position:ccp(5,5)],
+																		[CCMoveBy actionWithDuration:0.05 position:ccp(-5,-5)],
+																		[CCMoveBy actionWithDuration:0.05 position:ccp(5,5)],
+																		[CCMoveBy actionWithDuration:0.05 position:ccp(-5,-5)],
+																		[CCMoveBy actionWithDuration:0.05 position:ccp(5,5)],
+																		[CCMoveBy actionWithDuration:0.05 position:ccp(-5,-5)],
+																		[CCMoveBy actionWithDuration:0.05 position:ccp(5,5)],
+																		[CCMoveBy actionWithDuration:0.05 position:ccp(-5,-5)],nil]
+																 times:2],[CCPlace actionWithPosition:initPos],nil]];
 }
 
 -(void)removeNode:(CCNode *)node

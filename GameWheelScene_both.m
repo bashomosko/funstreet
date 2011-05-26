@@ -1008,7 +1008,7 @@
 	// in this particular example nothing needs to be released.
 	// cocos2d will automatically release all the children (Label)
 	// don't forget to call "super dealloc"
-	[SimpleAudioEngine end];
+	//[SimpleAudioEngine end];
 	[[SimpleAudioEngine sharedEngine] unloadEffect:@"WrongAnswer.mp3"];
 	[[SimpleAudioEngine sharedEngine] unloadEffect:@"lever-sfx.mp3"];
 	
