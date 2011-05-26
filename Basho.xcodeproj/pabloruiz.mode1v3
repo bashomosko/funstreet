@@ -289,8 +289,8 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>11</integer>
-									<integer>9</integer>
+									<integer>18</integer>
+									<integer>13</integer>
 									<integer>4</integer>
 									<integer>0</integer>
 								</array>
@@ -315,7 +315,7 @@
 							<real>334</real>
 						</array>
 						<key>RubberWindowFrame</key>
-						<string>-2 125 1280 653 0 0 1280 778 </string>
+						<string>162 125 1280 653 0 0 1280 778 </string>
 					</dict>
 					<key>Module</key>
 					<string>PBXSmartGroupTreeModule</string>
@@ -333,7 +333,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>GameVideo_iPad.m</string>
+								<string>GameDressScene_iPad.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -341,11 +341,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>GameVideo_iPad.m</string>
+										<string>GameDressScene_iPad.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>10A3295C138C0BC200C4B0F5</string>
+										<string>10A32A8C138C551D00C4B0F5</string>
 										<key>history</key>
 										<array>
 											<string>10B56A4A1306EDB900AA7DCB</string>
@@ -452,7 +452,6 @@
 											<string>10A32789138AD5E100C4B0F5</string>
 											<string>10A328BC138B158300C4B0F5</string>
 											<string>10A328CE138BF96C00C4B0F5</string>
-											<string>10A328CF138BF96C00C4B0F5</string>
 											<string>10A328D0138BF96C00C4B0F5</string>
 											<string>10A328D2138BF96C00C4B0F5</string>
 											<string>10A328F1138BFAE800C4B0F5</string>
@@ -466,7 +465,8 @@
 											<string>10A32935138C0AC200C4B0F5</string>
 											<string>10A32936138C0AC200C4B0F5</string>
 											<string>10A3293C138C0AE000C4B0F5</string>
-											<string>10A3293D138C0AE000C4B0F5</string>
+											<string>10A32A55138C527100C4B0F5</string>
+											<string>10A328CF138BF96C00C4B0F5</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -480,7 +480,7 @@
 								<key>Frame</key>
 								<string>{{0, 0}, {924, 471}}</string>
 								<key>RubberWindowFrame</key>
-								<string>-2 125 1280 653 0 0 1280 778 </string>
+								<string>162 125 1280 653 0 0 1280 778 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
@@ -500,7 +500,7 @@
 								<key>Frame</key>
 								<string>{{0, 476}, {924, 136}}</string>
 								<key>RubberWindowFrame</key>
-								<string>-2 125 1280 653 0 0 1280 778 </string>
+								<string>162 125 1280 653 0 0 1280 778 </string>
 							</dict>
 							<key>Module</key>
 							<string>XCDetailModule</string>
@@ -664,17 +664,17 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>10A3295D138C0BC200C4B0F5</string>
+		<string>10A32A8D138C551D00C4B0F5</string>
+		<string>1C530D57069F1CE1000CFCEE</string>
 		<string>10A3273F1389BE3200C4B0F5</string>
 		<string>10A327401389BE3200C4B0F5</string>
-		<string>10B569EA1306EA9600AA7DCB</string>
 		<string>1C78EAAD065D492600B07095</string>
-		<string>1C530D57069F1CE1000CFCEE</string>
-		<string>/Users/pabloruiz/Documents/Basho/Basho.xcodeproj</string>
 		<string>1CD10A99069EF8BA00B06720</string>
+		<string>10B569EA1306EA9600AA7DCB</string>
+		<string>/Users/pabloruiz/Documents/Basho/Basho.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
-	<string>-2 125 1280 653 0 0 1280 778 </string>
+	<string>162 125 1280 653 0 0 1280 778 </string>
 	<key>WindowToolsV3</key>
 	<array>
 		<dict>
@@ -766,7 +766,7 @@
 			<key>WindowToolGUID</key>
 			<string>10B569EA1306EA9600AA7DCB</string>
 			<key>WindowToolIsVisible</key>
-			<true/>
+			<false/>
 		</dict>
 		<dict>
 			<key>FirstTimeWindowDisplayed</key>
@@ -890,7 +890,7 @@
 			<key>WindowToolGUID</key>
 			<string>1CD10A99069EF8BA00B06720</string>
 			<key>WindowToolIsVisible</key>
-			<true/>
+			<false/>
 		</dict>
 		<dict>
 			<key>FirstTimeWindowDisplayed</key>
@@ -981,7 +981,7 @@
 			<key>WindowToolGUID</key>
 			<string>1C530D57069F1CE1000CFCEE</string>
 			<key>WindowToolIsVisible</key>
-			<true/>
+			<false/>
 		</dict>
 		<dict>
 			<key>Identifier</key>
@@ -1047,7 +1047,7 @@
 			<key>WindowToolGUID</key>
 			<string>1C78EAAD065D492600B07095</string>
 			<key>WindowToolIsVisible</key>
-			<true/>
+			<false/>
 		</dict>
 		<dict>
 			<key>Identifier</key>

@@ -481,7 +481,7 @@
 
 -(void)animateAllAnimals
 {
-	for(CCMenuItemImage * m in tapButtons)
+	for(CCMenuItemImage * m in [tapButtons children])
 	{
 		[self playAnimForAnimal:m];
 	}
