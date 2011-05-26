@@ -13,6 +13,7 @@
 @interface GameDressSceneSnapshot_iPad : CCLayer {
 
 	GameDress_iPad * viewController;
+	BOOL moveOutActivated;
 }
 
 @end

@@ -297,7 +297,7 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>18</integer>
+									<integer>22</integer>
 									<integer>13</integer>
 									<integer>4</integer>
 									<integer>0</integer>
@@ -341,7 +341,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>GameDressScene_iPad.m</string>
+								<string>GameDressSceneSnapshot_iPad.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -349,11 +349,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>GameDressScene_iPad.m</string>
+										<string>GameDressSceneSnapshot_iPad.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>10689B5E138ED012009EAACD</string>
+										<string>10689B75138EE020009EAACD</string>
 										<key>history</key>
 										<array>
 											<string>10B56A4A1306EDB900AA7DCB</string>
@@ -441,7 +441,6 @@
 											<string>10D2E21D1385621B00334C4C</string>
 											<string>10D2E21E1385621B00334C4C</string>
 											<string>10D2E241138564E800334C4C</string>
-											<string>10D2E24F1385655C00334C4C</string>
 											<string>10FD53541389B2D200D9B984</string>
 											<string>10A3272F1389BE3200C4B0F5</string>
 											<string>10A327341389BE3200C4B0F5</string>
@@ -453,7 +452,6 @@
 											<string>10A328CE138BF96C00C4B0F5</string>
 											<string>10A328D0138BF96C00C4B0F5</string>
 											<string>10A328D2138BF96C00C4B0F5</string>
-											<string>10A328F1138BFAE800C4B0F5</string>
 											<string>10A328F8138BFB2E00C4B0F5</string>
 											<string>10A32909138C029600C4B0F5</string>
 											<string>10A3291C138C07A400C4B0F5</string>
@@ -462,20 +460,22 @@
 											<string>10A32936138C0AC200C4B0F5</string>
 											<string>106899B9138E7ABA009EAACD</string>
 											<string>10689A84138E9FA4009EAACD</string>
-											<string>10689A90138EA406009EAACD</string>
 											<string>10689AC1138EA62C009EAACD</string>
 											<string>10689AD0138EA82A009EAACD</string>
 											<string>10689AD1138EA82A009EAACD</string>
 											<string>10689AEA138EB4B6009EAACD</string>
-											<string>10689AEB138EB4B6009EAACD</string>
 											<string>10689AEC138EB4B6009EAACD</string>
 											<string>10689AED138EB4B6009EAACD</string>
 											<string>10689AEE138EB4B6009EAACD</string>
 											<string>10689AEF138EB4B6009EAACD</string>
 											<string>10689B21138EC1E4009EAACD</string>
-											<string>10689B54138EC99E009EAACD</string>
 											<string>10689B5C138ED012009EAACD</string>
-											<string>10689B5D138ED012009EAACD</string>
+											<string>10689B64138EDDAD009EAACD</string>
+											<string>10689B65138EDDAD009EAACD</string>
+											<string>10689B66138EDDAD009EAACD</string>
+											<string>10689B67138EDDAD009EAACD</string>
+											<string>10689B72138EDE47009EAACD</string>
+											<string>10689B73138EDE47009EAACD</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -675,9 +675,10 @@
 	<array>
 		<string>10689AAD138EA562009EAACD</string>
 		<string>10689AAE138EA562009EAACD</string>
+		<string>10B569EA1306EA9600AA7DCB</string>
 		<string>1C78EAAD065D492600B07095</string>
 		<string>1CD10A99069EF8BA00B06720</string>
-		<string>10B569EA1306EA9600AA7DCB</string>
+		<string>1C530D57069F1CE1000CFCEE</string>
 		<string>/Users/pabloruiz/Documents/Basho/Basho.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
@@ -915,14 +916,12 @@
 							<key>Dock</key>
 							<array>
 								<dict>
-									<key>BecomeActive</key>
-									<true/>
 									<key>ContentConfiguration</key>
 									<dict>
 										<key>PBXProjectModuleGUID</key>
 										<string>1CDD528C0622207200134675</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>GameWheelScene_both.m</string>
+										<string></string>
 										<key>StatusBarVisibility</key>
 										<true/>
 									</dict>
@@ -943,6 +942,8 @@
 							<string>212pt</string>
 						</dict>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -978,8 +979,8 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1C530D57069F1CE1000CFCEE</string>
-				<string>10A3275A1389C6FF00C4B0F5</string>
-				<string>10A3275B1389C6FF00C4B0F5</string>
+				<string>10689B60138EDBFA009EAACD</string>
+				<string>10689B61138EDBFA009EAACD</string>
 				<string>1CDD528C0622207200134675</string>
 				<string>1CD0528E0623707200166675</string>
 			</array>
@@ -988,7 +989,7 @@
 			<key>WindowToolGUID</key>
 			<string>1C530D57069F1CE1000CFCEE</string>
 			<key>WindowToolIsVisible</key>
-			<false/>
+			<true/>
 		</dict>
 		<dict>
 			<key>Identifier</key>

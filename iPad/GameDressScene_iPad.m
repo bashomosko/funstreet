@@ -245,7 +245,6 @@
 		[piece visit];
 	}
 	
-	
 	[target end];
 	[target saveBuffer:@"pirulo"];
 	UIImage * savedImg = [target getUIImageFromBuffer];
