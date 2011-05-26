@@ -228,13 +228,25 @@
 
 -(void)replay
 {
+	
+	[self unschedule:@selector(playRandomDinoAnim)];
+	[dino setVisible:YES];
+	[target begin];
+	[dino.parent removeChild:dino cleanup:YES];
+	[self addChild:dino];
+	[dino visit];
+	
+	[dressPieces exchangeObjectAtIndex:0 withObjectAtIndex:1];
+	
 	for(CCSprite * piece in dressPieces)
 	{
-		[target begin];
+		[piece.parent removeChild:piece cleanup:YES];
+		[self addChild:piece];
 		[piece visit];
-		[target end];
 	}
 	
+	
+	[target end];
 	[target saveBuffer:@"pirulo"];
 	UIImage * savedImg = [target getUIImageFromBuffer];
 	[[CCDirector sharedDirector] replaceScene:[CCTransitionFade transitionWithDuration:0.5 scene: [GameDressSceneSnapshot_iPad sceneWithDressVC:viewController dinoImage:savedImg] withColor:ccWHITE]];
@@ -272,7 +284,7 @@
 	
 	//[self loadScatteredElements];
 	
-	CCSprite * dino = [CCSprite spriteWithSpriteFrameName:@"dress_dino_iPad.png"];
+	dino = [[CCSprite spriteWithSpriteFrameName:@"dress_dino_iPad.png"]retain];
 	[sbn addChild:dino z:0 tag:4190]; //DINO = 4190
 	[dino setPosition:ccp(512,384)];
 	
@@ -766,6 +778,7 @@ static BOOL AccelerationIsShaking(UIAcceleration* last, UIAcceleration* current,
 
 -(void)dealloc
 {
+	[dino release];
 	[target release];
 	[lastAcceleration release];
 	[btnImgs release];

@@ -15,9 +15,13 @@
 	
 	IBOutlet UIImageView * curtainL;
 	IBOutlet UIImageView * curtainR;
+	IBOutlet UIScrollView *scrollview;
+	IBOutlet UIPageControl * scrollPaging;
 }
 
 @property (nonatomic,retain) IBOutlet UIImageView * curtainL;
 @property (nonatomic,retain)IBOutlet UIImageView * curtainR;
+@property (nonatomic,retain) IBOutlet UIScrollView *scrollview;
+@property (nonatomic,retain)IBOutlet UIPageControl * scrollPaging;
 
 @end

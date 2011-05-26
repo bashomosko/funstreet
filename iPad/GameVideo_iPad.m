@@ -9,10 +9,11 @@
 #import "GameVideo_iPad.h"
 #import "MainMenu_iPad.h"
 #import "AppDelegate_iPad.h"
+#import "SimpleAudioEngine.h"
 
 @implementation GameVideo_iPad
 
-@synthesize curtainL,curtainR;
+@synthesize curtainL,curtainR,scrollview,scrollPaging;
 
 // The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
 /*
@@ -28,24 +29,6 @@
 
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
-	
-	NSURL * url;
-	NSBundle *bundle = [NSBundle mainBundle];
-	if (bundle) 
-	{
-		NSString *moviePath = [bundle pathForResource:@"botas-2011" ofType:@"mp3"];
-		if (moviePath)
-		{
-			url = [NSURL fileURLWithPath:moviePath];
-		}
-	}
-	
-	/*video = [[MPMoviePlayerController alloc] initWithContentURL:url];
-	[self.view addSubview:video.view];
-	[video.view setFrame:CGRectMake(0,0,1024,768)];
-	//[video.view setTransform:CGAffineTransformMakeRotation(M_PI/ 2)];
-	[video play];*/	
-	
 	
 	UIButton * skip = [UIButton buttonWithType:UIButtonTypeCustom];
 	[skip setFrame:CGRectMake(0,0,106,106)];
@@ -63,11 +46,82 @@
 	
 	[UIView commitAnimations];
 	
+	[scrollview setContentSize:CGSizeMake(640 * 6,360)];
+	[scrollview setShowsVerticalScrollIndicator:NO];
+	[scrollview setShowsHorizontalScrollIndicator:NO];
+	[scrollview setPagingEnabled:YES];
+	
+	for (int i =1;i<=6;i++)
+	{
+		UIButton * img = [UIButton buttonWithType:UIButtonTypeCustom];
+		img.tag = i;
+		[img addTarget:self action:@selector(selectVideo:) forControlEvents:UIControlEventTouchUpInside];
+		[img setImage:[UIImage imageNamed:[NSString stringWithFormat:@"theatreThumb_%d_iPad.png",i]] forState:UIControlStateNormal];
+		[img setFrame:CGRectMake(640 * (i -1),0,640,360)];
+		[scrollview addSubview:img];
+		
+	}
+	
+	scrollPaging.numberOfPages = 6;
+	scrollPaging.currentPage = 0;
 	
     [super viewDidLoad];
 	
 	
 }
+
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView
+{
+    int page = floor((scrollView.contentOffset.x - 640 / 2) / 640) + 1;
+    scrollPaging.currentPage = page;
+}
+
+-(void)selectVideo:(UIButton *)btn
+{
+	[[SimpleAudioEngine sharedEngine] pauseBackgroundMusic];
+	int videoNumber = btn.tag;
+	[self playVid];
+
+}
+
+-(void)playVid
+{
+	NSURL * url;
+	NSBundle *bundle = [NSBundle mainBundle];
+	if (bundle) 
+	{
+		NSString *moviePath = [bundle pathForResource:@"menu_eng_iPad" ofType:@"mov"];
+		if (moviePath)
+		{
+			url = [NSURL fileURLWithPath:moviePath];
+		}
+	}
+	
+	video = [[MPMoviePlayerController alloc] initWithContentURL:url];
+	[video setControlStyle:MPMovieControlStyleFullscreen];
+	[self.view addSubview:video.view];
+	[video.view setFrame:CGRectMake(0,0,1024,768)];
+	//[video.view setTransform:CGAffineTransformMakeRotation(M_PI/ 2)];
+	[video play];
+	
+	[[NSNotificationCenter defaultCenter]
+	 addObserver:self
+	 selector:@selector(videoPlayerDidFinishPlaying:)
+	 name:MPMoviePlayerPlaybackDidFinishNotification
+	 object:video];
+}
+
+-(void) videoPlayerDidFinishPlaying: (NSNotification*)aNotification
+{
+	MPMoviePlayerController * introVideo = [aNotification object];
+	[[NSNotificationCenter defaultCenter] removeObserver:self name:MPMoviePlayerPlaybackDidFinishNotification object:video];
+	[video stop];
+	[video.view removeFromSuperview];
+	[video release];
+	[[UIApplication sharedApplication] setStatusBarHidden:YES withAnimation:UIStatusBarAnimationNone];
+	[[SimpleAudioEngine sharedEngine] resumeBackgroundMusic];
+}
+
 // Override to allow orientations other than the default portrait orientation.
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
     // Return YES for supported orientations.
@@ -90,10 +144,6 @@
 
 -(void)goBack
 {
-	[[NSNotificationCenter defaultCenter] removeObserver:self
-													name:MPMoviePlayerPlaybackDidFinishNotification object:video];
-	[video stop];
-	[video.view removeFromSuperview];
 	[self goToMenu];
 }
 
@@ -116,9 +166,9 @@
 
 
 - (void)dealloc {
+	[scrollview release];
 	[curtainL release];
 	[curtainR release];
-	[video release];
     [super dealloc];
 }
 

@@ -89,6 +89,7 @@
     UIAcceleration* lastAcceleration;
 	
 	CCRenderTexture * target;
+	CCSprite * dino;
 }
 
 @property (nonatomic,readwrite) BOOL placingElement;
