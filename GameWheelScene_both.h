@@ -123,6 +123,7 @@
 	
 	CCSpriteBatchNode * animalAnimSB;
 	
+	int videoTaps;
 }
 
 @end

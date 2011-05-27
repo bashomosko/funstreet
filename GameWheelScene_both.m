@@ -77,20 +77,31 @@
 	[skip addTarget:self action:@selector(skipMovie) forControlEvents:UIControlEventTouchUpInside];
 	[introVideo.view addSubview:skip];
 	
+	videoTaps = 0;
 	
 	[introVideo play];
 }
 
 -(void)skipMovie
 {
-	[GameManager sharedGameManager].onPause = NO;
-	[[NSNotificationCenter defaultCenter] removeObserver:self
-													name:MPMoviePlayerPlaybackDidFinishNotification object:introVideo];
-	[introVideo stop];
-	[introVideo.view removeFromSuperview];
-	[introVideo release];
-	
-	[self beginGame];
+	videoTaps++;
+	[self performSelector:@selector(reduceVideoTaps) withObject:nil afterDelay:0.5];
+	if(videoTaps ==2)
+	{
+		[GameManager sharedGameManager].onPause = NO;
+		[[NSNotificationCenter defaultCenter] removeObserver:self
+														name:MPMoviePlayerPlaybackDidFinishNotification object:introVideo];
+		[introVideo stop];
+		[introVideo.view removeFromSuperview];
+		[introVideo release];
+		
+		[self beginGame];
+	}
+}
+
+-(void)reduceVideoTaps
+{
+	videoTaps =0;
 }
 
 -(void) videoPlayerDidFinishPlaying: (NSNotification*)aNotification
@@ -411,6 +422,7 @@
 				if(bashoDirected)
 				{
 					[[SimpleAudioEngine sharedEngine] playEffect:@"RightAnswer.mp3"];
+					[[SimpleAudioEngine sharedEngine] playEffect:sound];
 				}else {
 					[[SimpleAudioEngine sharedEngine] playEffect:sound];
 				}
@@ -424,8 +436,8 @@
 			if([bashoSelectedItems count]==0)
 			{
 				//ANIMATE CHARACTERS
-				[self animateAllAnimals];
-				[self runAction:[CCSequence actions:[CCDelayTime actionWithDuration:2],[CCCallFunc actionWithTarget:self selector:@selector(resetTapButtons)],nil]];
+				[self runAction:[CCSequence actions:[CCDelayTime actionWithDuration:2],[CCCallFunc actionWithTarget:self selector:@selector(animateAllAnimals)],nil]];
+				[self runAction:[CCSequence actions:[CCDelayTime actionWithDuration:5],[CCCallFunc actionWithTarget:self selector:@selector(resetTapButtons)],nil]];
 			}else
 			{
 				dinoSpinning = NO;
@@ -500,11 +512,11 @@
 	{
 		CCLabelTTF * palabra = [self getChildByTag:kPALABRA];
 		[palabra setString:word];
-		[palabra runAction:[CCSequence actions:[CCDelayTime actionWithDuration:2.2],[CCFadeIn actionWithDuration:0.8],nil]];
+		[palabra runAction:[CCSequence actions:[CCDelayTime actionWithDuration:1.8],[CCFadeIn actionWithDuration:0.8],nil]];
 		CCSprite * palabraBck = [self getChildByTag:kPALABRABCK];
-		[palabraBck runAction:[CCSequence actions:[CCDelayTime actionWithDuration:2.2],[CCFadeIn actionWithDuration:0.8],nil]];
+		[palabraBck runAction:[CCSequence actions:[CCDelayTime actionWithDuration:1.8],[CCFadeIn actionWithDuration:0.8],nil]];
 		
-		[self runAction:[CCSequence actions:[CCDelayTime actionWithDuration:2.2],[CCCallFuncND actionWithTarget:self selector:@selector(playWordSound: data:)data:(void*)wordSound],nil]];
+		[self runAction:[CCSequence actions:[CCDelayTime actionWithDuration:1.8],[CCCallFuncND actionWithTarget:self selector:@selector(playWordSound: data:)data:(void*)wordSound],nil]];
 	}
 }
 

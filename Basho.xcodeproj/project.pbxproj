@@ -136,6 +136,12 @@
 		10689B1D138EC0C5009EAACD /* snapshot_polaroid2_iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 10689B19138EC0C5009EAACD /* snapshot_polaroid2_iPad.png */; };
 		10689B1E138EC0C5009EAACD /* snapshot_polaroid3_iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 10689B1A138EC0C5009EAACD /* snapshot_polaroid3_iPad.png */; };
 		10689B2D138EC4AD009EAACD /* Camera_SFX.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 10689B2C138EC4AD009EAACD /* Camera_SFX.mp3 */; };
+		10689C29138FC57C009EAACD /* theatre_video1_iPad.mov in Resources */ = {isa = PBXBuildFile; fileRef = 10689C23138FC567009EAACD /* theatre_video1_iPad.mov */; };
+		10689C2A138FC57C009EAACD /* theatre_video2_iPad.mov in Resources */ = {isa = PBXBuildFile; fileRef = 10689C24138FC56C009EAACD /* theatre_video2_iPad.mov */; };
+		10689C2B138FC57C009EAACD /* theatre_video3_iPad.mov in Resources */ = {isa = PBXBuildFile; fileRef = 10689C25138FC570009EAACD /* theatre_video3_iPad.mov */; };
+		10689C2C138FC57C009EAACD /* theatre_video4_iPad.mov in Resources */ = {isa = PBXBuildFile; fileRef = 10689C26138FC574009EAACD /* theatre_video4_iPad.mov */; };
+		10689C2D138FC57C009EAACD /* theatre_video5_iPad.mov in Resources */ = {isa = PBXBuildFile; fileRef = 10689C27138FC577009EAACD /* theatre_video5_iPad.mov */; };
+		10689C2E138FC57C009EAACD /* theatre_video6_iPad.mov in Resources */ = {isa = PBXBuildFile; fileRef = 10689C28138FC57C009EAACD /* theatre_video6_iPad.mov */; };
 		1087E4161372C4BE00C1168F /* Wheel_text_iPad.fnt in Resources */ = {isa = PBXBuildFile; fileRef = 1087E4141372C4BE00C1168F /* Wheel_text_iPad.fnt */; };
 		1087E4171372C4BE00C1168F /* Wheel_text_iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 1087E4151372C4BE00C1168F /* Wheel_text_iPad.png */; };
 		1087E4201372CBF900C1168F /* wheel_snd_bee_where_esp.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1087E4181372CBF900C1168F /* wheel_snd_bee_where_esp.mp3 */; };
@@ -799,6 +805,12 @@
 		10689B19138EC0C5009EAACD /* snapshot_polaroid2_iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = snapshot_polaroid2_iPad.png; sourceTree = "<group>"; };
 		10689B1A138EC0C5009EAACD /* snapshot_polaroid3_iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = snapshot_polaroid3_iPad.png; sourceTree = "<group>"; };
 		10689B2C138EC4AD009EAACD /* Camera_SFX.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Camera_SFX.mp3; sourceTree = "<group>"; };
+		10689C23138FC567009EAACD /* theatre_video1_iPad.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = theatre_video1_iPad.mov; sourceTree = "<group>"; };
+		10689C24138FC56C009EAACD /* theatre_video2_iPad.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = theatre_video2_iPad.mov; sourceTree = "<group>"; };
+		10689C25138FC570009EAACD /* theatre_video3_iPad.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = theatre_video3_iPad.mov; sourceTree = "<group>"; };
+		10689C26138FC574009EAACD /* theatre_video4_iPad.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = theatre_video4_iPad.mov; sourceTree = "<group>"; };
+		10689C27138FC577009EAACD /* theatre_video5_iPad.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = theatre_video5_iPad.mov; sourceTree = "<group>"; };
+		10689C28138FC57C009EAACD /* theatre_video6_iPad.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = theatre_video6_iPad.mov; sourceTree = "<group>"; };
 		1087E4141372C4BE00C1168F /* Wheel_text_iPad.fnt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Wheel_text_iPad.fnt; path = iPhone/Wheel_text_iPad.fnt; sourceTree = SOURCE_ROOT; };
 		1087E4151372C4BE00C1168F /* Wheel_text_iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Wheel_text_iPad.png; path = iPhone/Wheel_text_iPad.png; sourceTree = SOURCE_ROOT; };
 		1087E4181372CBF900C1168F /* wheel_snd_bee_where_esp.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = wheel_snd_bee_where_esp.mp3; sourceTree = "<group>"; };
@@ -1646,6 +1658,19 @@
 			name = snapshot;
 			sourceTree = "<group>";
 		};
+		10689C20138FC2E9009EAACD /* Videos */ = {
+			isa = PBXGroup;
+			children = (
+				10689C23138FC567009EAACD /* theatre_video1_iPad.mov */,
+				10689C24138FC56C009EAACD /* theatre_video2_iPad.mov */,
+				10689C25138FC570009EAACD /* theatre_video3_iPad.mov */,
+				10689C26138FC574009EAACD /* theatre_video4_iPad.mov */,
+				10689C27138FC577009EAACD /* theatre_video5_iPad.mov */,
+				10689C28138FC57C009EAACD /* theatre_video6_iPad.mov */,
+			);
+			name = Videos;
+			sourceTree = "<group>";
+		};
 		1087E444137414DD00C1168F /* anim */ = {
 			isa = PBXGroup;
 			children = (
@@ -1911,6 +1936,7 @@
 		10A32929138C092A00C4B0F5 /* theatre */ = {
 			isa = PBXGroup;
 			children = (
+				10689C20138FC2E9009EAACD /* Videos */,
 				10689A8F138EA403009EAACD /* thumbnails */,
 				10A3292B138C092A00C4B0F5 /* theatre_left_iPad.png */,
 				10A3292C138C092A00C4B0F5 /* theatre_right_iPad.png */,
@@ -3277,6 +3303,12 @@
 				10689B1D138EC0C5009EAACD /* snapshot_polaroid2_iPad.png in Resources */,
 				10689B1E138EC0C5009EAACD /* snapshot_polaroid3_iPad.png in Resources */,
 				10689B2D138EC4AD009EAACD /* Camera_SFX.mp3 in Resources */,
+				10689C29138FC57C009EAACD /* theatre_video1_iPad.mov in Resources */,
+				10689C2A138FC57C009EAACD /* theatre_video2_iPad.mov in Resources */,
+				10689C2B138FC57C009EAACD /* theatre_video3_iPad.mov in Resources */,
+				10689C2C138FC57C009EAACD /* theatre_video4_iPad.mov in Resources */,
+				10689C2D138FC57C009EAACD /* theatre_video5_iPad.mov in Resources */,
+				10689C2E138FC57C009EAACD /* theatre_video6_iPad.mov in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

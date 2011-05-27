@@ -80,17 +80,17 @@
 {
 	[[SimpleAudioEngine sharedEngine] pauseBackgroundMusic];
 	int videoNumber = btn.tag;
-	[self playVid];
+	[self playVid:videoNumber];
 
 }
 
--(void)playVid
+-(void)playVid:(int)videoNumber
 {
 	NSURL * url;
 	NSBundle *bundle = [NSBundle mainBundle];
 	if (bundle) 
 	{
-		NSString *moviePath = [bundle pathForResource:@"menu_eng_iPad" ofType:@"mov"];
+		NSString *moviePath = [bundle pathForResource:[NSString stringWithFormat:@"theatre_video%d_iPad",videoNumber] ofType:@"mov"];
 		if (moviePath)
 		{
 			url = [NSURL fileURLWithPath:moviePath];

@@ -90,6 +90,8 @@
 	
 	CCRenderTexture * target;
 	CCSprite * dino;
+	
+	int videoTaps;
 }
 
 @property (nonatomic,readwrite) BOOL placingElement;

@@ -93,19 +93,31 @@
 	[skip addTarget:self action:@selector(skipMovie) forControlEvents:UIControlEventTouchUpInside];
 	[introVideo.view addSubview:skip];
 	
+	videoTaps=0;
 	
 	[introVideo play];
 }
 
 -(void)skipMovie
 {
-	[[NSNotificationCenter defaultCenter] removeObserver:self
-													name:MPMoviePlayerPlaybackDidFinishNotification object:introVideo];
-	[introVideo stop];
-	[introVideo.view removeFromSuperview];
-	[introVideo release];
+	videoTaps++;
+	[self performSelector:@selector(reduceVideoTaps) withObject:nil afterDelay:0.5];
+	if(videoTaps ==2)
+	{
 	
-	[self beginGame];
+		[[NSNotificationCenter defaultCenter] removeObserver:self
+													name:MPMoviePlayerPlaybackDidFinishNotification object:introVideo];
+		[introVideo stop];
+		[introVideo.view removeFromSuperview];
+		[introVideo release];
+	
+		[self beginGame];
+	}
+}
+
+-(void)reduceVideoTaps
+{
+	videoTaps =0;
 }
 
 -(void) videoPlayerDidFinishPlaying: (NSNotification*)aNotification

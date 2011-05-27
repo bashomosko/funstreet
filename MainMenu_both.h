@@ -21,6 +21,7 @@
 	
 	MPMoviePlayerController * introVideo;
 
+	int videoTaps;
 }
 
 @property (nonatomic,retain) IBOutlet UIButton * btnSong;
