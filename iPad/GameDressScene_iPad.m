@@ -131,112 +131,6 @@
 	[self beginGame];
 }
 
--(void)playFinishVideo
-{
-	if(bashoDirected)
-	{
-		NSURL * url;
-		NSBundle *bundle = [NSBundle mainBundle];
-		if (bundle) 
-		{
-			NSString *moviePath = nil;
-			if(points ==40)
-			{
-				moviePath = [bundle pathForResource:@"Puntostodos_iPad" ofType:@"mov"];
-			}else
-			{
-				moviePath = [bundle pathForResource:@"Puntos_iPad" ofType:@"mov"];
-			}
-			if (moviePath)
-			{
-				url = [NSURL fileURLWithPath:moviePath];
-			}
-		}
-		
-		finishVideo = [[MPMoviePlayerController alloc] initWithContentURL:url];
-		[[[CCDirector sharedDirector] openGLView] addSubview:finishVideo.view];
-		[finishVideo.view setFrame:CGRectMake(0,0,1024,768)];
-		[finishVideo setControlStyle:MPMovieControlStyleNone];
-		
-		[[NSNotificationCenter defaultCenter]
-		 addObserver:self
-		 selector:@selector(finishVideoDidFinishPlaying:)
-		 name:MPMoviePlayerPlaybackDidFinishNotification
-		 object:finishVideo];
-		
-		
-		[finishVideo play];
-		[self runAction:[CCSequence actions:[CCDelayTime actionWithDuration:3],[CCCallFunc actionWithTarget:self selector:@selector(showBashoStillImage)],nil]];
-		
-	}else {
-		[self replay];
-		//[self resetDino];
-	}
-	
-}
-
--(void)showBashoStillImage
-{
-	CCSprite * back = [CCSprite spriteWithFile:@"PuntosEndFrame_iPad.png"];
-	[back setPosition:ccp(512,384)];
-	[self addChild:back z:20];
-}
-
--(void) finishVideoDidFinishPlaying: (NSNotification*)aNotification
-{	
-	MPMoviePlayerController * finishVideo = [aNotification object];
-	[[NSNotificationCenter defaultCenter] removeObserver:self name:MPMoviePlayerPlaybackDidFinishNotification object:finishVideo];
-	[finishVideo stop];
-	[finishVideo.view removeFromSuperview];
-	[finishVideo release];
-	
-	[self showDinoPoints];
-}
-
--(void)showDinoPoints
-{
-	//RESET DINO
-	CCSprite * gloopbackground = [CCSprite spriteWithFile:[NSString stringWithFormat:@"PuntosDomino_iPad_00000.png.pvr"]];
-	[gloopbackground setPosition:ccp(512,384)];
-	[self addChild:gloopbackground z:21];
-	//ANIMATION
-	NSMutableArray * gloopFrames = [[[NSMutableArray  alloc]init]autorelease];
-	for(int i = 0; i <= 6; i++) {
-		
-		CCSprite * sp = [CCSprite spriteWithFile:[NSString stringWithFormat:@"PuntosDomino_iPad_%05d.png.pvr",i]];
-		CCSpriteFrame *frame = [CCSpriteFrame frameWithTexture:sp.texture rect:sp.textureRect];
-		[gloopFrames addObject:frame];
-	}
-	
-	CCAnimation * gloopAnimation = [CCAnimation animationWithFrames:gloopFrames delay:0.05f];
-	[gloopbackground runAction:[CCSequence actions:[CCAnimate actionWithAnimation:gloopAnimation restoreOriginalFrame:NO],[CCDelayTime actionWithDuration:2],[CCCallFunc actionWithTarget:self selector:@selector(addDinoPoints)],nil]];
-	
-	[[SimpleAudioEngine sharedEngine] playEffect:@"pointsaudiosting.mp3"];
-	
-}
-
--(void)addDinoPoints
-{
-	CCLabelTTF * scoreLbl = [CCLabelTTF labelWithString:[NSString stringWithFormat:@"%d",points] fontName:@"Verdana" fontSize:200];
-	[scoreLbl setColor:ccBLACK];
-	[self addChild:scoreLbl z:22];
-	[scoreLbl setPosition:ccp(450,530)];
-	
-	[[SimpleAudioEngine sharedEngine] playEffect:[NSString stringWithFormat:@"%d.mp3",points]];
-	[self addFinishMenu];
-}
-
--(void)addFinishMenu
-{
-	CCMenuItemImage * home = [CCMenuItemImage itemFromNormalImage:@"btn_home_iPad.png" selectedImage:@"btn_home_dwn_iPad.png" target:self selector:@selector(goBack)];
-	CCMenuItemImage * replay = [CCMenuItemImage itemFromNormalImage:@"btn_replay_iPad.png" selectedImage:@"btn_replay_dwn_iPad.png" target:self selector:@selector(replay)];
-	CCMenuItemImage * next = [CCMenuItemImage itemFromNormalImage:@"btn_next_iPad.png" selectedImage:@"btn_next_dwn_iPad.png" target:self selector:@selector(nextGame)];
-	
-	CCMenu * menu = [CCMenu menuWithItems:home,replay,next,nil];
-	[self addChild:menu z:23];
-	[menu alignItemsHorizontallyWithPadding:20];
-	[menu setPosition:ccp(512,150)];
-}
 
 -(void)replay
 {
@@ -521,6 +415,9 @@
 				break;
 		}
 		
+		if([GameManager sharedGameManager].soundsEnabled)
+			[[SimpleAudioEngine sharedEngine] playEffect:@"game2-alldressed-sfx.mp3"];
+		
 		//RESET DINO
 		CCSprite * gloopbackground = [CCSprite spriteWithFile:[NSString stringWithFormat:@"%@00000.png.pvr",fileName]];
 		[gloopbackground setPosition:ccp(512,384)];
@@ -789,6 +686,7 @@ static BOOL AccelerationIsShaking(UIAcceleration* last, UIAcceleration* current,
 
 -(void)dealloc
 {
+	[[SimpleAudioEngine sharedEngine] unloadEffect:@"game2-alldressed-sfx.mp3"];
 	[dino release];
 	[target release];
 	[lastAcceleration release];

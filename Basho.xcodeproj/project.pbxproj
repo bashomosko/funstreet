@@ -142,6 +142,8 @@
 		10689C2C138FC57C009EAACD /* theatre_video4_iPad.mov in Resources */ = {isa = PBXBuildFile; fileRef = 10689C26138FC574009EAACD /* theatre_video4_iPad.mov */; };
 		10689C2D138FC57C009EAACD /* theatre_video5_iPad.mov in Resources */ = {isa = PBXBuildFile; fileRef = 10689C27138FC577009EAACD /* theatre_video5_iPad.mov */; };
 		10689C2E138FC57C009EAACD /* theatre_video6_iPad.mov in Resources */ = {isa = PBXBuildFile; fileRef = 10689C28138FC57C009EAACD /* theatre_video6_iPad.mov */; };
+		107B9A091393B541000332CA /* game2-alldressed-sfx.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 107B9A081393B541000332CA /* game2-alldressed-sfx.mp3 */; };
+		107B9A221393BFDF000332CA /* spin-sfx3-updated.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 107B9A211393BFDF000332CA /* spin-sfx3-updated.mp3 */; };
 		1087E4161372C4BE00C1168F /* Wheel_text_iPad.fnt in Resources */ = {isa = PBXBuildFile; fileRef = 1087E4141372C4BE00C1168F /* Wheel_text_iPad.fnt */; };
 		1087E4171372C4BE00C1168F /* Wheel_text_iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 1087E4151372C4BE00C1168F /* Wheel_text_iPad.png */; };
 		1087E4201372CBF900C1168F /* wheel_snd_bee_where_esp.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1087E4181372CBF900C1168F /* wheel_snd_bee_where_esp.mp3 */; };
@@ -545,7 +547,7 @@
 		10D2DF2C138410F600334C4C /* dress_snd_jacket_where_esp.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 10D2DF1C138410F600334C4C /* dress_snd_jacket_where_esp.mp3 */; };
 		10D2DF2D138410F600334C4C /* dress_snd_necklace_where_esp.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 10D2DF1D138410F600334C4C /* dress_snd_necklace_where_esp.mp3 */; };
 		10D2DF2E138410F600334C4C /* dress_snd_sunglasses_where_esp.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 10D2DF1E138410F600334C4C /* dress_snd_sunglasses_where_esp.mp3 */; };
-		10D2DF2F138410F600334C4C /* dress_snd_glasses_where_eng.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 10D2DF1F138410F600334C4C /* dress_snd_glasses_where_eng.mp3 */; };
+		10D2DF2F138410F600334C4C /* dress_snd_sunglasses_where_eng.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 10D2DF1F138410F600334C4C /* dress_snd_sunglasses_where_eng.mp3 */; };
 		10D2DF30138410F600334C4C /* dress_snd_hat_where_esp.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 10D2DF20138410F600334C4C /* dress_snd_hat_where_esp.mp3 */; };
 		10D2DF31138410F600334C4C /* dress_snd_hat_where_eng.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 10D2DF21138410F600334C4C /* dress_snd_hat_where_eng.mp3 */; };
 		10D2DF32138410F600334C4C /* dress_snd_jacket_where_eng.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 10D2DF22138410F600334C4C /* dress_snd_jacket_where_eng.mp3 */; };
@@ -597,7 +599,7 @@
 		10D2DFAA138415EB00334C4C /* dress_snd_phone_Blue_where_eng.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 10D2DF6A138415EB00334C4C /* dress_snd_phone_Blue_where_eng.mp3 */; };
 		10D2DFAB138415EB00334C4C /* dress_snd_backpack_Red_where_eng.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 10D2DF6B138415EB00334C4C /* dress_snd_backpack_Red_where_eng.mp3 */; };
 		10D2DFAC138415EB00334C4C /* dress_snd_boots_Red_where_eng.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 10D2DF6C138415EB00334C4C /* dress_snd_boots_Red_where_eng.mp3 */; };
-		10D2DFAD138415EB00334C4C /* dress_snd_glasses_Red_where_eng.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 10D2DF6D138415EB00334C4C /* dress_snd_glasses_Red_where_eng.mp3 */; };
+		10D2DFAD138415EB00334C4C /* dress_snd_sunglasses_Red_where_eng.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 10D2DF6D138415EB00334C4C /* dress_snd_sunglasses_Red_where_eng.mp3 */; };
 		10D2DFAE138415EB00334C4C /* dress_snd_hat_Red_where_eng.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 10D2DF6E138415EB00334C4C /* dress_snd_hat_Red_where_eng.mp3 */; };
 		10D2DFAF138415EB00334C4C /* dress_snd_jacket_Red_where_eng.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 10D2DF6F138415EB00334C4C /* dress_snd_jacket_Red_where_eng.mp3 */; };
 		10D2DFB0138415EB00334C4C /* dress_snd_necklace_Red_where_eng.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 10D2DF70138415EB00334C4C /* dress_snd_necklace_Red_where_eng.mp3 */; };
@@ -605,7 +607,7 @@
 		10D2DFB2138415EB00334C4C /* dress_snd_phone_Red_where_eng.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 10D2DF72138415EB00334C4C /* dress_snd_phone_Red_where_eng.mp3 */; };
 		10D2DFB3138415EB00334C4C /* dress_snd_backpack_Purple_where_eng.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 10D2DF73138415EB00334C4C /* dress_snd_backpack_Purple_where_eng.mp3 */; };
 		10D2DFB4138415EB00334C4C /* dress_snd_boots_Purple_where_eng.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 10D2DF74138415EB00334C4C /* dress_snd_boots_Purple_where_eng.mp3 */; };
-		10D2DFB5138415EB00334C4C /* dress_snd_glasses_Purple_where_eng.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 10D2DF75138415EB00334C4C /* dress_snd_glasses_Purple_where_eng.mp3 */; };
+		10D2DFB5138415EB00334C4C /* dress_snd_sunglasses_Purple_where_eng.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 10D2DF75138415EB00334C4C /* dress_snd_sunglasses_Purple_where_eng.mp3 */; };
 		10D2DFB6138415EB00334C4C /* dress_snd_hat_Purple_where_eng.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 10D2DF76138415EB00334C4C /* dress_snd_hat_Purple_where_eng.mp3 */; };
 		10D2DFB7138415EB00334C4C /* dress_snd_jacket_Purple_where_eng.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 10D2DF77138415EB00334C4C /* dress_snd_jacket_Purple_where_eng.mp3 */; };
 		10D2DFB8138415EB00334C4C /* dress_snd_necklace_Purple_where_eng.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 10D2DF78138415EB00334C4C /* dress_snd_necklace_Purple_where_eng.mp3 */; };
@@ -613,7 +615,7 @@
 		10D2DFBA138415EB00334C4C /* dress_snd_phone_Purple_where_eng.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 10D2DF7A138415EB00334C4C /* dress_snd_phone_Purple_where_eng.mp3 */; };
 		10D2DFBB138415EB00334C4C /* dress_snd_backpack_Yellow_where_eng.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 10D2DF7B138415EB00334C4C /* dress_snd_backpack_Yellow_where_eng.mp3 */; };
 		10D2DFBC138415EB00334C4C /* dress_snd_boots_Yellow_where_eng.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 10D2DF7C138415EB00334C4C /* dress_snd_boots_Yellow_where_eng.mp3 */; };
-		10D2DFBD138415EB00334C4C /* dress_snd_glasses_Yellow_where_eng.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 10D2DF7D138415EB00334C4C /* dress_snd_glasses_Yellow_where_eng.mp3 */; };
+		10D2DFBD138415EB00334C4C /* dress_snd_sunglasses_Yellow_where_eng.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 10D2DF7D138415EB00334C4C /* dress_snd_sunglasses_Yellow_where_eng.mp3 */; };
 		10D2DFBE138415EB00334C4C /* dress_snd_hat_Yellow_where_eng.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 10D2DF7E138415EB00334C4C /* dress_snd_hat_Yellow_where_eng.mp3 */; };
 		10D2DFBF138415EB00334C4C /* dress_snd_jacket_Yellow_where_eng.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 10D2DF7F138415EB00334C4C /* dress_snd_jacket_Yellow_where_eng.mp3 */; };
 		10D2DFC0138415EB00334C4C /* dress_snd_necklace_Yellow_where_eng.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 10D2DF80138415EB00334C4C /* dress_snd_necklace_Yellow_where_eng.mp3 */; };
@@ -622,46 +624,6 @@
 		10D2E2301385634000334C4C /* GameDressSceneSnapshot_iPad.m in Sources */ = {isa = PBXBuildFile; fileRef = 10D2E22F1385634000334C4C /* GameDressSceneSnapshot_iPad.m */; };
 		10EE6B9D134DEB9A0041B7A5 /* Puntostodos_iPad.mov in Resources */ = {isa = PBXBuildFile; fileRef = 10EE6B9C134DEB9A0041B7A5 /* Puntostodos_iPad.mov */; };
 		10EE6BBC134DF3140041B7A5 /* pointsaudiosting.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 10EE6BBB134DF3140041B7A5 /* pointsaudiosting.mp3 */; };
-		10EE6C04134DFA050041B7A5 /* 1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 10EE6BDC134DFA050041B7A5 /* 1.mp3 */; };
-		10EE6C05134DFA050041B7A5 /* 2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 10EE6BDD134DFA050041B7A5 /* 2.mp3 */; };
-		10EE6C06134DFA050041B7A5 /* 3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 10EE6BDE134DFA050041B7A5 /* 3.mp3 */; };
-		10EE6C07134DFA050041B7A5 /* 4.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 10EE6BDF134DFA050041B7A5 /* 4.mp3 */; };
-		10EE6C08134DFA050041B7A5 /* 5.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 10EE6BE0134DFA050041B7A5 /* 5.mp3 */; };
-		10EE6C09134DFA050041B7A5 /* 6.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 10EE6BE1134DFA050041B7A5 /* 6.mp3 */; };
-		10EE6C0A134DFA050041B7A5 /* 7.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 10EE6BE2134DFA050041B7A5 /* 7.mp3 */; };
-		10EE6C0B134DFA050041B7A5 /* 8.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 10EE6BE3134DFA050041B7A5 /* 8.mp3 */; };
-		10EE6C0C134DFA050041B7A5 /* 9.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 10EE6BE4134DFA050041B7A5 /* 9.mp3 */; };
-		10EE6C0D134DFA050041B7A5 /* 10.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 10EE6BE5134DFA050041B7A5 /* 10.mp3 */; };
-		10EE6C0E134DFA050041B7A5 /* 11.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 10EE6BE6134DFA050041B7A5 /* 11.mp3 */; };
-		10EE6C0F134DFA050041B7A5 /* 12.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 10EE6BE7134DFA050041B7A5 /* 12.mp3 */; };
-		10EE6C10134DFA050041B7A5 /* 13.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 10EE6BE8134DFA050041B7A5 /* 13.mp3 */; };
-		10EE6C11134DFA050041B7A5 /* 14.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 10EE6BE9134DFA050041B7A5 /* 14.mp3 */; };
-		10EE6C12134DFA050041B7A5 /* 15.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 10EE6BEA134DFA050041B7A5 /* 15.mp3 */; };
-		10EE6C13134DFA050041B7A5 /* 16.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 10EE6BEB134DFA050041B7A5 /* 16.mp3 */; };
-		10EE6C14134DFA050041B7A5 /* 17.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 10EE6BEC134DFA050041B7A5 /* 17.mp3 */; };
-		10EE6C15134DFA050041B7A5 /* 18.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 10EE6BED134DFA050041B7A5 /* 18.mp3 */; };
-		10EE6C16134DFA050041B7A5 /* 19.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 10EE6BEE134DFA050041B7A5 /* 19.mp3 */; };
-		10EE6C17134DFA050041B7A5 /* 20.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 10EE6BEF134DFA050041B7A5 /* 20.mp3 */; };
-		10EE6C18134DFA050041B7A5 /* 21.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 10EE6BF0134DFA050041B7A5 /* 21.mp3 */; };
-		10EE6C19134DFA050041B7A5 /* 22.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 10EE6BF1134DFA050041B7A5 /* 22.mp3 */; };
-		10EE6C1A134DFA050041B7A5 /* 23.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 10EE6BF2134DFA050041B7A5 /* 23.mp3 */; };
-		10EE6C1B134DFA050041B7A5 /* 24.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 10EE6BF3134DFA050041B7A5 /* 24.mp3 */; };
-		10EE6C1C134DFA050041B7A5 /* 25.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 10EE6BF4134DFA050041B7A5 /* 25.mp3 */; };
-		10EE6C1D134DFA050041B7A5 /* 26.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 10EE6BF5134DFA050041B7A5 /* 26.mp3 */; };
-		10EE6C1E134DFA050041B7A5 /* 27.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 10EE6BF6134DFA050041B7A5 /* 27.mp3 */; };
-		10EE6C1F134DFA050041B7A5 /* 28.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 10EE6BF7134DFA050041B7A5 /* 28.mp3 */; };
-		10EE6C20134DFA050041B7A5 /* 29.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 10EE6BF8134DFA050041B7A5 /* 29.mp3 */; };
-		10EE6C21134DFA050041B7A5 /* 30.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 10EE6BF9134DFA050041B7A5 /* 30.mp3 */; };
-		10EE6C22134DFA050041B7A5 /* 31.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 10EE6BFA134DFA050041B7A5 /* 31.mp3 */; };
-		10EE6C23134DFA050041B7A5 /* 32.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 10EE6BFB134DFA050041B7A5 /* 32.mp3 */; };
-		10EE6C24134DFA050041B7A5 /* 33.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 10EE6BFC134DFA050041B7A5 /* 33.mp3 */; };
-		10EE6C25134DFA050041B7A5 /* 34.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 10EE6BFD134DFA050041B7A5 /* 34.mp3 */; };
-		10EE6C26134DFA050041B7A5 /* 35.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 10EE6BFE134DFA050041B7A5 /* 35.mp3 */; };
-		10EE6C27134DFA050041B7A5 /* 36.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 10EE6BFF134DFA050041B7A5 /* 36.mp3 */; };
-		10EE6C28134DFA050041B7A5 /* 37.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 10EE6C00134DFA050041B7A5 /* 37.mp3 */; };
-		10EE6C29134DFA050041B7A5 /* 38.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 10EE6C01134DFA050041B7A5 /* 38.mp3 */; };
-		10EE6C2A134DFA050041B7A5 /* 39.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 10EE6C02134DFA050041B7A5 /* 39.mp3 */; };
-		10EE6C2B134DFA050041B7A5 /* 40.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 10EE6C03134DFA050041B7A5 /* 40.mp3 */; };
 		10FD52D61386AEFA00D9B984 /* backgroundMusicAnimales.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 10FD52D51386AEFA00D9B984 /* backgroundMusicAnimales.mp3 */; };
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
@@ -811,6 +773,8 @@
 		10689C26138FC574009EAACD /* theatre_video4_iPad.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = theatre_video4_iPad.mov; sourceTree = "<group>"; };
 		10689C27138FC577009EAACD /* theatre_video5_iPad.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = theatre_video5_iPad.mov; sourceTree = "<group>"; };
 		10689C28138FC57C009EAACD /* theatre_video6_iPad.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = theatre_video6_iPad.mov; sourceTree = "<group>"; };
+		107B9A081393B541000332CA /* game2-alldressed-sfx.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "game2-alldressed-sfx.mp3"; sourceTree = "<group>"; };
+		107B9A211393BFDF000332CA /* spin-sfx3-updated.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "spin-sfx3-updated.mp3"; sourceTree = "<group>"; };
 		1087E4141372C4BE00C1168F /* Wheel_text_iPad.fnt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Wheel_text_iPad.fnt; path = iPhone/Wheel_text_iPad.fnt; sourceTree = SOURCE_ROOT; };
 		1087E4151372C4BE00C1168F /* Wheel_text_iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Wheel_text_iPad.png; path = iPhone/Wheel_text_iPad.png; sourceTree = SOURCE_ROOT; };
 		1087E4181372CBF900C1168F /* wheel_snd_bee_where_esp.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = wheel_snd_bee_where_esp.mp3; sourceTree = "<group>"; };
@@ -1339,7 +1303,7 @@
 		10D2DF1C138410F600334C4C /* dress_snd_jacket_where_esp.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = dress_snd_jacket_where_esp.mp3; sourceTree = "<group>"; };
 		10D2DF1D138410F600334C4C /* dress_snd_necklace_where_esp.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = dress_snd_necklace_where_esp.mp3; sourceTree = "<group>"; };
 		10D2DF1E138410F600334C4C /* dress_snd_sunglasses_where_esp.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = dress_snd_sunglasses_where_esp.mp3; sourceTree = "<group>"; };
-		10D2DF1F138410F600334C4C /* dress_snd_glasses_where_eng.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = dress_snd_glasses_where_eng.mp3; sourceTree = "<group>"; };
+		10D2DF1F138410F600334C4C /* dress_snd_sunglasses_where_eng.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = dress_snd_sunglasses_where_eng.mp3; sourceTree = "<group>"; };
 		10D2DF20138410F600334C4C /* dress_snd_hat_where_esp.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = dress_snd_hat_where_esp.mp3; sourceTree = "<group>"; };
 		10D2DF21138410F600334C4C /* dress_snd_hat_where_eng.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = dress_snd_hat_where_eng.mp3; sourceTree = "<group>"; };
 		10D2DF22138410F600334C4C /* dress_snd_jacket_where_eng.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = dress_snd_jacket_where_eng.mp3; sourceTree = "<group>"; };
@@ -1391,7 +1355,7 @@
 		10D2DF6A138415EB00334C4C /* dress_snd_phone_Blue_where_eng.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = dress_snd_phone_Blue_where_eng.mp3; sourceTree = "<group>"; };
 		10D2DF6B138415EB00334C4C /* dress_snd_backpack_Red_where_eng.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = dress_snd_backpack_Red_where_eng.mp3; sourceTree = "<group>"; };
 		10D2DF6C138415EB00334C4C /* dress_snd_boots_Red_where_eng.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = dress_snd_boots_Red_where_eng.mp3; sourceTree = "<group>"; };
-		10D2DF6D138415EB00334C4C /* dress_snd_glasses_Red_where_eng.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = dress_snd_glasses_Red_where_eng.mp3; sourceTree = "<group>"; };
+		10D2DF6D138415EB00334C4C /* dress_snd_sunglasses_Red_where_eng.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = dress_snd_sunglasses_Red_where_eng.mp3; sourceTree = "<group>"; };
 		10D2DF6E138415EB00334C4C /* dress_snd_hat_Red_where_eng.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = dress_snd_hat_Red_where_eng.mp3; sourceTree = "<group>"; };
 		10D2DF6F138415EB00334C4C /* dress_snd_jacket_Red_where_eng.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = dress_snd_jacket_Red_where_eng.mp3; sourceTree = "<group>"; };
 		10D2DF70138415EB00334C4C /* dress_snd_necklace_Red_where_eng.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = dress_snd_necklace_Red_where_eng.mp3; sourceTree = "<group>"; };
@@ -1399,7 +1363,7 @@
 		10D2DF72138415EB00334C4C /* dress_snd_phone_Red_where_eng.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = dress_snd_phone_Red_where_eng.mp3; sourceTree = "<group>"; };
 		10D2DF73138415EB00334C4C /* dress_snd_backpack_Purple_where_eng.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = dress_snd_backpack_Purple_where_eng.mp3; sourceTree = "<group>"; };
 		10D2DF74138415EB00334C4C /* dress_snd_boots_Purple_where_eng.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = dress_snd_boots_Purple_where_eng.mp3; sourceTree = "<group>"; };
-		10D2DF75138415EB00334C4C /* dress_snd_glasses_Purple_where_eng.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = dress_snd_glasses_Purple_where_eng.mp3; sourceTree = "<group>"; };
+		10D2DF75138415EB00334C4C /* dress_snd_sunglasses_Purple_where_eng.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = dress_snd_sunglasses_Purple_where_eng.mp3; sourceTree = "<group>"; };
 		10D2DF76138415EB00334C4C /* dress_snd_hat_Purple_where_eng.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = dress_snd_hat_Purple_where_eng.mp3; sourceTree = "<group>"; };
 		10D2DF77138415EB00334C4C /* dress_snd_jacket_Purple_where_eng.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = dress_snd_jacket_Purple_where_eng.mp3; sourceTree = "<group>"; };
 		10D2DF78138415EB00334C4C /* dress_snd_necklace_Purple_where_eng.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = dress_snd_necklace_Purple_where_eng.mp3; sourceTree = "<group>"; };
@@ -1407,7 +1371,7 @@
 		10D2DF7A138415EB00334C4C /* dress_snd_phone_Purple_where_eng.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = dress_snd_phone_Purple_where_eng.mp3; sourceTree = "<group>"; };
 		10D2DF7B138415EB00334C4C /* dress_snd_backpack_Yellow_where_eng.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = dress_snd_backpack_Yellow_where_eng.mp3; sourceTree = "<group>"; };
 		10D2DF7C138415EB00334C4C /* dress_snd_boots_Yellow_where_eng.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = dress_snd_boots_Yellow_where_eng.mp3; sourceTree = "<group>"; };
-		10D2DF7D138415EB00334C4C /* dress_snd_glasses_Yellow_where_eng.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = dress_snd_glasses_Yellow_where_eng.mp3; sourceTree = "<group>"; };
+		10D2DF7D138415EB00334C4C /* dress_snd_sunglasses_Yellow_where_eng.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = dress_snd_sunglasses_Yellow_where_eng.mp3; sourceTree = "<group>"; };
 		10D2DF7E138415EB00334C4C /* dress_snd_hat_Yellow_where_eng.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = dress_snd_hat_Yellow_where_eng.mp3; sourceTree = "<group>"; };
 		10D2DF7F138415EB00334C4C /* dress_snd_jacket_Yellow_where_eng.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = dress_snd_jacket_Yellow_where_eng.mp3; sourceTree = "<group>"; };
 		10D2DF80138415EB00334C4C /* dress_snd_necklace_Yellow_where_eng.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = dress_snd_necklace_Yellow_where_eng.mp3; sourceTree = "<group>"; };
@@ -1417,46 +1381,6 @@
 		10D2E22F1385634000334C4C /* GameDressSceneSnapshot_iPad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameDressSceneSnapshot_iPad.m; sourceTree = "<group>"; };
 		10EE6B9C134DEB9A0041B7A5 /* Puntostodos_iPad.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = Puntostodos_iPad.mov; sourceTree = "<group>"; };
 		10EE6BBB134DF3140041B7A5 /* pointsaudiosting.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = pointsaudiosting.mp3; sourceTree = "<group>"; };
-		10EE6BDC134DFA050041B7A5 /* 1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 1.mp3; sourceTree = "<group>"; };
-		10EE6BDD134DFA050041B7A5 /* 2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 2.mp3; sourceTree = "<group>"; };
-		10EE6BDE134DFA050041B7A5 /* 3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 3.mp3; sourceTree = "<group>"; };
-		10EE6BDF134DFA050041B7A5 /* 4.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 4.mp3; sourceTree = "<group>"; };
-		10EE6BE0134DFA050041B7A5 /* 5.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 5.mp3; sourceTree = "<group>"; };
-		10EE6BE1134DFA050041B7A5 /* 6.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 6.mp3; sourceTree = "<group>"; };
-		10EE6BE2134DFA050041B7A5 /* 7.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 7.mp3; sourceTree = "<group>"; };
-		10EE6BE3134DFA050041B7A5 /* 8.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 8.mp3; sourceTree = "<group>"; };
-		10EE6BE4134DFA050041B7A5 /* 9.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 9.mp3; sourceTree = "<group>"; };
-		10EE6BE5134DFA050041B7A5 /* 10.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 10.mp3; sourceTree = "<group>"; };
-		10EE6BE6134DFA050041B7A5 /* 11.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 11.mp3; sourceTree = "<group>"; };
-		10EE6BE7134DFA050041B7A5 /* 12.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 12.mp3; sourceTree = "<group>"; };
-		10EE6BE8134DFA050041B7A5 /* 13.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 13.mp3; sourceTree = "<group>"; };
-		10EE6BE9134DFA050041B7A5 /* 14.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 14.mp3; sourceTree = "<group>"; };
-		10EE6BEA134DFA050041B7A5 /* 15.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 15.mp3; sourceTree = "<group>"; };
-		10EE6BEB134DFA050041B7A5 /* 16.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 16.mp3; sourceTree = "<group>"; };
-		10EE6BEC134DFA050041B7A5 /* 17.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 17.mp3; sourceTree = "<group>"; };
-		10EE6BED134DFA050041B7A5 /* 18.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 18.mp3; sourceTree = "<group>"; };
-		10EE6BEE134DFA050041B7A5 /* 19.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 19.mp3; sourceTree = "<group>"; };
-		10EE6BEF134DFA050041B7A5 /* 20.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 20.mp3; sourceTree = "<group>"; };
-		10EE6BF0134DFA050041B7A5 /* 21.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 21.mp3; sourceTree = "<group>"; };
-		10EE6BF1134DFA050041B7A5 /* 22.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 22.mp3; sourceTree = "<group>"; };
-		10EE6BF2134DFA050041B7A5 /* 23.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 23.mp3; sourceTree = "<group>"; };
-		10EE6BF3134DFA050041B7A5 /* 24.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 24.mp3; sourceTree = "<group>"; };
-		10EE6BF4134DFA050041B7A5 /* 25.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 25.mp3; sourceTree = "<group>"; };
-		10EE6BF5134DFA050041B7A5 /* 26.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 26.mp3; sourceTree = "<group>"; };
-		10EE6BF6134DFA050041B7A5 /* 27.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 27.mp3; sourceTree = "<group>"; };
-		10EE6BF7134DFA050041B7A5 /* 28.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 28.mp3; sourceTree = "<group>"; };
-		10EE6BF8134DFA050041B7A5 /* 29.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 29.mp3; sourceTree = "<group>"; };
-		10EE6BF9134DFA050041B7A5 /* 30.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 30.mp3; sourceTree = "<group>"; };
-		10EE6BFA134DFA050041B7A5 /* 31.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 31.mp3; sourceTree = "<group>"; };
-		10EE6BFB134DFA050041B7A5 /* 32.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 32.mp3; sourceTree = "<group>"; };
-		10EE6BFC134DFA050041B7A5 /* 33.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 33.mp3; sourceTree = "<group>"; };
-		10EE6BFD134DFA050041B7A5 /* 34.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 34.mp3; sourceTree = "<group>"; };
-		10EE6BFE134DFA050041B7A5 /* 35.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 35.mp3; sourceTree = "<group>"; };
-		10EE6BFF134DFA050041B7A5 /* 36.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 36.mp3; sourceTree = "<group>"; };
-		10EE6C00134DFA050041B7A5 /* 37.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 37.mp3; sourceTree = "<group>"; };
-		10EE6C01134DFA050041B7A5 /* 38.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 38.mp3; sourceTree = "<group>"; };
-		10EE6C02134DFA050041B7A5 /* 39.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 39.mp3; sourceTree = "<group>"; };
-		10EE6C03134DFA050041B7A5 /* 40.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 40.mp3; sourceTree = "<group>"; };
 		10FD52D51386AEFA00D9B984 /* backgroundMusicAnimales.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = backgroundMusicAnimales.mp3; sourceTree = "<group>"; };
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D6058910D05DD3D006BFB54 /* Basho.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Basho.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -1733,53 +1657,6 @@
 				10A06585133BB3E40059187D /* GameVideo_iPad.xib */,
 			);
 			name = video;
-			sourceTree = "<group>";
-		};
-		10A065C7133BBDAC0059187D /* points sounds */ = {
-			isa = PBXGroup;
-			children = (
-				10EE6BDC134DFA050041B7A5 /* 1.mp3 */,
-				10EE6BDD134DFA050041B7A5 /* 2.mp3 */,
-				10EE6BDE134DFA050041B7A5 /* 3.mp3 */,
-				10EE6BDF134DFA050041B7A5 /* 4.mp3 */,
-				10EE6BE0134DFA050041B7A5 /* 5.mp3 */,
-				10EE6BE1134DFA050041B7A5 /* 6.mp3 */,
-				10EE6BE2134DFA050041B7A5 /* 7.mp3 */,
-				10EE6BE3134DFA050041B7A5 /* 8.mp3 */,
-				10EE6BE4134DFA050041B7A5 /* 9.mp3 */,
-				10EE6BE5134DFA050041B7A5 /* 10.mp3 */,
-				10EE6BE6134DFA050041B7A5 /* 11.mp3 */,
-				10EE6BE7134DFA050041B7A5 /* 12.mp3 */,
-				10EE6BE8134DFA050041B7A5 /* 13.mp3 */,
-				10EE6BE9134DFA050041B7A5 /* 14.mp3 */,
-				10EE6BEA134DFA050041B7A5 /* 15.mp3 */,
-				10EE6BEB134DFA050041B7A5 /* 16.mp3 */,
-				10EE6BEC134DFA050041B7A5 /* 17.mp3 */,
-				10EE6BED134DFA050041B7A5 /* 18.mp3 */,
-				10EE6BEE134DFA050041B7A5 /* 19.mp3 */,
-				10EE6BEF134DFA050041B7A5 /* 20.mp3 */,
-				10EE6BF0134DFA050041B7A5 /* 21.mp3 */,
-				10EE6BF1134DFA050041B7A5 /* 22.mp3 */,
-				10EE6BF2134DFA050041B7A5 /* 23.mp3 */,
-				10EE6BF3134DFA050041B7A5 /* 24.mp3 */,
-				10EE6BF4134DFA050041B7A5 /* 25.mp3 */,
-				10EE6BF5134DFA050041B7A5 /* 26.mp3 */,
-				10EE6BF6134DFA050041B7A5 /* 27.mp3 */,
-				10EE6BF7134DFA050041B7A5 /* 28.mp3 */,
-				10EE6BF8134DFA050041B7A5 /* 29.mp3 */,
-				10EE6BF9134DFA050041B7A5 /* 30.mp3 */,
-				10EE6BFA134DFA050041B7A5 /* 31.mp3 */,
-				10EE6BFB134DFA050041B7A5 /* 32.mp3 */,
-				10EE6BFC134DFA050041B7A5 /* 33.mp3 */,
-				10EE6BFD134DFA050041B7A5 /* 34.mp3 */,
-				10EE6BFE134DFA050041B7A5 /* 35.mp3 */,
-				10EE6BFF134DFA050041B7A5 /* 36.mp3 */,
-				10EE6C00134DFA050041B7A5 /* 37.mp3 */,
-				10EE6C01134DFA050041B7A5 /* 38.mp3 */,
-				10EE6C02134DFA050041B7A5 /* 39.mp3 */,
-				10EE6C03134DFA050041B7A5 /* 40.mp3 */,
-			);
-			name = "points sounds";
 			sourceTree = "<group>";
 		};
 		10A08C9013215065003F24AD /* Game Dress */ = {
@@ -2324,7 +2201,9 @@
 		10B32831131D5CAA0014A77D /* Sounds */ = {
 			isa = PBXGroup;
 			children = (
+				107B9A211393BFDF000332CA /* spin-sfx3-updated.mp3 */,
 				10689B2C138EC4AD009EAACD /* Camera_SFX.mp3 */,
+				107B9A081393B541000332CA /* game2-alldressed-sfx.mp3 */,
 				10D2DF1813840F6700334C4C /* dress - clothes - where */,
 				10D2D26B137DA5B000334C4C /* backgroundMusic.mp3 */,
 				10FD52D51386AEFA00D9B984 /* backgroundMusicAnimales.mp3 */,
@@ -2334,7 +2213,6 @@
 				10D2DD981383419C00334C4C /* wheel - animals - sfx */,
 				1051CB1F13788DC8002DACDF /* wheel - animals - english */,
 				109A49C7137061780057428B /* wheel - animals - spanish */,
-				10A065C7133BBDAC0059187D /* points sounds */,
 				109D6033133A5B140061B1C3 /* dress_snd_boots_Yellow.mp3 */,
 				109D6101133A5B410061B1C3 /* dress_snd_boots_Blue.mp3 */,
 				109D6034133A5B140061B1C3 /* dress_snd_boots_Red.mp3 */,
@@ -2476,7 +2354,7 @@
 				10D2DF1C138410F600334C4C /* dress_snd_jacket_where_esp.mp3 */,
 				10D2DF1D138410F600334C4C /* dress_snd_necklace_where_esp.mp3 */,
 				10D2DF1E138410F600334C4C /* dress_snd_sunglasses_where_esp.mp3 */,
-				10D2DF1F138410F600334C4C /* dress_snd_glasses_where_eng.mp3 */,
+				10D2DF1F138410F600334C4C /* dress_snd_sunglasses_where_eng.mp3 */,
 				10D2DF20138410F600334C4C /* dress_snd_hat_where_esp.mp3 */,
 				10D2DF21138410F600334C4C /* dress_snd_hat_where_eng.mp3 */,
 				10D2DF22138410F600334C4C /* dress_snd_jacket_where_eng.mp3 */,
@@ -2535,7 +2413,7 @@
 				10D2DF6A138415EB00334C4C /* dress_snd_phone_Blue_where_eng.mp3 */,
 				10D2DF6B138415EB00334C4C /* dress_snd_backpack_Red_where_eng.mp3 */,
 				10D2DF6C138415EB00334C4C /* dress_snd_boots_Red_where_eng.mp3 */,
-				10D2DF6D138415EB00334C4C /* dress_snd_glasses_Red_where_eng.mp3 */,
+				10D2DF6D138415EB00334C4C /* dress_snd_sunglasses_Red_where_eng.mp3 */,
 				10D2DF6E138415EB00334C4C /* dress_snd_hat_Red_where_eng.mp3 */,
 				10D2DF6F138415EB00334C4C /* dress_snd_jacket_Red_where_eng.mp3 */,
 				10D2DF70138415EB00334C4C /* dress_snd_necklace_Red_where_eng.mp3 */,
@@ -2543,7 +2421,7 @@
 				10D2DF72138415EB00334C4C /* dress_snd_phone_Red_where_eng.mp3 */,
 				10D2DF73138415EB00334C4C /* dress_snd_backpack_Purple_where_eng.mp3 */,
 				10D2DF74138415EB00334C4C /* dress_snd_boots_Purple_where_eng.mp3 */,
-				10D2DF75138415EB00334C4C /* dress_snd_glasses_Purple_where_eng.mp3 */,
+				10D2DF75138415EB00334C4C /* dress_snd_sunglasses_Purple_where_eng.mp3 */,
 				10D2DF76138415EB00334C4C /* dress_snd_hat_Purple_where_eng.mp3 */,
 				10D2DF77138415EB00334C4C /* dress_snd_jacket_Purple_where_eng.mp3 */,
 				10D2DF78138415EB00334C4C /* dress_snd_necklace_Purple_where_eng.mp3 */,
@@ -2551,7 +2429,7 @@
 				10D2DF7A138415EB00334C4C /* dress_snd_phone_Purple_where_eng.mp3 */,
 				10D2DF7B138415EB00334C4C /* dress_snd_backpack_Yellow_where_eng.mp3 */,
 				10D2DF7C138415EB00334C4C /* dress_snd_boots_Yellow_where_eng.mp3 */,
-				10D2DF7D138415EB00334C4C /* dress_snd_glasses_Yellow_where_eng.mp3 */,
+				10D2DF7D138415EB00334C4C /* dress_snd_sunglasses_Yellow_where_eng.mp3 */,
 				10D2DF7E138415EB00334C4C /* dress_snd_hat_Yellow_where_eng.mp3 */,
 				10D2DF7F138415EB00334C4C /* dress_snd_jacket_Yellow_where_eng.mp3 */,
 				10D2DF80138415EB00334C4C /* dress_snd_necklace_Yellow_where_eng.mp3 */,
@@ -3069,46 +2947,6 @@
 				10A2E70B1349F7ED00E723D5 /* btn_replay_iPad.png in Resources */,
 				10EE6B9D134DEB9A0041B7A5 /* Puntostodos_iPad.mov in Resources */,
 				10EE6BBC134DF3140041B7A5 /* pointsaudiosting.mp3 in Resources */,
-				10EE6C04134DFA050041B7A5 /* 1.mp3 in Resources */,
-				10EE6C05134DFA050041B7A5 /* 2.mp3 in Resources */,
-				10EE6C06134DFA050041B7A5 /* 3.mp3 in Resources */,
-				10EE6C07134DFA050041B7A5 /* 4.mp3 in Resources */,
-				10EE6C08134DFA050041B7A5 /* 5.mp3 in Resources */,
-				10EE6C09134DFA050041B7A5 /* 6.mp3 in Resources */,
-				10EE6C0A134DFA050041B7A5 /* 7.mp3 in Resources */,
-				10EE6C0B134DFA050041B7A5 /* 8.mp3 in Resources */,
-				10EE6C0C134DFA050041B7A5 /* 9.mp3 in Resources */,
-				10EE6C0D134DFA050041B7A5 /* 10.mp3 in Resources */,
-				10EE6C0E134DFA050041B7A5 /* 11.mp3 in Resources */,
-				10EE6C0F134DFA050041B7A5 /* 12.mp3 in Resources */,
-				10EE6C10134DFA050041B7A5 /* 13.mp3 in Resources */,
-				10EE6C11134DFA050041B7A5 /* 14.mp3 in Resources */,
-				10EE6C12134DFA050041B7A5 /* 15.mp3 in Resources */,
-				10EE6C13134DFA050041B7A5 /* 16.mp3 in Resources */,
-				10EE6C14134DFA050041B7A5 /* 17.mp3 in Resources */,
-				10EE6C15134DFA050041B7A5 /* 18.mp3 in Resources */,
-				10EE6C16134DFA050041B7A5 /* 19.mp3 in Resources */,
-				10EE6C17134DFA050041B7A5 /* 20.mp3 in Resources */,
-				10EE6C18134DFA050041B7A5 /* 21.mp3 in Resources */,
-				10EE6C19134DFA050041B7A5 /* 22.mp3 in Resources */,
-				10EE6C1A134DFA050041B7A5 /* 23.mp3 in Resources */,
-				10EE6C1B134DFA050041B7A5 /* 24.mp3 in Resources */,
-				10EE6C1C134DFA050041B7A5 /* 25.mp3 in Resources */,
-				10EE6C1D134DFA050041B7A5 /* 26.mp3 in Resources */,
-				10EE6C1E134DFA050041B7A5 /* 27.mp3 in Resources */,
-				10EE6C1F134DFA050041B7A5 /* 28.mp3 in Resources */,
-				10EE6C20134DFA050041B7A5 /* 29.mp3 in Resources */,
-				10EE6C21134DFA050041B7A5 /* 30.mp3 in Resources */,
-				10EE6C22134DFA050041B7A5 /* 31.mp3 in Resources */,
-				10EE6C23134DFA050041B7A5 /* 32.mp3 in Resources */,
-				10EE6C24134DFA050041B7A5 /* 33.mp3 in Resources */,
-				10EE6C25134DFA050041B7A5 /* 34.mp3 in Resources */,
-				10EE6C26134DFA050041B7A5 /* 35.mp3 in Resources */,
-				10EE6C27134DFA050041B7A5 /* 36.mp3 in Resources */,
-				10EE6C28134DFA050041B7A5 /* 37.mp3 in Resources */,
-				10EE6C29134DFA050041B7A5 /* 38.mp3 in Resources */,
-				10EE6C2A134DFA050041B7A5 /* 39.mp3 in Resources */,
-				10EE6C2B134DFA050041B7A5 /* 40.mp3 in Resources */,
 				10B0A46A136AF4DD00A027F4 /* README.rtf in Resources */,
 				109A4915136F39B60057428B /* WheelItems.plist in Resources */,
 				109A4917136F64130057428B /* wheel_settings_iPad.png in Resources */,
@@ -3211,7 +3049,7 @@
 				10D2DF2C138410F600334C4C /* dress_snd_jacket_where_esp.mp3 in Resources */,
 				10D2DF2D138410F600334C4C /* dress_snd_necklace_where_esp.mp3 in Resources */,
 				10D2DF2E138410F600334C4C /* dress_snd_sunglasses_where_esp.mp3 in Resources */,
-				10D2DF2F138410F600334C4C /* dress_snd_glasses_where_eng.mp3 in Resources */,
+				10D2DF2F138410F600334C4C /* dress_snd_sunglasses_where_eng.mp3 in Resources */,
 				10D2DF30138410F600334C4C /* dress_snd_hat_where_esp.mp3 in Resources */,
 				10D2DF31138410F600334C4C /* dress_snd_hat_where_eng.mp3 in Resources */,
 				10D2DF32138410F600334C4C /* dress_snd_jacket_where_eng.mp3 in Resources */,
@@ -3263,7 +3101,7 @@
 				10D2DFAA138415EB00334C4C /* dress_snd_phone_Blue_where_eng.mp3 in Resources */,
 				10D2DFAB138415EB00334C4C /* dress_snd_backpack_Red_where_eng.mp3 in Resources */,
 				10D2DFAC138415EB00334C4C /* dress_snd_boots_Red_where_eng.mp3 in Resources */,
-				10D2DFAD138415EB00334C4C /* dress_snd_glasses_Red_where_eng.mp3 in Resources */,
+				10D2DFAD138415EB00334C4C /* dress_snd_sunglasses_Red_where_eng.mp3 in Resources */,
 				10D2DFAE138415EB00334C4C /* dress_snd_hat_Red_where_eng.mp3 in Resources */,
 				10D2DFAF138415EB00334C4C /* dress_snd_jacket_Red_where_eng.mp3 in Resources */,
 				10D2DFB0138415EB00334C4C /* dress_snd_necklace_Red_where_eng.mp3 in Resources */,
@@ -3271,7 +3109,7 @@
 				10D2DFB2138415EB00334C4C /* dress_snd_phone_Red_where_eng.mp3 in Resources */,
 				10D2DFB3138415EB00334C4C /* dress_snd_backpack_Purple_where_eng.mp3 in Resources */,
 				10D2DFB4138415EB00334C4C /* dress_snd_boots_Purple_where_eng.mp3 in Resources */,
-				10D2DFB5138415EB00334C4C /* dress_snd_glasses_Purple_where_eng.mp3 in Resources */,
+				10D2DFB5138415EB00334C4C /* dress_snd_sunglasses_Purple_where_eng.mp3 in Resources */,
 				10D2DFB6138415EB00334C4C /* dress_snd_hat_Purple_where_eng.mp3 in Resources */,
 				10D2DFB7138415EB00334C4C /* dress_snd_jacket_Purple_where_eng.mp3 in Resources */,
 				10D2DFB8138415EB00334C4C /* dress_snd_necklace_Purple_where_eng.mp3 in Resources */,
@@ -3279,7 +3117,7 @@
 				10D2DFBA138415EB00334C4C /* dress_snd_phone_Purple_where_eng.mp3 in Resources */,
 				10D2DFBB138415EB00334C4C /* dress_snd_backpack_Yellow_where_eng.mp3 in Resources */,
 				10D2DFBC138415EB00334C4C /* dress_snd_boots_Yellow_where_eng.mp3 in Resources */,
-				10D2DFBD138415EB00334C4C /* dress_snd_glasses_Yellow_where_eng.mp3 in Resources */,
+				10D2DFBD138415EB00334C4C /* dress_snd_sunglasses_Yellow_where_eng.mp3 in Resources */,
 				10D2DFBE138415EB00334C4C /* dress_snd_hat_Yellow_where_eng.mp3 in Resources */,
 				10D2DFBF138415EB00334C4C /* dress_snd_jacket_Yellow_where_eng.mp3 in Resources */,
 				10D2DFC0138415EB00334C4C /* dress_snd_necklace_Yellow_where_eng.mp3 in Resources */,
@@ -3309,6 +3147,8 @@
 				10689C2C138FC57C009EAACD /* theatre_video4_iPad.mov in Resources */,
 				10689C2D138FC57C009EAACD /* theatre_video5_iPad.mov in Resources */,
 				10689C2E138FC57C009EAACD /* theatre_video6_iPad.mov in Resources */,
+				107B9A091393B541000332CA /* game2-alldressed-sfx.mp3 in Resources */,
+				107B9A221393BFDF000332CA /* spin-sfx3-updated.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

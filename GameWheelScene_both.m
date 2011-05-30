@@ -390,7 +390,7 @@
 	[self runAction:[CCSequence actions:[CCDelayTime actionWithDuration:2],[CCCallFunc actionWithTarget:self selector:@selector(stopPlayingSound)],nil]];
    
     NSMutableDictionary * userData = (NSMutableDictionary *)btn.userData;
-    word =[NSMutableString stringWithFormat:@"%@",[userData objectForKey:@"espText"]];
+    word =[NSMutableString stringWithFormat:@"%@",[userData objectForKey:[NSString stringWithFormat:@"%@Text",[GameManager sharedGameManager].languageString]]];
     bashoDirectedWrongSound =[NSMutableString stringWithFormat:@"wheel_snd_%@_wrong.mp3",[userData objectForKey:@"image"]];
     //sound =[NSMutableString stringWithFormat:@"wheel_snd_%@_%@.mp3",[userData objectForKey:@"image"],[gm languageString]];
 	sound =[NSMutableString stringWithFormat:@"wheel_snd_%@_sfx.mp3",[userData objectForKey:@"image"]];
@@ -700,6 +700,7 @@
 	{
 		if(CGRectContainsPoint([dino boundingBox],location) && !stopWhenRotationReached)
 		{
+			[self stopLoopSpinEffect];
 			canDragDino = NO;
 			forceApplied = 0;
 			dinoSpinning = NO;
@@ -741,7 +742,10 @@
 - (void)ccTouchesMoved:(UITouch *)touches withEvent:(UIEvent *)event
 {
 	//[dino stopAllActions];
-	
+	if(dinoSpinning)
+	{
+		return ;
+	}
 	UITouch *touch = [touches anyObject];
     CGPoint location = [touch locationInView: [touch view]];
     location = [[CCDirector sharedDirector] convertToGL: location];	
@@ -860,6 +864,9 @@
 		
 	}
 	
+	[self playLoopSpinEffect];
+	[self schedule:@selector(playLoopSpinEffect) interval:8];
+	
 	[self unschedule:@selector(updateTime)];
 	time=0;
 	couldBeginTouch = NO;
@@ -896,6 +903,7 @@
 	}
 
 	if (forceApplied==0) {
+		[self stopLoopSpinEffect];
 		dinoSpinning = NO;
 		return;
 	}else {
@@ -929,6 +937,7 @@
     
 		if(wasDragging)
 		{
+			[self stopLoopSpinEffect];
 			wasDragging = NO;
 			//[self stopSpinning];
 		}
@@ -976,13 +985,37 @@
 
 -(void)pushLever2
 {
+	[self playLoopSpinEffect];
+	[self schedule:@selector(playLoopSpinEffect) interval:8];
 	forceApplied = 13800 + arc4random() % 2000;
 }
 
 -(void)autoPushLever2
 {
+	if([GameManager sharedGameManager].soundsEnabled)
+		[[SimpleAudioEngine sharedEngine] playEffect:@"lever-sfx.mp3"];
+	
+	[self playLoopSpinEffect];
+	[self schedule:@selector(playLoopSpinEffect) interval:8];
+
 	forceApplied = 6000;
 	friction = 0;
+}
+
+-(void)playLoopSpinEffect
+{
+	if([GameManager sharedGameManager].soundsEnabled)
+		[[SimpleAudioEngine sharedEngine] playEffect:@"spin-sfx3-updated.mp3"];
+}
+
+-(void)stopLoopSpinEffect
+{
+	[self unschedule:@selector(playLoopSpinEffect)];
+
+	if([GameManager sharedGameManager].soundsEnabled)
+		[[SimpleAudioEngine sharedEngine] stopEffect:@"spin-sfx3-updated.mp3"];
+	
+	[[SimpleAudioEngine sharedEngine] unloadEffect:@"spin-sfx3-updated.mp3"];
 }
 
 -(void)loadSpinningStuff
