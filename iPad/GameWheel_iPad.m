@@ -11,6 +11,7 @@
 #import "AppDelegate_iPad.h"
 #import "MainMenu_iPad.h"
 #import "GameWheelScene_iPad.h"
+#import "GameManager.h"
 
 @implementation GameWheel_iPad
 
@@ -60,7 +61,7 @@
 	// make the OpenGLView a child of the view controller
 	[self setView:glView];
 	
-	[CCTexture2D setDefaultAlphaPixelFormat:kCCTexture2DPixelFormat_RGBA8888];
+	[CCTexture2D setDefaultAlphaPixelFormat:kCCTexture2DPixelFormat_RGBA4444];
 	
 	// Removes the startup flicker
 	//[self removeStartupFlicker];
@@ -141,6 +142,7 @@
 
 -(void)goToSettings
 {
+	[GameManager sharedGameManager].onPause = YES;
 	sv = [[SettingsViewController_iPad alloc] initWithNibName:@"SettingsViewController_iPad" bundle:nil];
 	sv.rootVC = self;
 	
@@ -149,6 +151,7 @@
 
 -(void)removeSettings
 {
+	[GameManager sharedGameManager].onPause = NO;
 	[sv.view removeFromSuperview];
 	[sv release];
 }

@@ -3,9 +3,10 @@
 #import "DDElement.h"
 #import "GameManager.h"
 #import "SimpleAudioEngine.h"
+#import "GameManager.h"
 
 @implementation DDElement
-@synthesize state,mySprite,dressed,desiredZ,itemTag;
+@synthesize state,mySprite,dressed,desiredZ,itemTag,itemText,itemNumber,colorNumber;
 
 -(id) initWithTheGame:(GameDress_iPad *)ddm elementDict:(NSMutableDictionary *)element
 {
@@ -35,6 +36,7 @@
 		
 		itemNumber = [element objectForKey:@"itemNumber"];
 		colorNumber = [element objectForKey:@"colorNumber"];
+		itemText = [element objectForKey:[NSString stringWithFormat:@"text_%@",[GameManager sharedGameManager].languageString]];
 		
 		
 		soundOkPath = [[NSString stringWithFormat:@"dress_snd_%@_%@.mp3",itemNumber,colorNumber]retain];
@@ -146,15 +148,23 @@
 			[smoke runAction:[CCSequence actions:[CCScaleTo actionWithDuration:0.5 scale:2],[CCSpawn actions:[CCScaleTo actionWithDuration:0.5 scale:2],[CCFadeOut actionWithDuration:0.5],nil],[CCCallFuncN actionWithTarget:self selector:@selector(removeNode:)],nil]];
 			
 			if([GameManager sharedGameManager].soundsEnabled)
-				[[SimpleAudioEngine sharedEngine] playEffect:soundOkPath];
+			{
+				[[SimpleAudioEngine sharedEngine] playEffect:@"RightAnswer.mp3"];
+				[theGame hidePalabra];
+				/*if(theGame.bashoDirected)
+					[[SimpleAudioEngine sharedEngine] playEffect:@"RightAnswer.mp3"];
+				else
+					[[SimpleAudioEngine sharedEngine] playEffect:soundOkPath];*/
+			}
 			placed = YES;
 			theGame.placingElement = YES;
 			//[theGame addPoints];
 			[theGame runAction:[CCSequence actions:[CCCallFuncND actionWithTarget:theGame selector:@selector(dressDino: data:) data:(void*)self],[CCDelayTime actionWithDuration:2.5],[CCCallFunc actionWithTarget:theGame selector:@selector(selectItemForBasho)],nil]];
 		}else {
 			if([GameManager sharedGameManager].soundsEnabled)
-				[[SimpleAudioEngine sharedEngine] playEffect:soundWrongPath];
+				[[SimpleAudioEngine sharedEngine] playEffect:@"WrongAnswer.mp3"];
 			mySprite.position = initialCoord;
+			[self shakeMismatch];
 			/*CCParticleSystemQuad * particles = [CCParticleSystemQuad particleWithFile:particleWrongPath];
 			[self addChild:particles];
 			[particles setPosition:mySprite.position];
@@ -171,6 +181,24 @@
 	state = kStateUngrabbed;
 }
 
+-(void)shakeMismatch
+{
+    CGPoint initPos = mySprite.position;
+    
+	[mySprite runAction:[CCSequence actions:[CCRepeat actionWithAction:[CCSequence actions:
+																		[CCMoveBy actionWithDuration:0.05 position:ccp(5,5)],
+																		[CCMoveBy actionWithDuration:0.05 position:ccp(-5,-5)],
+																		[CCMoveBy actionWithDuration:0.05 position:ccp(5,5)],
+																		[CCMoveBy actionWithDuration:0.05 position:ccp(-5,-5)],
+																		[CCMoveBy actionWithDuration:0.05 position:ccp(5,5)],
+																		[CCMoveBy actionWithDuration:0.05 position:ccp(-5,-5)],
+																		[CCMoveBy actionWithDuration:0.05 position:ccp(5,5)],
+																		[CCMoveBy actionWithDuration:0.05 position:ccp(-5,-5)],
+																		[CCMoveBy actionWithDuration:0.05 position:ccp(5,5)],
+																		[CCMoveBy actionWithDuration:0.05 position:ccp(-5,-5)],nil]
+																 times:2],[CCPlace actionWithPosition:initPos],nil]];
+}
+
 -(void)removeNode:(CCNode *)node
 {
 	[node.parent removeChild:node cleanup:YES];
@@ -180,6 +208,8 @@
 {
 	[[SimpleAudioEngine sharedEngine] unloadEffect:soundOkPath];
 	[[SimpleAudioEngine sharedEngine] unloadEffect:soundWrongPath];
+	[[SimpleAudioEngine sharedEngine] unloadEffect:@"RightAnswer.mp3"];
+	[[SimpleAudioEngine sharedEngine] unloadEffect:@"WrongAnswer.mp3"];
 	
 	[dressed release];
 	[imagePath release];

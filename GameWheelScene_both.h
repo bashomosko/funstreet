@@ -113,7 +113,17 @@
     NSMutableArray * buttonsData;
 	
 	CCSprite * leverImg;
+	CCSprite * leverBtn;
 	
+	BOOL beganDraggingLever;
+	BOOL wasDragging;
+	BOOL couldBeginTouch;
+	BOOL stopWhenRotationReached;
+	BOOL canDragDino;
+	
+	CCSpriteBatchNode * animalAnimSB;
+	
+	int videoTaps;
 }
 
 @end

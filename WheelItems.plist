@@ -5,50 +5,82 @@
 	<key>items</key>
 	<array>
 		<dict>
+			<key>frames</key>
+			<integer>16</integer>
 			<key>espText</key>
 			<string>Gato</string>
+			<key>engText</key>
+			<string>Cat</string>
 			<key>image</key>
 			<string>cat</string>
 		</dict>
 		<dict>
+			<key>frames</key>
+			<integer>14</integer>
 			<key>espText</key>
 			<string>Pato</string>
+			<key>engText</key>
+			<string>Duck</string>
 			<key>image</key>
 			<string>duck</string>
 		</dict>
 		<dict>
+			<key>frames</key>
+			<integer>16</integer>
 			<key>espText</key>
 			<string>Caballo</string>
+			<key>engText</key>
+			<string>Horse</string>
 			<key>image</key>
 			<string>horse</string>
 		</dict>
 		<dict>
+			<key>frames</key>
+			<integer>10</integer>
 			<key>espText</key>
 			<string>Abeja</string>
+			<key>engText</key>
+			<string>Bee</string>
 			<key>image</key>
 			<string>bee</string>
 		</dict>
 		<dict>
+			<key>frames</key>
+			<integer>11</integer>
 			<key>espText</key>
 			<string>Perro</string>
+			<key>engText</key>
+			<string>Dog</string>
 			<key>image</key>
 			<string>dog</string>
 		</dict>
 		<dict>
+			<key>frames</key>
+			<integer>17</integer>
 			<key>espText</key>
 			<string>Gallina</string>
+			<key>engText</key>
+			<string>Chicken</string>
 			<key>image</key>
 			<string>chicken</string>
 		</dict>
 		<dict>
+			<key>frames</key>
+			<string>19</string>
 			<key>espText</key>
 			<string>Vaca</string>
+			<key>engText</key>
+			<string>Cow</string>
 			<key>image</key>
 			<string>cow</string>
 		</dict>
 		<dict>
+			<key>frames</key>
+			<integer>12</integer>
 			<key>espText</key>
-			<string>Cerdo</string>
+			<string>Puerco</string>
+			<key>engText</key>
+			<string>Pig</string>
 			<key>image</key>
 			<string>pig</string>
 		</dict>

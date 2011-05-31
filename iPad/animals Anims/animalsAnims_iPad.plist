@@ -1,0 +1,2477 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>frames</key>
+	<dict>
+		
+		<key>SeeNSay_bee_ANIM_00000.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{595, 138}, {160, 128}}</string>
+			<key>spriteOffset</key>
+			<string>{163, 182}</string>
+			<key>spriteSize</key>
+			<string>{160, 128}</string>
+			<key>spriteSourceSize</key>
+			<string>{1024, 768}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{1214, 560}, {160, 128}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>SeeNSay_bee_ANIM_00001.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{600, 137}, {160, 132}}</string>
+			<key>spriteOffset</key>
+			<string>{168, 181}</string>
+			<key>spriteSize</key>
+			<string>{160, 132}</string>
+			<key>spriteSourceSize</key>
+			<string>{1024, 768}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{1672, 598}, {160, 132}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>SeeNSay_bee_ANIM_00002.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{590, 143}, {166, 122}}</string>
+			<key>spriteOffset</key>
+			<string>{161, 180}</string>
+			<key>spriteSize</key>
+			<string>{166, 122}</string>
+			<key>spriteSourceSize</key>
+			<string>{1024, 768}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{1140, 420}, {166, 122}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>SeeNSay_bee_ANIM_00003.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{599, 138}, {160, 130}}</string>
+			<key>spriteOffset</key>
+			<string>{167, 181}</string>
+			<key>spriteSize</key>
+			<string>{160, 130}</string>
+			<key>spriteSourceSize</key>
+			<string>{1024, 768}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{728, 428}, {160, 130}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>SeeNSay_bee_ANIM_00004.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{590, 136}, {150, 130}}</string>
+			<key>spriteOffset</key>
+			<string>{153, 183}</string>
+			<key>spriteSize</key>
+			<string>{150, 130}</string>
+			<key>spriteSourceSize</key>
+			<string>{1024, 768}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{522, 558}, {150, 130}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>SeeNSay_bee_ANIM_00005.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{599, 138}, {160, 130}}</string>
+			<key>spriteOffset</key>
+			<string>{167, 181}</string>
+			<key>spriteSize</key>
+			<string>{160, 130}</string>
+			<key>spriteSourceSize</key>
+			<string>{1024, 768}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{890, 428}, {160, 130}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>SeeNSay_bee_ANIM_00006.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{590, 142}, {166, 124}}</string>
+			<key>spriteOffset</key>
+			<string>{161, 180}</string>
+			<key>spriteSize</key>
+			<string>{166, 124}</string>
+			<key>spriteSourceSize</key>
+			<string>{1024, 768}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{1140, 294}, {166, 124}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>SeeNSay_bee_ANIM_00007.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{599, 138}, {160, 130}}</string>
+			<key>spriteOffset</key>
+			<string>{167, 181}</string>
+			<key>spriteSize</key>
+			<string>{160, 130}</string>
+			<key>spriteSourceSize</key>
+			<string>{1024, 768}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{1052, 544}, {160, 130}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>SeeNSay_bee_ANIM_00008.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{590, 132}, {150, 134}}</string>
+			<key>spriteOffset</key>
+			<string>{153, 185}</string>
+			<key>spriteSize</key>
+			<string>{150, 134}</string>
+			<key>spriteSourceSize</key>
+			<string>{1024, 768}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{2, 564}, {150, 134}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>SeeNSay_bee_ANIM_00009.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{600, 137}, {154, 132}}</string>
+			<key>spriteOffset</key>
+			<string>{165, 181}</string>
+			<key>spriteSize</key>
+			<string>{154, 132}</string>
+			<key>spriteSourceSize</key>
+			<string>{1024, 768}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{1648, 732}, {154, 132}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>SeeNSay_bee_ANIM_00010.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{595, 137}, {158, 130}}</string>
+			<key>spriteOffset</key>
+			<string>{162, 182}</string>
+			<key>spriteSize</key>
+			<string>{158, 130}</string>
+			<key>spriteSourceSize</key>
+			<string>{1024, 768}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{1488, 686}, {158, 130}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>SeeNSay_cat_ANIM_00000.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{148, 305}, {108, 160}}</string>
+			<key>spriteOffset</key>
+			<string>{-310, -1}</string>
+			<key>spriteSize</key>
+			<string>{108, 160}</string>
+			<key>spriteSourceSize</key>
+			<string>{1024, 768}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{514, 1318}, {108, 160}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>SeeNSay_cat_ANIM_00001.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{148, 302}, {108, 164}}</string>
+			<key>spriteOffset</key>
+			<string>{-310, -0}</string>
+			<key>spriteSize</key>
+			<string>{108, 164}</string>
+			<key>spriteSourceSize</key>
+			<string>{1024, 768}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{256, 1322}, {108, 164}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>SeeNSay_cat_ANIM_00002.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{148, 300}, {108, 166}}</string>
+			<key>spriteOffset</key>
+			<string>{-310, 1}</string>
+			<key>spriteSize</key>
+			<string>{108, 166}</string>
+			<key>spriteSourceSize</key>
+			<string>{1024, 768}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{554, 1150}, {108, 166}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>SeeNSay_cat_ANIM_00003.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{148, 298}, {108, 168}}</string>
+			<key>spriteOffset</key>
+			<string>{-310, 2}</string>
+			<key>spriteSize</key>
+			<string>{108, 168}</string>
+			<key>spriteSourceSize</key>
+			<string>{1024, 768}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{982, 1070}, {108, 168}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>SeeNSay_cat_ANIM_00004.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{148, 296}, {108, 170}}</string>
+			<key>spriteOffset</key>
+			<string>{-310, 3}</string>
+			<key>spriteSize</key>
+			<string>{108, 170}</string>
+			<key>spriteSourceSize</key>
+			<string>{1024, 768}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{1728, 304}, {108, 170}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>SeeNSay_cat_ANIM_00005.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{148, 298}, {108, 168}}</string>
+			<key>spriteOffset</key>
+			<string>{-310, 2}</string>
+			<key>spriteSize</key>
+			<string>{108, 168}</string>
+			<key>spriteSourceSize</key>
+			<string>{1024, 768}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{1094, 928}, {108, 168}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>SeeNSay_cat_ANIM_00006.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{148, 300}, {108, 166}}</string>
+			<key>spriteOffset</key>
+			<string>{-310, 1}</string>
+			<key>spriteSize</key>
+			<string>{108, 166}</string>
+			<key>spriteSourceSize</key>
+			<string>{1024, 768}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{828, 1082}, {108, 166}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>SeeNSay_cat_ANIM_00007.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{148, 302}, {108, 164}}</string>
+			<key>spriteOffset</key>
+			<string>{-310, -0}</string>
+			<key>spriteSize</key>
+			<string>{108, 164}</string>
+			<key>spriteSourceSize</key>
+			<string>{1024, 768}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{404, 1194}, {108, 164}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>SeeNSay_cat_ANIM_00008.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{147, 305}, {110, 160}}</string>
+			<key>spriteOffset</key>
+			<string>{-310, -1}</string>
+			<key>spriteSize</key>
+			<string>{110, 160}</string>
+			<key>spriteSourceSize</key>
+			<string>{1024, 768}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{2, 1292}, {110, 160}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>SeeNSay_cat_ANIM_00009.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{147, 305}, {110, 160}}</string>
+			<key>spriteOffset</key>
+			<string>{-310, -1}</string>
+			<key>spriteSize</key>
+			<string>{110, 160}</string>
+			<key>spriteSourceSize</key>
+			<string>{1024, 768}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{1376, 884}, {110, 160}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>SeeNSay_cat_ANIM_00010.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{148, 305}, {108, 160}}</string>
+			<key>spriteOffset</key>
+			<string>{-310, -1}</string>
+			<key>spriteSize</key>
+			<string>{108, 160}</string>
+			<key>spriteSourceSize</key>
+			<string>{1024, 768}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{2, 1454}, {108, 160}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>SeeNSay_cat_ANIM_00011.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{148, 305}, {108, 160}}</string>
+			<key>spriteOffset</key>
+			<string>{-310, -1}</string>
+			<key>spriteSize</key>
+			<string>{108, 160}</string>
+			<key>spriteSourceSize</key>
+			<string>{1024, 768}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{366, 1360}, {108, 160}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>SeeNSay_cat_ANIM_00012.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{148, 305}, {108, 160}}</string>
+			<key>spriteOffset</key>
+			<string>{-310, -1}</string>
+			<key>spriteSize</key>
+			<string>{108, 160}</string>
+			<key>spriteSourceSize</key>
+			<string>{1024, 768}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{114, 1332}, {108, 160}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>SeeNSay_cat_ANIM_00013.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{147, 305}, {110, 160}}</string>
+			<key>spriteOffset</key>
+			<string>{-310, -1}</string>
+			<key>spriteSize</key>
+			<string>{110, 160}</string>
+			<key>spriteSourceSize</key>
+			<string>{1024, 768}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{1376, 560}, {110, 160}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>SeeNSay_cat_ANIM_00014.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{147, 305}, {110, 160}}</string>
+			<key>spriteOffset</key>
+			<string>{-310, -1}</string>
+			<key>spriteSize</key>
+			<string>{110, 160}</string>
+			<key>spriteSourceSize</key>
+			<string>{1024, 768}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{1376, 722}, {110, 160}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>SeeNSay_cat_ANIM_00015.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{147, 305}, {110, 160}}</string>
+			<key>spriteOffset</key>
+			<string>{-310, -1}</string>
+			<key>spriteSize</key>
+			<string>{110, 160}</string>
+			<key>spriteSourceSize</key>
+			<string>{1024, 768}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{870, 920}, {110, 160}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>SeeNSay_cat_ANIM_00016.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{148, 305}, {108, 160}}</string>
+			<key>spriteOffset</key>
+			<string>{-310, -1}</string>
+			<key>spriteSize</key>
+			<string>{108, 160}</string>
+			<key>spriteSourceSize</key>
+			<string>{1024, 768}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{664, 1190}, {108, 160}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>SeeNSay_chicken_ANIM_00000.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{608, 496}, {106, 148}}</string>
+			<key>spriteOffset</key>
+			<string>{149, -186}</string>
+			<key>spriteSize</key>
+			<string>{106, 148}</string>
+			<key>spriteSourceSize</key>
+			<string>{1024, 768}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{938, 1240}, {106, 148}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>SeeNSay_chicken_ANIM_00001.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{608, 493}, {108, 152}}</string>
+			<key>spriteOffset</key>
+			<string>{150, -185}</string>
+			<key>spriteSize</key>
+			<string>{108, 152}</string>
+			<key>spriteSourceSize</key>
+			<string>{1024, 768}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{224, 1488}, {108, 152}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>SeeNSay_chicken_ANIM_00002.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{608, 496}, {110, 148}}</string>
+			<key>spriteOffset</key>
+			<string>{151, -186}</string>
+			<key>spriteSize</key>
+			<string>{110, 148}</string>
+			<key>spriteSourceSize</key>
+			<string>{1024, 768}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{982, 920}, {110, 148}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>SeeNSay_chicken_ANIM_00003.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{608, 489}, {116, 154}}</string>
+			<key>spriteOffset</key>
+			<string>{154, -182}</string>
+			<key>spriteSize</key>
+			<string>{116, 154}</string>
+			<key>spriteSourceSize</key>
+			<string>{1024, 768}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{1258, 690}, {116, 154}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>SeeNSay_chicken_ANIM_00004.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{610, 489}, {118, 152}}</string>
+			<key>spriteOffset</key>
+			<string>{157, -181}</string>
+			<key>spriteSize</key>
+			<string>{118, 152}</string>
+			<key>spriteSourceSize</key>
+			<string>{1024, 768}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{284, 1168}, {118, 152}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>SeeNSay_chicken_ANIM_00005.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{608, 489}, {122, 152}}</string>
+			<key>spriteOffset</key>
+			<string>{157, -181}</string>
+			<key>spriteSize</key>
+			<string>{122, 152}</string>
+			<key>spriteSourceSize</key>
+			<string>{1024, 768}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{1922, 956}, {122, 152}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>SeeNSay_chicken_ANIM_00006.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{608, 489}, {122, 152}}</string>
+			<key>spriteOffset</key>
+			<string>{157, -181}</string>
+			<key>spriteSize</key>
+			<string>{122, 152}</string>
+			<key>spriteSourceSize</key>
+			<string>{1024, 768}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{1252, 846}, {122, 152}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>SeeNSay_chicken_ANIM_00007.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{605, 492}, {122, 150}}</string>
+			<key>spriteOffset</key>
+			<string>{154, -183}</string>
+			<key>spriteSize</key>
+			<string>{122, 150}</string>
+			<key>spriteSourceSize</key>
+			<string>{1024, 768}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{430, 1042}, {122, 150}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>SeeNSay_chicken_ANIM_00008.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{606, 493}, {116, 152}}</string>
+			<key>spriteOffset</key>
+			<string>{152, -185}</string>
+			<key>spriteSize</key>
+			<string>{116, 152}</string>
+			<key>spriteSourceSize</key>
+			<string>{1024, 768}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{138, 1178}, {116, 152}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>SeeNSay_chicken_ANIM_00009.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{608, 496}, {110, 148}}</string>
+			<key>spriteOffset</key>
+			<string>{151, -186}</string>
+			<key>spriteSize</key>
+			<string>{110, 148}</string>
+			<key>spriteSourceSize</key>
+			<string>{1024, 768}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{716, 1040}, {110, 148}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>SeeNSay_chicken_ANIM_00010.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{608, 496}, {106, 148}}</string>
+			<key>spriteOffset</key>
+			<string>{149, -186}</string>
+			<key>spriteSize</key>
+			<string>{106, 148}</string>
+			<key>spriteSourceSize</key>
+			<string>{1024, 768}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{624, 1352}, {106, 148}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>SeeNSay_chicken_ANIM_00011.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{608, 493}, {106, 152}}</string>
+			<key>spriteOffset</key>
+			<string>{149, -185}</string>
+			<key>spriteSize</key>
+			<string>{106, 152}</string>
+			<key>spriteSourceSize</key>
+			<string>{1024, 768}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{1730, 150}, {106, 152}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>SeeNSay_chicken_ANIM_00012.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{608, 496}, {106, 148}}</string>
+			<key>spriteOffset</key>
+			<string>{149, -186}</string>
+			<key>spriteSize</key>
+			<string>{106, 148}</string>
+			<key>spriteSourceSize</key>
+			<string>{1024, 768}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{2, 1616}, {106, 148}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>SeeNSay_chicken_ANIM_00013.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{608, 496}, {106, 148}}</string>
+			<key>spriteOffset</key>
+			<string>{149, -186}</string>
+			<key>spriteSize</key>
+			<string>{106, 148}</string>
+			<key>spriteSourceSize</key>
+			<string>{1024, 768}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{1204, 1000}, {106, 148}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>SeeNSay_chicken_ANIM_00014.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{608, 493}, {106, 152}}</string>
+			<key>spriteOffset</key>
+			<string>{149, -185}</string>
+			<key>spriteSize</key>
+			<string>{106, 152}</string>
+			<key>spriteSourceSize</key>
+			<string>{1024, 768}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{112, 1494}, {106, 152}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>SeeNSay_chicken_ANIM_00015.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{608, 496}, {106, 148}}</string>
+			<key>spriteOffset</key>
+			<string>{149, -186}</string>
+			<key>spriteSize</key>
+			<string>{106, 148}</string>
+			<key>spriteSourceSize</key>
+			<string>{1024, 768}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{774, 1250}, {106, 148}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>SeeNSay_chicken_ANIM_00016.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{608, 496}, {106, 148}}</string>
+			<key>spriteOffset</key>
+			<string>{149, -186}</string>
+			<key>spriteSize</key>
+			<string>{106, 148}</string>
+			<key>spriteSourceSize</key>
+			<string>{1024, 768}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{1092, 1098}, {106, 148}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>SeeNSay_chicken_ANIM_00017.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{608, 496}, {106, 148}}</string>
+			<key>spriteOffset</key>
+			<string>{149, -186}</string>
+			<key>spriteSize</key>
+			<string>{106, 148}</string>
+			<key>spriteSourceSize</key>
+			<string>{1024, 768}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{476, 1480}, {106, 148}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>SeeNSay_cow_ANIM_00000.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{392, 591}, {178, 128}}</string>
+			<key>spriteOffset</key>
+			<string>{-31, -271}</string>
+			<key>spriteSize</key>
+			<string>{178, 128}</string>
+			<key>spriteSourceSize</key>
+			<string>{1024, 768}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{368, 428}, {178, 128}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>SeeNSay_cow_ANIM_00001.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{390, 587}, {188, 132}}</string>
+			<key>spriteOffset</key>
+			<string>{-28, -269}</string>
+			<key>spriteSize</key>
+			<string>{188, 132}</string>
+			<key>spriteSourceSize</key>
+			<string>{1024, 768}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{1514, 418}, {188, 132}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>SeeNSay_cow_ANIM_00002.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{390, 587}, {194, 132}}</string>
+			<key>spriteOffset</key>
+			<string>{-25, -269}</string>
+			<key>spriteSize</key>
+			<string>{194, 132}</string>
+			<key>spriteSourceSize</key>
+			<string>{1024, 768}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{1838, 290}, {194, 132}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>SeeNSay_cow_ANIM_00003.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{390, 587}, {202, 132}}</string>
+			<key>spriteOffset</key>
+			<string>{-21, -269}</string>
+			<key>spriteSize</key>
+			<string>{202, 132}</string>
+			<key>spriteSourceSize</key>
+			<string>{1024, 768}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{1526, 150}, {202, 132}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>SeeNSay_cow_ANIM_00004.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{390, 587}, {200, 132}}</string>
+			<key>spriteOffset</key>
+			<string>{-22, -269}</string>
+			<key>spriteSize</key>
+			<string>{200, 132}</string>
+			<key>spriteSourceSize</key>
+			<string>{1024, 768}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{1526, 284}, {200, 132}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>SeeNSay_cow_ANIM_00005.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{390, 587}, {196, 132}}</string>
+			<key>spriteOffset</key>
+			<string>{-24, -269}</string>
+			<key>spriteSize</key>
+			<string>{196, 132}</string>
+			<key>spriteSourceSize</key>
+			<string>{1024, 768}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{1316, 292}, {196, 132}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>SeeNSay_cow_ANIM_00006.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{390, 587}, {190, 132}}</string>
+			<key>spriteOffset</key>
+			<string>{-27, -269}</string>
+			<key>spriteSize</key>
+			<string>{190, 132}</string>
+			<key>spriteSourceSize</key>
+			<string>{1024, 768}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{1838, 424}, {190, 132}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>SeeNSay_cow_ANIM_00007.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{390, 587}, {186, 132}}</string>
+			<key>spriteOffset</key>
+			<string>{-29, -269}</string>
+			<key>spriteSize</key>
+			<string>{186, 132}</string>
+			<key>spriteSourceSize</key>
+			<string>{1024, 768}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{1834, 558}, {186, 132}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>SeeNSay_cow_ANIM_00008.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{390, 587}, {182, 132}}</string>
+			<key>spriteOffset</key>
+			<string>{-31, -269}</string>
+			<key>spriteSize</key>
+			<string>{182, 132}</string>
+			<key>spriteSourceSize</key>
+			<string>{1024, 768}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{228, 294}, {182, 132}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>SeeNSay_cow_ANIM_00009.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{390, 587}, {182, 132}}</string>
+			<key>spriteOffset</key>
+			<string>{-31, -269}</string>
+			<key>spriteSize</key>
+			<string>{182, 132}</string>
+			<key>spriteSourceSize</key>
+			<string>{1024, 768}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{2, 296}, {182, 132}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>SeeNSay_cow_ANIM_00010.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{390, 587}, {180, 132}}</string>
+			<key>spriteOffset</key>
+			<string>{-32, -269}</string>
+			<key>spriteSize</key>
+			<string>{180, 132}</string>
+			<key>spriteSourceSize</key>
+			<string>{1024, 768}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{1490, 552}, {180, 132}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>SeeNSay_cow_ANIM_00011.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{390, 587}, {180, 132}}</string>
+			<key>spriteOffset</key>
+			<string>{-32, -269}</string>
+			<key>spriteSize</key>
+			<string>{180, 132}</string>
+			<key>spriteSourceSize</key>
+			<string>{1024, 768}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{186, 428}, {180, 132}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>SeeNSay_cow_ANIM_00012.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{390, 587}, {180, 132}}</string>
+			<key>spriteOffset</key>
+			<string>{-32, -269}</string>
+			<key>spriteSize</key>
+			<string>{180, 132}</string>
+			<key>spriteSourceSize</key>
+			<string>{1024, 768}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{958, 294}, {180, 132}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>SeeNSay_cow_ANIM_00013.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{390, 587}, {180, 132}}</string>
+			<key>spriteOffset</key>
+			<string>{-32, -269}</string>
+			<key>spriteSize</key>
+			<string>{180, 132}</string>
+			<key>spriteSourceSize</key>
+			<string>{1024, 768}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{412, 294}, {180, 132}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>SeeNSay_cow_ANIM_00014.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{390, 587}, {180, 132}}</string>
+			<key>spriteOffset</key>
+			<string>{-32, -269}</string>
+			<key>spriteSize</key>
+			<string>{180, 132}</string>
+			<key>spriteSourceSize</key>
+			<string>{1024, 768}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{1308, 426}, {180, 132}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>SeeNSay_cow_ANIM_00015.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{390, 587}, {180, 132}}</string>
+			<key>spriteOffset</key>
+			<string>{-32, -269}</string>
+			<key>spriteSize</key>
+			<string>{180, 132}</string>
+			<key>spriteSourceSize</key>
+			<string>{1024, 768}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{2, 430}, {180, 132}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>SeeNSay_cow_ANIM_00016.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{390, 587}, {180, 132}}</string>
+			<key>spriteOffset</key>
+			<string>{-32, -269}</string>
+			<key>spriteSize</key>
+			<string>{180, 132}</string>
+			<key>spriteSourceSize</key>
+			<string>{1024, 768}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{594, 294}, {180, 132}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>SeeNSay_cow_ANIM_00017.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{390, 587}, {180, 132}}</string>
+			<key>spriteOffset</key>
+			<string>{-32, -269}</string>
+			<key>spriteSize</key>
+			<string>{180, 132}</string>
+			<key>spriteSourceSize</key>
+			<string>{1024, 768}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{1834, 692}, {180, 132}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>SeeNSay_cow_ANIM_00018.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{390, 587}, {180, 132}}</string>
+			<key>spriteOffset</key>
+			<string>{-32, -269}</string>
+			<key>spriteSize</key>
+			<string>{180, 132}</string>
+			<key>spriteSourceSize</key>
+			<string>{1024, 768}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{776, 294}, {180, 132}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>SeeNSay_cow_ANIM_00019.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{392, 591}, {178, 128}}</string>
+			<key>spriteOffset</key>
+			<string>{-31, -271}</string>
+			<key>spriteSize</key>
+			<string>{178, 128}</string>
+			<key>spriteSourceSize</key>
+			<string>{1024, 768}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{548, 428}, {178, 128}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>SeeNSay_dog_ANIM_00000.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{675, 329}, {142, 122}}</string>
+			<key>spriteOffset</key>
+			<string>{234, -6}</string>
+			<key>spriteSize</key>
+			<string>{142, 122}</string>
+			<key>spriteSourceSize</key>
+			<string>{1024, 768}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{1488, 932}, {142, 122}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>SeeNSay_dog_ANIM_00001.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{675, 328}, {148, 124}}</string>
+			<key>spriteOffset</key>
+			<string>{237, -6}</string>
+			<key>spriteSize</key>
+			<string>{148, 124}</string>
+			<key>spriteSourceSize</key>
+			<string>{1024, 768}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{154, 688}, {148, 124}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>SeeNSay_dog_ANIM_00002.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{676, 325}, {152, 128}}</string>
+			<key>spriteOffset</key>
+			<string>{240, -5}</string>
+			<key>spriteSize</key>
+			<string>{152, 128}</string>
+			<key>spriteSourceSize</key>
+			<string>{1024, 768}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{1804, 826}, {152, 128}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>SeeNSay_dog_ANIM_00003.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{676, 325}, {142, 128}}</string>
+			<key>spriteOffset</key>
+			<string>{235, -5}</string>
+			<key>spriteSize</key>
+			<string>{142, 128}</string>
+			<key>spriteSourceSize</key>
+			<string>{1024, 768}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{1778, 956}, {142, 128}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>SeeNSay_dog_ANIM_00004.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{676, 325}, {138, 128}}</string>
+			<key>spriteOffset</key>
+			<string>{233, -5}</string>
+			<key>spriteSize</key>
+			<string>{138, 128}</string>
+			<key>spriteSourceSize</key>
+			<string>{1024, 768}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{144, 1048}, {138, 128}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>SeeNSay_dog_ANIM_00005.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{676, 325}, {142, 128}}</string>
+			<key>spriteOffset</key>
+			<string>{235, -5}</string>
+			<key>spriteSize</key>
+			<string>{142, 128}</string>
+			<key>spriteSourceSize</key>
+			<string>{1024, 768}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{1634, 866}, {142, 128}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>SeeNSay_dog_ANIM_00006.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{676, 325}, {152, 128}}</string>
+			<key>spriteOffset</key>
+			<string>{240, -5}</string>
+			<key>spriteSize</key>
+			<string>{152, 128}</string>
+			<key>spriteSourceSize</key>
+			<string>{1024, 768}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{368, 558}, {152, 128}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>SeeNSay_dog_ANIM_00007.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{676, 325}, {142, 128}}</string>
+			<key>spriteOffset</key>
+			<string>{235, -5}</string>
+			<key>spriteSize</key>
+			<string>{142, 128}</string>
+			<key>spriteSourceSize</key>
+			<string>{1024, 768}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{964, 790}, {142, 128}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>SeeNSay_dog_ANIM_00008.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{676, 325}, {138, 128}}</string>
+			<key>spriteOffset</key>
+			<string>{233, -5}</string>
+			<key>spriteSize</key>
+			<string>{138, 128}</string>
+			<key>spriteSourceSize</key>
+			<string>{1024, 768}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{290, 1038}, {138, 128}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>SeeNSay_dog_ANIM_00009.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{676, 325}, {142, 128}}</string>
+			<key>spriteOffset</key>
+			<string>{235, -5}</string>
+			<key>spriteSize</key>
+			<string>{142, 128}</string>
+			<key>spriteSourceSize</key>
+			<string>{1024, 768}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{820, 790}, {142, 128}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>SeeNSay_dog_ANIM_00010.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{675, 328}, {152, 124}}</string>
+			<key>spriteOffset</key>
+			<string>{239, -6}</string>
+			<key>spriteSize</key>
+			<string>{152, 124}</string>
+			<key>spriteSourceSize</key>
+			<string>{1024, 768}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{184, 562}, {152, 124}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>SeeNSay_dog_ANIM_00011.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{675, 329}, {142, 122}}</string>
+			<key>spriteOffset</key>
+			<string>{234, -6}</string>
+			<key>spriteSize</key>
+			<string>{142, 122}</string>
+			<key>spriteSourceSize</key>
+			<string>{1024, 768}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{1108, 804}, {142, 122}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>SeeNSay_duck_ANIM_00000.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{205, 143}, {140, 116}}</string>
+			<key>spriteOffset</key>
+			<string>{-237, 183}</string>
+			<key>spriteSize</key>
+			<string>{140, 116}</string>
+			<key>spriteSourceSize</key>
+			<string>{1024, 768}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{296, 920}, {140, 116}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>SeeNSay_duck_ANIM_00001.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{205, 143}, {140, 116}}</string>
+			<key>spriteOffset</key>
+			<string>{-237, 183}</string>
+			<key>spriteSize</key>
+			<string>{140, 116}</string>
+			<key>spriteSourceSize</key>
+			<string>{1024, 768}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{1774, 1086}, {140, 116}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>SeeNSay_duck_ANIM_00002.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{206, 141}, {134, 118}}</string>
+			<key>spriteOffset</key>
+			<string>{-239, 184}</string>
+			<key>spriteSize</key>
+			<string>{134, 118}</string>
+			<key>spriteSourceSize</key>
+			<string>{1024, 768}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{2, 1052}, {134, 118}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>SeeNSay_duck_ANIM_00003.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{209, 140}, {128, 120}}</string>
+			<key>spriteOffset</key>
+			<string>{-239, 184}</string>
+			<key>spriteSize</key>
+			<string>{128, 120}</string>
+			<key>spriteSourceSize</key>
+			<string>{1024, 768}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{1916, 1110}, {128, 120}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>SeeNSay_duck_ANIM_00004.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{206, 141}, {134, 118}}</string>
+			<key>spriteOffset</key>
+			<string>{-239, 184}</string>
+			<key>spriteSize</key>
+			<string>{134, 118}</string>
+			<key>spriteSourceSize</key>
+			<string>{1024, 768}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{734, 920}, {134, 118}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>SeeNSay_duck_ANIM_00005.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{205, 143}, {140, 116}}</string>
+			<key>spriteOffset</key>
+			<string>{-237, 183}</string>
+			<key>spriteSize</key>
+			<string>{140, 116}</string>
+			<key>spriteSourceSize</key>
+			<string>{1024, 768}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{450, 806}, {140, 116}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>SeeNSay_duck_ANIM_00006.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{205, 143}, {140, 116}}</string>
+			<key>spriteOffset</key>
+			<string>{-237, 183}</string>
+			<key>spriteSize</key>
+			<string>{140, 116}</string>
+			<key>spriteSourceSize</key>
+			<string>{1024, 768}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{438, 924}, {140, 116}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>SeeNSay_duck_ANIM_00007.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{205, 143}, {140, 116}}</string>
+			<key>spriteOffset</key>
+			<string>{-237, 183}</string>
+			<key>spriteSize</key>
+			<string>{140, 116}</string>
+			<key>spriteSourceSize</key>
+			<string>{1024, 768}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{592, 912}, {140, 116}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>SeeNSay_duck_ANIM_00008.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{205, 143}, {140, 116}}</string>
+			<key>spriteOffset</key>
+			<string>{-237, 183}</string>
+			<key>spriteSize</key>
+			<string>{140, 116}</string>
+			<key>spriteSourceSize</key>
+			<string>{1024, 768}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{1632, 996}, {140, 116}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>SeeNSay_duck_ANIM_00009.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{205, 143}, {140, 116}}</string>
+			<key>spriteOffset</key>
+			<string>{-237, 183}</string>
+			<key>spriteSize</key>
+			<string>{140, 116}</string>
+			<key>spriteSourceSize</key>
+			<string>{1024, 768}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{2, 934}, {140, 116}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>SeeNSay_duck_ANIM_00010.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{205, 143}, {140, 116}}</string>
+			<key>spriteOffset</key>
+			<string>{-237, 183}</string>
+			<key>spriteSize</key>
+			<string>{140, 116}</string>
+			<key>spriteSourceSize</key>
+			<string>{1024, 768}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{598, 794}, {140, 116}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>SeeNSay_duck_ANIM_00011.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{206, 141}, {134, 118}}</string>
+			<key>spriteOffset</key>
+			<string>{-239, 184}</string>
+			<key>spriteSize</key>
+			<string>{134, 118}</string>
+			<key>spriteSourceSize</key>
+			<string>{1024, 768}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{2, 1172}, {134, 118}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>SeeNSay_duck_ANIM_00012.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{209, 140}, {128, 120}}</string>
+			<key>spriteOffset</key>
+			<string>{-239, 184}</string>
+			<key>spriteSize</key>
+			<string>{128, 120}</string>
+			<key>spriteSourceSize</key>
+			<string>{1024, 768}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{1704, 476}, {128, 120}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>SeeNSay_duck_ANIM_00013.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{206, 141}, {134, 118}}</string>
+			<key>spriteOffset</key>
+			<string>{-239, 184}</string>
+			<key>spriteSize</key>
+			<string>{134, 118}</string>
+			<key>spriteSourceSize</key>
+			<string>{1024, 768}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{580, 1030}, {134, 118}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>SeeNSay_duck_ANIM_00014.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{205, 143}, {140, 116}}</string>
+			<key>spriteOffset</key>
+			<string>{-237, 183}</string>
+			<key>spriteSize</key>
+			<string>{140, 116}</string>
+			<key>spriteSourceSize</key>
+			<string>{1024, 768}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{148, 930}, {140, 116}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>SeeNSay_horse_ANIM_00000.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{373, 42}, {208, 142}}</string>
+			<key>spriteOffset</key>
+			<string>{-35, 271}</string>
+			<key>spriteSize</key>
+			<string>{208, 142}</string>
+			<key>spriteSourceSize</key>
+			<string>{1024, 768}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{1838, 146}, {208, 142}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>SeeNSay_horse_ANIM_00001.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{373, 42}, {208, 142}}</string>
+			<key>spriteOffset</key>
+			<string>{-35, 271}</string>
+			<key>spriteSize</key>
+			<string>{208, 142}</string>
+			<key>spriteSourceSize</key>
+			<string>{1024, 768}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{1316, 148}, {208, 142}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>SeeNSay_horse_ANIM_00002.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{370, 41}, {214, 144}}</string>
+			<key>spriteOffset</key>
+			<string>{-35, 271}</string>
+			<key>spriteSize</key>
+			<string>{214, 144}</string>
+			<key>spriteSourceSize</key>
+			<string>{1024, 768}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{886, 148}, {214, 144}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>SeeNSay_horse_ANIM_00003.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{368, 41}, {218, 144}}</string>
+			<key>spriteOffset</key>
+			<string>{-35, 271}</string>
+			<key>spriteSize</key>
+			<string>{218, 144}</string>
+			<key>spriteSourceSize</key>
+			<string>{1024, 768}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{228, 148}, {218, 144}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>SeeNSay_horse_ANIM_00004.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{365, 40}, {224, 146}}</string>
+			<key>spriteOffset</key>
+			<string>{-35, 271}</string>
+			<key>spriteSize</key>
+			<string>{224, 146}</string>
+			<key>spriteSourceSize</key>
+			<string>{1024, 768}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{1612, 2}, {224, 146}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>SeeNSay_horse_ANIM_00005.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{363, 41}, {228, 144}}</string>
+			<key>spriteOffset</key>
+			<string>{-35, 271}</string>
+			<key>spriteSize</key>
+			<string>{228, 144}</string>
+			<key>spriteSourceSize</key>
+			<string>{1024, 768}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{2, 2}, {228, 144}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>SeeNSay_horse_ANIM_00006.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{363, 41}, {228, 144}}</string>
+			<key>spriteOffset</key>
+			<string>{-35, 271}</string>
+			<key>spriteSize</key>
+			<string>{228, 144}</string>
+			<key>spriteSourceSize</key>
+			<string>{1024, 768}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{462, 2}, {228, 144}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>SeeNSay_horse_ANIM_00007.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{363, 41}, {228, 144}}</string>
+			<key>spriteOffset</key>
+			<string>{-35, 271}</string>
+			<key>spriteSize</key>
+			<string>{228, 144}</string>
+			<key>spriteSourceSize</key>
+			<string>{1024, 768}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{1382, 2}, {228, 144}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>SeeNSay_horse_ANIM_00008.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{363, 41}, {228, 144}}</string>
+			<key>spriteOffset</key>
+			<string>{-35, 271}</string>
+			<key>spriteSize</key>
+			<string>{228, 144}</string>
+			<key>spriteSourceSize</key>
+			<string>{1024, 768}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{922, 2}, {228, 144}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>SeeNSay_horse_ANIM_00009.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{363, 41}, {228, 144}}</string>
+			<key>spriteOffset</key>
+			<string>{-35, 271}</string>
+			<key>spriteSize</key>
+			<string>{228, 144}</string>
+			<key>spriteSourceSize</key>
+			<string>{1024, 768}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{232, 2}, {228, 144}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>SeeNSay_horse_ANIM_00010.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{363, 41}, {228, 144}}</string>
+			<key>spriteOffset</key>
+			<string>{-35, 271}</string>
+			<key>spriteSize</key>
+			<string>{228, 144}</string>
+			<key>spriteSourceSize</key>
+			<string>{1024, 768}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{1152, 2}, {228, 144}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>SeeNSay_horse_ANIM_00011.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{363, 41}, {228, 144}}</string>
+			<key>spriteOffset</key>
+			<string>{-35, 271}</string>
+			<key>spriteSize</key>
+			<string>{228, 144}</string>
+			<key>spriteSourceSize</key>
+			<string>{1024, 768}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{692, 2}, {228, 144}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>SeeNSay_horse_ANIM_00012.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{365, 40}, {224, 146}}</string>
+			<key>spriteOffset</key>
+			<string>{-35, 271}</string>
+			<key>spriteSize</key>
+			<string>{224, 146}</string>
+			<key>spriteSourceSize</key>
+			<string>{1024, 768}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{2, 148}, {224, 146}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>SeeNSay_horse_ANIM_00013.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{368, 41}, {218, 144}}</string>
+			<key>spriteOffset</key>
+			<string>{-35, 271}</string>
+			<key>spriteSize</key>
+			<string>{218, 144}</string>
+			<key>spriteSourceSize</key>
+			<string>{1024, 768}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{448, 148}, {218, 144}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>SeeNSay_horse_ANIM_00014.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{370, 41}, {216, 144}}</string>
+			<key>spriteOffset</key>
+			<string>{-34, 271}</string>
+			<key>spriteSize</key>
+			<string>{216, 144}</string>
+			<key>spriteSourceSize</key>
+			<string>{1024, 768}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{668, 148}, {216, 144}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>SeeNSay_horse_ANIM_00015.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{372, 41}, {212, 144}}</string>
+			<key>spriteOffset</key>
+			<string>{-34, 271}</string>
+			<key>spriteSize</key>
+			<string>{212, 144}</string>
+			<key>spriteSourceSize</key>
+			<string>{1024, 768}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{1102, 148}, {212, 144}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>SeeNSay_horse_ANIM_00016.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{373, 42}, {208, 142}}</string>
+			<key>spriteOffset</key>
+			<string>{-35, 271}</string>
+			<key>spriteSize</key>
+			<string>{208, 142}</string>
+			<key>spriteSourceSize</key>
+			<string>{1024, 768}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{1838, 2}, {208, 142}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>SeeNSay_pig_ANIM_00000.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{205, 510}, {144, 112}}</string>
+			<key>spriteOffset</key>
+			<string>{-235, -182}</string>
+			<key>spriteSize</key>
+			<string>{144, 112}</string>
+			<key>spriteSourceSize</key>
+			<string>{1024, 768}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{966, 676}, {144, 112}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>SeeNSay_pig_ANIM_00001.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{204, 508}, {144, 116}}</string>
+			<key>spriteOffset</key>
+			<string>{-236, -182}</string>
+			<key>spriteSize</key>
+			<string>{144, 116}</string>
+			<key>spriteSourceSize</key>
+			<string>{1024, 768}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{674, 676}, {144, 116}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>SeeNSay_pig_ANIM_00002.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{205, 509}, {144, 114}}</string>
+			<key>spriteOffset</key>
+			<string>{-235, -182}</string>
+			<key>spriteSize</key>
+			<string>{144, 114}</string>
+			<key>spriteSourceSize</key>
+			<string>{1024, 768}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{150, 814}, {144, 114}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>SeeNSay_pig_ANIM_00003.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{205, 508}, {144, 114}}</string>
+			<key>spriteOffset</key>
+			<string>{-235, -181}</string>
+			<key>spriteSize</key>
+			<string>{144, 114}</string>
+			<key>spriteSourceSize</key>
+			<string>{1024, 768}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{452, 690}, {144, 114}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>SeeNSay_pig_ANIM_00004.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{205, 510}, {144, 112}}</string>
+			<key>spriteOffset</key>
+			<string>{-235, -182}</string>
+			<key>spriteSize</key>
+			<string>{144, 112}</string>
+			<key>spriteSourceSize</key>
+			<string>{1024, 768}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{820, 676}, {144, 112}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>SeeNSay_pig_ANIM_00005.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{204, 510}, {146, 114}}</string>
+			<key>spriteOffset</key>
+			<string>{-235, -183}</string>
+			<key>spriteSize</key>
+			<string>{146, 114}</string>
+			<key>spriteSourceSize</key>
+			<string>{1024, 768}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{304, 688}, {146, 114}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>SeeNSay_pig_ANIM_00006.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{204, 510}, {146, 114}}</string>
+			<key>spriteOffset</key>
+			<string>{-235, -183}</string>
+			<key>spriteSize</key>
+			<string>{146, 114}</string>
+			<key>spriteSourceSize</key>
+			<string>{1024, 768}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{822, 560}, {146, 114}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>SeeNSay_pig_ANIM_00007.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{204, 508}, {146, 116}}</string>
+			<key>spriteOffset</key>
+			<string>{-235, -182}</string>
+			<key>spriteSize</key>
+			<string>{146, 116}</string>
+			<key>spriteSourceSize</key>
+			<string>{1024, 768}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{2, 700}, {146, 116}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>SeeNSay_pig_ANIM_00008.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{205, 509}, {144, 114}}</string>
+			<key>spriteOffset</key>
+			<string>{-235, -182}</string>
+			<key>spriteSize</key>
+			<string>{144, 114}</string>
+			<key>spriteSourceSize</key>
+			<string>{1024, 768}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{304, 804}, {144, 114}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>SeeNSay_pig_ANIM_00009.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{205, 508}, {144, 114}}</string>
+			<key>spriteOffset</key>
+			<string>{-235, -181}</string>
+			<key>spriteSize</key>
+			<string>{144, 114}</string>
+			<key>spriteSourceSize</key>
+			<string>{1024, 768}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{2, 818}, {144, 114}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>SeeNSay_pig_ANIM_00010.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{205, 510}, {144, 112}}</string>
+			<key>spriteOffset</key>
+			<string>{-235, -182}</string>
+			<key>spriteSize</key>
+			<string>{144, 112}</string>
+			<key>spriteSourceSize</key>
+			<string>{1024, 768}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{1112, 690}, {144, 112}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>SeeNSay_pig_ANIM_00011.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{204, 510}, {146, 114}}</string>
+			<key>spriteOffset</key>
+			<string>{-235, -183}</string>
+			<key>spriteSize</key>
+			<string>{146, 114}</string>
+			<key>spriteSourceSize</key>
+			<string>{1024, 768}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{674, 560}, {146, 114}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>SeeNSay_pig_ANIM_00012.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{205, 510}, {144, 112}}</string>
+			<key>spriteOffset</key>
+			<string>{-235, -182}</string>
+			<key>spriteSize</key>
+			<string>{144, 112}</string>
+			<key>spriteSourceSize</key>
+			<string>{1024, 768}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{1488, 818}, {144, 112}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+	</dict>
+	<key>metadata</key>
+	<dict>
+		<key>format</key>
+		<integer>3</integer>
+		<key>size</key>
+		<string>{2048, 2048}</string>
+	</dict>
+</dict>
+</plist>

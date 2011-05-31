@@ -45,6 +45,7 @@
 		// Apple recommends to re-assign "self" with the "super" return value
 		if( (self=[super init] )) {
 			
+			[[SimpleAudioEngine sharedEngine] playBackgroundMusic:@"backgroundMusicAnimales.mp3"];
 			
 			self.isTouchEnabled = YES;
 			viewController = vc;

@@ -5,6 +5,10 @@
 	<key>pants</key>
 	<array>
 		<dict>
+			<key>text_esp</key>
+			<string>Pantalones</string>
+			<key>text_eng</key>
+			<string>Pants</string>
 			<key>file-dressed</key>
 			<string>BluePantsOn_iPad.png</string>
 			<key>file-image</key>
@@ -22,6 +26,10 @@
 			<string>star_wrong.aif</string>
 		</dict>
 		<dict>
+			<key>text_eng</key>
+			<string>Pants</string>
+			<key>text_esp</key>
+			<string>Pantalones</string>
 			<key>file-dressed</key>
 			<string>RedPantsOn_iPad.png</string>
 			<key>file-image</key>
@@ -39,6 +47,10 @@
 			<string>star_wrong.aif</string>
 		</dict>
 		<dict>
+			<key>text_eng</key>
+			<string>Pants</string>
+			<key>text_esp</key>
+			<string>Pantalones</string>
 			<key>file-dressed</key>
 			<string>PurplePantsOn_iPad.png</string>
 			<key>file-image</key>
@@ -56,6 +68,10 @@
 			<string>star_wrong.aif</string>
 		</dict>
 		<dict>
+			<key>text_eng</key>
+			<string>Pants</string>
+			<key>text_esp</key>
+			<string>Pantalones</string>
 			<key>file-dressed</key>
 			<string>YellowPantsOn_iPad.png</string>
 			<key>file-image</key>
@@ -76,6 +92,10 @@
 	<key>backpack</key>
 	<array>
 		<dict>
+			<key>text_esp</key>
+			<string>Mochila</string>
+			<key>text_eng</key>
+			<string>Backpack</string>
 			<key>file-dressed</key>
 			<string>BlueBackpackStrapOn_iPad.png</string>
 			<key>file-image</key>
@@ -93,6 +113,10 @@
 			<string>star_wrong.aif</string>
 		</dict>
 		<dict>
+			<key>text_eng</key>
+			<string>Backpack</string>
+			<key>text_esp</key>
+			<string>Mochila</string>
 			<key>file-dressed</key>
 			<string>RedBackpackOn_iPad.png</string>
 			<key>file-image</key>
@@ -110,6 +134,10 @@
 			<string>star_wrong.aif</string>
 		</dict>
 		<dict>
+			<key>text_eng</key>
+			<string>Backpack</string>
+			<key>text_esp</key>
+			<string>Mochila</string>
 			<key>file-dressed</key>
 			<string>PurpleBackpackOn_iPad.png</string>
 			<key>file-image</key>
@@ -127,6 +155,10 @@
 			<string>star_wrong.aif</string>
 		</dict>
 		<dict>
+			<key>text_eng</key>
+			<string>Backpack</string>
+			<key>text_esp</key>
+			<string>Mochila</string>
 			<key>file-dressed</key>
 			<string>YellowBackpackOn_iPad.png</string>
 			<key>file-image</key>
@@ -147,6 +179,10 @@
 	<key>hat</key>
 	<array>
 		<dict>
+			<key>text_eng</key>
+			<string>Hat</string>
+			<key>text_esp</key>
+			<string>Sobrero</string>
 			<key>file-dressed</key>
 			<string>BlueHatOn_iPad.png</string>
 			<key>file-image</key>
@@ -164,6 +200,10 @@
 			<string>star_wrong.aif</string>
 		</dict>
 		<dict>
+			<key>text_esp</key>
+			<string>Sobrero</string>
+			<key>text_eng</key>
+			<string>Hat</string>
 			<key>file-dressed</key>
 			<string>RedHatOn_iPad.png</string>
 			<key>file-image</key>
@@ -181,6 +221,10 @@
 			<string>star_wrong.aif</string>
 		</dict>
 		<dict>
+			<key>text_esp</key>
+			<string>Sobrero</string>
+			<key>text_eng</key>
+			<string>Hat</string>
 			<key>file-dressed</key>
 			<string>PurpleHatOn_iPad.png</string>
 			<key>file-image</key>
@@ -198,6 +242,10 @@
 			<string>star_wrong.aif</string>
 		</dict>
 		<dict>
+			<key>text_esp</key>
+			<string>Sobrero</string>
+			<key>text_eng</key>
+			<string>Hat</string>
 			<key>file-dressed</key>
 			<string>YellowHatOn_iPad.png</string>
 			<key>file-image</key>
@@ -218,6 +266,10 @@
 	<key>boots</key>
 	<array>
 		<dict>
+			<key>text_esp</key>
+			<string>Botas</string>
+			<key>text_eng</key>
+			<string>Boots</string>
 			<key>file-dressed</key>
 			<string>BlueBootsOn_iPad.png</string>
 			<key>file-image</key>
@@ -235,6 +287,10 @@
 			<string>star_wrong.aif</string>
 		</dict>
 		<dict>
+			<key>text_eng</key>
+			<string>Boots</string>
+			<key>text_esp</key>
+			<string>Botas</string>
 			<key>file-dressed</key>
 			<string>RedBootsOn_iPad.png</string>
 			<key>file-image</key>
@@ -252,6 +308,10 @@
 			<string>star_wrong.aif</string>
 		</dict>
 		<dict>
+			<key>text_eng</key>
+			<string>Boots</string>
+			<key>text_esp</key>
+			<string>Botas</string>
 			<key>file-dressed</key>
 			<string>PurpleBootsOn_iPad.png</string>
 			<key>file-image</key>
@@ -269,6 +329,10 @@
 			<string>star_wrong.aif</string>
 		</dict>
 		<dict>
+			<key>text_eng</key>
+			<string>Boots</string>
+			<key>text_esp</key>
+			<string>Botas</string>
 			<key>file-dressed</key>
 			<string>YellowBootsOn_iPad.png</string>
 			<key>file-image</key>
@@ -289,6 +353,10 @@
 	<key>necklace</key>
 	<array>
 		<dict>
+			<key>text_eng</key>
+			<string>Necklace</string>
+			<key>text_esp</key>
+			<string>Collar</string>
 			<key>file-dressed</key>
 			<string>BlueNecklaceOn_iPad.png</string>
 			<key>file-image</key>
@@ -306,6 +374,10 @@
 			<string>star_wrong.aif</string>
 		</dict>
 		<dict>
+			<key>text_esp</key>
+			<string>Collar</string>
+			<key>text_eng</key>
+			<string>Necklace</string>
 			<key>file-dressed</key>
 			<string>RedNecklaceOn_iPad.png</string>
 			<key>file-image</key>
@@ -323,6 +395,10 @@
 			<string>star_wrong.aif</string>
 		</dict>
 		<dict>
+			<key>text_esp</key>
+			<string>Collar</string>
+			<key>text_eng</key>
+			<string>Necklace</string>
 			<key>file-dressed</key>
 			<string>PurpleNecklaceOn_iPad.png</string>
 			<key>file-image</key>
@@ -340,6 +416,10 @@
 			<string>star_wrong.aif</string>
 		</dict>
 		<dict>
+			<key>text_esp</key>
+			<string>Collar</string>
+			<key>text_eng</key>
+			<string>Necklace</string>
 			<key>file-dressed</key>
 			<string>YellowNecklaceOn_iPad.png</string>
 			<key>file-image</key>
@@ -360,6 +440,10 @@
 	<key>jacket</key>
 	<array>
 		<dict>
+			<key>text_esp</key>
+			<string>Chaqueta</string>
+			<key>text_eng</key>
+			<string>Jacket</string>
 			<key>file-dressed</key>
 			<string>BlueJacketOn_iPad.png</string>
 			<key>file-image</key>
@@ -377,6 +461,10 @@
 			<string>star_wrong.aif</string>
 		</dict>
 		<dict>
+			<key>text_esp</key>
+			<string>Chaqueta</string>
+			<key>text_eng</key>
+			<string>Jacket</string>
 			<key>file-dressed</key>
 			<string>RedJacketOn_iPad.png</string>
 			<key>file-image</key>
@@ -394,6 +482,10 @@
 			<string>star_wrong.aif</string>
 		</dict>
 		<dict>
+			<key>text_esp</key>
+			<string>Chaqueta</string>
+			<key>text_eng</key>
+			<string>Jacket</string>
 			<key>file-dressed</key>
 			<string>PurpleJacketOn_iPad.png</string>
 			<key>file-image</key>
@@ -411,6 +503,10 @@
 			<string>star_wrong.aif</string>
 		</dict>
 		<dict>
+			<key>text_esp</key>
+			<string>Chaqueta</string>
+			<key>text_eng</key>
+			<string>Jacket</string>
 			<key>file-dressed</key>
 			<string>YellowJacketOn_iPad.png</string>
 			<key>file-image</key>
@@ -431,6 +527,10 @@
 	<key>phone</key>
 	<array>
 		<dict>
+			<key>text_esp</key>
+			<string>Telefono</string>
+			<key>text_eng</key>
+			<string>Phone</string>
 			<key>file-dressed</key>
 			<string>BluePhoneRightHandOn_iPad.png</string>
 			<key>file-image</key>
@@ -448,6 +548,10 @@
 			<string>star_wrong.aif</string>
 		</dict>
 		<dict>
+			<key>text_eng</key>
+			<string>Phone</string>
+			<key>text_esp</key>
+			<string>Telefono</string>
 			<key>file-dressed</key>
 			<string>RedPhoneOn_iPad.png</string>
 			<key>file-image</key>
@@ -465,6 +569,10 @@
 			<string>star_wrong.aif</string>
 		</dict>
 		<dict>
+			<key>text_eng</key>
+			<string>Phone</string>
+			<key>text_esp</key>
+			<string>Telefono</string>
 			<key>file-dressed</key>
 			<string>PurplePhoneOn_iPad.png</string>
 			<key>file-image</key>
@@ -482,6 +590,10 @@
 			<string>star_wrong.aif</string>
 		</dict>
 		<dict>
+			<key>text_eng</key>
+			<string>Phone</string>
+			<key>text_esp</key>
+			<string>Telefono</string>
 			<key>file-dressed</key>
 			<string>YellowPhoneOn_iPad.png</string>
 			<key>file-image</key>
@@ -502,6 +614,10 @@
 	<key>sunglasses</key>
 	<array>
 		<dict>
+			<key>text_eng</key>
+			<string>Sunglasses</string>
+			<key>text_esp</key>
+			<string>Anteojos</string>
 			<key>file-dressed</key>
 			<string>BlueGlassesOn_iPad.png</string>
 			<key>file-image</key>
@@ -519,6 +635,10 @@
 			<string>star_wrong.aif</string>
 		</dict>
 		<dict>
+			<key>text_esp</key>
+			<string>Anteojos</string>
+			<key>text_eng</key>
+			<string>Sunglasses</string>
 			<key>file-dressed</key>
 			<string>RedGlassesOn_iPad.png</string>
 			<key>file-image</key>
@@ -536,6 +656,10 @@
 			<string>star_wrong.aif</string>
 		</dict>
 		<dict>
+			<key>text_esp</key>
+			<string>Anteojos</string>
+			<key>text_eng</key>
+			<string>Sunglasses</string>
 			<key>file-dressed</key>
 			<string>PurpleGlassesOn_iPad.png</string>
 			<key>file-image</key>
@@ -553,6 +677,10 @@
 			<string>star_wrong.aif</string>
 		</dict>
 		<dict>
+			<key>text_esp</key>
+			<string>Anteojos</string>
+			<key>text_eng</key>
+			<string>Sunglasses</string>
 			<key>file-dressed</key>
 			<string>YellowGlassesOn_iPad.png</string>
 			<key>file-image</key>

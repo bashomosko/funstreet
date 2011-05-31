@@ -50,14 +50,19 @@
 		if( (self=[super init] )) {
 			
 			points = 0;
+			[[SimpleAudioEngine sharedEngine] playBackgroundMusic:@"backgroundMusicAnimales.mp3"];
 			
 			[self loadDeviceType];
 			
 			self.isTouchEnabled = YES;
 			viewController = vc;
 			
-			//[self loadVideo];
-			[self beginGame];
+			if(![GameManager sharedGameManager].playedGame1Video)
+			{
+				[[GameManager sharedGameManager] setPlayedGame1Video:YES];
+				[self loadVideo];
+			}else
+				[self beginGame];
 			
 		}
 		return self;
@@ -69,6 +74,7 @@
 
 -(void)beginGame
 {
+	
 	bashoDirected = NO;
 	
 	CCSprite * back = [CCSprite spriteWithFile:@"wheel_background_iPad.png"];
@@ -81,6 +87,11 @@
 	[leverImg setPosition:ccp(390,420)];
 	[leverImg setAnchorPoint:ccp(0,0.5)];
 	[leverImg setRotation:-25];
+	
+	leverBtn= [CCSprite spriteWithFile:@"leverBtn_iPad.png"];
+	[self addChild:leverBtn];
+	leverBtn.opacity = 0;
+	[leverBtn setPosition:ccp(860,620)];
 	
 	CCSprite * wheelwheel = [CCSprite spriteWithFile:@"wheel_wheel_iPad.png"];
 	[wheelwheel setPosition:ccp(512,384)];
@@ -102,21 +113,25 @@
 	CCMenuItemImage * bashoOn = [CCMenuItemImage itemFromNormalImage:@"wheel_basho_on_iPad.png" selectedImage:@"wheel_basho_off_iPad.png"];
 	CCMenuItemToggle * basho = [CCMenuItemToggle itemWithTarget:self selector:@selector(turnBasho) items:bashoOff,bashoOn,nil];
 	
-	CCMenuItemImage * lever = [CCMenuItemImage itemFromNormalImage:@"leverBtn_iPad.png" selectedImage:@"leverBtn_iPad.png" target:self selector:@selector(pushLever)];
-	lever.opacity = 0;
-	CCMenu * menu = [CCMenu menuWithItems:backBtn,sound,basho,settingsBtn,lever,nil];
+	
+	CCMenu * menu = [CCMenu menuWithItems:backBtn,sound,basho,settingsBtn,nil];
 	[self addChild:menu];
 	[backBtn setPosition:ccp(64,696)];
 	[settingsBtn setPosition:ccp(50,48)];
 	[sound setPosition:ccp(50,120)];
 	[basho setPosition:ccp(50,200)];
-	[lever setPosition:ccp(900,620)];
+	
 	[menu setPosition:ccp(0,0)];
 	
 	
 	
 	//[self loadScore];
 	[self loadButtons];
+	
+	[[ CCSpriteFrameCache sharedSpriteFrameCache] addSpriteFramesWithFile:@"animalsAnims_iPad.plist" textureFile:@"animalsAnims_iPad.png"];
+	animalAnimSB = [CCSpriteBatchNode batchNodeWithFile:@"animalsAnims_iPad.png"];
+	
+	[self addChild:animalAnimSB z:0];
 	[self createPalabra];
 	[self loadSpinningStuff];
 }

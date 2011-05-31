@@ -10,6 +10,7 @@
 #import "cocos2d.h"
 #import "GameDress_iPad.h"
 #import <MediaPlayer/MediaPlayer.h>
+#import "GameDressSceneSnapshot_iPad.h"
 
 #define kSPRITEBATCH_ELEMS 1
 #define kBOXERS 2
@@ -33,23 +34,14 @@
 #define BTN_PANTS_NUM 0
 #define BTN_SUNGLASSES_NUM 4
 
-#define BTN_BACKPACK_SND @"wheel_snd_backpack.mp3"
-#define BTN_BOOTS_SND @"wheel_snd_boots.mp3"
-#define BTN_HAT_SND @"wheel_snd_hat.mp3"
-#define BTN_PHONE_SND @"wheel_snd_phone.mp3"
-#define BTN_JACKET_SND @"wheel_snd_jacket.mp3"
-#define BTN_NECKLACE_SND @"wheel_snd_necklace.mp3"
-#define BTN_PANTS_SND @"wheel_snd_pants.mp3"
-#define BTN_SUNGLASSES_SND @"wheel_snd_sunglasses.mp3"
-
-#define BTN_BACKPACK_SND_WHERE @"dress_snd_backpack_where.mp3"
-#define BTN_BOOTS_SND_WHERE @"dress_snd_boots_where.mp3"
-#define BTN_HAT_SND_WHERE @"dress_snd_hat_where.mp3"
-#define BTN_PHONE_SND_WHERE @"dress_snd_phone_where.mp3"
-#define BTN_JACKET_SND_WHERE @"dress_snd_jacket_where.mp3"
-#define BTN_NECKLACE_SND_WHERE @"dress_snd_necklace_where.mp3"
-#define BTN_PANTS_SND_WHERE @"dress_snd_pants_where.mp3"
-#define BTN_SUNGLASSES_SND_WHERE @"dress_snd_sunglasses_where.mp3"
+#define BTN_BACKPACK_SND_WHERE @"wheel_snd_backpack.mp3"
+#define BTN_BOOTS_SND_WHERE @"wheel_snd_boots.mp3"
+#define BTN_HAT_SND_WHERE @"wheel_snd_hat.mp3"
+#define BTN_PHONE_SND_WHERE @"wheel_snd_phone.mp3"
+#define BTN_JACKET_SND_WHERE @"wheel_snd_jacket.mp3"
+#define BTN_NECKLACE_SND_WHERE @"wheel_snd_necklace.mp3"
+#define BTN_PANTS_SND_WHERE @"wheel_snd_pants.mp3"
+#define BTN_SUNGLASSES_SND_WHERE @"wheel_snd_sunglasses.mp3"
 
 #define BTN_BACKPACK_SND_WRONG @"wheel_snd_backpack_wrong.mp3"
 #define BTN_BOOTS_SND_WRONG @"wheel_snd_boots_wrong.mp3"
@@ -68,6 +60,9 @@
 #define BTN_NECKLACE_SPANISH @"Collar"
 #define BTN_PANTS_SPANISH @"Pantalones"
 #define BTN_SUNGLASSES_SPANISH @"Anteojos"
+
+#define kPALABRA 1000
+#define kPALABRABCK 999
 
 @interface GameDressScene_iPad : CCLayer
 {
@@ -92,6 +87,11 @@
 	///
 	BOOL histeresisExcited;
     UIAcceleration* lastAcceleration;
+	
+	CCRenderTexture * target;
+	CCSprite * dino;
+	
+	int videoTaps;
 }
 
 @property (nonatomic,readwrite) BOOL placingElement;
