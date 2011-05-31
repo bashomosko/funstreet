@@ -116,108 +116,6 @@
 	[self beginGame];
 }
 
--(void)playFinishVideo
-{
-	
-	NSURL * url;
-	NSBundle *bundle = [NSBundle mainBundle];
-	if (bundle) 
-	{
-		NSString *moviePath = [bundle pathForResource:@"Puntos_iPad" ofType:@"mov"];
-		if (moviePath)
-		{
-			url = [NSURL fileURLWithPath:moviePath];
-		}
-	}
-	
-	finishVideo = [[MPMoviePlayerController alloc] initWithContentURL:url];
-	[[[CCDirector sharedDirector] openGLView] addSubview:finishVideo.view];
-	[finishVideo.view setFrame:CGRectMake(0,0,1024,768)];
-	[finishVideo setControlStyle:MPMovieControlStyleNone];
-	
-	[[NSNotificationCenter defaultCenter]
-	 addObserver:self
-	 selector:@selector(finishVideoDidFinishPlaying:)
-	 name:MPMoviePlayerPlaybackDidFinishNotification
-	 object:finishVideo];
-	
-	
-	[finishVideo play];
-	
-	[self runAction:[CCSequence actions:[CCDelayTime actionWithDuration:3],[CCCallFunc actionWithTarget:self selector:@selector(showBashoStillImage)],nil]];
-
-	
-}
-
--(void)showBashoStillImage
-{
-	CCSprite * back = [CCSprite spriteWithFile:@"PuntosEndFrame_iPad.png"];
-	[back setPosition:ccp(512,384)];
-	[self addChild:back z:20];
-}
-
--(void) finishVideoDidFinishPlaying: (NSNotification*)aNotification
-{
-	MPMoviePlayerController * finishVideo = [aNotification object];
-	[[NSNotificationCenter defaultCenter] removeObserver:self name:MPMoviePlayerPlaybackDidFinishNotification object:finishVideo];
-	[finishVideo stop];
-	[finishVideo.view removeFromSuperview];
-	[finishVideo release];
-	
-	[self showDinoPoints];
-}
-
--(void)showDinoPoints
-{
-	//RESET DINO
-	CCSprite * gloopbackground = [CCSprite spriteWithFile:[NSString stringWithFormat:@"PuntosDomino_iPad_00000.png.pvr"]];
-	[gloopbackground setPosition:ccp(512,384)];
-	[self addChild:gloopbackground z:21];
-	//ANIMATION
-	NSMutableArray * gloopFrames = [NSMutableArray  arrayWithCapacity:6];
-	for(int i = 0; i <= 6; i++) {
-		
-		CCSprite * sp = [CCSprite spriteWithFile:[NSString stringWithFormat:@"PuntosDomino_iPad_%05d.png.pvr",i]];
-		CCSpriteFrame *frame = [CCSpriteFrame frameWithTexture:sp.texture rect:sp.textureRect];
-		[gloopFrames addObject:frame];
-	}
-	
-	CCAnimation * gloopAnimation = [CCAnimation animationWithFrames:gloopFrames delay:0.05f];
-	[gloopbackground runAction:[CCSequence actions:[CCAnimate actionWithAnimation:gloopAnimation restoreOriginalFrame:NO],[CCDelayTime actionWithDuration:2],[CCCallFunc actionWithTarget:self selector:@selector(addDinoPoints)],nil]];
-	
-	[[SimpleAudioEngine sharedEngine] playEffect:@"pointsaudiosting.mp3"];
-	
-}
-
--(void)addDinoPoints
-{
-	CCLabelTTF * scoreLbl = [CCLabelTTF labelWithString:[NSString stringWithFormat:@"%d",points] fontName:@"Verdana" fontSize:200];
-	[scoreLbl setColor:ccBLACK];
-	[self addChild:scoreLbl z:22];
-	[scoreLbl setPosition:ccp(450,530)];
-	
-	[[SimpleAudioEngine sharedEngine] playEffect:[NSString stringWithFormat:@"%d.mp3",points]];
-	[self addFinishMenu];
-}
-
--(void)addFinishMenu
-{
-	CCMenuItemImage * home = [CCMenuItemImage itemFromNormalImage:@"btn_home_iPad.png" selectedImage:@"btn_home_dwn_iPad.png" target:self selector:@selector(goBack)];
-	CCMenuItemImage * replay = [CCMenuItemImage itemFromNormalImage:@"btn_replay_iPad.png" selectedImage:@"btn_replay_dwn_iPad.png" target:self selector:@selector(replay)];
-	CCMenuItemImage * next = [CCMenuItemImage itemFromNormalImage:@"btn_next_iPad.png" selectedImage:@"btn_next_dwn_iPad.png" target:self selector:@selector(nextGame)];
-	
-	CCMenu * menu = [CCMenu menuWithItems:home,replay,next,nil];
-	[self addChild:menu z:23];
-	[menu alignItemsHorizontallyWithPadding:20];
-	[menu setPosition:ccp(512,150)];
-}
-
--(void)nextGame
-{
-	[viewController goToNextGame];
-}
-
-
 -(void)turnSounds
 {
 	if([GameManager sharedGameManager].onPause) return; 
@@ -285,19 +183,6 @@
 	[self autoPushLever:NO];
 }
 
--(void)showPoints
-{
-	[self playFinishVideo];
-	/*CCMenuItemImage * backBtn2 = [CCMenuItemImage itemFromNormalImage:@"wheel_home_iPad.png" selectedImage:@"wheel_home_iPad.png" target:self selector:@selector(goBack)];
-	[backBtn2 setScale:5];
-		
-	CCMenu * menu = [CCMenu menuWithItems:backBtn2,nil];
-	[self addChild:menu];
-	[backBtn2 setPosition:ccp(500,500)];
-	[menu setPosition:ccp(0,0)];*/
-	
-	//[self goBack];
-}
 
 -(void)selectItemForBashoAlreadySelected
 {	
@@ -337,17 +222,6 @@
 -(void)loadButtons
 {
 	bashoSelectedItems = [[NSMutableArray array]retain];
-		
-	/*NSMutableArray * btnImgs = [NSMutableArray arrayWithCapacity:8];
-	[btnImgs addObject:BTN_BACKPACK];
-	[btnImgs addObject:BTN_BOOTS];
-	[btnImgs addObject:BTN_HAT];
-	[btnImgs addObject:BTN_PHONE];
-	[btnImgs addObject:BTN_JACKET];
-	[btnImgs addObject:BTN_NECKLACE];
-	[btnImgs addObject:BTN_PANTS];
-	[btnImgs addObject:BTN_SUNGLASSES];
-	*/
 	
 	NSMutableArray * btnPos = [self loadBtnPos];
 	
@@ -395,13 +269,13 @@
     //sound =[NSMutableString stringWithFormat:@"wheel_snd_%@_%@.mp3",[userData objectForKey:@"image"],[gm languageString]];
 	sound =[NSMutableString stringWithFormat:@"wheel_snd_%@_sfx.mp3",[userData objectForKey:@"image"]];
 	
-	[self playAnimForAnimal:btn];
 	
 	if(withWord)
 		wordSound =[[NSMutableString stringWithFormat:@"wheel_snd_%@_%@.mp3",[userData objectForKey:@"image"],[GameManager sharedGameManager].languageString]retain];
 	
 	if(!bashoDirected)
 	{
+		[self playAnimForAnimal:btn];
 		if([GameManager sharedGameManager].soundsEnabled)
 			[[SimpleAudioEngine sharedEngine] playEffect:sound];
 		[self showPalabra:word sound:wordSound];
@@ -421,6 +295,7 @@
 			{
 				if(bashoDirected)
 				{
+					[self playAnimForAnimal:btn];
 					[[SimpleAudioEngine sharedEngine] playEffect:@"RightAnswer.mp3"];
 					[[SimpleAudioEngine sharedEngine] playEffect:sound];
 				}else {
@@ -493,6 +368,9 @@
 
 -(void)animateAllAnimals
 {
+	if([GameManager sharedGameManager].soundsEnabled)
+		[[SimpleAudioEngine sharedEngine] playEffect:@"game2-alldressed-sfx.mp3"];
+	
 	for(CCMenuItemImage * m in [tapButtons children])
 	{
 		[self playAnimForAnimal:m];
@@ -759,7 +637,7 @@
 		float angle = atan2(-finalVect.y,finalVect.x);
 		
 		leverImg.rotation = CC_RADIANS_TO_DEGREES(angle);
-		NSLog(@"%.2f",leverImg.rotation);
+		//NSLog(@"%.2f",leverImg.rotation);
 		if(leverImg.rotation < -26) leverImg.rotation = -26;
 		if(leverImg.rotation > 32) leverImg.rotation = 32;
 	}else if(canDragDino && !bashoDirected){
@@ -1054,8 +932,27 @@
 	// cocos2d will automatically release all the children (Label)
 	// don't forget to call "super dealloc"
 	//[SimpleAudioEngine end];
+	[self unschedule:@selector(playLoopSpinEffect)];
+	[[SimpleAudioEngine sharedEngine] unloadEffect:@"RightAnswer.mp3"];
+	[[SimpleAudioEngine sharedEngine] unloadEffect:@"spin-sfx3-updated.mp3"];
 	[[SimpleAudioEngine sharedEngine] unloadEffect:@"WrongAnswer.mp3"];
 	[[SimpleAudioEngine sharedEngine] unloadEffect:@"lever-sfx.mp3"];
+	[[SimpleAudioEngine sharedEngine] unloadEffect:@"game2-alldressed-sfx.mp3"];
+	
+	for(NSDictionary * dt in buttonsData)
+	{
+		NSString * sEsp = [NSString stringWithFormat:@"wheel_snd_%@_where_%@.mp3",[dt objectForKey:@"image"],@"esp"];
+		[[SimpleAudioEngine sharedEngine] unloadEffect:sEsp];
+		NSString * sEng = [NSString stringWithFormat:@"wheel_snd_%@_where_%@.mp3",[dt objectForKey:@"image"],@"eng"];
+		[[SimpleAudioEngine sharedEngine] unloadEffect:sEng];
+		NSString * sSfx = [NSString stringWithFormat:@"wheel_snd_%@_sfx.mp3",[dt objectForKey:@"image"]];
+		[[SimpleAudioEngine sharedEngine] unloadEffect:sSfx];
+		NSString * sEsp2 = [NSString stringWithFormat:@"wheel_snd_%@_%@.mp3",[dt objectForKey:@"image"],@"esp"];
+		[[SimpleAudioEngine sharedEngine] unloadEffect:sEsp2];
+		NSString * sEng2 = [NSString stringWithFormat:@"wheel_snd_%@_%@.mp3",[dt objectForKey:@"image"],@"eng"];
+		[[SimpleAudioEngine sharedEngine] unloadEffect:sEng2];
+	}
+
 	
 	[bashoSelectedItems release];
     [buttonsData release];

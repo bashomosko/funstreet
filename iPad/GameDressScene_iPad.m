@@ -171,9 +171,11 @@
 	
 	self.isTouchEnabled = YES;
 
+	[CCTexture2D setDefaultAlphaPixelFormat:kCCTexture2DPixelFormat_RGB565];
 	CCSprite * back = [CCSprite spriteWithFile:@"dress_background_iPad.png"];
 	[back setPosition:ccp(512,384)];
 	[self addChild:back];
+	[CCTexture2D setDefaultAlphaPixelFormat:kCCTexture2DPixelFormat_RGBA4444];
 	
 	bashoSelectedSound = 0;
 	ddElements = [[NSMutableArray alloc] initWithCapacity:4];
