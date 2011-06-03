@@ -170,6 +170,8 @@
 	//[self loadDeviceType];
 	
 	self.isTouchEnabled = YES;
+	
+	[self schedule:@selector(doTimePassedForShake) interval:5];
 
 	[CCTexture2D setDefaultAlphaPixelFormat:kCCTexture2DPixelFormat_RGB565];
 	CCSprite * back = [CCSprite spriteWithFile:@"dress_background_iPad.png"];
@@ -418,7 +420,10 @@
 		}
 		
 		if([GameManager sharedGameManager].soundsEnabled)
+		{
+			[[SimpleAudioEngine sharedEngine] pauseBackgroundMusic];
 			[[SimpleAudioEngine sharedEngine] playEffect:@"game2-alldressed-sfx.mp3"];
+		}
 		
 		//RESET DINO
 		CCSprite * gloopbackground = [CCSprite spriteWithFile:[NSString stringWithFormat:@"%@00000.png.pvr",fileName]];
@@ -645,10 +650,19 @@
 	
 }
 
+-(void)doTimePassedForShake
+{
+	[self unschedule:@selector(timePassedForShake)];
+	timePassedForShake = YES;
+}
+
 -(void)onShake
 {
-	[[CCDirector sharedDirector] replaceScene:[CCTransitionFade transitionWithDuration:0.5 scene: [GameDressScene_iPad sceneWithDressVC:viewController bashoDirected:bashoDirected playVid:NO] withColor:ccWHITE]];
-
+	if(timePassedForShake)
+	{
+		timePassedForShake = NO;
+		[[CCDirector sharedDirector] replaceScene:[CCTransitionFade transitionWithDuration:0.5 scene: [GameDressScene_iPad sceneWithDressVC:viewController bashoDirected:bashoDirected playVid:NO] withColor:ccWHITE]];
+	}
 }
 
 - (void)accelerometer:(UIAccelerometer*)accelerometer didAccelerate:(UIAcceleration*)acceleration

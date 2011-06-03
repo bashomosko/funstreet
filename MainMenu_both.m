@@ -35,13 +35,13 @@
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
     
-    [[SimpleAudioEngine sharedEngine] playBackgroundMusic:@"backgroundMusic.mp3"];
   //  [self animateDoors];
 	if(![GameManager sharedGameManager].playedMenuVideo)
 	{
 		[[GameManager sharedGameManager] setPlayedMenuVideo:YES];
 		[self playVideo];
 	}else {
+		 [[SimpleAudioEngine sharedEngine] playBackgroundMusic:@"backgroundMusic.mp3"];
 		[self animateDoors];
 	}
 
@@ -95,6 +95,8 @@
 		[introVideo stop];
 		[introVideo.view removeFromSuperview];
 		[introVideo release];
+		
+		[[SimpleAudioEngine sharedEngine] playBackgroundMusic:@"backgroundMusic.mp3"];
 		[self animateDoors];
 	}
 }
@@ -112,6 +114,7 @@
 	[introVideo.view removeFromSuperview];
 	[introVideo release];
 	
+	 [[SimpleAudioEngine sharedEngine] playBackgroundMusic:@"backgroundMusic.mp3"];
 	 [self animateDoors];
 	//[self beginGame];
 }

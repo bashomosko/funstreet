@@ -120,10 +120,12 @@
 	BOOL couldBeginTouch;
 	BOOL stopWhenRotationReached;
 	BOOL canDragDino;
+	BOOL pressedDinoToHalt;
 	
 	CCSpriteBatchNode * animalAnimSB;
 	
 	int videoTaps;
+	int spinFxId;
 }
 
 @end

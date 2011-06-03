@@ -34,6 +34,9 @@
 		self.isTouchEnabled = YES;
 		self.isAccelerometerEnabled = YES;
 
+		
+		[[SimpleAudioEngine sharedEngine] resumeBackgroundMusic];
+		
 		viewController = vc;
 		
 		moveOutActivated = NO;

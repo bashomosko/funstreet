@@ -163,6 +163,7 @@
 
 -(void)resetTapButtons
 {
+	[[SimpleAudioEngine sharedEngine] resumeBackgroundMusic];
 	for (CCMenuItemImage * m in [tapButtons children])
 	{
 		[m setIsEnabled:YES];
@@ -283,6 +284,7 @@
 		
 		if(bashoSelectedSound == selectedSound )
 		{
+			pressedDinoToHalt = NO;
 			[self addPoints:kPointsAwarded - currentAttempts];
 			
 			if(maxedAttemps)
@@ -319,6 +321,8 @@
 				[self runAction:[CCSequence actions:[CCDelayTime actionWithDuration:2.5],[CCCallFunc actionWithTarget:self selector:@selector(autoPushLeverFromAction)],nil]];
 			}
 		}else {
+			[self playAnimForAnimal:btn];
+			[[SimpleAudioEngine sharedEngine] playEffect:sound];
 			currentAttempts ++;
 			if([GameManager sharedGameManager].soundsEnabled)
 			{
@@ -326,7 +330,7 @@
 				//[[SimpleAudioEngine sharedEngine] playEffect:bashoDirectedWrongSound];
 			}
 			dinoSpinning = NO;
-			[self autoPushLever:YES];
+			//[self autoPushLever:YES];
 		}
 		
 	}
@@ -369,7 +373,10 @@
 -(void)animateAllAnimals
 {
 	if([GameManager sharedGameManager].soundsEnabled)
+	{
+		[[SimpleAudioEngine sharedEngine] pauseBackgroundMusic];
 		[[SimpleAudioEngine sharedEngine] playEffect:@"game2-alldressed-sfx.mp3"];
+	}
 	
 	for(CCMenuItemImage * m in [tapButtons children])
 	{
@@ -582,6 +589,7 @@
 			canDragDino = NO;
 			forceApplied = 0;
 			dinoSpinning = NO;
+			pressedDinoToHalt = YES;
 			if(bashoDirected)
 				[self stopSpinning];
 		}
@@ -659,6 +667,14 @@
 	UITouch *touch = [touches anyObject];
     CGPoint location = [touch locationInView: [touch view]];
     location = [[CCDirector sharedDirector] convertToGL: location];	
+	
+	if(pressedDinoToHalt)
+	{
+		pressedDinoToHalt = NO;
+		if(bashoDirected)
+			[self autoPushLever:YES];
+			
+	}
 	
 	if(!canDragDino)
 		return;
@@ -870,8 +886,8 @@
 
 -(void)autoPushLever2
 {
-	if([GameManager sharedGameManager].soundsEnabled)
-		[[SimpleAudioEngine sharedEngine] playEffect:@"lever-sfx.mp3"];
+	//if([GameManager sharedGameManager].soundsEnabled)
+	//	[[SimpleAudioEngine sharedEngine] playEffect:@"lever-sfx.mp3"];
 	
 	[self playLoopSpinEffect];
 	[self schedule:@selector(playLoopSpinEffect) interval:8];
@@ -883,7 +899,10 @@
 -(void)playLoopSpinEffect
 {
 	if([GameManager sharedGameManager].soundsEnabled)
-		[[SimpleAudioEngine sharedEngine] playEffect:@"spin-sfx3-updated.mp3"];
+	{
+		[[SimpleAudioEngine sharedEngine] stopEffect:spinFxId];
+		spinFxId = [[SimpleAudioEngine sharedEngine] playEffect:@"spin-sfx3-updated.mp3"];
+	}
 }
 
 -(void)stopLoopSpinEffect

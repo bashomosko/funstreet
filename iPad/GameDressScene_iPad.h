@@ -92,6 +92,8 @@
 	CCSprite * dino;
 	
 	int videoTaps;
+	
+	BOOL timePassedForShake;
 }
 
 @property (nonatomic,readwrite) BOOL placingElement;
