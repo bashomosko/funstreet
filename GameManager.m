@@ -7,7 +7,7 @@ static GameManager *sharedInstance = nil;
 @implementation GameManager
 
 @synthesize soundsEnabled,languageString,language,instructionsLanguage, fxVolume, musicVolume,onPause,instructionsLanguageString;
-@synthesize playedMenuVideo,playedGame1Video,playedGame2Video;
+@synthesize playedMenuVideo,playedGame1Video,playedGame2Video,musicAudioEnabled;
 
 + (GameManager *)sharedGameManager
 {
@@ -63,6 +63,7 @@ static GameManager *sharedInstance = nil;
 		[super init];	
 		
 		soundsEnabled = YES;
+        musicAudioEnabled = YES;
 		languageString = [[NSMutableString alloc] initWithCapacity:10];
 		instructionsLanguageString = [[NSMutableString alloc] initWithCapacity:10];
 		
@@ -118,12 +119,15 @@ static GameManager *sharedInstance = nil;
 
 -(void)turnSounds
 {
-	soundsEnabled = !soundsEnabled;
-	if (soundsEnabled) {
-		[[SimpleAudioEngine sharedEngine] setMute:NO];
-	}else {
-		[[SimpleAudioEngine sharedEngine] setMute:YES];
+	//soundsEnabled = !soundsEnabled;
+    musicAudioEnabled = !musicAudioEnabled;
+	if (musicAudioEnabled) {
+		//[[SimpleAudioEngine sharedEngine] setMute:NO];
+        [[SimpleAudioEngine sharedEngine] resumeBackgroundMusic];
 	}
+    else {
+        [[SimpleAudioEngine sharedEngine] pauseBackgroundMusic];
+    }
 
 }
 

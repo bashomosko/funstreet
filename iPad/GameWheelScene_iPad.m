@@ -50,6 +50,7 @@
 		if( (self=[super init] )) {
 			
 			points = 0;
+            [GameManager sharedGameManager].musicAudioEnabled = YES;
 			[[SimpleAudioEngine sharedEngine] playBackgroundMusic:@"backgroundMusicAnimales.mp3"];
 			
 			[self loadDeviceType];

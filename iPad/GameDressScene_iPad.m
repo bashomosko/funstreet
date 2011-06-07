@@ -15,20 +15,20 @@
 
 @synthesize placingElement,colorNeeded,itemNeeded,bashoDirected,dino;
 
-+(id) sceneWithDressVC:(GameDress_iPad *)vc bashoDirected:(BOOL)_bashoDirected playVid:(BOOL)playVid
++(id) sceneWithDressVC:(GameDress_iPad *)vc bashoDirected:(BOOL)_bashoDirected playVid:(BOOL)playVid playingAgain:(BOOL)_playingAgain
 {
     CCScene *scene = [CCScene node];
-    GameDressScene_iPad *layer = [GameDressScene_iPad nodeWithDressVC:vc bashoDirected:_bashoDirected playVid:playVid];
+    GameDressScene_iPad *layer = [GameDressScene_iPad nodeWithDressVC:vc bashoDirected:_bashoDirected playVid:playVid playingAgain:_playingAgain];
     [scene addChild: layer];
     return scene;
 }
 
-+(id) nodeWithDressVC:(GameDress_iPad *)vc bashoDirected:(BOOL)_bashoDirected playVid:(BOOL)playVid
++(id) nodeWithDressVC:(GameDress_iPad *)vc bashoDirected:(BOOL)_bashoDirected playVid:(BOOL)playVid playingAgain:(BOOL)_playingAgain
 {
-	return [[[self alloc] initWithDressVC:vc bashoDirected:_bashoDirected playVid:playVid] autorelease];
+	return [[[self alloc] initWithDressVC:vc bashoDirected:_bashoDirected playVid:playVid playingAgain:_playingAgain] autorelease];
 }
 
--(id) initWithDressVC:(GameDress_iPad *)vc bashoDirected:(BOOL)_bashoDirected playVid:(BOOL)playVid
+-(id) initWithDressVC:(GameDress_iPad *)vc bashoDirected:(BOOL)_bashoDirected playVid:(BOOL)playVid playingAgain:(BOOL)_playingAgain
 {
 	if( (self=[super init] )) {
 		self.isTouchEnabled = YES;
@@ -37,7 +37,14 @@
 		bashoDirected = _bashoDirected;
 		viewController = vc;
 		
-        [[SimpleAudioEngine sharedEngine] playBackgroundMusic:@"backgroundMusicDress.mp3"];
+        if ([GameManager sharedGameManager].musicAudioEnabled) {
+            if (_playingAgain) {
+                [[SimpleAudioEngine sharedEngine] resumeBackgroundMusic];
+            }
+            else {
+                [[SimpleAudioEngine sharedEngine] playBackgroundMusic:@"backgroundMusicDress.mp3"];
+            }
+        }
         
 		//[self beginGame];
 		if(![GameManager sharedGameManager].playedGame2Video)
@@ -221,6 +228,10 @@
     
     if (bashoDirected) {
         [basho setSelectedIndex:1];
+    }
+    
+    if (![GameManager sharedGameManager].musicAudioEnabled) {
+        [sound setSelectedIndex:1];
     }
 	
 	CCMenu * menu = [CCMenu menuWithItems:backBtn,sound,basho,settingsBtn, nil];
@@ -646,6 +657,7 @@
 	[[CCSpriteFrameCache sharedSpriteFrameCache] removeSpriteFramesFromFile:@"dress_iPad.plist"];
 	[[CCSpriteFrameCache sharedSpriteFrameCache] removeUnusedSpriteFrames];
     [[SimpleAudioEngine sharedEngine] stopBackgroundMusic];
+    [GameManager sharedGameManager].musicAudioEnabled = YES;
 	[viewController goToMenu];
 }
 

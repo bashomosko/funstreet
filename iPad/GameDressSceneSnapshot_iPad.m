@@ -36,7 +36,9 @@
         
         bashoDirected = _bashoDirected;
 		
-		[[SimpleAudioEngine sharedEngine] resumeBackgroundMusic];
+        if ([GameManager sharedGameManager].musicAudioEnabled) {
+            [[SimpleAudioEngine sharedEngine] resumeBackgroundMusic];
+        }
 		
 		viewController = vc;
 		
@@ -82,7 +84,7 @@
 -(void)moveOut
 {
 	moveOutActivated = NO;
-	[[CCDirector sharedDirector] replaceScene:[CCTransitionFade transitionWithDuration:0.5 scene: [GameDressScene_iPad sceneWithDressVC:viewController bashoDirected:bashoDirected playVid:NO] withColor:ccWHITE]];
+	[[CCDirector sharedDirector] replaceScene:[CCTransitionFade transitionWithDuration:0.5 scene: [GameDressScene_iPad sceneWithDressVC:viewController bashoDirected:bashoDirected playVid:NO playingAgain:YES] withColor:ccWHITE]];
 
 }
 

@@ -14,9 +14,11 @@
 	BOOL playedMenuVideo;
 	BOOL playedGame1Video;
 	BOOL playedGame2Video;
+    BOOL musicAudioEnabled;
 }
 
 @property (nonatomic,readwrite) BOOL soundsEnabled;
+@property (nonatomic,readwrite) BOOL musicAudioEnabled;
 @property (nonatomic,readwrite) int language;
 @property (nonatomic,readwrite) int instructionsLanguage;
 @property (nonatomic,readwrite) int fxVolume;

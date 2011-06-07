@@ -562,7 +562,8 @@
 
 -(void)goBack
 {
-	if([GameManager sharedGameManager].onPause) return; 
+	if([GameManager sharedGameManager].onPause) return;
+    [GameManager sharedGameManager].musicAudioEnabled = YES;
 	[viewController goToMenu];
 }
 
