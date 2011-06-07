@@ -15,25 +15,26 @@
 @implementation GameDressSceneSnapshot_iPad
 
 
-+(id) sceneWithDressVC:(GameDress_iPad *)vc dinoImage:(UIImage *)img
++(id) sceneWithDressVC:(GameDress_iPad *)vc dinoImage:(UIImage *)img bashoDirected:(BOOL)_bashoDirected
 {
     CCScene *scene = [CCScene node];
-    GameDressSceneSnapshot_iPad *layer = [GameDressSceneSnapshot_iPad nodeWithDressVC:vc dinoImage:img];
+    GameDressSceneSnapshot_iPad *layer = [GameDressSceneSnapshot_iPad nodeWithDressVC:vc dinoImage:img bashoDirected:_bashoDirected];
     [scene addChild: layer];
     return scene;
 }
 
-+(id) nodeWithDressVC:(GameDress_iPad *)vc dinoImage:(UIImage *)img
++(id) nodeWithDressVC:(GameDress_iPad *)vc dinoImage:(UIImage *)img bashoDirected:(BOOL)_bashoDirected
 {
-	return [[[self alloc] initWithDressVC:vc dinoImage:img] autorelease];
+	return [[[self alloc] initWithDressVC:vc dinoImage:img bashoDirected:_bashoDirected] autorelease];
 }
 
--(id) initWithDressVC:(GameDress_iPad *)vc dinoImage:(UIImage *)img
+-(id) initWithDressVC:(GameDress_iPad *)vc dinoImage:(UIImage *)img bashoDirected:(BOOL)_bashoDirected
 {
 	if( (self=[super init] )) {
 		self.isTouchEnabled = YES;
 		self.isAccelerometerEnabled = YES;
-
+        
+        bashoDirected = _bashoDirected;
 		
 		[[SimpleAudioEngine sharedEngine] resumeBackgroundMusic];
 		
@@ -81,7 +82,7 @@
 -(void)moveOut
 {
 	moveOutActivated = NO;
-	[[CCDirector sharedDirector] replaceScene:[CCTransitionFade transitionWithDuration:0.5 scene: [GameDressScene_iPad sceneWithDressVC:viewController bashoDirected:NO playVid:NO] withColor:ccWHITE]];
+	[[CCDirector sharedDirector] replaceScene:[CCTransitionFade transitionWithDuration:0.5 scene: [GameDressScene_iPad sceneWithDressVC:viewController bashoDirected:bashoDirected playVid:NO] withColor:ccWHITE]];
 
 }
 

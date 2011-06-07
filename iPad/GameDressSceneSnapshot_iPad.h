@@ -14,6 +14,7 @@
 
 	GameDress_iPad * viewController;
 	BOOL moveOutActivated;
+    BOOL bashoDirected;
 }
 
 @end
