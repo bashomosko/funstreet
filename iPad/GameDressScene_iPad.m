@@ -218,7 +218,10 @@
 	CCMenuItemImage * bashoOff = [CCMenuItemImage itemFromNormalImage:@"wheel_basho_off_iPad.png" selectedImage:@"wheel_basho_on_iPad.png"];
 	CCMenuItemImage * bashoOn = [CCMenuItemImage itemFromNormalImage:@"wheel_basho_on_iPad.png" selectedImage:@"wheel_basho_off_iPad.png"];
 	CCMenuItemToggle * basho = [CCMenuItemToggle itemWithTarget:self selector:@selector(turnBasho) items:bashoOff,bashoOn,nil];
-	
+    
+    if (bashoDirected) {
+        [basho setSelectedIndex:1];
+    }
 	
 	CCMenu * menu = [CCMenu menuWithItems:backBtn,sound,basho,settingsBtn, nil];
 	[self addChild:menu];
