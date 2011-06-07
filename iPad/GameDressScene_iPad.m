@@ -13,7 +13,7 @@
 
 @implementation GameDressScene_iPad
 
-@synthesize placingElement,colorNeeded,itemNeeded,bashoDirected;
+@synthesize placingElement,colorNeeded,itemNeeded,bashoDirected,dino;
 
 +(id) sceneWithDressVC:(GameDress_iPad *)vc bashoDirected:(BOOL)_bashoDirected playVid:(BOOL)playVid
 {

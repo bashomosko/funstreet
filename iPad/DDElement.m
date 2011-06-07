@@ -131,8 +131,10 @@
 	location = [[CCDirector sharedDirector] convertToGL: location];
 	
 	if(!(dropPoint.x == 0 && dropPoint.y == 0))
-	{
-		if(ccpDistance(mySprite.position,dropPoint) < 100 &&( !theGame.bashoDirected || ([itemNumber isEqualToString:theGame.itemNeeded] && [colorNumber isEqualToString:theGame.colorNeeded])))
+	{   
+        CGRect dino = CGRectMake(312, 134, 400, 500);
+        
+		if(/*ccpDistance(mySprite.position,dropPoint) < 100*/ CGRectIntersectsRect([mySprite boundingBox],dino) &&( !theGame.bashoDirected || ([itemNumber isEqualToString:theGame.itemNeeded] && [colorNumber isEqualToString:theGame.colorNeeded])))
 		{
 			mySprite.position = dropPoint;
 			//theGame.elementsPlaced++;

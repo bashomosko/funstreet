@@ -100,6 +100,7 @@
 @property (nonatomic,readwrite) BOOL bashoDirected;
 @property (nonatomic,retain) NSString * itemNeeded;
 @property (nonatomic,retain) NSString * colorNeeded;
+@property (nonatomic,retain) CCSprite * dino;
 
 static BOOL AccelerationIsShaking(UIAcceleration* last, UIAcceleration* current, double threshold) ;
 
