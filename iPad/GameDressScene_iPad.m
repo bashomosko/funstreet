@@ -37,6 +37,8 @@
 		bashoDirected = _bashoDirected;
 		viewController = vc;
 		
+        [[SimpleAudioEngine sharedEngine] playBackgroundMusic:@"backgroundMusicDress.mp3"];
+        
 		//[self beginGame];
 		if(![GameManager sharedGameManager].playedGame2Video)
 		{
@@ -640,6 +642,7 @@
 {
 	[[CCSpriteFrameCache sharedSpriteFrameCache] removeSpriteFramesFromFile:@"dress_iPad.plist"];
 	[[CCSpriteFrameCache sharedSpriteFrameCache] removeUnusedSpriteFrames];
+    [[SimpleAudioEngine sharedEngine] stopBackgroundMusic];
 	[viewController goToMenu];
 }
 

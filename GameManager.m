@@ -81,7 +81,7 @@ static GameManager *sharedInstance = nil;
 		}else
 		{
 			[ud setObject:[NSNumber numberWithBool:YES] forKey:@"alreadyPlayed"];
-			[self setLanguage:0];
+			[self setLanguage:1];
 			[self setInstructionsLanguage:0];
 			[self setMusicVolume:1];
 			[self setFxVolume:1];
