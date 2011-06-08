@@ -97,6 +97,7 @@
 		[introVideo release];
         
         [[SimpleAudioEngine sharedEngine] resumeBackgroundMusic];
+        [GameManager sharedGameManager].onPause = NO;
         
         if(videoFromLoadingScene)
         {
@@ -121,7 +122,7 @@
 	[introVideo release];
     
     [[SimpleAudioEngine sharedEngine] resumeBackgroundMusic];
-    
+    [GameManager sharedGameManager].onPause = NO;
     if(videoFromLoadingScene)
     {
         [self beginGame];

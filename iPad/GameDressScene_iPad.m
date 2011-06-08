@@ -78,7 +78,7 @@
 {
 	NSURL * url;
 	NSBundle *bundle = [NSBundle mainBundle];
-    
+    [GameManager sharedGameManager].onPause = YES;
     [[SimpleAudioEngine sharedEngine] pauseBackgroundMusic];
 	if (bundle) 
 	{

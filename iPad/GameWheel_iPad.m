@@ -154,7 +154,7 @@
 
 -(void)removeSettings
 {
-	//[GameManager sharedGameManager].onPause = NO;
+	[GameManager sharedGameManager].onPause = NO;
 	[sv.view removeFromSuperview];
 	[sv release];
     

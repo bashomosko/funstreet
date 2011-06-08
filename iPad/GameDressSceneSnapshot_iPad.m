@@ -43,10 +43,14 @@
 		viewController = vc;
 		
 		moveOutActivated = NO;
-		
+		        
+        [CCTexture2D setDefaultAlphaPixelFormat:kCCTexture2DPixelFormat_RGBA8888];
+
 		CCSprite* background = [CCSprite spriteWithFile:@"snapshot_background_iPad.png"];
 		[self addChild:background];
 		[background setPosition:ccp(512,384)];
+        
+        [CCTexture2D setDefaultAlphaPixelFormat:kCCTexture2DPixelFormat_RGBA4444];
 		
 		[self addDinoOnPosition:ccp(252,544) dinoImage:img num:1];
 		[self addDinoOnPosition:ccp(302,224) dinoImage:img num:2];
@@ -84,6 +88,7 @@
 -(void)moveOut
 {
 	moveOutActivated = NO;
+    [[CCSpriteFrameCache sharedSpriteFrameCache] removeUnusedSpriteFrames];
 	[[CCDirector sharedDirector] replaceScene:[CCTransitionFade transitionWithDuration:0.5 scene: [GameDressScene_iPad sceneWithDressVC:viewController bashoDirected:bashoDirected playVid:NO playingAgain:YES] withColor:ccWHITE]];
 
 }
