@@ -50,6 +50,7 @@
 -(void)loadVideo
 {
 	[GameManager sharedGameManager].onPause = YES;
+    [[SimpleAudioEngine sharedEngine] pauseBackgroundMusic];
 	NSURL * url;
 	NSBundle *bundle = [NSBundle mainBundle];
 	if (bundle) 
@@ -94,8 +95,14 @@
 		[introVideo stop];
 		[introVideo.view removeFromSuperview];
 		[introVideo release];
-		
-		[self beginGame];
+        
+        [[SimpleAudioEngine sharedEngine] resumeBackgroundMusic];
+        
+        if(videoFromLoadingScene)
+        {
+            [self beginGame];
+            videoFromLoadingScene = NO;
+        }
 	}
 }
 
@@ -112,8 +119,14 @@
 	[introVideo stop];
 	[introVideo.view removeFromSuperview];
 	[introVideo release];
-	
-	[self beginGame];
+    
+    [[SimpleAudioEngine sharedEngine] resumeBackgroundMusic];
+    
+    if(videoFromLoadingScene)
+    {
+        [self beginGame];
+        videoFromLoadingScene = NO;
+    }
 }
 
 -(void)turnSounds
@@ -579,7 +592,7 @@
 	UITouch *touch = [touches anyObject];
     CGPoint location = [touch locationInView: [touch view]];
     location = [[CCDirector sharedDirector] convertToGL: location];	
-	
+    
 	canDragDino = YES;
 	//if (bashoDirected) return;
     if(dinoSpinning)

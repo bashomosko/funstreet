@@ -14,26 +14,30 @@
 @synthesize closeBtn,rootVC,language,instructionLanguage,fxVolume,musicVolume;
 
  // The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
-/*
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
+
+/*- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        // Custom initialization.
+        
+       
+
     }
     return self;
-}
-*/
+}*/
+
 
 
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
-	
-	GameManager * gm = [GameManager sharedGameManager];
-	[language setSelectedSegmentIndex:gm.language];
-	[instructionLanguage setSelectedSegmentIndex:gm.instructionsLanguage];
-	[fxVolume setSelectedSegmentIndex:gm.fxVolume];
-	[musicVolume setSelectedSegmentIndex:gm.musicVolume];
-	
+    
+    GameManager * gm = [GameManager sharedGameManager];
+
+     originalLanguageSelected = gm.instructionsLanguage;
+     [language setSelectedSegmentIndex:gm.language];
+     [instructionLanguage setSelectedSegmentIndex:gm.instructionsLanguage];
+     [fxVolume setSelectedSegmentIndex:gm.fxVolume];
+     [musicVolume setSelectedSegmentIndex:gm.musicVolume];
+    
     [super viewDidLoad];
 }
 
@@ -41,33 +45,40 @@
 
 -(IBAction) closeView
 {
+    GameManager * gm = [GameManager sharedGameManager];
+
+    if(originalLanguageSelected != gm.instructionsLanguage)
+    {
+
+        [gm setPlayedMenuVideo:NO];
+        [gm setPlayedGame1Video:NO];
+        [gm setPlayedGame2Video:NO];
+    }
 	[rootVC removeSettings];
+    
 }
 
 
 -(IBAction) changeLanguage:(UISegmentedControl *)sender
-{
+{  
 	GameManager * gm = [GameManager sharedGameManager];
 	[gm setLanguage:sender.selectedSegmentIndex];
 }
 
 -(IBAction) changeinstructionLanguage:(UISegmentedControl *)sender
-{
-	GameManager * gm = [GameManager sharedGameManager];
-	[gm setPlayedMenuVideo:NO];
-	[gm setPlayedGame1Video:NO];
-	[gm setPlayedGame2Video:NO];
-	[gm setInstructionsLanguage:sender.selectedSegmentIndex];
+{   
+    GameManager * gm = [GameManager sharedGameManager];
+    [gm setInstructionsLanguage:sender.selectedSegmentIndex];
 }
 
 -(IBAction) changeFxVolume:(UISegmentedControl *)sender
-{
+{   
 	GameManager * gm = [GameManager sharedGameManager];
 	[gm setFxVolume:sender.selectedSegmentIndex];
 }
 
 -(IBAction) changeMusicVolume:(UISegmentedControl *)sender
-{
+{   
 	GameManager * gm = [GameManager sharedGameManager];
 	[gm setMusicVolume:sender.selectedSegmentIndex];
 }

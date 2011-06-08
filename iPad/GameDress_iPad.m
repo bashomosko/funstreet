@@ -10,7 +10,7 @@
 #import "cocos2d.h"
 #import "AppDelegate_iPad.h"
 #import "MainMenu_iPad.h"
-#import "GameDressScene_iPad.h"
+#import "SimpleAudioEngine.h"
 #import "GameManager.h"
 
 @implementation GameDress_iPad
@@ -67,7 +67,9 @@
 	//[self removeStartupFlicker];
 	
 	// Run the intro Scene
-	[[CCDirector sharedDirector] runWithScene: [GameDressScene_iPad sceneWithDressVC:self bashoDirected:NO playVid:YES playingAgain:NO]];	
+    GameDressScene_iPad * gameDressScene = [GameDressScene_iPad sceneWithDressVC:self bashoDirected:NO playVid:YES playingAgain:NO];
+    gameDressLayer = [gameDressScene getChildByTag:1000];
+	[[CCDirector sharedDirector] runWithScene:gameDressScene];	
 }
 
 - (void) removeStartupFlicker
@@ -149,9 +151,15 @@
 
 -(void)removeSettings
 {
-	[GameManager sharedGameManager].onPause = NO;
+	//[GameManager sharedGameManager].onPause = NO;
 	[sv.view removeFromSuperview];
 	[sv release];
+    
+    if(![GameManager sharedGameManager].playedGame2Video)
+    {
+        [[GameManager sharedGameManager] setPlayedGame2Video:YES];
+        [gameDressLayer loadVideo];
+    }
 }
 
 // Override to allow orientations other than the default portrait orientation.

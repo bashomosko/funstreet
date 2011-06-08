@@ -51,9 +51,11 @@
 
 
 -(void)playVideo
-{
+{   
 	NSURL * url;
 	NSBundle *bundle = [NSBundle mainBundle];
+    
+    [[SimpleAudioEngine sharedEngine] pauseBackgroundMusic];
 	if (bundle) 
 	{
 		NSString *moviePath = [bundle pathForResource:[NSString stringWithFormat:@"menu_%@_iPad",[GameManager sharedGameManager].instructionsLanguageString] ofType:@"mov"];
@@ -97,7 +99,12 @@
 		[introVideo release];
 		
 		[[SimpleAudioEngine sharedEngine] playBackgroundMusic:@"backgroundMusic.mp3"];
-		[self animateDoors];
+        
+        if(videoFromLoadingScene)
+        {
+            videoFromLoadingScene = NO;
+        }
+        [self animateDoors];
 	}
 }
 
@@ -115,7 +122,11 @@
 	[introVideo release];
 	
 	 [[SimpleAudioEngine sharedEngine] playBackgroundMusic:@"backgroundMusic.mp3"];
-	 [self animateDoors];
+    if(videoFromLoadingScene)
+    {
+        videoFromLoadingScene = NO;
+    }
+    [self animateDoors];
 	//[self beginGame];
 }
 

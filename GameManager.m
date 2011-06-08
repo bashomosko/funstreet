@@ -99,22 +99,22 @@ static GameManager *sharedInstance = nil;
 -(void)setPlayedMenuVideo:(BOOL)played
 {
 	playedMenuVideo = played;
-	NSUserDefaults * ud = [NSUserDefaults standardUserDefaults];
-	[ud setObject:[NSNumber numberWithBool:playedMenuVideo] forKey:@"playedMenuVideo"];
+	//NSUserDefaults * ud = [NSUserDefaults standardUserDefaults];
+	//[ud setObject:[NSNumber numberWithBool:playedMenuVideo] forKey:@"playedMenuVideo"];
 }
 
 -(void)setPlayedGame1Video:(BOOL)played
 {
 	playedGame1Video = played;
-	NSUserDefaults * ud = [NSUserDefaults standardUserDefaults];
-	[ud setObject:[NSNumber numberWithBool:playedGame1Video] forKey:@"playedGame1Video"];
+	//NSUserDefaults * ud = [NSUserDefaults standardUserDefaults];
+	//[ud setObject:[NSNumber numberWithBool:playedGame1Video] forKey:@"playedGame1Video"];
 }
 
 -(void)setPlayedGame2Video:(BOOL)played
 {
 	playedGame2Video = played;
-	NSUserDefaults * ud = [NSUserDefaults standardUserDefaults];
-	[ud setObject:[NSNumber numberWithBool:playedGame2Video] forKey:@"playedGame2Video"];
+	//NSUserDefaults * ud = [NSUserDefaults standardUserDefaults];
+	//[ud setObject:[NSNumber numberWithBool:playedGame2Video] forKey:@"playedGame2Video"];
 }
 
 -(void)turnSounds

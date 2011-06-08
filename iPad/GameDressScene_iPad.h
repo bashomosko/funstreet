@@ -64,6 +64,8 @@
 #define kPALABRA 1000
 #define kPALABRABCK 999
 
+@class GameDress_iPad;
+
 @interface GameDressScene_iPad : CCLayer
 {
 	int bashoSelectedSound;
@@ -94,6 +96,8 @@
 	int videoTaps;
 	
 	BOOL timePassedForShake;
+    
+    BOOL videoFromLoadingScene;
 }
 
 @property (nonatomic,readwrite) BOOL placingElement;

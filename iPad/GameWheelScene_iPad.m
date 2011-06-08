@@ -32,7 +32,7 @@
 {
     CCScene *scene = [CCScene node];
     GameWheelScene_iPad *layer = [GameWheelScene_iPad nodeWithWheelVC:vc];
-    [scene addChild: layer];
+    [scene addChild: layer z:1 tag:1000];
     return scene;
 }
 
@@ -61,6 +61,7 @@
 			if(![GameManager sharedGameManager].playedGame1Video)
 			{
 				[[GameManager sharedGameManager] setPlayedGame1Video:YES];
+                 videoFromLoadingScene = YES;
 				[self loadVideo];
 			}else
 				[self beginGame];
@@ -78,10 +79,12 @@
 	
 	bashoDirected = NO;
 	
+    [CCTexture2D setDefaultAlphaPixelFormat:kCCTexture2DPixelFormat_RGB565];
 	CCSprite * back = [CCSprite spriteWithFile:@"wheel_background_iPad.png"];
 	[back setPosition:ccp(512,384)];
 	[self addChild:back];
 	
+    [CCTexture2D setDefaultAlphaPixelFormat:kCCTexture2DPixelFormat_RGBA4444];
 	
 	leverImg = [CCSprite spriteWithFile:@"lever_iPad.png"];
 	[self addChild:leverImg];
@@ -94,10 +97,11 @@
 	leverBtn.opacity = 0;
 	[leverBtn setPosition:ccp(860,620)];
 	
+    [CCTexture2D setDefaultAlphaPixelFormat:kCCTexture2DPixelFormat_RGBA8888];
 	CCSprite * wheelwheel = [CCSprite spriteWithFile:@"wheel_wheel_iPad.png"];
 	[wheelwheel setPosition:ccp(512,384)];
 	[self addChild:wheelwheel];
-	
+	[CCTexture2D setDefaultAlphaPixelFormat:kCCTexture2DPixelFormat_RGBA4444];
 	dino = [CCSprite spriteWithFile:@"wheel_dino_iPad.png"];
 	[dino setPosition:ccp(460,384)];
 	[self addChild:dino];

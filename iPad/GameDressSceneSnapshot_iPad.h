@@ -10,6 +10,8 @@
 #import "cocos2d.h"
 #import "GameDress_iPad.h"
 
+@class GameDress_iPad;
+
 @interface GameDressSceneSnapshot_iPad : CCLayer {
 
 	GameDress_iPad * viewController;

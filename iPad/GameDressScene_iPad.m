@@ -19,7 +19,7 @@
 {
     CCScene *scene = [CCScene node];
     GameDressScene_iPad *layer = [GameDressScene_iPad nodeWithDressVC:vc bashoDirected:_bashoDirected playVid:playVid playingAgain:_playingAgain];
-    [scene addChild: layer];
+    [scene addChild: layer z:1 tag:1000];
     return scene;
 }
 
@@ -50,6 +50,7 @@
 		if(![GameManager sharedGameManager].playedGame2Video)
 		{
 			[[GameManager sharedGameManager] setPlayedGame2Video:YES];
+            videoFromLoadingScene = YES;
 			[self loadVideo];
 		}
 		else
@@ -77,6 +78,8 @@
 {
 	NSURL * url;
 	NSBundle *bundle = [NSBundle mainBundle];
+    
+    [[SimpleAudioEngine sharedEngine] pauseBackgroundMusic];
 	if (bundle) 
 	{
 		NSString *moviePath = [bundle pathForResource:[NSString stringWithFormat:@"intro_2_%@_iPad",[GameManager sharedGameManager].instructionsLanguageString] ofType:@"mov"];
@@ -120,7 +123,13 @@
 		[introVideo.view removeFromSuperview];
 		[introVideo release];
 	
-		[self beginGame];
+        [GameManager sharedGameManager].onPause = NO;
+        [[SimpleAudioEngine sharedEngine] resumeBackgroundMusic];
+        if(videoFromLoadingScene)
+        {
+            [self beginGame];
+            videoFromLoadingScene = NO;
+        }
 	}
 }
 
@@ -137,7 +146,13 @@
 	[introVideo.view removeFromSuperview];
 	[introVideo release];
 	
-	[self beginGame];
+    [GameManager sharedGameManager].onPause = NO;
+    [[SimpleAudioEngine sharedEngine] resumeBackgroundMusic];
+    if(videoFromLoadingScene)
+    {
+        [self beginGame];
+        videoFromLoadingScene = NO;
+    }
 }
 
 

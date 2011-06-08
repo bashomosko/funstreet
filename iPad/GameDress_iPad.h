@@ -9,10 +9,14 @@
 #import <UIKit/UIKit.h>
 
 #import "SettingsViewController_iPad.h"
+#import "GameDressScene_iPad.h"
+
+@class GameDressScene_iPad;
 
 @interface GameDress_iPad : UIViewController {
 
-		SettingsViewController_iPad * sv;
+    GameDressScene_iPad * gameDressLayer;
+    SettingsViewController_iPad * sv;
 }
 
 @end

@@ -67,7 +67,10 @@
 	//[self removeStartupFlicker];
 	
 	// Run the intro Scene
-	[[CCDirector sharedDirector] runWithScene: [GameWheelScene_iPad sceneWithWheelVC:self]];	
+    GameWheelScene_iPad * gameWheelScene = [GameWheelScene_iPad sceneWithWheelVC:self];
+    gameWheelLayer = [gameWheelScene getChildByTag:1000];
+	
+	[[CCDirector sharedDirector] runWithScene:gameWheelScene];	
 }
 
 - (void) removeStartupFlicker
@@ -151,9 +154,16 @@
 
 -(void)removeSettings
 {
-	[GameManager sharedGameManager].onPause = NO;
+	//[GameManager sharedGameManager].onPause = NO;
 	[sv.view removeFromSuperview];
 	[sv release];
+    
+    if(![GameManager sharedGameManager].playedGame1Video)
+    {
+        [[GameManager sharedGameManager] setPlayedGame1Video:YES];
+        [gameWheelLayer loadVideo];
+    }
+
 }
 
 // Override to allow orientations other than the default portrait orientation.

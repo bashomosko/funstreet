@@ -110,6 +110,12 @@
 	[GameManager sharedGameManager].onPause = NO;
 	[sv.view removeFromSuperview];
 	[sv release];
+    
+    if(![GameManager sharedGameManager].playedMenuVideo)
+    {
+        [[GameManager sharedGameManager] setPlayedMenuVideo:YES];
+        [self playVideo];
+    }
 }
 
 - (void)didReceiveMemoryWarning {

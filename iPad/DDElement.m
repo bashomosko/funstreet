@@ -98,6 +98,7 @@
 	if ( ![self containsTouchLocation:touch]) return NO;
 	if(placed && !movableAfterPlaced) return NO;
 	if(theGame.placingElement) return NO;
+    if([GameManager sharedGameManager].onPause) return NO;
 	
 	//if(placed && movableAfterPlaced)
 	//	theGame.elementsPlaced--;

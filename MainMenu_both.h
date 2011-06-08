@@ -22,6 +22,8 @@
 	MPMoviePlayerController * introVideo;
 
 	int videoTaps;
+    
+    BOOL videoFromLoadingScene;
 }
 
 @property (nonatomic,retain) IBOutlet UIButton * btnSong;
@@ -37,5 +39,6 @@
 -(IBAction) goToDress:(id)sender;
 -(IBAction) goToVideo:(id)sender;
 -(IBAction) goToSettings;
+-(void)playVideo;
 
 @end

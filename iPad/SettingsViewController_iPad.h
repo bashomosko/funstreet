@@ -17,6 +17,7 @@
 	IBOutlet UISegmentedControl * instructionLanguage;
 	IBOutlet UISegmentedControl * fxVolume;
 	IBOutlet UISegmentedControl * musicVolume;
+    int originalLanguageSelected;
 }
 
 
