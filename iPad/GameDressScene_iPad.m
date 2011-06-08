@@ -211,7 +211,7 @@
 	[boxers setPosition:ccp(512,384)];
 	
 	CCSprite * shirt = [CCSprite spriteWithSpriteFrameName:@"dress_shirt_iPad.png"];
-	[sbn addChild:shirt];
+	[sbn addChild:shirt z:3];
 	[shirt setPosition:ccp(512,384)];
 	
 	CCMenuItemImage * backBtn = [CCMenuItemImage itemFromNormalImage:@"wheel_home_iPad.png" selectedImage:@"wheel_home_iPad.png" target:self selector:@selector(goBack)];
@@ -389,7 +389,7 @@
 {
 	bashoDirected = !bashoDirected;
 	
-	[[CCDirector sharedDirector] replaceScene:[CCTransitionFade transitionWithDuration:0.5 scene: [GameDressScene_iPad sceneWithDressVC:viewController bashoDirected:bashoDirected playVid:NO] withColor:ccWHITE]];
+	[[CCDirector sharedDirector] replaceScene:[CCTransitionFade transitionWithDuration:0.5 scene: [GameDressScene_iPad sceneWithDressVC:viewController bashoDirected:bashoDirected playVid:NO playingAgain:NO] withColor:ccWHITE]];
 	
 }
 
@@ -617,10 +617,13 @@
 		
 		switch (item) {
 			case BTN_BOOTS_NUM:
+				[elem setObject:[NSNumber numberWithInt:1] forKey:@"desiredZ"];
+				break;
+            case BTN_PANTS_NUM:
 				[elem setObject:[NSNumber numberWithInt:2] forKey:@"desiredZ"];
 				break;
 			default:
-				[elem setObject:[NSNumber numberWithInt:3] forKey:@"desiredZ"];
+				[elem setObject:[NSNumber numberWithInt:4] forKey:@"desiredZ"];
 				break;
 		}
 		
