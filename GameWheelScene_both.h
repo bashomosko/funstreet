@@ -127,6 +127,8 @@
 	int videoTaps;
 	int spinFxId;
     BOOL videoFromLoadingScene;
+    
+    BOOL isAnsweredbyButton;
 }
 
 @end

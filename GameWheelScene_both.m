@@ -341,6 +341,10 @@
 			if([GameManager sharedGameManager].soundsEnabled)
 			{
 				[[SimpleAudioEngine sharedEngine] playEffect:@"WrongAnswer.mp3"];
+                if (isAnsweredbyButton) {
+                    isAnsweredbyButton = NO;
+                    [self performSelector:@selector(selectItemForBashoAlreadySelected) withObject:nil afterDelay:2];
+                }
 				//[[SimpleAudioEngine sharedEngine] playEffect:bashoDirectedWrongSound];
 			}
 			dinoSpinning = NO;
@@ -463,6 +467,7 @@
 		stopWhenRotationReached = YES;
 		//forceApplied = 0;
 	}else {
+        isAnsweredbyButton = YES;
 		[self listenSound:[tapButtons getChildByTag:selectedSound] withWord:NO];
 	}
 
