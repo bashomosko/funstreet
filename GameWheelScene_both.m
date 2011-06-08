@@ -912,7 +912,7 @@
 	[self playLoopSpinEffect];
 	[self schedule:@selector(playLoopSpinEffect) interval:8];
 
-	forceApplied = 6000;
+	forceApplied = 14000;
 	friction = 0;
 }
 
