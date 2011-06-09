@@ -697,7 +697,7 @@
 	if(timePassedForShake)
 	{
 		timePassedForShake = NO;
-		[[CCDirector sharedDirector] replaceScene:[CCTransitionFade transitionWithDuration:0.5 scene: [GameDressScene_iPad sceneWithDressVC:viewController bashoDirected:bashoDirected playVid:NO] withColor:ccWHITE]];
+		[[CCDirector sharedDirector] replaceScene:[CCTransitionFade transitionWithDuration:0.5 scene: [GameDressScene_iPad sceneWithDressVC:viewController bashoDirected:bashoDirected playVid:NO playingAgain:NO] withColor:ccWHITE]];
 	}
 }
 

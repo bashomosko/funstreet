@@ -30,23 +30,31 @@
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
 	
-	UIButton * skip = [UIButton buttonWithType:UIButtonTypeCustom];
+    UIButton * skip = [UIButton buttonWithType:UIButtonTypeCustom];
 	[skip setFrame:CGRectMake(0,0,106,106)];
 	[skip setImage:[UIImage imageNamed:@"wheel_home_iPad.png"] forState:UIControlStateNormal];
 	[skip setImage:[UIImage imageNamed:@"wheel_home_iPad.png"] forState:UIControlStateHighlighted];
 	[skip addTarget:self action:@selector(goBack) forControlEvents:UIControlEventTouchUpInside];
 	[self.view addSubview:skip];
-	
+    
 	[UIView beginAnimations:nil context:nil];
 	
 	[UIView setAnimationDuration:1];
 	[UIView setAnimationDelay:1];
 	[curtainL setCenter:CGPointMake(-112, curtainL.center.y)];
 	[curtainR setCenter:CGPointMake(1136, curtainL.center.y)];
+    [self performSelector:@selector(loadGame) withObject:nil afterDelay:1.1];
 	
 	[UIView commitAnimations];
 	
-	[scrollview setContentSize:CGSizeMake(640 * 6,360)];
+    [super viewDidLoad];
+	
+	
+}
+
+-(void)loadGame
+{   
+    [scrollview setContentSize:CGSizeMake(640 * 6,360)];
 	[scrollview setShowsVerticalScrollIndicator:NO];
 	[scrollview setShowsHorizontalScrollIndicator:NO];
 	[scrollview setPagingEnabled:YES];
@@ -64,10 +72,7 @@
 	
 	scrollPaging.numberOfPages = 6;
 	scrollPaging.currentPage = 0;
-	
-    [super viewDidLoad];
-	
-	
+
 }
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView
