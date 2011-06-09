@@ -6,7 +6,7 @@
 #import "GameManager.h"
 
 @implementation DDElement
-@synthesize state,mySprite,dressed,desiredZ,itemTag,itemText,itemNumber,colorNumber;
+@synthesize state,mySprite,dressed,desiredZ,itemTag,itemText,itemNumber,colorNumber,imagePath2;
 
 -(id) initWithTheGame:(GameDress_iPad *)ddm elementDict:(NSMutableDictionary *)element
 {
@@ -16,6 +16,8 @@
 		
 		imagePath =[[element objectForKey:@"file-image"]retain];
 		dressed =[[element objectForKey:@"file-dressed"]retain];
+        
+        imagePath2 = [[element objectForKey:@"file-dressed2"] retain];
 		
 		int xr = [[[element objectForKey:@"coord-drop"] objectForKey:@"x"] intValue];
 		int yr = [[[element objectForKey:@"coord-drop"] objectForKey:@"y"] intValue];
@@ -44,7 +46,7 @@
 		
 		CCSpriteBatchNode * sbn = [theGame getChildByTag:kSPRITEBATCH_ELEMS];
 		mySprite = [CCSprite spriteWithSpriteFrameName:imagePath];
-		[sbn addChild:mySprite z:5];
+		[sbn addChild:mySprite z:9];
 		[theGame addChild:self];
 		[mySprite setPosition:initialCoord];
 		
@@ -218,6 +220,7 @@
 	[imagePath release];
 	[soundOkPath release];
 	[soundWrongPath release];
+    [imagePath2 release];
 	[super dealloc];
 }
 

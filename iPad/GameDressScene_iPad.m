@@ -158,8 +158,6 @@
 
 -(void)replay
 {
-	
-	[self unschedule:@selector(playRandomDinoAnim)];
 	[dino setVisible:YES];
 	[target begin];
 	[dino.parent removeChild:dino cleanup:YES];
@@ -167,6 +165,10 @@
 	[dino visit];
 	
 	[dressPieces exchangeObjectAtIndex:0 withObjectAtIndex:1];
+    CCSprite * backpackBack = [dressPieces lastObject];
+    [dressPieces removeLastObject];
+    [dressPieces insertObject:backpackBack atIndex:0];
+    
 	
 	for(CCSprite * piece in dressPieces)
 	{
@@ -213,20 +215,20 @@
 	[[ CCSpriteFrameCache sharedSpriteFrameCache] addSpriteFramesWithFile:@"dress_iPad.plist" textureFile:@"dress_iPad.png"];
 	
 	CCSpriteBatchNode * sbn = [CCSpriteBatchNode batchNodeWithFile:@"dress_iPad.png"];
-	[self addChild:sbn z:1 tag:kSPRITEBATCH_ELEMS];
+	[self addChild:sbn z:2 tag:kSPRITEBATCH_ELEMS];
 	
 	//[self loadScatteredElements];
 	
 	dino = [[CCSprite spriteWithSpriteFrameName:@"dress_dino_iPad.png"]retain];
-	[sbn addChild:dino z:0 tag:4190]; //DINO = 4190
+	[sbn addChild:dino z:2 tag:4190]; //DINO = 4190
 	[dino setPosition:ccp(512,384)];
 	
 	CCSprite * boxers = [CCSprite spriteWithSpriteFrameName:@"dress_boxers_iPad.png"];
-	[sbn addChild:boxers z:0 tag:kBOXERS];
+	[sbn addChild:boxers z:2 tag:kBOXERS];
 	[boxers setPosition:ccp(512,384)];
 	
 	CCSprite * shirt = [CCSprite spriteWithSpriteFrameName:@"dress_shirt_iPad.png"];
-	[sbn addChild:shirt z:3];
+	[sbn addChild:shirt z:5];
 	[shirt setPosition:ccp(512,384)];
 	
 	CCMenuItemImage * backBtn = [CCMenuItemImage itemFromNormalImage:@"wheel_home_iPad.png" selectedImage:@"wheel_home_iPad.png" target:self selector:@selector(goBack)];
@@ -344,7 +346,7 @@
 	[[ CCSpriteFrameCache sharedSpriteFrameCache] addSpriteFramesWithFile:[NSString stringWithFormat:@"RumiAnim%d_iPad.plist",animNum] textureFile:[NSString stringWithFormat:@"RumiAnim%d_iPad.png",animNum]];
 	
 	CCSpriteBatchNode * animSbn = [CCSpriteBatchNode batchNodeWithFile:[NSString stringWithFormat:@"RumiAnim%d_iPad.png",animNum]];
-	[self addChild:animSbn z:0 tag:545];
+	[self addChild:animSbn z:1 tag:545];
 	animSbn.userData = [[NSString stringWithFormat:@"RumiAnim%d_iPad.plist",animNum]retain];
 	
 	//[self loadScatteredElements];
@@ -538,8 +540,19 @@
 	CCSprite * backpack = [CCSprite spriteWithSpriteFrameName:item.dressed];
 	[sbn addChild:backpack z:item.desiredZ];
 	[backpack setPosition:ccp(512,384)];
-	
-	[dressPieces addObject:backpack];
+    
+    [dressPieces addObject:backpack];
+    
+    if (item.itemTag == BTN_BACKPACK_NUM) {
+        
+        [self unschedule:@selector(playRandomDinoAnim)];
+        
+        CCSprite * backPack2 = [CCSprite spriteWithSpriteFrameName:item.imagePath2];
+        [sbn addChild:backPack2 z:0];
+        [backPack2 setPosition:ccp(512,384)];
+        
+        [dressPieces addObject:backPack2];
+    }
 	
 }
 
@@ -632,13 +645,13 @@
 		
 		switch (item) {
 			case BTN_BOOTS_NUM:
-				[elem setObject:[NSNumber numberWithInt:1] forKey:@"desiredZ"];
+				[elem setObject:[NSNumber numberWithInt:3] forKey:@"desiredZ"];
 				break;
             case BTN_PANTS_NUM:
-				[elem setObject:[NSNumber numberWithInt:2] forKey:@"desiredZ"];
+				[elem setObject:[NSNumber numberWithInt:4] forKey:@"desiredZ"];
 				break;
 			default:
-				[elem setObject:[NSNumber numberWithInt:4] forKey:@"desiredZ"];
+				[elem setObject:[NSNumber numberWithInt:6] forKey:@"desiredZ"];
 				break;
 		}
 		

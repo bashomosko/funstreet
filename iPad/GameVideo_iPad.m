@@ -37,13 +37,15 @@
 	[skip addTarget:self action:@selector(goBack) forControlEvents:UIControlEventTouchUpInside];
 	[self.view addSubview:skip];
     
+    [scrollPaging setHidden:YES];
+    
 	[UIView beginAnimations:nil context:nil];
 	
 	[UIView setAnimationDuration:1];
 	[UIView setAnimationDelay:1];
 	[curtainL setCenter:CGPointMake(-112, curtainL.center.y)];
 	[curtainR setCenter:CGPointMake(1136, curtainL.center.y)];
-    [self performSelector:@selector(loadGame) withObject:nil afterDelay:1.1];
+    [self performSelector:@selector(loadGame) withObject:nil afterDelay:0.8];
 	
 	[UIView commitAnimations];
 	
@@ -58,6 +60,7 @@
 	[scrollview setShowsVerticalScrollIndicator:NO];
 	[scrollview setShowsHorizontalScrollIndicator:NO];
 	[scrollview setPagingEnabled:YES];
+    [scrollPaging setHidden:NO];
 	
 	for (int i =1;i<=6;i++)
 	{
@@ -83,7 +86,7 @@
 
 -(void)selectVideo:(UIButton *)btn
 {
-	[[SimpleAudioEngine sharedEngine] pauseBackgroundMusic];
+	[[SimpleAudioEngine sharedEngine] stopBackgroundMusic];
 	int videoNumber = btn.tag;
 	[self playVid:videoNumber];
 
@@ -108,7 +111,6 @@
 	[video.view setFrame:CGRectMake(0,0,1024,768)];
 	//[video.view setTransform:CGAffineTransformMakeRotation(M_PI/ 2)];
 	[video play];
-	
 	[[NSNotificationCenter defaultCenter]
 	 addObserver:self
 	 selector:@selector(videoPlayerDidFinishPlaying:)
@@ -117,14 +119,14 @@
 }
 
 -(void) videoPlayerDidFinishPlaying: (NSNotification*)aNotification
-{
+{   
 	MPMoviePlayerController * introVideo = [aNotification object];
 	[[NSNotificationCenter defaultCenter] removeObserver:self name:MPMoviePlayerPlaybackDidFinishNotification object:video];
 	[video stop];
 	[video.view removeFromSuperview];
 	[video release];
 	[[UIApplication sharedApplication] setStatusBarHidden:YES withAnimation:UIStatusBarAnimationNone];
-	[[SimpleAudioEngine sharedEngine] resumeBackgroundMusic];
+	[[SimpleAudioEngine sharedEngine] playBackgroundMusic:@"backgroundMusic.mp3"];
 }
 
 // Override to allow orientations other than the default portrait orientation.

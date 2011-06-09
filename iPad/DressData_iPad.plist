@@ -14,6 +14,8 @@
 			</dict>
 			<key>file-dressed</key>
 			<string>BlueBackpackStrapOn_iPad.png</string>
+			<key>file-dressed2</key>
+			<string>BlueBackpackOn_iPad.png</string>
 			<key>file-image</key>
 			<string>BlueBackpack_iPad.png</string>
 			<key>file-soundOk</key>
@@ -35,6 +37,8 @@
 			</dict>
 			<key>file-dressed</key>
 			<string>RedBackpackOn_iPad.png</string>
+			<key>file-dressed2</key>
+			<string>RedBackpackBehindDominoOn_iPad.png</string>
 			<key>file-image</key>
 			<string>RedBackpack_iPad.png</string>
 			<key>file-soundOk</key>
@@ -56,6 +60,8 @@
 			</dict>
 			<key>file-dressed</key>
 			<string>PurpleBackpackOn_iPad.png</string>
+			<key>file-dressed2</key>
+			<string>PurpleBackpackBehindDominoOn_iPad.png</string>
 			<key>file-image</key>
 			<string>PurpleBackpack_iPad.png</string>
 			<key>file-soundOk</key>
@@ -77,6 +83,8 @@
 			</dict>
 			<key>file-dressed</key>
 			<string>YellowBackpackOn_iPad.png</string>
+			<key>file-dressed2</key>
+			<string>YellowBackpackBehindDominoOn_iPad.png</string>
 			<key>file-image</key>
 			<string>YellowBackpack_iPad.png</string>
 			<key>file-soundOk</key>
