@@ -180,8 +180,6 @@
     
     [shirt setVisible:YES];
     [shirt.parent removeChild:shirt cleanup:YES];
-    //[self addChild:shirt];
-    //[shirt visit];
     
     int piecePlace = 0;
     
