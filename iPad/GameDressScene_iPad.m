@@ -13,7 +13,7 @@
 
 @implementation GameDressScene_iPad
 
-@synthesize placingElement,colorNeeded,itemNeeded,bashoDirected,dino,isBackBagSet;
+@synthesize placingElement,colorNeeded,itemNeeded,bashoDirected,dino,isBackBagSet,shirt;
 
 +(id) sceneWithDressVC:(GameDress_iPad *)vc bashoDirected:(BOOL)_bashoDirected playVid:(BOOL)playVid playingAgain:(BOOL)_playingAgain
 {
@@ -159,25 +159,48 @@
 
 
 -(void)replay
-{
-	[dino setVisible:YES];
-	[target begin];
-	[dino.parent removeChild:dino cleanup:YES];
-	[self addChild:dino];
-	[dino visit];
-	
+{	
 	[dressPieces exchangeObjectAtIndex:0 withObjectAtIndex:1];
     CCSprite * backpackBack = [dressPieces lastObject];
     [dressPieces removeLastObject];
     [dressPieces insertObject:backpackBack atIndex:0];
     
+    [target begin];
+
+    CCSprite * bag = [dressPieces objectAtIndex:0];
+    [bag.parent removeChild:bag cleanup:YES];
+    [self addChild:bag];
+    [bag visit];
+    [dressPieces removeObjectAtIndex:0];
+      
+    [dino setVisible:YES];
+    [dino.parent removeChild:dino cleanup:YES];
+	[self addChild:dino];
+	[dino visit];
+    
+    [shirt setVisible:YES];
+    [shirt.parent removeChild:shirt cleanup:YES];
+    //[self addChild:shirt];
+    //[shirt visit];
+    
+    int piecePlace = 0;
+    
 	for(CCSprite * piece in dressPieces)
 	{   
 		[piece.parent removeChild:piece cleanup:YES];
-		[self addChild:piece];
-		[piece visit];
+        if (piecePlace == 1) {
+            [self addChild:shirt];
+            [self addChild:piece];
+            [piece visit];
+            [shirt visit];
+            
+        }
+        else {
+            [piece visit];
+        }
+        piecePlace++;
 	}
-	
+    
 	[target end];
 	[target saveBuffer:@"pirulo"];
 	UIImage * savedImg = [target getUIImageFromBuffer];
@@ -228,7 +251,7 @@
 	[sbn addChild:boxers z:2 tag:kBOXERS];
 	[boxers setPosition:ccp(512,384)];
 	
-	CCSprite * shirt = [CCSprite spriteWithSpriteFrameName:@"dress_shirt_iPad.png"];
+	shirt = [[CCSprite spriteWithSpriteFrameName:@"dress_shirt_iPad.png"]retain];
 	[sbn addChild:shirt z:5];
 	[shirt setPosition:ccp(512,384)];
 	
@@ -770,6 +793,7 @@ static BOOL AccelerationIsShaking(UIAcceleration* last, UIAcceleration* current,
 {
 	[[SimpleAudioEngine sharedEngine] unloadEffect:@"game2-alldressed-sfx.mp3"];
 	[dino release];
+    [shirt release];
 	[target release];
 	[lastAcceleration release];
 	[btnImgs release];

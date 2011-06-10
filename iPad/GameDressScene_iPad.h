@@ -92,7 +92,7 @@
 	
 	CCRenderTexture * target;
 	CCSprite * dino;
-	
+	CCSprite * shirt;
 	int videoTaps;
 	
 	BOOL timePassedForShake;
@@ -107,6 +107,7 @@
 @property (nonatomic,retain) NSString * itemNeeded;
 @property (nonatomic,retain) NSString * colorNeeded;
 @property (nonatomic,retain) CCSprite * dino;
+@property (nonatomic,retain) CCSprite * shirt;
 
 static BOOL AccelerationIsShaking(UIAcceleration* last, UIAcceleration* current, double threshold) ;
 
