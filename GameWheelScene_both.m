@@ -668,7 +668,7 @@
 		//NSLog(@"%.2f",leverImg.rotation);
 		if(leverImg.rotation < -26) leverImg.rotation = -26;
 		if(leverImg.rotation > 32) leverImg.rotation = 32;
-	}else if(canDragDino && !bashoDirected){
+	}else if(canDragDino && !bashoDirected && !beganDraggingLever){
 		float angle = CC_RADIANS_TO_DEGREES(-(atan2(location.y - dino.position.y, location.x - dino.position.x)));
 		
 		isDragging=YES;
