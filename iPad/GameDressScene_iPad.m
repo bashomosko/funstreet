@@ -13,7 +13,7 @@
 
 @implementation GameDressScene_iPad
 
-@synthesize placingElement,colorNeeded,itemNeeded,bashoDirected,dino;
+@synthesize placingElement,colorNeeded,itemNeeded,bashoDirected,dino,isBackBagSet;
 
 +(id) sceneWithDressVC:(GameDress_iPad *)vc bashoDirected:(BOOL)_bashoDirected playVid:(BOOL)playVid playingAgain:(BOOL)_playingAgain
 {
@@ -34,6 +34,8 @@
 		self.isTouchEnabled = YES;
 		self.isAccelerometerEnabled = YES;
 		
+        isBackBagSet = NO;
+        
 		bashoDirected = _bashoDirected;
 		viewController = vc;
 		
@@ -290,11 +292,11 @@
 -(void)createPalabra
 {
     CCSprite * palabraBck = [CCSprite spriteWithFile:@"wheel_wordbackground_iPad.png"];
-    [self addChild:palabraBck z:1 tag:kPALABRABCK];
+    [self addChild:palabraBck z:3 tag:kPALABRABCK];
     [palabraBck setPosition:ccp(870,60)];
 	[palabraBck setOpacity:0];
 	CCLabelTTF * palabra = [CCLabelBMFont labelWithString:@"a" fntFile:@"Wheel_text_iPad.fnt"];
-    [self addChild:palabra z:1 tag:kPALABRA];
+    [self addChild:palabra z:3 tag:kPALABRA];
 	[palabra setPosition:ccp(870,60)];
 	[palabra setOpacity:0];
 	[palabra setScale:0.7];
@@ -370,8 +372,13 @@
 	CCSprite * dinosp = [sbn getChildByTag:4190];
 	[dinosp setVisible:NO];
 	
-	[dinoAnim runAction:[CCSequence actions:[CCAnimate actionWithDuration:1 animation:animation restoreOriginalFrame:YES],[CCCallFuncN actionWithTarget:self selector:@selector(removeRandomDinoAnim:)],nil]];
-	
+    if (!isBackBagSet) {
+        [dinoAnim runAction:[CCSequence actions:[CCAnimate actionWithDuration:1 animation:animation restoreOriginalFrame:YES],[CCCallFuncN actionWithTarget:self selector:@selector(removeRandomDinoAnim:)],nil]];
+    }
+    else {
+        [dinoAnim runAction:[CCCallFuncN actionWithTarget:self selector:@selector(removeRandomDinoAnim:)]];
+    }
+		
 	
 }
 
@@ -521,7 +528,7 @@
 	}
 	[dressPieces removeAllObjects];
 	
-	[self selectItemForBasho ];
+	[self selectItemForBasho];
 	
 }
 -(void)dressDino:(GameDressScene_iPad *)scene data:(void *)data
@@ -545,6 +552,7 @@
     
     if (item.itemTag == BTN_BACKPACK_NUM) {
         
+        isBackBagSet = YES;
         [self unschedule:@selector(playRandomDinoAnim)];
         
         CCSprite * backPack2 = [CCSprite spriteWithSpriteFrameName:item.imagePath2];
@@ -718,7 +726,7 @@
 {	
 	if (lastAcceleration)
     {
-        if (!histeresisExcited && AccelerationIsShaking(lastAcceleration, acceleration, 0.35)) 
+        if (!histeresisExcited && AccelerationIsShaking(lastAcceleration, acceleration, 0.35))
         {
             histeresisExcited = YES;
 			[self onShake];

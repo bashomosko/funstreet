@@ -98,10 +98,12 @@
 	BOOL timePassedForShake;
     
     BOOL videoFromLoadingScene;
+    BOOL isBackBagSet;
 }
 
 @property (nonatomic,readwrite) BOOL placingElement;
 @property (nonatomic,readwrite) BOOL bashoDirected;
+@property (nonatomic,readwrite) BOOL isBackBagSet;
 @property (nonatomic,retain) NSString * itemNeeded;
 @property (nonatomic,retain) NSString * colorNeeded;
 @property (nonatomic,retain) CCSprite * dino;
