@@ -375,8 +375,7 @@
 	}
 	
 	CCAnimation *animation = [CCAnimation animationWithFrames:animFrames];
-	
-		
+    
 	[itemAnim runAction:[CCSequence actions:[CCAnimate actionWithDuration:1 animation:animation restoreOriginalFrame:NO],[CCCallFuncND actionWithTarget:self selector:@selector(removeAnimalsAnim: data:) data:(void *)btn],nil]];
 	
 }
@@ -393,11 +392,11 @@
 	if([GameManager sharedGameManager].soundsEnabled)
 	{
 		[[SimpleAudioEngine sharedEngine] pauseBackgroundMusic];
-		[[SimpleAudioEngine sharedEngine] playEffect:@"game2-alldressed-sfx.mp3"];
+		[[SimpleAudioEngine sharedEngine] playEffect:@"allanimals-sfx.mp3"];
 	}
 	
 	for(CCMenuItemImage * m in [tapButtons children])
-	{
+	{   
 		[self playAnimForAnimal:m];
 	}
 }
@@ -976,7 +975,7 @@
 	[[SimpleAudioEngine sharedEngine] unloadEffect:@"spin-sfx3-updated.mp3"];
 	[[SimpleAudioEngine sharedEngine] unloadEffect:@"WrongAnswer.mp3"];
 	[[SimpleAudioEngine sharedEngine] unloadEffect:@"lever-sfx.mp3"];
-	[[SimpleAudioEngine sharedEngine] unloadEffect:@"game2-alldressed-sfx.mp3"];
+	[[SimpleAudioEngine sharedEngine] unloadEffect:@"allanimals-sfx.mp3"];
 	
 	for(NSDictionary * dt in buttonsData)
 	{

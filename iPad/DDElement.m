@@ -150,7 +150,22 @@
 			[smoke setPosition:ccp(512,384)];
 			[theGame addChild:smoke z:20];
 			[smoke setScale:0];
-			[smoke runAction:[CCSequence actions:[CCScaleTo actionWithDuration:0.5 scale:2],[CCSpawn actions:[CCScaleTo actionWithDuration:0.5 scale:2],[CCFadeOut actionWithDuration:0.5],nil],[CCCallFuncN actionWithTarget:self selector:@selector(removeNode:)],nil]];
+            [[SimpleAudioEngine sharedEngine] playEffect:@"CloudTransition.mp3"];
+			[smoke runAction:[CCSequence actions:[CCSpawn actions:[CCScaleTo actionWithDuration:1.1 scale:2],
+                                                  [CCSequence actions:[CCRotateTo actionWithDuration:0.1 angle:33], 
+                                                   [CCRotateTo actionWithDuration:0.1 angle:66],
+                                                   [CCRotateTo actionWithDuration:0.1 angle:99],
+                                                   [CCRotateTo actionWithDuration:0.1 angle:132],
+                                                   [CCRotateTo actionWithDuration:0.1 angle:165],
+                                                   [CCRotateTo actionWithDuration:0.1 angle:198],
+                                                   [CCRotateTo actionWithDuration:0.1 angle:231],
+                                                   [CCRotateTo actionWithDuration:0.1 angle:264],
+                                                   [CCRotateTo actionWithDuration:0.1 angle:297],
+                                                   [CCRotateTo actionWithDuration:0.1 angle:330],
+                                                   [CCRotateTo actionWithDuration:0.1 angle:360],nil],nil],
+                             [CCSpawn actions:[CCScaleTo actionWithDuration:0.5 scale:2],
+                             [CCFadeOut actionWithDuration:0.5],nil],
+                             [CCCallFuncN actionWithTarget:self selector:@selector(removeNode:)],nil]];
 			
 			if([GameManager sharedGameManager].soundsEnabled)
 			{
@@ -185,6 +200,7 @@
 	
 	state = kStateUngrabbed;
 }
+            
 
 -(void)shakeMismatch
 {
@@ -215,6 +231,7 @@
 	[[SimpleAudioEngine sharedEngine] unloadEffect:soundWrongPath];
 	[[SimpleAudioEngine sharedEngine] unloadEffect:@"RightAnswer.mp3"];
 	[[SimpleAudioEngine sharedEngine] unloadEffect:@"WrongAnswer.mp3"];
+    [[SimpleAudioEngine sharedEngine] unloadEffect:@"CloudTransition.mp3"];
 	
 	[dressed release];
 	[imagePath release];
