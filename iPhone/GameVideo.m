@@ -7,6 +7,8 @@
 //
 
 #import "GameVideo.h"
+#import "SimpleAudioEngine.h"
+
 
 @implementation GameVideo
 
@@ -36,10 +38,19 @@
 		}
 	}
 	
-	MPMoviePlayerController * video = [[MPMoviePlayerController alloc] initWithContentURL:url];
+	video = [[MPMoviePlayerController alloc] initWithContentURL:url];
 	[self.view addSubview:video.view];
 	[video.view setFrame:CGRectMake(0,0,480,320)];
+    //[video.view setTransform:CGAffineTransformMakeRotation(M_PI/ 2)];
+    [video play];
+    [[NSNotificationCenter defaultCenter]
+     addObserver:self
+     selector:@selector(videoPlayerDidFinishPlaying:)
+     name:MPMoviePlayerPlaybackDidFinishNotification
+     object:video];
+
 	//[video.view setTransform:CGAffineTransformMakeRotation(M_PI/ 2)];
+    [[SimpleAudioEngine sharedEngine] stopBackgroundMusic];
 	[video play];
 	
 	NSString *filePath = [[NSBundle mainBundle] pathForResource:@"videoLyrics" ofType:@"plist"];
@@ -68,6 +79,18 @@
 	
 	
 }
+
+-(void) videoPlayerDidFinishPlaying: (NSNotification*)aNotification
+{   
+	MPMoviePlayerController * introVideo = [aNotification object];
+	[[NSNotificationCenter defaultCenter] removeObserver:self name:MPMoviePlayerPlaybackDidFinishNotification object:video];
+	[video stop];
+	[video.view removeFromSuperview];
+	[video release];
+	[[UIApplication sharedApplication] setStatusBarHidden:YES withAnimation:UIStatusBarAnimationNone];
+	[[SimpleAudioEngine sharedEngine] playBackgroundMusic:@"backgroundMusic.mp3"];
+}
+
 
 -(void)showLyricLine
 {

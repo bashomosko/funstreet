@@ -24,6 +24,7 @@
 	int videoTaps;
     
     BOOL videoFromLoadingScene;
+    NSString * doorsSuffix;
 }
 
 @property (nonatomic,retain) IBOutlet UIButton * btnSong;
@@ -39,6 +40,7 @@
 -(IBAction) goToDress:(id)sender;
 -(IBAction) goToVideo:(id)sender;
 -(IBAction) goToSettings;
--(void)playVideo;
+-(void)playVideo:(NSString *) suffix;
+-(void)animateDoors:(NSString*)suffix;
 
 @end

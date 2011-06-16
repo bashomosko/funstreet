@@ -12,6 +12,7 @@
 #import "GameDress_iPad.h"
 #import "GameVideo_iPad.h"
 #import "GameManager.h"
+#import "SimpleAudioEngine.h"
 
 @implementation MainMenu_iPad
 
@@ -29,8 +30,18 @@
 
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
-    [super viewDidLoad];
+    
+    if(![GameManager sharedGameManager].playedMenuVideo)
+	{
+		[[GameManager sharedGameManager] setPlayedMenuVideo:YES];
+		[self playVideo:@"iPad"];
+	}else {
+        [[SimpleAudioEngine sharedEngine] playBackgroundMusic:@"backgroundMusic.mp3"];
+		[self animateDoors:@"_iPad"];
+	}
     [scroll setContentSize:CGSizeMake(2048,768)];
+    doorsSuffix = @"_iPad";
+    [super viewDidLoad];
 }
 
 
@@ -114,7 +125,7 @@
     if(![GameManager sharedGameManager].playedMenuVideo)
     {
         [[GameManager sharedGameManager] setPlayedMenuVideo:YES];
-        [self playVideo];
+        [self playVideo:@"iPad"];
     }
 }
 
