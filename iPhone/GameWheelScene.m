@@ -28,7 +28,7 @@
 {
 	CCScene *scene = [CCScene node];
     GameWheelScene *layer = [GameWheelScene nodeWithWheelVC:vc];
-    [scene addChild: layer];
+    [scene addChild: layer z:1 tag:1000];
     return scene;
 }
 
@@ -45,14 +45,22 @@
 		// Apple recommends to re-assign "self" with the "super" return value
 		if( (self=[super init] )) {
 			
+			points = 0;
+            [GameManager sharedGameManager].musicAudioEnabled = YES;
 			[[SimpleAudioEngine sharedEngine] playBackgroundMusic:@"backgroundMusicAnimales.mp3"];
+			
+			[self loadDeviceType];
 			
 			self.isTouchEnabled = YES;
 			viewController = vc;
 			
-			[self loadDeviceType];
-			
-			[self beginGame];
+			if(![GameManager sharedGameManager].playedGame1Video)
+			{
+				[[GameManager sharedGameManager] setPlayedGame1Video:YES];
+                videoFromLoadingScene = YES;
+				[self loadVideo];
+			}else
+				[self beginGame];
 			
 		}
 		return self;
@@ -67,37 +75,59 @@
 	
 	bashoDirected = NO;
 	
-	CCSprite * back = [CCSprite spriteWithFile:@"wheel_background.png"];
+    [CCTexture2D setDefaultAlphaPixelFormat:kCCTexture2DPixelFormat_RGB565];
+	CCSprite * back = [CCSprite spriteWithFile:@"wheel_background_iPhone.png"];
 	[back setPosition:ccp(240,160)];
 	[self addChild:back];
+    
+    [CCTexture2D setDefaultAlphaPixelFormat:kCCTexture2DPixelFormat_RGBA4444];
+    
+    leverImg = [CCSprite spriteWithFile:@"lever_iPhone.png"];
+	[self addChild:leverImg];
+	[leverImg setPosition:ccp(210,120)];
+	[leverImg setAnchorPoint:ccp(0,0.5)];
+	[leverImg setRotation:-40];
 	
-	dino = [CCSprite spriteWithFile:@"wheel_dino.png"];
-	[dino setPosition:ccp(240,160)];
+	leverBtn= [CCSprite spriteWithFile:@"leverBtn_iPhone.png"];
+	[self addChild:leverBtn];
+	leverBtn.opacity = 0;
+	[leverBtn setPosition:ccp(400,260)];
+	
+    [CCTexture2D setDefaultAlphaPixelFormat:kCCTexture2DPixelFormat_RGBA8888];
+	CCSprite * wheelwheel = [CCSprite spriteWithFile:@"wheel_wheel_iPhone.png"];
+	[wheelwheel setPosition:ccp(240,160)];
+	[self addChild:wheelwheel];
+	[CCTexture2D setDefaultAlphaPixelFormat:kCCTexture2DPixelFormat_RGBA4444];
+	
+	dino = [CCSprite spriteWithFile:@"wheel_dino_iPhone.png"];
+	[dino setPosition:ccp(220,160)];
 	[self addChild:dino];
 	
 	backBtn = [CCMenuItemImage itemFromNormalImage:@"wheel_home.png" selectedImage:@"wheel_home.png" target:self selector:@selector(goBack)];
 	
-	CCMenuItemImage * soundOff = [CCMenuItemImage itemFromNormalImage:@"wheel_sound_off.png" selectedImage:@"wheel_sound_on.png"];
-	CCMenuItemImage * soundOn = [CCMenuItemImage itemFromNormalImage:@"wheel_sound_on.png" selectedImage:@"wheel_sound_off.png"];
+	CCMenuItemImage * soundOff = [CCMenuItemImage itemFromNormalImage:@"wheel_sound_off_iPhone.png" selectedImage:@"wheel_sound_on_iPhone.png"];
+	CCMenuItemImage * soundOn = [CCMenuItemImage itemFromNormalImage:@"wheel_sound_on_iPhone.png" selectedImage:@"wheel_sound_off_iPhone.png"];
 	CCMenuItemToggle * sound = [CCMenuItemToggle itemWithTarget:self selector:@selector(turnSounds) items:soundOn,soundOff,nil];
     
-    CCMenuItemImage * settingsBtn = [CCMenuItemImage itemFromNormalImage:@"wheel_settings_iPad.png" selectedImage:@"wheel_settings_iPad.png" target:self selector:@selector(goSettings)];
+    CCMenuItemImage * settingsBtn = [CCMenuItemImage itemFromNormalImage:@"wheel_settings_iPhone.png" selectedImage:@"wheel_settings_iPhone.png" target:self selector:@selector(goSettings)];
 	
-	CCMenuItemImage * bashoOff = [CCMenuItemImage itemFromNormalImage:@"wheel_basho_off.png" selectedImage:@"wheel_basho_on.png"];
-	CCMenuItemImage * bashoOn = [CCMenuItemImage itemFromNormalImage:@"wheel_basho_on.png" selectedImage:@"wheel_basho_off.png"];
+	CCMenuItemImage * bashoOff = [CCMenuItemImage itemFromNormalImage:@"wheel_basho_off_iPhone.png" selectedImage:@"wheel_basho_on_iPhone.png"];
+	CCMenuItemImage * bashoOn = [CCMenuItemImage itemFromNormalImage:@"wheel_basho_on_iPhone.png" selectedImage:@"wheel_basho_off_iPhone.png"];
 	CCMenuItemToggle * basho = [CCMenuItemToggle itemWithTarget:self selector:@selector(turnBasho) items:bashoOff,bashoOn,nil];
 	
 	
 	CCMenu * menu = [CCMenu menuWithItems:backBtn,sound,basho,settingsBtn,nil];
 	[self addChild:menu];
 	[backBtn setPosition:ccp(30,290)];
-	[sound setPosition:ccp(20,20)];
-	[basho setPosition:ccp(70,30)];
+    [settingsBtn setPosition:ccp(20,28)];
+	[sound setPosition:ccp(20,70)];
+	[basho setPosition:ccp(20,100)];
 	[menu setPosition:ccp(0,0)];
 	
-	[self loadScore];
+	//[self loadScore];
 	[self loadButtons];
 	[self createPalabra];
+    [self loadSpinningStuff];
 }
 
 

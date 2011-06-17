@@ -8,10 +8,13 @@
 
 #import <UIKit/UIKit.h>
 #import "MainMenu_both.h"
+#import "SettingsViewController_iPhone.h"
 
 @class MainMenu_both;
 
 @interface MainMenu : MainMenu_both {
+    
+    SettingsViewController_iPhone * sv;
 
 }
 

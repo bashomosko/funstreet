@@ -48,22 +48,24 @@
 					<object class="IBUIImageView" id="374191171">
 						<reference key="NSNextResponder" ref="133396669"/>
 						<int key="NSvFlags">274</int>
-						<string key="NSFrameSize">{1024, 768}</string>
+						<string key="NSFrameSize">{480, 320}</string>
 						<reference key="NSSuperview" ref="133396669"/>
 						<reference key="NSWindow"/>
+						<reference key="NSNextKeyView" ref="333517740"/>
 						<bool key="IBUIUserInteractionEnabled">NO</bool>
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
 						<object class="NSCustomResource" key="IBUIImage">
 							<string key="NSClassName">NSImage</string>
-							<string key="NSResourceName">settingsbackground.png</string>
+							<string key="NSResourceName">settingsbackground_iPhone.png</string>
 						</object>
 					</object>
 					<object class="IBUISegmentedControl" id="355086694">
 						<reference key="NSNextResponder" ref="133396669"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{610, 180}, {207, 44}}</string>
+						<string key="NSFrame">{{256, 47}, {207, 44}}</string>
 						<reference key="NSSuperview" ref="133396669"/>
 						<reference key="NSWindow"/>
+						<reference key="NSNextKeyView" ref="736079834"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
 						<int key="IBNumberOfSegments">2</int>
@@ -97,9 +99,10 @@
 					<object class="IBUIButton" id="333517740">
 						<reference key="NSNextResponder" ref="133396669"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{912, 118}, {40, 37}}</string>
+						<string key="NSFrame">{{454, 7}, {20, 18}}</string>
 						<reference key="NSSuperview" ref="133396669"/>
 						<reference key="NSWindow"/>
+						<reference key="NSNextKeyView" ref="900954962"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
 						<int key="IBUIContentHorizontalAlignment">0</int>
@@ -127,9 +130,10 @@
 					<object class="IBUILabel" id="900954962">
 						<reference key="NSNextResponder" ref="133396669"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{205, 166}, {390, 63}}</string>
+						<string key="NSFrame">{{64, 65}, {130, 21}}</string>
 						<reference key="NSSuperview" ref="133396669"/>
 						<reference key="NSWindow"/>
+						<reference key="NSNextKeyView" ref="995601679"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<bool key="IBUIClipsSubviews">YES</bool>
 						<int key="IBUIContentMode">7</int>
@@ -153,9 +157,10 @@
 					<object class="IBUISegmentedControl" id="783855577">
 						<reference key="NSNextResponder" ref="133396669"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{610, 263}, {207, 44}}</string>
+						<string key="NSFrame">{{256, 98}, {207, 44}}</string>
 						<reference key="NSSuperview" ref="133396669"/>
 						<reference key="NSWindow"/>
+						<reference key="NSNextKeyView" ref="157941840"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
 						<int key="IBNumberOfSegments">2</int>
@@ -189,9 +194,10 @@
 					<object class="IBUILabel" id="995601679">
 						<reference key="NSNextResponder" ref="133396669"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{184, 249}, {411, 63}}</string>
+						<string key="NSFrame">{{64, 94}, {130, 21}}</string>
 						<reference key="NSSuperview" ref="133396669"/>
 						<reference key="NSWindow"/>
+						<reference key="NSNextKeyView" ref="355086694"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<bool key="IBUIClipsSubviews">YES</bool>
 						<int key="IBUIContentMode">7</int>
@@ -208,9 +214,10 @@
 					<object class="IBUISegmentedControl" id="913641757">
 						<reference key="NSNextResponder" ref="133396669"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{610, 346}, {257, 44}}</string>
+						<string key="NSFrame">{{206, 149}, {257, 44}}</string>
 						<reference key="NSSuperview" ref="133396669"/>
 						<reference key="NSWindow"/>
+						<reference key="NSNextKeyView" ref="403894443"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
 						<int key="IBNumberOfSegments">3</int>
@@ -249,9 +256,10 @@
 					<object class="IBUISegmentedControl" id="403894443">
 						<reference key="NSNextResponder" ref="133396669"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{610, 430}, {257, 44}}</string>
+						<string key="NSFrame">{{206, 200}, {257, 44}}</string>
 						<reference key="NSSuperview" ref="133396669"/>
 						<reference key="NSWindow"/>
+						<reference key="NSNextKeyView"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
 						<int key="IBNumberOfSegments">3</int>
@@ -290,9 +298,10 @@
 					<object class="IBUILabel" id="736079834">
 						<reference key="NSNextResponder" ref="133396669"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{389, 333}, {206, 63}}</string>
+						<string key="NSFrame">{{64, 123}, {69, 21}}</string>
 						<reference key="NSSuperview" ref="133396669"/>
 						<reference key="NSWindow"/>
+						<reference key="NSNextKeyView" ref="783855577"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<bool key="IBUIClipsSubviews">YES</bool>
 						<int key="IBUIContentMode">7</int>
@@ -309,9 +318,10 @@
 					<object class="IBUILabel" id="157941840">
 						<reference key="NSNextResponder" ref="133396669"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{327, 418}, {268, 63}}</string>
+						<string key="NSFrame">{{64, 152}, {89, 21}}</string>
 						<reference key="NSSuperview" ref="133396669"/>
 						<reference key="NSWindow"/>
+						<reference key="NSNextKeyView" ref="913641757"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<bool key="IBUIClipsSubviews">YES</bool>
 						<int key="IBUIContentMode">7</int>
@@ -326,9 +336,10 @@
 						<int key="IBUITextAlignment">1</int>
 					</object>
 				</object>
-				<string key="NSFrameSize">{1024, 768}</string>
+				<string key="NSFrameSize">{480, 320}</string>
 				<reference key="NSSuperview"/>
 				<reference key="NSWindow"/>
+				<reference key="NSNextKeyView" ref="374191171"/>
 				<object class="NSColor" key="IBUIBackgroundColor">
 					<int key="NSColorSpace">3</int>
 					<bytes key="NSWhite">MQA</bytes>
@@ -455,14 +466,14 @@
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<reference ref="374191171"/>
 							<reference ref="333517740"/>
-							<reference ref="355086694"/>
 							<reference ref="900954962"/>
+							<reference ref="995601679"/>
 							<reference ref="736079834"/>
 							<reference ref="157941840"/>
 							<reference ref="783855577"/>
-							<reference ref="995601679"/>
-							<reference ref="403894443"/>
 							<reference ref="913641757"/>
+							<reference ref="403894443"/>
+							<reference ref="355086694"/>
 						</object>
 						<reference key="parent" ref="0"/>
 					</object>
@@ -542,6 +553,7 @@
 					<string>43.IBViewBoundsToFrameTransform</string>
 					<string>6.IBPluginDependency</string>
 					<string>6.IBViewBoundsToFrameTransform</string>
+					<string>6.IUISegmentedControlInspectorSelectedSegmentMetadataKey</string>
 					<string>7.IBEditorWindowLastContentRect</string>
 					<string>7.IBPluginDependency</string>
 					<string>9.IBPluginDependency</string>
@@ -587,6 +599,7 @@
 					<object class="NSAffineTransform">
 						<bytes key="NSTransformStruct">AUQYgABDNAAAA</bytes>
 					</object>
+					<integer value="0"/>
 					<string>{{0, 58}, {1039, 698}}</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
@@ -607,7 +620,7 @@
 				<reference key="dict.values" ref="0"/>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">53</int>
+			<int key="maxID">55</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -741,8 +754,8 @@
 		<bool key="IBDocument.PluginDeclaredDependenciesTrackSystemTargetVersion">YES</bool>
 		<int key="IBDocument.defaultPropertyAccessControl">3</int>
 		<object class="NSMutableDictionary" key="IBDocument.LastKnownImageSizes">
-			<string key="NS.key.0">settingsbackground.png</string>
-			<string key="NS.object.0">{1024, 768}</string>
+			<string key="NS.key.0">settingsbackground_iPhone.png</string>
+			<string key="NS.object.0">{480, 320}</string>
 		</object>
 		<string key="IBCocoaTouchPluginVersion">301</string>
 	</data>

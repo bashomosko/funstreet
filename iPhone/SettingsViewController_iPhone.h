@@ -1,5 +1,5 @@
 //
-//  SettingsViewController_iPad.h
+//  SettingsViewController_iPhone.h
 //  Basho
 //
 //  Created by Pablo Ruiz on 09/05/11.
@@ -10,7 +10,7 @@
 #import "SettingsViewController_share.h"
 
 
-@interface SettingsViewController_iPad : SettingsViewController_share {
+@interface SettingsViewController_iPhone : SettingsViewController_share {
 
 }
 

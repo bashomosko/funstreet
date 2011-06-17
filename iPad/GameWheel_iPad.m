@@ -147,6 +147,7 @@
 {
 	[GameManager sharedGameManager].onPause = YES;
 	sv = [[SettingsViewController_iPad alloc] initWithNibName:@"SettingsViewController_iPad" bundle:nil];
+
 	sv.rootVC = self;
 	
 	[[[CCDirector sharedDirector] openGLView] addSubview:sv.view];

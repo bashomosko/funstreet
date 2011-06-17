@@ -44,6 +44,27 @@
     [super viewDidLoad];
 }
 
+-(IBAction)goToSettings
+{
+	[GameManager sharedGameManager].onPause = YES;
+	sv = [[SettingsViewController_iPhone alloc] initWithNibName:@"SettingsViewController_iPhone" bundle:nil];
+	sv.rootVC = self;
+	
+	[self.view addSubview:sv.view];
+}
+
+-(void)removeSettings
+{
+	[GameManager sharedGameManager].onPause = NO;
+	[sv.view removeFromSuperview];
+	[sv release];
+    
+    if(![GameManager sharedGameManager].playedMenuVideo)
+    {
+        [[GameManager sharedGameManager] setPlayedMenuVideo:YES];
+        [self playVideo:@"iPad"];
+    }
+}
 
 -(void)loadVideo
 {
