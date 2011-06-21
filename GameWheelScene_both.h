@@ -129,6 +129,12 @@
     BOOL videoFromLoadingScene;
     
     BOOL isAnsweredbyButton;
+    
+    CGRect leverArea;
+    CGPoint orig;
 }
+
+@property(nonatomic,readwrite) CGRect leverArea;
+@property(nonatomic,readwrite) CGPoint orig;
 
 @end

@@ -52,6 +52,10 @@
 			points = 0;
             [GameManager sharedGameManager].musicAudioEnabled = YES;
 			[[SimpleAudioEngine sharedEngine] playBackgroundMusic:@"backgroundMusicAnimales.mp3"];
+            
+            leverArea = CGRectMake(800, 0, 224, 768);
+            
+            orig = ccp(512,384);
 			
 			[self loadDeviceType];
 			

@@ -11,14 +11,14 @@
 #import "SimpleAudioEngine.h"
 #import "GameManager.h"
 
-#define BTN_BACKPACK_POS [NSMutableDictionary dictionaryWithObjects:[NSMutableArray arrayWithObjects:[NSNumber numberWithInt:110],[NSNumber numberWithInt:160],nil] forKeys:[NSMutableArray arrayWithObjects:@"x",@"y",nil]]
-#define BTN_BOOTS_POS [NSMutableDictionary dictionaryWithObjects:[NSMutableArray arrayWithObjects:[NSNumber numberWithInt:150],[NSNumber numberWithInt:240],nil] forKeys:[NSMutableArray arrayWithObjects:@"x",@"y",nil]]
-#define BTN_HAT_POS [NSMutableDictionary dictionaryWithObjects:[NSMutableArray arrayWithObjects:[NSNumber numberWithInt:240],[NSNumber numberWithInt:280],nil] forKeys:[NSMutableArray arrayWithObjects:@"x",@"y",nil]]
-#define BTN_PHONE_POS [NSMutableDictionary dictionaryWithObjects:[NSMutableArray arrayWithObjects:[NSNumber numberWithInt:330],[NSNumber numberWithInt:240],nil] forKeys:[NSMutableArray arrayWithObjects:@"x",@"y",nil]]
-#define BTN_JACKET_POS [NSMutableDictionary dictionaryWithObjects:[NSMutableArray arrayWithObjects:[NSNumber numberWithInt:370],[NSNumber numberWithInt:160],nil] forKeys:[NSMutableArray arrayWithObjects:@"x",@"y",nil]]
-#define BTN_NECKLACE_POS [NSMutableDictionary dictionaryWithObjects:[NSMutableArray arrayWithObjects:[NSNumber numberWithInt:330],[NSNumber numberWithInt:80],nil] forKeys:[NSMutableArray arrayWithObjects:@"x",@"y",nil]]
-#define BTN_PANTS_POS [NSMutableDictionary dictionaryWithObjects:[NSMutableArray arrayWithObjects:[NSNumber numberWithInt:240],[NSNumber numberWithInt:40],nil] forKeys:[NSMutableArray arrayWithObjects:@"x",@"y",nil]]
-#define BTN_SUNGLASSES_POS [NSMutableDictionary dictionaryWithObjects:[NSMutableArray arrayWithObjects:[NSNumber numberWithInt:150],[NSNumber numberWithInt:80],nil] forKeys:[NSMutableArray arrayWithObjects:@"x",@"y",nil]]
+#define BTN_BACKPACK_POS [NSMutableDictionary dictionaryWithObjects:[NSMutableArray arrayWithObjects:[NSNumber numberWithInt:90],[NSNumber numberWithInt:160],nil] forKeys:[NSMutableArray arrayWithObjects:@"x",@"y",nil]]
+#define BTN_BOOTS_POS [NSMutableDictionary dictionaryWithObjects:[NSMutableArray arrayWithObjects:[NSNumber numberWithInt:130],[NSNumber numberWithInt:240],nil] forKeys:[NSMutableArray arrayWithObjects:@"x",@"y",nil]]
+#define BTN_HAT_POS [NSMutableDictionary dictionaryWithObjects:[NSMutableArray arrayWithObjects:[NSNumber numberWithInt:220],[NSNumber numberWithInt:280],nil] forKeys:[NSMutableArray arrayWithObjects:@"x",@"y",nil]]
+#define BTN_PHONE_POS [NSMutableDictionary dictionaryWithObjects:[NSMutableArray arrayWithObjects:[NSNumber numberWithInt:320],[NSNumber numberWithInt:240],nil] forKeys:[NSMutableArray arrayWithObjects:@"x",@"y",nil]]
+#define BTN_JACKET_POS [NSMutableDictionary dictionaryWithObjects:[NSMutableArray arrayWithObjects:[NSNumber numberWithInt:350],[NSNumber numberWithInt:160],nil] forKeys:[NSMutableArray arrayWithObjects:@"x",@"y",nil]]
+#define BTN_NECKLACE_POS [NSMutableDictionary dictionaryWithObjects:[NSMutableArray arrayWithObjects:[NSNumber numberWithInt:310],[NSNumber numberWithInt:80],nil] forKeys:[NSMutableArray arrayWithObjects:@"x",@"y",nil]]
+#define BTN_PANTS_POS [NSMutableDictionary dictionaryWithObjects:[NSMutableArray arrayWithObjects:[NSNumber numberWithInt:230],[NSNumber numberWithInt:50],nil] forKeys:[NSMutableArray arrayWithObjects:@"x",@"y",nil]]
+#define BTN_SUNGLASSES_POS [NSMutableDictionary dictionaryWithObjects:[NSMutableArray arrayWithObjects:[NSNumber numberWithInt:140],[NSNumber numberWithInt:80],nil] forKeys:[NSMutableArray arrayWithObjects:@"x",@"y",nil]]
 
 
 // HelloWorld implementation
@@ -48,6 +48,9 @@
 			points = 0;
             [GameManager sharedGameManager].musicAudioEnabled = YES;
 			[[SimpleAudioEngine sharedEngine] playBackgroundMusic:@"backgroundMusicAnimales.mp3"];
+            
+            leverArea = CGRectMake(375, 0, 105, 320);
+            orig = ccp(240,160);
 			
 			[self loadDeviceType];
 			
@@ -84,7 +87,7 @@
     
     leverImg = [CCSprite spriteWithFile:@"lever_iPhone.png"];
 	[self addChild:leverImg];
-	[leverImg setPosition:ccp(210,120)];
+	[leverImg setPosition:ccp(170,175)];
 	[leverImg setAnchorPoint:ccp(0,0.5)];
 	[leverImg setRotation:-25];
 	
@@ -118,7 +121,7 @@
 	
 	CCMenu * menu = [CCMenu menuWithItems:backBtn,sound,basho,settingsBtn,nil];
 	[self addChild:menu];
-	[backBtn setPosition:ccp(30,290)];
+	[backBtn setPosition:ccp(20,300)];
     [settingsBtn setPosition:ccp(20,25)];
 	[sound setPosition:ccp(20,60)];
 	[basho setPosition:ccp(20,100)];

@@ -31,6 +31,8 @@
 
 @implementation GameWheelScene_both
 
+@synthesize leverArea,orig;
+
 -(void)loadDeviceType
 {
 	//******** Iphone / iPad conditionals ************//
@@ -42,7 +44,7 @@
 	{
 		iPad = @"_iPad";
 	}else {
-		iPad = @"";
+		iPad = @"_iPhone";
 	}
 	//*************************************************//
 }
@@ -356,7 +358,11 @@
 }
 
 -(void)playAnimForAnimal:(CCMenuItemImage *)btn
-{
+{   
+    if ([iPad rangeOfString:@"_iPhone"].location != NSNotFound) {
+        return;
+    }
+    
 	NSMutableDictionary * userData = (NSMutableDictionary *)btn.userData;
 	NSString * animal = [userData objectForKey:@"image"];
 	int framesNum = [[userData objectForKey:@"frames"] intValue];
@@ -655,10 +661,10 @@
     CGPoint location = [touch locationInView: [touch view]];
     location = [[CCDirector sharedDirector] convertToGL: location];	
 	
-	if(CGRectContainsPoint(CGRectMake(800, 0, 224, 768), location) && beganDraggingLever)
+	if(CGRectContainsPoint(leverArea, location) && beganDraggingLever)
 	{
 		//leverBtn.position = ccp(leverBtn.position.x, location.y);
-		CGPoint orig = ccp(512,384);
+		//CGPoint orig = ccp(512,384);
 		CGPoint finalVect = ccp(location.x-orig.x,location.y-orig.y);
 		
 		float angle = atan2(-finalVect.y,finalVect.x);
