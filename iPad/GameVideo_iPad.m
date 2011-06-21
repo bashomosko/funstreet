@@ -13,8 +13,6 @@
 
 @implementation GameVideo_iPad
 
-@synthesize curtainL,curtainR,scrollview,scrollPaging;
-
 // The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
 /*
  - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
@@ -30,6 +28,13 @@
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
 	
+    widthScroll = 640;
+    heightScroll= 360;
+    
+    widthVideo = 1024;
+    heightVideo = 768;
+    
+    
     UIButton * skip = [UIButton buttonWithType:UIButtonTypeCustom];
 	[skip setFrame:CGRectMake(0,0,106,106)];
 	[skip setImage:[UIImage imageNamed:@"wheel_home_iPad.png"] forState:UIControlStateNormal];
@@ -54,80 +59,6 @@
 	
 }
 
--(void)loadGame
-{   
-    [scrollview setContentSize:CGSizeMake(640 * 6,360)];
-	[scrollview setShowsVerticalScrollIndicator:NO];
-	[scrollview setShowsHorizontalScrollIndicator:NO];
-	[scrollview setPagingEnabled:YES];
-    [scrollPaging setHidden:NO];
-	
-	for (int i =1;i<=6;i++)
-	{
-		UIButton * img = [UIButton buttonWithType:UIButtonTypeCustom];
-		img.tag = i;
-		[img addTarget:self action:@selector(selectVideo:) forControlEvents:UIControlEventTouchUpInside];
-		[img setImage:[UIImage imageNamed:[NSString stringWithFormat:@"theatreThumb_%d_iPad.png",i]] forState:UIControlStateNormal];
-		[img setFrame:CGRectMake(640 * (i -1),0,640,360)];
-		[scrollview addSubview:img];
-		
-	}
-	
-	scrollPaging.numberOfPages = 6;
-	scrollPaging.currentPage = 0;
-
-}
-
-- (void)scrollViewDidScroll:(UIScrollView *)scrollView
-{
-    int page = floor((scrollView.contentOffset.x - 640 / 2) / 640) + 1;
-    scrollPaging.currentPage = page;
-}
-
--(void)selectVideo:(UIButton *)btn
-{
-	[[SimpleAudioEngine sharedEngine] stopBackgroundMusic];
-	int videoNumber = btn.tag;
-	[self playVid:videoNumber];
-
-}
-
--(void)playVid:(int)videoNumber
-{
-	NSURL * url;
-	NSBundle *bundle = [NSBundle mainBundle];
-	if (bundle) 
-	{
-		NSString *moviePath = [bundle pathForResource:[NSString stringWithFormat:@"theatre_video%d_iPad",videoNumber] ofType:@"mov"];
-		if (moviePath)
-		{
-			url = [NSURL fileURLWithPath:moviePath];
-		}
-	}
-	
-	video = [[MPMoviePlayerController alloc] initWithContentURL:url];
-	[video setControlStyle:MPMovieControlStyleFullscreen];
-	[self.view addSubview:video.view];
-	[video.view setFrame:CGRectMake(0,0,1024,768)];
-	//[video.view setTransform:CGAffineTransformMakeRotation(M_PI/ 2)];
-	[video play];
-	[[NSNotificationCenter defaultCenter]
-	 addObserver:self
-	 selector:@selector(videoPlayerDidFinishPlaying:)
-	 name:MPMoviePlayerPlaybackDidFinishNotification
-	 object:video];
-}
-
--(void) videoPlayerDidFinishPlaying: (NSNotification*)aNotification
-{   
-	MPMoviePlayerController * introVideo = [aNotification object];
-	[[NSNotificationCenter defaultCenter] removeObserver:self name:MPMoviePlayerPlaybackDidFinishNotification object:video];
-	[video stop];
-	[video.view removeFromSuperview];
-	[video release];
-	[[UIApplication sharedApplication] setStatusBarHidden:YES withAnimation:UIStatusBarAnimationNone];
-	[[SimpleAudioEngine sharedEngine] playBackgroundMusic:@"backgroundMusic.mp3"];
-}
 
 // Override to allow orientations other than the default portrait orientation.
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
@@ -173,9 +104,9 @@
 
 
 - (void)dealloc {
-	[scrollview release];
-	[curtainL release];
-	[curtainR release];
+	//[scrollview release];
+	//[curtainL release];
+	//[curtainR release];
     [super dealloc];
 }
 

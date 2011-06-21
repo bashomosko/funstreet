@@ -8,12 +8,10 @@
 
 #import <UIKit/UIKit.h>
 #import <MediaPlayer/MediaPlayer.h>
+#import "GameVideo_both.h"
 
-@interface GameVideo : UIViewController {
-	UILabel * lyrics;
-	NSMutableArray * lyricLines;
-	int currentLyricLine;
-	MPMoviePlayerController * video;
+@interface GameVideo : GameVideo_both {
+
 }
 
 @end
