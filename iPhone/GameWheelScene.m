@@ -86,7 +86,7 @@
 	[self addChild:leverImg];
 	[leverImg setPosition:ccp(210,120)];
 	[leverImg setAnchorPoint:ccp(0,0.5)];
-	[leverImg setRotation:-40];
+	[leverImg setRotation:-25];
 	
 	leverBtn= [CCSprite spriteWithFile:@"leverBtn_iPhone.png"];
 	[self addChild:leverBtn];
@@ -119,8 +119,8 @@
 	CCMenu * menu = [CCMenu menuWithItems:backBtn,sound,basho,settingsBtn,nil];
 	[self addChild:menu];
 	[backBtn setPosition:ccp(30,290)];
-    [settingsBtn setPosition:ccp(20,28)];
-	[sound setPosition:ccp(20,70)];
+    [settingsBtn setPosition:ccp(20,25)];
+	[sound setPosition:ccp(20,60)];
 	[basho setPosition:ccp(20,100)];
 	[menu setPosition:ccp(0,0)];
 	
