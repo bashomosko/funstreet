@@ -10,10 +10,12 @@
 
 #import "SettingsViewController_iPad.h"
 
+@class GameWheelScene_iPad,SettingsViewController_iPad;
 
 @interface GameWheel_iPad : UIViewController {
 
 	SettingsViewController_iPad * sv;
+    GameWheelScene_iPad * gameWheelLayer;
 }
 
 @end

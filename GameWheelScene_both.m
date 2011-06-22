@@ -31,6 +31,8 @@
 
 @implementation GameWheelScene_both
 
+@synthesize leverArea,orig;
+
 -(void)loadDeviceType
 {
 	//******** Iphone / iPad conditionals ************//
@@ -42,7 +44,7 @@
 	{
 		iPad = @"_iPad";
 	}else {
-		iPad = @"";
+		iPad = @"_iPhone";
 	}
 	//*************************************************//
 }
@@ -50,6 +52,7 @@
 -(void)loadVideo
 {
 	[GameManager sharedGameManager].onPause = YES;
+    [[SimpleAudioEngine sharedEngine] pauseBackgroundMusic];
 	NSURL * url;
 	NSBundle *bundle = [NSBundle mainBundle];
 	if (bundle) 
@@ -94,8 +97,18 @@
 		[introVideo stop];
 		[introVideo.view removeFromSuperview];
 		[introVideo release];
-		
-		[self beginGame];
+        
+        if ([GameManager sharedGameManager].musicAudioEnabled) {
+            [[SimpleAudioEngine sharedEngine] resumeBackgroundMusic];
+        }
+
+        [GameManager sharedGameManager].onPause = NO;
+        
+        if(videoFromLoadingScene)
+        {
+            [self beginGame];
+            videoFromLoadingScene = NO;
+        }
 	}
 }
 
@@ -112,8 +125,17 @@
 	[introVideo stop];
 	[introVideo.view removeFromSuperview];
 	[introVideo release];
-	
-	[self beginGame];
+    
+    if ([GameManager sharedGameManager].musicAudioEnabled) {
+        [[SimpleAudioEngine sharedEngine] resumeBackgroundMusic];
+    }
+
+    [GameManager sharedGameManager].onPause = NO;
+    if(videoFromLoadingScene)
+    {
+        [self beginGame];
+        videoFromLoadingScene = NO;
+    }
 }
 
 -(void)turnSounds
@@ -162,7 +184,11 @@
 }
 
 -(void)resetTapButtons
-{
+{   
+    if ([GameManager sharedGameManager].musicAudioEnabled) {
+        [[SimpleAudioEngine sharedEngine] resumeBackgroundMusic];
+    }
+    
 	for (CCMenuItemImage * m in [tapButtons children])
 	{
 		[m setIsEnabled:YES];
@@ -283,6 +309,7 @@
 		
 		if(bashoSelectedSound == selectedSound )
 		{
+			pressedDinoToHalt = NO;
 			[self addPoints:kPointsAwarded - currentAttempts];
 			
 			if(maxedAttemps)
@@ -319,14 +346,20 @@
 				[self runAction:[CCSequence actions:[CCDelayTime actionWithDuration:2.5],[CCCallFunc actionWithTarget:self selector:@selector(autoPushLeverFromAction)],nil]];
 			}
 		}else {
+			[self playAnimForAnimal:btn];
+			[[SimpleAudioEngine sharedEngine] playEffect:sound];
 			currentAttempts ++;
 			if([GameManager sharedGameManager].soundsEnabled)
 			{
 				[[SimpleAudioEngine sharedEngine] playEffect:@"WrongAnswer.mp3"];
+                if (isAnsweredbyButton) {
+                    isAnsweredbyButton = NO;
+                    [self performSelector:@selector(selectItemForBashoAlreadySelected) withObject:nil afterDelay:2];
+                }
 				//[[SimpleAudioEngine sharedEngine] playEffect:bashoDirectedWrongSound];
 			}
 			dinoSpinning = NO;
-			[self autoPushLever:YES];
+			//[self autoPushLever:YES];
 		}
 		
 	}
@@ -334,7 +367,11 @@
 }
 
 -(void)playAnimForAnimal:(CCMenuItemImage *)btn
-{
+{   
+    if ([iPad rangeOfString:@"_iPhone"].location != NSNotFound) {
+        return;
+    }
+    
 	NSMutableDictionary * userData = (NSMutableDictionary *)btn.userData;
 	NSString * animal = [userData objectForKey:@"image"];
 	int framesNum = [[userData objectForKey:@"frames"] intValue];
@@ -353,8 +390,7 @@
 	}
 	
 	CCAnimation *animation = [CCAnimation animationWithFrames:animFrames];
-	
-		
+    
 	[itemAnim runAction:[CCSequence actions:[CCAnimate actionWithDuration:1 animation:animation restoreOriginalFrame:NO],[CCCallFuncND actionWithTarget:self selector:@selector(removeAnimalsAnim: data:) data:(void *)btn],nil]];
 	
 }
@@ -369,10 +405,13 @@
 -(void)animateAllAnimals
 {
 	if([GameManager sharedGameManager].soundsEnabled)
-		[[SimpleAudioEngine sharedEngine] playEffect:@"game2-alldressed-sfx.mp3"];
+	{
+		[[SimpleAudioEngine sharedEngine] pauseBackgroundMusic];
+		[[SimpleAudioEngine sharedEngine] playEffect:@"allanimals-sfx.mp3"];
+	}
 	
 	for(CCMenuItemImage * m in [tapButtons children])
-	{
+	{   
 		[self playAnimForAnimal:m];
 	}
 }
@@ -442,6 +481,7 @@
 		stopWhenRotationReached = YES;
 		//forceApplied = 0;
 	}else {
+        isAnsweredbyButton = YES;
 		[self listenSound:[tapButtons getChildByTag:selectedSound] withWord:NO];
 	}
 
@@ -555,7 +595,8 @@
 
 -(void)goBack
 {
-	if([GameManager sharedGameManager].onPause) return; 
+	if([GameManager sharedGameManager].onPause) return;
+    [GameManager sharedGameManager].musicAudioEnabled = YES;
 	[viewController goToMenu];
 }
 
@@ -571,7 +612,7 @@
 	UITouch *touch = [touches anyObject];
     CGPoint location = [touch locationInView: [touch view]];
     location = [[CCDirector sharedDirector] convertToGL: location];	
-	
+    
 	canDragDino = YES;
 	//if (bashoDirected) return;
     if(dinoSpinning)
@@ -582,6 +623,7 @@
 			canDragDino = NO;
 			forceApplied = 0;
 			dinoSpinning = NO;
+			pressedDinoToHalt = YES;
 			if(bashoDirected)
 				[self stopSpinning];
 		}
@@ -628,10 +670,10 @@
     CGPoint location = [touch locationInView: [touch view]];
     location = [[CCDirector sharedDirector] convertToGL: location];	
 	
-	if(CGRectContainsPoint(CGRectMake(800, 0, 224, 768), location) && beganDraggingLever)
+	if(CGRectContainsPoint(leverArea, location) && beganDraggingLever)
 	{
 		//leverBtn.position = ccp(leverBtn.position.x, location.y);
-		CGPoint orig = ccp(512,384);
+		//CGPoint orig = ccp(512,384);
 		CGPoint finalVect = ccp(location.x-orig.x,location.y-orig.y);
 		
 		float angle = atan2(-finalVect.y,finalVect.x);
@@ -640,7 +682,7 @@
 		//NSLog(@"%.2f",leverImg.rotation);
 		if(leverImg.rotation < -26) leverImg.rotation = -26;
 		if(leverImg.rotation > 32) leverImg.rotation = 32;
-	}else if(canDragDino && !bashoDirected){
+	}else if(canDragDino && !bashoDirected && !beganDraggingLever){
 		float angle = CC_RADIANS_TO_DEGREES(-(atan2(location.y - dino.position.y, location.x - dino.position.x)));
 		
 		isDragging=YES;
@@ -659,6 +701,14 @@
 	UITouch *touch = [touches anyObject];
     CGPoint location = [touch locationInView: [touch view]];
     location = [[CCDirector sharedDirector] convertToGL: location];	
+	
+	if(pressedDinoToHalt)
+	{
+		pressedDinoToHalt = NO;
+		if(bashoDirected)
+			[self autoPushLever:YES];
+			
+	}
 	
 	if(!canDragDino)
 		return;
@@ -870,20 +920,23 @@
 
 -(void)autoPushLever2
 {
-	if([GameManager sharedGameManager].soundsEnabled)
-		[[SimpleAudioEngine sharedEngine] playEffect:@"lever-sfx.mp3"];
+	//if([GameManager sharedGameManager].soundsEnabled)
+	//	[[SimpleAudioEngine sharedEngine] playEffect:@"lever-sfx.mp3"];
 	
 	[self playLoopSpinEffect];
 	[self schedule:@selector(playLoopSpinEffect) interval:8];
 
-	forceApplied = 6000;
+	forceApplied = 7000;
 	friction = 0;
 }
 
 -(void)playLoopSpinEffect
 {
 	if([GameManager sharedGameManager].soundsEnabled)
-		[[SimpleAudioEngine sharedEngine] playEffect:@"spin-sfx3-updated.mp3"];
+	{
+		[[SimpleAudioEngine sharedEngine] stopEffect:spinFxId];
+		spinFxId = [[SimpleAudioEngine sharedEngine] playEffect:@"spin-sfx3-updated.mp3"];
+	}
 }
 
 -(void)stopLoopSpinEffect
@@ -937,7 +990,7 @@
 	[[SimpleAudioEngine sharedEngine] unloadEffect:@"spin-sfx3-updated.mp3"];
 	[[SimpleAudioEngine sharedEngine] unloadEffect:@"WrongAnswer.mp3"];
 	[[SimpleAudioEngine sharedEngine] unloadEffect:@"lever-sfx.mp3"];
-	[[SimpleAudioEngine sharedEngine] unloadEffect:@"game2-alldressed-sfx.mp3"];
+	[[SimpleAudioEngine sharedEngine] unloadEffect:@"allanimals-sfx.mp3"];
 	
 	for(NSDictionary * dt in buttonsData)
 	{

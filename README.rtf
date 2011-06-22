@@ -1,255 +1,73 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1038\cocoasubrtf350
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\froman\fcharset0 Times-Roman;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue246;}
+\vieww9000\viewh8400\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\ql\qnatural\pardirnatural
 
+\f0\b\fs24 \cf0 **** BASHO - Donde estan mis botas? ****
+\b0 \
+\
+Company: Flakasoft\
+Project: BASHO - Donde estan mis botas?\
+Contact: pabloruiz55@gmail.com, tim@flakasoft.com\
+\
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
- "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+\b Changelog
+\b0 \
+version 0.0.4 (ALPHA 1): memory fixes, added snapshot feature, added theatre with final videos, added final sounds and animations, added instructions video w/double tap.\
+version 0.0.3: Memory fixes, random anim in dress game.added videos, new dress anims, minor fixes\
+version 0.0.2: Changed wheel behavior to have physics, changed arrow image, random elements through plist, changed menu, added new videos, backgrounds, settings menu,spanish/english voices, memory fixes, wheel game fixes\
+version 0.0.1: added all scenes\
+\
 
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-  <head><script>var NREUMQ=[];NREUMQ.push(["mark","firstbyte",new Date().getTime()]);</script>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    
-    <title>basho: Git browser &mdash; Beanstalk</title>
-    
-    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
-    <link rel="apple-touch-icon" href="/images/apple-touch-icon.png"/>
-    
-    <link href="https://assets.beanstalkapp.com/stylesheets/global.css?1306731290" media="screen" rel="stylesheet" type="text/css" />
-<link href="https://assets.beanstalkapp.com/stylesheets/mobile.css?1306731290" media="screen" rel="stylesheet" type="text/css" />
-    <link href="https://assets.beanstalkapp.com/stylesheets/print.css?1306731290" media="print" rel="stylesheet" type="text/css" />	
-    
-    <script src="https://assets.beanstalkapp.com/assets/prototype_bundle.js?1306731348" type="text/javascript"></script>
-<script src="https://assets.beanstalkapp.com/assets/jquery_bundle.js?1306731339" type="text/javascript"></script>
-    
-    <script src="https://assets.beanstalkapp.com/javascripts/jquery/browse.js?1306731290" type="text/javascript"></script>
-<script src="https://assets.beanstalkapp.com/javascripts/jquery/revisions.js?1306731290" type="text/javascript"></script>
-    <!--[if IE 7]><link rel="stylesheet" href="/stylesheets/ie.css" type="text/css" media="screen, projection" /><![endif]-->
-<!--[if IE 8]><link rel="stylesheet" href="/stylesheets/ie8.css" type="text/css" media="screen, projection" /><![endif]-->
-  </head>
+\b known issues:
+\b0 \
+version 0.0.4:\
+- {\field{\*\fldinst{HYPERLINK "https://flakasoft.deskaway.com/project.php?action_type=issue&id=706&p_id=10000#706"}}{\fldrslt 
+\f1 \cf2 \ul \ulc2 Speak and Say Game: WA selected, if you hold the arrow, it should stop spinning}}\
+- {\field{\*\fldinst{HYPERLINK "https://flakasoft.deskaway.com/project.php?action_type=issue&id=705&p_id=10000#705"}}{\fldrslt 
+\f1 \cf2 \ul \ulc2 Speak and Say Game: Touched animal animation should play when hitting the animal for WA}}\
+- {\field{\*\fldinst{HYPERLINK "https://flakasoft.deskaway.com/project.php?action_type=issue&id=704&p_id=10000#704"}}{\fldrslt 
+\f1 \cf2 \ul \ulc2 Speak and Say Game: Wrong answer plays the ticking and the handle pull sound without animation}}\
+- {\field{\*\fldinst{HYPERLINK "https://flakasoft.deskaway.com/project.php?action_type=issue&id=703&p_id=10000#703"}}{\fldrslt 
+\f1 \cf2 \ul \ulc2 Speak and Say Game: Mask touches to animal selection while pulling handle}}\
+- {\field{\*\fldinst{HYPERLINK "https://flakasoft.deskaway.com/project.php?action_type=issue&id=702&p_id=10000#702"}}{\fldrslt 
+\f1 \cf2 \ul \ulc2 Dressing Game: The background music should stop while reward music plays}}\
+- {\field{\*\fldinst{HYPERLINK "https://flakasoft.deskaway.com/project.php?action_type=issue&id=701&p_id=10000#701"}}{\fldrslt 
+\f1 \cf2 \ul \ulc2 Dressing Game: Crashes after multiple game resets}}\
+- {\field{\*\fldinst{HYPERLINK "https://flakasoft.deskaway.com/project.php?action_type=issue&id=700&p_id=10000#700"}}{\fldrslt 
+\f1 \cf2 \ul \ulc2 Dressing Game: Shaking the game to restart, replays initial dressing instructions}}\
+- {\field{\*\fldinst{HYPERLINK "https://flakasoft.deskaway.com/project.php?action_type=issue&id=699&p_id=10000#699"}}{\fldrslt 
+\f1 \cf2 \ul \ulc2 Default audio settings need tweaking, music too loud and instructions too quiet}}\
+- some slowdowns when loading dino random animations\
+\
+\
+version 0.0.3:\
+\strike \strikec0  - anims on main menu are crashing on iPad 1 (not on iPad2)\
+ - anims on dress game are crashing (both iPads)\
 
-  <body id="">
-    
-  <script type="text/javascript">
+\b \strike0\striked0 \
+What is needed:\
 
-	$j(function(){
-		Revisions.init({
-			url:      ':href',
-			disabled: 'bfafbb07bf2f1194c0a2a7e54754bed56a4013ce'
-		});
-	});
+\b0 - app icon\
+- app default.png\
+- feedback on how the game is working in general
+\b \
 
-</script>
-  <div id="revisions-container" class="hide">
-	<fieldset class="search">
-		<input type="text" value="Search revisions..." /> <b class="action-search">Search</b> <b class="action-clear">Reset</b>
-	</fieldset>
+\b0 \
 
-	<div class="revisions"><ul></ul></div>
-</div>
+\b What is next:\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural\pardirnatural
 
-    
-    
-    <div id="container">
-      
+\b0 \cf0 - Solving known issues of v 0.0.4\
+- Porting to iPhone and iPhone4, after receiving feedback of iPad version\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\ql\qnatural\pardirnatural
+\cf0 \
 
-      
-    	<div id="header">        
-        <div class="metanav">  
-  <p class="meta-global">    
-    <a href="/help" class="help" rel="help" title="Help">Help</a>
-    &bull; <a href="/" title="">Dashboard</a>
-  </p> 
-
-  <p class="meta-personal">
-    <em>Pablo Ruiz</em>
-    &bull; <a href="/profile/edit">Profile &amp; Settings</a>
-    &bull; <a href="https://flakasoft.beanstalkapp.com/session" onclick="var f = document.createElement('form'); f.style.display = 'none'; this.parentNode.appendChild(f); f.method = 'POST'; f.action = this.href;var m = document.createElement('input'); m.setAttribute('type', 'hidden'); m.setAttribute('name', '_method'); m.setAttribute('value', 'delete'); f.appendChild(m);var s = document.createElement('input'); s.setAttribute('type', 'hidden'); s.setAttribute('name', 'authenticity_token'); s.setAttribute('value', 'sDNzlFBvhVjQyu9mb2b9k5vqg0jpm0k+QTbeScP1YQ4='); f.appendChild(s);f.submit();return false;" title="Logout">Logout</a>
-    
-  </p>
-</div>        
-        
-
-
-
-<div id="title">
-  
-
-    <h1><span class="color-label"><b class="label-white"></b></span> <strong>basho</strong><i></i></h1>
-
-    <div class="dropdown">
-  		<ul>
-  		  
-  		    
-  		      <li>
-  		    
-  			    
-      <a href="/basho" title="Go to repository page">
-        <span class="color-label"><b class="label-white"></b></span>
-        basho
-      </a>
-    
-  			  </li>
-  			
-  		    
-  		      <li>
-  		    
-  			    
-      <a href="/discomonsters" title="Go to repository page">
-        <span class="color-label"><b class="label-white"></b></span>
-        discoMonsters
-      </a>
-    
-  			  </li>
-  			
-  		    
-  		      <li>
-  		    
-  			    
-      <a href="/alienattack" title="Go to repository page">
-        <span class="color-label"><b class="label-white"></b></span>
-        alienattack
-      </a>
-    
-  			  </li>
-  			
-  		    
-  		      <li>
-  		    
-  			    
-      <a href="/paperplaneguy" title="Go to repository page">
-        <span class="color-label"><b class="label-white"></b></span>
-        paperplaneguy
-      </a>
-    
-  			  </li>
-  			
-  		    
-  		      <li class="last">
-  		    
-  			    
-      <a href="/allylocator" title="Go to repository page">
-        <span class="color-label"><b class="label-white"></b></span>
-        allyLocator
-      </a>
-    
-  			  </li>
-  			
-			
-  			
-  		</ul>
-  	</div>
-
-  
-</div>
-
-
-        
-          <ul class="mainnav">
-  
-    <li class="">
-  <a href="/basho" title="Activity"><span>Activity</span></a>
-</li>
-
-<li class="active">
-  <a href="/basho/browse/git" title="Browse"><span>Browse</span></a>
-</li>
-
-
-
-
-
-  		 
-</ul>
-    		
-    		<form action="/search" id="searchForm" method="get">
-  <fieldset>
-    <input class="search-fld" id="searchField" name="q" size="25" type="text" value="Search commits..." />
-    <input id="r" name="r" type="hidden" value="basho" />
-    <input type="image" value="Go" id="searchBtn" class="search-btn" src="/images/b-search.gif" />
-  </fieldset>
-</form>
-    	</div>
-	
-    	<div id="page">
-        
-          
-        
-    
-        
-  <div class="page-toolbar">
-	<h2>
-	  README.rtf
-	  <span class="rev-number">bfafbb07</span>
-	</h2>
-	
-	<span class="separator"></span>
-	
-	<a href="/basho/file_commits/README.rtf?kind=file&amp;rev=bfafbb07bf2f1194c0a2a7e54754bed56a4013ce" class="button" id="change-revision" rel="revisions-container">
-         <span>Change Revision&hellip;</span>
-       </a>
-	<a href="/basho/file_commits/README.rtf?branch=develop&amp;kind=diff&amp;rev=bfafbb07bf2f1194c0a2a7e54754bed56a4013ce" class="button" id="diff-to" rel="revisions-container">
-         <span>Diff bfafbb07 to&hellip;</span>
-       </a>
-	<a href="#" class="button disabled" rel="tooltip" title="Blame tool is not available for this file type.">
-		      <span>Blame</span>
-		   </a>	
-	
-	<div class="file-actions">
-	  <a href="/basho/changesets/bfafbb07bf2f1194c0a2a7e54754bed56a4013ce" class="link">View Changeset bfafbb07 &rarr;</a>
-	</div>
-</div>
-
-
-    
-        <div class="content" id="">
-          
-          
-                    
-            
-
-
-
-
-
-<div class="code-toolbar">
-	<b class="cl"></b><b class="cr"></b>
-
-	<ul>
-		<li class="path"><a href="/basho/browse/git?branch=develop&amp;rev=bfafbb07bf2f1194c0a2a7e54754bed56a4013ce">~</a><span>/</span><strong>README.rtf</strong></li>
-		<li class="action"><a href="/basho/download/git/README.rtf?rev=bfafbb07bf2f1194c0a2a7e54754bed56a4013ce">Download</a></li>
-		
-		
-		  <li class="action preview disabled">
-		    <a href="#" rel="tooltip" title="This file type cannot be previewed. Please try downloading this file or viewing it locally.">
-		      <b></b> Preview
-		    </a> <i></i>
-		  </li>		  
-		
-	</ul>
-</div>
-
-
-
-  <p class="diff-unavailable">Binary files cannot be displayed on this page. Please try downloading this file or viewing it locally.</p>
-
-
-            
-          
-        </div>
-      </div>
-
-      <div id="footer">
-        <div class="wildbit">
-  <a class="beanstalk-logo" href="http://beanstalkapp.com" title="Beanstalk &nbsp; version control for team leads">&nbsp;</a>
-  <p class="vcard">&copy; 2011, <a href="http://www.wildbit.com/" class="fn org url">Wildbit LLC</a>. All rights reserved.</p>
-  <p>
-    <a href="http://blog.beanstalkapp.com/">Blog</a> <span class="sep">&bull;</span> 
-    <a href="http://twitter.com/beanstalkapp">Twitter</a> <span class="sep">&bull;</span>
-    <a href="http://beanstalkapp.com/privacy-policy">Privacy Policy</a> <span class="sep">&bull;</span> 
-    <a href="http://beanstalkapp.com/terms-of-service">Terms of Use</a>
-  </p>
-</div>    
-      </div>
-
-    </div>
-  <script>(function(){var d=document;var e=d.createElement("script");e.async=true;e.src="https://d1ros97qkrwjf5.cloudfront.net/10/eum/rum.js	";var s=d.getElementsByTagName("script")[0];s.parentNode.insertBefore(e,s);})();NREUMQ.push(["nrf2","beacon-3.newrelic.com","57d55ed8a3",10682,"cgpcFRZbVV5cQEpWCkU6UBMLQ0pXSx0MXwdUHQ==",0,79,new Date().getTime()])</script></body>
-</html>
+\b Tested on:
+\b0 \
+iPad w/  iOS 4.3\
+iPad2 w/ iOS 4.2.2\
+\
+\
+}

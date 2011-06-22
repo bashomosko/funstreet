@@ -7,6 +7,10 @@
 //
 
 #import "GameVideo.h"
+#import "SimpleAudioEngine.h"
+#import "MainMenu.h"
+#import "AppDelegate_iPhone.h"
+
 
 @implementation GameVideo
 
@@ -24,65 +28,58 @@
 
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
+    
+    widthScroll = 300;
+    heightScroll= 180;
+    
+    widthVideo = 480;
+    heightVideo = 320;
 	
-	NSURL * url;
-	NSBundle *bundle = [NSBundle mainBundle];
-	if (bundle) 
-	{
-		NSString *moviePath = [bundle pathForResource:@"botas-2011" ofType:@"mp3"];
-		if (moviePath)
-		{
-			url = [NSURL fileURLWithPath:moviePath];
-		}
-	}
+    UIButton * skip = [UIButton buttonWithType:UIButtonTypeCustom];
+	[skip setFrame:CGRectMake(0,0,53,53)];
+	[skip setImage:[UIImage imageNamed:@"wheel_home.png"] forState:UIControlStateNormal];
+	[skip setImage:[UIImage imageNamed:@"wheel_home.png"] forState:UIControlStateHighlighted];
+	[skip addTarget:self action:@selector(goBack) forControlEvents:UIControlEventTouchUpInside];
+	[self.view addSubview:skip];
+    
+    [scrollPaging setHidden:YES];
+    
+	[UIView beginAnimations:nil context:nil];
 	
-	MPMoviePlayerController * video = [[MPMoviePlayerController alloc] initWithContentURL:url];
-	[self.view addSubview:video.view];
-	[video.view setFrame:CGRectMake(0,0,480,320)];
-	//[video.view setTransform:CGAffineTransformMakeRotation(M_PI/ 2)];
-	[video play];
+	[UIView setAnimationDuration:1];
+	[UIView setAnimationDelay:1];
+	[curtainL setCenter:CGPointMake(-56, curtainL.center.y)];
+	[curtainR setCenter:CGPointMake(538, curtainL.center.y)];
+    [self performSelector:@selector(loadGame) withObject:nil afterDelay:0.8];
 	
-	NSString *filePath = [[NSBundle mainBundle] pathForResource:@"videoLyrics" ofType:@"plist"];
-	
-	lyricLines = [[NSMutableArray arrayWithContentsOfFile:filePath]retain];
-	
-	currentLyricLine = 0;
-	
-	lyrics = [[UILabel alloc] initWithFrame:CGRectMake(0,280,480,40)];
-	
-	[lyrics setText:@""];
-	[lyrics setFont:[UIFont fontWithName:@"Helvetica" size:18]];
-	[lyrics setBackgroundColor:[UIColor clearColor]];
-	[lyrics setTextColor:[UIColor whiteColor]];
-	[lyrics setShadowColor:[UIColor blackColor]];
-	[lyrics setShadowOffset:CGSizeMake(1,1)];
-	[lyrics setTextAlignment:UITextAlignmentCenter];
-	
-	[video.view addSubview:lyrics];
-	
-	[lyrics release];
-	
-	[self showLyricLine];
-	
+	[UIView commitAnimations];
+
     [super viewDidLoad];
-	
 	
 }
 
--(void)showLyricLine
+-(void)goBack
 {
-	if([lyricLines count]>currentLyricLine)
-	{
-		NSMutableDictionary * line = [lyricLines objectAtIndex:currentLyricLine];
-		NSString * text = [line objectForKey:@"lyric"];
-		float duration = [[line objectForKey:@"duration"] floatValue];
-		
-		[lyrics setText:text];
-		
-		[self performSelector:@selector(showLyricLine) withObject:nil afterDelay:duration];
-		currentLyricLine++;
-	}
+	[self goToMenu];
 }
+
+-(void)goToMenu
+{
+	[self.view removeFromSuperview];
+	[self release];
+	
+	MainMenu * gw = [[MainMenu alloc] 
+						  initWithNibName:@"MainMenu" bundle:nil];
+	[gw.view setAlpha:0];
+	AppDelegate_iPhone * app = (AppDelegate_iPhone *)[[UIApplication sharedApplication] delegate];
+	UIWindow * w = app.window;
+	[w addSubview:gw.view];
+	
+	[UIView beginAnimations:nil context:nil];
+	[gw.view setAlpha:1];
+	[UIView commitAnimations];
+}
+
 
 // Override to allow orientations other than the default portrait orientation.
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
@@ -106,8 +103,7 @@
 
 
 - (void)dealloc {
-	[video release];
-	[lyricLines release];
+	
     [super dealloc];
 }
 

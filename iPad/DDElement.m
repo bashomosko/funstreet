@@ -6,7 +6,6 @@
 #import "GameManager.h"
 
 @implementation DDElement
-@synthesize state,mySprite,dressed,desiredZ,itemTag,itemText,itemNumber,colorNumber;
 
 -(id) initWithTheGame:(GameDress_iPad *)ddm elementDict:(NSMutableDictionary *)element
 {
@@ -16,6 +15,8 @@
 		
 		imagePath =[[element objectForKey:@"file-image"]retain];
 		dressed =[[element objectForKey:@"file-dressed"]retain];
+        
+        imagePath2 = [[element objectForKey:@"file-dressed2"] retain];
 		
 		int xr = [[[element objectForKey:@"coord-drop"] objectForKey:@"x"] intValue];
 		int yr = [[[element objectForKey:@"coord-drop"] objectForKey:@"y"] intValue];
@@ -44,7 +45,7 @@
 		
 		CCSpriteBatchNode * sbn = [theGame getChildByTag:kSPRITEBATCH_ELEMS];
 		mySprite = [CCSprite spriteWithSpriteFrameName:imagePath];
-		[sbn addChild:mySprite z:5];
+		[sbn addChild:mySprite z:9];
 		[theGame addChild:self];
 		[mySprite setPosition:initialCoord];
 		
@@ -57,40 +58,6 @@
 	return self;
 }
 
-- (CGRect)rect
-{
-	//CGSize s = [self.texture contentSize];
-	CGRect c = CGRectMake(mySprite.position.x-(mySprite.textureRect.size.width/2) * mySprite.scaleX ,mySprite.position.y-(mySprite.textureRect.size.height/2)* mySprite.scaleY,mySprite.textureRect.size.width* mySprite.scaleX,mySprite.textureRect.size.height * mySprite.scaleY);
-	return c;
-}
-
-- (void)onEnter
-{
-	[[CCTouchDispatcher sharedDispatcher] addTargetedDelegate:self priority:0 swallowsTouches:YES];
-	[super onEnter];
-}
-
-- (void)onExit
-{
-	for(CCParticleSystemQuad * p in [self children])
-	{
-		if([p isKindOfClass:[CCParticleSystemQuad class]])
-			[self removeChild:p cleanup:YES];
-	}
-	
-	[[CCTouchDispatcher sharedDispatcher] removeDelegate:self];
-	[super onExit];
-}	
-
-- (BOOL)containsTouchLocation:(UITouch *)touch
-{
-	if( CGRectContainsPoint([self rect], [self convertTouchToNodeSpaceAR:touch]))
-	{
-		return YES;
-	}
-	
-	return NO;
-}
 
 - (BOOL)ccTouchBegan:(UITouch *)touch withEvent:(UIEvent *)event
 {
@@ -98,6 +65,7 @@
 	if ( ![self containsTouchLocation:touch]) return NO;
 	if(placed && !movableAfterPlaced) return NO;
 	if(theGame.placingElement) return NO;
+    if([GameManager sharedGameManager].onPause) return NO;
 	
 	//if(placed && movableAfterPlaced)
 	//	theGame.elementsPlaced--;
@@ -112,16 +80,6 @@
 	return YES;
 }
 
-- (void)ccTouchMoved:(UITouch *)touch withEvent:(UIEvent *)event
-{
-	CGPoint location = [touch locationInView: [touch view]];
-	
-	location = [[CCDirector sharedDirector] convertToGL: location];
-	
-	mySprite.position = ccp(location.x-mySprite.contentSize.width/2,location.y+mySprite.contentSize.height/2);
-	
-}
-
 - (void)ccTouchEnded:(UITouch *)touch withEvent:(UIEvent *)event
 {
 	NSAssert(state == kStateGrabbed, @"Unexpected state!");	
@@ -131,8 +89,10 @@
 	location = [[CCDirector sharedDirector] convertToGL: location];
 	
 	if(!(dropPoint.x == 0 && dropPoint.y == 0))
-	{
-		if(ccpDistance(mySprite.position,dropPoint) < 100 &&( !theGame.bashoDirected || ([itemNumber isEqualToString:theGame.itemNeeded] && [colorNumber isEqualToString:theGame.colorNeeded])))
+	{   
+        CGRect dino = CGRectMake(312, 134, 400, 500);
+        
+		if(/*ccpDistance(mySprite.position,dropPoint) < 100*/ CGRectIntersectsRect([mySprite boundingBox],dino) &&( !theGame.bashoDirected || ([itemNumber isEqualToString:theGame.itemNeeded] && [colorNumber isEqualToString:theGame.colorNeeded])))
 		{
 			mySprite.position = dropPoint;
 			//theGame.elementsPlaced++;
@@ -145,7 +105,22 @@
 			[smoke setPosition:ccp(512,384)];
 			[theGame addChild:smoke z:20];
 			[smoke setScale:0];
-			[smoke runAction:[CCSequence actions:[CCScaleTo actionWithDuration:0.5 scale:2],[CCSpawn actions:[CCScaleTo actionWithDuration:0.5 scale:2],[CCFadeOut actionWithDuration:0.5],nil],[CCCallFuncN actionWithTarget:self selector:@selector(removeNode:)],nil]];
+            [[SimpleAudioEngine sharedEngine] playEffect:@"CloudTransition.mp3"];
+			[smoke runAction:[CCSequence actions:[CCSpawn actions:[CCScaleTo actionWithDuration:1.1 scale:2],
+                                                  [CCSequence actions:[CCRotateTo actionWithDuration:0.1 angle:33], 
+                                                   [CCRotateTo actionWithDuration:0.1 angle:66],
+                                                   [CCRotateTo actionWithDuration:0.1 angle:99],
+                                                   [CCRotateTo actionWithDuration:0.1 angle:132],
+                                                   [CCRotateTo actionWithDuration:0.1 angle:165],
+                                                   [CCRotateTo actionWithDuration:0.1 angle:198],
+                                                   [CCRotateTo actionWithDuration:0.1 angle:231],
+                                                   [CCRotateTo actionWithDuration:0.1 angle:264],
+                                                   [CCRotateTo actionWithDuration:0.1 angle:297],
+                                                   [CCRotateTo actionWithDuration:0.1 angle:330],
+                                                   [CCRotateTo actionWithDuration:0.1 angle:360],nil],nil],
+                             [CCSpawn actions:[CCScaleTo actionWithDuration:0.5 scale:2],
+                             [CCFadeOut actionWithDuration:0.5],nil],
+                             [CCCallFuncN actionWithTarget:self selector:@selector(removeNode:)],nil]];
 			
 			if([GameManager sharedGameManager].soundsEnabled)
 			{
@@ -180,6 +155,7 @@
 	
 	state = kStateUngrabbed;
 }
+            
 
 -(void)shakeMismatch
 {
@@ -199,23 +175,10 @@
 																 times:2],[CCPlace actionWithPosition:initPos],nil]];
 }
 
--(void)removeNode:(CCNode *)node
-{
-	[node.parent removeChild:node cleanup:YES];
-}
 
 -(void)dealloc
 {
-	[[SimpleAudioEngine sharedEngine] unloadEffect:soundOkPath];
-	[[SimpleAudioEngine sharedEngine] unloadEffect:soundWrongPath];
-	[[SimpleAudioEngine sharedEngine] unloadEffect:@"RightAnswer.mp3"];
-	[[SimpleAudioEngine sharedEngine] unloadEffect:@"WrongAnswer.mp3"];
-	
-	[dressed release];
-	[imagePath release];
-	[soundOkPath release];
-	[soundWrongPath release];
-	[super dealloc];
+    [super dealloc];
 }
 
 @end

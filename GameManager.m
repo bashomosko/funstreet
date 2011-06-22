@@ -7,7 +7,7 @@ static GameManager *sharedInstance = nil;
 @implementation GameManager
 
 @synthesize soundsEnabled,languageString,language,instructionsLanguage, fxVolume, musicVolume,onPause,instructionsLanguageString;
-@synthesize playedMenuVideo,playedGame1Video,playedGame2Video;
+@synthesize playedMenuVideo,playedGame1Video,playedGame2Video,musicAudioEnabled;
 
 + (GameManager *)sharedGameManager
 {
@@ -63,6 +63,7 @@ static GameManager *sharedInstance = nil;
 		[super init];	
 		
 		soundsEnabled = YES;
+        musicAudioEnabled = YES;
 		languageString = [[NSMutableString alloc] initWithCapacity:10];
 		instructionsLanguageString = [[NSMutableString alloc] initWithCapacity:10];
 		
@@ -81,7 +82,7 @@ static GameManager *sharedInstance = nil;
 		}else
 		{
 			[ud setObject:[NSNumber numberWithBool:YES] forKey:@"alreadyPlayed"];
-			[self setLanguage:0];
+			[self setLanguage:1];
 			[self setInstructionsLanguage:0];
 			[self setMusicVolume:1];
 			[self setFxVolume:1];
@@ -98,32 +99,35 @@ static GameManager *sharedInstance = nil;
 -(void)setPlayedMenuVideo:(BOOL)played
 {
 	playedMenuVideo = played;
-	NSUserDefaults * ud = [NSUserDefaults standardUserDefaults];
-	[ud setObject:[NSNumber numberWithBool:playedMenuVideo] forKey:@"playedMenuVideo"];
+	//NSUserDefaults * ud = [NSUserDefaults standardUserDefaults];
+	//[ud setObject:[NSNumber numberWithBool:playedMenuVideo] forKey:@"playedMenuVideo"];
 }
 
 -(void)setPlayedGame1Video:(BOOL)played
 {
 	playedGame1Video = played;
-	NSUserDefaults * ud = [NSUserDefaults standardUserDefaults];
-	[ud setObject:[NSNumber numberWithBool:playedGame1Video] forKey:@"playedGame1Video"];
+	//NSUserDefaults * ud = [NSUserDefaults standardUserDefaults];
+	//[ud setObject:[NSNumber numberWithBool:playedGame1Video] forKey:@"playedGame1Video"];
 }
 
 -(void)setPlayedGame2Video:(BOOL)played
 {
 	playedGame2Video = played;
-	NSUserDefaults * ud = [NSUserDefaults standardUserDefaults];
-	[ud setObject:[NSNumber numberWithBool:playedGame2Video] forKey:@"playedGame2Video"];
+	//NSUserDefaults * ud = [NSUserDefaults standardUserDefaults];
+	//[ud setObject:[NSNumber numberWithBool:playedGame2Video] forKey:@"playedGame2Video"];
 }
 
 -(void)turnSounds
 {
-	soundsEnabled = !soundsEnabled;
-	if (soundsEnabled) {
-		[[SimpleAudioEngine sharedEngine] setMute:NO];
-	}else {
-		[[SimpleAudioEngine sharedEngine] setMute:YES];
+	//soundsEnabled = !soundsEnabled;
+    musicAudioEnabled = !musicAudioEnabled;
+	if (musicAudioEnabled) {
+		//[[SimpleAudioEngine sharedEngine] setMute:NO];
+        [[SimpleAudioEngine sharedEngine] resumeBackgroundMusic];
 	}
+    else {
+        [[SimpleAudioEngine sharedEngine] pauseBackgroundMusic];
+    }
 
 }
 
@@ -185,10 +189,10 @@ static GameManager *sharedInstance = nil;
 			[[SimpleAudioEngine sharedEngine] setBackgroundMusicVolume:0.1];
 			break;
 		case 1:
-			[[SimpleAudioEngine sharedEngine] setBackgroundMusicVolume:0.3];
+			[[SimpleAudioEngine sharedEngine] setBackgroundMusicVolume:0.2];
 			break;
 		case 2:
-			[[SimpleAudioEngine sharedEngine] setBackgroundMusicVolume:1];
+			[[SimpleAudioEngine sharedEngine] setBackgroundMusicVolume:5];
 			break;
 	}
 }

@@ -7,9 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+//#import "SettingsViewController_iPhone.h"
 
+@class GameWheelScene,SettingsViewController_iPhone;
 
 @interface GameWheel : UIViewController {
+    
+    SettingsViewController_iPhone * sv;
+    GameWheelScene * gameWheelLayer;
 
 }
 

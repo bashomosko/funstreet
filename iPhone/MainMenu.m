@@ -10,6 +10,9 @@
 #import "AppDelegate_iPhone.h"
 #import "GameWheel.h"
 #import "GameVideo.h"
+#import "GameManager.h"
+#import "SimpleAudioEngine.h"
+#import "GameDress_iPhone.h"
 
 @implementation MainMenu
 
@@ -24,12 +27,63 @@
 }
 */
 
-/*
+
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
+    
+    if(![GameManager sharedGameManager].playedMenuVideo)
+	{
+		[[GameManager sharedGameManager] setPlayedMenuVideo:YES];
+		[self playVideo:@"iPad"];
+	}else {
+        [[SimpleAudioEngine sharedEngine] playBackgroundMusic:@"backgroundMusic.mp3"];
+		[self animateDoors:@"_iPhone"];
+	}
+    doorsSuffix = @"_iPhone";
+    [scroll setContentSize:CGSizeMake(960,320)];
+    
     [super viewDidLoad];
 }
-*/
+
+-(void)loadDress
+{
+	[self.view removeFromSuperview];
+	[self release];
+	
+	GameDress_iPhone * gw = [[GameDress_iPhone alloc] 
+						   initWithNibName:@"GameDress_iPhone" bundle:nil];
+	[gw.view setAlpha:0];
+	AppDelegate_iPhone * app = (AppDelegate_iPhone *)[[UIApplication sharedApplication] delegate];
+	UIWindow * w = app.window;
+	[w addSubview:gw.view];
+	
+	[UIView beginAnimations:nil context:nil];
+	[gw.view setAlpha:1];
+	[UIView commitAnimations];
+}
+
+
+-(IBAction)goToSettings
+{
+	[GameManager sharedGameManager].onPause = YES;
+	sv = [[SettingsViewController_iPhone alloc] initWithNibName:@"SettingsViewController_iPhone" bundle:nil];
+	sv.rootVC = self;
+	
+	[self.view addSubview:sv.view];
+}
+
+-(void)removeSettings
+{
+	[GameManager sharedGameManager].onPause = NO;
+	[sv.view removeFromSuperview];
+	[sv release];
+    
+    if(![GameManager sharedGameManager].playedMenuVideo)
+    {
+        [[GameManager sharedGameManager] setPlayedMenuVideo:YES];
+        [self playVideo:@"iPad"];
+    }
+}
 
 -(void)loadVideo
 {

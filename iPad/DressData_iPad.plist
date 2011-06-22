@@ -2,104 +2,32 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>pants</key>
-	<array>
-		<dict>
-			<key>text_esp</key>
-			<string>Pantalones</string>
-			<key>text_eng</key>
-			<string>Pants</string>
-			<key>file-dressed</key>
-			<string>BluePantsOn_iPad.png</string>
-			<key>file-image</key>
-			<string>BluePants_iPad.png</string>
-			<key>coord-drop</key>
-			<dict>
-				<key>x</key>
-				<integer>512</integer>
-				<key>y</key>
-				<integer>184</integer>
-			</dict>
-			<key>file-soundOk</key>
-			<string>wheel_snd_pants.m4a</string>
-			<key>file-soundWrong</key>
-			<string>star_wrong.aif</string>
-		</dict>
-		<dict>
-			<key>text_eng</key>
-			<string>Pants</string>
-			<key>text_esp</key>
-			<string>Pantalones</string>
-			<key>file-dressed</key>
-			<string>RedPantsOn_iPad.png</string>
-			<key>file-image</key>
-			<string>RedPants_iPad.png</string>
-			<key>coord-drop</key>
-			<dict>
-				<key>x</key>
-				<integer>512</integer>
-				<key>y</key>
-				<integer>184</integer>
-			</dict>
-			<key>file-soundOk</key>
-			<string>wheel_snd_pants.m4a</string>
-			<key>file-soundWrong</key>
-			<string>star_wrong.aif</string>
-		</dict>
-		<dict>
-			<key>text_eng</key>
-			<string>Pants</string>
-			<key>text_esp</key>
-			<string>Pantalones</string>
-			<key>file-dressed</key>
-			<string>PurplePantsOn_iPad.png</string>
-			<key>file-image</key>
-			<string>PurplePants_iPad.png</string>
-			<key>coord-drop</key>
-			<dict>
-				<key>x</key>
-				<integer>512</integer>
-				<key>y</key>
-				<integer>184</integer>
-			</dict>
-			<key>file-soundOk</key>
-			<string>wheel_snd_pants.m4a</string>
-			<key>file-soundWrong</key>
-			<string>star_wrong.aif</string>
-		</dict>
-		<dict>
-			<key>text_eng</key>
-			<string>Pants</string>
-			<key>text_esp</key>
-			<string>Pantalones</string>
-			<key>file-dressed</key>
-			<string>YellowPantsOn_iPad.png</string>
-			<key>file-image</key>
-			<string>YellowPants_iPad.png</string>
-			<key>coord-drop</key>
-			<dict>
-				<key>x</key>
-				<integer>512</integer>
-				<key>y</key>
-				<integer>184</integer>
-			</dict>
-			<key>file-soundOk</key>
-			<string>dress_snd_pants_yellow.mp3</string>
-			<key>file-soundWrong</key>
-			<string>star_wrong.aif</string>
-		</dict>
-	</array>
 	<key>backpack</key>
 	<array>
 		<dict>
-			<key>text_esp</key>
-			<string>Mochila</string>
-			<key>text_eng</key>
-			<string>Backpack</string>
+			<key>coord-drop</key>
+			<dict>
+				<key>x</key>
+				<integer>512</integer>
+				<key>y</key>
+				<integer>384</integer>
+			</dict>
 			<key>file-dressed</key>
 			<string>BlueBackpackStrapOn_iPad.png</string>
+			<key>file-dressed2</key>
+			<string>BlueBackpackOn_iPad.png</string>
 			<key>file-image</key>
 			<string>BlueBackpack_iPad.png</string>
+			<key>file-soundOk</key>
+			<string>wheel_snd_backpack.m4a</string>
+			<key>file-soundWrong</key>
+			<string>star_wrong.aif</string>
+			<key>text_eng</key>
+			<string>Backpack</string>
+			<key>text_esp</key>
+			<string>Mochila</string>
+		</dict>
+		<dict>
 			<key>coord-drop</key>
 			<dict>
 				<key>x</key>
@@ -107,20 +35,22 @@
 				<key>y</key>
 				<integer>384</integer>
 			</dict>
-			<key>file-soundOk</key>
-			<string>wheel_snd_backpack.m4a</string>
-			<key>file-soundWrong</key>
-			<string>star_wrong.aif</string>
-		</dict>
-		<dict>
-			<key>text_eng</key>
-			<string>Backpack</string>
-			<key>text_esp</key>
-			<string>Mochila</string>
 			<key>file-dressed</key>
 			<string>RedBackpackOn_iPad.png</string>
+			<key>file-dressed2</key>
+			<string>RedBackpackBehindDominoOn_iPad.png</string>
 			<key>file-image</key>
 			<string>RedBackpack_iPad.png</string>
+			<key>file-soundOk</key>
+			<string>wheel_snd_backpack.m4a</string>
+			<key>file-soundWrong</key>
+			<string>star_wrong.aif</string>
+			<key>text_eng</key>
+			<string>Backpack</string>
+			<key>text_esp</key>
+			<string>Mochila</string>
+		</dict>
+		<dict>
 			<key>coord-drop</key>
 			<dict>
 				<key>x</key>
@@ -128,41 +58,22 @@
 				<key>y</key>
 				<integer>384</integer>
 			</dict>
-			<key>file-soundOk</key>
-			<string>wheel_snd_backpack.m4a</string>
-			<key>file-soundWrong</key>
-			<string>star_wrong.aif</string>
-		</dict>
-		<dict>
-			<key>text_eng</key>
-			<string>Backpack</string>
-			<key>text_esp</key>
-			<string>Mochila</string>
 			<key>file-dressed</key>
 			<string>PurpleBackpackOn_iPad.png</string>
+			<key>file-dressed2</key>
+			<string>PurpleBackpackBehindDominoOn_iPad.png</string>
 			<key>file-image</key>
 			<string>PurpleBackpack_iPad.png</string>
-			<key>coord-drop</key>
-			<dict>
-				<key>x</key>
-				<integer>512</integer>
-				<key>y</key>
-				<integer>384</integer>
-			</dict>
 			<key>file-soundOk</key>
 			<string>wheel_snd_backpack.m4a</string>
 			<key>file-soundWrong</key>
 			<string>star_wrong.aif</string>
-		</dict>
-		<dict>
 			<key>text_eng</key>
 			<string>Backpack</string>
 			<key>text_esp</key>
 			<string>Mochila</string>
-			<key>file-dressed</key>
-			<string>YellowBackpackOn_iPad.png</string>
-			<key>file-image</key>
-			<string>YellowBackpack_iPad.png</string>
+		</dict>
+		<dict>
 			<key>coord-drop</key>
 			<dict>
 				<key>x</key>
@@ -170,110 +81,46 @@
 				<key>y</key>
 				<integer>384</integer>
 			</dict>
+			<key>file-dressed</key>
+			<string>YellowBackpackOn_iPad.png</string>
+			<key>file-dressed2</key>
+			<string>YellowBackpackBehindDominoOn_iPad.png</string>
+			<key>file-image</key>
+			<string>YellowBackpack_iPad.png</string>
 			<key>file-soundOk</key>
 			<string>wheel_snd_backpack.m4a</string>
 			<key>file-soundWrong</key>
 			<string>star_wrong.aif</string>
-		</dict>
-	</array>
-	<key>hat</key>
-	<array>
-		<dict>
 			<key>text_eng</key>
-			<string>Hat</string>
+			<string>Backpack</string>
 			<key>text_esp</key>
-			<string>Sobrero</string>
-			<key>file-dressed</key>
-			<string>BlueHatOn_iPad.png</string>
-			<key>file-image</key>
-			<string>BlueHat_iPad.png</string>
-			<key>coord-drop</key>
-			<dict>
-				<key>x</key>
-				<integer>512</integer>
-				<key>y</key>
-				<integer>584</integer>
-			</dict>
-			<key>file-soundOk</key>
-			<string>wheel_snd_hat.m4a</string>
-			<key>file-soundWrong</key>
-			<string>star_wrong.aif</string>
-		</dict>
-		<dict>
-			<key>text_esp</key>
-			<string>Sobrero</string>
-			<key>text_eng</key>
-			<string>Hat</string>
-			<key>file-dressed</key>
-			<string>RedHatOn_iPad.png</string>
-			<key>file-image</key>
-			<string>RedHat_iPad.png</string>
-			<key>coord-drop</key>
-			<dict>
-				<key>x</key>
-				<integer>512</integer>
-				<key>y</key>
-				<integer>584</integer>
-			</dict>
-			<key>file-soundOk</key>
-			<string>wheel_snd_hat.m4a</string>
-			<key>file-soundWrong</key>
-			<string>star_wrong.aif</string>
-		</dict>
-		<dict>
-			<key>text_esp</key>
-			<string>Sobrero</string>
-			<key>text_eng</key>
-			<string>Hat</string>
-			<key>file-dressed</key>
-			<string>PurpleHatOn_iPad.png</string>
-			<key>file-image</key>
-			<string>PurpleHat_iPad.png</string>
-			<key>coord-drop</key>
-			<dict>
-				<key>x</key>
-				<integer>512</integer>
-				<key>y</key>
-				<integer>584</integer>
-			</dict>
-			<key>file-soundOk</key>
-			<string>wheel_snd_hat.m4a</string>
-			<key>file-soundWrong</key>
-			<string>star_wrong.aif</string>
-		</dict>
-		<dict>
-			<key>text_esp</key>
-			<string>Sobrero</string>
-			<key>text_eng</key>
-			<string>Hat</string>
-			<key>file-dressed</key>
-			<string>YellowHatOn_iPad.png</string>
-			<key>file-image</key>
-			<string>YellowHat_iPad.png</string>
-			<key>coord-drop</key>
-			<dict>
-				<key>x</key>
-				<integer>512</integer>
-				<key>y</key>
-				<integer>584</integer>
-			</dict>
-			<key>file-soundOk</key>
-			<string>wheel_snd_hat.m4a</string>
-			<key>file-soundWrong</key>
-			<string>star_wrong.aif</string>
+			<string>Mochila</string>
 		</dict>
 	</array>
 	<key>boots</key>
 	<array>
 		<dict>
-			<key>text_esp</key>
-			<string>Botas</string>
-			<key>text_eng</key>
-			<string>Boots</string>
+			<key>coord-drop</key>
+			<dict>
+				<key>x</key>
+				<integer>512</integer>
+				<key>y</key>
+				<integer>140</integer>
+			</dict>
 			<key>file-dressed</key>
 			<string>BlueBootsOn_iPad.png</string>
 			<key>file-image</key>
 			<string>BlueBoots_iPad.png</string>
+			<key>file-soundOk</key>
+			<string>wheel_snd_boots.m4a</string>
+			<key>file-soundWrong</key>
+			<string>star_wrong.aif</string>
+			<key>text_eng</key>
+			<string>Boots</string>
+			<key>text_esp</key>
+			<string>Botas</string>
+		</dict>
+		<dict>
 			<key>coord-drop</key>
 			<dict>
 				<key>x</key>
@@ -281,20 +128,20 @@
 				<key>y</key>
 				<integer>140</integer>
 			</dict>
-			<key>file-soundOk</key>
-			<string>wheel_snd_boots.m4a</string>
-			<key>file-soundWrong</key>
-			<string>star_wrong.aif</string>
-		</dict>
-		<dict>
-			<key>text_eng</key>
-			<string>Boots</string>
-			<key>text_esp</key>
-			<string>Botas</string>
 			<key>file-dressed</key>
 			<string>RedBootsOn_iPad.png</string>
 			<key>file-image</key>
 			<string>RedBoots_iPad.png</string>
+			<key>file-soundOk</key>
+			<string>wheel_snd_boots.m4a</string>
+			<key>file-soundWrong</key>
+			<string>star_wrong.aif</string>
+			<key>text_eng</key>
+			<string>Boots</string>
+			<key>text_esp</key>
+			<string>Botas</string>
+		</dict>
+		<dict>
 			<key>coord-drop</key>
 			<dict>
 				<key>x</key>
@@ -302,41 +149,20 @@
 				<key>y</key>
 				<integer>140</integer>
 			</dict>
-			<key>file-soundOk</key>
-			<string>wheel_snd_boots.m4a</string>
-			<key>file-soundWrong</key>
-			<string>star_wrong.aif</string>
-		</dict>
-		<dict>
-			<key>text_eng</key>
-			<string>Boots</string>
-			<key>text_esp</key>
-			<string>Botas</string>
 			<key>file-dressed</key>
 			<string>PurpleBootsOn_iPad.png</string>
 			<key>file-image</key>
 			<string>PurpleBoots_iPad.png</string>
-			<key>coord-drop</key>
-			<dict>
-				<key>x</key>
-				<integer>512</integer>
-				<key>y</key>
-				<integer>140</integer>
-			</dict>
 			<key>file-soundOk</key>
 			<string>wheel_snd_boots.m4a</string>
 			<key>file-soundWrong</key>
 			<string>star_wrong.aif</string>
-		</dict>
-		<dict>
 			<key>text_eng</key>
 			<string>Boots</string>
 			<key>text_esp</key>
 			<string>Botas</string>
-			<key>file-dressed</key>
-			<string>YellowBootsOn_iPad.png</string>
-			<key>file-image</key>
-			<string>YellowBoots_iPad.png</string>
+		</dict>
+		<dict>
 			<key>coord-drop</key>
 			<dict>
 				<key>x</key>
@@ -344,110 +170,131 @@
 				<key>y</key>
 				<integer>140</integer>
 			</dict>
+			<key>file-dressed</key>
+			<string>YellowBootsOn_iPad.png</string>
+			<key>file-image</key>
+			<string>YellowBoots_iPad.png</string>
 			<key>file-soundOk</key>
 			<string>wheel_snd_boots.m4a</string>
 			<key>file-soundWrong</key>
 			<string>star_wrong.aif</string>
+			<key>text_eng</key>
+			<string>Boots</string>
+			<key>text_esp</key>
+			<string>Botas</string>
 		</dict>
 	</array>
-	<key>necklace</key>
+	<key>hat</key>
 	<array>
 		<dict>
-			<key>text_eng</key>
-			<string>Necklace</string>
-			<key>text_esp</key>
-			<string>Collar</string>
-			<key>file-dressed</key>
-			<string>BlueNecklaceOn_iPad.png</string>
-			<key>file-image</key>
-			<string>BlueNecklace_iPad.png</string>
 			<key>coord-drop</key>
 			<dict>
 				<key>x</key>
 				<integer>512</integer>
 				<key>y</key>
-				<integer>384</integer>
+				<integer>584</integer>
 			</dict>
+			<key>file-dressed</key>
+			<string>BlueHatOn_iPad.png</string>
+			<key>file-image</key>
+			<string>BlueHat_iPad.png</string>
 			<key>file-soundOk</key>
-			<string>wheel_snd_necklace.m4a</string>
+			<string>wheel_snd_hat.m4a</string>
 			<key>file-soundWrong</key>
 			<string>star_wrong.aif</string>
+			<key>text_eng</key>
+			<string>Hat</string>
+			<key>text_esp</key>
+			<string>Gorra</string>
 		</dict>
 		<dict>
-			<key>text_esp</key>
-			<string>Collar</string>
-			<key>text_eng</key>
-			<string>Necklace</string>
-			<key>file-dressed</key>
-			<string>RedNecklaceOn_iPad.png</string>
-			<key>file-image</key>
-			<string>RedNecklace_iPad.png</string>
 			<key>coord-drop</key>
 			<dict>
 				<key>x</key>
 				<integer>512</integer>
 				<key>y</key>
-				<integer>384</integer>
+				<integer>584</integer>
 			</dict>
+			<key>file-dressed</key>
+			<string>RedHatOn_iPad.png</string>
+			<key>file-image</key>
+			<string>RedHat_iPad.png</string>
 			<key>file-soundOk</key>
-			<string>wheel_snd_necklace.m4a</string>
+			<string>wheel_snd_hat.m4a</string>
 			<key>file-soundWrong</key>
 			<string>star_wrong.aif</string>
+			<key>text_eng</key>
+			<string>Hat</string>
+			<key>text_esp</key>
+			<string>Gorra</string>
 		</dict>
 		<dict>
-			<key>text_esp</key>
-			<string>Collar</string>
-			<key>text_eng</key>
-			<string>Necklace</string>
-			<key>file-dressed</key>
-			<string>PurpleNecklaceOn_iPad.png</string>
-			<key>file-image</key>
-			<string>PurpleNecklace_iPad.png</string>
 			<key>coord-drop</key>
 			<dict>
 				<key>x</key>
 				<integer>512</integer>
 				<key>y</key>
-				<integer>384</integer>
+				<integer>584</integer>
 			</dict>
+			<key>file-dressed</key>
+			<string>PurpleHatOn_iPad.png</string>
+			<key>file-image</key>
+			<string>PurpleHat_iPad.png</string>
 			<key>file-soundOk</key>
-			<string>wheel_snd_necklace.m4a</string>
+			<string>wheel_snd_hat.m4a</string>
 			<key>file-soundWrong</key>
 			<string>star_wrong.aif</string>
+			<key>text_eng</key>
+			<string>Hat</string>
+			<key>text_esp</key>
+			<string>Gorra</string>
 		</dict>
 		<dict>
-			<key>text_esp</key>
-			<string>Collar</string>
-			<key>text_eng</key>
-			<string>Necklace</string>
-			<key>file-dressed</key>
-			<string>YellowNecklaceOn_iPad.png</string>
-			<key>file-image</key>
-			<string>YellowNecklace_iPad.png</string>
 			<key>coord-drop</key>
 			<dict>
 				<key>x</key>
 				<integer>512</integer>
 				<key>y</key>
-				<integer>384</integer>
+				<integer>584</integer>
 			</dict>
+			<key>file-dressed</key>
+			<string>YellowHatOn_iPad.png</string>
+			<key>file-image</key>
+			<string>YellowHat_iPad.png</string>
 			<key>file-soundOk</key>
-			<string>wheel_snd_necklace.m4a</string>
+			<string>wheel_snd_hat.m4a</string>
 			<key>file-soundWrong</key>
 			<string>star_wrong.aif</string>
+			<key>text_eng</key>
+			<string>Hat</string>
+			<key>text_esp</key>
+			<string>Gorra</string>
 		</dict>
 	</array>
 	<key>jacket</key>
 	<array>
 		<dict>
-			<key>text_esp</key>
-			<string>Chaqueta</string>
-			<key>text_eng</key>
-			<string>Jacket</string>
+			<key>coord-drop</key>
+			<dict>
+				<key>x</key>
+				<integer>512</integer>
+				<key>y</key>
+				<integer>384</integer>
+			</dict>
 			<key>file-dressed</key>
 			<string>BlueJacketOn_iPad.png</string>
 			<key>file-image</key>
 			<string>BlueJacket_iPad.png</string>
+			<key>file-soundOk</key>
+			<string>wheel_snd_jacket.m4a</string>
+			<key>file-soundWrong</key>
+			<string>star_wrong.aif</string>
+			<key>text_eng</key>
+			<string>Jacket</string>
+			<key>text_esp</key>
+			<string>Chaqueta</string>
+		</dict>
+		<dict>
 			<key>coord-drop</key>
 			<dict>
 				<key>x</key>
@@ -455,20 +302,20 @@
 				<key>y</key>
 				<integer>384</integer>
 			</dict>
-			<key>file-soundOk</key>
-			<string>wheel_snd_jacket.m4a</string>
-			<key>file-soundWrong</key>
-			<string>star_wrong.aif</string>
-		</dict>
-		<dict>
-			<key>text_esp</key>
-			<string>Chaqueta</string>
-			<key>text_eng</key>
-			<string>Jacket</string>
 			<key>file-dressed</key>
 			<string>RedJacketOn_iPad.png</string>
 			<key>file-image</key>
 			<string>RedJacket_iPad.png</string>
+			<key>file-soundOk</key>
+			<string>wheel_snd_jacket.m4a</string>
+			<key>file-soundWrong</key>
+			<string>star_wrong.aif</string>
+			<key>text_eng</key>
+			<string>Jacket</string>
+			<key>text_esp</key>
+			<string>Chaqueta</string>
+		</dict>
+		<dict>
 			<key>coord-drop</key>
 			<dict>
 				<key>x</key>
@@ -476,20 +323,20 @@
 				<key>y</key>
 				<integer>384</integer>
 			</dict>
-			<key>file-soundOk</key>
-			<string>wheel_snd_jacket.m4a</string>
-			<key>file-soundWrong</key>
-			<string>star_wrong.aif</string>
-		</dict>
-		<dict>
-			<key>text_esp</key>
-			<string>Chaqueta</string>
-			<key>text_eng</key>
-			<string>Jacket</string>
 			<key>file-dressed</key>
 			<string>PurpleJacketOn_iPad.png</string>
 			<key>file-image</key>
 			<string>PurpleJacket_iPad.png</string>
+			<key>file-soundOk</key>
+			<string>wheel_snd_jacket.m4a</string>
+			<key>file-soundWrong</key>
+			<string>star_wrong.aif</string>
+			<key>text_eng</key>
+			<string>Jacket</string>
+			<key>text_esp</key>
+			<string>Chaqueta</string>
+		</dict>
+		<dict>
 			<key>coord-drop</key>
 			<dict>
 				<key>x</key>
@@ -497,20 +344,23 @@
 				<key>y</key>
 				<integer>384</integer>
 			</dict>
-			<key>file-soundOk</key>
-			<string>wheel_snd_jacket.m4a</string>
-			<key>file-soundWrong</key>
-			<string>star_wrong.aif</string>
-		</dict>
-		<dict>
-			<key>text_esp</key>
-			<string>Chaqueta</string>
-			<key>text_eng</key>
-			<string>Jacket</string>
 			<key>file-dressed</key>
 			<string>YellowJacketOn_iPad.png</string>
 			<key>file-image</key>
 			<string>YellowJacket_iPad.png</string>
+			<key>file-soundOk</key>
+			<string>wheel_snd_jacket.m4a</string>
+			<key>file-soundWrong</key>
+			<string>star_wrong.aif</string>
+			<key>text_eng</key>
+			<string>Jacket</string>
+			<key>text_esp</key>
+			<string>Chaqueta</string>
+		</dict>
+	</array>
+	<key>necklace</key>
+	<array>
+		<dict>
 			<key>coord-drop</key>
 			<dict>
 				<key>x</key>
@@ -518,23 +368,194 @@
 				<key>y</key>
 				<integer>384</integer>
 			</dict>
+			<key>file-dressed</key>
+			<string>BlueNecklaceOn_iPad.png</string>
+			<key>file-image</key>
+			<string>BlueNecklace_iPad.png</string>
 			<key>file-soundOk</key>
-			<string>wheel_snd_jacket.m4a</string>
+			<string>wheel_snd_necklace.m4a</string>
 			<key>file-soundWrong</key>
 			<string>star_wrong.aif</string>
+			<key>text_eng</key>
+			<string>Necklace</string>
+			<key>text_esp</key>
+			<string>Collar</string>
+		</dict>
+		<dict>
+			<key>coord-drop</key>
+			<dict>
+				<key>x</key>
+				<integer>512</integer>
+				<key>y</key>
+				<integer>384</integer>
+			</dict>
+			<key>file-dressed</key>
+			<string>RedNecklaceOn_iPad.png</string>
+			<key>file-image</key>
+			<string>RedNecklace_iPad.png</string>
+			<key>file-soundOk</key>
+			<string>wheel_snd_necklace.m4a</string>
+			<key>file-soundWrong</key>
+			<string>star_wrong.aif</string>
+			<key>text_eng</key>
+			<string>Necklace</string>
+			<key>text_esp</key>
+			<string>Collar</string>
+		</dict>
+		<dict>
+			<key>coord-drop</key>
+			<dict>
+				<key>x</key>
+				<integer>512</integer>
+				<key>y</key>
+				<integer>384</integer>
+			</dict>
+			<key>file-dressed</key>
+			<string>PurpleNecklaceOn_iPad.png</string>
+			<key>file-image</key>
+			<string>PurpleNecklace_iPad.png</string>
+			<key>file-soundOk</key>
+			<string>wheel_snd_necklace.m4a</string>
+			<key>file-soundWrong</key>
+			<string>star_wrong.aif</string>
+			<key>text_eng</key>
+			<string>Necklace</string>
+			<key>text_esp</key>
+			<string>Collar</string>
+		</dict>
+		<dict>
+			<key>coord-drop</key>
+			<dict>
+				<key>x</key>
+				<integer>512</integer>
+				<key>y</key>
+				<integer>384</integer>
+			</dict>
+			<key>file-dressed</key>
+			<string>YellowNecklaceOn_iPad.png</string>
+			<key>file-image</key>
+			<string>YellowNecklace_iPad.png</string>
+			<key>file-soundOk</key>
+			<string>wheel_snd_necklace.m4a</string>
+			<key>file-soundWrong</key>
+			<string>star_wrong.aif</string>
+			<key>text_eng</key>
+			<string>Necklace</string>
+			<key>text_esp</key>
+			<string>Collar</string>
+		</dict>
+	</array>
+	<key>pants</key>
+	<array>
+		<dict>
+			<key>coord-drop</key>
+			<dict>
+				<key>x</key>
+				<integer>512</integer>
+				<key>y</key>
+				<integer>184</integer>
+			</dict>
+			<key>file-dressed</key>
+			<string>BluePantsOn_iPad.png</string>
+			<key>file-image</key>
+			<string>BluePants_iPad.png</string>
+			<key>file-soundOk</key>
+			<string>wheel_snd_pants.m4a</string>
+			<key>file-soundWrong</key>
+			<string>star_wrong.aif</string>
+			<key>text_eng</key>
+			<string>Pants</string>
+			<key>text_esp</key>
+			<string>Pantalones</string>
+		</dict>
+		<dict>
+			<key>coord-drop</key>
+			<dict>
+				<key>x</key>
+				<integer>512</integer>
+				<key>y</key>
+				<integer>184</integer>
+			</dict>
+			<key>file-dressed</key>
+			<string>RedPantsOn_iPad.png</string>
+			<key>file-image</key>
+			<string>RedPants_iPad.png</string>
+			<key>file-soundOk</key>
+			<string>wheel_snd_pants.m4a</string>
+			<key>file-soundWrong</key>
+			<string>star_wrong.aif</string>
+			<key>text_eng</key>
+			<string>Pants</string>
+			<key>text_esp</key>
+			<string>Pantalones</string>
+		</dict>
+		<dict>
+			<key>coord-drop</key>
+			<dict>
+				<key>x</key>
+				<integer>512</integer>
+				<key>y</key>
+				<integer>184</integer>
+			</dict>
+			<key>file-dressed</key>
+			<string>PurplePantsOn_iPad.png</string>
+			<key>file-image</key>
+			<string>PurplePants_iPad.png</string>
+			<key>file-soundOk</key>
+			<string>wheel_snd_pants.m4a</string>
+			<key>file-soundWrong</key>
+			<string>star_wrong.aif</string>
+			<key>text_eng</key>
+			<string>Pants</string>
+			<key>text_esp</key>
+			<string>Pantalones</string>
+		</dict>
+		<dict>
+			<key>coord-drop</key>
+			<dict>
+				<key>x</key>
+				<integer>512</integer>
+				<key>y</key>
+				<integer>184</integer>
+			</dict>
+			<key>file-dressed</key>
+			<string>YellowPantsOn_iPad.png</string>
+			<key>file-image</key>
+			<string>YellowPants_iPad.png</string>
+			<key>file-soundOk</key>
+			<string>dress_snd_pants_yellow.mp3</string>
+			<key>file-soundWrong</key>
+			<string>star_wrong.aif</string>
+			<key>text_eng</key>
+			<string>Pants</string>
+			<key>text_esp</key>
+			<string>Pantalones</string>
 		</dict>
 	</array>
 	<key>phone</key>
 	<array>
 		<dict>
-			<key>text_esp</key>
-			<string>Telefono</string>
-			<key>text_eng</key>
-			<string>Phone</string>
+			<key>coord-drop</key>
+			<dict>
+				<key>x</key>
+				<integer>512</integer>
+				<key>y</key>
+				<integer>384</integer>
+			</dict>
 			<key>file-dressed</key>
 			<string>BluePhoneRightHandOn_iPad.png</string>
 			<key>file-image</key>
 			<string>BluePhone_iPad.png</string>
+			<key>file-soundOk</key>
+			<string>wheel_snd_phone.m4a</string>
+			<key>file-soundWrong</key>
+			<string>star_wrong.aif</string>
+			<key>text_eng</key>
+			<string>Phone</string>
+			<key>text_esp</key>
+			<string>Telefono</string>
+		</dict>
+		<dict>
 			<key>coord-drop</key>
 			<dict>
 				<key>x</key>
@@ -542,20 +563,20 @@
 				<key>y</key>
 				<integer>384</integer>
 			</dict>
-			<key>file-soundOk</key>
-			<string>wheel_snd_phone.m4a</string>
-			<key>file-soundWrong</key>
-			<string>star_wrong.aif</string>
-		</dict>
-		<dict>
-			<key>text_eng</key>
-			<string>Phone</string>
-			<key>text_esp</key>
-			<string>Telefono</string>
 			<key>file-dressed</key>
 			<string>RedPhoneOn_iPad.png</string>
 			<key>file-image</key>
 			<string>RedPhone_iPad.png</string>
+			<key>file-soundOk</key>
+			<string>wheel_snd_phone.m4a</string>
+			<key>file-soundWrong</key>
+			<string>star_wrong.aif</string>
+			<key>text_eng</key>
+			<string>Phone</string>
+			<key>text_esp</key>
+			<string>Telefono</string>
+		</dict>
+		<dict>
 			<key>coord-drop</key>
 			<dict>
 				<key>x</key>
@@ -563,41 +584,20 @@
 				<key>y</key>
 				<integer>384</integer>
 			</dict>
-			<key>file-soundOk</key>
-			<string>wheel_snd_phone.m4a</string>
-			<key>file-soundWrong</key>
-			<string>star_wrong.aif</string>
-		</dict>
-		<dict>
-			<key>text_eng</key>
-			<string>Phone</string>
-			<key>text_esp</key>
-			<string>Telefono</string>
 			<key>file-dressed</key>
 			<string>PurplePhoneOn_iPad.png</string>
 			<key>file-image</key>
 			<string>PurplePhone_iPad.png</string>
-			<key>coord-drop</key>
-			<dict>
-				<key>x</key>
-				<integer>512</integer>
-				<key>y</key>
-				<integer>384</integer>
-			</dict>
 			<key>file-soundOk</key>
 			<string>wheel_snd_phone.m4a</string>
 			<key>file-soundWrong</key>
 			<string>star_wrong.aif</string>
-		</dict>
-		<dict>
 			<key>text_eng</key>
 			<string>Phone</string>
 			<key>text_esp</key>
 			<string>Telefono</string>
-			<key>file-dressed</key>
-			<string>YellowPhoneOn_iPad.png</string>
-			<key>file-image</key>
-			<string>YellowPhone_iPad.png</string>
+		</dict>
+		<dict>
 			<key>coord-drop</key>
 			<dict>
 				<key>x</key>
@@ -605,23 +605,44 @@
 				<key>y</key>
 				<integer>384</integer>
 			</dict>
+			<key>file-dressed</key>
+			<string>YellowPhoneOn_iPad.png</string>
+			<key>file-image</key>
+			<string>YellowPhone_iPad.png</string>
 			<key>file-soundOk</key>
 			<string>wheel_snd_phone.m4a</string>
 			<key>file-soundWrong</key>
 			<string>star_wrong.aif</string>
+			<key>text_eng</key>
+			<string>Phone</string>
+			<key>text_esp</key>
+			<string>Telefono</string>
 		</dict>
 	</array>
 	<key>sunglasses</key>
 	<array>
 		<dict>
-			<key>text_eng</key>
-			<string>Sunglasses</string>
-			<key>text_esp</key>
-			<string>Anteojos</string>
+			<key>coord-drop</key>
+			<dict>
+				<key>x</key>
+				<integer>512</integer>
+				<key>y</key>
+				<integer>600</integer>
+			</dict>
 			<key>file-dressed</key>
 			<string>BlueGlassesOn_iPad.png</string>
 			<key>file-image</key>
 			<string>BlueGlasses_iPad.png</string>
+			<key>file-soundOk</key>
+			<string>wheel_snd_sunglasses.m4a</string>
+			<key>file-soundWrong</key>
+			<string>star_wrong.aif</string>
+			<key>text_eng</key>
+			<string>Glasses</string>
+			<key>text_esp</key>
+			<string>Gafas</string>
+		</dict>
+		<dict>
 			<key>coord-drop</key>
 			<dict>
 				<key>x</key>
@@ -629,20 +650,20 @@
 				<key>y</key>
 				<integer>600</integer>
 			</dict>
-			<key>file-soundOk</key>
-			<string>wheel_snd_sunglasses.m4a</string>
-			<key>file-soundWrong</key>
-			<string>star_wrong.aif</string>
-		</dict>
-		<dict>
-			<key>text_esp</key>
-			<string>Anteojos</string>
-			<key>text_eng</key>
-			<string>Sunglasses</string>
 			<key>file-dressed</key>
 			<string>RedGlassesOn_iPad.png</string>
 			<key>file-image</key>
 			<string>RedGlasses_iPad.png</string>
+			<key>file-soundOk</key>
+			<string>wheel_snd_sunglasses.m4a</string>
+			<key>file-soundWrong</key>
+			<string>star_wrong.aif</string>
+			<key>text_eng</key>
+			<string>Glasses</string>
+			<key>text_esp</key>
+			<string>Gafas</string>
+		</dict>
+		<dict>
 			<key>coord-drop</key>
 			<dict>
 				<key>x</key>
@@ -650,20 +671,20 @@
 				<key>y</key>
 				<integer>600</integer>
 			</dict>
-			<key>file-soundOk</key>
-			<string>wheel_snd_sunglasses.m4a</string>
-			<key>file-soundWrong</key>
-			<string>star_wrong.aif</string>
-		</dict>
-		<dict>
-			<key>text_esp</key>
-			<string>Anteojos</string>
-			<key>text_eng</key>
-			<string>Sunglasses</string>
 			<key>file-dressed</key>
 			<string>PurpleGlassesOn_iPad.png</string>
 			<key>file-image</key>
 			<string>PurpleGlasses_iPad.png</string>
+			<key>file-soundOk</key>
+			<string>wheel_snd_sunglasses.m4a</string>
+			<key>file-soundWrong</key>
+			<string>star_wrong.aif</string>
+			<key>text_eng</key>
+			<string>Glasses</string>
+			<key>text_esp</key>
+			<string>Gafas</string>
+		</dict>
+		<dict>
 			<key>coord-drop</key>
 			<dict>
 				<key>x</key>
@@ -671,31 +692,18 @@
 				<key>y</key>
 				<integer>600</integer>
 			</dict>
-			<key>file-soundOk</key>
-			<string>wheel_snd_sunglasses.m4a</string>
-			<key>file-soundWrong</key>
-			<string>star_wrong.aif</string>
-		</dict>
-		<dict>
-			<key>text_esp</key>
-			<string>Anteojos</string>
-			<key>text_eng</key>
-			<string>Sunglasses</string>
 			<key>file-dressed</key>
 			<string>YellowGlassesOn_iPad.png</string>
 			<key>file-image</key>
 			<string>YellowGlasses_iPad.png</string>
-			<key>coord-drop</key>
-			<dict>
-				<key>x</key>
-				<integer>512</integer>
-				<key>y</key>
-				<integer>600</integer>
-			</dict>
 			<key>file-soundOk</key>
 			<string>wheel_snd_sunglasses.m4a</string>
 			<key>file-soundWrong</key>
 			<string>star_wrong.aif</string>
+			<key>text_eng</key>
+			<string>Glasses</string>
+			<key>text_esp</key>
+			<string>Gafas</string>
 		</dict>
 	</array>
 </dict>

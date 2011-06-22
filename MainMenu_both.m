@@ -35,28 +35,31 @@
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
     
-    [[SimpleAudioEngine sharedEngine] playBackgroundMusic:@"backgroundMusic.mp3"];
   //  [self animateDoors];
-	if(![GameManager sharedGameManager].playedMenuVideo)
+	/*if(![GameManager sharedGameManager].playedMenuVideo)
 	{
 		[[GameManager sharedGameManager] setPlayedMenuVideo:YES];
 		[self playVideo];
 	}else {
+		 [[SimpleAudioEngine sharedEngine] playBackgroundMusic:@"backgroundMusic.mp3"];
 		[self animateDoors];
-	}
+	}*/
 
     [super viewDidLoad];
 	
 }
 
 
--(void)playVideo
-{
+-(void)playVideo:(NSString *) suffix
+{   
 	NSURL * url;
 	NSBundle *bundle = [NSBundle mainBundle];
+    
+    [[SimpleAudioEngine sharedEngine] pauseBackgroundMusic];
 	if (bundle) 
-	{
-		NSString *moviePath = [bundle pathForResource:[NSString stringWithFormat:@"menu_%@_iPad",[GameManager sharedGameManager].instructionsLanguageString] ofType:@"mov"];
+	{   
+        NSString * path = [NSString stringWithFormat:@"menu_%@_",[GameManager sharedGameManager].instructionsLanguageString];
+		NSString *moviePath = [bundle pathForResource:[path stringByAppendingString:suffix] ofType:@"mov"];
 		if (moviePath)
 		{
 			url = [NSURL fileURLWithPath:moviePath];
@@ -95,7 +98,14 @@
 		[introVideo stop];
 		[introVideo.view removeFromSuperview];
 		[introVideo release];
-		[self animateDoors];
+		
+		[[SimpleAudioEngine sharedEngine] playBackgroundMusic:@"backgroundMusic.mp3"];
+        
+        if(videoFromLoadingScene)
+        {
+            videoFromLoadingScene = NO;
+        }
+        [self animateDoors:doorsSuffix];
 	}
 }
 
@@ -112,14 +122,23 @@
 	[introVideo.view removeFromSuperview];
 	[introVideo release];
 	
-	 [self animateDoors];
+	 [[SimpleAudioEngine sharedEngine] playBackgroundMusic:@"backgroundMusic.mp3"];
+    if(videoFromLoadingScene)
+    {
+        videoFromLoadingScene = NO;
+    }
+    [self animateDoors:doorsSuffix];
 	//[self beginGame];
 }
 
 
--(void)animateDoors
-{
-    NSString* format = @"CityMenu_Page1_GlowingDoors_%05d_iPad";
+-(void)animateDoors:(NSString*)suffix
+{   
+    
+    NSString* string = @"CityMenu_Page1_GlowingDoors_%05d";
+    
+    NSString * format = [string stringByAppendingString:suffix];
+    
    /* if([viewController iPad] == FALSE)
     {
         format = @"EyePulseAnim_%05d-iPhone.png";
@@ -147,7 +166,9 @@
     [door1 startAnimating];
     
 
-    NSString* format2 = @"CityMenu_Page2_GlowingDoors_%05d_iPad";
+    NSString* string2 = @"CityMenu_Page2_GlowingDoors_%05d";
+    
+    NSString * format2 = [string2 stringByAppendingString:suffix];
    
     j =-1;
     NSMutableArray* images2 = [[NSMutableArray alloc] init];

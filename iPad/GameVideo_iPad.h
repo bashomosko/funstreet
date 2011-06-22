@@ -8,20 +8,10 @@
 
 #import <UIKit/UIKit.h>
 #import <MediaPlayer/MediaPlayer.h>
+#import "GameVideo_both.h"
 
-@interface GameVideo_iPad : UIViewController {
+@interface GameVideo_iPad : GameVideo_both {
 
-	MPMoviePlayerController * video;
-	
-	IBOutlet UIImageView * curtainL;
-	IBOutlet UIImageView * curtainR;
-	IBOutlet UIScrollView *scrollview;
-	IBOutlet UIPageControl * scrollPaging;
 }
-
-@property (nonatomic,retain) IBOutlet UIImageView * curtainL;
-@property (nonatomic,retain)IBOutlet UIImageView * curtainR;
-@property (nonatomic,retain) IBOutlet UIScrollView *scrollview;
-@property (nonatomic,retain)IBOutlet UIPageControl * scrollPaging;
 
 @end

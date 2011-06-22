@@ -10,6 +10,7 @@
 #import "cocos2d.h"
 #import "AppDelegate_iPhone.h"
 #import "GameWheelScene.h"
+#import "GameManager.h"
 
 @implementation GameWheel
 
@@ -111,6 +112,31 @@
 	[gw.view setAlpha:1];
 	[UIView commitAnimations];
 }
+
+-(void)goToSettings
+{
+	[GameManager sharedGameManager].onPause = YES;
+	sv = [[SettingsViewController_iPhone alloc] initWithNibName:@"SettingsViewController_iPhone" bundle:nil];
+    
+	sv.rootVC = self;
+	
+	[[[CCDirector sharedDirector] openGLView] addSubview:sv.view];
+}
+
+-(void)removeSettings
+{
+	[GameManager sharedGameManager].onPause = NO;
+	[sv.view removeFromSuperview];
+	[sv release];
+    
+    if(![GameManager sharedGameManager].playedGame1Video)
+    {
+        [[GameManager sharedGameManager] setPlayedGame1Video:YES];
+        [gameWheelLayer loadVideo];
+    }
+    
+}
+
 
 // Override to allow orientations other than the default portrait orientation.
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
