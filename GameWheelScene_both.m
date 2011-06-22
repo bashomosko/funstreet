@@ -98,7 +98,10 @@
 		[introVideo.view removeFromSuperview];
 		[introVideo release];
         
-        [[SimpleAudioEngine sharedEngine] resumeBackgroundMusic];
+        if ([GameManager sharedGameManager].musicAudioEnabled) {
+            [[SimpleAudioEngine sharedEngine] resumeBackgroundMusic];
+        }
+
         [GameManager sharedGameManager].onPause = NO;
         
         if(videoFromLoadingScene)
@@ -123,7 +126,10 @@
 	[introVideo.view removeFromSuperview];
 	[introVideo release];
     
-    [[SimpleAudioEngine sharedEngine] resumeBackgroundMusic];
+    if ([GameManager sharedGameManager].musicAudioEnabled) {
+        [[SimpleAudioEngine sharedEngine] resumeBackgroundMusic];
+    }
+
     [GameManager sharedGameManager].onPause = NO;
     if(videoFromLoadingScene)
     {

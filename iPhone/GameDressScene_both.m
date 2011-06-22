@@ -38,7 +38,10 @@
 		[introVideo release];
 	
         [GameManager sharedGameManager].onPause = NO;
-        [[SimpleAudioEngine sharedEngine] resumeBackgroundMusic];
+        if ([GameManager sharedGameManager].musicAudioEnabled) {
+            [[SimpleAudioEngine sharedEngine] resumeBackgroundMusic];
+        }
+
         if(videoFromLoadingScene)
         {
             [self beginGame];
@@ -61,7 +64,10 @@
 	[introVideo release];
 	
     [GameManager sharedGameManager].onPause = NO;
-    [[SimpleAudioEngine sharedEngine] resumeBackgroundMusic];
+    
+    if ([GameManager sharedGameManager].musicAudioEnabled) {
+        [[SimpleAudioEngine sharedEngine] resumeBackgroundMusic];
+    }
     if(videoFromLoadingScene)
     {
         [self beginGame];
