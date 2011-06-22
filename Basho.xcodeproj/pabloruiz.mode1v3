@@ -350,6 +350,10 @@
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
 										<string>README.rtf</string>
+										<key>_historyCapacity</key>
+										<integer>0</integer>
+										<key>bookmark</key>
+										<string>10AB513013B2ACAA0098459A</string>
 										<key>history</key>
 										<array>
 											<string>10B56A4A1306EDB900AA7DCB</string>
@@ -465,6 +469,7 @@
 											<string>107B9A151393BBB8000332CA</string>
 											<string>10D7C9C613950E47006F4D4E</string>
 											<string>10D7C9C813950E47006F4D4E</string>
+											<string>10AB512F13B2ACAA0098459A</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -476,14 +481,14 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 0}, {924, 441}}</string>
+								<string>{{0, 0}, {924, 435}}</string>
 								<key>RubberWindowFrame</key>
 								<string>0 117 1280 653 0 0 1280 778 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
 							<key>Proportion</key>
-							<string>441pt</string>
+							<string>435pt</string>
 						</dict>
 						<dict>
 							<key>ContentConfiguration</key>
@@ -496,14 +501,14 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 446}, {924, 166}}</string>
+								<string>{{0, 440}, {924, 172}}</string>
 								<key>RubberWindowFrame</key>
 								<string>0 117 1280 653 0 0 1280 778 </string>
 							</dict>
 							<key>Module</key>
 							<string>XCDetailModule</string>
 							<key>Proportion</key>
-							<string>166pt</string>
+							<string>172pt</string>
 						</dict>
 					</array>
 					<key>Proportion</key>
@@ -522,9 +527,9 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>10AB511813B2AAEF0098459A</string>
+				<string>10AB513113B2ACAA0098459A</string>
 				<string>1CE0B1FE06471DED0097A5F4</string>
-				<string>10AB511913B2AAEF0098459A</string>
+				<string>10AB513213B2ACAA0098459A</string>
 				<string>1CE0B20306471E060097A5F4</string>
 				<string>1CE0B20506471E060097A5F4</string>
 			</array>
@@ -743,7 +748,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>10B569EA1306EA9600AA7DCB</string>
-				<string>10AB511A13B2AAEF0098459A</string>
+				<string>10AB513313B2ACAA0098459A</string>
 				<string>1CD0528F0623707200166675</string>
 				<string>XCMainBuildResultsModuleGUID</string>
 			</array>
