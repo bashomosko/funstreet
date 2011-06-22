@@ -1,20 +1,19 @@
     //
-//  GameDress_iPad.m
+//  GameDress_iPhone.m
 //  Basho
 //
 //  Created by Pablo Ruiz on 04/03/11.
 //  Copyright 2011 __MyCompanyName__. All rights reserved.
 //
 
-#import "GameDress_iPad.h"
+#import "GameDress_iPhone.h"
 #import "cocos2d.h"
-#import "AppDelegate_iPad.h"
-#import "MainMenu_iPad.h"
+#import "AppDelegate_iPhone.h"
+#import "MainMenu.h"
 #import "SimpleAudioEngine.h"
 #import "GameManager.h"
 
-@implementation GameDress_iPad
-
+@implementation GameDress_iPhone
 @synthesize gameDressLayer;
 
 // The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
@@ -37,7 +36,7 @@
 	// Init the View Controller
 	self.wantsFullScreenLayout = YES;
 	
-	AppDelegate_iPad * app = (AppDelegate_iPad *)[[UIApplication sharedApplication] delegate];
+	AppDelegate_iPhone * app = (AppDelegate_iPhone *)[[UIApplication sharedApplication] delegate];
 	UIWindow * window = app.window;
 	EAGLView *glView = [EAGLView viewWithFrame:[window bounds]
 								   pixelFormat:kEAGLColorFormatRGB565	// kEAGLColorFormatRGBA8
@@ -69,7 +68,7 @@
 	//[self removeStartupFlicker];
 	
 	// Run the intro Scene
-    GameDressScene_iPad * gameDressScene = [GameDressScene_iPad sceneWithDressVC:self bashoDirected:NO playVid:YES playingAgain:NO];
+    GameDressScene_iPhone * gameDressScene = [GameDressScene_iPhone sceneWithDressVC:self bashoDirected:NO playVid:YES playingAgain:NO];
     gameDressLayer = [gameDressScene getChildByTag:1000];
 	[[CCDirector sharedDirector] runWithScene:gameDressScene];	
 }
@@ -105,10 +104,10 @@
 	[self.view removeFromSuperview];
 	[self release];
 	
-	MainMenu_iPad * gw = [[MainMenu_iPad alloc] 
-						  initWithNibName:@"MainMenu_iPad" bundle:nil];
+	MainMenu * gw = [[MainMenu alloc] 
+						  initWithNibName:@"MainMenu" bundle:nil];
 	[gw.view setAlpha:0];
-	AppDelegate_iPad * app = (AppDelegate_iPad *)[[UIApplication sharedApplication] delegate];
+	AppDelegate_iPhone * app = (AppDelegate_iPhone *)[[UIApplication sharedApplication] delegate];
 	UIWindow * w = app.window;
 	[w addSubview:gw.view];
 	
@@ -128,10 +127,10 @@
 	[self.view removeFromSuperview];
 	[self release];
 	
-	MainMenu_iPad * gw = [[MainMenu_iPad alloc] 
-						  initWithNibName:@"MainMenu_iPad" bundle:nil];
+	MainMenu * gw = [[MainMenu alloc] 
+						  initWithNibName:@"MainMenu" bundle:nil];
 	[gw.view setAlpha:0];
-	AppDelegate_iPad * app = (AppDelegate_iPad *)[[UIApplication sharedApplication] delegate];
+	AppDelegate_iPhone * app = (AppDelegate_iPhone *)[[UIApplication sharedApplication] delegate];
 	UIWindow * w = app.window;
 	[w addSubview:gw.view];
 	
@@ -145,7 +144,7 @@
 -(void)goToSettings
 {
 	[GameManager sharedGameManager].onPause = YES;
-	sv = [[SettingsViewController_iPad alloc] initWithNibName:@"SettingsViewController_iPad" bundle:nil];
+	sv = [[SettingsViewController_iPhone alloc] initWithNibName:@"SettingsViewController_iPhone" bundle:nil];
 	sv.rootVC = self;
 	
 	[[[CCDirector sharedDirector] openGLView] addSubview:sv.view];

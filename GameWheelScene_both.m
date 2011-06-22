@@ -178,8 +178,11 @@
 }
 
 -(void)resetTapButtons
-{
-	[[SimpleAudioEngine sharedEngine] resumeBackgroundMusic];
+{   
+    if ([GameManager sharedGameManager].musicAudioEnabled) {
+        [[SimpleAudioEngine sharedEngine] resumeBackgroundMusic];
+    }
+    
 	for (CCMenuItemImage * m in [tapButtons children])
 	{
 		[m setIsEnabled:YES];

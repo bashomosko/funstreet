@@ -73,9 +73,22 @@
 	[palabra runAction:[CCRepeatForever actionWithAction:[CCSequence actions:[CCFadeIn actionWithDuration:0.5],[CCDelayTime actionWithDuration:1],[CCFadeOut actionWithDuration:0.5],nil]]];
 }
 
+-(void)ccTouchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
+{
+	UITouch *touch = [touches anyObject];
+    CGPoint location = [touch locationInView: [touch view]];
+    location = [[CCDirector sharedDirector] convertToGL: location];	
+	
+	if(moveOutActivated)
+		[self moveOut];
+	
+	
+}
+
 -(void)moveOut
 {
 	moveOutActivated = NO;
+    [[CCSpriteFrameCache sharedSpriteFrameCache] removeUnusedSpriteFrames];
 	[[CCDirector sharedDirector] replaceScene:[CCTransitionFade transitionWithDuration:0.5 scene: [GameDressScene_iPad sceneWithDressVC:viewController bashoDirected:bashoDirected playVid:NO playingAgain:YES] withColor:ccWHITE]];
 
 }
@@ -103,9 +116,15 @@
 	[photo runAction:[CCSequence actions:[CCDelayTime actionWithDuration:(num-(0.5*num))],[CCToggleVisibility action],[CCCallFunc actionWithTarget:self selector:@selector(playSnd)],[CCScaleTo actionWithDuration:0.3 scale:1],nil]];
 }
 
+-(void)playSnd
+{
+	if([GameManager sharedGameManager].soundsEnabled)
+		[[SimpleAudioEngine sharedEngine] playEffect:@"Camera_SFX.mp3"];
+}
 
 -(void)dealloc
 {
+	[[SimpleAudioEngine sharedEngine] unloadEffect:@"Camera_SFX.mp3"];
 	[super dealloc];
 }
 

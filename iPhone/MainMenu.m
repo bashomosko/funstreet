@@ -12,6 +12,7 @@
 #import "GameVideo.h"
 #import "GameManager.h"
 #import "SimpleAudioEngine.h"
+#import "GameDress_iPhone.h"
 
 @implementation MainMenu
 
@@ -43,6 +44,24 @@
     
     [super viewDidLoad];
 }
+
+-(void)loadDress
+{
+	[self.view removeFromSuperview];
+	[self release];
+	
+	GameDress_iPhone * gw = [[GameDress_iPhone alloc] 
+						   initWithNibName:@"GameDress_iPhone" bundle:nil];
+	[gw.view setAlpha:0];
+	AppDelegate_iPhone * app = (AppDelegate_iPhone *)[[UIApplication sharedApplication] delegate];
+	UIWindow * w = app.window;
+	[w addSubview:gw.view];
+	
+	[UIView beginAnimations:nil context:nil];
+	[gw.view setAlpha:1];
+	[UIView commitAnimations];
+}
+
 
 -(IBAction)goToSettings
 {

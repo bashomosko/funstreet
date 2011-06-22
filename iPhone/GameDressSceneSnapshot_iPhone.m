@@ -1,34 +1,34 @@
 //
-//  GameDressSceneSnapshot_iPad.m
+//  GameDressSceneSnapshot_iPhone.m
 //  Basho
 //
 //  Created by Pablo Ruiz on 19/05/11.
 //  Copyright 2011 __MyCompanyName__. All rights reserved.
 //
 
-#import "GameDressSceneSnapshot_iPad.h"
+#import "GameDressSceneSnapshot_iPhone.h"
 #import "GameManager.h"
 #import "SimpleAudioEngine.h"
-#import "GameDressScene_iPad.h"
+#import "GameDressScene_iPhone.h"
 
 
-@implementation GameDressSceneSnapshot_iPad
+@implementation GameDressSceneSnapshot_iPhone
 
 
-+(id) sceneWithDressVC:(GameDress_iPad *)vc dinoImage:(UIImage *)img bashoDirected:(BOOL)_bashoDirected
++(id) sceneWithDressVC:(GameDress_iPhone *)vc dinoImage:(UIImage *)img bashoDirected:(BOOL)_bashoDirected
 {
     CCScene *scene = [CCScene node];
-    GameDressSceneSnapshot_iPad *layer = [GameDressSceneSnapshot_iPad nodeWithDressVC:vc dinoImage:img bashoDirected:_bashoDirected];
+    GameDressSceneSnapshot_iPhone *layer = [GameDressSceneSnapshot_iPhone nodeWithDressVC:vc dinoImage:img bashoDirected:_bashoDirected];
     [scene addChild: layer];
     return scene;
 }
 
-+(id) nodeWithDressVC:(GameDress_iPad *)vc dinoImage:(UIImage *)img bashoDirected:(BOOL)_bashoDirected
++(id) nodeWithDressVC:(GameDress_iPhone *)vc dinoImage:(UIImage *)img bashoDirected:(BOOL)_bashoDirected
 {
 	return [[[self alloc] initWithDressVC:vc dinoImage:img bashoDirected:_bashoDirected] autorelease];
 }
 
--(id) initWithDressVC:(GameDress_iPad *)vc dinoImage:(UIImage *)img bashoDirected:(BOOL)_bashoDirected
+-(id) initWithDressVC:(GameDress_iPhone *)vc dinoImage:(UIImage *)img bashoDirected:(BOOL)_bashoDirected
 {
 	if( (self=[super init] )) {
 		self.isTouchEnabled = YES;
@@ -73,10 +73,11 @@
 	[palabra runAction:[CCRepeatForever actionWithAction:[CCSequence actions:[CCFadeIn actionWithDuration:0.5],[CCDelayTime actionWithDuration:1],[CCFadeOut actionWithDuration:0.5],nil]]];
 }
 
+
 -(void)moveOut
 {
 	moveOutActivated = NO;
-	[[CCDirector sharedDirector] replaceScene:[CCTransitionFade transitionWithDuration:0.5 scene: [GameDressScene_iPad sceneWithDressVC:viewController bashoDirected:bashoDirected playVid:NO playingAgain:YES] withColor:ccWHITE]];
+	[[CCDirector sharedDirector] replaceScene:[CCTransitionFade transitionWithDuration:0.5 scene: [GameDressScene_iPhone sceneWithDressVC:viewController bashoDirected:bashoDirected playVid:NO playingAgain:YES] withColor:ccWHITE]];
 
 }
 
@@ -106,6 +107,7 @@
 
 -(void)dealloc
 {
+	[[SimpleAudioEngine sharedEngine] unloadEffect:@"Camera_SFX.mp3"];
 	[super dealloc];
 }
 

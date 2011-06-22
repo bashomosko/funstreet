@@ -19,6 +19,4 @@
     SettingsViewController_iPad * sv;
 }
 
-@property (nonatomic,assign) GameDressScene_iPad * gameDressLayer;
-
 @end

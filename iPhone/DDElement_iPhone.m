@@ -1,13 +1,13 @@
 
 
-#import "DDElement.h"
+#import "DDElement_iPhone.h"
 #import "GameManager.h"
 #import "SimpleAudioEngine.h"
-#import "GameManager.h"
 
-@implementation DDElement
+@implementation DDElement_iPhone
 
--(id) initWithTheGame:(GameDress_iPad *)ddm elementDict:(NSMutableDictionary *)element
+
+-(id) initWithTheGame:(GameDress_iPhone *)ddm elementDict:(NSMutableDictionary *)element
 {
 	if( (self=[super init])) {
 		
@@ -58,7 +58,6 @@
 	return self;
 }
 
-
 - (BOOL)ccTouchBegan:(UITouch *)touch withEvent:(UIEvent *)event
 {
 	if (state != kStateUngrabbed) return NO;
@@ -69,7 +68,7 @@
 	
 	//if(placed && movableAfterPlaced)
 	//	theGame.elementsPlaced--;
-
+    
 	
 	CGPoint location = [touch locationInView: [touch view]];
 	location = [[CCDirector sharedDirector] convertToGL: location];
@@ -79,6 +78,7 @@
 	
 	return YES;
 }
+
 
 - (void)ccTouchEnded:(UITouch *)touch withEvent:(UIEvent *)event
 {
@@ -157,28 +157,10 @@
 }
             
 
--(void)shakeMismatch
-{
-    CGPoint initPos = mySprite.position;
-    
-	[mySprite runAction:[CCSequence actions:[CCRepeat actionWithAction:[CCSequence actions:
-																		[CCMoveBy actionWithDuration:0.05 position:ccp(5,5)],
-																		[CCMoveBy actionWithDuration:0.05 position:ccp(-5,-5)],
-																		[CCMoveBy actionWithDuration:0.05 position:ccp(5,5)],
-																		[CCMoveBy actionWithDuration:0.05 position:ccp(-5,-5)],
-																		[CCMoveBy actionWithDuration:0.05 position:ccp(5,5)],
-																		[CCMoveBy actionWithDuration:0.05 position:ccp(-5,-5)],
-																		[CCMoveBy actionWithDuration:0.05 position:ccp(5,5)],
-																		[CCMoveBy actionWithDuration:0.05 position:ccp(-5,-5)],
-																		[CCMoveBy actionWithDuration:0.05 position:ccp(5,5)],
-																		[CCMoveBy actionWithDuration:0.05 position:ccp(-5,-5)],nil]
-																 times:2],[CCPlace actionWithPosition:initPos],nil]];
-}
-
-
 -(void)dealloc
 {
-    [super dealloc];
+
+	[super dealloc];
 }
 
 @end

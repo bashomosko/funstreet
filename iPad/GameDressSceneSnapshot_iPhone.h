@@ -9,14 +9,14 @@
 #import <Foundation/Foundation.h>
 #import "cocos2d.h"
 #import "GameDress_iPad.h"
-#import "GameDressSceneSnapshot_both.h"
 
 @class GameDress_iPad;
 
-@interface GameDressSceneSnapshot_iPad : GameDressSceneSnapshot_both {
+@interface GameDressSceneSnapshot_iPad : CCLayer {
 
 	GameDress_iPad * viewController;
-	
+	BOOL moveOutActivated;
+    BOOL bashoDirected;
 }
 
 @end

@@ -1,34 +1,33 @@
 //
-//  GameDressScene_iPad.m
+//  GameDressScene_iPhone.m
 //  Basho
 //
 //  Created by Pablo Ruiz on 04/03/11.
 //  Copyright 2011 __MyCompanyName__. All rights reserved.
 //
 
-#import "GameDressScene_iPad.h"
-#import "DDElement.h"
+#import "GameDressScene_iPhone.h"
+#import "DDElement_iPhone.h"
 #import "GameManager.h"
 #import "SimpleAudioEngine.h"
 
-@implementation GameDressScene_iPad
-
+@implementation GameDressScene_iPhone
 @synthesize viewController;
 
-+(id) sceneWithDressVC:(GameDress_iPad *)vc bashoDirected:(BOOL)_bashoDirected playVid:(BOOL)playVid playingAgain:(BOOL)_playingAgain
++(id) sceneWithDressVC:(GameDress_iPhone *)vc bashoDirected:(BOOL)_bashoDirected playVid:(BOOL)playVid playingAgain:(BOOL)_playingAgain
 {
     CCScene *scene = [CCScene node];
-    GameDressScene_iPad *layer = [GameDressScene_iPad nodeWithDressVC:vc bashoDirected:_bashoDirected playVid:playVid playingAgain:_playingAgain];
+    GameDressScene_iPhone *layer = [GameDressScene_iPhone nodeWithDressVC:vc bashoDirected:_bashoDirected playVid:playVid playingAgain:_playingAgain];
     [scene addChild: layer z:1 tag:1000];
     return scene;
 }
 
-+(id) nodeWithDressVC:(GameDress_iPad *)vc bashoDirected:(BOOL)_bashoDirected playVid:(BOOL)playVid playingAgain:(BOOL)_playingAgain
++(id) nodeWithDressVC:(GameDress_iPhone *)vc bashoDirected:(BOOL)_bashoDirected playVid:(BOOL)playVid playingAgain:(BOOL)_playingAgain
 {
 	return [[[self alloc] initWithDressVC:vc bashoDirected:_bashoDirected playVid:playVid playingAgain:_playingAgain] autorelease];
 }
 
--(id) initWithDressVC:(GameDress_iPad *)vc bashoDirected:(BOOL)_bashoDirected playVid:(BOOL)playVid playingAgain:(BOOL)_playingAgain
+-(id) initWithDressVC:(GameDress_iPhone *)vc bashoDirected:(BOOL)_bashoDirected playVid:(BOOL)playVid playingAgain:(BOOL)_playingAgain
 {
 	if( (self=[super init] )) {
 		self.isTouchEnabled = YES;
@@ -157,7 +156,7 @@
 	[target end];
 	[target saveBuffer:@"pirulo"];
 	UIImage * savedImg = [target getUIImageFromBuffer];
-	[[CCDirector sharedDirector] replaceScene:[CCTransitionFade transitionWithDuration:0.5 scene: [GameDressSceneSnapshot_iPad sceneWithDressVC:viewController dinoImage:savedImg bashoDirected:bashoDirected] withColor:ccWHITE]];
+	[[CCDirector sharedDirector] replaceScene:[CCTransitionFade transitionWithDuration:0.5 scene: [GameDressSceneSnapshot_iPhone sceneWithDressVC:viewController dinoImage:savedImg bashoDirected:bashoDirected] withColor:ccWHITE]];
 
 	//[[CCDirector sharedDirector] replaceScene:[CCTransitionFade transitionWithDuration:0.5 scene: [GameDressScene_iPad sceneWithDressVC:viewController bashoDirected:YES playVid:NO] withColor:ccWHITE]];
 	
@@ -278,6 +277,7 @@
 }
 
 
+
 -(void)playRandomDinoAnim
 {
 	int animNum = arc4random() %4+1;
@@ -341,20 +341,22 @@
 	
 }
 
+
 -(void)goSettings
 {
     [viewController goToSettings];
 }
+
 
 -(void)turnBasho
 {
 	bashoDirected = !bashoDirected;
 	
     viewController.gameDressLayer = nil;
-     
-    GameDressScene_iPad * gameDressScene = [GameDressScene_iPad sceneWithDressVC:viewController bashoDirected:bashoDirected playVid:NO playingAgain:NO];
     
-    GameDressScene_iPad * layer = [gameDressScene getChildByTag:1000];
+    GameDressScene_iPhone * gameDressScene = [GameDressScene_iPhone sceneWithDressVC:viewController bashoDirected:bashoDirected playVid:NO playingAgain:NO];
+    
+    GameDressScene_iPhone * layer = [gameDressScene getChildByTag:1000];
     
     layer.viewController.gameDressLayer = layer;
     
@@ -369,7 +371,7 @@
 	if(bashoSelectedSound >=8)
 	{
 		CCSpriteBatchNode * sbn = [self getChildByTag:kSPRITEBATCH_ELEMS];
-		for(DDElement * el in ddElements)
+		for(DDElement_iPhone * el in ddElements)
 		{
 			[sbn removeChild:el.mySprite cleanup:YES];
 			[self removeChild:el cleanup:YES];
@@ -453,9 +455,9 @@
 }
 
 
--(void)dressDino:(GameDressScene_iPad *)scene data:(void *)data
+-(void)dressDino:(GameDressScene_iPhone *)scene data:(void *)data
 {	
-	DDElement * item = (DDElement *)data;
+	DDElement_iPhone * item = (DDElement_iPhone *)data;
 	CCSpriteBatchNode * sbn = [self getChildByTag:kSPRITEBATCH_ELEMS];
 	
 	if(item.itemTag == BTN_PANTS_NUM)
@@ -489,7 +491,7 @@
 -(void)loadScatteredElementsForItem:(int)item
 {
 	CCSpriteBatchNode * sbn = [self getChildByTag:kSPRITEBATCH_ELEMS];
-	for(DDElement * el in ddElements)
+	for(DDElement_iPhone * el in ddElements)
 	{
 		[sbn removeChild:el.mySprite cleanup:YES];
 		[self removeChild:el cleanup:YES];
@@ -586,7 +588,7 @@
 		}
 		
 		
-		DDElement * ddElement = [[DDElement alloc] initWithTheGame:self elementDict:elem];
+		DDElement_iPhone * ddElement = [[DDElement_iPhone alloc] initWithTheGame:self elementDict:elem];
 		[ddElements addObject:ddElement];
 		
 		if (!bashoDirected ||(bashoDirected && [ddElement.itemNumber isEqualToString:itemNeeded] && [ddElement.colorNumber isEqualToString:colorNeeded]))
@@ -598,6 +600,7 @@
 
 }
 
+
 -(void)goBack
 {
 	[[CCSpriteFrameCache sharedSpriteFrameCache] removeSpriteFramesFromFile:@"dress_iPad.plist"];
@@ -607,12 +610,13 @@
 	[viewController goToMenu];
 }
 
+
 -(void)onShake
 {
 	if(timePassedForShake)
 	{
 		timePassedForShake = NO;
-		[[CCDirector sharedDirector] replaceScene:[CCTransitionFade transitionWithDuration:0.5 scene: [GameDressScene_iPad sceneWithDressVC:viewController bashoDirected:bashoDirected playVid:NO playingAgain:NO] withColor:ccWHITE]];
+		[[CCDirector sharedDirector] replaceScene:[CCTransitionFade transitionWithDuration:0.5 scene: [GameDressScene_iPhone sceneWithDressVC:viewController bashoDirected:bashoDirected playVid:NO playingAgain:NO] withColor:ccWHITE]];
 	}
 }
 

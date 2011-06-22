@@ -1,5 +1,5 @@
 //
-//  GameDressSceneSnapshot_iPad.h
+//  GameDressSceneSnapshot_iPhone.h
 //  Basho
 //
 //  Created by Pablo Ruiz on 19/05/11.
@@ -8,14 +8,14 @@
 
 #import <Foundation/Foundation.h>
 #import "cocos2d.h"
-#import "GameDress_iPad.h"
+#import "GameDress_iPhone.h"
 #import "GameDressSceneSnapshot_both.h"
 
-@class GameDress_iPad;
+@class GameDress_iPhone;
 
-@interface GameDressSceneSnapshot_iPad : GameDressSceneSnapshot_both {
+@interface GameDressSceneSnapshot_iPhone : GameDressSceneSnapshot_both {
 
-	GameDress_iPad * viewController;
+	GameDress_iPhone * viewController;
 	
 }
 

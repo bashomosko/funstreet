@@ -637,6 +637,14 @@
 		84952C4513ABAF2600F639D4 /* wheel_background_iPhone.png in Resources */ = {isa = PBXBuildFile; fileRef = 84952C3013ABAF2600F639D4 /* wheel_background_iPhone.png */; };
 		84952C4613ABAF2600F639D4 /* leverBtn_iPhone.png in Resources */ = {isa = PBXBuildFile; fileRef = 84952C3113ABAF2600F639D4 /* leverBtn_iPhone.png */; };
 		84952C4713ABAF2600F639D4 /* lever_iPhone.png in Resources */ = {isa = PBXBuildFile; fileRef = 84952C3213ABAF2600F639D4 /* lever_iPhone.png */; };
+		84A7915413B20AA600B3B53C /* GameDress_iPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A7914E13B20AA600B3B53C /* GameDress_iPhone.m */; };
+		84A7915513B20AA600B3B53C /* GameDress_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84A7914F13B20AA600B3B53C /* GameDress_iPhone.xib */; };
+		84A7915613B20AA600B3B53C /* GameDressScene_iPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A7915113B20AA600B3B53C /* GameDressScene_iPhone.m */; };
+		84A7915713B20AA600B3B53C /* GameDressSceneSnapshot_iPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A7915313B20AA600B3B53C /* GameDressSceneSnapshot_iPhone.m */; };
+		84A7915A13B20BDD00B3B53C /* DDElement_iPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A7915913B20BDD00B3B53C /* DDElement_iPhone.m */; };
+		84A7916213B20FED00B3B53C /* GameDressSceneSnapshot_both.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A7915D13B20FED00B3B53C /* GameDressSceneSnapshot_both.m */; };
+		84A7916313B20FED00B3B53C /* DDElement_both.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A7916013B20FED00B3B53C /* DDElement_both.m */; };
+		84A7916413B20FED00B3B53C /* GameDressScene_both.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A7916113B20FED00B3B53C /* GameDressScene_both.m */; };
 		84AB6288139E675100966044 /* backgroundMusicDress.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 84AB6287139E675100966044 /* backgroundMusicDress.mp3 */; };
 		84ABC13413B0FE6800202668 /* theatre_left_iPhone.png in Resources */ = {isa = PBXBuildFile; fileRef = 84ABC12B13B0FE6800202668 /* theatre_left_iPhone.png */; };
 		84ABC13513B0FE6800202668 /* theatre_right_iPhone.png in Resources */ = {isa = PBXBuildFile; fileRef = 84ABC12C13B0FE6800202668 /* theatre_right_iPhone.png */; };
@@ -1486,6 +1494,21 @@
 		84952C3013ABAF2600F639D4 /* wheel_background_iPhone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wheel_background_iPhone.png; sourceTree = "<group>"; };
 		84952C3113ABAF2600F639D4 /* leverBtn_iPhone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = leverBtn_iPhone.png; sourceTree = "<group>"; };
 		84952C3213ABAF2600F639D4 /* lever_iPhone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lever_iPhone.png; sourceTree = "<group>"; };
+		84A7914D13B20AA600B3B53C /* GameDress_iPhone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameDress_iPhone.h; sourceTree = "<group>"; };
+		84A7914E13B20AA600B3B53C /* GameDress_iPhone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameDress_iPhone.m; sourceTree = "<group>"; };
+		84A7914F13B20AA600B3B53C /* GameDress_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GameDress_iPhone.xib; sourceTree = "<group>"; };
+		84A7915013B20AA600B3B53C /* GameDressScene_iPhone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameDressScene_iPhone.h; sourceTree = "<group>"; };
+		84A7915113B20AA600B3B53C /* GameDressScene_iPhone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameDressScene_iPhone.m; sourceTree = "<group>"; };
+		84A7915213B20AA600B3B53C /* GameDressSceneSnapshot_iPhone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameDressSceneSnapshot_iPhone.h; sourceTree = "<group>"; };
+		84A7915313B20AA600B3B53C /* GameDressSceneSnapshot_iPhone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameDressSceneSnapshot_iPhone.m; sourceTree = "<group>"; };
+		84A7915813B20BDD00B3B53C /* DDElement_iPhone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDElement_iPhone.h; sourceTree = "<group>"; };
+		84A7915913B20BDD00B3B53C /* DDElement_iPhone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDElement_iPhone.m; sourceTree = "<group>"; };
+		84A7915C13B20FED00B3B53C /* GameDressSceneSnapshot_both.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameDressSceneSnapshot_both.h; path = iPhone/GameDressSceneSnapshot_both.h; sourceTree = "<group>"; };
+		84A7915D13B20FED00B3B53C /* GameDressSceneSnapshot_both.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GameDressSceneSnapshot_both.m; path = iPhone/GameDressSceneSnapshot_both.m; sourceTree = "<group>"; };
+		84A7915E13B20FED00B3B53C /* DDElement_both.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DDElement_both.h; path = iPhone/DDElement_both.h; sourceTree = "<group>"; };
+		84A7915F13B20FED00B3B53C /* GameDressScene_both.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameDressScene_both.h; path = iPhone/GameDressScene_both.h; sourceTree = "<group>"; };
+		84A7916013B20FED00B3B53C /* DDElement_both.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DDElement_both.m; path = iPhone/DDElement_both.m; sourceTree = "<group>"; };
+		84A7916113B20FED00B3B53C /* GameDressScene_both.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GameDressScene_both.m; path = iPhone/GameDressScene_both.m; sourceTree = "<group>"; };
 		84AB6287139E675100966044 /* backgroundMusicDress.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = backgroundMusicDress.mp3; sourceTree = "<group>"; };
 		84ABC12B13B0FE6800202668 /* theatre_left_iPhone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = theatre_left_iPhone.png; sourceTree = "<group>"; };
 		84ABC12C13B0FE6800202668 /* theatre_right_iPhone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = theatre_right_iPhone.png; sourceTree = "<group>"; };
@@ -2531,6 +2554,7 @@
 		10B56A571306EE3A00AA7DCB /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				84A7914C13B2081B00B3B53C /* dress */,
 				84ABC12913B0FC8400202668 /* threatre */,
 				84D0BEF313AB730300AA1A36 /* settings */,
 				1051CAD3137881B7002DACDF /* main menu */,
@@ -2775,6 +2799,7 @@
 		2860E324111B887F00E27156 /* iPhone */ = {
 			isa = PBXGroup;
 			children = (
+				84A7914A13B207FD00B3B53C /* Game Dress */,
 				84D0BEED13AB6F1900AA1A36 /* Settings */,
 				10A6BC83132595A600391C82 /* video */,
 				10AA0BD1130719BA00D11E6B /* MainMenu */,
@@ -2806,6 +2831,7 @@
 		28EEBF621118D79A00187D67 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				84A7915B13B20EAF00B3B53C /* Dress */,
 				84D4A1D413B11C710002B181 /* Video */,
 				84D0BEEF13AB6F7000AA1A36 /* Settings */,
 				10108B7B132008AA001848A5 /* wheel */,
@@ -2858,6 +2884,42 @@
 				10AA0AF413070FE700D11E6B /* libz.dylib */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		84A7914A13B207FD00B3B53C /* Game Dress */ = {
+			isa = PBXGroup;
+			children = (
+				84A7914D13B20AA600B3B53C /* GameDress_iPhone.h */,
+				84A7914E13B20AA600B3B53C /* GameDress_iPhone.m */,
+				84A7914F13B20AA600B3B53C /* GameDress_iPhone.xib */,
+				84A7915013B20AA600B3B53C /* GameDressScene_iPhone.h */,
+				84A7915113B20AA600B3B53C /* GameDressScene_iPhone.m */,
+				84A7915213B20AA600B3B53C /* GameDressSceneSnapshot_iPhone.h */,
+				84A7915313B20AA600B3B53C /* GameDressSceneSnapshot_iPhone.m */,
+				84A7915813B20BDD00B3B53C /* DDElement_iPhone.h */,
+				84A7915913B20BDD00B3B53C /* DDElement_iPhone.m */,
+			);
+			name = "Game Dress";
+			sourceTree = "<group>";
+		};
+		84A7914C13B2081B00B3B53C /* dress */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = dress;
+			sourceTree = "<group>";
+		};
+		84A7915B13B20EAF00B3B53C /* Dress */ = {
+			isa = PBXGroup;
+			children = (
+				84A7915C13B20FED00B3B53C /* GameDressSceneSnapshot_both.h */,
+				84A7915D13B20FED00B3B53C /* GameDressSceneSnapshot_both.m */,
+				84A7915E13B20FED00B3B53C /* DDElement_both.h */,
+				84A7916013B20FED00B3B53C /* DDElement_both.m */,
+				84A7915F13B20FED00B3B53C /* GameDressScene_both.h */,
+				84A7916113B20FED00B3B53C /* GameDressScene_both.m */,
+			);
+			name = Dress;
 			sourceTree = "<group>";
 		};
 		84ABC12913B0FC8400202668 /* threatre */ = {
@@ -3548,6 +3610,7 @@
 				84ABC13A13B0FE6800202668 /* theatreThumb_4_iPhone.png in Resources */,
 				84ABC13B13B0FE6800202668 /* theatreThumb_5_iPhone.png in Resources */,
 				84ABC13C13B0FE6800202668 /* theatreThumb_6_iPhone.png in Resources */,
+				84A7915513B20AA600B3B53C /* GameDress_iPhone.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3677,6 +3740,13 @@
 				84D0BF0413AB823400AA1A36 /* SettingsViewController_iPad.m in Sources */,
 				84D0BF0713AB859000AA1A36 /* SettingsViewController_iPhone.m in Sources */,
 				84ABC13F13B111B900202668 /* GameVideo_both.m in Sources */,
+				84A7915413B20AA600B3B53C /* GameDress_iPhone.m in Sources */,
+				84A7915613B20AA600B3B53C /* GameDressScene_iPhone.m in Sources */,
+				84A7915713B20AA600B3B53C /* GameDressSceneSnapshot_iPhone.m in Sources */,
+				84A7915A13B20BDD00B3B53C /* DDElement_iPhone.m in Sources */,
+				84A7916213B20FED00B3B53C /* GameDressSceneSnapshot_both.m in Sources */,
+				84A7916313B20FED00B3B53C /* DDElement_both.m in Sources */,
+				84A7916413B20FED00B3B53C /* GameDressScene_both.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
