@@ -124,7 +124,16 @@
 			
 			if([GameManager sharedGameManager].soundsEnabled)
 			{
-				[[SimpleAudioEngine sharedEngine] playEffect:@"RightAnswer.mp3"];
+				if (theGame.bashoDirected) {
+                    soundFileName = @"RightAnswer.mp3";
+                }
+                else {
+                    
+                    int soundToPlay = (arc4random()%5 + 1);
+                    soundFileName = [NSString stringWithFormat:@"DressHit%d.mp3",soundToPlay];
+                }
+                
+				[[SimpleAudioEngine sharedEngine] playEffect:soundFileName];
 				[theGame hidePalabra];
 				/*if(theGame.bashoDirected)
 					[[SimpleAudioEngine sharedEngine] playEffect:@"RightAnswer.mp3"];

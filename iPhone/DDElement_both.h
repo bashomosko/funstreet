@@ -25,6 +25,7 @@
 	NSString * colorNumber;
 	NSString * itemText;
     NSString * imagePath2;
+    NSString * soundFileName;
 }
 @property (nonatomic,readwrite) touchState state;
 @property (nonatomic,retain) CCSprite * mySprite;
@@ -35,5 +36,6 @@
 @property (nonatomic,retain) NSString * colorNumber;
 @property (nonatomic,retain) NSString * itemText;
 @property (nonatomic,retain) NSString * imagePath2;
+@property (nonatomic,retain) NSString * soundFileName;
 
 @end

@@ -5,7 +5,7 @@
 #import "SimpleAudioEngine.h"
 
 @implementation DDElement_both
-@synthesize state,mySprite,dressed,desiredZ,itemTag,itemText,itemNumber,colorNumber,imagePath2;
+@synthesize state,mySprite,dressed,desiredZ,itemTag,itemText,itemNumber,colorNumber,imagePath2,soundFileName;
 
 
 - (CGRect)rect
@@ -88,7 +88,8 @@
 }
 
 -(void)dealloc
-{
+{   
+    [[SimpleAudioEngine sharedEngine] unloadEffect:soundFileName];
 	[[SimpleAudioEngine sharedEngine] unloadEffect:soundOkPath];
 	[[SimpleAudioEngine sharedEngine] unloadEffect:soundWrongPath];
 	[[SimpleAudioEngine sharedEngine] unloadEffect:@"RightAnswer.mp3"];

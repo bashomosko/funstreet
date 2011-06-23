@@ -637,6 +637,11 @@
 		84952C4513ABAF2600F639D4 /* wheel_background_iPhone.png in Resources */ = {isa = PBXBuildFile; fileRef = 84952C3013ABAF2600F639D4 /* wheel_background_iPhone.png */; };
 		84952C4613ABAF2600F639D4 /* leverBtn_iPhone.png in Resources */ = {isa = PBXBuildFile; fileRef = 84952C3113ABAF2600F639D4 /* leverBtn_iPhone.png */; };
 		84952C4713ABAF2600F639D4 /* lever_iPhone.png in Resources */ = {isa = PBXBuildFile; fileRef = 84952C3213ABAF2600F639D4 /* lever_iPhone.png */; };
+		849B823113B3B07D001CFEAC /* DressHit1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 849B822C13B3B07C001CFEAC /* DressHit1.mp3 */; };
+		849B823213B3B07D001CFEAC /* DressHit2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 849B822D13B3B07C001CFEAC /* DressHit2.mp3 */; };
+		849B823313B3B07D001CFEAC /* DressHit3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 849B822E13B3B07C001CFEAC /* DressHit3.mp3 */; };
+		849B823413B3B07D001CFEAC /* DressHit4.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 849B822F13B3B07C001CFEAC /* DressHit4.mp3 */; };
+		849B823513B3B07D001CFEAC /* DressHit5.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 849B823013B3B07D001CFEAC /* DressHit5.mp3 */; };
 		84A7915413B20AA600B3B53C /* GameDress_iPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A7914E13B20AA600B3B53C /* GameDress_iPhone.m */; };
 		84A7915513B20AA600B3B53C /* GameDress_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84A7914F13B20AA600B3B53C /* GameDress_iPhone.xib */; };
 		84A7915613B20AA600B3B53C /* GameDressScene_iPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A7915113B20AA600B3B53C /* GameDressScene_iPhone.m */; };
@@ -1494,6 +1499,11 @@
 		84952C3013ABAF2600F639D4 /* wheel_background_iPhone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wheel_background_iPhone.png; sourceTree = "<group>"; };
 		84952C3113ABAF2600F639D4 /* leverBtn_iPhone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = leverBtn_iPhone.png; sourceTree = "<group>"; };
 		84952C3213ABAF2600F639D4 /* lever_iPhone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lever_iPhone.png; sourceTree = "<group>"; };
+		849B822C13B3B07C001CFEAC /* DressHit1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = DressHit1.mp3; sourceTree = "<group>"; };
+		849B822D13B3B07C001CFEAC /* DressHit2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = DressHit2.mp3; sourceTree = "<group>"; };
+		849B822E13B3B07C001CFEAC /* DressHit3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = DressHit3.mp3; sourceTree = "<group>"; };
+		849B822F13B3B07C001CFEAC /* DressHit4.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = DressHit4.mp3; sourceTree = "<group>"; };
+		849B823013B3B07D001CFEAC /* DressHit5.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = DressHit5.mp3; sourceTree = "<group>"; };
 		84A7914D13B20AA600B3B53C /* GameDress_iPhone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameDress_iPhone.h; sourceTree = "<group>"; };
 		84A7914E13B20AA600B3B53C /* GameDress_iPhone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameDress_iPhone.m; sourceTree = "<group>"; };
 		84A7914F13B20AA600B3B53C /* GameDress_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GameDress_iPhone.xib; sourceTree = "<group>"; };
@@ -2454,6 +2464,11 @@
 				10FD52D51386AEFA00D9B984 /* backgroundMusicAnimales.mp3 */,
 				84AB6287139E675100966044 /* backgroundMusicDress.mp3 */,
 				1051CF53137ABBC6002DACDF /* RightAnswer.mp3 */,
+				849B822C13B3B07C001CFEAC /* DressHit1.mp3 */,
+				849B822D13B3B07C001CFEAC /* DressHit2.mp3 */,
+				849B822E13B3B07C001CFEAC /* DressHit3.mp3 */,
+				849B822F13B3B07C001CFEAC /* DressHit4.mp3 */,
+				849B823013B3B07D001CFEAC /* DressHit5.mp3 */,
 				1051CF54137ABBC7002DACDF /* WrongAnswer.mp3 */,
 				10A32915138C05FD00C4B0F5 /* lever-sfx.mp3 */,
 				10D2DD981383419C00334C4C /* wheel - animals - sfx */,
@@ -3611,6 +3626,11 @@
 				84ABC13B13B0FE6800202668 /* theatreThumb_5_iPhone.png in Resources */,
 				84ABC13C13B0FE6800202668 /* theatreThumb_6_iPhone.png in Resources */,
 				84A7915513B20AA600B3B53C /* GameDress_iPhone.xib in Resources */,
+				849B823113B3B07D001CFEAC /* DressHit1.mp3 in Resources */,
+				849B823213B3B07D001CFEAC /* DressHit2.mp3 in Resources */,
+				849B823313B3B07D001CFEAC /* DressHit3.mp3 in Resources */,
+				849B823413B3B07D001CFEAC /* DressHit4.mp3 in Resources */,
+				849B823513B3B07D001CFEAC /* DressHit5.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
