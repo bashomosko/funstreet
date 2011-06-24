@@ -157,6 +157,8 @@
 	[target end];
 	[target saveBuffer:@"pirulo"];
 	UIImage * savedImg = [target getUIImageFromBuffer];
+    [[CCSpriteFrameCache sharedSpriteFrameCache] removeSpriteFramesFromFile:@"dress_iPad.plist"];
+	[[CCSpriteFrameCache sharedSpriteFrameCache] removeUnusedSpriteFrames];
 	[[CCDirector sharedDirector] replaceScene:[CCTransitionFade transitionWithDuration:0.5 scene: [GameDressSceneSnapshot_iPad sceneWithDressVC:viewController dinoImage:savedImg bashoDirected:bashoDirected] withColor:ccWHITE]];
 
 	//[[CCDirector sharedDirector] replaceScene:[CCTransitionFade transitionWithDuration:0.5 scene: [GameDressScene_iPad sceneWithDressVC:viewController bashoDirected:YES playVid:NO] withColor:ccWHITE]];
@@ -257,7 +259,7 @@
 	[self selectItemForBasho];
 	
 	[self schedule:@selector(playRandomDinoAnim) interval:arc4random() % 5+5];
-	
+
 	
 	//[self loadScore];
 	//[self makeScoreAppear:bashoDirected];
@@ -358,7 +360,7 @@
     
     layer.viewController.gameDressLayer = layer;
     
-	[[CCDirector sharedDirector] replaceScene:[CCTransitionFade transitionWithDuration:0.5 scene:gameDressScene  withColor:ccBLACK]];
+	[[CCDirector sharedDirector] replaceScene:[CCTransitionFade transitionWithDuration:0.5 scene:gameDressScene  withColor:ccWHITE]];
 	
 }
 
@@ -414,12 +416,13 @@
 		[gloopbackground setPosition:ccp(512,384)];
 		[self addChild:gloopbackground];
 		//ANIMATION
-		NSMutableArray * gloopFrames = [[[NSMutableArray  alloc]init]autorelease];
+		gloopFrames = [[NSMutableArray  alloc]init];
 		for(int i = 0; i <= 15; i++) {
 			CCSprite * sp = [CCSprite spriteWithFile:[NSString stringWithFormat:@"%@%05d.png.pvr",fileName,i]];
             if (sp != nil) {
                 CCSpriteFrame *frame = [CCSpriteFrame frameWithTexture:sp.texture rect:sp.textureRect];
                 [gloopFrames addObject:frame];
+                frame = nil;
             }
 		}
 		
@@ -430,7 +433,7 @@
 	}
 	
 	
-	NSString * sound = nil;
+	sound = nil;
 	if(!bashoDirected)
 	{
 		sound = [NSString stringWithFormat:@"dress_snd_%@_where_%@.mp3",[btnImgs objectAtIndex:bashoSelectedSound],[GameManager sharedGameManager].languageString];
@@ -445,11 +448,19 @@
 
 	if([GameManager sharedGameManager].soundsEnabled)
 		[[SimpleAudioEngine sharedEngine] playEffect:sound];
+    
+    [self runAction:[CCSequence actions:[CCDelayTime actionWithDuration:3],[CCCallFuncND actionWithTarget:self selector:@selector(unloadSound:) data:sound],nil]];
 	
 	[self loadScatteredElementsForItem:bashoSelectedSound];
 	
 	bashoSelectedSound ++;
 	
+}
+
+-(void)unloadSound:(NSString*)sound {
+    
+    if (sound)
+        [[SimpleAudioEngine sharedEngine] unloadEffect:sound];
 }
 
 

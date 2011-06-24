@@ -12,7 +12,7 @@
 
 @implementation GameDressScene_both
 
-@synthesize placingElement,colorNeeded,itemNeeded,bashoDirected,dino,isBackBagSet,shirt;
+@synthesize placingElement,colorNeeded,itemNeeded,bashoDirected,dino,isBackBagSet,shirt,sound,gloopFrames;
 
 -(void)loadScore
 {
@@ -279,7 +279,7 @@ static BOOL AccelerationIsShaking(UIAcceleration* last, UIAcceleration* current,
 -(void)dealloc
 {
 	[[SimpleAudioEngine sharedEngine] unloadEffect:@"game2-alldressed-sfx.mp3"];
-	[dino release];
+   	[dino release];
     [shirt release];
 	[target release];
 	[lastAcceleration release];
@@ -287,6 +287,8 @@ static BOOL AccelerationIsShaking(UIAcceleration* last, UIAcceleration* current,
 	[btnColor release];
 	[dressPieces release];
 	[ddElements release];
+    gloopFrames = nil;
+    [gloopFrames release];
 	[super dealloc];
 }
 

@@ -95,6 +95,8 @@
     
     BOOL videoFromLoadingScene;
     BOOL isBackBagSet;
+    NSString * sound;
+    NSMutableArray * gloopFrames;
 }
 
 @property (nonatomic,readwrite) BOOL placingElement;
@@ -104,6 +106,8 @@
 @property (nonatomic,retain) NSString * colorNeeded;
 @property (nonatomic,retain) CCSprite * dino;
 @property (nonatomic,retain) CCSprite * shirt;
+@property (nonatomic,retain) NSString * sound;
+@property (nonatomic,retain) NSMutableArray * gloopFrames;
 
 static BOOL AccelerationIsShaking(UIAcceleration* last, UIAcceleration* current, double threshold) ;
 
