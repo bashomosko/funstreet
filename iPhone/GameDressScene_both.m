@@ -172,6 +172,8 @@
 -(void)removeAnim:(CCNode *)n
 {
 	[n.parent removeChild:n cleanup:YES];
+    gloopFrames = nil;
+    [gloopFrames release];
 }
 
 -(void)addPoints
@@ -287,8 +289,6 @@ static BOOL AccelerationIsShaking(UIAcceleration* last, UIAcceleration* current,
 	[btnColor release];
 	[dressPieces release];
 	[ddElements release];
-    gloopFrames = nil;
-    [gloopFrames release];
 	[super dealloc];
 }
 

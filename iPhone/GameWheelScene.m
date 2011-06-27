@@ -11,14 +11,14 @@
 #import "SimpleAudioEngine.h"
 #import "GameManager.h"
 
-#define BTN_BACKPACK_POS [NSMutableDictionary dictionaryWithObjects:[NSMutableArray arrayWithObjects:[NSNumber numberWithInt:90],[NSNumber numberWithInt:160],nil] forKeys:[NSMutableArray arrayWithObjects:@"x",@"y",nil]]
-#define BTN_BOOTS_POS [NSMutableDictionary dictionaryWithObjects:[NSMutableArray arrayWithObjects:[NSNumber numberWithInt:130],[NSNumber numberWithInt:240],nil] forKeys:[NSMutableArray arrayWithObjects:@"x",@"y",nil]]
-#define BTN_HAT_POS [NSMutableDictionary dictionaryWithObjects:[NSMutableArray arrayWithObjects:[NSNumber numberWithInt:220],[NSNumber numberWithInt:280],nil] forKeys:[NSMutableArray arrayWithObjects:@"x",@"y",nil]]
-#define BTN_PHONE_POS [NSMutableDictionary dictionaryWithObjects:[NSMutableArray arrayWithObjects:[NSNumber numberWithInt:320],[NSNumber numberWithInt:240],nil] forKeys:[NSMutableArray arrayWithObjects:@"x",@"y",nil]]
-#define BTN_JACKET_POS [NSMutableDictionary dictionaryWithObjects:[NSMutableArray arrayWithObjects:[NSNumber numberWithInt:350],[NSNumber numberWithInt:160],nil] forKeys:[NSMutableArray arrayWithObjects:@"x",@"y",nil]]
-#define BTN_NECKLACE_POS [NSMutableDictionary dictionaryWithObjects:[NSMutableArray arrayWithObjects:[NSNumber numberWithInt:310],[NSNumber numberWithInt:80],nil] forKeys:[NSMutableArray arrayWithObjects:@"x",@"y",nil]]
-#define BTN_PANTS_POS [NSMutableDictionary dictionaryWithObjects:[NSMutableArray arrayWithObjects:[NSNumber numberWithInt:230],[NSNumber numberWithInt:50],nil] forKeys:[NSMutableArray arrayWithObjects:@"x",@"y",nil]]
-#define BTN_SUNGLASSES_POS [NSMutableDictionary dictionaryWithObjects:[NSMutableArray arrayWithObjects:[NSNumber numberWithInt:140],[NSNumber numberWithInt:80],nil] forKeys:[NSMutableArray arrayWithObjects:@"x",@"y",nil]]
+#define BTN_BACKPACK_POS [NSMutableDictionary dictionaryWithObjects:[NSMutableArray arrayWithObjects:[NSNumber numberWithInt:95],[NSNumber numberWithInt:155],nil] forKeys:[NSMutableArray arrayWithObjects:@"x",@"y",nil]]
+#define BTN_BOOTS_POS [NSMutableDictionary dictionaryWithObjects:[NSMutableArray arrayWithObjects:[NSNumber numberWithInt:130],[NSNumber numberWithInt:237],nil] forKeys:[NSMutableArray arrayWithObjects:@"x",@"y",nil]]
+#define BTN_HAT_POS [NSMutableDictionary dictionaryWithObjects:[NSMutableArray arrayWithObjects:[NSNumber numberWithInt:215],[NSNumber numberWithInt:270],nil] forKeys:[NSMutableArray arrayWithObjects:@"x",@"y",nil]]
+#define BTN_PHONE_POS [NSMutableDictionary dictionaryWithObjects:[NSMutableArray arrayWithObjects:[NSNumber numberWithInt:295],[NSNumber numberWithInt:233],nil] forKeys:[NSMutableArray arrayWithObjects:@"x",@"y",nil]]
+#define BTN_JACKET_POS [NSMutableDictionary dictionaryWithObjects:[NSMutableArray arrayWithObjects:[NSNumber numberWithInt:323],[NSNumber numberWithInt:155],nil] forKeys:[NSMutableArray arrayWithObjects:@"x",@"y",nil]]
+#define BTN_NECKLACE_POS [NSMutableDictionary dictionaryWithObjects:[NSMutableArray arrayWithObjects:[NSNumber numberWithInt:288],[NSNumber numberWithInt:78],nil] forKeys:[NSMutableArray arrayWithObjects:@"x",@"y",nil]]
+#define BTN_PANTS_POS [NSMutableDictionary dictionaryWithObjects:[NSMutableArray arrayWithObjects:[NSNumber numberWithInt:212],[NSNumber numberWithInt:42],nil] forKeys:[NSMutableArray arrayWithObjects:@"x",@"y",nil]]
+#define BTN_SUNGLASSES_POS [NSMutableDictionary dictionaryWithObjects:[NSMutableArray arrayWithObjects:[NSNumber numberWithInt:130],[NSNumber numberWithInt:78],nil] forKeys:[NSMutableArray arrayWithObjects:@"x",@"y",nil]]
 
 
 // HelloWorld implementation
@@ -87,7 +87,7 @@
     
     leverImg = [CCSprite spriteWithFile:@"lever_iPhone.png"];
 	[self addChild:leverImg];
-	[leverImg setPosition:ccp(170,175)];
+	[leverImg setPosition:ccp(153,170)];
 	[leverImg setAnchorPoint:ccp(0,0.5)];
 	[leverImg setRotation:-25];
 	
@@ -103,7 +103,7 @@
 	[CCTexture2D setDefaultAlphaPixelFormat:kCCTexture2DPixelFormat_RGBA4444];
 	
 	dino = [CCSprite spriteWithFile:@"wheel_dino_iPhone.png"];
-	[dino setPosition:ccp(220,160)];
+	[dino setPosition:ccp(210,160)];
 	[self addChild:dino];
 	
 	backBtn = [CCMenuItemImage itemFromNormalImage:@"wheel_home.png" selectedImage:@"wheel_home.png" target:self selector:@selector(goBack)];
@@ -136,7 +136,7 @@
 
 -(void)createPalabra
 {
-    CCSprite * palabraBck = [CCSprite spriteWithFile:@"wheel_wordbackground_iPad.png"];
+    CCSprite * palabraBck = [CCSprite spriteWithFile:@"wheel_wordbackground_iPhone.png"];
     [self addChild:palabraBck z:1 tag:kPALABRABCK];
     [palabraBck setPosition:ccp(420,20)];
 	[palabraBck setOpacity:0];
