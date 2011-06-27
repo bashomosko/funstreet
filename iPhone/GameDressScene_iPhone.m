@@ -339,8 +339,6 @@
     else {
         [dinoAnim runAction:[CCCallFuncN actionWithTarget:self selector:@selector(removeRandomDinoAnim:)]];
     }
-		
-	
 }
 
 
@@ -418,7 +416,7 @@
 		[gloopbackground setPosition:ccp(512,384)];
 		[self addChild:gloopbackground];
 		//ANIMATION
-		NSMutableArray * gloopFrames = [[[NSMutableArray  alloc]init]autorelease];
+		gloopFrames = [[NSMutableArray  alloc]init];
 		for(int i = 0; i <= 15; i++) {
 			CCSprite * sp = [CCSprite spriteWithFile:[NSString stringWithFormat:@"%@%05d.png.pvr",fileName,i]];
             if (sp != nil) {
