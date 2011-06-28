@@ -95,13 +95,15 @@
 	[self addChild:leverBtn];
 	leverBtn.opacity = 0;
 	[leverBtn setPosition:ccp(400,260)];
-	
+    
     [CCTexture2D setDefaultAlphaPixelFormat:kCCTexture2DPixelFormat_RGBA8888];
+	
 	CCSprite * wheelwheel = [CCSprite spriteWithFile:@"wheel_wheel_iPhone.png"];
 	[wheelwheel setPosition:ccp(240,160)];
 	[self addChild:wheelwheel];
-	[CCTexture2D setDefaultAlphaPixelFormat:kCCTexture2DPixelFormat_RGBA4444];
 	
+    [CCTexture2D setDefaultAlphaPixelFormat:kCCTexture2DPixelFormat_RGBA4444];
+    
 	dino = [CCSprite spriteWithFile:@"wheel_dino_iPhone.png"];
 	[dino setPosition:ccp(210,160)];
 	[self addChild:dino];
@@ -121,7 +123,7 @@
 	
 	CCMenu * menu = [CCMenu menuWithItems:backBtn,sound,basho,settingsBtn,nil];
 	[self addChild:menu];
-	[backBtn setPosition:ccp(20,300)];
+	[backBtn setPosition:ccp(20,290)];
     [settingsBtn setPosition:ccp(20,25)];
 	[sound setPosition:ccp(20,60)];
 	[basho setPosition:ccp(20,100)];
@@ -138,12 +140,12 @@
 {
     CCSprite * palabraBck = [CCSprite spriteWithFile:@"wheel_wordbackground_iPhone.png"];
     [self addChild:palabraBck z:1 tag:kPALABRABCK];
-    [palabraBck setPosition:ccp(420,20)];
+    [palabraBck setPosition:ccp(410,30)];
 	[palabraBck setOpacity:0];
-	CCLabelTTF * palabra = [CCLabelTTF labelWithString:@"MOCHILA" fontName:@"Verdana" fontSize:20];
-	[palabra setColor:ccBLACK];
+	CCLabelTTF * palabra = [CCLabelBMFont labelWithString:@"a" fntFile:@"Wheel_text_iPad.fnt"];
+    [palabra setScale:0.35];
 	[self addChild:palabra z:1 tag:kPALABRA];
-	[palabra setPosition:ccp(420,20)];
+	[palabra setPosition:ccp(410,30)];
 	[palabra setOpacity:0];
 }
 

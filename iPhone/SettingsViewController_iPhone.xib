@@ -65,7 +65,7 @@
 						<string key="NSFrame">{{256, 47}, {207, 44}}</string>
 						<reference key="NSSuperview" ref="133396669"/>
 						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView" ref="736079834"/>
+						<reference key="NSNextKeyView" ref="995601679"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
 						<int key="IBNumberOfSegments">2</int>
@@ -99,7 +99,7 @@
 					<object class="IBUIButton" id="333517740">
 						<reference key="NSNextResponder" ref="133396669"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{454, 7}, {20, 18}}</string>
+						<string key="NSFrame">{{436, 2}, {30, 30}}</string>
 						<reference key="NSSuperview" ref="133396669"/>
 						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="900954962"/>
@@ -130,10 +130,10 @@
 					<object class="IBUILabel" id="900954962">
 						<reference key="NSNextResponder" ref="133396669"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{64, 65}, {130, 21}}</string>
+						<string key="NSFrame">{{64, 62}, {140, 21}}</string>
 						<reference key="NSSuperview" ref="133396669"/>
 						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView" ref="995601679"/>
+						<reference key="NSNextKeyView" ref="355086694"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<bool key="IBUIClipsSubviews">YES</bool>
 						<int key="IBUIContentMode">7</int>
@@ -194,10 +194,10 @@
 					<object class="IBUILabel" id="995601679">
 						<reference key="NSNextResponder" ref="133396669"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{64, 94}, {130, 21}}</string>
+						<string key="NSFrame">{{64, 93}, {140, 21}}</string>
 						<reference key="NSSuperview" ref="133396669"/>
 						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView" ref="355086694"/>
+						<reference key="NSNextKeyView" ref="736079834"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<bool key="IBUIClipsSubviews">YES</bool>
 						<int key="IBUIContentMode">7</int>
