@@ -109,7 +109,12 @@
 @property (nonatomic,retain) NSString * sound;
 @property (nonatomic,retain) NSMutableArray * gloopFrames;
 
-static BOOL AccelerationIsShaking(UIAcceleration* last, UIAcceleration* current, double threshold) ;
+static BOOL AccelerationIsShaking(UIAcceleration* last, UIAcceleration* current, double threshold);
+-(void)hidePalabra;
+-(void)showPalabra:(NSString *)word;
+-(void)beginGame;
+- (NSMutableArray *) shuffle:(NSMutableArray *)array;
+-(void)selectItemForBasho;
 
 
 @end

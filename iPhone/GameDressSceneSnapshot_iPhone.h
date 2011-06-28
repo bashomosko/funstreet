@@ -16,7 +16,11 @@
 @interface GameDressSceneSnapshot_iPhone : GameDressSceneSnapshot_both {
 
 	GameDress_iPhone * viewController;
-	
 }
+
++(id) sceneWithDressVC:(GameDress_iPhone *)vc dinoImage:(UIImage *)img bashoDirected:(BOOL)_bashoDirected;
++(id) nodeWithDressVC:(GameDress_iPhone *)vc dinoImage:(UIImage *)img bashoDirected:(BOOL)_bashoDirected;
+-(id) initWithDressVC:(GameDress_iPhone *)vc dinoImage:(UIImage *)img bashoDirected:(BOOL)_bashoDirected;
+-(void)addDinoOnPosition:(CGPoint)pos dinoImage:(UIImage *)img num:(int)num;
 
 @end

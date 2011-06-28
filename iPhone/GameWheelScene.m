@@ -72,6 +72,21 @@
     return self;
 }
 
+-(void)goBack
+{
+	if([GameManager sharedGameManager].onPause) return;
+    [GameManager sharedGameManager].musicAudioEnabled = YES;
+	[viewController goToMenu];
+}
+
+-(void)goSettings
+{
+	if([GameManager sharedGameManager].onPause) return; 
+	[GameManager sharedGameManager].onPause = YES;
+    [viewController goToSettings];
+}
+
+
 -(void)beginGame
 {
 	points = 0;

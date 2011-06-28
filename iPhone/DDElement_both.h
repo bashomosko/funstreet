@@ -38,4 +38,7 @@
 @property (nonatomic,retain) NSString * imagePath2;
 @property (nonatomic,retain) NSString * soundFileName;
 
+- (BOOL)containsTouchLocation:(UITouch *)touch;
+-(void)shakeMismatch;
+
 @end

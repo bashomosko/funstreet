@@ -113,6 +113,7 @@
 	[UIView commitAnimations];
 }
 
+
 -(void)goToSettings
 {
 	[GameManager sharedGameManager].onPause = YES;

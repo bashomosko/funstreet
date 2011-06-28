@@ -116,8 +116,8 @@
 
 -(void) videoPlayerDidFinishPlaying: (NSNotification*)aNotification
 {
-	MPMoviePlayerController * introVideo = [aNotification object];
-	[[NSNotificationCenter defaultCenter] removeObserver:self name:MPMoviePlayerPlaybackDidFinishNotification object:introVideo];
+	MPMoviePlayerController * introVideoFply = [aNotification object];
+	[[NSNotificationCenter defaultCenter] removeObserver:self name:MPMoviePlayerPlaybackDidFinishNotification object:introVideoFply];
 	[introVideo stop];
 	[introVideo.view removeFromSuperview];
 	[introVideo release];

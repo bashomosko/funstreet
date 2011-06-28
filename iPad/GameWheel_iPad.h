@@ -18,4 +18,10 @@
     GameWheelScene_iPad * gameWheelLayer;
 }
 
+-(void)goToNextGame;
+-(void)goToSettings;
+-(void)removeSettings;
+-(void)goToMenu;
+
+
 @end

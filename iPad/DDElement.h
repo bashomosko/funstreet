@@ -14,4 +14,7 @@
 	
 }
 
+-(id) initWithTheGame:(GameDressScene_iPad *)ddm elementDict:(NSMutableDictionary *)element;
+-(void)shakeMismatch;
+
 @end

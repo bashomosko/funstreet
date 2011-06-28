@@ -7,7 +7,7 @@
 @implementation DDElement_iPhone
 
 
--(id) initWithTheGame:(GameDress_iPhone *)ddm elementDict:(NSMutableDictionary *)element
+-(id) initWithTheGame:(GameDressScene_iPhone *)ddm elementDict:(NSMutableDictionary *)element
 {
 	if( (self=[super init])) {
 		
@@ -43,7 +43,7 @@
 		soundOkPath = [[NSString stringWithFormat:@"dress_snd_%@_%@.mp3",itemNumber,colorNumber]retain];
 		soundWrongPath = [[NSString stringWithFormat:@"dress_snd_%@_%@_wrong.mp3",itemNumber,colorNumber]retain];
 		
-		CCSpriteBatchNode * sbn = [theGame getChildByTag:kSPRITEBATCH_ELEMS];
+		CCSpriteBatchNode * sbn = (CCSpriteBatchNode*)[theGame getChildByTag:kSPRITEBATCH_ELEMS];
 		mySprite = [CCSprite spriteWithSpriteFrameName:imagePath];
 		[sbn addChild:mySprite z:9];
 		[theGame addChild:self];

@@ -12,5 +12,6 @@
 	
 }
 
+-(id) initWithTheGame:(GameDressScene_iPhone *)ddm elementDict:(NSMutableDictionary *)element;
 
 @end

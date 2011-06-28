@@ -78,7 +78,6 @@
 
 @interface GameWheelScene_both : CCLayer {
 
-	GameWheel * viewController;
 	CCSprite * dino;
 	BOOL dinoSpinning;
 	BOOL playingSound;
@@ -136,5 +135,24 @@
 
 @property(nonatomic,readwrite) CGRect leverArea;
 @property(nonatomic,readwrite) CGPoint orig;
+
+-(void)loadVideo;
+-(void)loadDeviceType;
+-(void)loadButtons;
+-(void)loadSpinningStuff;
+-(void)loadButtons;
+-(void)autoPushLever:(BOOL)alreadySelected;
+-(void)playAnimForAnimal:(CCMenuItemImage *)btn;
+-(void)showPalabra:(NSString *)word sound:(NSString *)wordSound;
+-(void)addPoints:(int)_points;
+-(void)makeDinoSpin2:(int)_selectedSound;
+-(void)playLoopSpinEffect;
+-(void)stopLoopSpinEffect;
+-(void)startFriction;
+-(void)startFriction;
+-(void)updateTime;
+-(void)pushLever;
+-(void)beginGame;
+-(NSMutableArray *)loadBtnPos;
 
 @end

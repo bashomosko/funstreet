@@ -31,6 +31,14 @@
 @property (nonatomic,readwrite) BOOL playedGame2Video;
 
 + (GameManager *)sharedGameManager;
+-(void)turnSounds;
+-(void)setLanguage:(int)_language;
+-(void)setInstructionsLanguage:(int)_language;
+-(void)setFxVolume:(int)vol;
+-(void)setMusicVolume:(int)vol;
+-(void)setPlayedGame2Video:(BOOL)played;
+-(void)setPlayedGame1Video:(BOOL)played;
+-(void)setPlayedMenuVideo:(BOOL)played;
 
 
 

@@ -145,6 +145,20 @@
 	[self loadSpinningStuff];
 }
 
+-(void)goBack
+{
+	if([GameManager sharedGameManager].onPause) return;
+    [GameManager sharedGameManager].musicAudioEnabled = YES;
+	[viewController goToMenu];
+}
+
+-(void)goSettings
+{
+	if([GameManager sharedGameManager].onPause) return; 
+	[GameManager sharedGameManager].onPause = YES;
+    [viewController goToSettings];
+}
+
 -(void)replay
 {
 	[[CCDirector sharedDirector] replaceScene:[CCTransitionFade transitionWithDuration:0.5 scene: [GameWheelScene_iPad sceneWithWheelVC:viewController] withColor:ccWHITE]];

@@ -69,8 +69,8 @@
 	
 	// Run the intro Scene
     GameDressScene_iPhone * gameDressScene = [GameDressScene_iPhone sceneWithDressVC:self bashoDirected:NO playVid:YES playingAgain:NO];
-    gameDressLayer = [gameDressScene getChildByTag:1000];
-	[[CCDirector sharedDirector] runWithScene:gameDressScene];	
+    gameDressLayer = (GameDressScene_iPhone*)[gameDressScene getChildByTag:1000];
+	[[CCDirector sharedDirector] runWithScene:(CCScene*)gameDressScene];	
 }
 
 - (void) removeStartupFlicker

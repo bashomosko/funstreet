@@ -68,9 +68,9 @@
 	
 	// Run the intro Scene
     GameWheelScene_iPad * gameWheelScene = [GameWheelScene_iPad sceneWithWheelVC:self];
-    gameWheelLayer = [gameWheelScene getChildByTag:1000];
+    gameWheelLayer = (GameWheelScene_iPad*)[gameWheelScene getChildByTag:1000];
 	
-	[[CCDirector sharedDirector] runWithScene:gameWheelScene];	
+	[[CCDirector sharedDirector] runWithScene:(CCScene*)gameWheelScene];	
 }
 
 - (void) removeStartupFlicker

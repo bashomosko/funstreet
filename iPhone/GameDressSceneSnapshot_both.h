@@ -15,4 +15,6 @@
     BOOL bashoDirected;
 }
 
+-(void)moveOut;
+
 @end
