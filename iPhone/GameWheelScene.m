@@ -143,7 +143,12 @@
     [palabraBck setPosition:ccp(410,30)];
 	[palabraBck setOpacity:0];
 	CCLabelTTF * palabra = [CCLabelBMFont labelWithString:@"a" fntFile:@"Wheel_text_iPad.fnt"];
-    [palabra setScale:0.35];
+    if ([[UIScreen mainScreen] respondsToSelector:@selector(scale)] == YES && [[UIScreen mainScreen] scale] == 2.00) {
+        [palabra setScale:0.70];
+    }
+    else {
+        [palabra setScale:0.35];
+    }
 	[self addChild:palabra z:1 tag:kPALABRA];
 	[palabra setPosition:ccp(410,30)];
 	[palabra setOpacity:0];
