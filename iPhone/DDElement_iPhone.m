@@ -90,7 +90,7 @@
 	
 	if(!(dropPoint.x == 0 && dropPoint.y == 0))
 	{   
-        CGRect dino = CGRectMake(312, 134, 400, 500);
+        CGRect dino = CGRectMake(156, 67, 200, 350);
         
 		if(/*ccpDistance(mySprite.position,dropPoint) < 100*/ CGRectIntersectsRect([mySprite boundingBox],dino) &&( !theGame.bashoDirected || ([itemNumber isEqualToString:theGame.itemNeeded] && [colorNumber isEqualToString:theGame.colorNeeded])))
 		{
@@ -101,7 +101,7 @@
 			[particles setPosition:mySprite.position];
 			[particles setAutoRemoveOnFinish:YES];*/
 			
-			CCSprite * smoke = [CCSprite spriteWithFile:@"Poof_iPad.png"];
+			/*CCSprite * smoke = [CCSprite spriteWithFile:@"Poof_iPad.png"];
 			[smoke setPosition:ccp(512,384)];
 			[theGame addChild:smoke z:20];
 			[smoke setScale:0];
@@ -120,7 +120,7 @@
                                                    [CCRotateTo actionWithDuration:0.1 angle:360],nil],nil],
                              [CCSpawn actions:[CCScaleTo actionWithDuration:0.5 scale:2],
                              [CCFadeOut actionWithDuration:0.5],nil],
-                             [CCCallFuncN actionWithTarget:self selector:@selector(removeNode:)],nil]];
+                             [CCCallFuncN actionWithTarget:self selector:@selector(removeNode:)],nil]];*/
 			
 			if([GameManager sharedGameManager].soundsEnabled)
 			{

@@ -46,8 +46,8 @@
 	[director setOpenGLView:glView];
 	
 	//	// Enables High Res mode (Retina Display) on iPhone 4 and maintains low res on all other devices
-	//	if( ! [director enableRetinaDisplay:YES] )
-	//		CCLOG(@"Retina Display Not supported");
+		if( ! [director enableRetinaDisplay:YES] )
+			CCLOG(@"Retina Display Not supported");
 	
 #if GAME_AUTOROTATION == kGameAutorotationUIViewController
 	[director setDeviceOrientation:kCCDeviceOrientationPortrait];
@@ -65,7 +65,7 @@
 	[CCTexture2D setDefaultAlphaPixelFormat:kCCTexture2DPixelFormat_RGBA8888];
 	
 	// Removes the startup flicker
-	//[self removeStartupFlicker];
+	[self removeStartupFlicker];
 	
 	// Run the intro Scene
     GameDressScene_iPhone * gameDressScene = [GameDressScene_iPhone sceneWithDressVC:self bashoDirected:NO playVid:YES playingAgain:NO];

@@ -25,5 +25,6 @@
 -(void)goToMenu;
 -(void)goToSettings;
 -(void)removeSettings;
+- (void) removeStartupFlicker;
 
 @end

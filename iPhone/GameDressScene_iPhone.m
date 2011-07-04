@@ -92,7 +92,7 @@
 	
 	introVideo = [[MPMoviePlayerController alloc] initWithContentURL:url];
 	[[[CCDirector sharedDirector] openGLView] addSubview:introVideo.view];
-	[introVideo.view setFrame:CGRectMake(0,0,1024,768)];
+	[introVideo.view setFrame:CGRectMake(0,0,480,320)];
 	[introVideo setControlStyle:MPMovieControlStyleNone];
 	
 	[[NSNotificationCenter defaultCenter]
@@ -156,7 +156,7 @@
 	[target end];
 	[target saveBuffer:@"pirulo"];
 	UIImage * savedImg = [target getUIImageFromBuffer];
-    [[CCSpriteFrameCache sharedSpriteFrameCache] removeSpriteFramesFromFile:@"dress_iPad.plist"];
+    [[CCSpriteFrameCache sharedSpriteFrameCache] removeSpriteFramesFromFile:@"dress_iPhone.plist"];
 	[[CCSpriteFrameCache sharedSpriteFrameCache] removeUnusedSpriteFrames];
 	[[CCDirector sharedDirector] replaceScene:[CCTransitionFade transitionWithDuration:0.5 scene: [GameDressSceneSnapshot_iPhone sceneWithDressVC:viewController dinoImage:savedImg bashoDirected:bashoDirected] withColor:ccWHITE]];
 
@@ -178,8 +178,8 @@
 	[self schedule:@selector(doTimePassedForShake) interval:5];
 
 	[CCTexture2D setDefaultAlphaPixelFormat:kCCTexture2DPixelFormat_RGB565];
-	CCSprite * back = [CCSprite spriteWithFile:@"dress_background_iPad.png"];
-	[back setPosition:ccp(512,384)];
+	CCSprite * back = [CCSprite spriteWithFile:@"dress_background_iPhone.png"];
+	[back setPosition:ccp(240,160)];
 	[self addChild:back];
 	[CCTexture2D setDefaultAlphaPixelFormat:kCCTexture2DPixelFormat_RGBA4444];
 	
@@ -187,38 +187,38 @@
 	ddElements = [[NSMutableArray alloc] initWithCapacity:4];
 	dressPieces= [[NSMutableArray alloc] initWithCapacity:8];
 	
-	target = [[CCRenderTexture renderTextureWithWidth:1024 height:768] retain];
-	[target setPosition:ccp(512,384)];
+	target = [[CCRenderTexture renderTextureWithWidth:480 height:320] retain];
+	[target setPosition:ccp(240,160)];
 	
-	[[ CCSpriteFrameCache sharedSpriteFrameCache] addSpriteFramesWithFile:@"dress_iPad.plist" textureFile:@"dress_iPad.png"];
+	[[ CCSpriteFrameCache sharedSpriteFrameCache] addSpriteFramesWithFile:@"dress_iPhone.plist" textureFile:@"dress_iPhone.png"];
 	
-	CCSpriteBatchNode * sbn = [CCSpriteBatchNode batchNodeWithFile:@"dress_iPad.png"];
+	CCSpriteBatchNode * sbn = [CCSpriteBatchNode batchNodeWithFile:@"dress_iPhone.png"];
 	[self addChild:sbn z:2 tag:kSPRITEBATCH_ELEMS];
 	
 	//[self loadScatteredElements];
 	
-	dino = [[CCSprite spriteWithSpriteFrameName:@"dress_dino_iPad.png"]retain];
+	dino = [[CCSprite spriteWithSpriteFrameName:@"dress_dino_iPhone.png"]retain];
 	[sbn addChild:dino z:2 tag:4190]; //DINO = 4190
-	[dino setPosition:ccp(512,384)];
+	[dino setPosition:ccp(240,160)];
 	
-	CCSprite * boxers = [CCSprite spriteWithSpriteFrameName:@"dress_boxers_iPad.png"];
+	CCSprite * boxers = [CCSprite spriteWithSpriteFrameName:@"dress_boxers_iPhone.png"];
 	[sbn addChild:boxers z:2 tag:kBOXERS];
-	[boxers setPosition:ccp(512,384)];
+	[boxers setPosition:ccp(240,160)];
 	
-	shirt = [[CCSprite spriteWithSpriteFrameName:@"dress_shirt_iPad.png"]retain];
+	shirt = [[CCSprite spriteWithSpriteFrameName:@"dress_shirt_iPhone.png"]retain];
 	[sbn addChild:shirt z:5];
-	[shirt setPosition:ccp(512,384)];
+	[shirt setPosition:ccp(240,160)];
 	
-	CCMenuItemImage * backBtn = [CCMenuItemImage itemFromNormalImage:@"wheel_home_iPad.png" selectedImage:@"wheel_home_iPad.png" target:self selector:@selector(goBack)];
+	CCMenuItemImage * backBtn = [CCMenuItemImage itemFromNormalImage:@"wheel_home.png" selectedImage:@"wheel_home.png" target:self selector:@selector(goBack)];
 	
-	CCMenuItemImage * settingsBtn = [CCMenuItemImage itemFromNormalImage:@"wheel_settings_iPad.png" selectedImage:@"wheel_settings_iPad.png" target:self selector:@selector(goSettings)];
+	CCMenuItemImage * settingsBtn = [CCMenuItemImage itemFromNormalImage:@"wheel_settings_iPhone.png" selectedImage:@"wheel_settings_iPhone.png" target:self selector:@selector(goSettings)];
 
-	CCMenuItemImage * soundOff = [CCMenuItemImage itemFromNormalImage:@"wheel_sound_off_iPad.png" selectedImage:@"wheel_sound_on_iPad.png"];
-	CCMenuItemImage * soundOn = [CCMenuItemImage itemFromNormalImage:@"wheel_sound_on_iPad.png" selectedImage:@"wheel_sound_off_iPad.png"];
+	CCMenuItemImage * soundOff = [CCMenuItemImage itemFromNormalImage:@"wheel_sound_off_iPhone.png" selectedImage:@"wheel_sound_on_iPhone.png"];
+	CCMenuItemImage * soundOn = [CCMenuItemImage itemFromNormalImage:@"wheel_sound_on_iPhone.png" selectedImage:@"wheel_sound_off_iPhone.png"];
 	CCMenuItemToggle * soundT = [CCMenuItemToggle itemWithTarget:self selector:@selector(turnSounds) items:soundOn,soundOff,nil];
 	
-	CCMenuItemImage * bashoOff = [CCMenuItemImage itemFromNormalImage:@"wheel_basho_off_iPad.png" selectedImage:@"wheel_basho_on_iPad.png"];
-	CCMenuItemImage * bashoOn = [CCMenuItemImage itemFromNormalImage:@"wheel_basho_on_iPad.png" selectedImage:@"wheel_basho_off_iPad.png"];
+	CCMenuItemImage * bashoOff = [CCMenuItemImage itemFromNormalImage:@"wheel_basho_off_iPhone.png" selectedImage:@"wheel_basho_on_iPhone.png"];
+	CCMenuItemImage * bashoOn = [CCMenuItemImage itemFromNormalImage:@"wheel_basho_on_iPhone.png" selectedImage:@"wheel_basho_off_iPhone.png"];
 	CCMenuItemToggle * basho = [CCMenuItemToggle itemWithTarget:self selector:@selector(turnBasho) items:bashoOff,bashoOn,nil];
     
     if (bashoDirected) {
@@ -231,10 +231,10 @@
 	
 	CCMenu * menu = [CCMenu menuWithItems:backBtn,soundT,basho,settingsBtn, nil];
 	[self addChild:menu];
-	[backBtn setPosition:ccp(64,696)];
-	[settingsBtn setPosition:ccp(50,48)];
-	[soundT setPosition:ccp(50,120)];
-	[basho setPosition:ccp(50,200)];
+	[backBtn setPosition:ccp(20,290)];
+	[settingsBtn setPosition:ccp(20,25)];
+	[soundT setPosition:ccp(20,60)];
+	[basho setPosition:ccp(20,100)];
 	[menu setPosition:ccp(0,0)];
 	
 	btnImgs = [[NSMutableArray arrayWithCapacity:8]retain];
@@ -257,7 +257,7 @@
 	
 	[self selectItemForBasho];
 	
-	[self schedule:@selector(playRandomDinoAnim) interval:arc4random() % 5+5];
+	//[self schedule:@selector(playRandomDinoAnim) interval:arc4random() % 5+5];
 	
 	
 	//[self loadScore];
@@ -267,17 +267,21 @@
 
 -(void)createPalabra
 {
-    CCSprite * palabraBck = [CCSprite spriteWithFile:@"wheel_wordbackground_iPad.png"];
+    CCSprite * palabraBck = [CCSprite spriteWithFile:@"wheel_wordbackground_iPhone.png"];
     [self addChild:palabraBck z:3 tag:kPALABRABCK];
-    [palabraBck setPosition:ccp(870,60)];
+    [palabraBck setPosition:ccp(410,30)];
 	[palabraBck setOpacity:0];
 	CCLabelTTF * palabra = [CCLabelBMFont labelWithString:@"a" fntFile:@"Wheel_text_iPad.fnt"];
-    [self addChild:palabra z:3 tag:kPALABRA];
-	[palabra setPosition:ccp(870,60)];
+    if ([[UIScreen mainScreen] respondsToSelector:@selector(scale)] == YES && [[UIScreen mainScreen] scale] == 2.00) {
+        [palabra setScale:0.70];
+    }
+    else {
+        [palabra setScale:0.35];
+    }
+	[self addChild:palabra z:3 tag:kPALABRA];
+	[palabra setPosition:ccp(410,30)];
 	[palabra setOpacity:0];
-	[palabra setScale:0.7];
 }
-
 
 
 -(void)playRandomDinoAnim
@@ -470,7 +474,7 @@
 	
 	CCSprite * backpack = [CCSprite spriteWithSpriteFrameName:item.dressed];
 	[sbn addChild:backpack z:item.desiredZ];
-	[backpack setPosition:ccp(512,384)];
+	[backpack setPosition:ccp(240,160)];
     
     [dressPieces addObject:backpack];
     
@@ -481,7 +485,7 @@
         
         CCSprite * backPack2 = [CCSprite spriteWithSpriteFrameName:item.imagePath2];
         [sbn addChild:backPack2 z:0];
-        [backPack2 setPosition:ccp(512,384)];
+        [backPack2 setPosition:ccp(240,160)];
         
         [dressPieces addObject:backPack2];
     }
@@ -498,7 +502,7 @@
 	}
 	[ddElements removeAllObjects];
 	
-	NSString *filePath = [[NSBundle mainBundle] pathForResource:@"DressData_iPad" ofType:@"plist"];
+	NSString *filePath = [[NSBundle mainBundle] pathForResource:@"DressData_iPhone" ofType:@"plist"];
 	
 	NSMutableDictionary * elementsFile = [NSMutableDictionary dictionaryWithContentsOfFile:filePath];
 	NSMutableArray * elements=nil;
@@ -555,10 +559,10 @@
 	}
 	NSMutableArray * positions = [NSMutableArray array];
 	
-	NSMutableDictionary * p1 = [NSMutableDictionary dictionaryWithObjects:[NSMutableArray arrayWithObjects:[NSNumber numberWithInt:230],[NSNumber numberWithInt:180],nil] forKeys:[NSMutableArray arrayWithObjects:@"x",@"y",nil]];
-	NSMutableDictionary * p2 = [NSMutableDictionary dictionaryWithObjects:[NSMutableArray arrayWithObjects:[NSNumber numberWithInt:230],[NSNumber numberWithInt:580],nil] forKeys:[NSMutableArray arrayWithObjects:@"x",@"y",nil]];
-	NSMutableDictionary * p3 = [NSMutableDictionary dictionaryWithObjects:[NSMutableArray arrayWithObjects:[NSNumber numberWithInt:820],[NSNumber numberWithInt:180],nil] forKeys:[NSMutableArray arrayWithObjects:@"x",@"y",nil]];
-	NSMutableDictionary * p4 = [NSMutableDictionary dictionaryWithObjects:[NSMutableArray arrayWithObjects:[NSNumber numberWithInt:820],[NSNumber numberWithInt:580],nil] forKeys:[NSMutableArray arrayWithObjects:@"x",@"y",nil]];
+	NSMutableDictionary * p1 = [NSMutableDictionary dictionaryWithObjects:[NSMutableArray arrayWithObjects:[NSNumber numberWithInt:100],[NSNumber numberWithInt:90],nil] forKeys:[NSMutableArray arrayWithObjects:@"x",@"y",nil]];
+	NSMutableDictionary * p2 = [NSMutableDictionary dictionaryWithObjects:[NSMutableArray arrayWithObjects:[NSNumber numberWithInt:100],[NSNumber numberWithInt:250],nil] forKeys:[NSMutableArray arrayWithObjects:@"x",@"y",nil]];
+	NSMutableDictionary * p3 = [NSMutableDictionary dictionaryWithObjects:[NSMutableArray arrayWithObjects:[NSNumber numberWithInt:380],[NSNumber numberWithInt:90],nil] forKeys:[NSMutableArray arrayWithObjects:@"x",@"y",nil]];
+	NSMutableDictionary * p4 = [NSMutableDictionary dictionaryWithObjects:[NSMutableArray arrayWithObjects:[NSNumber numberWithInt:380],[NSNumber numberWithInt:250],nil] forKeys:[NSMutableArray arrayWithObjects:@"x",@"y",nil]];
 	
 	[positions addObject:p1];
 	[positions addObject:p2];
@@ -603,7 +607,7 @@
 
 -(void)goBack
 {
-	[[CCSpriteFrameCache sharedSpriteFrameCache] removeSpriteFramesFromFile:@"dress_iPad.plist"];
+	[[CCSpriteFrameCache sharedSpriteFrameCache] removeSpriteFramesFromFile:@"dress_iPhone.plist"];
 	[[CCSpriteFrameCache sharedSpriteFrameCache] removeUnusedSpriteFrames];
     [[SimpleAudioEngine sharedEngine] stopBackgroundMusic];
     [GameManager sharedGameManager].musicAudioEnabled = YES;
