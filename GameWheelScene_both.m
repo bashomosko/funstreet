@@ -346,6 +346,7 @@
     if ([iPad rangeOfString:@"_iPhone"].location != NSNotFound) {
         posX = 240;
         posY = 160;
+        return;
     }
     
 	NSMutableDictionary * userData = (NSMutableDictionary *)btn.userData;
