@@ -606,6 +606,10 @@
 		2860E32E111B888700E27156 /* AppDelegate_iPad.m in Sources */ = {isa = PBXBuildFile; fileRef = 2860E32C111B888700E27156 /* AppDelegate_iPad.m */; };
 		2860E32F111B888700E27156 /* MainWindow_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2860E32D111B888700E27156 /* MainWindow_iPad.xib */; };
 		288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765FC0DF74451002DB57D /* CoreGraphics.framework */; };
+		84170AE313C6392600DEDD21 /* animalsAnims_iPhone.plist in Resources */ = {isa = PBXBuildFile; fileRef = 84170ADD13C6392500DEDD21 /* animalsAnims_iPhone.plist */; };
+		84170AE413C6392600DEDD21 /* animalsAnims_iPhone.png in Resources */ = {isa = PBXBuildFile; fileRef = 84170ADE13C6392500DEDD21 /* animalsAnims_iPhone.png */; };
+		84170AE713C6392600DEDD21 /* animalsAnims_iPhone-hd.plist in Resources */ = {isa = PBXBuildFile; fileRef = 84170AE113C6392500DEDD21 /* animalsAnims_iPhone-hd.plist */; };
+		84170AE813C6392600DEDD21 /* animalsAnims_iPhone-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 84170AE213C6392500DEDD21 /* animalsAnims_iPhone-hd.png */; };
 		84952C1413ABAF1100F639D4 /* wheel_wheel_iPhone.png in Resources */ = {isa = PBXBuildFile; fileRef = 84952C0A13ABAF1000F639D4 /* wheel_wheel_iPhone.png */; };
 		84952C1513ABAF1100F639D4 /* wheel_sound_on_iPhone.png in Resources */ = {isa = PBXBuildFile; fileRef = 84952C0B13ABAF1000F639D4 /* wheel_sound_on_iPhone.png */; };
 		84952C1713ABAF1100F639D4 /* wheel_sound_off_iPhone.png in Resources */ = {isa = PBXBuildFile; fileRef = 84952C0D13ABAF1100F639D4 /* wheel_sound_off_iPhone.png */; };
@@ -1510,6 +1514,10 @@
 		288765FC0DF74451002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Shared/main.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* Basho_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Basho_Prefix.pch; sourceTree = "<group>"; };
+		84170ADD13C6392500DEDD21 /* animalsAnims_iPhone.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = animalsAnims_iPhone.plist; sourceTree = "<group>"; };
+		84170ADE13C6392500DEDD21 /* animalsAnims_iPhone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = animalsAnims_iPhone.png; sourceTree = "<group>"; };
+		84170AE113C6392500DEDD21 /* animalsAnims_iPhone-hd.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "animalsAnims_iPhone-hd.plist"; sourceTree = "<group>"; };
+		84170AE213C6392500DEDD21 /* animalsAnims_iPhone-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "animalsAnims_iPhone-hd.png"; sourceTree = "<group>"; };
 		84952C0A13ABAF1000F639D4 /* wheel_wheel_iPhone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wheel_wheel_iPhone.png; sourceTree = "<group>"; };
 		84952C0B13ABAF1000F639D4 /* wheel_sound_on_iPhone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wheel_sound_on_iPhone.png; sourceTree = "<group>"; };
 		84952C0D13ABAF1100F639D4 /* wheel_sound_off_iPhone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wheel_sound_off_iPhone.png; sourceTree = "<group>"; };
@@ -2791,6 +2799,7 @@
 		10E025081311561C00549533 /* wheel */ = {
 			isa = PBXGroup;
 			children = (
+				84170ADB13C6390300DEDD21 /* AnimalsAnim */,
 				84E1A33F13B8FF2700BA7BE9 /* wheel_wordbackground_iPhone-hd.png */,
 				84E1A34013B8FF2800BA7BE9 /* wheel_wordbackground_iPhone.png */,
 				84E1A30513B8E88A00BA7BE9 /* wheel_background_iPhone-hd.png */,
@@ -3007,6 +3016,17 @@
 				10AA0AF413070FE700D11E6B /* libz.dylib */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		84170ADB13C6390300DEDD21 /* AnimalsAnim */ = {
+			isa = PBXGroup;
+			children = (
+				84170ADD13C6392500DEDD21 /* animalsAnims_iPhone.plist */,
+				84170ADE13C6392500DEDD21 /* animalsAnims_iPhone.png */,
+				84170AE113C6392500DEDD21 /* animalsAnims_iPhone-hd.plist */,
+				84170AE213C6392500DEDD21 /* animalsAnims_iPhone-hd.png */,
+			);
+			name = AnimalsAnim;
 			sourceTree = "<group>";
 		};
 		84A7914A13B207FD00B3B53C /* Game Dress */ = {
@@ -3807,6 +3827,10 @@
 				84F7562413C20AD0001F3CA8 /* snapshot_polaroid2_iPhone.png in Resources */,
 				84F7562513C20AD0001F3CA8 /* snapshot_polaroid1_iPhone.png in Resources */,
 				84F7562613C20AD0001F3CA8 /* snapshot_background_iPhone.png in Resources */,
+				84170AE313C6392600DEDD21 /* animalsAnims_iPhone.plist in Resources */,
+				84170AE413C6392600DEDD21 /* animalsAnims_iPhone.png in Resources */,
+				84170AE713C6392600DEDD21 /* animalsAnims_iPhone-hd.plist in Resources */,
+				84170AE813C6392600DEDD21 /* animalsAnims_iPhone-hd.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

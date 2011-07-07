@@ -183,6 +183,10 @@
 	
 	//[self loadScore];
 	[self loadButtons];
+    
+    //[[ CCSpriteFrameCache sharedSpriteFrameCache] addSpriteFramesWithFile:@"animalsAnims_iPhone.plist" textureFile:@"animalsAnims_iPhone.png"];
+	//animalAnimSB = [CCSpriteBatchNode batchNodeWithFile:@"animalsAnims_iPhone.png"];
+    
 	[self createPalabra];
     [self loadSpinningStuff];
 }

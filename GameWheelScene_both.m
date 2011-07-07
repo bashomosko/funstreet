@@ -341,8 +341,11 @@
 
 -(void)playAnimForAnimal:(CCMenuItemImage *)btn
 {   
+    float posX =512 , posY = 384;
+    
     if ([iPad rangeOfString:@"_iPhone"].location != NSNotFound) {
-        return;
+        posX = 240;
+        posY = 160;
     }
     
 	NSMutableDictionary * userData = (NSMutableDictionary *)btn.userData;
@@ -353,7 +356,7 @@
 	
 	CCSprite * itemAnim = [CCSprite spriteWithSpriteFrameName:[NSString stringWithFormat:@"SeeNSay_%@_ANIM_00000.png",animal]];
 	[animalAnimSB addChild:itemAnim];
-	[itemAnim setPosition:ccp(512,384)];
+	[itemAnim setPosition:ccp(posX,posY)];
 	
 	NSMutableArray *animFrames = [NSMutableArray array];
 	for(int i = 0; i <= framesNum; i++) {
