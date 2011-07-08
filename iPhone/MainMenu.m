@@ -34,7 +34,7 @@
     if(![GameManager sharedGameManager].playedMenuVideo)
 	{
 		[[GameManager sharedGameManager] setPlayedMenuVideo:YES];
-		[self playVideo:@"iPad"];
+		[self playVideo:@"iPhone"];
 	}else {
         [[SimpleAudioEngine sharedEngine] playBackgroundMusic:@"backgroundMusic.mp3"];
 		[self animateDoors:@"_iPhone"];
@@ -81,7 +81,7 @@
     if(![GameManager sharedGameManager].playedMenuVideo)
     {
         [[GameManager sharedGameManager] setPlayedMenuVideo:YES];
-        [self playVideo:@"iPad"];
+        [self playVideo:@"iPhone"];
     }
 }
 

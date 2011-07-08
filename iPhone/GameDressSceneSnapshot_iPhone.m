@@ -71,7 +71,7 @@
         [palabra setScale:0.70];
     }
     else {
-        [palabra setScale:0.35];
+        [palabra setScale:0.25];
     }
     [self addChild:palabra];
 	[palabra setPosition:ccp(240,10)];

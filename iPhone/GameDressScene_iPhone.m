@@ -83,7 +83,7 @@
     [[SimpleAudioEngine sharedEngine] pauseBackgroundMusic];
 	if (bundle) 
 	{
-		NSString *moviePath = [bundle pathForResource:[NSString stringWithFormat:@"intro_2_%@_iPad",[GameManager sharedGameManager].instructionsLanguageString] ofType:@"mov"];
+		NSString *moviePath = [bundle pathForResource:[NSString stringWithFormat:@"intro_2_%@_iPhone",[GameManager sharedGameManager].instructionsLanguageString] ofType:@"mov"];
 		if (moviePath)
 		{
 			url = [NSURL fileURLWithPath:moviePath];
@@ -257,7 +257,7 @@
 	
 	[self selectItemForBasho];
 	
-	//[self schedule:@selector(playRandomDinoAnim) interval:arc4random() % 5+5];
+	[self schedule:@selector(playRandomDinoAnim) interval:arc4random() % 5+5];
 	
 	
 	//[self loadScore];
@@ -289,6 +289,15 @@
 	int animNum = arc4random() %4+1;
 	int animAmount = 0;
 	NSString * frameName = nil;
+    NSString * typeIphone = nil;
+    if ([[UIScreen mainScreen] respondsToSelector:@selector(scale)] == YES && [[UIScreen mainScreen] scale] == 2.00) {
+        
+        typeIphone = @"_iPhone4";
+    }
+    else {
+        typeIphone = @"_iPhone";
+        
+    }
 	switch (animNum) {
 		case 1:
 			frameName = @"Game2_RumiEverythingAnim";
@@ -296,6 +305,7 @@
 			break;
 		case 2:
 			frameName = @"Game2_RumiEyesBlinkAnim";
+            
 			animAmount = 8;
 			break;
 		case 3:
@@ -309,18 +319,20 @@
 		default:
 			break;
 	}
+    
+    frameName = [frameName stringByAppendingString:typeIphone];
 	
-	[[ CCSpriteFrameCache sharedSpriteFrameCache] addSpriteFramesWithFile:[NSString stringWithFormat:@"RumiAnim%d_iPad.plist",animNum] textureFile:[NSString stringWithFormat:@"RumiAnim%d_iPad.png",animNum]];
+	[[ CCSpriteFrameCache sharedSpriteFrameCache] addSpriteFramesWithFile:[NSString stringWithFormat:@"RumiAnim%d_iPhone.plist",animNum] textureFile:[NSString stringWithFormat:@"RumiAnim%d_iPhone.png",animNum]];
 	
-	CCSpriteBatchNode * animSbn = [CCSpriteBatchNode batchNodeWithFile:[NSString stringWithFormat:@"RumiAnim%d_iPad.png",animNum]];
+	CCSpriteBatchNode * animSbn = [CCSpriteBatchNode batchNodeWithFile:[NSString stringWithFormat:@"RumiAnim%d_iPhone.png",animNum]];
 	[self addChild:animSbn z:1 tag:545];
-	animSbn.userData = [[NSString stringWithFormat:@"RumiAnim%d_iPad.plist",animNum]retain];
+	animSbn.userData = [[NSString stringWithFormat:@"RumiAnim%d_iPhone.plist",animNum]retain];
 	
 	//[self loadScatteredElements];
 	
 	CCSprite * dinoAnim = [CCSprite spriteWithSpriteFrameName:[NSString stringWithFormat:@"%@_00000.png",frameName]];
 	[animSbn addChild:dinoAnim];
-	[dinoAnim setPosition:ccp(512,384)];
+	[dinoAnim setPosition:ccp(240,160)];
 	
 	NSMutableArray *animFrames = [NSMutableArray array];
 	for(int i = 0; i < animAmount; i++) {
@@ -383,29 +395,29 @@
 		[ddElements removeAllObjects];
 		
 		bashoSelectedSound = 0;
-		
+        
 		NSString * fileName = nil;
-		switch (arc4random() %7) {
-			case 0:
-				fileName = @"Arrows_iPad_1024x1024_";
+		switch (arc4random() %4) {
+			/*case 0:
+				fileName = @"Arrows_iPhone_";
 				break;
 			case 1:
-				fileName = @"Flowers_iPad_1024x1024_";
+				fileName = @"Flowers_iPhone_";
+				break;*/
+			case 0:
+				fileName = @"LayeredStars_iPhone_";
 				break;
-			case 2:
-				fileName = @"LayeredStars_iPad_1024x1024_";
+			/*case 3:
+				fileName = @"Spirals_iPhone_";
+				break;*/
+            case 1:
+                fileName = @"LayeredDiamonds_iPhone_";
 				break;
-			case 3:
-				fileName = @"Spirals_iPad_1024x1024_";
+            case 2:
+                fileName = @"LayeredCircles_iPhone_";
 				break;
-            case 4:
-                fileName = @"LayeredDiamonds_iPad_1024x1024_";
-				break;
-            case 5:
-                fileName = @"LayeredCircles_iPad_1024x1024_";
-				break;
-            case 6:
-                fileName = @"LayeredTriangles_iPad_1024x1024_";
+            case 3:
+                fileName = @"LayeredTriangles_iPhone_";
 				break;
 		}
 		
@@ -416,13 +428,13 @@
 		}
 		
 		//RESET DINO
-		CCSprite * gloopbackground = [CCSprite spriteWithFile:[NSString stringWithFormat:@"%@00000.png.pvr",fileName]];
-		[gloopbackground setPosition:ccp(512,384)];
+		CCSprite * gloopbackground = [CCSprite spriteWithFile:[NSString stringWithFormat:@"%@00000.pvr",fileName]];
+		[gloopbackground setPosition:ccp(240,160)];
 		[self addChild:gloopbackground];
 		//ANIMATION
 		gloopFrames = [[NSMutableArray  alloc]init];
 		for(int i = 0; i <= 15; i++) {
-			CCSprite * sp = [CCSprite spriteWithFile:[NSString stringWithFormat:@"%@%05d.png.pvr",fileName,i]];
+			CCSprite * sp = [CCSprite spriteWithFile:[NSString stringWithFormat:@"%@%05d.pvr",fileName,i]];
             if (sp != nil) {
                 CCSpriteFrame *frame = [CCSpriteFrame frameWithTexture:sp.texture rect:sp.textureRect];
                 [gloopFrames addObject:frame];
