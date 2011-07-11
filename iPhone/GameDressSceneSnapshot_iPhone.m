@@ -68,14 +68,13 @@
 	moveOutActivated = YES;
 	CCLabelTTF * palabra = [CCLabelBMFont labelWithString:@"Tap to return to the game" fntFile:@"Wheel_text_iPad.fnt"];
     if ([[UIScreen mainScreen] respondsToSelector:@selector(scale)] == YES && [[UIScreen mainScreen] scale] == 2.00) {
-        [palabra setScale:0.70];
+        [palabra setScale:0.4];
     }
     else {
-        [palabra setScale:0.25];
+        [palabra setScale:0.2];
     }
     [self addChild:palabra];
 	[palabra setPosition:ccp(240,10)];
-	[palabra setScale:0.3];
 	[palabra runAction:[CCRepeatForever actionWithAction:[CCSequence actions:[CCFadeIn actionWithDuration:0.5],[CCDelayTime actionWithDuration:1],[CCFadeOut actionWithDuration:0.5],nil]]];
 }
 
