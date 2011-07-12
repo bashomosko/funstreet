@@ -30,7 +30,7 @@
 - (void)viewDidLoad {
     
     widthScroll = 300;
-    heightScroll= 180;
+    heightScroll= 169;
     
     widthVideo = 480;
     heightVideo = 320;
@@ -78,6 +78,7 @@
 	[UIView beginAnimations:nil context:nil];
 	[gw.view setAlpha:1];
 	[UIView commitAnimations];
+    
 }
 
 

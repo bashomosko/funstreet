@@ -67,7 +67,12 @@
 	[self removeStartupFlicker];
 	
 	// Run the intro Scene
-	[[CCDirector sharedDirector] runWithScene: [GameWheelScene sceneWithWheelVC:self]];	
+	//[[CCDirector sharedDirector] runWithScene: [GameWheelScene sceneWithWheelVC:self]];	
+    
+    GameWheelScene * gameWheelScene = [GameWheelScene sceneWithWheelVC:self];
+    gameWheelLayer = (GameWheelScene*)[gameWheelScene getChildByTag:1000];
+	
+	[[CCDirector sharedDirector] runWithScene:(CCScene*)gameWheelScene];
 }
 
 - (void) removeStartupFlicker

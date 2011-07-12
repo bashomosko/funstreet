@@ -100,6 +100,7 @@
 	[UIView beginAnimations:nil context:nil];
 	[gw.view setAlpha:1];
 	[UIView commitAnimations];
+    
 }
 
 
