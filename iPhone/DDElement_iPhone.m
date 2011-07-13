@@ -106,7 +106,7 @@
 			[theGame addChild:smoke z:20];
 			[smoke setScale:0];
             [[SimpleAudioEngine sharedEngine] playEffect:@"CloudTransition.mp3"];
-			[smoke runAction:[CCSequence actions:[CCSpawn actions:[CCScaleTo actionWithDuration:1.1 scale:3],
+			[smoke runAction:[CCSequence actions:[CCSpawn actions:[CCScaleTo actionWithDuration:1.1 scale:4],
                                                   [CCSequence actions:[CCRotateTo actionWithDuration:0.1 angle:33], 
                                                    [CCRotateTo actionWithDuration:0.1 angle:66],
                                                    [CCRotateTo actionWithDuration:0.1 angle:99],
@@ -118,7 +118,7 @@
                                                    [CCRotateTo actionWithDuration:0.1 angle:297],
                                                    [CCRotateTo actionWithDuration:0.1 angle:330],
                                                    [CCRotateTo actionWithDuration:0.1 angle:360],nil],nil],
-                             [CCSpawn actions:[CCScaleTo actionWithDuration:0.5 scale:3],
+                             [CCSpawn actions:[CCScaleTo actionWithDuration:0.5 scale:4],
                              [CCFadeOut actionWithDuration:0.5],nil],
                              [CCCallFuncN actionWithTarget:self selector:@selector(removeNode:)],nil]];
 			
