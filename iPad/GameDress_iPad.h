@@ -21,4 +21,9 @@
 
 @property (nonatomic,assign) GameDressScene_iPad * gameDressLayer;
 
+-(void)goToNextGame;
+-(void)goToMenu;
+-(void)goToSettings;
+-(void)removeSettings;
+
 @end

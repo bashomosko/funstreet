@@ -34,4 +34,6 @@
 @property (nonatomic,readwrite) float widthScroll;
 @property (nonatomic,readwrite) float heightScroll;
 
+-(void)playVid:(int)videoNumber;
+
 @end

@@ -19,4 +19,9 @@
 	
 }
 
++(id) sceneWithDressVC:(GameDress_iPad *)vc dinoImage:(UIImage *)img bashoDirected:(BOOL)_bashoDirected;
++(id) nodeWithDressVC:(GameDress_iPad *)vc dinoImage:(UIImage *)img bashoDirected:(BOOL)_bashoDirected;
+-(id) initWithDressVC:(GameDress_iPad *)vc dinoImage:(UIImage *)img bashoDirected:(BOOL)_bashoDirected;
+-(void)addDinoOnPosition:(CGPoint)pos dinoImage:(UIImage *)img num:(int)num;
+
 @end

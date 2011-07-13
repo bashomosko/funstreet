@@ -7,7 +7,7 @@
 
 @implementation DDElement
 
--(id) initWithTheGame:(GameDress_iPad *)ddm elementDict:(NSMutableDictionary *)element
+-(id) initWithTheGame:(GameDressScene_iPad *)ddm elementDict:(NSMutableDictionary *)element
 {
 	if( (self=[super init])) {
 		
@@ -43,7 +43,7 @@
 		soundOkPath = [[NSString stringWithFormat:@"dress_snd_%@_%@.mp3",itemNumber,colorNumber]retain];
 		soundWrongPath = [[NSString stringWithFormat:@"dress_snd_%@_%@_wrong.mp3",itemNumber,colorNumber]retain];
 		
-		CCSpriteBatchNode * sbn = [theGame getChildByTag:kSPRITEBATCH_ELEMS];
+		CCSpriteBatchNode * sbn = (CCSpriteBatchNode*)[theGame getChildByTag:kSPRITEBATCH_ELEMS];
 		mySprite = [CCSprite spriteWithSpriteFrameName:imagePath];
 		[sbn addChild:mySprite z:9];
 		[theGame addChild:self];
@@ -106,7 +106,7 @@
 			[theGame addChild:smoke z:20];
 			[smoke setScale:0];
             [[SimpleAudioEngine sharedEngine] playEffect:@"CloudTransition.mp3"];
-			[smoke runAction:[CCSequence actions:[CCSpawn actions:[CCScaleTo actionWithDuration:1.1 scale:2],
+			[smoke runAction:[CCSequence actions:[CCSpawn actions:[CCScaleTo actionWithDuration:1.1 scale:4],
                                                   [CCSequence actions:[CCRotateTo actionWithDuration:0.1 angle:33], 
                                                    [CCRotateTo actionWithDuration:0.1 angle:66],
                                                    [CCRotateTo actionWithDuration:0.1 angle:99],
@@ -118,13 +118,22 @@
                                                    [CCRotateTo actionWithDuration:0.1 angle:297],
                                                    [CCRotateTo actionWithDuration:0.1 angle:330],
                                                    [CCRotateTo actionWithDuration:0.1 angle:360],nil],nil],
-                             [CCSpawn actions:[CCScaleTo actionWithDuration:0.5 scale:2],
+                             [CCSpawn actions:[CCScaleTo actionWithDuration:0.5 scale:4],
                              [CCFadeOut actionWithDuration:0.5],nil],
                              [CCCallFuncN actionWithTarget:self selector:@selector(removeNode:)],nil]];
 			
 			if([GameManager sharedGameManager].soundsEnabled)
-			{
-				[[SimpleAudioEngine sharedEngine] playEffect:@"RightAnswer.mp3"];
+			{   
+                if (theGame.bashoDirected) {
+                    soundFileName = @"RightAnswer.mp3";
+                }
+                else {
+                    
+                    int soundToPlay = (arc4random()%5 + 1);
+                    soundFileName = [NSString stringWithFormat:@"DressHit%d.mp3",soundToPlay];
+                }
+                
+				[[SimpleAudioEngine sharedEngine] playEffect:soundFileName];
 				[theGame hidePalabra];
 				/*if(theGame.bashoDirected)
 					[[SimpleAudioEngine sharedEngine] playEffect:@"RightAnswer.mp3"];

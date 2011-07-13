@@ -10,10 +10,18 @@
 #import "cocos2d.h"
 #import "GameWheelScene_both.h"
 
-@class GameWheelScene_both;
+@class GameWheelScene_both,GameWheel_iPad;
 // HelloWorld Layer
 @interface GameWheelScene_iPad : GameWheelScene_both
 {
+    GameWheel_iPad * viewController;
 }
+
++(id) sceneWithWheelVC:(GameWheel_iPad *)vc;
++(id) nodeWithWheelVC:(GameWheel_iPad *)vc;
+-(id) initWithWheelVC:(GameWheel_iPad *)vc;
+-(void)createPalabra;
+-(NSMutableArray *)loadBtnPos;
+
 
 @end

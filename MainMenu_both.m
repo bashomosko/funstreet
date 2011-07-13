@@ -55,6 +55,16 @@
 	NSURL * url;
 	NSBundle *bundle = [NSBundle mainBundle];
     
+    float width = 1024,height = 768;
+    
+    
+    if ([suffix rangeOfString:@"iPhone"].location != NSNotFound)
+    {
+        width = 480;
+        height = 320;
+    }
+        
+    
     [[SimpleAudioEngine sharedEngine] pauseBackgroundMusic];
 	if (bundle) 
 	{   
@@ -68,7 +78,7 @@
 	
 	introVideo = [[MPMoviePlayerController alloc] initWithContentURL:url];
 	[self.view addSubview:introVideo.view];
-	[introVideo.view setFrame:CGRectMake(0,0,1024,768)];
+	[introVideo.view setFrame:CGRectMake(0,0,width,height)];
 	[introVideo setControlStyle:MPMovieControlStyleNone];
 	
 	[[NSNotificationCenter defaultCenter]
@@ -78,7 +88,7 @@
 	 object:introVideo];
 	
 	UIButton * skip = [UIButton buttonWithType:UIButtonTypeCustom];
-	[skip setFrame:CGRectMake(0,0,1024,768)];
+	[skip setFrame:CGRectMake(0,0,width,height)];
 	[skip addTarget:self action:@selector(skipMovie) forControlEvents:UIControlEventTouchUpInside];
 	[introVideo.view addSubview:skip];
 	
@@ -116,8 +126,8 @@
 
 -(void) videoPlayerDidFinishPlaying: (NSNotification*)aNotification
 {
-	MPMoviePlayerController * introVideo = [aNotification object];
-	[[NSNotificationCenter defaultCenter] removeObserver:self name:MPMoviePlayerPlaybackDidFinishNotification object:introVideo];
+	MPMoviePlayerController * introVideoFply = [aNotification object];
+	[[NSNotificationCenter defaultCenter] removeObserver:self name:MPMoviePlayerPlaybackDidFinishNotification object:introVideoFply];
 	[introVideo stop];
 	[introVideo.view removeFromSuperview];
 	[introVideo release];

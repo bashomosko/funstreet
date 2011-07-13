@@ -145,6 +145,57 @@
 	[self loadSpinningStuff];
 }
 
+-(void)loadVideo
+{
+	[GameManager sharedGameManager].onPause = YES;
+    [[SimpleAudioEngine sharedEngine] pauseBackgroundMusic];
+	NSURL * url;
+	NSBundle *bundle = [NSBundle mainBundle];
+	if (bundle) 
+	{
+		NSString *moviePath = [bundle pathForResource:[NSString stringWithFormat:@"intro_1_%@_iPad",[GameManager sharedGameManager].instructionsLanguageString] ofType:@"mov"];
+		if (moviePath)
+		{
+			url = [NSURL fileURLWithPath:moviePath];
+		}
+	}
+	
+	introVideo = [[MPMoviePlayerController alloc] initWithContentURL:url];
+	[[[CCDirector sharedDirector] openGLView] addSubview:introVideo.view];
+	[introVideo.view setFrame:CGRectMake(0,0,1024,768)];
+	[introVideo setControlStyle:MPMovieControlStyleNone];
+	
+	[[NSNotificationCenter defaultCenter]
+	 addObserver:self
+	 selector:@selector(videoPlayerDidFinishPlaying:)
+	 name:MPMoviePlayerPlaybackDidFinishNotification
+	 object:introVideo];
+	
+	UIButton * skip = [UIButton buttonWithType:UIButtonTypeCustom];
+	[skip setFrame:CGRectMake(0,0,[CCDirector sharedDirector].winSize.width,[CCDirector sharedDirector].winSize.height)];
+	[skip addTarget:self action:@selector(skipMovie) forControlEvents:UIControlEventTouchUpInside];
+	[introVideo.view addSubview:skip];
+	
+	videoTaps = 0;
+	
+	[introVideo play];
+}
+
+
+-(void)goBack
+{
+	if([GameManager sharedGameManager].onPause) return;
+    [GameManager sharedGameManager].musicAudioEnabled = YES;
+	[viewController goToMenu];
+}
+
+-(void)goSettings
+{
+	if([GameManager sharedGameManager].onPause) return; 
+	[GameManager sharedGameManager].onPause = YES;
+    [viewController goToSettings];
+}
+
 -(void)replay
 {
 	[[CCDirector sharedDirector] replaceScene:[CCTransitionFade transitionWithDuration:0.5 scene: [GameWheelScene_iPad sceneWithWheelVC:viewController] withColor:ccWHITE]];

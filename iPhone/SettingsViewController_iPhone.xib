@@ -62,12 +62,13 @@
 					<object class="IBUISegmentedControl" id="355086694">
 						<reference key="NSNextResponder" ref="133396669"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{256, 47}, {207, 44}}</string>
+						<string key="NSFrame">{{231, 58}, {207, 30}}</string>
 						<reference key="NSSuperview" ref="133396669"/>
 						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView" ref="736079834"/>
+						<reference key="NSNextKeyView" ref="995601679"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
+						<int key="IBSegmentControlStyle">2</int>
 						<int key="IBNumberOfSegments">2</int>
 						<int key="IBSelectedSegmentIndex">0</int>
 						<object class="NSArray" key="IBSegmentTitles">
@@ -99,7 +100,7 @@
 					<object class="IBUIButton" id="333517740">
 						<reference key="NSNextResponder" ref="133396669"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{454, 7}, {20, 18}}</string>
+						<string key="NSFrame">{{436, 2}, {30, 30}}</string>
 						<reference key="NSSuperview" ref="133396669"/>
 						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="900954962"/>
@@ -130,10 +131,10 @@
 					<object class="IBUILabel" id="900954962">
 						<reference key="NSNextResponder" ref="133396669"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{64, 65}, {130, 21}}</string>
+						<string key="NSFrame">{{64, 58}, {140, 21}}</string>
 						<reference key="NSSuperview" ref="133396669"/>
 						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView" ref="995601679"/>
+						<reference key="NSNextKeyView" ref="355086694"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<bool key="IBUIClipsSubviews">YES</bool>
 						<int key="IBUIContentMode">7</int>
@@ -157,12 +158,13 @@
 					<object class="IBUISegmentedControl" id="783855577">
 						<reference key="NSNextResponder" ref="133396669"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{256, 98}, {207, 44}}</string>
+						<string key="NSFrame">{{231, 96}, {207, 30}}</string>
 						<reference key="NSSuperview" ref="133396669"/>
 						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="157941840"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
+						<int key="IBSegmentControlStyle">2</int>
 						<int key="IBNumberOfSegments">2</int>
 						<int key="IBSelectedSegmentIndex">0</int>
 						<object class="NSArray" key="IBSegmentTitles">
@@ -194,10 +196,10 @@
 					<object class="IBUILabel" id="995601679">
 						<reference key="NSNextResponder" ref="133396669"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{64, 94}, {130, 21}}</string>
+						<string key="NSFrame">{{64, 96}, {140, 21}}</string>
 						<reference key="NSSuperview" ref="133396669"/>
 						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView" ref="355086694"/>
+						<reference key="NSNextKeyView" ref="736079834"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<bool key="IBUIClipsSubviews">YES</bool>
 						<int key="IBUIContentMode">7</int>
@@ -214,12 +216,13 @@
 					<object class="IBUISegmentedControl" id="913641757">
 						<reference key="NSNextResponder" ref="133396669"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{206, 149}, {257, 44}}</string>
+						<string key="NSFrame">{{182, 134}, {257, 30}}</string>
 						<reference key="NSSuperview" ref="133396669"/>
 						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="403894443"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
+						<int key="IBSegmentControlStyle">2</int>
 						<int key="IBNumberOfSegments">3</int>
 						<int key="IBSelectedSegmentIndex">0</int>
 						<object class="NSArray" key="IBSegmentTitles">
@@ -256,12 +259,13 @@
 					<object class="IBUISegmentedControl" id="403894443">
 						<reference key="NSNextResponder" ref="133396669"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{206, 200}, {257, 44}}</string>
+						<string key="NSFrame">{{182, 174}, {257, 30}}</string>
 						<reference key="NSSuperview" ref="133396669"/>
 						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
+						<int key="IBSegmentControlStyle">2</int>
 						<int key="IBNumberOfSegments">3</int>
 						<int key="IBSelectedSegmentIndex">0</int>
 						<object class="NSArray" key="IBSegmentTitles">
@@ -298,7 +302,7 @@
 					<object class="IBUILabel" id="736079834">
 						<reference key="NSNextResponder" ref="133396669"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{64, 123}, {69, 21}}</string>
+						<string key="NSFrame">{{64, 134}, {69, 21}}</string>
 						<reference key="NSSuperview" ref="133396669"/>
 						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="783855577"/>
@@ -318,7 +322,7 @@
 					<object class="IBUILabel" id="157941840">
 						<reference key="NSNextResponder" ref="133396669"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{64, 152}, {89, 21}}</string>
+						<string key="NSFrame">{{64, 174}, {89, 21}}</string>
 						<reference key="NSSuperview" ref="133396669"/>
 						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="913641757"/>
@@ -620,7 +624,7 @@
 				<reference key="dict.values" ref="0"/>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">55</int>
+			<int key="maxID">56</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">

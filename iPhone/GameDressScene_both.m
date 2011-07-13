@@ -12,7 +12,7 @@
 
 @implementation GameDressScene_both
 
-@synthesize placingElement,colorNeeded,itemNeeded,bashoDirected,dino,isBackBagSet,shirt;
+@synthesize placingElement,colorNeeded,itemNeeded,bashoDirected,dino,isBackBagSet,shirt,sound,gloopFrames;
 
 -(void)loadScore
 {
@@ -50,6 +50,10 @@
 	}
 }
 
+-(void)beginGame{
+    
+}
+
 -(void)reduceVideoTaps
 {
 	videoTaps =0;
@@ -57,8 +61,8 @@
 
 -(void) videoPlayerDidFinishPlaying: (NSNotification*)aNotification
 {
-	MPMoviePlayerController * introVideo = [aNotification object];
-	[[NSNotificationCenter defaultCenter] removeObserver:self name:MPMoviePlayerPlaybackDidFinishNotification object:introVideo];
+	MPMoviePlayerController * introVideoFPly = [aNotification object];
+	[[NSNotificationCenter defaultCenter] removeObserver:self name:MPMoviePlayerPlaybackDidFinishNotification object:introVideoFPly];
 	[introVideo stop];
 	[introVideo.view removeFromSuperview];
 	[introVideo release];
@@ -86,13 +90,6 @@
 	
 }
 
--(void)beginGame
-{
-	//[self loadDeviceType];
-	
-}
-
-
 -(void)createPalabra
 {
     
@@ -100,18 +97,18 @@
 
 -(void)showPalabra:(NSString *)word
 {
-	CCLabelTTF * palabra = [self getChildByTag:kPALABRA];
+	CCLabelTTF * palabra = (CCLabelTTF*)[self getChildByTag:kPALABRA];
 	[palabra setString:word];
 	[palabra runAction:[CCFadeIn actionWithDuration:0.8]];
-    CCSprite * palabraBck = [self getChildByTag:kPALABRABCK];
+    CCSprite * palabraBck = (CCSprite*)[self getChildByTag:kPALABRABCK];
 	[palabraBck runAction:[CCFadeIn actionWithDuration:0.8]];
 }
 
 -(void)hidePalabra
 {
-	CCLabelTTF * palabra = [self getChildByTag:kPALABRA];
+	CCLabelTTF * palabra = (CCLabelTTF*)[self getChildByTag:kPALABRA];
 	[palabra runAction:[CCSequence actions:[CCDelayTime actionWithDuration:1.5],[CCFadeTo actionWithDuration:0.5 opacity:0],nil]];
-    CCSprite * palabraBck = [self getChildByTag:kPALABRABCK];
+    CCSprite * palabraBck = (CCSprite*)[self getChildByTag:kPALABRABCK];
 	[palabraBck runAction:[CCSequence actions:[CCDelayTime actionWithDuration:1.5],[CCFadeTo actionWithDuration:0.5 opacity:0],nil]];	
 }
 
@@ -122,14 +119,14 @@
 
 -(void)removeRandomDinoAnim:(CCSprite *)sp
 {
-	CCSpriteBatchNode * sbn = [self getChildByTag:kSPRITEBATCH_ELEMS];
+	CCSpriteBatchNode * sbn = (CCSpriteBatchNode*)[self getChildByTag:kSPRITEBATCH_ELEMS];
 	
-	CCSprite * dinosp = [sbn getChildByTag:4190];
+	CCSprite * dinosp = (CCSprite*)[sbn getChildByTag:4190];
 	[dinosp setVisible:YES];
 	
-	CCSpriteBatchNode * animSbn = [self getChildByTag:545];
+	CCSpriteBatchNode * animSbn = (CCSpriteBatchNode*)[self getChildByTag:545];
 	NSString * textToRemove = [NSString stringWithString:animSbn.userData];
-	[animSbn.userData release];
+	[(id)animSbn.userData release];
 	[animSbn removeChild:sp cleanup:YES];
 	[self removeChild:animSbn cleanup:YES];
 	[[CCSpriteFrameCache sharedSpriteFrameCache] removeSpriteFramesFromFile:textToRemove];
@@ -155,7 +152,7 @@
 
 -(void)makeScoreAppear:(BOOL)appear
 {
-	CCLabelTTF * scoreLbl = [self getChildByTag:kSCORE];
+	CCLabelTTF * scoreLbl = (CCLabelTTF*)[self getChildByTag:kSCORE];
 	if(appear)
 		[scoreLbl setOpacity:255];
 	else
@@ -172,18 +169,20 @@
 -(void)removeAnim:(CCNode *)n
 {
 	[n.parent removeChild:n cleanup:YES];
+    gloopFrames = nil;
+    [gloopFrames release];
 }
 
 -(void)addPoints
 {
 	points += 5;
-	CCLabelTTF * scoreLbl = [self getChildByTag:kSCORE];
+	CCLabelTTF * scoreLbl = (CCLabelTTF*)[self getChildByTag:kSCORE];
 	[scoreLbl setString:[NSString stringWithFormat:@"%d",points]];
 }
 
 -(void)resetDino
 {
-	CCSpriteBatchNode * sbn = [self getChildByTag:kSPRITEBATCH_ELEMS];
+	CCSpriteBatchNode * sbn = (CCSpriteBatchNode*)[self getChildByTag:kSPRITEBATCH_ELEMS];
 	for(CCSprite * el in dressPieces)
 	{
 		[sbn removeChild:el cleanup:YES];
@@ -279,7 +278,7 @@ static BOOL AccelerationIsShaking(UIAcceleration* last, UIAcceleration* current,
 -(void)dealloc
 {
 	[[SimpleAudioEngine sharedEngine] unloadEffect:@"game2-alldressed-sfx.mp3"];
-	[dino release];
+   	[dino release];
     [shirt release];
 	[target release];
 	[lastAcceleration release];

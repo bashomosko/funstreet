@@ -46,15 +46,15 @@
 		        
         [CCTexture2D setDefaultAlphaPixelFormat:kCCTexture2DPixelFormat_RGBA8888];
 
-		CCSprite* background = [CCSprite spriteWithFile:@"snapshot_background_iPad.png"];
+		CCSprite* background = [CCSprite spriteWithFile:@"snapshot_background_iPhone.png"];
 		[self addChild:background];
-		[background setPosition:ccp(512,384)];
+		[background setPosition:ccp(240,160)];
         
         [CCTexture2D setDefaultAlphaPixelFormat:kCCTexture2DPixelFormat_RGBA4444];
 		
-		[self addDinoOnPosition:ccp(252,544) dinoImage:img num:1];
-		[self addDinoOnPosition:ccp(302,224) dinoImage:img num:2];
-		[self addDinoOnPosition:ccp(752,384) dinoImage:img num:3];
+		[self addDinoOnPosition:ccp(126,240) dinoImage:img num:1];
+		[self addDinoOnPosition:ccp(151,100) dinoImage:img num:2];
+		[self addDinoOnPosition:ccp(350,160) dinoImage:img num:3];
 		
 		[self runAction:[CCSequence actions:[CCDelayTime actionWithDuration:3],[CCCallFunc actionWithTarget:self selector:@selector(tapToCont)],nil]];
 		
@@ -67,9 +67,14 @@
 {
 	moveOutActivated = YES;
 	CCLabelTTF * palabra = [CCLabelBMFont labelWithString:@"Tap to return to the game" fntFile:@"Wheel_text_iPad.fnt"];
+    if ([[UIScreen mainScreen] respondsToSelector:@selector(scale)] == YES && [[UIScreen mainScreen] scale] == 2.00) {
+        [palabra setScale:0.4];
+    }
+    else {
+        [palabra setScale:0.2];
+    }
     [self addChild:palabra];
-	[palabra setPosition:ccp(512,18)];
-	[palabra setScale:0.3];
+	[palabra setPosition:ccp(240,10)];
 	[palabra runAction:[CCRepeatForever actionWithAction:[CCSequence actions:[CCFadeIn actionWithDuration:0.5],[CCDelayTime actionWithDuration:1],[CCFadeOut actionWithDuration:0.5],nil]]];
 }
 
@@ -83,7 +88,7 @@
 
 -(void)addDinoOnPosition:(CGPoint)pos dinoImage:(UIImage *)img num:(int)num
 {
-	CCSprite * photo = [CCSprite spriteWithFile:[NSString stringWithFormat:@"snapshot_polaroid%d_iPad.png",num]];
+	CCSprite * photo = [CCSprite spriteWithFile:[NSString stringWithFormat:@"snapshot_polaroid%d_iPhone.png",num]];
 	[self addChild:photo];
 	[photo setPosition:pos];
 	

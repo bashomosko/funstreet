@@ -18,4 +18,9 @@
 
 }
 
+-(void) removeStartupFlicker;
+-(void)goToMenu;
+-(void)goToSettings;
+-(void)removeSettings;
+
 @end
