@@ -39,7 +39,6 @@
 -(IBAction) goToWheel:(id)sender;
 -(IBAction) goToDress:(id)sender;
 -(IBAction) goToVideo:(id)sender;
--(IBAction) goToSettings;
 -(void)playVideo:(NSString *) suffix;
 -(void)animateDoors:(NSString*)suffix;
 

@@ -18,4 +18,10 @@
 
 }
 
+-(void)removeSettings;
+-(void)loadDress;
+-(IBAction)goToSettings;
+-(void)loadVideo;
+-(void)loadWheel;
+
 @end

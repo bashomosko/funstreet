@@ -25,4 +25,11 @@
 
 @property(nonatomic,assign) GameDress_iPhone * viewController;
 
++(id) sceneWithDressVC:(GameDress_iPhone *)vc bashoDirected:(BOOL)_bashoDirected playVid:(BOOL)playVid playingAgain:(BOOL)_playingAgain;
++(id) nodeWithDressVC:(GameDress_iPhone *)vc bashoDirected:(BOOL)_bashoDirected playVid:(BOOL)playVid playingAgain:(BOOL)_playingAgain;
+-(id) initWithDressVC:(GameDress_iPhone *)vc bashoDirected:(BOOL)_bashoDirected playVid:(BOOL)playVid playingAgain:(BOOL)_playingAgain;
+-(void)loadVideo;
+-(void)createPalabra;
+-(void)loadScatteredElementsForItem:(int)item;
+
 @end

@@ -51,38 +51,7 @@
 
 -(void)loadVideo
 {
-	[GameManager sharedGameManager].onPause = YES;
-    [[SimpleAudioEngine sharedEngine] pauseBackgroundMusic];
-	NSURL * url;
-	NSBundle *bundle = [NSBundle mainBundle];
-	if (bundle) 
-	{
-		NSString *moviePath = [bundle pathForResource:[NSString stringWithFormat:@"intro_1_%@_iPad",[GameManager sharedGameManager].instructionsLanguageString] ofType:@"mov"];
-		if (moviePath)
-		{
-			url = [NSURL fileURLWithPath:moviePath];
-		}
-	}
 	
-	introVideo = [[MPMoviePlayerController alloc] initWithContentURL:url];
-	[[[CCDirector sharedDirector] openGLView] addSubview:introVideo.view];
-	[introVideo.view setFrame:CGRectMake(0,0,1024,768)];
-	[introVideo setControlStyle:MPMovieControlStyleNone];
-	
-	[[NSNotificationCenter defaultCenter]
-	 addObserver:self
-	 selector:@selector(videoPlayerDidFinishPlaying:)
-	 name:MPMoviePlayerPlaybackDidFinishNotification
-	 object:introVideo];
-	
-	UIButton * skip = [UIButton buttonWithType:UIButtonTypeCustom];
-	[skip setFrame:CGRectMake(0,0,[CCDirector sharedDirector].winSize.width,[CCDirector sharedDirector].winSize.height)];
-	[skip addTarget:self action:@selector(skipMovie) forControlEvents:UIControlEventTouchUpInside];
-	[introVideo.view addSubview:skip];
-	
-	videoTaps = 0;
-	
-	[introVideo play];
 }
 
 -(void)skipMovie
@@ -112,6 +81,11 @@
 	}
 }
 
+-(void)beginGame{
+    
+}
+
+
 -(void)reduceVideoTaps
 {
 	videoTaps =0;
@@ -120,8 +94,8 @@
 -(void) videoPlayerDidFinishPlaying: (NSNotification*)aNotification
 {
 	[GameManager sharedGameManager].onPause = NO;
-	MPMoviePlayerController * introVideo = [aNotification object];
-	[[NSNotificationCenter defaultCenter] removeObserver:self name:MPMoviePlayerPlaybackDidFinishNotification object:introVideo];
+	MPMoviePlayerController * introVideoFPly = [aNotification object];
+	[[NSNotificationCenter defaultCenter] removeObserver:self name:MPMoviePlayerPlaybackDidFinishNotification object:introVideoFPly];
 	[introVideo stop];
 	[introVideo.view removeFromSuperview];
 	[introVideo release];
@@ -157,7 +131,7 @@
 	{
 		friction = 0;
 		points = 0;
-		CCLabelTTF * scoreLbl = [self getChildByTag:kSCORE];
+		CCLabelTTF * scoreLbl = (CCLabelTTF*)[self getChildByTag:kSCORE];
 		[scoreLbl setString:@"0"];
 		[bashoSelectedItems removeAllObjects];
 		[bashoSelectedItems addObject:[NSNumber numberWithInt:0]];
@@ -237,13 +211,14 @@
 
 -(void)makeScoreAppear:(BOOL)appear
 {
-	CCLabelTTF * scoreLbl = [self getChildByTag:kSCORE];
+	CCLabelTTF * scoreLbl = (CCLabelTTF*)[self getChildByTag:kSCORE];
 	if(appear)
 		[scoreLbl setOpacity:255];
 	else
 		[scoreLbl setOpacity:0];
 	
 }
+
 
 -(void)loadButtons
 {
@@ -276,8 +251,6 @@
 {
 	if([GameManager sharedGameManager].onPause) return; 
 	if((playingSound && !bashoDirected) || (dinoSpinning && !bashoDirected)) return;
-	
-	GameManager * gm = [GameManager sharedGameManager];
 	
 	//[btn setIsEnabled:NO];
 	
@@ -368,8 +341,11 @@
 
 -(void)playAnimForAnimal:(CCMenuItemImage *)btn
 {   
+    float posX =512 , posY = 384;
+    
     if ([iPad rangeOfString:@"_iPhone"].location != NSNotFound) {
-        return;
+        posX = 240;
+        posY = 160;
     }
     
 	NSMutableDictionary * userData = (NSMutableDictionary *)btn.userData;
@@ -380,7 +356,7 @@
 	
 	CCSprite * itemAnim = [CCSprite spriteWithSpriteFrameName:[NSString stringWithFormat:@"SeeNSay_%@_ANIM_00000.png",animal]];
 	[animalAnimSB addChild:itemAnim];
-	[itemAnim setPosition:ccp(512,384)];
+	[itemAnim setPosition:ccp(posX,posY)];
 	
 	NSMutableArray *animFrames = [NSMutableArray array];
 	for(int i = 0; i <= framesNum; i++) {
@@ -419,7 +395,7 @@
 -(void)addPoints:(int)_points
 {
 	points += _points;
-	CCLabelTTF * scoreLbl = [self getChildByTag:kSCORE];
+	CCLabelTTF * scoreLbl = (CCLabelTTF*)[self getChildByTag:kSCORE];
 	[scoreLbl setString:[NSString stringWithFormat:@"%d",points]];
 }
 
@@ -427,10 +403,10 @@
 {
 	if(wordSound)
 	{
-		CCLabelTTF * palabra = [self getChildByTag:kPALABRA];
+		CCLabelTTF * palabra = (CCLabelTTF*)[self getChildByTag:kPALABRA];
 		[palabra setString:word];
 		[palabra runAction:[CCSequence actions:[CCDelayTime actionWithDuration:1.8],[CCFadeIn actionWithDuration:0.8],nil]];
-		CCSprite * palabraBck = [self getChildByTag:kPALABRABCK];
+		CCSprite * palabraBck = (CCSprite*)[self getChildByTag:kPALABRABCK];
 		[palabraBck runAction:[CCSequence actions:[CCDelayTime actionWithDuration:1.8],[CCFadeIn actionWithDuration:0.8],nil]];
 		
 		[self runAction:[CCSequence actions:[CCDelayTime actionWithDuration:1.8],[CCCallFuncND actionWithTarget:self selector:@selector(playWordSound: data:)data:(void*)wordSound],nil]];
@@ -455,9 +431,9 @@
 			[m setIsEnabled:YES];
 		}
 	}
-	CCLabelTTF * palabra = [self getChildByTag:kPALABRA];
+	CCLabelTTF * palabra = (CCLabelTTF*)[self getChildByTag:kPALABRA];
 	[palabra runAction:[CCSequence actions:[CCDelayTime actionWithDuration:1.5],[CCFadeTo actionWithDuration:0.5 opacity:0],nil]];
-    CCSprite * palabraBck = [self getChildByTag:kPALABRABCK];
+    CCSprite * palabraBck = (CCSprite*)[self getChildByTag:kPALABRABCK];
 	[palabraBck runAction:[CCSequence actions:[CCDelayTime actionWithDuration:1.5],[CCFadeTo actionWithDuration:0.5 opacity:0],nil]];
 
 	
@@ -482,7 +458,7 @@
 		//forceApplied = 0;
 	}else {
         isAnsweredbyButton = YES;
-		[self listenSound:[tapButtons getChildByTag:selectedSound] withWord:NO];
+		[self listenSound:(CCMenuItemImage *)[tapButtons getChildByTag:selectedSound] withWord:NO];
 	}
 
 	
@@ -552,6 +528,8 @@
 			return 315+offset;
 			break;
 	}
+    
+    return 0;
 }
 
 -(void)stopSpinning
@@ -589,22 +567,8 @@
         selectedSound =7;
     
 	dinoSpinning = NO;
-	[self listenSound:[tapButtons getChildByTag:selectedSound] withWord:YES];
+	[self listenSound:(CCMenuItemImage*)[tapButtons getChildByTag:selectedSound] withWord:YES];
 	
-}
-
--(void)goBack
-{
-	if([GameManager sharedGameManager].onPause) return;
-    [GameManager sharedGameManager].musicAudioEnabled = YES;
-	[viewController goToMenu];
-}
-
--(void)goSettings
-{
-	if([GameManager sharedGameManager].onPause) return; 
-	[GameManager sharedGameManager].onPause = YES;
-    [viewController goToSettings];
 }
 
 -(void)ccTouchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
@@ -659,7 +623,7 @@
 	
 }
 
-- (void)ccTouchesMoved:(UITouch *)touches withEvent:(UIEvent *)event
+- (void)ccTouchesMoved:(NSSet *)touches withEvent:(UIEvent *)event
 {
 	//[dino stopAllActions];
 	if(dinoSpinning)
@@ -696,7 +660,7 @@
 }
 
 
-- (void)ccTouchesEnded:(UITouch *)touches withEvent:(UIEvent *)event
+- (void)ccTouchesEnded:(NSSet *)touches withEvent:(UIEvent *)event
 {	
 	UITouch *touch = [touches anyObject];
     CGPoint location = [touch locationInView: [touch view]];
@@ -826,7 +790,7 @@
 		{
 			forceApplied =0;
 			stopWhenRotationReached = NO;
-			[self listenSound:[tapButtons getChildByTag:selectedSound] withWord:YES];
+			[self listenSound:(CCMenuItemImage *)[tapButtons getChildByTag:selectedSound] withWord:YES];
 		}
 	}
 
@@ -897,6 +861,7 @@
 {
 	[self autoPushLever:NO];
 }
+
 -(void)autoPushLever:(BOOL)alreadySelected
 {
 	if([GameManager sharedGameManager].onPause) return; 
@@ -944,7 +909,7 @@
 	[self unschedule:@selector(playLoopSpinEffect)];
 
 	if([GameManager sharedGameManager].soundsEnabled)
-		[[SimpleAudioEngine sharedEngine] stopEffect:@"spin-sfx3-updated.mp3"];
+		[[SimpleAudioEngine sharedEngine] stopEffect:spinFxId];
 	
 	[[SimpleAudioEngine sharedEngine] unloadEffect:@"spin-sfx3-updated.mp3"];
 }

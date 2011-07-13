@@ -70,8 +70,8 @@
 	
 	// Run the intro Scene
     GameDressScene_iPad * gameDressScene = [GameDressScene_iPad sceneWithDressVC:self bashoDirected:NO playVid:YES playingAgain:NO];
-    gameDressLayer = [gameDressScene getChildByTag:1000];
-	[[CCDirector sharedDirector] runWithScene:gameDressScene];	
+    gameDressLayer = (GameDressScene_iPad*)[gameDressScene getChildByTag:1000];
+	[[CCDirector sharedDirector] runWithScene:(CCScene*)gameDressScene];	
 }
 
 - (void) removeStartupFlicker

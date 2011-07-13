@@ -21,4 +21,10 @@
 
 @property (nonatomic,assign) GameDressScene_iPhone * gameDressLayer;
 
+-(void)goToNextGame;
+-(void)goToMenu;
+-(void)goToSettings;
+-(void)removeSettings;
+- (void) removeStartupFlicker;
+
 @end

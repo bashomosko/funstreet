@@ -17,9 +17,16 @@
 @interface GameWheelScene : GameWheelScene_both
 {
 	CCMenuItemImage * backBtn;
+    GameWheel * viewController;
 }
 
 // returns a Scene that contains the HelloWorld as the only child
-+(id) scene;
+
++(id) sceneWithWheelVC:(GameWheel *)vc;
++(id) nodeWithWheelVC:(GameWheel *)vc;
+-(id) initWithWheelVC:(GameWheel *)vc;
+-(void)beginGame;
+-(void)createPalabra;
+-(NSMutableArray *)loadBtnPos;
 
 @end

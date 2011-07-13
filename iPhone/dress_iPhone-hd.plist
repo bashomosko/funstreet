@@ -1,0 +1,1437 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>frames</key>
+	<dict>
+		
+		<key>BlueBackpackOn_iPhone.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{369, 240}, {150, 192}}</string>
+			<key>spriteOffset</key>
+			<string>{-36, -16}</string>
+			<key>spriteSize</key>
+			<string>{150, 192}</string>
+			<key>spriteSourceSize</key>
+			<string>{960, 640}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{1140, 205}, {150, 192}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>BlueBackpackStrapOn_iPhone.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{380, 279}, {32, 94}}</string>
+			<key>spriteOffset</key>
+			<string>{-84, -6}</string>
+			<key>spriteSize</key>
+			<string>{32, 94}</string>
+			<key>spriteSourceSize</key>
+			<string>{960, 640}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{454, 1075}, {32, 94}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>BlueBackpack_iPhone.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{3, 3}, {186, 212}}</string>
+			<key>spriteOffset</key>
+			<string>{0, -0}</string>
+			<key>spriteSize</key>
+			<string>{186, 212}</string>
+			<key>spriteSourceSize</key>
+			<string>{192, 218}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{808, 218}, {186, 212}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>BlueBootsOn_iPhone.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{385, 464}, {202, 90}}</string>
+			<key>spriteOffset</key>
+			<string>{6, -189}</string>
+			<key>spriteSize</key>
+			<string>{202, 90}</string>
+			<key>spriteSourceSize</key>
+			<string>{960, 640}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{494, 1204}, {202, 90}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>BlueBoots_iPhone.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{52, 2}, {233, 159}}</string>
+			<key>spriteOffset</key>
+			<string>{25, -0}</string>
+			<key>spriteSize</key>
+			<string>{233, 159}</string>
+			<key>spriteSourceSize</key>
+			<string>{287, 163}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{1608, 2}, {233, 159}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>BlueGlassesOn_iPhone.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{408, 182}, {146, 58}}</string>
+			<key>spriteOffset</key>
+			<string>{1, 109}</string>
+			<key>spriteSize</key>
+			<string>{146, 58}</string>
+			<key>spriteSourceSize</key>
+			<string>{960, 640}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{1681, 330}, {146, 58}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>BlueGlasses_iPhone.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{3, 4}, {246, 101}}</string>
+			<key>spriteOffset</key>
+			<string>{1, -1}</string>
+			<key>spriteSize</key>
+			<string>{246, 101}</string>
+			<key>spriteSourceSize</key>
+			<string>{250, 107}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{2, 997}, {246, 101}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>BlueHatOn_iPhone.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{347, 92}, {210, 94}}</string>
+			<key>spriteOffset</key>
+			<string>{-28, 181}</string>
+			<key>spriteSize</key>
+			<string>{210, 94}</string>
+			<key>spriteSourceSize</key>
+			<string>{960, 640}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{216, 1194}, {210, 94}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>BlueHat_iPhone.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{3, 3}, {219, 114}}</string>
+			<key>spriteOffset</key>
+			<string>{1, -1}</string>
+			<key>spriteSize</key>
+			<string>{219, 114}</string>
+			<key>spriteSourceSize</key>
+			<string>{223, 118}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{777, 940}, {219, 114}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>BlueJacketOn_iPhone.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{360, 267}, {254, 144}}</string>
+			<key>spriteOffset</key>
+			<string>{7, -19}</string>
+			<key>spriteSize</key>
+			<string>{254, 144}</string>
+			<key>spriteSourceSize</key>
+			<string>{960, 640}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{743, 794}, {254, 144}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>BlueJacket_iPhone.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{4, 4}, {258, 259}}</string>
+			<key>spriteOffset</key>
+			<string>{1, -0}</string>
+			<key>spriteSize</key>
+			<string>{258, 259}</string>
+			<key>spriteSourceSize</key>
+			<string>{264, 267}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{286, 432}, {258, 259}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>BlueNecklaceOn_iPhone.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{407, 279}, {152, 92}}</string>
+			<key>spriteOffset</key>
+			<string>{3, -5}</string>
+			<key>spriteSize</key>
+			<string>{152, 92}</string>
+			<key>spriteSourceSize</key>
+			<string>{960, 640}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{1207, 924}, {152, 92}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>BlueNecklace_iPhone.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{3, 3}, {149, 216}}</string>
+			<key>spriteOffset</key>
+			<string>{0, -1}</string>
+			<key>spriteSize</key>
+			<string>{149, 216}</string>
+			<key>spriteSourceSize</key>
+			<string>{155, 220}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{657, 2}, {149, 216}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>BluePantsOn_iPhone.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{408, 372}, {158, 148}}</string>
+			<key>spriteOffset</key>
+			<string>{7, -126}</string>
+			<key>spriteSize</key>
+			<string>{158, 148}</string>
+			<key>spriteSourceSize</key>
+			<string>{960, 640}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{995, 1097}, {158, 148}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>BluePants_iPhone.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{3, 3}, {195, 206}}</string>
+			<key>spriteOffset</key>
+			<string>{1, -0}</string>
+			<key>spriteSize</key>
+			<string>{195, 206}</string>
+			<key>spriteSourceSize</key>
+			<string>{199, 212}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{546, 624}, {195, 206}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>BluePhoneRightHandOn_iPhone.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{292, 238}, {64, 92}}</string>
+			<key>spriteOffset</key>
+			<string>{-156, 36}</string>
+			<key>spriteSize</key>
+			<string>{64, 92}</string>
+			<key>spriteSourceSize</key>
+			<string>{960, 640}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{428, 1189}, {64, 92}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>BluePhone_iPhone.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{4, 3}, {133, 153}}</string>
+			<key>spriteOffset</key>
+			<string>{1, -0}</string>
+			<key>spriteSize</key>
+			<string>{133, 153}</string>
+			<key>spriteSourceSize</key>
+			<string>{139, 159}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{330, 225}, {133, 153}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>PurpleBackpackBehindDominoOn_iPhone.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{378, 278}, {162, 172}}</string>
+			<key>spriteOffset</key>
+			<string>{-21, -44}</string>
+			<key>spriteSize</key>
+			<string>{162, 172}</string>
+			<key>spriteSourceSize</key>
+			<string>{960, 640}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{1339, 2}, {162, 172}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>PurpleBackpackOn_iPhone.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{392, 271}, {178, 138}}</string>
+			<key>spriteOffset</key>
+			<string>{1, -20}</string>
+			<key>spriteSize</key>
+			<string>{178, 138}</string>
+			<key>spriteSourceSize</key>
+			<string>{960, 640}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{216, 1290}, {178, 138}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>PurpleBackpack_iPhone.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{3, 3}, {206, 193}}</string>
+			<key>spriteOffset</key>
+			<string>{0, -0}</string>
+			<key>spriteSize</key>
+			<string>{206, 193}</string>
+			<key>spriteSourceSize</key>
+			<string>{212, 199}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{996, 424}, {206, 193}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>PurpleBootsOn_iPhone.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{381, 442}, {212, 100}}</string>
+			<key>spriteOffset</key>
+			<string>{7, -172}</string>
+			<key>spriteSize</key>
+			<string>{212, 100}</string>
+			<key>spriteSourceSize</key>
+			<string>{960, 640}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{2, 1194}, {212, 100}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>PurpleBoots_iPhone.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{4, 3}, {240, 148}}</string>
+			<key>spriteOffset</key>
+			<string>{1, -1}</string>
+			<key>spriteSize</key>
+			<string>{240, 148}</string>
+			<key>spriteSourceSize</key>
+			<string>{246, 152}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{495, 1054}, {240, 148}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>PurpleGlassesOn_iPhone.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{401, 175}, {166, 66}}</string>
+			<key>spriteOffset</key>
+			<string>{4, 112}</string>
+			<key>spriteSize</key>
+			<string>{166, 66}</string>
+			<key>spriteSourceSize</key>
+			<string>{960, 640}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{602, 355}, {166, 66}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>PurpleGlasses_iPhone.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{4, 3}, {251, 97}}</string>
+			<key>spriteOffset</key>
+			<string>{1, -0}</string>
+			<key>spriteSize</key>
+			<string>{251, 97}</string>
+			<key>spriteSourceSize</key>
+			<string>{257, 103}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{524, 955}, {251, 97}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>PurpleHatOn_iPhone.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{369, 133}, {174, 64}}</string>
+			<key>spriteOffset</key>
+			<string>{-24, 155}</string>
+			<key>spriteSize</key>
+			<string>{174, 64}</string>
+			<key>spriteSourceSize</key>
+			<string>{960, 640}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{1505, 330}, {174, 64}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>PurpleHat_iPhone.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{2, 2}, {213, 121}}</string>
+			<key>spriteOffset</key>
+			<string>{0, 4}</string>
+			<key>spriteSize</key>
+			<string>{213, 121}</string>
+			<key>spriteSourceSize</key>
+			<string>{217, 133}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{524, 832}, {213, 121}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>PurpleJacketOn_iPhone.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{355, 260}, {256, 168}}</string>
+			<key>spriteOffset</key>
+			<string>{3, -24}</string>
+			<key>spriteSize</key>
+			<string>{256, 168}</string>
+			<key>spriteSourceSize</key>
+			<string>{960, 640}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{743, 624}, {256, 168}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>PurpleJacket_iPhone.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{3, 3}, {276, 190}}</string>
+			<key>spriteOffset</key>
+			<string>{1, -0}</string>
+			<key>spriteSize</key>
+			<string>{276, 190}</string>
+			<key>spriteSourceSize</key>
+			<string>{280, 196}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{546, 432}, {276, 190}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>PurpleNecklaceOn_iPhone.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{407, 279}, {152, 98}}</string>
+			<key>spriteOffset</key>
+			<string>{3, -8}</string>
+			<key>spriteSize</key>
+			<string>{152, 98}</string>
+			<key>spriteSourceSize</key>
+			<string>{960, 640}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{1155, 1097}, {152, 98}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>PurpleNecklace_iPhone.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{3, 3}, {145, 221}}</string>
+			<key>spriteOffset</key>
+			<string>{0, -0}</string>
+			<key>spriteSize</key>
+			<string>{145, 221}</string>
+			<key>spriteSourceSize</key>
+			<string>{151, 227}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{330, 2}, {145, 221}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>PurplePantsOn_iPhone.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{414, 384}, {152, 126}}</string>
+			<key>spriteOffset</key>
+			<string>{10, -127}</string>
+			<key>spriteSize</key>
+			<string>{152, 126}</string>
+			<key>spriteSourceSize</key>
+			<string>{960, 640}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{478, 1296}, {152, 126}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>PurplePants_iPhone.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{3, 4}, {193, 176}}</string>
+			<key>spriteOffset</key>
+			<string>{0, -1}</string>
+			<key>spriteSize</key>
+			<string>{193, 176}</string>
+			<key>spriteSourceSize</key>
+			<string>{199, 182}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{1204, 399}, {193, 176}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>PurplePhoneOn_iPhone.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{613, 225}, {48, 86}}</string>
+			<key>spriteOffset</key>
+			<string>{157, 52}</string>
+			<key>spriteSize</key>
+			<string>{48, 86}</string>
+			<key>spriteSourceSize</key>
+			<string>{960, 640}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{945, 1056}, {48, 86}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>PurplePhone_iPhone.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{3, 4}, {103, 165}}</string>
+			<key>spriteOffset</key>
+			<string>{1, -1}</string>
+			<key>spriteSize</key>
+			<string>{103, 165}</string>
+			<key>spriteSourceSize</key>
+			<string>{107, 171}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{1503, 2}, {103, 165}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>RedBackpackBehindDominoOn_iPhone.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{381, 271}, {152, 160}}</string>
+			<key>spriteOffset</key>
+			<string>{-23, -31}</string>
+			<key>spriteSize</key>
+			<string>{152, 160}</string>
+			<key>spriteSourceSize</key>
+			<string>{960, 640}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{1399, 396}, {152, 160}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>RedBackpackOn_iPhone.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{373, 271}, {40, 152}}</string>
+			<key>spriteOffset</key>
+			<string>{-87, -27}</string>
+			<key>spriteSize</key>
+			<string>{40, 152}</string>
+			<key>spriteSourceSize</key>
+			<string>{960, 640}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{1292, 205}, {40, 152}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>RedBackpack_iPhone.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{3, 5}, {206, 185}}</string>
+			<key>spriteOffset</key>
+			<string>{1, -1}</string>
+			<key>spriteSize</key>
+			<string>{206, 185}</string>
+			<key>spriteSourceSize</key>
+			<string>{210, 193}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{999, 794}, {206, 185}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>RedBootsOn_iPhone.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{384, 432}, {206, 114}}</string>
+			<key>spriteOffset</key>
+			<string>{7, -169}</string>
+			<key>spriteSize</key>
+			<string>{206, 114}</string>
+			<key>spriteSourceSize</key>
+			<string>{960, 640}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{998, 981}, {206, 114}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>RedBoots_iPhone.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{3, 4}, {239, 161}}</string>
+			<key>spriteOffset</key>
+			<string>{0, -1}</string>
+			<key>spriteSize</key>
+			<string>{239, 161}</string>
+			<key>spriteSourceSize</key>
+			<string>{245, 167}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{1204, 577}, {239, 161}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>RedGlassesOn_iPhone.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{405, 183}, {152, 46}}</string>
+			<key>spriteOffset</key>
+			<string>{1, 114}</string>
+			<key>spriteSize</key>
+			<string>{152, 46}</string>
+			<key>spriteSourceSize</key>
+			<string>{960, 640}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{1334, 348}, {152, 46}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>RedGlasses_iPhone.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{4, 4}, {238, 92}}</string>
+			<key>spriteOffset</key>
+			<string>{1, -1}</string>
+			<key>spriteSize</key>
+			<string>{238, 92}</string>
+			<key>spriteSourceSize</key>
+			<string>{244, 98}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{2, 1100}, {238, 92}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>RedHatOn_iPhone.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{393, 87}, {172, 124}}</string>
+			<key>spriteOffset</key>
+			<string>{-1, 171}</string>
+			<key>spriteSize</key>
+			<string>{172, 124}</string>
+			<key>spriteSourceSize</key>
+			<string>{960, 640}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{698, 1204}, {172, 124}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>RedHat_iPhone.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{4, 2}, {174, 133}}</string>
+			<key>spriteOffset</key>
+			<string>{1, -0}</string>
+			<key>spriteSize</key>
+			<string>{174, 133}</string>
+			<key>spriteSourceSize</key>
+			<string>{180, 137}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{2, 1296}, {174, 133}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>RedJacketOn_iPhone.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{355, 261}, {260, 168}}</string>
+			<key>spriteOffset</key>
+			<string>{5, -25}</string>
+			<key>spriteSize</key>
+			<string>{260, 168}</string>
+			<key>spriteSourceSize</key>
+			<string>{960, 640}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{2, 827}, {260, 168}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>RedJacket_iPhone.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{3, 2}, {282, 201}}</string>
+			<key>spriteOffset</key>
+			<string>{0, -0}</string>
+			<key>spriteSize</key>
+			<string>{282, 201}</string>
+			<key>spriteSourceSize</key>
+			<string>{288, 205}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{2, 432}, {282, 201}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>RedNecklaceOn_iPhone.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{407, 279}, {152, 90}}</string>
+			<key>spriteOffset</key>
+			<string>{3, -4}</string>
+			<key>spriteSize</key>
+			<string>{152, 90}</string>
+			<key>spriteSourceSize</key>
+			<string>{960, 640}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{1359, 740}, {152, 90}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>RedNecklace_iPhone.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{3, 3}, {145, 214}}</string>
+			<key>spriteOffset</key>
+			<string>{0, -0}</string>
+			<key>spriteSize</key>
+			<string>{145, 214}</string>
+			<key>spriteSourceSize</key>
+			<string>{151, 220}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{808, 2}, {145, 214}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>RedPantsOn_iPhone.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{406, 357}, {164, 170}}</string>
+			<key>spriteOffset</key>
+			<string>{8, -122}</string>
+			<key>spriteSize</key>
+			<string>{164, 170}</string>
+			<key>spriteSourceSize</key>
+			<string>{960, 640}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{1339, 176}, {164, 170}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>RedPants_iPhone.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{3, 2}, {178, 219}}</string>
+			<key>spriteOffset</key>
+			<string>{0, -0}</string>
+			<key>spriteSize</key>
+			<string>{178, 219}</string>
+			<key>spriteSourceSize</key>
+			<string>{184, 223}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{477, 2}, {178, 219}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>RedPhoneOn_iPhone.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{285, 212}, {70, 132}}</string>
+			<key>spriteOffset</key>
+			<string>{-160, 42}</string>
+			<key>spriteSize</key>
+			<string>{70, 132}</string>
+			<key>spriteSourceSize</key>
+			<string>{960, 640}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{281, 693}, {70, 132}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>RedPhone_iPhone.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{4, 3}, {123, 207}}</string>
+			<key>spriteOffset</key>
+			<string>{0, -0}</string>
+			<key>spriteSize</key>
+			<string>{123, 207}</string>
+			<key>spriteSourceSize</key>
+			<string>{131, 213}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{477, 223}, {123, 207}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>YellowBackpackBehindDominoOn_iPhone.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{362, 269}, {164, 172}}</string>
+			<key>spriteOffset</key>
+			<string>{-36, -35}</string>
+			<key>spriteSize</key>
+			<string>{164, 172}</string>
+			<key>spriteSourceSize</key>
+			<string>{960, 640}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{824, 432}, {164, 172}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>YellowBackpackOn_iPhone.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{370, 270}, {48, 116}}</string>
+			<key>spriteOffset</key>
+			<string>{-86, -8}</string>
+			<key>spriteSize</key>
+			<string>{48, 116}</string>
+			<key>spriteSourceSize</key>
+			<string>{960, 640}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{250, 1075}, {48, 116}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>YellowBackpack_iPhone.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{3, 3}, {201, 201}}</string>
+			<key>spriteOffset</key>
+			<string>{0, -0}</string>
+			<key>spriteSize</key>
+			<string>{201, 201}</string>
+			<key>spriteSourceSize</key>
+			<string>{207, 207}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{1136, 2}, {201, 201}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>YellowBootsOn_iPhone.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{383, 444}, {206, 102}}</string>
+			<key>spriteOffset</key>
+			<string>{6, -175}</string>
+			<key>spriteSize</key>
+			<string>{206, 102}</string>
+			<key>spriteSourceSize</key>
+			<string>{960, 640}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{737, 1056}, {206, 102}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>YellowBoots_iPhone.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{3, 4}, {241, 159}}</string>
+			<key>spriteOffset</key>
+			<string>{0, -1}</string>
+			<key>spriteSize</key>
+			<string>{241, 159}</string>
+			<key>spriteSourceSize</key>
+			<string>{247, 165}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{1505, 169}, {241, 159}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>YellowGlassesOn_iPhone.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{405, 185}, {152, 44}}</string>
+			<key>spriteOffset</key>
+			<string>{1, 113}</string>
+			<key>spriteSize</key>
+			<string>{152, 44}</string>
+			<key>spriteSourceSize</key>
+			<string>{960, 640}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{1203, 740}, {152, 44}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>YellowGlasses_iPhone.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{2, 4}, {243, 76}}</string>
+			<key>spriteOffset</key>
+			<string>{0, -1}</string>
+			<key>spriteSize</key>
+			<string>{243, 76}</string>
+			<key>spriteSourceSize</key>
+			<string>{247, 82}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{250, 997}, {243, 76}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>YellowHatOn_iPhone.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{404, 100}, {150, 90}}</string>
+			<key>spriteOffset</key>
+			<string>{-1, 175}</string>
+			<key>spriteSize</key>
+			<string>{150, 90}</string>
+			<key>spriteSourceSize</key>
+			<string>{960, 640}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{1445, 558}, {150, 90}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>YellowHat_iPhone.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{3, 3}, {204, 130}}</string>
+			<key>spriteOffset</key>
+			<string>{0, -1}</string>
+			<key>spriteSize</key>
+			<string>{204, 130}</string>
+			<key>spriteSourceSize</key>
+			<string>{210, 134}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{602, 223}, {204, 130}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>YellowJacketOn_iPhone.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{356, 270}, {258, 154}}</string>
+			<key>spriteOffset</key>
+			<string>{5, -27}</string>
+			<key>spriteSize</key>
+			<string>{258, 154}</string>
+			<key>spriteSourceSize</key>
+			<string>{960, 640}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{264, 827}, {258, 154}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>YellowJacket_iPhone.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{3, 2}, {277, 190}}</string>
+			<key>spriteOffset</key>
+			<string>{0, -0}</string>
+			<key>spriteSize</key>
+			<string>{277, 190}</string>
+			<key>spriteSourceSize</key>
+			<string>{283, 194}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{2, 635}, {277, 190}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>YellowNecklaceOn_iPhone.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{407, 279}, {152, 78}}</string>
+			<key>spriteOffset</key>
+			<string>{3, 2}</string>
+			<key>spriteSize</key>
+			<string>{152, 78}</string>
+			<key>spriteSourceSize</key>
+			<string>{960, 640}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{1553, 396}, {152, 78}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>YellowNecklace_iPhone.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{4, 3}, {142, 206}}</string>
+			<key>spriteOffset</key>
+			<string>{1, -1}</string>
+			<key>spriteSize</key>
+			<string>{142, 206}</string>
+			<key>spriteSourceSize</key>
+			<string>{148, 210}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{996, 216}, {142, 206}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>YellowPantsOn_iPhone.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{416, 385}, {150, 136}}</string>
+			<key>spriteOffset</key>
+			<string>{11, -133}</string>
+			<key>spriteSize</key>
+			<string>{150, 136}</string>
+			<key>spriteSourceSize</key>
+			<string>{960, 640}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{1207, 786}, {150, 136}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>YellowPants_iPhone.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{3, 3}, {179, 212}}</string>
+			<key>spriteOffset</key>
+			<string>{1, -1}</string>
+			<key>spriteSize</key>
+			<string>{179, 212}</string>
+			<key>spriteSourceSize</key>
+			<string>{183, 216}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{955, 2}, {179, 212}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>YellowPhoneOn_iPhone.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{293, 246}, {80, 86}}</string>
+			<key>spriteOffset</key>
+			<string>{-147, 31}</string>
+			<key>spriteSize</key>
+			<string>{80, 86}</string>
+			<key>spriteSourceSize</key>
+			<string>{960, 640}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{396, 1290}, {80, 86}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>YellowPhone_iPhone.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{3, 3}, {162, 127}}</string>
+			<key>spriteOffset</key>
+			<string>{0, -0}</string>
+			<key>spriteSize</key>
+			<string>{162, 127}</string>
+			<key>spriteSourceSize</key>
+			<string>{168, 133}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{353, 693}, {162, 127}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>dress_boxers_iPhone.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{415, 372}, {152, 112}}</string>
+			<key>spriteOffset</key>
+			<string>{11, -108}</string>
+			<key>spriteSize</key>
+			<string>{152, 112}</string>
+			<key>spriteSourceSize</key>
+			<string>{960, 640}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{300, 1075}, {152, 112}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>dress_dino_iPhone.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{314, 103}, {332, 436}}</string>
+			<key>spriteOffset</key>
+			<string>{0, -1}</string>
+			<key>spriteSize</key>
+			<string>{332, 436}</string>
+			<key>spriteSourceSize</key>
+			<string>{960, 640}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{2, 2}, {332, 436}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>dress_shirt_iPhone.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{382, 281}, {200, 126}}</string>
+			<key>spriteOffset</key>
+			<string>{2, -24}</string>
+			<key>spriteSize</key>
+			<string>{200, 126}</string>
+			<key>spriteSourceSize</key>
+			<string>{960, 640}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{1001, 619}, {200, 126}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+	</dict>
+	<key>metadata</key>
+	<dict>
+		<key>format</key>
+		<integer>3</integer>
+		<key>size</key>
+		<string>{2048, 2048}</string>
+	</dict>
+</dict>
+</plist>
