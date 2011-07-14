@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>frames</key>
+	<dict>
+		
+		<key>SeeNSay_bee_ANIM_00000.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{520, 121}, {136, 110}}</string>
+			<key>spriteOffset</key>
+			<string>{108, 144}</string>
+			<key>spriteSize</key>
+			<string>{136, 110}</string>
+			<key>spriteSourceSize</key>
+			<string>{960, 640}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{278, 116}, {136, 110}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>SeeNSay_bee_ANIM_00001.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{524, 121}, {136, 112}}</string>
+			<key>spriteOffset</key>
+			<string>{112, 143}</string>
+			<key>spriteSize</key>
+			<string>{136, 112}</string>
+			<key>spriteSourceSize</key>
+			<string>{960, 640}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{290, 2}, {136, 112}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>SeeNSay_bee_ANIM_00002.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{516, 125}, {142, 104}}</string>
+			<key>spriteOffset</key>
+			<string>{107, 143}</string>
+			<key>spriteSize</key>
+			<string>{142, 104}</string>
+			<key>spriteSourceSize</key>
+			<string>{960, 640}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{146, 2}, {142, 104}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>SeeNSay_bee_ANIM_00003.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{524, 122}, {136, 110}}</string>
+			<key>spriteOffset</key>
+			<string>{112, 143}</string>
+			<key>spriteSize</key>
+			<string>{136, 110}</string>
+			<key>spriteSourceSize</key>
+			<string>{960, 640}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{2, 108}, {136, 110}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>SeeNSay_bee_ANIM_00004.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{516, 119}, {128, 110}}</string>
+			<key>spriteOffset</key>
+			<string>{100, 146}</string>
+			<key>spriteSize</key>
+			<string>{128, 110}</string>
+			<key>spriteSourceSize</key>
+			<string>{960, 640}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{266, 332}, {128, 110}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>SeeNSay_bee_ANIM_00005.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{524, 122}, {136, 110}}</string>
+			<key>spriteOffset</key>
+			<string>{112, 143}</string>
+			<key>spriteSize</key>
+			<string>{136, 110}</string>
+			<key>spriteSourceSize</key>
+			<string>{960, 640}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{140, 108}, {136, 110}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>SeeNSay_bee_ANIM_00006.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{516, 125}, {142, 104}}</string>
+			<key>spriteOffset</key>
+			<string>{107, 143}</string>
+			<key>spriteSize</key>
+			<string>{142, 104}</string>
+			<key>spriteSourceSize</key>
+			<string>{960, 640}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{2, 2}, {142, 104}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>SeeNSay_bee_ANIM_00007.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{524, 122}, {136, 110}}</string>
+			<key>spriteOffset</key>
+			<string>{112, 143}</string>
+			<key>spriteSize</key>
+			<string>{136, 110}</string>
+			<key>spriteSourceSize</key>
+			<string>{960, 640}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{2, 220}, {136, 110}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>SeeNSay_bee_ANIM_00008.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{516, 116}, {128, 114}}</string>
+			<key>spriteOffset</key>
+			<string>{100, 147}</string>
+			<key>spriteSize</key>
+			<string>{128, 114}</string>
+			<key>spriteSourceSize</key>
+			<string>{960, 640}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{2, 332}, {128, 114}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>SeeNSay_bee_ANIM_00009.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{524, 121}, {132, 112}}</string>
+			<key>spriteOffset</key>
+			<string>{110, 143}</string>
+			<key>spriteSize</key>
+			<string>{132, 112}</string>
+			<key>spriteSourceSize</key>
+			<string>{960, 640}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{132, 332}, {132, 112}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+		<key>SeeNSay_bee_ANIM_00010.png</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{520, 121}, {134, 110}}</string>
+			<key>spriteOffset</key>
+			<string>{107, 144}</string>
+			<key>spriteSize</key>
+			<string>{134, 110}</string>
+			<key>spriteSourceSize</key>
+			<string>{960, 640}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{140, 220}, {134, 110}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		
+	</dict>
+	<key>metadata</key>
+	<dict>
+		<key>format</key>
+		<integer>3</integer>
+		<key>size</key>
+		<string>{512, 512}</string>
+	</dict>
+</dict>
+</plist>

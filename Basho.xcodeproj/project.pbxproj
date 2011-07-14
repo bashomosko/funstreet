@@ -705,6 +705,38 @@
 		84A7916213B20FED00B3B53C /* GameDressSceneSnapshot_both.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A7915D13B20FED00B3B53C /* GameDressSceneSnapshot_both.m */; };
 		84A7916313B20FED00B3B53C /* DDElement_both.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A7916013B20FED00B3B53C /* DDElement_both.m */; };
 		84A7916413B20FED00B3B53C /* GameDressScene_both.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A7916113B20FED00B3B53C /* GameDressScene_both.m */; };
+		84A9F0C113CF41ED00A7FDD3 /* animalsAnimsBee_iPhone.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A9F0B113CF41E600A7FDD3 /* animalsAnimsBee_iPhone.png */; };
+		84A9F0C213CF41ED00A7FDD3 /* animalsAnimsCat_iPhone.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A9F0B213CF41E600A7FDD3 /* animalsAnimsCat_iPhone.png */; };
+		84A9F0C313CF41ED00A7FDD3 /* animalsAnimsBee_iPhone.plist in Resources */ = {isa = PBXBuildFile; fileRef = 84A9F0B313CF41E700A7FDD3 /* animalsAnimsBee_iPhone.plist */; };
+		84A9F0C413CF41ED00A7FDD3 /* animalsAnimsCat_iPhone.plist in Resources */ = {isa = PBXBuildFile; fileRef = 84A9F0B413CF41E800A7FDD3 /* animalsAnimsCat_iPhone.plist */; };
+		84A9F0C513CF41ED00A7FDD3 /* animalsAnimsDuck_iPhone.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A9F0B513CF41E800A7FDD3 /* animalsAnimsDuck_iPhone.png */; };
+		84A9F0C613CF41ED00A7FDD3 /* animalsAnimsDog_iPhone.plist in Resources */ = {isa = PBXBuildFile; fileRef = 84A9F0B613CF41E800A7FDD3 /* animalsAnimsDog_iPhone.plist */; };
+		84A9F0C713CF41ED00A7FDD3 /* animalsAnimsDog_iPhone.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A9F0B713CF41E900A7FDD3 /* animalsAnimsDog_iPhone.png */; };
+		84A9F0C813CF41ED00A7FDD3 /* animalsAnimsDuck_iPhone.plist in Resources */ = {isa = PBXBuildFile; fileRef = 84A9F0B813CF41E900A7FDD3 /* animalsAnimsDuck_iPhone.plist */; };
+		84A9F0C913CF41ED00A7FDD3 /* animalsAnimsChicken_iPhone.plist in Resources */ = {isa = PBXBuildFile; fileRef = 84A9F0B913CF41E900A7FDD3 /* animalsAnimsChicken_iPhone.plist */; };
+		84A9F0CA13CF41ED00A7FDD3 /* animalsAnimsChicken_iPhone.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A9F0BA13CF41EA00A7FDD3 /* animalsAnimsChicken_iPhone.png */; };
+		84A9F0CB13CF41ED00A7FDD3 /* animalsAnimsPig_iPhone.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A9F0BB13CF41EA00A7FDD3 /* animalsAnimsPig_iPhone.png */; };
+		84A9F0CC13CF41ED00A7FDD3 /* animalsAnimsPig_iPhone.plist in Resources */ = {isa = PBXBuildFile; fileRef = 84A9F0BC13CF41EB00A7FDD3 /* animalsAnimsPig_iPhone.plist */; };
+		84A9F0CD13CF41ED00A7FDD3 /* animalsAnimsCow_iPhone.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A9F0BD13CF41EB00A7FDD3 /* animalsAnimsCow_iPhone.png */; };
+		84A9F0CE13CF41ED00A7FDD3 /* animalsAnimsCow_iPhone.plist in Resources */ = {isa = PBXBuildFile; fileRef = 84A9F0BE13CF41EB00A7FDD3 /* animalsAnimsCow_iPhone.plist */; };
+		84A9F0CF13CF41ED00A7FDD3 /* animalsAnimsHorse_iPhone.plist in Resources */ = {isa = PBXBuildFile; fileRef = 84A9F0BF13CF41EC00A7FDD3 /* animalsAnimsHorse_iPhone.plist */; };
+		84A9F0D013CF41ED00A7FDD3 /* animalsAnimsHorse_iPhone.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A9F0C013CF41EC00A7FDD3 /* animalsAnimsHorse_iPhone.png */; };
+		84A9F0E113CF45F000A7FDD3 /* animalsAnimsBee_iPhone-hd.plist in Resources */ = {isa = PBXBuildFile; fileRef = 84A9F0D113CF459800A7FDD3 /* animalsAnimsBee_iPhone-hd.plist */; };
+		84A9F0E213CF45F000A7FDD3 /* animalsAnimsBee_iPhone-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A9F0D213CF459B00A7FDD3 /* animalsAnimsBee_iPhone-hd.png */; };
+		84A9F0E313CF45F000A7FDD3 /* animalsAnimsCat_iPhone-hd.plist in Resources */ = {isa = PBXBuildFile; fileRef = 84A9F0D313CF459E00A7FDD3 /* animalsAnimsCat_iPhone-hd.plist */; };
+		84A9F0E413CF45F000A7FDD3 /* animalsAnimsCat_iPhone-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A9F0D413CF45A100A7FDD3 /* animalsAnimsCat_iPhone-hd.png */; };
+		84A9F0E513CF45F000A7FDD3 /* animalsAnimsChicken_iPhone-hd.plist in Resources */ = {isa = PBXBuildFile; fileRef = 84A9F0D513CF45A300A7FDD3 /* animalsAnimsChicken_iPhone-hd.plist */; };
+		84A9F0E613CF45F000A7FDD3 /* animalsAnimsChicken_iPhone-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A9F0D613CF45A500A7FDD3 /* animalsAnimsChicken_iPhone-hd.png */; };
+		84A9F0E713CF45F000A7FDD3 /* animalsAnimsCow_iPhone-hd.plist in Resources */ = {isa = PBXBuildFile; fileRef = 84A9F0D713CF45A700A7FDD3 /* animalsAnimsCow_iPhone-hd.plist */; };
+		84A9F0E813CF45F000A7FDD3 /* animalsAnimsCow_iPhone-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A9F0D813CF45AC00A7FDD3 /* animalsAnimsCow_iPhone-hd.png */; };
+		84A9F0E913CF45F000A7FDD3 /* animalsAnimsDog_iPhone-hd.plist in Resources */ = {isa = PBXBuildFile; fileRef = 84A9F0D913CF45B900A7FDD3 /* animalsAnimsDog_iPhone-hd.plist */; };
+		84A9F0EA13CF45F000A7FDD3 /* animalsAnimsDog_iPhone-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A9F0DA13CF45BF00A7FDD3 /* animalsAnimsDog_iPhone-hd.png */; };
+		84A9F0EB13CF45F000A7FDD3 /* animalsAnimsDuck_iPhone-hd.plist in Resources */ = {isa = PBXBuildFile; fileRef = 84A9F0DB13CF45C800A7FDD3 /* animalsAnimsDuck_iPhone-hd.plist */; };
+		84A9F0EC13CF45F000A7FDD3 /* animalsAnimsDuck_iPhone-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A9F0DC13CF45D700A7FDD3 /* animalsAnimsDuck_iPhone-hd.png */; };
+		84A9F0ED13CF45F000A7FDD3 /* animalsAnimsHorse_iPhone-hd.plist in Resources */ = {isa = PBXBuildFile; fileRef = 84A9F0DD13CF45E800A7FDD3 /* animalsAnimsHorse_iPhone-hd.plist */; };
+		84A9F0EE13CF45F000A7FDD3 /* animalsAnimsHorse_iPhone-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A9F0DE13CF45E900A7FDD3 /* animalsAnimsHorse_iPhone-hd.png */; };
+		84A9F0EF13CF45F000A7FDD3 /* animalsAnimsPig_iPhone-hd.plist in Resources */ = {isa = PBXBuildFile; fileRef = 84A9F0DF13CF45EC00A7FDD3 /* animalsAnimsPig_iPhone-hd.plist */; };
+		84A9F0F013CF45F000A7FDD3 /* animalsAnimsPig_iPhone-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A9F0E013CF45EE00A7FDD3 /* animalsAnimsPig_iPhone-hd.png */; };
 		84AB6288139E675100966044 /* backgroundMusicDress.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 84AB6287139E675100966044 /* backgroundMusicDress.mp3 */; };
 		84ABC13413B0FE6800202668 /* theatre_left_iPhone.png in Resources */ = {isa = PBXBuildFile; fileRef = 84ABC12B13B0FE6800202668 /* theatre_left_iPhone.png */; };
 		84ABC13513B0FE6800202668 /* theatre_right_iPhone.png in Resources */ = {isa = PBXBuildFile; fileRef = 84ABC12C13B0FE6800202668 /* theatre_right_iPhone.png */; };
@@ -1713,6 +1745,38 @@
 		84A7915F13B20FED00B3B53C /* GameDressScene_both.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameDressScene_both.h; path = iPhone/GameDressScene_both.h; sourceTree = "<group>"; };
 		84A7916013B20FED00B3B53C /* DDElement_both.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DDElement_both.m; path = iPhone/DDElement_both.m; sourceTree = "<group>"; };
 		84A7916113B20FED00B3B53C /* GameDressScene_both.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GameDressScene_both.m; path = iPhone/GameDressScene_both.m; sourceTree = "<group>"; };
+		84A9F0B113CF41E600A7FDD3 /* animalsAnimsBee_iPhone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = animalsAnimsBee_iPhone.png; sourceTree = "<group>"; };
+		84A9F0B213CF41E600A7FDD3 /* animalsAnimsCat_iPhone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = animalsAnimsCat_iPhone.png; sourceTree = "<group>"; };
+		84A9F0B313CF41E700A7FDD3 /* animalsAnimsBee_iPhone.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = animalsAnimsBee_iPhone.plist; sourceTree = "<group>"; };
+		84A9F0B413CF41E800A7FDD3 /* animalsAnimsCat_iPhone.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = animalsAnimsCat_iPhone.plist; sourceTree = "<group>"; };
+		84A9F0B513CF41E800A7FDD3 /* animalsAnimsDuck_iPhone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = animalsAnimsDuck_iPhone.png; sourceTree = "<group>"; };
+		84A9F0B613CF41E800A7FDD3 /* animalsAnimsDog_iPhone.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = animalsAnimsDog_iPhone.plist; sourceTree = "<group>"; };
+		84A9F0B713CF41E900A7FDD3 /* animalsAnimsDog_iPhone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = animalsAnimsDog_iPhone.png; sourceTree = "<group>"; };
+		84A9F0B813CF41E900A7FDD3 /* animalsAnimsDuck_iPhone.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = animalsAnimsDuck_iPhone.plist; sourceTree = "<group>"; };
+		84A9F0B913CF41E900A7FDD3 /* animalsAnimsChicken_iPhone.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = animalsAnimsChicken_iPhone.plist; sourceTree = "<group>"; };
+		84A9F0BA13CF41EA00A7FDD3 /* animalsAnimsChicken_iPhone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = animalsAnimsChicken_iPhone.png; sourceTree = "<group>"; };
+		84A9F0BB13CF41EA00A7FDD3 /* animalsAnimsPig_iPhone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = animalsAnimsPig_iPhone.png; sourceTree = "<group>"; };
+		84A9F0BC13CF41EB00A7FDD3 /* animalsAnimsPig_iPhone.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = animalsAnimsPig_iPhone.plist; sourceTree = "<group>"; };
+		84A9F0BD13CF41EB00A7FDD3 /* animalsAnimsCow_iPhone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = animalsAnimsCow_iPhone.png; sourceTree = "<group>"; };
+		84A9F0BE13CF41EB00A7FDD3 /* animalsAnimsCow_iPhone.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = animalsAnimsCow_iPhone.plist; sourceTree = "<group>"; };
+		84A9F0BF13CF41EC00A7FDD3 /* animalsAnimsHorse_iPhone.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = animalsAnimsHorse_iPhone.plist; sourceTree = "<group>"; };
+		84A9F0C013CF41EC00A7FDD3 /* animalsAnimsHorse_iPhone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = animalsAnimsHorse_iPhone.png; sourceTree = "<group>"; };
+		84A9F0D113CF459800A7FDD3 /* animalsAnimsBee_iPhone-hd.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "animalsAnimsBee_iPhone-hd.plist"; sourceTree = "<group>"; };
+		84A9F0D213CF459B00A7FDD3 /* animalsAnimsBee_iPhone-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "animalsAnimsBee_iPhone-hd.png"; sourceTree = "<group>"; };
+		84A9F0D313CF459E00A7FDD3 /* animalsAnimsCat_iPhone-hd.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "animalsAnimsCat_iPhone-hd.plist"; sourceTree = "<group>"; };
+		84A9F0D413CF45A100A7FDD3 /* animalsAnimsCat_iPhone-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "animalsAnimsCat_iPhone-hd.png"; sourceTree = "<group>"; };
+		84A9F0D513CF45A300A7FDD3 /* animalsAnimsChicken_iPhone-hd.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "animalsAnimsChicken_iPhone-hd.plist"; sourceTree = "<group>"; };
+		84A9F0D613CF45A500A7FDD3 /* animalsAnimsChicken_iPhone-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "animalsAnimsChicken_iPhone-hd.png"; sourceTree = "<group>"; };
+		84A9F0D713CF45A700A7FDD3 /* animalsAnimsCow_iPhone-hd.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "animalsAnimsCow_iPhone-hd.plist"; sourceTree = "<group>"; };
+		84A9F0D813CF45AC00A7FDD3 /* animalsAnimsCow_iPhone-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "animalsAnimsCow_iPhone-hd.png"; sourceTree = "<group>"; };
+		84A9F0D913CF45B900A7FDD3 /* animalsAnimsDog_iPhone-hd.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "animalsAnimsDog_iPhone-hd.plist"; sourceTree = "<group>"; };
+		84A9F0DA13CF45BF00A7FDD3 /* animalsAnimsDog_iPhone-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "animalsAnimsDog_iPhone-hd.png"; sourceTree = "<group>"; };
+		84A9F0DB13CF45C800A7FDD3 /* animalsAnimsDuck_iPhone-hd.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "animalsAnimsDuck_iPhone-hd.plist"; sourceTree = "<group>"; };
+		84A9F0DC13CF45D700A7FDD3 /* animalsAnimsDuck_iPhone-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "animalsAnimsDuck_iPhone-hd.png"; sourceTree = "<group>"; };
+		84A9F0DD13CF45E800A7FDD3 /* animalsAnimsHorse_iPhone-hd.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "animalsAnimsHorse_iPhone-hd.plist"; sourceTree = "<group>"; };
+		84A9F0DE13CF45E900A7FDD3 /* animalsAnimsHorse_iPhone-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "animalsAnimsHorse_iPhone-hd.png"; sourceTree = "<group>"; };
+		84A9F0DF13CF45EC00A7FDD3 /* animalsAnimsPig_iPhone-hd.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "animalsAnimsPig_iPhone-hd.plist"; sourceTree = "<group>"; };
+		84A9F0E013CF45EE00A7FDD3 /* animalsAnimsPig_iPhone-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "animalsAnimsPig_iPhone-hd.png"; sourceTree = "<group>"; };
 		84AB6287139E675100966044 /* backgroundMusicDress.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = backgroundMusicDress.mp3; sourceTree = "<group>"; };
 		84ABC12B13B0FE6800202668 /* theatre_left_iPhone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = theatre_left_iPhone.png; sourceTree = "<group>"; };
 		84ABC12C13B0FE6800202668 /* theatre_right_iPhone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = theatre_right_iPhone.png; sourceTree = "<group>"; };
@@ -3149,6 +3213,38 @@
 				84170ADE13C6392500DEDD21 /* animalsAnims_iPhone.png */,
 				84170AE113C6392500DEDD21 /* animalsAnims_iPhone-hd.plist */,
 				84170AE213C6392500DEDD21 /* animalsAnims_iPhone-hd.png */,
+				84A9F0B113CF41E600A7FDD3 /* animalsAnimsBee_iPhone.png */,
+				84A9F0B213CF41E600A7FDD3 /* animalsAnimsCat_iPhone.png */,
+				84A9F0B313CF41E700A7FDD3 /* animalsAnimsBee_iPhone.plist */,
+				84A9F0B413CF41E800A7FDD3 /* animalsAnimsCat_iPhone.plist */,
+				84A9F0B513CF41E800A7FDD3 /* animalsAnimsDuck_iPhone.png */,
+				84A9F0B613CF41E800A7FDD3 /* animalsAnimsDog_iPhone.plist */,
+				84A9F0B713CF41E900A7FDD3 /* animalsAnimsDog_iPhone.png */,
+				84A9F0B813CF41E900A7FDD3 /* animalsAnimsDuck_iPhone.plist */,
+				84A9F0B913CF41E900A7FDD3 /* animalsAnimsChicken_iPhone.plist */,
+				84A9F0BA13CF41EA00A7FDD3 /* animalsAnimsChicken_iPhone.png */,
+				84A9F0BB13CF41EA00A7FDD3 /* animalsAnimsPig_iPhone.png */,
+				84A9F0BC13CF41EB00A7FDD3 /* animalsAnimsPig_iPhone.plist */,
+				84A9F0BD13CF41EB00A7FDD3 /* animalsAnimsCow_iPhone.png */,
+				84A9F0BE13CF41EB00A7FDD3 /* animalsAnimsCow_iPhone.plist */,
+				84A9F0BF13CF41EC00A7FDD3 /* animalsAnimsHorse_iPhone.plist */,
+				84A9F0C013CF41EC00A7FDD3 /* animalsAnimsHorse_iPhone.png */,
+				84A9F0D113CF459800A7FDD3 /* animalsAnimsBee_iPhone-hd.plist */,
+				84A9F0D213CF459B00A7FDD3 /* animalsAnimsBee_iPhone-hd.png */,
+				84A9F0D313CF459E00A7FDD3 /* animalsAnimsCat_iPhone-hd.plist */,
+				84A9F0D413CF45A100A7FDD3 /* animalsAnimsCat_iPhone-hd.png */,
+				84A9F0D513CF45A300A7FDD3 /* animalsAnimsChicken_iPhone-hd.plist */,
+				84A9F0D613CF45A500A7FDD3 /* animalsAnimsChicken_iPhone-hd.png */,
+				84A9F0D713CF45A700A7FDD3 /* animalsAnimsCow_iPhone-hd.plist */,
+				84A9F0D813CF45AC00A7FDD3 /* animalsAnimsCow_iPhone-hd.png */,
+				84A9F0D913CF45B900A7FDD3 /* animalsAnimsDog_iPhone-hd.plist */,
+				84A9F0DA13CF45BF00A7FDD3 /* animalsAnimsDog_iPhone-hd.png */,
+				84A9F0DB13CF45C800A7FDD3 /* animalsAnimsDuck_iPhone-hd.plist */,
+				84A9F0DC13CF45D700A7FDD3 /* animalsAnimsDuck_iPhone-hd.png */,
+				84A9F0DD13CF45E800A7FDD3 /* animalsAnimsHorse_iPhone-hd.plist */,
+				84A9F0DE13CF45E900A7FDD3 /* animalsAnimsHorse_iPhone-hd.png */,
+				84A9F0DF13CF45EC00A7FDD3 /* animalsAnimsPig_iPhone-hd.plist */,
+				84A9F0E013CF45EE00A7FDD3 /* animalsAnimsPig_iPhone-hd.png */,
 			);
 			name = AnimalsAnim;
 			sourceTree = "<group>";
@@ -4211,6 +4307,38 @@
 				84F88C7313CCBCD600FFFF03 /* theatreThumb_4_iPhone@2x.png in Resources */,
 				84F88C7413CCBCD600FFFF03 /* theatreThumb_6_iPhone@2x.png in Resources */,
 				84B898FB13CDC8A80056DC4F /* dress_iPad.pvr in Resources */,
+				84A9F0C113CF41ED00A7FDD3 /* animalsAnimsBee_iPhone.png in Resources */,
+				84A9F0C213CF41ED00A7FDD3 /* animalsAnimsCat_iPhone.png in Resources */,
+				84A9F0C313CF41ED00A7FDD3 /* animalsAnimsBee_iPhone.plist in Resources */,
+				84A9F0C413CF41ED00A7FDD3 /* animalsAnimsCat_iPhone.plist in Resources */,
+				84A9F0C513CF41ED00A7FDD3 /* animalsAnimsDuck_iPhone.png in Resources */,
+				84A9F0C613CF41ED00A7FDD3 /* animalsAnimsDog_iPhone.plist in Resources */,
+				84A9F0C713CF41ED00A7FDD3 /* animalsAnimsDog_iPhone.png in Resources */,
+				84A9F0C813CF41ED00A7FDD3 /* animalsAnimsDuck_iPhone.plist in Resources */,
+				84A9F0C913CF41ED00A7FDD3 /* animalsAnimsChicken_iPhone.plist in Resources */,
+				84A9F0CA13CF41ED00A7FDD3 /* animalsAnimsChicken_iPhone.png in Resources */,
+				84A9F0CB13CF41ED00A7FDD3 /* animalsAnimsPig_iPhone.png in Resources */,
+				84A9F0CC13CF41ED00A7FDD3 /* animalsAnimsPig_iPhone.plist in Resources */,
+				84A9F0CD13CF41ED00A7FDD3 /* animalsAnimsCow_iPhone.png in Resources */,
+				84A9F0CE13CF41ED00A7FDD3 /* animalsAnimsCow_iPhone.plist in Resources */,
+				84A9F0CF13CF41ED00A7FDD3 /* animalsAnimsHorse_iPhone.plist in Resources */,
+				84A9F0D013CF41ED00A7FDD3 /* animalsAnimsHorse_iPhone.png in Resources */,
+				84A9F0E113CF45F000A7FDD3 /* animalsAnimsBee_iPhone-hd.plist in Resources */,
+				84A9F0E213CF45F000A7FDD3 /* animalsAnimsBee_iPhone-hd.png in Resources */,
+				84A9F0E313CF45F000A7FDD3 /* animalsAnimsCat_iPhone-hd.plist in Resources */,
+				84A9F0E413CF45F000A7FDD3 /* animalsAnimsCat_iPhone-hd.png in Resources */,
+				84A9F0E513CF45F000A7FDD3 /* animalsAnimsChicken_iPhone-hd.plist in Resources */,
+				84A9F0E613CF45F000A7FDD3 /* animalsAnimsChicken_iPhone-hd.png in Resources */,
+				84A9F0E713CF45F000A7FDD3 /* animalsAnimsCow_iPhone-hd.plist in Resources */,
+				84A9F0E813CF45F000A7FDD3 /* animalsAnimsCow_iPhone-hd.png in Resources */,
+				84A9F0E913CF45F000A7FDD3 /* animalsAnimsDog_iPhone-hd.plist in Resources */,
+				84A9F0EA13CF45F000A7FDD3 /* animalsAnimsDog_iPhone-hd.png in Resources */,
+				84A9F0EB13CF45F000A7FDD3 /* animalsAnimsDuck_iPhone-hd.plist in Resources */,
+				84A9F0EC13CF45F000A7FDD3 /* animalsAnimsDuck_iPhone-hd.png in Resources */,
+				84A9F0ED13CF45F000A7FDD3 /* animalsAnimsHorse_iPhone-hd.plist in Resources */,
+				84A9F0EE13CF45F000A7FDD3 /* animalsAnimsHorse_iPhone-hd.png in Resources */,
+				84A9F0EF13CF45F000A7FDD3 /* animalsAnimsPig_iPhone-hd.plist in Resources */,
+				84A9F0F013CF45F000A7FDD3 /* animalsAnimsPig_iPhone-hd.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
