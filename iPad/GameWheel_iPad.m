@@ -103,19 +103,9 @@
 	[[director openGLView] removeFromSuperview];
 	[director end];	
 	
-	[self.view removeFromSuperview];
-	[self release];
-	
-	MainMenu_iPad * gw = [[MainMenu_iPad alloc] 
-					 initWithNibName:@"MainMenu_iPad" bundle:nil];
-	[gw.view setAlpha:0];
 	AppDelegate_iPad * app = (AppDelegate_iPad *)[[UIApplication sharedApplication] delegate];
-	UIWindow * w = app.window;
-	[w addSubview:gw.view];
 	
-	[UIView beginAnimations:nil context:nil];
-	[gw.view setAlpha:1];
-	[UIView commitAnimations];
+	[app.navController popViewControllerAnimated:NO];
 }
 
 -(void)goToNextGame

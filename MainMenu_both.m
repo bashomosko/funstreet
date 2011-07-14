@@ -213,40 +213,44 @@
 }
 
 -(IBAction) goToSong:(id)sender
-{
+{/*
 	[UIView beginAnimations:nil context:nil];
 	[UIView setAnimationDelegate:self];
 	[UIView setAnimationDidStopSelector:@selector(loadSong)];
 	[self.view setAlpha:0];
-	[UIView commitAnimations];
+	[UIView commitAnimations];*/
+	[self loadSong];
 }
 
 -(IBAction) goToWheel:(id)sender
 {
-	[UIView beginAnimations:nil context:nil];
+	/*[UIView beginAnimations:nil context:nil];
 	[UIView setAnimationDelegate:self];
 	[UIView setAnimationDidStopSelector:@selector(loadWheel)];
 	[self.view setAlpha:0];
-	[UIView commitAnimations];
+	[UIView commitAnimations];*/
 	
+	[self loadWheel];
 }
 
 -(IBAction) goToDress:(id)sender
 {
-	[UIView beginAnimations:nil context:nil];
+	/*[UIView beginAnimations:nil context:nil];
 	[UIView setAnimationDelegate:self];
 	[UIView setAnimationDidStopSelector:@selector(loadDress)];
 	[self.view setAlpha:0];
-	[UIView commitAnimations];
+	[UIView commitAnimations];*/
+	[self loadDress];
 }
 
 -(IBAction) goToVideo:(id)sender
 {
-	[UIView beginAnimations:nil context:nil];
+/*	[UIView beginAnimations:nil context:nil];
 	[UIView setAnimationDelegate:self];
 	[UIView setAnimationDidStopSelector:@selector(loadVideo)];
 	[self.view setAlpha:0];
-	[UIView commitAnimations];
+	[UIView commitAnimations];*/
+	[self loadVideo];
 }
 
 -(IBAction) goToNextScreen:(id)sender

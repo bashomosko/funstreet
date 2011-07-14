@@ -250,7 +250,7 @@
     }
     
     nSheetToLoad ++;
-    [self schedule:@selector(loadSpriteSheets) interval:1];
+    [self schedule:@selector(loadSpriteSheets) interval:0.05];
 }
 
 -(void)playAnimForAnimal:(CCMenuItemImage *)btn

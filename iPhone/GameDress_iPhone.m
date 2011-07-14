@@ -101,19 +101,9 @@
 	[[director openGLView] removeFromSuperview];
 	[director end];	
 	
-	[self.view removeFromSuperview];
-	[self release];
-	
-	MainMenu * gw = [[MainMenu alloc] 
-						  initWithNibName:@"MainMenu" bundle:nil];
-	[gw.view setAlpha:0];
 	AppDelegate_iPhone * app = (AppDelegate_iPhone *)[[UIApplication sharedApplication] delegate];
-	UIWindow * w = app.window;
-	[w addSubview:gw.view];
 	
-	[UIView beginAnimations:nil context:nil];
-	[gw.view setAlpha:1];
-	[UIView commitAnimations];
+	[app.navController popViewControllerAnimated:NO];
 }
 
 -(void)goToNextGame

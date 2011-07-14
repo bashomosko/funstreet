@@ -10,10 +10,11 @@
 
 @interface AppDelegate_iPad : NSObject <UIApplicationDelegate> {
     UIWindow *window;
-	
+	IBOutlet UINavigationController * navController;
 }
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;
+@property (nonatomic,retain) IBOutlet UINavigationController * navController;
 
 @end
 

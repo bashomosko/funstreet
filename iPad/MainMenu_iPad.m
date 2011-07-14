@@ -59,53 +59,38 @@
 
 -(void)loadWheel
 {
-	[self.view removeFromSuperview];
-	[self release];
-	
 	GameWheel_iPad * gw = [[GameWheel_iPad alloc] 
 						   initWithNibName:@"GameWheel_iPad" bundle:nil];
-	[gw.view setAlpha:0];
-	AppDelegate_iPad * app = (AppDelegate_iPad *)[[UIApplication sharedApplication] delegate];
-	UIWindow * w = app.window;
-	[w addSubview:gw.view];
 	
-	[UIView beginAnimations:nil context:nil];
-	[gw.view setAlpha:1];
-	[UIView commitAnimations];
+	AppDelegate_iPad * app = (AppDelegate_iPad *)[[UIApplication sharedApplication] delegate];
+	
+	[app.navController pushViewController:gw animated:NO];
+	
+	[gw release];
 }
 
 -(void)loadDress
 {
-	[self.view removeFromSuperview];
-	[self release];
-	
 	GameDress_iPad * gw = [[GameDress_iPad alloc] 
 						   initWithNibName:@"GameDress_iPad" bundle:nil];
-	[gw.view setAlpha:0];
-	AppDelegate_iPad * app = (AppDelegate_iPad *)[[UIApplication sharedApplication] delegate];
-	UIWindow * w = app.window;
-	[w addSubview:gw.view];
 	
-	[UIView beginAnimations:nil context:nil];
-	[gw.view setAlpha:1];
-	[UIView commitAnimations];
+	AppDelegate_iPad * app = (AppDelegate_iPad *)[[UIApplication sharedApplication] delegate];
+	
+	[app.navController pushViewController:gw animated:NO];
+	
+	[gw release];
 }
 
 -(void)loadVideo
 {
-	[self.view removeFromSuperview];
-	[self release];
-	
 	GameVideo_iPad * gw = [[GameVideo_iPad alloc] 
 					  initWithNibName:@"GameVideo_iPad" bundle:nil];
-	[gw.view setAlpha:0];
-	AppDelegate_iPad * app = (AppDelegate_iPad *)[[UIApplication sharedApplication] delegate];
-	UIWindow * w = app.window;
-	[w addSubview:gw.view];
 	
-	[UIView beginAnimations:nil context:nil];
-	[gw.view setAlpha:1];
-	[UIView commitAnimations];
+	AppDelegate_iPad * app = (AppDelegate_iPad *)[[UIApplication sharedApplication] delegate];
+	
+	[app.navController pushViewController:gw animated:NO];
+	
+	[gw release];
 }
 
 -(IBAction)goToSettings

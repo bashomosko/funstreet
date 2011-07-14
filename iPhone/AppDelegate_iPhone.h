@@ -12,9 +12,11 @@
 @interface AppDelegate_iPhone : NSObject <UIApplicationDelegate> {
     UIWindow *window;
 	MainMenu * mm;
+	IBOutlet UINavigationController * navController;
 }
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;
+@property (nonatomic,retain) IBOutlet UINavigationController * navController;
 
 @end
 

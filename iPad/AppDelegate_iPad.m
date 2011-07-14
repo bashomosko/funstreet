@@ -12,7 +12,7 @@
 
 @implementation AppDelegate_iPad
 
-@synthesize window;
+@synthesize window,navController;
 
 
 #pragma mark -
@@ -23,11 +23,8 @@
 	[SimpleAudioEngine sharedEngine];
     // Override point for customization after application launch.
     
+	[window addSubview:navController.view];
     [self.window makeKeyAndVisible];
-	
-	MainMenu_iPad * mm = [[MainMenu_iPad alloc] 
-						  initWithNibName:@"MainMenu_iPad" bundle:nil];
-	[window addSubview:mm.view];
     
     return YES;
 }

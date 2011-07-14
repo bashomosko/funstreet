@@ -12,7 +12,7 @@
 
 @implementation AppDelegate_iPhone
 
-@synthesize window;
+@synthesize window,navController;
 
 
 #pragma mark -
@@ -27,11 +27,7 @@
 	if( ! [CCDirector setDirectorType:kCCDirectorTypeDisplayLink] )
 		[CCDirector setDirectorType:kCCDirectorTypeDefault];
 	
-    // Override point for customization after application launch.
-	mm = [[MainMenu alloc] 
-						  initWithNibName:@"MainMenu" bundle:nil];
-	[window addSubview:mm.view];
-	
+	[window addSubview:navController.view];
 	[self.window makeKeyAndVisible];
 	
     return YES;
@@ -87,6 +83,7 @@
 
 
 - (void)dealloc {
+	[navController release];
     [window release];
     [super dealloc];
 }
