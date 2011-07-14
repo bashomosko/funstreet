@@ -192,7 +192,7 @@ static GameManager *sharedInstance = nil;
 			[[SimpleAudioEngine sharedEngine] setBackgroundMusicVolume:0.4];
 			break;
 		case 2:
-			[[SimpleAudioEngine sharedEngine] setBackgroundMusicVolume:5];
+			[[SimpleAudioEngine sharedEngine] setBackgroundMusicVolume:2.5];
 			break;
 	}
 }
