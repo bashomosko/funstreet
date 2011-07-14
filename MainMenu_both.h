@@ -18,6 +18,8 @@
     IBOutlet UIScrollView * scroll;
     IBOutlet UIImageView * door1;
     IBOutlet UIImageView * door2;
+    IBOutlet UIButton * btnNextScreen;
+    IBOutlet UIButton * btnPreviousScreen;
 	
 	MPMoviePlayerController * introVideo;
 
@@ -25,6 +27,8 @@
     
     BOOL videoFromLoadingScene;
     NSString * doorsSuffix;
+    
+    float widthScreen;
 }
 
 @property (nonatomic,retain) IBOutlet UIButton * btnSong;
