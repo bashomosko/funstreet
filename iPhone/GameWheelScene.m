@@ -137,12 +137,16 @@
     
     [CCTexture2D setDefaultAlphaPixelFormat:kCCTexture2DPixelFormat_RGBA4444];
     
+    [CCTexture2D setDefaultAlphaPixelFormat:kCCTexture2DPixelFormat_RGBA8888];
+    
     leverImg = [CCSprite spriteWithFile:@"lever_iPhone.png"];
 	[self addChild:leverImg];
 	[leverImg setPosition:ccp(153,170)];
 	[leverImg setAnchorPoint:ccp(0,0.5)];
 	[leverImg setRotation:-25];
 	
+    [CCTexture2D setDefaultAlphaPixelFormat:kCCTexture2DPixelFormat_RGBA4444];
+    
 	leverBtn= [CCSprite spriteWithFile:@"leverBtn_iPhone.png"];
 	[self addChild:leverBtn];
 	leverBtn.opacity = 0;
@@ -153,13 +157,13 @@
 	CCSprite * wheelwheel = [CCSprite spriteWithFile:@"wheel_wheel_iPhone.png"];
 	[wheelwheel setPosition:ccp(240,160)];
 	[self addChild:wheelwheel];
-	
-    [CCTexture2D setDefaultAlphaPixelFormat:kCCTexture2DPixelFormat_RGBA4444];
     
 	dino = [CCSprite spriteWithFile:@"wheel_dino_iPhone.png"];
 	[dino setPosition:ccp(210,160)];
 	[self addChild:dino];
 	
+    [CCTexture2D setDefaultAlphaPixelFormat:kCCTexture2DPixelFormat_RGBA4444];
+    
 	backBtn = [CCMenuItemImage itemFromNormalImage:@"wheel_home.png" selectedImage:@"wheel_home.png" target:self selector:@selector(goBack)];
 	
 	CCMenuItemImage * soundOff = [CCMenuItemImage itemFromNormalImage:@"wheel_sound_off_iPhone.png" selectedImage:@"wheel_sound_on_iPhone.png"];
@@ -184,12 +188,126 @@
 	//[self loadScore];
 	[self loadButtons];
     
-    [[ CCSpriteFrameCache sharedSpriteFrameCache] addSpriteFramesWithFile:@"animalsAnims_iPhone.plist" textureFile:@"animalsAnims_iPhone.png"];
-	animalAnimSB = [CCSpriteBatchNode batchNodeWithFile:@"animalsAnims_iPhone.png"];
+    nSheetToLoad = 0;
     
-    [self addChild:animalAnimSB z:0];
+    [self loadSpriteSheets];
+    
+    /*[[ CCSpriteFrameCache sharedSpriteFrameCache] addSpriteFramesWithFile:@"animalsAnims_iPhone.plist" textureFile:@"animalsAnims_iPhone.png"];
+	animalAnimSB = [CCSpriteBatchNode batchNodeWithFile:@"animalsAnims_iPhone.png"];*/
+    
+    //[self addChild:animalAnimSB z:0];
 	[self createPalabra];
     [self loadSpinningStuff];
+}
+
+-(void)loadSpriteSheets {
+    
+    switch (nSheetToLoad) {
+        case 0:
+            [[ CCSpriteFrameCache sharedSpriteFrameCache] addSpriteFramesWithFile:@"animalsAnimsBee_iPhone.plist" textureFile:@"animalsAnimsBee_iPhone.png"];
+            animalAnimSBBee = [CCSpriteBatchNode batchNodeWithFile:@"animalsAnimsBee_iPhone.png"];
+            [self addChild:animalAnimSBBee z:0];
+            break;
+        case 1:
+            [[ CCSpriteFrameCache sharedSpriteFrameCache] addSpriteFramesWithFile:@"animalsAnimsCat_iPhone.plist" textureFile:@"animalsAnimsCat_iPhone.png"];
+            animalAnimSBCat = [CCSpriteBatchNode batchNodeWithFile:@"animalsAnimsCat_iPhone.png"];
+            [self addChild:animalAnimSBCat z:0];
+            break;
+        case 2:
+            [[ CCSpriteFrameCache sharedSpriteFrameCache] addSpriteFramesWithFile:@"animalsAnimsDuck_iPhone.plist" textureFile:@"animalsAnimsDuck_iPhone.png"];
+            animalAnimSBDuck = [CCSpriteBatchNode batchNodeWithFile:@"animalsAnimsDuck_iPhone.png"];
+            [self addChild:animalAnimSBDuck z:0];
+            break;
+        case 3:
+            [[ CCSpriteFrameCache sharedSpriteFrameCache] addSpriteFramesWithFile:@"animalsAnimsDog_iPhone.plist" textureFile:@"animalsAnimsDog_iPhone.png"];
+            animalAnimSBDog = [CCSpriteBatchNode batchNodeWithFile:@"animalsAnimsDog_iPhone.png"];
+            [self addChild:animalAnimSBDog z:0];
+            break;
+        case 4:
+            [[ CCSpriteFrameCache sharedSpriteFrameCache] addSpriteFramesWithFile:@"animalsAnimsChicken_iPhone.plist" textureFile:@"animalsAnimsChicken_iPhone.png"];
+            animalAnimSBChicken = [CCSpriteBatchNode batchNodeWithFile:@"animalsAnimsChicken_iPhone.png"];
+            [self addChild:animalAnimSBChicken z:0];
+            break;
+        case 5:
+            [[ CCSpriteFrameCache sharedSpriteFrameCache] addSpriteFramesWithFile:@"animalsAnimsPig_iPhone.plist" textureFile:@"animalsAnimsPig_iPhone.png"];
+            animalAnimSBPig = [CCSpriteBatchNode batchNodeWithFile:@"animalsAnimsPig_iPhone.png"];
+            [self addChild:animalAnimSBPig z:0];
+            break;
+        case 6:
+            [[ CCSpriteFrameCache sharedSpriteFrameCache] addSpriteFramesWithFile:@"animalsAnimsCow_iPhone.plist" textureFile:@"animalsAnimsCow_iPhone.png"];
+            animalAnimSBCow = [CCSpriteBatchNode batchNodeWithFile:@"animalsAnimsCow_iPhone.png"];
+            [self addChild:animalAnimSBCow z:0];
+            break;
+        case 7:
+            [[ CCSpriteFrameCache sharedSpriteFrameCache] addSpriteFramesWithFile:@"animalsAnimsHorse_iPhone.plist" textureFile:@"animalsAnimsHorse_iPhone.png"];
+            animalAnimSBHorse = [CCSpriteBatchNode batchNodeWithFile:@"animalsAnimsHorse_iPhone.png"];
+            [self addChild:animalAnimSBHorse z:0];
+            [self unschedule:@selector(loadSpriteSheets)];
+            return;
+            break;
+        default:
+            break;
+    }
+    
+    nSheetToLoad ++;
+    [self schedule:@selector(loadSpriteSheets) interval:1];
+}
+
+-(void)playAnimForAnimal:(CCMenuItemImage *)btn
+{   
+    float posX =512 , posY = 384;
+    
+    if ([iPad rangeOfString:@"_iPhone"].location != NSNotFound) {
+        posX = 240;
+        posY = 160;
+    }
+    
+	NSMutableDictionary * userData = (NSMutableDictionary *)btn.userData;
+	NSString * animal = [userData objectForKey:@"image"];
+	int framesNum = [[userData objectForKey:@"frames"] intValue];
+	
+	[btn setVisible:NO];
+	
+	CCSprite * itemAnim = [CCSprite spriteWithSpriteFrameName:[NSString stringWithFormat:@"SeeNSay_%@_ANIM_00000.png",animal]];
+    
+    if ([animal rangeOfString:@"cat"].location != NSNotFound) {
+        [animalAnimSBCat addChild:itemAnim];
+    }
+    else if ([animal rangeOfString:@"dog"].location != NSNotFound) {
+        [animalAnimSBDog addChild:itemAnim];
+    }
+    else if ([animal rangeOfString:@"bee"].location != NSNotFound) {
+        [animalAnimSBBee addChild:itemAnim];
+    }
+    else if ([animal rangeOfString:@"chicken"].location != NSNotFound) {
+        [animalAnimSBChicken addChild:itemAnim];
+    }
+    else if ([animal rangeOfString:@"horse"].location != NSNotFound) {
+        [animalAnimSBHorse addChild:itemAnim];
+    }
+    else if ([animal rangeOfString:@"cow"].location != NSNotFound) {
+        [animalAnimSBCow addChild:itemAnim];
+    }
+    else if ([animal rangeOfString:@"duck"].location != NSNotFound) {
+        [animalAnimSBDuck addChild:itemAnim];
+    }
+    else {
+        [animalAnimSBPig addChild:itemAnim];
+    }
+	//[animalAnimSB addChild:itemAnim];
+	[itemAnim setPosition:ccp(posX,posY)];
+	
+	NSMutableArray *animFrames = [NSMutableArray array];
+	for(int i = 0; i <= framesNum; i++) {
+		
+		CCSpriteFrame *frame = [[CCSpriteFrameCache sharedSpriteFrameCache] spriteFrameByName:[NSString stringWithFormat:@"SeeNSay_%@_ANIM_%05d.png",animal,i]];
+		[animFrames addObject:frame];
+	}
+	
+	CCAnimation *animation = [CCAnimation animationWithFrames:animFrames];
+    
+	[itemAnim runAction:[CCSequence actions:[CCAnimate actionWithDuration:1 animation:animation restoreOriginalFrame:NO],[CCCallFuncND actionWithTarget:self selector:@selector(removeAnimalsAnim: data:) data:(void *)btn],nil]];
+	
 }
 
 

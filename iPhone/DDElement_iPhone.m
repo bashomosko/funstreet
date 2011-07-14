@@ -145,11 +145,18 @@
 			//[theGame addPoints];
 			[theGame runAction:[CCSequence actions:[CCCallFuncND actionWithTarget:theGame selector:@selector(dressDino: data:) data:(void*)self],[CCDelayTime actionWithDuration:2.5],[CCCallFunc actionWithTarget:theGame selector:@selector(selectItemForBasho)],nil]];
 		}else {
-			if([GameManager sharedGameManager].soundsEnabled)
-				[[SimpleAudioEngine sharedEngine] playEffect:@"WrongAnswer.mp3"];
-			mySprite.position = initialCoord;
-			[self shakeMismatch];
-			/*CCParticleSystemQuad * particles = [CCParticleSystemQuad particleWithFile:particleWrongPath];
+            if (theGame.bashoDirected) {
+                if([GameManager sharedGameManager].soundsEnabled)
+                    [[SimpleAudioEngine sharedEngine] playEffect:@"WrongAnswer.mp3"];
+                mySprite.position = initialCoord;
+                [self shakeMismatch];
+            }
+            else {
+                
+                [mySprite runAction:[CCPlace actionWithPosition:initialCoord]];
+                
+            }
+            /*CCParticleSystemQuad * particles = [CCParticleSystemQuad particleWithFile:particleWrongPath];
 			[self addChild:particles];
 			[particles setPosition:mySprite.position];
 			[particles setAutoRemoveOnFinish:YES];*/
