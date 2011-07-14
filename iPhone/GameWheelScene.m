@@ -137,12 +137,16 @@
     
     [CCTexture2D setDefaultAlphaPixelFormat:kCCTexture2DPixelFormat_RGBA4444];
     
+    [CCTexture2D setDefaultAlphaPixelFormat:kCCTexture2DPixelFormat_RGBA8888];
+    
     leverImg = [CCSprite spriteWithFile:@"lever_iPhone.png"];
 	[self addChild:leverImg];
 	[leverImg setPosition:ccp(153,170)];
 	[leverImg setAnchorPoint:ccp(0,0.5)];
 	[leverImg setRotation:-25];
 	
+    [CCTexture2D setDefaultAlphaPixelFormat:kCCTexture2DPixelFormat_RGBA4444];
+    
 	leverBtn= [CCSprite spriteWithFile:@"leverBtn_iPhone.png"];
 	[self addChild:leverBtn];
 	leverBtn.opacity = 0;
@@ -153,13 +157,13 @@
 	CCSprite * wheelwheel = [CCSprite spriteWithFile:@"wheel_wheel_iPhone.png"];
 	[wheelwheel setPosition:ccp(240,160)];
 	[self addChild:wheelwheel];
-	
-    [CCTexture2D setDefaultAlphaPixelFormat:kCCTexture2DPixelFormat_RGBA4444];
     
 	dino = [CCSprite spriteWithFile:@"wheel_dino_iPhone.png"];
 	[dino setPosition:ccp(210,160)];
 	[self addChild:dino];
 	
+    [CCTexture2D setDefaultAlphaPixelFormat:kCCTexture2DPixelFormat_RGBA4444];
+    
 	backBtn = [CCMenuItemImage itemFromNormalImage:@"wheel_home.png" selectedImage:@"wheel_home.png" target:self selector:@selector(goBack)];
 	
 	CCMenuItemImage * soundOff = [CCMenuItemImage itemFromNormalImage:@"wheel_sound_off_iPhone.png" selectedImage:@"wheel_sound_on_iPhone.png"];
