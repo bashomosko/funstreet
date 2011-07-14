@@ -249,6 +249,16 @@
 	[UIView commitAnimations];
 }
 
+-(IBAction) goToNextScreen:(id)sender
+{
+    [scroll setContentOffset:CGPointMake(widthScreen, 0) animated:YES];
+}
+
+-(IBAction) goToPreviousScreen:(id)sender
+{
+    [scroll setContentOffset:CGPointMake(0, 0) animated:YES];
+}
+
 - (void)didReceiveMemoryWarning {
     // Releases the view if it doesn't have a superview.
     [super didReceiveMemoryWarning];

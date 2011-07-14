@@ -41,7 +41,7 @@
 	}
     doorsSuffix = @"_iPhone";
     [scroll setContentSize:CGSizeMake(960,320)];
-    
+    widthScreen = 480;
     [super viewDidLoad];
 }
 

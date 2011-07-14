@@ -41,6 +41,7 @@
 	}
     [scroll setContentSize:CGSizeMake(2048,768)];
     doorsSuffix = @"_iPad";
+    widthScreen = 1024;
     [super viewDidLoad];
 }
 
