@@ -678,12 +678,12 @@
 		return;
 		
 	if(beganDraggingLever)
-	{
-		beganDraggingLever = NO;
+	{   
+        beganDraggingLever = NO;
 		if([GameManager sharedGameManager].soundsEnabled)
 			[[SimpleAudioEngine sharedEngine] playEffect:@"lever-sfx.mp3"];
 		
-		if(leverImg.rotation > 25)
+		if(leverImg.rotation > -25)
 		{
 			[self pushLever];
 			return;
@@ -840,10 +840,15 @@
 {
 	if([GameManager sharedGameManager].onPause) return; 
 	if(!dinoSpinning)
-	{
+	{   
 		dinoSpinning = YES;
 		[self stopSpinning];
-		[leverImg runAction:[CCSequence actions:[CCCallFunc actionWithTarget:self selector:@selector(pushLever2)],[CCRotateTo actionWithDuration:3 angle:-25],nil]];
+        if (leverImg.rotation >= 25) {
+            [leverImg runAction:[CCSequence actions:[CCCallFunc actionWithTarget:self selector:@selector(pushLever2)],[CCRotateTo actionWithDuration:3 angle:-25],nil]];
+        }
+        else {
+            [leverImg runAction:[CCSequence actions:[CCRotateTo actionWithDuration:0.8 angle:32],[CCCallFunc actionWithTarget:self selector:@selector(pushLever2)],[CCRotateTo actionWithDuration:3 angle:-25],nil]];
+        }
 	}
 }
 
