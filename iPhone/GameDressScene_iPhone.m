@@ -398,18 +398,9 @@
         
 		NSString * fileName = nil;
 		switch (arc4random() %4) {
-			/*case 0:
-				fileName = @"Arrows_iPhone_";
-				break;
-			case 1:
-				fileName = @"Flowers_iPhone_";
-				break;*/
-			case 0:
+            case 0:
 				fileName = @"LayeredStars_iPhone_";
 				break;
-			/*case 3:
-				fileName = @"Spirals_iPhone_";
-				break;*/
             case 1:
                 fileName = @"LayeredDiamonds_iPhone_";
 				break;

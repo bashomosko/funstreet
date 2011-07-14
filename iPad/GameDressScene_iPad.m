@@ -381,26 +381,17 @@
 		bashoSelectedSound = 0;
 		
 		NSString * fileName = nil;
-		switch (arc4random() %7) {
+		switch (arc4random() %4) {
 			case 0:
-				fileName = @"Arrows_iPad_1024x1024_";
-				break;
-			case 1:
-				fileName = @"Flowers_iPad_1024x1024_";
-				break;
-			case 2:
 				fileName = @"LayeredStars_iPad_1024x1024_";
 				break;
-			case 3:
-				fileName = @"Spirals_iPad_1024x1024_";
-				break;
-            case 4:
+            case 1:
                 fileName = @"LayeredDiamonds_iPad_1024x1024_";
 				break;
-            case 5:
+            case 2:
                 fileName = @"LayeredCircles_iPad_1024x1024_";
 				break;
-            case 6:
+            case 3:
                 fileName = @"LayeredTriangles_iPad_1024x1024_";
 				break;
 		}
