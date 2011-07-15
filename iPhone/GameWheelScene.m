@@ -159,7 +159,7 @@
 	[self addChild:wheelwheel];
     
 	dino = [CCSprite spriteWithFile:@"wheel_dino_iPhone.png"];
-	[dino setPosition:ccp(210,160)];
+	[dino setPosition:ccp(210,155)];
 	[self addChild:dino];
 	
     [CCTexture2D setDefaultAlphaPixelFormat:kCCTexture2DPixelFormat_RGBA4444];
