@@ -157,6 +157,11 @@
 	[target end];
 	[target saveBuffer:@"pirulo"];
 	UIImage * savedImg = [target getUIImageFromBuffer];
+    CCTexture2D * text = [[CCTexture2D alloc] initWithImage:savedImg];
+    CCSprite * dinoDressed = [CCSprite spriteWithTexture:text];
+    [self addChild:dinoDressed z:8];
+    [dinoDressed setPosition:ccp(512,384)];
+    [text release];
     [[CCSpriteFrameCache sharedSpriteFrameCache] removeSpriteFramesFromFile:@"dress_iPad.plist"];
 	[[CCSpriteFrameCache sharedSpriteFrameCache] removeUnusedSpriteFrames];
 	[[CCDirector sharedDirector] replaceScene:[CCTransitionFade transitionWithDuration:0.5 scene: [GameDressSceneSnapshot_iPad sceneWithDressVC:viewController dinoImage:savedImg bashoDirected:bashoDirected] withColor:ccWHITE]];

@@ -156,6 +156,11 @@
 	[target end];
 	[target saveBuffer:@"pirulo"];
 	UIImage * savedImg = [target getUIImageFromBuffer];
+    CCTexture2D * text = [[CCTexture2D alloc] initWithImage:savedImg];
+    CCSprite * dinoDressed = [CCSprite spriteWithTexture:text];
+    [self addChild:dinoDressed z:8];
+    [dinoDressed setPosition:ccp(240,160)];
+    [text release];
     [[CCSpriteFrameCache sharedSpriteFrameCache] removeSpriteFramesFromFile:@"dress_iPhone.plist"];
 	[[CCSpriteFrameCache sharedSpriteFrameCache] removeUnusedSpriteFrames];
 	[[CCDirector sharedDirector] replaceScene:[CCTransitionFade transitionWithDuration:0.5 scene: [GameDressSceneSnapshot_iPhone sceneWithDressVC:viewController dinoImage:savedImg bashoDirected:bashoDirected] withColor:ccWHITE]];
