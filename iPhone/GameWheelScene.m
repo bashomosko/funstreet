@@ -113,6 +113,7 @@
 {
 	if([GameManager sharedGameManager].onPause) return;
     [GameManager sharedGameManager].musicAudioEnabled = YES;
+    [[SimpleAudioEngine sharedEngine] stopBackgroundMusic];
 	[viewController goToMenu];
 }
 

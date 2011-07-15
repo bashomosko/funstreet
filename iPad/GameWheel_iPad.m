@@ -12,6 +12,7 @@
 #import "MainMenu_iPad.h"
 #import "GameWheelScene_iPad.h"
 #import "GameManager.h"
+#import "SimpleAudioEngine.h"
 
 @implementation GameWheel_iPad
 
@@ -102,7 +103,7 @@
 	CCDirector *director = [CCDirector sharedDirector];
 	[[director openGLView] removeFromSuperview];
 	[director end];	
-	
+	[[SimpleAudioEngine sharedEngine] playBackgroundMusic:@"backgroundMusic.mp3"];
 	AppDelegate_iPad * app = (AppDelegate_iPad *)[[UIApplication sharedApplication] delegate];
 	
 	[app.navController popViewControllerAnimated:NO];
