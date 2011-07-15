@@ -90,9 +90,9 @@
 	
 	if(!(dropPoint.x == 0 && dropPoint.y == 0))
 	{   
-        CGRect dino = CGRectMake(156, 67, 200, 350);
+        //CGRect dino = CGRectMake(156, 67, 200, 350);
         
-		if(/*ccpDistance(mySprite.position,dropPoint) < 100*/ CGRectIntersectsRect([mySprite boundingBox],dino) &&( !theGame.bashoDirected || ([itemNumber isEqualToString:theGame.itemNeeded] && [colorNumber isEqualToString:theGame.colorNeeded])))
+		if(/*ccpDistance(mySprite.position,dropPoint) < 100 CGRectIntersectsRect([mySprite boundingBox],dino) &&*/( !theGame.bashoDirected || ([itemNumber isEqualToString:theGame.itemNeeded] && [colorNumber isEqualToString:theGame.colorNeeded])))
 		{
 			mySprite.position = dropPoint;
 			//theGame.elementsPlaced++;
