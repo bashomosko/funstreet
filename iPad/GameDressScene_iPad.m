@@ -157,6 +157,11 @@
 	[target end];
 	[target saveBuffer:@"pirulo"];
 	UIImage * savedImg = [target getUIImageFromBuffer];
+    CCTexture2D * text = [[CCTexture2D alloc] initWithImage:savedImg];
+    CCSprite * dinoDressed = [CCSprite spriteWithTexture:text];
+    [self addChild:dinoDressed z:8];
+    [dinoDressed setPosition:ccp(512,384)];
+    [text release];
     [[CCSpriteFrameCache sharedSpriteFrameCache] removeSpriteFramesFromFile:@"dress_iPad.plist"];
 	[[CCSpriteFrameCache sharedSpriteFrameCache] removeUnusedSpriteFrames];
 	[[CCDirector sharedDirector] replaceScene:[CCTransitionFade transitionWithDuration:0.5 scene: [GameDressSceneSnapshot_iPad sceneWithDressVC:viewController dinoImage:savedImg bashoDirected:bashoDirected] withColor:ccWHITE]];
@@ -381,26 +386,17 @@
 		bashoSelectedSound = 0;
 		
 		NSString * fileName = nil;
-		switch (arc4random() %7) {
+		switch (arc4random() %4) {
 			case 0:
-				fileName = @"Arrows_iPad_1024x1024_";
-				break;
-			case 1:
-				fileName = @"Flowers_iPad_1024x1024_";
-				break;
-			case 2:
 				fileName = @"LayeredStars_iPad_1024x1024_";
 				break;
-			case 3:
-				fileName = @"Spirals_iPad_1024x1024_";
-				break;
-            case 4:
+            case 1:
                 fileName = @"LayeredDiamonds_iPad_1024x1024_";
 				break;
-            case 5:
+            case 2:
                 fileName = @"LayeredCircles_iPad_1024x1024_";
 				break;
-            case 6:
+            case 3:
                 fileName = @"LayeredTriangles_iPad_1024x1024_";
 				break;
 		}

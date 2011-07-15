@@ -156,6 +156,11 @@
 	[target end];
 	[target saveBuffer:@"pirulo"];
 	UIImage * savedImg = [target getUIImageFromBuffer];
+    CCTexture2D * text = [[CCTexture2D alloc] initWithImage:savedImg];
+    CCSprite * dinoDressed = [CCSprite spriteWithTexture:text];
+    [self addChild:dinoDressed z:8];
+    [dinoDressed setPosition:ccp(240,160)];
+    [text release];
     [[CCSpriteFrameCache sharedSpriteFrameCache] removeSpriteFramesFromFile:@"dress_iPhone.plist"];
 	[[CCSpriteFrameCache sharedSpriteFrameCache] removeUnusedSpriteFrames];
 	[[CCDirector sharedDirector] replaceScene:[CCTransitionFade transitionWithDuration:0.5 scene: [GameDressSceneSnapshot_iPhone sceneWithDressVC:viewController dinoImage:savedImg bashoDirected:bashoDirected] withColor:ccWHITE]];
@@ -398,18 +403,9 @@
         
 		NSString * fileName = nil;
 		switch (arc4random() %4) {
-			/*case 0:
-				fileName = @"Arrows_iPhone_";
-				break;
-			case 1:
-				fileName = @"Flowers_iPhone_";
-				break;*/
-			case 0:
+            case 0:
 				fileName = @"LayeredStars_iPhone_";
 				break;
-			/*case 3:
-				fileName = @"Spirals_iPhone_";
-				break;*/
             case 1:
                 fileName = @"LayeredDiamonds_iPhone_";
 				break;

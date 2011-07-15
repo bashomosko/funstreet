@@ -61,7 +61,7 @@
 			
 			self.isTouchEnabled = YES;
 			viewController = vc;
-			
+			hasFinishPlayingAnim = YES;
 			if(![GameManager sharedGameManager].playedGame1Video)
 			{
 				[[GameManager sharedGameManager] setPlayedGame1Video:YES];
@@ -90,12 +90,16 @@
 	
     [CCTexture2D setDefaultAlphaPixelFormat:kCCTexture2DPixelFormat_RGBA4444];
 	
+    [CCTexture2D setDefaultAlphaPixelFormat:kCCTexture2DPixelFormat_RGBA8888];
+    
 	leverImg = [CCSprite spriteWithFile:@"lever_iPad.png"];
 	[self addChild:leverImg];
 	[leverImg setPosition:ccp(390,420)];
 	[leverImg setAnchorPoint:ccp(0,0.5)];
 	[leverImg setRotation:-25];
 	
+    [CCTexture2D setDefaultAlphaPixelFormat:kCCTexture2DPixelFormat_RGBA4444];
+    
 	leverBtn= [CCSprite spriteWithFile:@"leverBtn_iPad.png"];
 	[self addChild:leverBtn];
 	leverBtn.opacity = 0;
@@ -105,10 +109,12 @@
 	CCSprite * wheelwheel = [CCSprite spriteWithFile:@"wheel_wheel_iPad.png"];
 	[wheelwheel setPosition:ccp(512,384)];
 	[self addChild:wheelwheel];
-	[CCTexture2D setDefaultAlphaPixelFormat:kCCTexture2DPixelFormat_RGBA4444];
+    
 	dino = [CCSprite spriteWithFile:@"wheel_dino_iPad.png"];
-	[dino setPosition:ccp(460,384)];
+	[dino setPosition:ccp(475,384)];
 	[self addChild:dino];
+    
+    [CCTexture2D setDefaultAlphaPixelFormat:kCCTexture2DPixelFormat_RGBA4444];
 	
 	CCMenuItemImage * backBtn = [CCMenuItemImage itemFromNormalImage:@"wheel_home_iPad.png" selectedImage:@"wheel_home_iPad.png" target:self selector:@selector(goBack)];
 	

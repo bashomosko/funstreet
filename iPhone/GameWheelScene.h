@@ -18,6 +18,15 @@
 {
 	CCMenuItemImage * backBtn;
     GameWheel * viewController;
+    CCSpriteBatchNode * animalAnimSBBee;
+    CCSpriteBatchNode * animalAnimSBCat;
+    CCSpriteBatchNode * animalAnimSBDuck;
+    CCSpriteBatchNode * animalAnimSBDog;
+    CCSpriteBatchNode * animalAnimSBChicken;
+    CCSpriteBatchNode * animalAnimSBCow;
+    CCSpriteBatchNode * animalAnimSBHorse;
+    CCSpriteBatchNode * animalAnimSBPig;
+    int nSheetToLoad;
 }
 
 // returns a Scene that contains the HelloWorld as the only child
@@ -28,5 +37,6 @@
 -(void)beginGame;
 -(void)createPalabra;
 -(NSMutableArray *)loadBtnPos;
+-(void)loadSpriteSheets;
 
 @end

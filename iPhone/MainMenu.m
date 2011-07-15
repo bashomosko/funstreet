@@ -41,25 +41,21 @@
 	}
     doorsSuffix = @"_iPhone";
     [scroll setContentSize:CGSizeMake(960,320)];
-    
+    widthScreen = 480;
     [super viewDidLoad];
 }
 
 -(void)loadDress
 {
-	[self.view removeFromSuperview];
-	[self release];
 	
 	GameDress_iPhone * gw = [[GameDress_iPhone alloc] 
 						   initWithNibName:@"GameDress_iPhone" bundle:nil];
-	[gw.view setAlpha:0];
+
 	AppDelegate_iPhone * app = (AppDelegate_iPhone *)[[UIApplication sharedApplication] delegate];
-	UIWindow * w = app.window;
-	[w addSubview:gw.view];
+
+	[app.navController pushViewController:gw animated:NO];
 	
-	[UIView beginAnimations:nil context:nil];
-	[gw.view setAlpha:1];
-	[UIView commitAnimations];
+	[gw release];
 }
 
 
@@ -87,36 +83,28 @@
 
 -(void)loadVideo
 {
-	[self.view removeFromSuperview];
-	[self release];
 	
 	GameVideo * gw = [[GameVideo alloc] 
 					  initWithNibName:@"GameVideo" bundle:nil];
-	[gw.view setAlpha:0];
-	AppDelegate_iPhone * app = (AppDelegate_iPhone *)[[UIApplication sharedApplication] delegate];
-	UIWindow * w = app.window;
-	[w addSubview:gw.view];
 	
-	[UIView beginAnimations:nil context:nil];
-	[gw.view setAlpha:1];
-	[UIView commitAnimations];
+	AppDelegate_iPhone * app = (AppDelegate_iPhone *)[[UIApplication sharedApplication] delegate];
+	
+	[app.navController pushViewController:gw animated:NO];
+	
+	[gw release];
 }
 
 -(void)loadWheel
 {
-	[self.view removeFromSuperview];
-	[self release];
-	
+
 	GameWheel * gw = [[GameWheel alloc] 
 					 initWithNibName:@"GameWheel" bundle:nil];
-	[gw.view setAlpha:0];
+
 	AppDelegate_iPhone * app = (AppDelegate_iPhone *)[[UIApplication sharedApplication] delegate];
-	UIWindow * w = app.window;
-	[w addSubview:gw.view];
 	
-	[UIView beginAnimations:nil context:nil];
-	[gw.view setAlpha:1];
-	[UIView commitAnimations];
+	[app.navController pushViewController:gw animated:NO];
+	
+	[gw release];
 }
 
 // Override to allow orientations other than the default portrait orientation.
