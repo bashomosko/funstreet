@@ -56,7 +56,7 @@
 			
 			self.isTouchEnabled = YES;
 			viewController = vc;
-			
+			hasFinishPlayingAnim = YES;
 			if(![GameManager sharedGameManager].playedGame1Video)
 			{
 				[[GameManager sharedGameManager] setPlayedGame1Video:YES];
@@ -190,12 +190,12 @@
     
     nSheetToLoad = 0;
     
-    [self loadSpriteSheets];
+    //[self loadSpriteSheets];
     
-    /*[[ CCSpriteFrameCache sharedSpriteFrameCache] addSpriteFramesWithFile:@"animalsAnims_iPhone.plist" textureFile:@"animalsAnims_iPhone.png"];
-	animalAnimSB = [CCSpriteBatchNode batchNodeWithFile:@"animalsAnims_iPhone.png"];*/
+    [[ CCSpriteFrameCache sharedSpriteFrameCache] addSpriteFramesWithFile:@"animalsAnims_iPhone.plist" textureFile:@"animalsAnims_iPhone.png"];
+	animalAnimSB = [CCSpriteBatchNode batchNodeWithFile:@"animalsAnims_iPhone.png"];
     
-    //[self addChild:animalAnimSB z:0];
+    [self addChild:animalAnimSB z:0];
 	[self createPalabra];
     [self loadSpinningStuff];
 }
@@ -253,7 +253,7 @@
     [self schedule:@selector(loadSpriteSheets) interval:0.05];
 }
 
--(void)playAnimForAnimal:(CCMenuItemImage *)btn
+/*-(void)playAnimForAnimal:(CCMenuItemImage *)btn
 {   
     float posX =512 , posY = 384;
     
@@ -308,7 +308,7 @@
     
 	[itemAnim runAction:[CCSequence actions:[CCAnimate actionWithDuration:1 animation:animation restoreOriginalFrame:NO],[CCCallFuncND actionWithTarget:self selector:@selector(removeAnimalsAnim: data:) data:(void *)btn],nil]];
 	
-}
+}*/
 
 
 -(void)createPalabra

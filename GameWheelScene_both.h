@@ -131,6 +131,8 @@
     
     CGRect leverArea;
     CGPoint orig;
+    
+    BOOL hasFinishPlayingAnim;
 }
 
 @property(nonatomic,readwrite) CGRect leverArea;

@@ -17,5 +17,19 @@
          landmarkName = "-removeSettings"
          landmarkType = "5">
       </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "Yes"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         isPathRelative = "1"
+         filePath = "GameWheelScene_both.m"
+         timestampString = "332426596.612689"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "253"
+         endingLineNumber = "253"
+         landmarkName = "-listenSound:withWord:"
+         landmarkType = "5">
+      </FileBreakpoint>
    </FileBreakpoints>
 </Bucket>

@@ -61,7 +61,7 @@
 			
 			self.isTouchEnabled = YES;
 			viewController = vc;
-			
+			hasFinishPlayingAnim = YES;
 			if(![GameManager sharedGameManager].playedGame1Video)
 			{
 				[[GameManager sharedGameManager] setPlayedGame1Video:YES];
