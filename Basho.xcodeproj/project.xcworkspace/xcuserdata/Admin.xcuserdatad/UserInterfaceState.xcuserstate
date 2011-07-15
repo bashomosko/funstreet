@@ -1783,7 +1783,7 @@
 				</dict>
 				<dict>
 					<key>CF$UID</key>
-					<integer>16</integer>
+					<integer>136</integer>
 				</dict>
 			</array>
 		</dict>
@@ -1911,7 +1911,7 @@
 				<integer>178</integer>
 			</dict>
 		</dict>
-		<string>GameWheelScene.m</string>
+		<string>GameWheelScene_iPad.m</string>
 		<dict>
 			<key>$classes</key>
 			<array>
@@ -1946,7 +1946,7 @@
 				<integer>183</integer>
 			</dict>
 		</dict>
-		<string>iPhone</string>
+		<string>iPad</string>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -1984,7 +1984,7 @@
 				<integer>188</integer>
 			</dict>
 			<key>NS.string</key>
-			<string>file://localhost/Users/Admin/Desktop/BASHO/basho/iPhone/GameWheelScene.m</string>
+			<string>file://localhost/Users/Admin/Desktop/BASHO/basho/iPad/GameWheelScene_iPad.m</string>
 		</dict>
 		<dict>
 			<key>$classes</key>
@@ -2380,9 +2380,9 @@
 		<string>PrimaryDocumentVisibleCharacterRange</string>
 		<string>HideAllIssues</string>
 		<string>PrimaryDocumentSelectedCharacterRange</string>
-		<real>332427926.960334</real>
-		<string>{5052, 2131}</string>
-		<string>{6040, 0}</string>
+		<real>332428740.76782203</real>
+		<string>{3740, 1508}</string>
+		<string>{4777, 0}</string>
 		<string>-beginGame</string>
 		<string>Xcode.IDEKit.EditorDocument.SourceCode</string>
 		<dict>
@@ -2402,7 +2402,7 @@
 				<integer>229</integer>
 			</dict>
 		</dict>
-		<string>file://localhost/Users/Admin/Desktop/BASHO/basho/iPhone/GameWheelScene.m</string>
+		<string>file://localhost/Users/Admin/Desktop/BASHO/basho/iPad/GameWheelScene_iPad.m</string>
 		<dict>
 			<key>$classes</key>
 			<array>
@@ -2426,7 +2426,7 @@
 				</dict>
 			</array>
 		</dict>
-		<string>{{0, 0}, {938, 640}}</string>
+		<string>{{0, 0}, {938, 503}}</string>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -4720,7 +4720,7 @@
 		<string>IDESCMStatusFilteringEnabled</string>
 		<string>IDESelectedObjects</string>
 		<string>IDEExpandedItemsSet</string>
-		<string>{{0, 791}, {326, 596}}</string>
+		<string>{{0, 160}, {326, 596}}</string>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -4780,11 +4780,11 @@
 				</dict>
 				<dict>
 					<key>CF$UID</key>
-					<integer>442</integer>
+					<integer>443</integer>
 				</dict>
 				<dict>
 					<key>CF$UID</key>
-					<integer>444</integer>
+					<integer>445</integer>
 				</dict>
 				<dict>
 					<key>CF$UID</key>
@@ -4876,10 +4876,11 @@
 				</dict>
 				<dict>
 					<key>CF$UID</key>
-					<integer>183</integer>
+					<integer>442</integer>
 				</dict>
 			</array>
 		</dict>
+		<string>iPhone</string>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -4894,11 +4895,11 @@
 				</dict>
 				<dict>
 					<key>CF$UID</key>
-					<integer>183</integer>
+					<integer>442</integer>
 				</dict>
 				<dict>
 					<key>CF$UID</key>
-					<integer>443</integer>
+					<integer>444</integer>
 				</dict>
 			</array>
 		</dict>
@@ -4917,7 +4918,7 @@
 				</dict>
 				<dict>
 					<key>CF$UID</key>
-					<integer>445</integer>
+					<integer>183</integer>
 				</dict>
 				<dict>
 					<key>CF$UID</key>
@@ -4925,7 +4926,6 @@
 				</dict>
 			</array>
 		</dict>
-		<string>iPad</string>
 		<string>Game Dress</string>
 		<dict>
 			<key>$class</key>
@@ -4941,7 +4941,7 @@
 				</dict>
 				<dict>
 					<key>CF$UID</key>
-					<integer>445</integer>
+					<integer>183</integer>
 				</dict>
 				<dict>
 					<key>CF$UID</key>
@@ -4963,29 +4963,7 @@
 				</dict>
 				<dict>
 					<key>CF$UID</key>
-					<integer>445</integer>
-				</dict>
-			</array>
-		</dict>
-		<dict>
-			<key>$class</key>
-			<dict>
-				<key>CF$UID</key>
-				<integer>38</integer>
-			</dict>
-			<key>NS.objects</key>
-			<array>
-				<dict>
-					<key>CF$UID</key>
-					<integer>438</integer>
-				</dict>
-				<dict>
-					<key>CF$UID</key>
-					<integer>445</integer>
-				</dict>
-				<dict>
-					<key>CF$UID</key>
-					<integer>443</integer>
+					<integer>183</integer>
 				</dict>
 			</array>
 		</dict>
@@ -5004,6 +4982,28 @@
 				<dict>
 					<key>CF$UID</key>
 					<integer>183</integer>
+				</dict>
+				<dict>
+					<key>CF$UID</key>
+					<integer>444</integer>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>$class</key>
+			<dict>
+				<key>CF$UID</key>
+				<integer>38</integer>
+			</dict>
+			<key>NS.objects</key>
+			<array>
+				<dict>
+					<key>CF$UID</key>
+					<integer>438</integer>
+				</dict>
+				<dict>
+					<key>CF$UID</key>
+					<integer>442</integer>
 				</dict>
 				<dict>
 					<key>CF$UID</key>
@@ -5031,7 +5031,7 @@
 				</dict>
 				<dict>
 					<key>CF$UID</key>
-					<integer>183</integer>
+					<integer>442</integer>
 				</dict>
 				<dict>
 					<key>CF$UID</key>
@@ -5072,7 +5072,7 @@
 				</dict>
 				<dict>
 					<key>CF$UID</key>
-					<integer>183</integer>
+					<integer>442</integer>
 				</dict>
 				<dict>
 					<key>CF$UID</key>
@@ -5121,7 +5121,7 @@
 				</dict>
 				<dict>
 					<key>CF$UID</key>
-					<integer>443</integer>
+					<integer>444</integer>
 				</dict>
 			</array>
 		</dict>
@@ -5139,7 +5139,7 @@
 				</dict>
 				<dict>
 					<key>CF$UID</key>
-					<integer>183</integer>
+					<integer>442</integer>
 				</dict>
 				<dict>
 					<key>CF$UID</key>
@@ -5161,7 +5161,7 @@
 				</dict>
 				<dict>
 					<key>CF$UID</key>
-					<integer>445</integer>
+					<integer>183</integer>
 				</dict>
 				<dict>
 					<key>CF$UID</key>
@@ -5183,7 +5183,7 @@
 				</dict>
 				<dict>
 					<key>CF$UID</key>
-					<integer>445</integer>
+					<integer>183</integer>
 				</dict>
 				<dict>
 					<key>CF$UID</key>
@@ -5205,7 +5205,7 @@
 				</dict>
 				<dict>
 					<key>CF$UID</key>
-					<integer>183</integer>
+					<integer>442</integer>
 				</dict>
 				<dict>
 					<key>CF$UID</key>
@@ -5228,7 +5228,7 @@
 				</dict>
 				<dict>
 					<key>CF$UID</key>
-					<integer>445</integer>
+					<integer>183</integer>
 				</dict>
 				<dict>
 					<key>CF$UID</key>
@@ -5250,7 +5250,7 @@
 				</dict>
 				<dict>
 					<key>CF$UID</key>
-					<integer>183</integer>
+					<integer>442</integer>
 				</dict>
 				<dict>
 					<key>CF$UID</key>
@@ -5392,7 +5392,7 @@
 		</dict>
 		<string>IDEUtilitiesArea</string>
 		<real>260</real>
-		<string>GameWheelScene.m</string>
+		<string>GameWheelScene_iPad.m</string>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -8482,15 +8482,15 @@
 				</dict>
 				<dict>
 					<key>CF$UID</key>
+					<integer>6073</integer>
+				</dict>
+				<dict>
+					<key>CF$UID</key>
 					<integer>6074</integer>
 				</dict>
 				<dict>
 					<key>CF$UID</key>
-					<integer>6075</integer>
-				</dict>
-				<dict>
-					<key>CF$UID</key>
-					<integer>6082</integer>
+					<integer>6081</integer>
 				</dict>
 				<dict>
 					<key>CF$UID</key>
@@ -77145,19 +77145,19 @@
 			<array>
 				<dict>
 					<key>CF$UID</key>
-					<integer>288</integer>
+					<integer>219</integer>
 				</dict>
 				<dict>
 					<key>CF$UID</key>
-					<integer>289</integer>
+					<integer>220</integer>
 				</dict>
 				<dict>
 					<key>CF$UID</key>
-					<integer>290</integer>
+					<integer>221</integer>
 				</dict>
 				<dict>
 					<key>CF$UID</key>
-					<integer>291</integer>
+					<integer>222</integer>
 				</dict>
 			</array>
 			<key>NS.objects</key>
@@ -77180,9 +77180,9 @@
 				</dict>
 			</array>
 		</dict>
-		<real>332341844.13768399</real>
-		<string>{5034, 1173}</string>
-		<string>{5455, 0}</string>
+		<real>332428632.19154501</real>
+		<string>{5362, 1565}</string>
+		<string>{6452, 0}</string>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -78416,9 +78416,9 @@
 				</dict>
 			</array>
 		</dict>
-		<real>332424527.07321602</real>
-		<string>{8649, 1363}</string>
-		<string>{3341, 0}</string>
+		<real>332428740.76688802</real>
+		<string>{3740, 1508}</string>
+		<string>{4777, 0}</string>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -79178,8 +79178,8 @@
 				</dict>
 			</array>
 		</dict>
-		<real>332427926.95871598</real>
-		<string>{5052, 2131}</string>
+		<real>332428562.91706198</real>
+		<string>{5052, 1493}</string>
 		<string>{6040, 0}</string>
 		<dict>
 			<key>$class</key>
@@ -83865,7 +83865,7 @@
 		</dict>
 		<string>IDEDeviceLocation</string>
 		<string>IDEDeviceArchitecture</string>
-		<string>dvtdevice-iphonesimulator:/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk-iPhone</string>
+		<string>dvtdevice-iphonesimulator:/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk-iPad</string>
 		<string>i386</string>
 		<dict>
 			<key>$class</key>
@@ -83923,7 +83923,7 @@
 				</dict>
 				<dict>
 					<key>CF$UID</key>
-					<integer>6073</integer>
+					<integer>6054</integer>
 				</dict>
 			</array>
 		</dict>
@@ -84177,7 +84177,7 @@
 				<integer>6070</integer>
 			</dict>
 			<key>NS.time</key>
-			<real>332427857.89611501</real>
+			<real>332428737.54842103</real>
 		</dict>
 		<dict>
 			<key>$classes</key>
@@ -84188,9 +84188,8 @@
 			<key>$classname</key>
 			<string>NSDate</string>
 		</dict>
-		<string>Today at 10:04</string>
+		<string>Today at 10:18</string>
 		<integer>106</integer>
-		<string>Basho</string>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -84215,14 +84214,14 @@
 			<array>
 				<dict>
 					<key>CF$UID</key>
-					<integer>6076</integer>
+					<integer>6075</integer>
 				</dict>
 			</array>
 			<key>NS.objects</key>
 			<array>
 				<dict>
 					<key>CF$UID</key>
-					<integer>6077</integer>
+					<integer>6076</integer>
 				</dict>
 			</array>
 		</dict>
@@ -84253,22 +84252,22 @@
 			<array>
 				<dict>
 					<key>CF$UID</key>
-					<integer>6078</integer>
+					<integer>6077</integer>
 				</dict>
 				<dict>
 					<key>CF$UID</key>
-					<integer>6079</integer>
+					<integer>6078</integer>
 				</dict>
 			</array>
 			<key>NS.objects</key>
 			<array>
 				<dict>
 					<key>CF$UID</key>
-					<integer>6080</integer>
+					<integer>6079</integer>
 				</dict>
 				<dict>
 					<key>CF$UID</key>
-					<integer>6081</integer>
+					<integer>6080</integer>
 				</dict>
 			</array>
 		</dict>
@@ -84286,15 +84285,15 @@
 			<array>
 				<dict>
 					<key>CF$UID</key>
-					<integer>6083</integer>
+					<integer>6082</integer>
 				</dict>
 				<dict>
 					<key>CF$UID</key>
-					<integer>6085</integer>
+					<integer>6084</integer>
 				</dict>
 				<dict>
 					<key>CF$UID</key>
-					<integer>6087</integer>
+					<integer>6086</integer>
 				</dict>
 				<dict>
 					<key>CF$UID</key>
@@ -84306,23 +84305,23 @@
 				</dict>
 				<dict>
 					<key>CF$UID</key>
-					<integer>6092</integer>
+					<integer>6091</integer>
 				</dict>
 				<dict>
 					<key>CF$UID</key>
-					<integer>6094</integer>
+					<integer>6093</integer>
 				</dict>
 				<dict>
 					<key>CF$UID</key>
-					<integer>6096</integer>
+					<integer>6095</integer>
 				</dict>
 				<dict>
 					<key>CF$UID</key>
-					<integer>6098</integer>
+					<integer>6097</integer>
 				</dict>
 				<dict>
 					<key>CF$UID</key>
-					<integer>6100</integer>
+					<integer>6099</integer>
 				</dict>
 			</array>
 		</dict>
@@ -84340,7 +84339,43 @@
 			<key>NS.relative</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>6084</integer>
+				<integer>6083</integer>
+			</dict>
+		</dict>
+		<string>file://localhost/Users/Admin/Desktop/BASHO/basho/iPad/GameWheelScene_iPad.m</string>
+		<dict>
+			<key>$class</key>
+			<dict>
+				<key>CF$UID</key>
+				<integer>230</integer>
+			</dict>
+			<key>NS.base</key>
+			<dict>
+				<key>CF$UID</key>
+				<integer>0</integer>
+			</dict>
+			<key>NS.relative</key>
+			<dict>
+				<key>CF$UID</key>
+				<integer>6085</integer>
+			</dict>
+		</dict>
+		<string>file://localhost/Users/Admin/Desktop/BASHO/basho/iPad/GameDressScene_iPad.m</string>
+		<dict>
+			<key>$class</key>
+			<dict>
+				<key>CF$UID</key>
+				<integer>230</integer>
+			</dict>
+			<key>NS.base</key>
+			<dict>
+				<key>CF$UID</key>
+				<integer>0</integer>
+			</dict>
+			<key>NS.relative</key>
+			<dict>
+				<key>CF$UID</key>
+				<integer>6087</integer>
 			</dict>
 		</dict>
 		<string>file://localhost/Users/Admin/Desktop/BASHO/basho/iPhone/GameWheelScene.m</string>
@@ -84358,7 +84393,7 @@
 			<key>NS.relative</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>6086</integer>
+				<integer>6089</integer>
 			</dict>
 		</dict>
 		<string>file://localhost/Users/Admin/Desktop/BASHO/basho/iPhone/GameDressScene_iPhone.m</string>
@@ -84393,7 +84428,7 @@
 			<key>NS.relative</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>6089</integer>
+				<integer>6092</integer>
 			</dict>
 		</dict>
 		<string>file://localhost/Users/Admin/Desktop/BASHO/basho/iPhone/GameDress_iPhone.m</string>
@@ -84411,7 +84446,7 @@
 			<key>NS.relative</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>6091</integer>
+				<integer>6094</integer>
 			</dict>
 		</dict>
 		<string>file://localhost/Users/Admin/Desktop/BASHO/basho/iPhone/DDElement_iPhone.m</string>
@@ -84429,7 +84464,7 @@
 			<key>NS.relative</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>6093</integer>
+				<integer>6096</integer>
 			</dict>
 		</dict>
 		<string>file://localhost/Users/Admin/Desktop/BASHO/basho/iPad/DDElement.m</string>
@@ -84447,7 +84482,7 @@
 			<key>NS.relative</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>6095</integer>
+				<integer>6098</integer>
 			</dict>
 		</dict>
 		<string>file://localhost/Users/Admin/Desktop/BASHO/basho/GameWheelScene_both.m</string>
@@ -84465,46 +84500,10 @@
 			<key>NS.relative</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>6097</integer>
-			</dict>
-		</dict>
-		<string>file://localhost/Users/Admin/Desktop/BASHO/basho/iPad/GameWheelScene_iPad.m</string>
-		<dict>
-			<key>$class</key>
-			<dict>
-				<key>CF$UID</key>
-				<integer>230</integer>
-			</dict>
-			<key>NS.base</key>
-			<dict>
-				<key>CF$UID</key>
-				<integer>0</integer>
-			</dict>
-			<key>NS.relative</key>
-			<dict>
-				<key>CF$UID</key>
-				<integer>6099</integer>
+				<integer>6100</integer>
 			</dict>
 		</dict>
 		<string>file://localhost/Users/Admin/Desktop/BASHO/basho/iPhone/GameWheelScene.h</string>
-		<dict>
-			<key>$class</key>
-			<dict>
-				<key>CF$UID</key>
-				<integer>230</integer>
-			</dict>
-			<key>NS.base</key>
-			<dict>
-				<key>CF$UID</key>
-				<integer>0</integer>
-			</dict>
-			<key>NS.relative</key>
-			<dict>
-				<key>CF$UID</key>
-				<integer>6101</integer>
-			</dict>
-		</dict>
-		<string>file://localhost/Users/Admin/Desktop/BASHO/basho/iPad/GameWheel_iPad.m</string>
 	</array>
 	<key>$top</key>
 	<dict>
