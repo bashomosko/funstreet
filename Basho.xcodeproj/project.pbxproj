@@ -748,6 +748,12 @@
 		84ABC13B13B0FE6800202668 /* theatreThumb_5_iPhone.png in Resources */ = {isa = PBXBuildFile; fileRef = 84ABC13213B0FE6800202668 /* theatreThumb_5_iPhone.png */; };
 		84ABC13C13B0FE6800202668 /* theatreThumb_6_iPhone.png in Resources */ = {isa = PBXBuildFile; fileRef = 84ABC13313B0FE6800202668 /* theatreThumb_6_iPhone.png */; };
 		84ABC13F13B111B900202668 /* GameVideo_both.m in Sources */ = {isa = PBXBuildFile; fileRef = 84ABC13E13B111B800202668 /* GameVideo_both.m */; };
+		84ABC60313D5A4830047ECBA /* Default-Landscape~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 84ABC60013D5A4830047ECBA /* Default-Landscape~ipad.png */; };
+		84ABC60413D5A4830047ECBA /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 84ABC60113D5A4830047ECBA /* Default.png */; };
+		84ABC60513D5A4830047ECBA /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84ABC60213D5A4830047ECBA /* Default@2x.png */; };
+		84ABC60B13D5A79F0047ECBA /* FunStINTL_Icon_57.png in Resources */ = {isa = PBXBuildFile; fileRef = 84ABC60913D5A79F0047ECBA /* FunStINTL_Icon_57.png */; };
+		84ABC60C13D5A79F0047ECBA /* FunStINTL_Icon_114.png in Resources */ = {isa = PBXBuildFile; fileRef = 84ABC60A13D5A79F0047ECBA /* FunStINTL_Icon_114.png */; };
+		84ABC61013D5A7F70047ECBA /* FunStINTL_Icon_72.png in Resources */ = {isa = PBXBuildFile; fileRef = 84ABC60F13D5A7F70047ECBA /* FunStINTL_Icon_72.png */; };
 		84ABFED413A8D58A00409078 /* CloudTransition.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 84ABFED313A8D58A00409078 /* CloudTransition.mp3 */; };
 		84ABFED713A8D75600409078 /* allanimals-sfx.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 84ABFED613A8D75600409078 /* allanimals-sfx.mp3 */; };
 		84ADC96013C749FA00B6B71B /* Poof_iPhone-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 84ADC95E13C749FA00B6B71B /* Poof_iPhone-hd.png */; };
@@ -1789,6 +1795,12 @@
 		84ABC13313B0FE6800202668 /* theatreThumb_6_iPhone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = theatreThumb_6_iPhone.png; sourceTree = "<group>"; };
 		84ABC13D13B111B700202668 /* GameVideo_both.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameVideo_both.h; path = iPad/GameVideo_both.h; sourceTree = "<group>"; };
 		84ABC13E13B111B800202668 /* GameVideo_both.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GameVideo_both.m; path = iPad/GameVideo_both.m; sourceTree = "<group>"; };
+		84ABC60013D5A4830047ECBA /* Default-Landscape~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape~ipad.png"; sourceTree = "<group>"; };
+		84ABC60113D5A4830047ECBA /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		84ABC60213D5A4830047ECBA /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		84ABC60913D5A79F0047ECBA /* FunStINTL_Icon_57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FunStINTL_Icon_57.png; sourceTree = "<group>"; };
+		84ABC60A13D5A79F0047ECBA /* FunStINTL_Icon_114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FunStINTL_Icon_114.png; sourceTree = "<group>"; };
+		84ABC60F13D5A7F70047ECBA /* FunStINTL_Icon_72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FunStINTL_Icon_72.png; sourceTree = "<group>"; };
 		84ABFED313A8D58A00409078 /* CloudTransition.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = CloudTransition.mp3; sourceTree = "<group>"; };
 		84ABFED613A8D75600409078 /* allanimals-sfx.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "allanimals-sfx.mp3"; sourceTree = "<group>"; };
 		84ADC95E13C749FA00B6B71B /* Poof_iPhone-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Poof_iPhone-hd.png"; sourceTree = "<group>"; };
@@ -3172,6 +3184,12 @@
 				10AA080913070E0300D11E6B /* cocos2d Sources */,
 				2860E32A111B888700E27156 /* iPad */,
 				2860E324111B887F00E27156 /* iPhone */,
+				84ABC60913D5A79F0047ECBA /* FunStINTL_Icon_57.png */,
+				84ABC60A13D5A79F0047ECBA /* FunStINTL_Icon_114.png */,
+				84ABC60F13D5A7F70047ECBA /* FunStINTL_Icon_72.png */,
+				84ABC60013D5A4830047ECBA /* Default-Landscape~ipad.png */,
+				84ABC60113D5A4830047ECBA /* Default.png */,
+				84ABC60213D5A4830047ECBA /* Default@2x.png */,
 				28EEBF621118D79A00187D67 /* Shared */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
@@ -4339,6 +4357,12 @@
 				84A9F0EE13CF45F000A7FDD3 /* animalsAnimsHorse_iPhone-hd.png in Resources */,
 				84A9F0EF13CF45F000A7FDD3 /* animalsAnimsPig_iPhone-hd.plist in Resources */,
 				84A9F0F013CF45F000A7FDD3 /* animalsAnimsPig_iPhone-hd.png in Resources */,
+				84ABC60313D5A4830047ECBA /* Default-Landscape~ipad.png in Resources */,
+				84ABC60413D5A4830047ECBA /* Default.png in Resources */,
+				84ABC60513D5A4830047ECBA /* Default@2x.png in Resources */,
+				84ABC60B13D5A79F0047ECBA /* FunStINTL_Icon_57.png in Resources */,
+				84ABC60C13D5A79F0047ECBA /* FunStINTL_Icon_114.png in Resources */,
+				84ABC61013D5A7F70047ECBA /* FunStINTL_Icon_72.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
