@@ -551,7 +551,7 @@
 			<key>file-soundWrong</key>
 			<string>star_wrong.aif</string>
 			<key>text_eng</key>
-			<string>Phone</string>
+			<string>Telephone</string>
 			<key>text_esp</key>
 			<string>Telefono</string>
 		</dict>
@@ -572,7 +572,7 @@
 			<key>file-soundWrong</key>
 			<string>star_wrong.aif</string>
 			<key>text_eng</key>
-			<string>Phone</string>
+			<string>Telephone</string>
 			<key>text_esp</key>
 			<string>Telefono</string>
 		</dict>
@@ -593,7 +593,7 @@
 			<key>file-soundWrong</key>
 			<string>star_wrong.aif</string>
 			<key>text_eng</key>
-			<string>Phone</string>
+			<string>Telephone</string>
 			<key>text_esp</key>
 			<string>Telefono</string>
 		</dict>
@@ -614,7 +614,7 @@
 			<key>file-soundWrong</key>
 			<string>star_wrong.aif</string>
 			<key>text_eng</key>
-			<string>Phone</string>
+			<string>Telephone</string>
 			<key>text_esp</key>
 			<string>Telefono</string>
 		</dict>
