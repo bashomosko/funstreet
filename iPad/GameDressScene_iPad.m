@@ -6,6 +6,7 @@
 //  Copyright 2011 __MyCompanyName__. All rights reserved.
 //
 
+#import "AppDelegate_iPad.h"
 #import "GameDressScene_iPad.h"
 #import "DDElement.h"
 #import "GameManager.h"
@@ -49,6 +50,8 @@
         }
         
 		//[self beginGame];
+		AppDelegate_iPad * app = (AppDelegate_iPad *)[[UIApplication sharedApplication] delegate];
+		[app.loading stopAnimating];
 		if(![GameManager sharedGameManager].playedGame2Video)
 		{
 			[[GameManager sharedGameManager] setPlayedGame2Video:YES];
@@ -189,7 +192,15 @@
 	[viewController goToNextGame];
 }
 
--(void)beginGame
+-(void)beginGame{
+	AppDelegate_iPad * app = (AppDelegate_iPad *)[[UIApplication sharedApplication] delegate];
+	[app.loading setHidden:NO];
+	[app.loading startAnimating];
+	
+	[self performSelector:@selector(beginGameAfterDelay) withObject:nil afterDelay:1];
+}
+
+-(void)beginGameAfterDelay
 {
 	//[self loadDeviceType];
 	
@@ -279,6 +290,8 @@
 	
 	[self schedule:@selector(playRandomDinoAnim) interval:arc4random() % 5+5];
 
+	AppDelegate_iPad * app = (AppDelegate_iPad *)[[UIApplication sharedApplication] delegate];
+	[app.loading stopAnimating];
 	
 	//[self loadScore];
 	//[self makeScoreAppear:bashoDirected];

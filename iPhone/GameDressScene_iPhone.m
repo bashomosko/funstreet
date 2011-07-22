@@ -49,12 +49,15 @@
         }
         
 		//[self beginGame];
+		AppDelegate_iPhone * app = (AppDelegate_iPhone *)[[UIApplication sharedApplication] delegate];
+		
+		[app.loading stopAnimating];
 		if(![GameManager sharedGameManager].playedGame2Video)
 		{
 			[[GameManager sharedGameManager] setPlayedGame2Video:YES];
             videoFromLoadingScene = YES;
-            AppDelegate_iPhone * app = (AppDelegate_iPhone *)[[UIApplication sharedApplication] delegate];
-            //[app.loading stopAnimating];
+            
+			
             
 			[self loadVideo];
 		}
@@ -195,6 +198,16 @@
 
 -(void)beginGame
 {
+	AppDelegate_iPhone * app = (AppDelegate_iPhone *)[[UIApplication sharedApplication] delegate];
+	[app.loading setHidden:NO];
+	[app.loading startAnimating];
+	
+	[self performSelector:@selector(beginGameAfterDelay) withObject:nil afterDelay:1];
+}
+-(void)beginGameAfterDelay
+{
+	AppDelegate_iPhone * app = (AppDelegate_iPhone *)[[UIApplication sharedApplication] delegate];
+
 	//[self loadDeviceType];
 	
 	self.isTouchEnabled = YES;
@@ -283,8 +296,7 @@
 	
 	[self schedule:@selector(playRandomDinoAnim) interval:arc4random() % 5+5];
 	
-    AppDelegate_iPhone * app = (AppDelegate_iPhone *)[[UIApplication sharedApplication] delegate];
-    //[app.loading stopAnimating];
+	[app.loading stopAnimating];
     
     //[self loadScore];
 	//[self makeScoreAppear:bashoDirected];

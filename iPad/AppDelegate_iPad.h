@@ -11,8 +11,10 @@
 @interface AppDelegate_iPad : NSObject <UIApplicationDelegate> {
     UIWindow *window;
 	IBOutlet UINavigationController * navController;
+	UIActivityIndicatorView * loading;
 }
 
+@property (nonatomic,retain) UIActivityIndicatorView * loading;
 @property (nonatomic, retain) IBOutlet UIWindow *window;
 @property (nonatomic,retain) IBOutlet UINavigationController * navController;
 

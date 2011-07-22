@@ -59,13 +59,15 @@
 			viewController = vc;
 			hasFinishPlayingAnim = YES;
             currentSound = -10;
+			
+			AppDelegate_iPhone * app = (AppDelegate_iPhone *)[[UIApplication sharedApplication] delegate];
+			[app.loading stopAnimating];
+			
 			if(![GameManager sharedGameManager].playedGame1Video)
 			{
 				[[GameManager sharedGameManager] setPlayedGame1Video:YES];
                 videoFromLoadingScene = YES;
-                AppDelegate_iPhone * app = (AppDelegate_iPhone *)[[UIApplication sharedApplication] delegate];
-                
-                //[app.loading stopAnimating];
+               
 				[self loadVideo];
 			}else
 				[self beginGame];
@@ -129,9 +131,19 @@
     [viewController goToSettings];
 }
 
-
 -(void)beginGame
 {
+	AppDelegate_iPhone * app = (AppDelegate_iPhone *)[[UIApplication sharedApplication] delegate];
+	[app.loading setHidden:NO];
+	[app.loading startAnimating];
+	
+	[self performSelector:@selector(beginGameAfterDelay) withObject:nil afterDelay:1];
+}
+
+-(void)beginGameAfterDelay
+{
+	AppDelegate_iPhone * app = (AppDelegate_iPhone *)[[UIApplication sharedApplication] delegate];
+
 	points = 0;
 	
 	bashoDirected = NO;
@@ -206,8 +218,7 @@
 	[self createPalabra];
     [self loadSpinningStuff];
     
-    AppDelegate_iPhone * app = (AppDelegate_iPhone *)[[UIApplication sharedApplication] delegate];
-    //[app.loading stopAnimating];
+   [app.loading stopAnimating];
     
 }
 

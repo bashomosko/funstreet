@@ -7,6 +7,7 @@
 //
 
 // Import the interfaces
+#import "AppDelegate_iPad.h"
 #import "GameWheelScene_iPad.h"
 #import "GameWheel_iPad.h"
 
@@ -63,6 +64,10 @@
 			viewController = vc;
 			hasFinishPlayingAnim = YES;
             currentSound = -10;
+			
+			AppDelegate_iPad * app = (AppDelegate_iPad *)[[UIApplication sharedApplication] delegate];
+			[app.loading stopAnimating];
+			
 			if(![GameManager sharedGameManager].playedGame1Video)
 			{
 				[[GameManager sharedGameManager] setPlayedGame1Video:YES];
@@ -79,7 +84,15 @@
 }
 
 
--(void)beginGame
+-(void)beginGame{
+	AppDelegate_iPad * app = (AppDelegate_iPad *)[[UIApplication sharedApplication] delegate];
+	[app.loading setHidden:NO];
+	[app.loading startAnimating];
+	
+	[self performSelector:@selector(beginGameAfterDelay) withObject:nil afterDelay:1];
+}
+
+-(void)beginGameAfterDelay
 {
 	
 	bashoDirected = NO;
@@ -151,6 +164,9 @@
     [self loadButtons];
 	[self createPalabra];
 	[self loadSpinningStuff];
+	
+	AppDelegate_iPad * app = (AppDelegate_iPad *)[[UIApplication sharedApplication] delegate];
+	[app.loading stopAnimating];
 }
 
 -(void)loadVideo

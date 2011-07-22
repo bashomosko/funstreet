@@ -51,13 +51,22 @@
 
 -(void)loadDress
 {
-    AppDelegate_iPhone * app = (AppDelegate_iPhone *)[[UIApplication sharedApplication] delegate];
+	AppDelegate_iPhone * app = (AppDelegate_iPhone *)[[UIApplication sharedApplication] delegate];
     
-    //[app.loading startAnimating];
+	[app.loading setHidden:NO];
+    [app.loading startAnimating];
 	
-	GameDress_iPhone * gw = [[GameDress_iPhone alloc] 
-						   initWithNibName:@"GameDress_iPhone" bundle:nil];
+	[self performSelector:@selector(startLoadDress) withObject:nil afterDelay:1];
 
+}
+
+-(void)startLoadDress
+{
+	AppDelegate_iPhone * app = (AppDelegate_iPhone *)[[UIApplication sharedApplication] delegate];
+
+	GameDress_iPhone * gw = [[GameDress_iPhone alloc] 
+							 initWithNibName:@"GameDress_iPhone" bundle:nil];
+	
 	[app.navController pushViewController:gw animated:NO];
 	
 	[gw release];
@@ -103,11 +112,19 @@
 {   
     AppDelegate_iPhone * app = (AppDelegate_iPhone *)[[UIApplication sharedApplication] delegate];
     
-    //[app.loading startAnimating];
+	[app.loading setHidden:NO];
+    [app.loading startAnimating];
+	
+	[self performSelector:@selector(startLoadWheel) withObject:nil afterDelay:1];
+}
 
+-(void)startLoadWheel
+{ 
+    AppDelegate_iPhone * app = (AppDelegate_iPhone *)[[UIApplication sharedApplication] delegate];
+	
 	GameWheel * gw = [[GameWheel alloc] 
-					 initWithNibName:@"GameWheel" bundle:nil];
-
+					  initWithNibName:@"GameWheel" bundle:nil];
+	
 	[app.navController pushViewController:gw animated:NO];
 	
 	[gw release];

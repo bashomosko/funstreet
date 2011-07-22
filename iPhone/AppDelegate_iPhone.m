@@ -31,9 +31,9 @@
     
     [loading setCenter:CGPointMake(160, 240)];
     
-    //loading.hidesWhenStopped=YES;
+    //loading.hidesWhenStopped=NO;
     
-    [loading startAnimating];
+    [loading stopAnimating];
 	
 	[window addSubview:navController.view];
     [window addSubview:loading];
