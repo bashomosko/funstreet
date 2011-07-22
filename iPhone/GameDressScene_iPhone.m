@@ -94,6 +94,12 @@
 	[[[CCDirector sharedDirector] openGLView] addSubview:introVideo.view];
 	[introVideo.view setFrame:CGRectMake(0,0,480,320)];
 	[introVideo setControlStyle:MPMovieControlStyleNone];
+    
+    [[NSNotificationCenter defaultCenter]
+	 addObserver:self
+	 selector:@selector(videoPlayerDidFinishLoading:)
+     name:MPMoviePlayerLoadStateDidChangeNotification
+     object:introVideo];
 	
 	[[NSNotificationCenter defaultCenter]
 	 addObserver:self
@@ -109,6 +115,15 @@
 	videoTaps=0;
 	
 	[introVideo play];
+}
+
+-(void)videoPlayerDidFinishLoading: (NSNotification*)aNotification {
+    
+    MPMoviePlayerController * introVideo = [aNotification object];
+	[[NSNotificationCenter defaultCenter] removeObserver:self name:MPMoviePlayerLoadStateDidChangeNotification object:introVideo];
+    
+    [introVideo play];
+    
 }
 
 

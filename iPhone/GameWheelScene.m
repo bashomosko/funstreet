@@ -188,7 +188,7 @@
 	[menu setPosition:ccp(0,0)];
 	
 	//[self loadScore];
-	[self loadButtons];
+	
     
     nSheetToLoad = 0;
     
@@ -198,6 +198,7 @@
 	animalAnimSB = [CCSpriteBatchNode batchNodeWithFile:@"animalsAnims_iPhone.png"];
     
     [self addChild:animalAnimSB z:0];
+    [self loadButtons];
 	[self createPalabra];
     [self loadSpinningStuff];
 }

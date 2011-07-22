@@ -31,7 +31,7 @@
 
 @implementation GameWheelScene_both
 
-@synthesize leverArea,orig;
+@synthesize leverArea,orig,animalsAnim;
 
 -(void)loadDeviceType
 {
@@ -220,7 +220,15 @@
 
 
 -(void)loadButtons
-{
+{   
+    float posX =512 , posY = 384;
+    
+    if ([iPad rangeOfString:@"_iPhone"].location != NSNotFound) {
+        posX = 240;
+        posY = 160;
+    }
+
+    
 	bashoSelectedItems = [[NSMutableArray array]retain];
 	
 	NSMutableArray * btnPos = [self loadBtnPos];
@@ -230,6 +238,8 @@
     
 	//[buttonsData shuffle];
 	
+    animalsAnim = [[NSMutableArray alloc]initWithCapacity:8];
+    
 	tapButtons = [CCMenu menuWithItems:nil];
 	for (int i = 0;i<8;i++)
 	{
@@ -241,6 +251,12 @@
 		[tapButtons addChild:btn z:1 tag:i];
 		btn.position = ccp([[[btnPos objectAtIndex:i] objectForKey:@"x"] intValue],[[[btnPos objectAtIndex:i] objectForKey:@"y"] intValue]);
         btn.userData = [buttonsData objectAtIndex:i];
+        CCSprite * itemAnim = [CCSprite spriteWithSpriteFrameName:[NSString stringWithFormat:@"SeeNSay_%@_ANIM_00000.png",btnName]];
+        [animalsAnim addObject:itemAnim];
+        [animalAnimSB addChild:itemAnim];
+        [itemAnim setVisible:NO];
+        [itemAnim setPosition:ccp(posX,posY)];
+        
 	}
 	[self addChild:tapButtons];
 	[tapButtons setPosition:ccp(0,0)];
@@ -355,17 +371,11 @@
 
 -(void)playAnimForAnimal:(CCMenuItemImage *)btn
 {   
-    float posX =512 , posY = 384;
-    
-    if ([iPad rangeOfString:@"_iPhone"].location != NSNotFound) {
-        posX = 240;
-        posY = 160;
-    }
-    
+        
 	NSMutableDictionary * userData = (NSMutableDictionary *)btn.userData;
 	NSString * animal = [userData objectForKey:@"image"];
 	int framesNum = [[userData objectForKey:@"frames"] intValue];
-	
+    
     if (bashoDirected) {
         [btn setVisible:NO];
     }
@@ -375,16 +385,14 @@
     
     hasFinishPlayingAnim = NO;
     
-    if (itemAnim && !bashoDirected) {
-        [itemAnim stopAllActions];
-        [itemAnim.parent removeChild:itemAnim cleanup:YES];
+    if (!bashoDirected) {
+        [[animalsAnim objectAtIndex:btn.tag] stopAllActions];
     }
-	
-	itemAnim = [CCSprite spriteWithSpriteFrameName:[NSString stringWithFormat:@"SeeNSay_%@_ANIM_00000.png",animal]];
     
-	[animalAnimSB addChild:itemAnim];
-	[itemAnim setPosition:ccp(posX,posY)];
+	CCSprite * itemAnim = [animalsAnim objectAtIndex:[btn tag]];    
 	
+    [itemAnim setVisible:YES];
+    
 	NSMutableArray *animFrames = [NSMutableArray array];
 	for(int i = 0; i <= framesNum; i++) {
 		
@@ -407,9 +415,9 @@
     else {
         [btn setOpacity:255];
     }
-	[n.parent removeChild:n cleanup:YES];
+	//[n.parent removeChild:n cleanup:YES];
     hasFinishPlayingAnim = YES;
-    itemAnim = nil;
+    [n setVisible:NO];
 }
 
 -(void)animateAllAnimals
@@ -1017,6 +1025,7 @@
 	
 	[bashoSelectedItems release];
     [buttonsData release];
+    [animalsAnim release];
 	[super dealloc];
 }
 

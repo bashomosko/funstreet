@@ -96,6 +96,12 @@
 	[introVideo.view setFrame:CGRectMake(0,0,1024,768)];
 	[introVideo setControlStyle:MPMovieControlStyleNone];
 	
+    [[NSNotificationCenter defaultCenter]
+	 addObserver:self
+	 selector:@selector(videoPlayerDidFinishLoading:)
+     name:MPMoviePlayerLoadStateDidChangeNotification
+     object:introVideo];
+    
 	[[NSNotificationCenter defaultCenter]
 	 addObserver:self
 	 selector:@selector(videoPlayerDidFinishPlaying:)
@@ -109,9 +115,17 @@
 	
 	videoTaps=0;
 	
-	[introVideo play];
+	//[introVideo play];
 }
 
+-(void)videoPlayerDidFinishLoading: (NSNotification*)aNotification {
+    
+    MPMoviePlayerController * introVideo = [aNotification object];
+	[[NSNotificationCenter defaultCenter] removeObserver:self name:MPMoviePlayerLoadStateDidChangeNotification object:introVideo];
+    
+    [introVideo play];
+    
+}
 
 -(void)replay
 {	

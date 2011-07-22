@@ -9,25 +9,11 @@
          continueAfterRunningActions = "No"
          isPathRelative = "1"
          filePath = "GameWheelScene_both.m"
-         timestampString = "333039897.226646"
+         timestampString = "333046641.746447"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "380"
-         endingLineNumber = "380"
-         landmarkName = "-playAnimForAnimal:"
-         landmarkType = "5">
-      </FileBreakpoint>
-      <FileBreakpoint
-         shouldBeEnabled = "Yes"
-         ignoreCount = "0"
-         continueAfterRunningActions = "No"
-         isPathRelative = "1"
-         filePath = "GameWheelScene_both.m"
-         timestampString = "333039897.226646"
-         startingColumnNumber = "9223372036854775807"
-         endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "292"
-         endingLineNumber = "292"
+         startingLineNumber = "308"
+         endingLineNumber = "308"
          landmarkName = "-listenSound:withWord:"
          landmarkType = "5">
       </FileBreakpoint>

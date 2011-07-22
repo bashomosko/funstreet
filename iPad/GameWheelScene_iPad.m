@@ -142,12 +142,13 @@
 	
 	
 	//[self loadScore];
-	[self loadButtons];
+	
 	
 	[[ CCSpriteFrameCache sharedSpriteFrameCache] addSpriteFramesWithFile:@"animalsAnims_iPad.plist" textureFile:@"animalsAnims_iPad.png"];
 	animalAnimSB = [CCSpriteBatchNode batchNodeWithFile:@"animalsAnims_iPad.png"];
 	
 	[self addChild:animalAnimSB z:0];
+    [self loadButtons];
 	[self createPalabra];
 	[self loadSpinningStuff];
 }

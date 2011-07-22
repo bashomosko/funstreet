@@ -133,13 +133,16 @@
     CGPoint orig;
     
     BOOL hasFinishPlayingAnim;
-    CCSprite * itemAnim;
     
     int currentSound;
+    NSString * lastAnimal;
+
+    NSMutableArray * animalsAnim;
 }
 
 @property(nonatomic,readwrite) CGRect leverArea;
 @property(nonatomic,readwrite) CGPoint orig;
+@property(nonatomic,retain) NSMutableArray * animalsAnim;
 
 -(void)loadVideo;
 -(void)loadDeviceType;
