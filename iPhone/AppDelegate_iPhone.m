@@ -12,7 +12,7 @@
 
 @implementation AppDelegate_iPhone
 
-@synthesize window,navController;
+@synthesize window,navController,loading;
 
 
 #pragma mark -
@@ -26,8 +26,18 @@
 	// if it fails (SDK < 3.1) use the default director
 	if( ! [CCDirector setDirectorType:kCCDirectorTypeDisplayLink] )
 		[CCDirector setDirectorType:kCCDirectorTypeDefault];
+    
+    loading = [[UIActivityIndicatorView alloc]initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhiteLarge];
+    
+    [loading setCenter:CGPointMake(160, 240)];
+    
+    //loading.hidesWhenStopped=YES;
+    
+    [loading startAnimating];
 	
 	[window addSubview:navController.view];
+    [window addSubview:loading];
+    
 	[self.window makeKeyAndVisible];
 	
     return YES;
@@ -83,6 +93,7 @@
 
 
 - (void)dealloc {
+    [loading release];
 	[navController release];
     [window release];
     [super dealloc];

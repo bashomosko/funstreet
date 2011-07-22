@@ -15,7 +15,6 @@
     
     SettingsViewController_iPhone * sv;
     GameWheelScene * gameWheelLayer;
-
 }
 
 -(void) removeStartupFlicker;

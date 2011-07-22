@@ -10,6 +10,7 @@
 #import "GameWheelScene.h"
 #import "SimpleAudioEngine.h"
 #import "GameManager.h"
+#import "AppDelegate_iPhone.h"
 
 #define BTN_BACKPACK_POS [NSMutableDictionary dictionaryWithObjects:[NSMutableArray arrayWithObjects:[NSNumber numberWithInt:96],[NSNumber numberWithInt:155],nil] forKeys:[NSMutableArray arrayWithObjects:@"x",@"y",nil]]
 #define BTN_BOOTS_POS [NSMutableDictionary dictionaryWithObjects:[NSMutableArray arrayWithObjects:[NSNumber numberWithInt:127],[NSNumber numberWithInt:233],nil] forKeys:[NSMutableArray arrayWithObjects:@"x",@"y",nil]]
@@ -62,6 +63,9 @@
 			{
 				[[GameManager sharedGameManager] setPlayedGame1Video:YES];
                 videoFromLoadingScene = YES;
+                AppDelegate_iPhone * app = (AppDelegate_iPhone *)[[UIApplication sharedApplication] delegate];
+                
+                //[app.loading stopAnimating];
 				[self loadVideo];
 			}else
 				[self beginGame];
@@ -201,6 +205,10 @@
     [self loadButtons];
 	[self createPalabra];
     [self loadSpinningStuff];
+    
+    AppDelegate_iPhone * app = (AppDelegate_iPhone *)[[UIApplication sharedApplication] delegate];
+    //[app.loading stopAnimating];
+    
 }
 
 -(void)loadSpriteSheets {

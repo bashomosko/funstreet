@@ -10,6 +10,7 @@
 #import "DDElement_iPhone.h"
 #import "GameManager.h"
 #import "SimpleAudioEngine.h"
+#import "AppDelegate_iPhone.h"
 
 @implementation GameDressScene_iPhone
 @synthesize viewController;
@@ -52,6 +53,9 @@
 		{
 			[[GameManager sharedGameManager] setPlayedGame2Video:YES];
             videoFromLoadingScene = YES;
+            AppDelegate_iPhone * app = (AppDelegate_iPhone *)[[UIApplication sharedApplication] delegate];
+            //[app.loading stopAnimating];
+            
 			[self loadVideo];
 		}
 		else
@@ -279,8 +283,10 @@
 	
 	[self schedule:@selector(playRandomDinoAnim) interval:arc4random() % 5+5];
 	
-	
-	//[self loadScore];
+    AppDelegate_iPhone * app = (AppDelegate_iPhone *)[[UIApplication sharedApplication] delegate];
+    //[app.loading stopAnimating];
+    
+    //[self loadScore];
 	//[self makeScoreAppear:bashoDirected];
 }
 

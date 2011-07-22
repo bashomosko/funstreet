@@ -10,6 +10,7 @@
 
 #import "SimpleAudioEngine.h"
 #import "GameManager.h"
+#import "AppDelegate_iPhone.h"
 
 
 @implementation NSMutableArray (Shuffling)
@@ -92,7 +93,10 @@
 }
 
 -(void) videoPlayerDidFinishPlaying: (NSNotification*)aNotification
-{
+{   
+    AppDelegate_iPhone * app = (AppDelegate_iPhone *)[[UIApplication sharedApplication] delegate];
+    
+    //[app.loading startAnimating];
 	[GameManager sharedGameManager].onPause = NO;
 	MPMoviePlayerController * introVideoFPly = [aNotification object];
 	[[NSNotificationCenter defaultCenter] removeObserver:self name:MPMoviePlayerPlaybackDidFinishNotification object:introVideoFPly];

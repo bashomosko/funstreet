@@ -31,6 +31,10 @@
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
     
+    AppDelegate_iPhone * app = (AppDelegate_iPhone *)[[UIApplication sharedApplication] delegate];
+    
+    //[app.loading stopAnimating];
+    
     if(![GameManager sharedGameManager].playedMenuVideo)
 	{
 		[[GameManager sharedGameManager] setPlayedMenuVideo:YES];
@@ -47,11 +51,12 @@
 
 -(void)loadDress
 {
+    AppDelegate_iPhone * app = (AppDelegate_iPhone *)[[UIApplication sharedApplication] delegate];
+    
+    //[app.loading startAnimating];
 	
 	GameDress_iPhone * gw = [[GameDress_iPhone alloc] 
 						   initWithNibName:@"GameDress_iPhone" bundle:nil];
-
-	AppDelegate_iPhone * app = (AppDelegate_iPhone *)[[UIApplication sharedApplication] delegate];
 
 	[app.navController pushViewController:gw animated:NO];
 	
@@ -95,13 +100,14 @@
 }
 
 -(void)loadWheel
-{
+{   
+    AppDelegate_iPhone * app = (AppDelegate_iPhone *)[[UIApplication sharedApplication] delegate];
+    
+    //[app.loading startAnimating];
 
 	GameWheel * gw = [[GameWheel alloc] 
 					 initWithNibName:@"GameWheel" bundle:nil];
 
-	AppDelegate_iPhone * app = (AppDelegate_iPhone *)[[UIApplication sharedApplication] delegate];
-	
 	[app.navController pushViewController:gw animated:NO];
 	
 	[gw release];

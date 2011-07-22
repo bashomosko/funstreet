@@ -135,7 +135,6 @@
     BOOL hasFinishPlayingAnim;
     
     int currentSound;
-    NSString * lastAnimal;
 
     NSMutableArray * animalsAnim;
 }
