@@ -151,7 +151,6 @@
 		 {
 			 [m setIsEnabled:YES];
 			 m.opacity =255;
-			 
 		 }
 	}
 
@@ -250,9 +249,13 @@
 -(void)listenSound:(CCMenuItemImage *)btn withWord:(BOOL)withWord
 {
 	if([GameManager sharedGameManager].onPause) return; 
-	if((playingSound && !bashoDirected) || (dinoSpinning && !bashoDirected)) return;
+
+    if(((playingSound && (hasFinishPlayingAnim || bashoDirected)) && !bashoDirected) || (dinoSpinning && !bashoDirected)) {
+        return;
+    }
     if ([btn opacity] == 90 && !dinoSpinning) return;
-	//[btn setIsEnabled:NO];
+
+    	//[btn setIsEnabled:NO];
 	
 	NSString * word = nil;
 	NSString * bashoDirectedWrongSound = nil;
@@ -281,10 +284,13 @@
 
     
 	if(!bashoDirected)
-	{
-		[self playAnimForAnimal:btn];
+	{  
+        [self playAnimForAnimal:btn];
 		if([GameManager sharedGameManager].soundsEnabled)
-			[[SimpleAudioEngine sharedEngine] playEffect:sound];
+            if (currentSound != -10) {
+                [[SimpleAudioEngine sharedEngine] stopEffect:currentSound];
+            }
+			currentSound = [[SimpleAudioEngine sharedEngine] playEffect:sound];
 		[self showPalabra:word sound:wordSound];
 	}else {
 		
@@ -302,7 +308,7 @@
 			if([GameManager sharedGameManager].soundsEnabled)
 			{
 				if(bashoDirected)
-				{
+				{        
 					[self playAnimForAnimal:btn];
 					[[SimpleAudioEngine sharedEngine] playEffect:@"RightAnswer.mp3"];
 					[[SimpleAudioEngine sharedEngine] playEffect:sound];
@@ -360,11 +366,22 @@
 	NSString * animal = [userData objectForKey:@"image"];
 	int framesNum = [[userData objectForKey:@"frames"] intValue];
 	
-	[btn setVisible:NO];
+    if (bashoDirected) {
+        [btn setVisible:NO];
+    }
+    else {
+        [btn setOpacity:0];
+    }
     
     hasFinishPlayingAnim = NO;
+    
+    if (itemAnim && !bashoDirected) {
+        [itemAnim stopAllActions];
+        [itemAnim.parent removeChild:itemAnim cleanup:YES];
+    }
 	
-	CCSprite * itemAnim = [CCSprite spriteWithSpriteFrameName:[NSString stringWithFormat:@"SeeNSay_%@_ANIM_00000.png",animal]];
+	itemAnim = [CCSprite spriteWithSpriteFrameName:[NSString stringWithFormat:@"SeeNSay_%@_ANIM_00000.png",animal]];
+    
 	[animalAnimSB addChild:itemAnim];
 	[itemAnim setPosition:ccp(posX,posY)];
 	
@@ -384,9 +401,15 @@
 -(void)removeAnimalsAnim:(CCNode *)n data:(void*)data
 {
 	CCMenuItemImage * btn = (CCMenuItemImage *)data;
-	[btn setVisible:YES];
+    if (bashoDirected) {
+        [btn setVisible:YES];
+    }
+    else {
+        [btn setOpacity:255];
+    }
 	[n.parent removeChild:n cleanup:YES];
     hasFinishPlayingAnim = YES;
+    itemAnim = nil;
 }
 
 -(void)animateAllAnimals
@@ -458,7 +481,10 @@
 -(void)playBtnEffect:(CCMenuItemImage *)btn
 {
 	stopWhenRotationReached = NO;
-	if(stopWhenRotationReached ||playingSound || (dinoSpinning && !bashoDirected)) return;
+	if(stopWhenRotationReached ||(playingSound && hasFinishPlayingAnim)|| (dinoSpinning && !bashoDirected)){
+        return;
+    }
+    
 	
 	//[btn setIsEnabled:NO];
 	selectedSound = btn.tag;
@@ -587,7 +613,7 @@
 	UITouch *touch = [touches anyObject];
     CGPoint location = [touch locationInView: [touch view]];
     location = [[CCDirector sharedDirector] convertToGL: location];	
-    if (!hasFinishPlayingAnim) return;
+    if (!hasFinishPlayingAnim && bashoDirected) return;
         
 	canDragDino = YES;
 	//if (bashoDirected) return;

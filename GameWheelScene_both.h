@@ -133,6 +133,9 @@
     CGPoint orig;
     
     BOOL hasFinishPlayingAnim;
+    CCSprite * itemAnim;
+    
+    int currentSound;
 }
 
 @property(nonatomic,readwrite) CGRect leverArea;
