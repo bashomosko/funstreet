@@ -10,6 +10,7 @@
 
 #import "SimpleAudioEngine.h"
 #import "GameManager.h"
+#import "AppDelegate_iPhone.h"
 
 
 @implementation NSMutableArray (Shuffling)
@@ -31,7 +32,7 @@
 
 @implementation GameWheelScene_both
 
-@synthesize leverArea,orig;
+@synthesize leverArea,orig,animalsAnim;
 
 -(void)loadDeviceType
 {
@@ -92,7 +93,10 @@
 }
 
 -(void) videoPlayerDidFinishPlaying: (NSNotification*)aNotification
-{
+{   
+    AppDelegate_iPhone * app = (AppDelegate_iPhone *)[[UIApplication sharedApplication] delegate];
+    
+    //[app.loading startAnimating];
 	[GameManager sharedGameManager].onPause = NO;
 	MPMoviePlayerController * introVideoFPly = [aNotification object];
 	[[NSNotificationCenter defaultCenter] removeObserver:self name:MPMoviePlayerPlaybackDidFinishNotification object:introVideoFPly];
@@ -151,7 +155,6 @@
 		 {
 			 [m setIsEnabled:YES];
 			 m.opacity =255;
-			 
 		 }
 	}
 
@@ -221,7 +224,15 @@
 
 
 -(void)loadButtons
-{
+{   
+    float posX =512 , posY = 384;
+    
+    if ([iPad rangeOfString:@"_iPhone"].location != NSNotFound) {
+        posX = 240;
+        posY = 160;
+    }
+
+    
 	bashoSelectedItems = [[NSMutableArray array]retain];
 	
 	NSMutableArray * btnPos = [self loadBtnPos];
@@ -231,6 +242,8 @@
     
 	//[buttonsData shuffle];
 	
+    animalsAnim = [[NSMutableArray alloc]initWithCapacity:8];
+    
 	tapButtons = [CCMenu menuWithItems:nil];
 	for (int i = 0;i<8;i++)
 	{
@@ -242,6 +255,12 @@
 		[tapButtons addChild:btn z:1 tag:i];
 		btn.position = ccp([[[btnPos objectAtIndex:i] objectForKey:@"x"] intValue],[[[btnPos objectAtIndex:i] objectForKey:@"y"] intValue]);
         btn.userData = [buttonsData objectAtIndex:i];
+        CCSprite * itemAnim = [CCSprite spriteWithSpriteFrameName:[NSString stringWithFormat:@"SeeNSay_%@_ANIM_00000.png",btnName]];
+        [animalsAnim addObject:itemAnim];
+        [animalAnimSB addChild:itemAnim];
+        [itemAnim setVisible:NO];
+        [itemAnim setPosition:ccp(posX,posY)];
+        
 	}
 	[self addChild:tapButtons];
 	[tapButtons setPosition:ccp(0,0)];
@@ -250,9 +269,13 @@
 -(void)listenSound:(CCMenuItemImage *)btn withWord:(BOOL)withWord
 {
 	if([GameManager sharedGameManager].onPause) return; 
-	if((playingSound && !bashoDirected) || (dinoSpinning && !bashoDirected)) return;
+
+    if(((playingSound && (hasFinishPlayingAnim || bashoDirected)) && !bashoDirected) || (dinoSpinning && !bashoDirected)) {
+        return;
+    }
     if ([btn opacity] == 90 && !dinoSpinning) return;
-	//[btn setIsEnabled:NO];
+
+    	//[btn setIsEnabled:NO];
 	
 	NSString * word = nil;
 	NSString * bashoDirectedWrongSound = nil;
@@ -281,10 +304,13 @@
 
     
 	if(!bashoDirected)
-	{
-		[self playAnimForAnimal:btn];
+	{  
+        [self playAnimForAnimal:btn];
 		if([GameManager sharedGameManager].soundsEnabled)
-			[[SimpleAudioEngine sharedEngine] playEffect:sound];
+            if (currentSound != -10) {
+                [[SimpleAudioEngine sharedEngine] stopEffect:currentSound];
+            }
+			currentSound = [[SimpleAudioEngine sharedEngine] playEffect:sound];
 		[self showPalabra:word sound:wordSound];
 	}else {
 		
@@ -302,7 +328,7 @@
 			if([GameManager sharedGameManager].soundsEnabled)
 			{
 				if(bashoDirected)
-				{
+				{        
 					[self playAnimForAnimal:btn];
 					[[SimpleAudioEngine sharedEngine] playEffect:@"RightAnswer.mp3"];
 					[[SimpleAudioEngine sharedEngine] playEffect:sound];
@@ -349,25 +375,28 @@
 
 -(void)playAnimForAnimal:(CCMenuItemImage *)btn
 {   
-    float posX =512 , posY = 384;
-    
-    if ([iPad rangeOfString:@"_iPhone"].location != NSNotFound) {
-        posX = 240;
-        posY = 160;
-    }
-    
+        
 	NSMutableDictionary * userData = (NSMutableDictionary *)btn.userData;
 	NSString * animal = [userData objectForKey:@"image"];
 	int framesNum = [[userData objectForKey:@"frames"] intValue];
-	
-	[btn setVisible:NO];
+    
+    if (bashoDirected) {
+        [btn setVisible:NO];
+    }
+    else {
+        [btn setOpacity:0];
+    }
     
     hasFinishPlayingAnim = NO;
+    
+    if (!bashoDirected) {
+        [[animalsAnim objectAtIndex:btn.tag] stopAllActions];
+    }
+    
+	CCSprite * itemAnim = [animalsAnim objectAtIndex:[btn tag]];    
 	
-	CCSprite * itemAnim = [CCSprite spriteWithSpriteFrameName:[NSString stringWithFormat:@"SeeNSay_%@_ANIM_00000.png",animal]];
-	[animalAnimSB addChild:itemAnim];
-	[itemAnim setPosition:ccp(posX,posY)];
-	
+    [itemAnim setVisible:YES];
+    
 	NSMutableArray *animFrames = [NSMutableArray array];
 	for(int i = 0; i <= framesNum; i++) {
 		
@@ -384,9 +413,15 @@
 -(void)removeAnimalsAnim:(CCNode *)n data:(void*)data
 {
 	CCMenuItemImage * btn = (CCMenuItemImage *)data;
-	[btn setVisible:YES];
-	[n.parent removeChild:n cleanup:YES];
+    if (bashoDirected) {
+        [btn setVisible:YES];
+    }
+    else {
+        [btn setOpacity:255];
+    }
+	//[n.parent removeChild:n cleanup:YES];
     hasFinishPlayingAnim = YES;
+    [n setVisible:NO];
 }
 
 -(void)animateAllAnimals
@@ -458,7 +493,10 @@
 -(void)playBtnEffect:(CCMenuItemImage *)btn
 {
 	stopWhenRotationReached = NO;
-	if(stopWhenRotationReached ||playingSound || (dinoSpinning && !bashoDirected)) return;
+	if(stopWhenRotationReached ||(playingSound && hasFinishPlayingAnim)|| (dinoSpinning && !bashoDirected)){
+        return;
+    }
+    
 	
 	//[btn setIsEnabled:NO];
 	selectedSound = btn.tag;
@@ -587,7 +625,7 @@
 	UITouch *touch = [touches anyObject];
     CGPoint location = [touch locationInView: [touch view]];
     location = [[CCDirector sharedDirector] convertToGL: location];	
-    if (!hasFinishPlayingAnim) return;
+    if (!hasFinishPlayingAnim && bashoDirected) return;
         
 	canDragDino = YES;
 	//if (bashoDirected) return;
@@ -991,6 +1029,7 @@
 	
 	[bashoSelectedItems release];
     [buttonsData release];
+    [animalsAnim release];
 	[super dealloc];
 }
 

@@ -10,6 +10,7 @@
 #import "DDElement_iPhone.h"
 #import "GameManager.h"
 #import "SimpleAudioEngine.h"
+#import "AppDelegate_iPhone.h"
 
 @implementation GameDressScene_iPhone
 @synthesize viewController;
@@ -48,10 +49,16 @@
         }
         
 		//[self beginGame];
+		AppDelegate_iPhone * app = (AppDelegate_iPhone *)[[UIApplication sharedApplication] delegate];
+		
+		[app.loading stopAnimating];
 		if(![GameManager sharedGameManager].playedGame2Video)
 		{
 			[[GameManager sharedGameManager] setPlayedGame2Video:YES];
             videoFromLoadingScene = YES;
+            
+			
+            
 			[self loadVideo];
 		}
 		else
@@ -94,6 +101,12 @@
 	[[[CCDirector sharedDirector] openGLView] addSubview:introVideo.view];
 	[introVideo.view setFrame:CGRectMake(0,0,480,320)];
 	[introVideo setControlStyle:MPMovieControlStyleNone];
+    
+    [[NSNotificationCenter defaultCenter]
+	 addObserver:self
+	 selector:@selector(videoPlayerDidFinishLoading:)
+     name:MPMoviePlayerLoadStateDidChangeNotification
+     object:introVideo];
 	
 	[[NSNotificationCenter defaultCenter]
 	 addObserver:self
@@ -109,6 +122,15 @@
 	videoTaps=0;
 	
 	[introVideo play];
+}
+
+-(void)videoPlayerDidFinishLoading: (NSNotification*)aNotification {
+    
+    MPMoviePlayerController * introVideo = [aNotification object];
+	[[NSNotificationCenter defaultCenter] removeObserver:self name:MPMoviePlayerLoadStateDidChangeNotification object:introVideo];
+    
+    [introVideo play];
+    
 }
 
 
@@ -176,6 +198,16 @@
 
 -(void)beginGame
 {
+	AppDelegate_iPhone * app = (AppDelegate_iPhone *)[[UIApplication sharedApplication] delegate];
+	[app.loading setHidden:NO];
+	[app.loading startAnimating];
+	
+	[self performSelector:@selector(beginGameAfterDelay) withObject:nil afterDelay:1];
+}
+-(void)beginGameAfterDelay
+{
+	AppDelegate_iPhone * app = (AppDelegate_iPhone *)[[UIApplication sharedApplication] delegate];
+
 	//[self loadDeviceType];
 	
 	self.isTouchEnabled = YES;
@@ -264,8 +296,9 @@
 	
 	[self schedule:@selector(playRandomDinoAnim) interval:arc4random() % 5+5];
 	
-	
-	//[self loadScore];
+	[app.loading stopAnimating];
+    
+    //[self loadScore];
 	//[self makeScoreAppear:bashoDirected];
 }
 

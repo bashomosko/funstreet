@@ -56,8 +56,18 @@
 	return NO;
 }
 
-
 -(void)loadWheel
+{
+	AppDelegate_iPad * app = (AppDelegate_iPad *)[[UIApplication sharedApplication] delegate];
+    
+	[app.loading setHidden:NO];
+    [app.loading startAnimating];
+	
+	[self performSelector:@selector(startLoadWheel) withObject:nil afterDelay:1];
+	
+}
+
+-(void)startLoadWheel
 {
 	GameWheel_iPad * gw = [[GameWheel_iPad alloc] 
 						   initWithNibName:@"GameWheel_iPad" bundle:nil];
@@ -70,6 +80,17 @@
 }
 
 -(void)loadDress
+{
+	AppDelegate_iPad * app = (AppDelegate_iPad *)[[UIApplication sharedApplication] delegate];
+    
+	[app.loading setHidden:NO];
+    [app.loading startAnimating];
+	
+	[self performSelector:@selector(startLoadDress) withObject:nil afterDelay:1];
+	
+}
+
+-(void)startLoadDress
 {
 	GameDress_iPad * gw = [[GameDress_iPad alloc] 
 						   initWithNibName:@"GameDress_iPad" bundle:nil];

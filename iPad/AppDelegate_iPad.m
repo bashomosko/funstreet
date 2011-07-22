@@ -12,7 +12,7 @@
 
 @implementation AppDelegate_iPad
 
-@synthesize window,navController;
+@synthesize window,navController,loading;
 
 
 #pragma mark -
@@ -23,7 +23,17 @@
 	[SimpleAudioEngine sharedEngine];
     // Override point for customization after application launch.
     
+	loading = [[UIActivityIndicatorView alloc]initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhiteLarge];
+    
+    [loading setCenter:CGPointMake(384, 512)];
+    
+    //loading.hidesWhenStopped=NO;
+    
+    [loading stopAnimating];
+	
 	[window addSubview:navController.view];
+    [window addSubview:loading];
+	
     [self.window makeKeyAndVisible];
     
     return YES;
@@ -64,6 +74,7 @@
 
 
 - (void)dealloc {
+	[loading release];
     [window release];
     [super dealloc];
 }

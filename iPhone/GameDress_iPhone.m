@@ -58,7 +58,10 @@
 	[director setAnimationInterval:1.0/60];
 	[director setDisplayFPS:YES];
 	
-	
+    [app.loading removeFromSuperview];
+    [app.window addSubview:app.loading];
+    //[app.loading startAnimating];
+    
 	// make the OpenGLView a child of the view controller
 	[self setView:glView];
 	
@@ -66,7 +69,7 @@
 	
 	// Removes the startup flicker
 	[self removeStartupFlicker];
-	
+    
 	// Run the intro Scene
     GameDressScene_iPhone * gameDressScene = [GameDressScene_iPhone sceneWithDressVC:self bashoDirected:NO playVid:YES playingAgain:NO];
     gameDressLayer = (GameDressScene_iPhone*)[gameDressScene getChildByTag:1000];
@@ -177,6 +180,7 @@
 
 
 - (void)dealloc {
+    
     [super dealloc];
 }
 

@@ -6,6 +6,7 @@
 //  Copyright 2011 __MyCompanyName__. All rights reserved.
 //
 
+#import "AppDelegate_iPad.h"
 #import "GameDressScene_iPad.h"
 #import "DDElement.h"
 #import "GameManager.h"
@@ -49,6 +50,8 @@
         }
         
 		//[self beginGame];
+		AppDelegate_iPad * app = (AppDelegate_iPad *)[[UIApplication sharedApplication] delegate];
+		[app.loading stopAnimating];
 		if(![GameManager sharedGameManager].playedGame2Video)
 		{
 			[[GameManager sharedGameManager] setPlayedGame2Video:YES];
@@ -96,6 +99,12 @@
 	[introVideo.view setFrame:CGRectMake(0,0,1024,768)];
 	[introVideo setControlStyle:MPMovieControlStyleNone];
 	
+    [[NSNotificationCenter defaultCenter]
+	 addObserver:self
+	 selector:@selector(videoPlayerDidFinishLoading:)
+     name:MPMoviePlayerLoadStateDidChangeNotification
+     object:introVideo];
+    
 	[[NSNotificationCenter defaultCenter]
 	 addObserver:self
 	 selector:@selector(videoPlayerDidFinishPlaying:)
@@ -109,9 +118,17 @@
 	
 	videoTaps=0;
 	
-	[introVideo play];
+	//[introVideo play];
 }
 
+-(void)videoPlayerDidFinishLoading: (NSNotification*)aNotification {
+    
+    MPMoviePlayerController * introVideo = [aNotification object];
+	[[NSNotificationCenter defaultCenter] removeObserver:self name:MPMoviePlayerLoadStateDidChangeNotification object:introVideo];
+    
+    [introVideo play];
+    
+}
 
 -(void)replay
 {	
@@ -175,7 +192,15 @@
 	[viewController goToNextGame];
 }
 
--(void)beginGame
+-(void)beginGame{
+	AppDelegate_iPad * app = (AppDelegate_iPad *)[[UIApplication sharedApplication] delegate];
+	[app.loading setHidden:NO];
+	[app.loading startAnimating];
+	
+	[self performSelector:@selector(beginGameAfterDelay) withObject:nil afterDelay:1];
+}
+
+-(void)beginGameAfterDelay
 {
 	//[self loadDeviceType];
 	
@@ -265,6 +290,8 @@
 	
 	[self schedule:@selector(playRandomDinoAnim) interval:arc4random() % 5+5];
 
+	AppDelegate_iPad * app = (AppDelegate_iPad *)[[UIApplication sharedApplication] delegate];
+	[app.loading stopAnimating];
 	
 	//[self loadScore];
 	//[self makeScoreAppear:bashoDirected];

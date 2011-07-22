@@ -66,6 +66,14 @@
 	
 	// Removes the startup flicker
 	[self removeStartupFlicker];
+    
+    if(![GameManager sharedGameManager].playedGame1Video)
+    {
+       
+        
+        //[loading  startAnimating];
+    }
+
 	
 	// Run the intro Scene
 	//[[CCDirector sharedDirector] runWithScene: [GameWheelScene sceneWithWheelVC:self]];	

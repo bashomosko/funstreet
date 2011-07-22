@@ -10,6 +10,7 @@
 #import "GameWheelScene.h"
 #import "SimpleAudioEngine.h"
 #import "GameManager.h"
+#import "AppDelegate_iPhone.h"
 
 #define BTN_BACKPACK_POS [NSMutableDictionary dictionaryWithObjects:[NSMutableArray arrayWithObjects:[NSNumber numberWithInt:96],[NSNumber numberWithInt:155],nil] forKeys:[NSMutableArray arrayWithObjects:@"x",@"y",nil]]
 #define BTN_BOOTS_POS [NSMutableDictionary dictionaryWithObjects:[NSMutableArray arrayWithObjects:[NSNumber numberWithInt:127],[NSNumber numberWithInt:233],nil] forKeys:[NSMutableArray arrayWithObjects:@"x",@"y",nil]]
@@ -57,10 +58,16 @@
 			self.isTouchEnabled = YES;
 			viewController = vc;
 			hasFinishPlayingAnim = YES;
+            currentSound = -10;
+			
+			AppDelegate_iPhone * app = (AppDelegate_iPhone *)[[UIApplication sharedApplication] delegate];
+			[app.loading stopAnimating];
+			
 			if(![GameManager sharedGameManager].playedGame1Video)
 			{
 				[[GameManager sharedGameManager] setPlayedGame1Video:YES];
                 videoFromLoadingScene = YES;
+               
 				[self loadVideo];
 			}else
 				[self beginGame];
@@ -124,9 +131,19 @@
     [viewController goToSettings];
 }
 
-
 -(void)beginGame
 {
+	AppDelegate_iPhone * app = (AppDelegate_iPhone *)[[UIApplication sharedApplication] delegate];
+	[app.loading setHidden:NO];
+	[app.loading startAnimating];
+	
+	[self performSelector:@selector(beginGameAfterDelay) withObject:nil afterDelay:1];
+}
+
+-(void)beginGameAfterDelay
+{
+	AppDelegate_iPhone * app = (AppDelegate_iPhone *)[[UIApplication sharedApplication] delegate];
+
 	points = 0;
 	
 	bashoDirected = NO;
@@ -187,7 +204,7 @@
 	[menu setPosition:ccp(0,0)];
 	
 	//[self loadScore];
-	[self loadButtons];
+	
     
     nSheetToLoad = 0;
     
@@ -197,8 +214,12 @@
 	animalAnimSB = [CCSpriteBatchNode batchNodeWithFile:@"animalsAnims_iPhone.png"];
     
     [self addChild:animalAnimSB z:0];
+    [self loadButtons];
 	[self createPalabra];
     [self loadSpinningStuff];
+    
+   [app.loading stopAnimating];
+    
 }
 
 -(void)loadSpriteSheets {

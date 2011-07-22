@@ -27,6 +27,7 @@
     CCSpriteBatchNode * animalAnimSBHorse;
     CCSpriteBatchNode * animalAnimSBPig;
     int nSheetToLoad;
+    
 }
 
 // returns a Scene that contains the HelloWorld as the only child

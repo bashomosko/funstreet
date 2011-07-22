@@ -13,8 +13,11 @@
     UIWindow *window;
 	MainMenu * mm;
 	IBOutlet UINavigationController * navController;
+    UIActivityIndicatorView * loading;
+    
 }
 
+@property (nonatomic,retain) UIActivityIndicatorView * loading;
 @property (nonatomic, retain) IBOutlet UIWindow *window;
 @property (nonatomic,retain) IBOutlet UINavigationController * navController;
 
