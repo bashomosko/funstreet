@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import "MainMenu.h"
+#import "ActivityIndicator.h"
 
-@interface AppDelegate_iPhone : NSObject <UIApplicationDelegate> {
+@interface AppDelegate_iPhone : ActivityIndicator <UIApplicationDelegate> {
     UIWindow *window;
 	MainMenu * mm;
 	IBOutlet UINavigationController * navController;

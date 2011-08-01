@@ -51,7 +51,9 @@
 		//[self beginGame];
 		AppDelegate_iPhone * app = (AppDelegate_iPhone *)[[UIApplication sharedApplication] delegate];
 		
-		[app.loading stopAnimating];
+		[app.activityImageView stopAnimating];//01/08/2011
+        [app.activityImageView setHidden:YES];//01/08/2011
+        [app.backgroundActivity setHidden:YES];//01/08/2011
 		if(![GameManager sharedGameManager].playedGame2Video)
 		{
 			[[GameManager sharedGameManager] setPlayedGame2Video:YES];
@@ -199,8 +201,10 @@
 -(void)beginGame
 {
 	AppDelegate_iPhone * app = (AppDelegate_iPhone *)[[UIApplication sharedApplication] delegate];
-	[app.loading setHidden:NO];
-	[app.loading startAnimating];
+	[app.activityImageView setHidden:NO];//01/08/2011
+    [app.backgroundActivity setHidden:NO];//01/08/2011
+	[app.activityImageView startAnimating];//01/08/2011
+    [app.backgroundActivity setHidden:NO];
 	
 	[self performSelector:@selector(beginGameAfterDelay) withObject:nil afterDelay:1];
 }
@@ -296,7 +300,9 @@
 	
 	[self schedule:@selector(playRandomDinoAnim) interval:arc4random() % 5+5];
 	
-	[app.loading stopAnimating];
+	[app.activityImageView stopAnimating];//01/08/2011
+    [app.activityImageView setHidden:YES];//01/08/2011
+    [app.backgroundActivity setHidden:YES];//01/08/2011
     
     //[self loadScore];
 	//[self makeScoreAppear:bashoDirected];

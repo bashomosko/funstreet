@@ -66,7 +66,10 @@
             currentSound = -10;
 			
 			AppDelegate_iPad * app = (AppDelegate_iPad *)[[UIApplication sharedApplication] delegate];
-			[app.loading stopAnimating];
+			//[app.loading stopAnimating];
+            [app.activityImageView stopAnimating];//01/08/2011
+            [app.activityImageView setHidden:YES];//01/08/2011
+            [app.backgroundActivity setHidden:YES];//01/08/2011
 			
 			if(![GameManager sharedGameManager].playedGame1Video)
 			{
@@ -86,8 +89,9 @@
 
 -(void)beginGame{
 	AppDelegate_iPad * app = (AppDelegate_iPad *)[[UIApplication sharedApplication] delegate];
-	[app.loading setHidden:NO];
-	[app.loading startAnimating];
+	[app.activityImageView setHidden:NO];//01/08/2011
+    [app.backgroundActivity setHidden:NO];//01/08/2011
+	[app.activityImageView startAnimating];//01/08/2011
 	
 	[self performSelector:@selector(beginGameAfterDelay) withObject:nil afterDelay:1];
 }
@@ -166,7 +170,9 @@
 	[self loadSpinningStuff];
 	
 	AppDelegate_iPad * app = (AppDelegate_iPad *)[[UIApplication sharedApplication] delegate];
-	[app.loading stopAnimating];
+	[app.activityImageView stopAnimating];//01/08/2011
+    [app.activityImageView setHidden:YES];//01/08/2011
+    [app.backgroundActivity setHidden:YES];//01/08/2011
 }
 
 -(void)loadVideo

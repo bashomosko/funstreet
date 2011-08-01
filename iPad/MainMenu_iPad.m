@@ -60,8 +60,11 @@
 {
 	AppDelegate_iPad * app = (AppDelegate_iPad *)[[UIApplication sharedApplication] delegate];
     
-	[app.loading setHidden:NO];
-    [app.loading startAnimating];
+    [app.backgroundActivity setHidden:NO];
+	[app.activityImageView setHidden:NO];//01/08/2011
+    [app.activityImageView startAnimating];//01/08/2011
+    
+    [btnWheel setEnabled:NO];//01/08/2011
 	
 	[self performSelector:@selector(startLoadWheel) withObject:nil afterDelay:1];
 	
@@ -73,6 +76,8 @@
 						   initWithNibName:@"GameWheel_iPad" bundle:nil];
 	
 	AppDelegate_iPad * app = (AppDelegate_iPad *)[[UIApplication sharedApplication] delegate];
+    
+    [btnWheel setEnabled:YES];//01/08/2011
 	
 	[app.navController pushViewController:gw animated:NO];
 	
@@ -83,8 +88,11 @@
 {
 	AppDelegate_iPad * app = (AppDelegate_iPad *)[[UIApplication sharedApplication] delegate];
     
-	[app.loading setHidden:NO];
-    [app.loading startAnimating];
+    [app.backgroundActivity setHidden:NO];
+	[app.activityImageView setHidden:NO];//01/08/2011
+    [app.activityImageView startAnimating];//01/08/2011
+    
+    [btnDress setEnabled:NO];//01/08/2011
 	
 	[self performSelector:@selector(startLoadDress) withObject:nil afterDelay:1];
 	
@@ -96,6 +104,8 @@
 						   initWithNibName:@"GameDress_iPad" bundle:nil];
 	
 	AppDelegate_iPad * app = (AppDelegate_iPad *)[[UIApplication sharedApplication] delegate];
+    
+    [btnDress setEnabled:YES];//01/08/2011
 	
 	[app.navController pushViewController:gw animated:NO];
 	

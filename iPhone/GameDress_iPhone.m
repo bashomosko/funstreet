@@ -105,7 +105,7 @@
 	[director end];	
 	[[SimpleAudioEngine sharedEngine] playBackgroundMusic:@"backgroundMusic.mp3"];
 	AppDelegate_iPhone * app = (AppDelegate_iPhone *)[[UIApplication sharedApplication] delegate];
-	
+    
 	[app.navController popViewControllerAnimated:NO];
 }
 
