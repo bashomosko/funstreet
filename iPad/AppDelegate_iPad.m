@@ -12,7 +12,7 @@
 
 @implementation AppDelegate_iPad
 
-@synthesize window,navController,loading/*,statusImage,activityImageView*/;
+@synthesize window,navController,loading;
 
 
 #pragma mark -
