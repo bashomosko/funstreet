@@ -27,22 +27,48 @@
 	if( ! [CCDirector setDirectorType:kCCDirectorTypeDisplayLink] )
 		[CCDirector setDirectorType:kCCDirectorTypeDefault];
     
-    loading = [[UIActivityIndicatorView alloc]initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhiteLarge];
+    /*loading = [[UIActivityIndicatorView alloc]initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhiteLarge];
     
     [loading setCenter:CGPointMake(160, 240)];
     
     //loading.hidesWhenStopped=NO;
     
-    [loading stopAnimating];
+    [loading stopAnimating];*/
+    
+    
+    [self loadActivityIndicator];
+    
+    activityImageView.frame = CGRectMake(window.frame.size.width/2 - statusImage.size.width/2 + 90,
+                                         window.frame.size.height/2 - statusImage.size.height/2 - 65,
+                                         statusImage.size.width, 
+                                         statusImage.size.height);
+    
+    [activityImageView setHidden:YES];
 	
+
+    [self loadBackground];
+    
 	[window addSubview:navController.view];
-    [window addSubview:loading];
+    [window addSubview:backgroundActivity];
+    //[window addSubview:loading];
+    //[window addSubview:activityImageView];
     
 	[self.window makeKeyAndVisible];
 	
     return YES;
 }
 
+-(void)loadBackground {
+    
+    UIImage * background = [UIImage imageNamed:@"SpinningRumiBackground_iPhone.png"];
+    backgroundActivity = [[UIImageView alloc] initWithImage:background];
+    [backgroundActivity addSubview:activityImageView];
+    [backgroundActivity setHidden:YES];
+    backgroundActivity.frame = CGRectMake(-80,80, 480,320);
+    backgroundActivity.transform = CGAffineTransformMakeRotation(-M_PI / 2);
+    //[backgroundActivity setCenter:CGPointMake(160, 240)];
+    
+}
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     /*
@@ -93,6 +119,7 @@
 
 
 - (void)dealloc {
+    [backgroundActivity release];
     [loading release];
 	[navController release];
     [window release];

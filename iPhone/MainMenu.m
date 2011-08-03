@@ -53,8 +53,11 @@
 {
 	AppDelegate_iPhone * app = (AppDelegate_iPhone *)[[UIApplication sharedApplication] delegate];
     
-	[app.loading setHidden:NO];
-    [app.loading startAnimating];
+	[app.activityImageView setHidden:NO];//01/08/2011
+    [app.backgroundActivity setHidden:NO];//01/08/2011
+    [app.activityImageView startAnimating];//01/08/2011
+    
+    [btnDress setEnabled:NO];//01/08/2011
 	
 	[self performSelector:@selector(startLoadDress) withObject:nil afterDelay:1];
 
@@ -66,6 +69,8 @@
 
 	GameDress_iPhone * gw = [[GameDress_iPhone alloc] 
 							 initWithNibName:@"GameDress_iPhone" bundle:nil];
+    
+    [btnDress setEnabled:YES];//01/08/2011
 	
 	[app.navController pushViewController:gw animated:NO];
 	
@@ -112,8 +117,11 @@
 {   
     AppDelegate_iPhone * app = (AppDelegate_iPhone *)[[UIApplication sharedApplication] delegate];
     
-	[app.loading setHidden:NO];
-    [app.loading startAnimating];
+	[app.activityImageView setHidden:NO];//01/08/2011
+    [app.backgroundActivity setHidden:NO];//01/08/2011
+    [app.activityImageView startAnimating];//01/08/2011
+    
+    [btnWheel setEnabled:NO];//01/08/2011
 	
 	[self performSelector:@selector(startLoadWheel) withObject:nil afterDelay:1];
 }
@@ -125,6 +133,8 @@
 	GameWheel * gw = [[GameWheel alloc] 
 					  initWithNibName:@"GameWheel" bundle:nil];
 	
+    [btnWheel setEnabled:YES];//01/08/2011
+    
 	[app.navController pushViewController:gw animated:NO];
 	
 	[gw release];

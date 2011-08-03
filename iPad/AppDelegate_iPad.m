@@ -23,20 +23,54 @@
 	[SimpleAudioEngine sharedEngine];
     // Override point for customization after application launch.
     
-	loading = [[UIActivityIndicatorView alloc]initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhiteLarge];
+    /*statusImage = [UIImage imageNamed:@"dinoIndicator_1.png"];
+    activityImageView = [[UIImageView alloc]initWithImage:statusImage];
     
-    [loading setCenter:CGPointMake(384, 512)];
+    activityImageView.animationImages = [NSArray arrayWithObjects:[UIImage imageNamed:@"dinoIndicator_1.png"],
+                                         [UIImage imageNamed:@"dinoIndicator_2.png"],[UIImage imageNamed:@"dinoIndicator_3.png"],[UIImage imageNamed:@"dinoIndicator_4.png"],[UIImage imageNamed:@"dinoIndicator_5.png"],[UIImage imageNamed:@"dinoIndicator_6.png"],[UIImage imageNamed:@"dinoIndicator_7.png"],[UIImage imageNamed:@"dinoIndicator_8.png"],[UIImage imageNamed:@"dinoIndicator_9.png"], nil];
+    
+    activityImageView.animationDuration = 0.8;*/
+    
+    
+    [self loadActivityIndicator];
+    
+    
+    activityImageView.frame = CGRectMake(window.frame.size.width/2 - statusImage.size.width/2 + 150,
+                                         window.frame.size.height/2 - statusImage.size.height/2 - 120,
+                                         statusImage.size.width, 
+                                         statusImage.size.height);
+    
+	//loading = [[UIActivityIndicatorView alloc]initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhiteLarge];
+    
+    //[loading setCenter:CGPointMake(384, 512)];
     
     //loading.hidesWhenStopped=NO;
     
-    [loading stopAnimating];
+    //[loading stopAnimating];
+    
+    [activityImageView setHidden:YES];
 	
+    [self loadBackground];
+    
 	[window addSubview:navController.view];
-    [window addSubview:loading];
+    [window addSubview:backgroundActivity];
+    //[window addSubview:loading];
+    //[window addSubview:activityImageView];
 	
     [self.window makeKeyAndVisible];
     
     return YES;
+}
+
+-(void)loadBackground {
+    
+    backgroundActivity = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"SpinningRumiBackground_iPad.png"]];
+    [window addSubview:backgroundActivity];
+    [backgroundActivity addSubview:activityImageView];
+    [backgroundActivity setHidden:YES];
+    backgroundActivity.frame = CGRectMake(-129,128, 1024,768);
+    backgroundActivity.transform = CGAffineTransformMakeRotation(-M_PI / 2);
+    
 }
 
 
