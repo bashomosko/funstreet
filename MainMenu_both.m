@@ -61,6 +61,10 @@
     if ([suffix rangeOfString:@"iPhone"].location != NSNotFound)
     {
         width = 480;
+        if (IS_IPHONE5) {
+            width = 568;
+        }
+        
         height = 320;
     }
         
@@ -210,6 +214,16 @@
 		return YES;
 	
 	return NO;
+}
+
+- (BOOL)shouldAutorotate{
+    return YES;
+}
+-(NSUInteger)supportedInterfaceOrientations{
+    return UIInterfaceOrientationMaskLandscape;
+}
+- (UIInterfaceOrientation)preferredInterfaceOrientationForPresentation{
+    return UIInterfaceOrientationLandscapeLeft;
 }
 
 -(IBAction) goToSong:(id)sender

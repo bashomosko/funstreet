@@ -32,7 +32,13 @@
     widthScroll = 300;
     heightScroll= 169;
     
-    widthVideo = 480;
+    int width = 480;
+    
+    if (IS_IPHONE5) {
+        width = 568;
+    }
+    
+    widthVideo = width;
     heightVideo = 320;
 	
     UIButton * skip = [UIButton buttonWithType:UIButtonTypeCustom];

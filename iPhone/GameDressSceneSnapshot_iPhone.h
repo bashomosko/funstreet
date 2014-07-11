@@ -16,6 +16,8 @@
 @interface GameDressSceneSnapshot_iPhone : GameDressSceneSnapshot_both {
 
 	GameDress_iPhone * viewController;
+    int middle;
+    int xOffset;
 }
 
 +(id) sceneWithDressVC:(GameDress_iPhone *)vc dinoImage:(UIImage *)img bashoDirected:(BOOL)_bashoDirected;

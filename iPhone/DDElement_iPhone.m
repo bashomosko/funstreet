@@ -101,27 +101,26 @@
 			[particles setPosition:mySprite.position];
 			[particles setAutoRemoveOnFinish:YES];*/
 			
+            
+            
 			CCSprite * smoke = [CCSprite spriteWithFile:@"Poof_iPhone.png"];
-			[smoke setPosition:ccp(240,160)];
-			[theGame addChild:smoke z:20];
-			[smoke setScale:0];
-            [[SimpleAudioEngine sharedEngine] playEffect:@"CloudTransition.mp3"];
-			[smoke runAction:[CCSequence actions:[CCSpawn actions:[CCScaleTo actionWithDuration:1.1 scale:4],
-                                                  [CCSequence actions:[CCRotateTo actionWithDuration:0.1 angle:33], 
-                                                   [CCRotateTo actionWithDuration:0.1 angle:66],
-                                                   [CCRotateTo actionWithDuration:0.1 angle:99],
-                                                   [CCRotateTo actionWithDuration:0.1 angle:132],
-                                                   [CCRotateTo actionWithDuration:0.1 angle:165],
-                                                   [CCRotateTo actionWithDuration:0.1 angle:198],
-                                                   [CCRotateTo actionWithDuration:0.1 angle:231],
-                                                   [CCRotateTo actionWithDuration:0.1 angle:264],
-                                                   [CCRotateTo actionWithDuration:0.1 angle:297],
-                                                   [CCRotateTo actionWithDuration:0.1 angle:330],
-                                                   [CCRotateTo actionWithDuration:0.1 angle:360],nil],nil],
-                             [CCSpawn actions:[CCScaleTo actionWithDuration:0.5 scale:4],
-                             [CCFadeOut actionWithDuration:0.5],nil],
-                             [CCCallFuncN actionWithTarget:self selector:@selector(removeNode:)],nil]];
 			
+            if (IS_IPHONE5) {
+                [smoke setPosition:ccp(284,160)];
+            } else {
+                [smoke setPosition:ccp(240,160)];
+            }
+            
+			[theGame addChild:smoke z:20];
+			[smoke setScale:1];
+           // [[SimpleAudioEngine sharedEngine] playEffect:@"CloudTransition.mp3"];
+            [smoke runAction:[CCSequence actions:[CCSpawn actions:[CCScaleTo actionWithDuration:0.5 scale:4],
+                                                  nil],
+                              [CCSpawn actions:[CCScaleTo actionWithDuration:0.3 scale:4],
+                               [CCFadeOut actionWithDuration:0.3],nil],
+                              [CCCallFuncN actionWithTarget:self selector:@selector(removeNode:)],nil]];
+			
+
 			if([GameManager sharedGameManager].soundsEnabled)
 			{
 				if (theGame.bashoDirected) {

@@ -31,6 +31,15 @@
 -(id) initWithDressVC:(GameDress_iPhone *)vc bashoDirected:(BOOL)_bashoDirected playVid:(BOOL)playVid playingAgain:(BOOL)_playingAgain
 {
 	if( (self=[super init] )) {
+        
+        middle=240;
+        xOffset=0;
+        
+        if (IS_IPHONE5) {
+            middle=284;
+            xOffset=44;
+        }
+        
 		self.isTouchEnabled = YES;
 		self.isAccelerometerEnabled = YES;
 		
@@ -98,10 +107,16 @@
 			url = [NSURL fileURLWithPath:moviePath];
 		}
 	}
+    
+    int width = 480;
+    
+    if (IS_IPHONE5) {
+        width = 568;
+    }
 	
 	introVideo = [[MPMoviePlayerController alloc] initWithContentURL:url];
 	[[[CCDirector sharedDirector] openGLView] addSubview:introVideo.view];
-	[introVideo.view setFrame:CGRectMake(0,0,480,320)];
+	[introVideo.view setFrame:CGRectMake(0,0,width,320)];
 	[introVideo setControlStyle:MPMovieControlStyleNone];
     
     [[NSNotificationCenter defaultCenter]
@@ -183,7 +198,7 @@
     CCTexture2D * text = [[CCTexture2D alloc] initWithImage:savedImg];
     CCSprite * dinoDressed = [CCSprite spriteWithTexture:text];
     [self addChild:dinoDressed z:8];
-    [dinoDressed setPosition:ccp(240,160)];
+    [dinoDressed setPosition:ccp(middle,160)];
     [text release];
     [[CCSpriteFrameCache sharedSpriteFrameCache] removeSpriteFramesFromFile:@"dress_iPhone.plist"];
 	[[CCSpriteFrameCache sharedSpriteFrameCache] removeUnusedSpriteFrames];
@@ -219,8 +234,17 @@
 	[self schedule:@selector(doTimePassedForShake) interval:5];
 
 	[CCTexture2D setDefaultAlphaPixelFormat:kCCTexture2DPixelFormat_RGB565];
-	CCSprite * back = [CCSprite spriteWithFile:@"dress_background_iPhone.png"];
-	[back setPosition:ccp(240,160)];
+    
+    NSString * strSrpite = nil;
+    
+    if (IS_IPHONE5) {
+        strSrpite = @"dress_background_iPhone5.png";
+    } else {
+        strSrpite = @"dress_background_iPhone.png";
+    }
+    
+	CCSprite * back = [CCSprite spriteWithFile:strSrpite];
+	[back setPosition:ccp(middle,160)];
 	[self addChild:back];
 	[CCTexture2D setDefaultAlphaPixelFormat:kCCTexture2DPixelFormat_RGBA4444];
 	
@@ -228,8 +252,14 @@
 	ddElements = [[NSMutableArray alloc] initWithCapacity:4];
 	dressPieces= [[NSMutableArray alloc] initWithCapacity:8];
 	
-	target = [[CCRenderTexture renderTextureWithWidth:480 height:320] retain];
-	[target setPosition:ccp(240,160)];
+    int width = 480;
+    
+    if (IS_IPHONE5) {
+        width = 568;
+    }
+    
+	target = [[CCRenderTexture renderTextureWithWidth:width height:320] retain];
+	[target setPosition:ccp(middle,160)];
 	
 	[[ CCSpriteFrameCache sharedSpriteFrameCache] addSpriteFramesWithFile:@"dress_iPhone.plist" textureFile:@"dress_iPhone.png"];
 	
@@ -240,15 +270,15 @@
 	
 	dino = [[CCSprite spriteWithSpriteFrameName:@"dress_dino_iPhone.png"]retain];
 	[sbn addChild:dino z:2 tag:4190]; //DINO = 4190
-	[dino setPosition:ccp(240,160)];
+	[dino setPosition:ccp(middle,160)];
 	
 	CCSprite * boxers = [CCSprite spriteWithSpriteFrameName:@"dress_boxers_iPhone.png"];
 	[sbn addChild:boxers z:2 tag:kBOXERS];
-	[boxers setPosition:ccp(240,160)];
+	[boxers setPosition:ccp(middle,160)];
 	
 	shirt = [[CCSprite spriteWithSpriteFrameName:@"dress_shirt_iPhone.png"]retain];
 	[sbn addChild:shirt z:5];
-	[shirt setPosition:ccp(240,160)];
+	[shirt setPosition:ccp(middle,160)];
 	
 	CCMenuItemImage * backBtn = [CCMenuItemImage itemFromNormalImage:@"wheel_home.png" selectedImage:@"wheel_home.png" target:self selector:@selector(goBack)];
 	
@@ -313,7 +343,7 @@
 {
     CCSprite * palabraBck = [CCSprite spriteWithFile:@"wheel_wordbackground_iPhone.png"];
     [self addChild:palabraBck z:3 tag:kPALABRABCK];
-    [palabraBck setPosition:ccp(410,30)];
+    [palabraBck setPosition:ccp(410+xOffset,30)];
 	[palabraBck setOpacity:0];
 	CCLabelTTF * palabra = [CCLabelBMFont labelWithString:@"a" fntFile:@"Wheel_text_iPad.fnt"];
     if ([[UIScreen mainScreen] respondsToSelector:@selector(scale)] == YES && [[UIScreen mainScreen] scale] == 2.00) {
@@ -323,7 +353,7 @@
         [palabra setScale:0.35];
     }
 	[self addChild:palabra z:3 tag:kPALABRA];
-	[palabra setPosition:ccp(410,30)];
+	[palabra setPosition:ccp(410+xOffset,30)];
 	[palabra setOpacity:0];
 }
 
@@ -376,7 +406,7 @@
 	
 	CCSprite * dinoAnim = [CCSprite spriteWithSpriteFrameName:[NSString stringWithFormat:@"%@_00000.png",frameName]];
 	[animSbn addChild:dinoAnim];
-	[dinoAnim setPosition:ccp(240,160)];
+	[dinoAnim setPosition:ccp(middle,160)];
 	
 	NSMutableArray *animFrames = [NSMutableArray array];
 	for(int i = 0; i < animAmount; i++) {
@@ -464,8 +494,13 @@
 		
 		//RESET DINO
 		CCSprite * gloopbackground = [CCSprite spriteWithFile:[NSString stringWithFormat:@"%@00000.pvr",fileName]];
-		[gloopbackground setPosition:ccp(240,160)];
+		[gloopbackground setPosition:ccp(middle,160)];
 		[self addChild:gloopbackground];
+        
+        if (IS_IPHONE5) {
+            [gloopbackground setScale:1.2];
+        }
+        
 		//ANIMATION
 		gloopFrames = [[NSMutableArray  alloc]init];
 		for(int i = 0; i <= 15; i++) {
@@ -521,7 +556,7 @@
 	
 	CCSprite * backpack = [CCSprite spriteWithSpriteFrameName:item.dressed];
 	[sbn addChild:backpack z:item.desiredZ];
-	[backpack setPosition:ccp(240,160)];
+	[backpack setPosition:ccp(middle,160)];
     
     [dressPieces addObject:backpack];
     
@@ -532,7 +567,7 @@
         
         CCSprite * backPack2 = [CCSprite spriteWithSpriteFrameName:item.imagePath2];
         [sbn addChild:backPack2 z:0];
-        [backPack2 setPosition:ccp(240,160)];
+        [backPack2 setPosition:ccp(middle,160)];
         
         [dressPieces addObject:backPack2];
     }
@@ -606,10 +641,10 @@
 	}
 	NSMutableArray * positions = [NSMutableArray array];
 	
-	NSMutableDictionary * p1 = [NSMutableDictionary dictionaryWithObjects:[NSMutableArray arrayWithObjects:[NSNumber numberWithInt:100],[NSNumber numberWithInt:90],nil] forKeys:[NSMutableArray arrayWithObjects:@"x",@"y",nil]];
-	NSMutableDictionary * p2 = [NSMutableDictionary dictionaryWithObjects:[NSMutableArray arrayWithObjects:[NSNumber numberWithInt:100],[NSNumber numberWithInt:250],nil] forKeys:[NSMutableArray arrayWithObjects:@"x",@"y",nil]];
-	NSMutableDictionary * p3 = [NSMutableDictionary dictionaryWithObjects:[NSMutableArray arrayWithObjects:[NSNumber numberWithInt:380],[NSNumber numberWithInt:90],nil] forKeys:[NSMutableArray arrayWithObjects:@"x",@"y",nil]];
-	NSMutableDictionary * p4 = [NSMutableDictionary dictionaryWithObjects:[NSMutableArray arrayWithObjects:[NSNumber numberWithInt:380],[NSNumber numberWithInt:250],nil] forKeys:[NSMutableArray arrayWithObjects:@"x",@"y",nil]];
+	NSMutableDictionary * p1 = [NSMutableDictionary dictionaryWithObjects:[NSMutableArray arrayWithObjects:[NSNumber numberWithInt:100+xOffset],[NSNumber numberWithInt:90],nil] forKeys:[NSMutableArray arrayWithObjects:@"x",@"y",nil]];
+	NSMutableDictionary * p2 = [NSMutableDictionary dictionaryWithObjects:[NSMutableArray arrayWithObjects:[NSNumber numberWithInt:100+xOffset],[NSNumber numberWithInt:250],nil] forKeys:[NSMutableArray arrayWithObjects:@"x",@"y",nil]];
+	NSMutableDictionary * p3 = [NSMutableDictionary dictionaryWithObjects:[NSMutableArray arrayWithObjects:[NSNumber numberWithInt:380+xOffset],[NSNumber numberWithInt:90],nil] forKeys:[NSMutableArray arrayWithObjects:@"x",@"y",nil]];
+	NSMutableDictionary * p4 = [NSMutableDictionary dictionaryWithObjects:[NSMutableArray arrayWithObjects:[NSNumber numberWithInt:380+xOffset],[NSNumber numberWithInt:250],nil] forKeys:[NSMutableArray arrayWithObjects:@"x",@"y",nil]];
 	
 	[positions addObject:p1];
 	[positions addObject:p2];

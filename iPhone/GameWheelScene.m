@@ -96,9 +96,16 @@
 		}
 	}
 	
+    int width = 480;
+    
+    if (IS_IPHONE5) {
+        width = 568;
+    }
+    
+    
 	introVideo = [[MPMoviePlayerController alloc] initWithContentURL:url];
 	[[[CCDirector sharedDirector] openGLView] addSubview:introVideo.view];
-	[introVideo.view setFrame:CGRectMake(0,0,480,320)];
+	[introVideo.view setFrame:CGRectMake(0,0,width,320)];
 	[introVideo setControlStyle:MPMovieControlStyleNone];
 	
 	[[NSNotificationCenter defaultCenter]

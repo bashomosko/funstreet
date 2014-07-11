@@ -18,6 +18,8 @@
 #pragma mark -
 #pragma mark Application lifecycle
 
+
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {    
     
 	[SimpleAudioEngine sharedEngine];
@@ -38,10 +40,9 @@
     
     [self loadActivityIndicator];
     
-    activityImageView.frame = CGRectMake(window.frame.size.width/2 - statusImage.size.width/2 + 90,
-                                         window.frame.size.height/2 - statusImage.size.height/2 - 65,
-                                         statusImage.size.width, 
-                                         statusImage.size.height);
+    
+    
+
     
     [activityImageView setHidden:YES];
 	
@@ -50,6 +51,20 @@
     
 	[window addSubview:navController.view];
     [window addSubview:backgroundActivity];
+    
+    activityImageView.frame = CGRectMake(navController.view.frame.size.width/2 - statusImage.size.width/2 + 90,
+                                         navController.view.frame.size.height/2 - statusImage.size.height/2 - 65,
+                                         statusImage.size.width,
+                                         statusImage.size.height);
+    
+    if (IS_IPHONE5) {
+        activityImageView.frame = CGRectMake(navController.view.frame.size.width/2 - statusImage.size.width/2 + 130,
+                                             navController.view.frame.size.height/2 - statusImage.size.height/2 - 105,
+                                             statusImage.size.width,
+                                             statusImage.size.height);
+    }
+    
+
     //[window addSubview:loading];
     //[window addSubview:activityImageView];
     
@@ -64,7 +79,15 @@
     backgroundActivity = [[UIImageView alloc] initWithImage:background];
     [backgroundActivity addSubview:activityImageView];
     [backgroundActivity setHidden:YES];
-    backgroundActivity.frame = CGRectMake(-80,80, 480,320);
+    
+    
+     backgroundActivity.frame = CGRectMake(-80,80, 480,320);
+    
+    if (IS_IPHONE5) {
+         backgroundActivity.frame = CGRectMake(-124,124, 568,320);
+    }
+    
+   
     backgroundActivity.transform = CGAffineTransformMakeRotation(-M_PI / 2);
     //[backgroundActivity setCenter:CGPointMake(160, 240)];
     

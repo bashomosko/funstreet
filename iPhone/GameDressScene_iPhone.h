@@ -20,7 +20,8 @@
 {
 	
 	GameDress_iPhone * viewController;
-
+    float middle;
+    float xOffset;
 }
 
 @property(nonatomic,assign) GameDress_iPhone * viewController;

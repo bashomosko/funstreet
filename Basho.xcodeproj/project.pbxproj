@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 45;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -542,6 +542,11 @@
 		2860E32E111B888700E27156 /* AppDelegate_iPad.m in Sources */ = {isa = PBXBuildFile; fileRef = 2860E32C111B888700E27156 /* AppDelegate_iPad.m */; };
 		2860E32F111B888700E27156 /* MainWindow_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2860E32D111B888700E27156 /* MainWindow_iPad.xib */; };
 		288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765FC0DF74451002DB57D /* CoreGraphics.framework */; };
+		334EC741197087CC00EA0A0B /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 334EC740197087CC00EA0A0B /* Default-568h@2x.png */; };
+		334EC743197098CB00EA0A0B /* dress_background_iPhone5-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 334EC742197098CB00EA0A0B /* dress_background_iPhone5-hd.png */; };
+		334EC74519709AAC00EA0A0B /* dress_background_iPhone5.png in Resources */ = {isa = PBXBuildFile; fileRef = 334EC74419709AAC00EA0A0B /* dress_background_iPhone5.png */; };
+		334EC7481970A4D500EA0A0B /* snapshot_background_iPhone5.png in Resources */ = {isa = PBXBuildFile; fileRef = 334EC7461970A4D500EA0A0B /* snapshot_background_iPhone5.png */; };
+		334EC7491970A4D500EA0A0B /* snapshot_background_iPhone5-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 334EC7471970A4D500EA0A0B /* snapshot_background_iPhone5-hd.png */; };
 		84170AE313C6392600DEDD21 /* animalsAnims_iPhone.plist in Resources */ = {isa = PBXBuildFile; fileRef = 84170ADD13C6392500DEDD21 /* animalsAnims_iPhone.plist */; };
 		84170AE413C6392600DEDD21 /* animalsAnims_iPhone.png in Resources */ = {isa = PBXBuildFile; fileRef = 84170ADE13C6392500DEDD21 /* animalsAnims_iPhone.png */; };
 		84170AE713C6392600DEDD21 /* animalsAnims_iPhone-hd.plist in Resources */ = {isa = PBXBuildFile; fileRef = 84170AE113C6392500DEDD21 /* animalsAnims_iPhone-hd.plist */; };
@@ -844,7 +849,6 @@
 		84E1A30E13B8E88A00BA7BE9 /* wheel_sound_off_iPhone-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 84E1A30713B8E88A00BA7BE9 /* wheel_sound_off_iPhone-hd.png */; };
 		84E1A30F13B8E88A00BA7BE9 /* wheel_basho_off_iPhone-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 84E1A30813B8E88A00BA7BE9 /* wheel_basho_off_iPhone-hd.png */; };
 		84E1A31013B8E88A00BA7BE9 /* wheel_basho_on_iPhone-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 84E1A30913B8E88A00BA7BE9 /* wheel_basho_on_iPhone-hd.png */; };
-		84E1A31113B8E88A00BA7BE9 /* wheel_home-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 84E1A30A13B8E88A00BA7BE9 /* wheel_home-hd.png */; };
 		84E1A31213B8E88A00BA7BE9 /* wheel_dino_iPhone-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 84E1A30B13B8E88A00BA7BE9 /* wheel_dino_iPhone-hd.png */; };
 		84E1A31813B8E8A600BA7BE9 /* wheel_btn_bee_iPhone-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 84E1A31413B8E8A600BA7BE9 /* wheel_btn_bee_iPhone-hd.png */; };
 		84E1A31913B8E8A600BA7BE9 /* wheel_btn_bee_dwn_iPhone-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 84E1A31513B8E8A600BA7BE9 /* wheel_btn_bee_dwn_iPhone-hd.png */; };
@@ -1601,6 +1605,11 @@
 		288765FC0DF74451002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Shared/main.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* Basho_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Basho_Prefix.pch; sourceTree = "<group>"; };
+		334EC740197087CC00EA0A0B /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		334EC742197098CB00EA0A0B /* dress_background_iPhone5-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dress_background_iPhone5-hd.png"; sourceTree = "<group>"; };
+		334EC74419709AAC00EA0A0B /* dress_background_iPhone5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dress_background_iPhone5.png; sourceTree = "<group>"; };
+		334EC7461970A4D500EA0A0B /* snapshot_background_iPhone5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = snapshot_background_iPhone5.png; sourceTree = "<group>"; };
+		334EC7471970A4D500EA0A0B /* snapshot_background_iPhone5-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "snapshot_background_iPhone5-hd.png"; sourceTree = "<group>"; };
 		84170ADD13C6392500DEDD21 /* animalsAnims_iPhone.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = animalsAnims_iPhone.plist; sourceTree = "<group>"; };
 		84170ADE13C6392500DEDD21 /* animalsAnims_iPhone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = animalsAnims_iPhone.png; sourceTree = "<group>"; };
 		84170AE113C6392500DEDD21 /* animalsAnims_iPhone-hd.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "animalsAnims_iPhone-hd.plist"; sourceTree = "<group>"; };
@@ -3232,6 +3241,7 @@
 				84ABC60F13D5A7F70047ECBA /* FunStINTL_Icon_72.png */,
 				84ABC60013D5A4830047ECBA /* Default-Landscape~ipad.png */,
 				84ABC60113D5A4830047ECBA /* Default.png */,
+				334EC740197087CC00EA0A0B /* Default-568h@2x.png */,
 				84ABC60213D5A4830047ECBA /* Default@2x.png */,
 				28EEBF621118D79A00187D67 /* Shared */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
@@ -3329,6 +3339,8 @@
 		84A7914C13B2081B00B3B53C /* dress */ = {
 			isa = PBXGroup;
 			children = (
+				334EC74419709AAC00EA0A0B /* dress_background_iPhone5.png */,
+				334EC742197098CB00EA0A0B /* dress_background_iPhone5-hd.png */,
 				84F7561613C2092D001F3CA8 /* snapshot */,
 				84F7561013C1FAF4001F3CA8 /* dress_background_iPhone.png */,
 				84F7560E13C1EF16001F3CA8 /* dress_background_iPhone-hd.png */,
@@ -3611,6 +3623,8 @@
 		84F7561613C2092D001F3CA8 /* snapshot */ = {
 			isa = PBXGroup;
 			children = (
+				334EC7461970A4D500EA0A0B /* snapshot_background_iPhone5.png */,
+				334EC7471970A4D500EA0A0B /* snapshot_background_iPhone5-hd.png */,
 				84F7561713C20AD0001F3CA8 /* snapshot_polaroid3_iPhone-hd.png */,
 				84F7561813C20AD0001F3CA8 /* snapshot_polaroid2_iPhone-hd.png */,
 				84F7561913C20AD0001F3CA8 /* snapshot_polaroid1_iPhone-hd.png */,
@@ -3648,8 +3662,11 @@
 /* Begin PBXProject section */
 		29B97313FDCFA39411CA2CEA /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+			};
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Basho" */;
-			compatibilityVersion = "Xcode 3.1";
+			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 1;
 			knownRegions = (
@@ -3941,6 +3958,7 @@
 				1051CB2F13788DF4002DACDF /* wheel_snd_cow_eng.mp3 in Resources */,
 				1051CB3013788DF4002DACDF /* wheel_snd_dog_eng.mp3 in Resources */,
 				1051CB3113788DF4002DACDF /* wheel_snd_duck_eng.mp3 in Resources */,
+				334EC741197087CC00EA0A0B /* Default-568h@2x.png in Resources */,
 				1051CB3213788DF4002DACDF /* wheel_snd_horse_eng.mp3 in Resources */,
 				1051CB3313788DF4002DACDF /* wheel_snd_pig_eng.mp3 in Resources */,
 				1051CCA513796A83002DACDF /* dress_iPad.plist in Resources */,
@@ -3955,6 +3973,7 @@
 				1051CF32137AB6C3002DACDF /* wheel_snd_horse_where_eng.mp3 in Resources */,
 				1051CF33137AB6C3002DACDF /* wheel_snd_pig_where_eng.mp3 in Resources */,
 				1051CF55137ABBC7002DACDF /* RightAnswer.mp3 in Resources */,
+				334EC74519709AAC00EA0A0B /* dress_background_iPhone5.png in Resources */,
 				1051CF56137ABBC7002DACDF /* WrongAnswer.mp3 in Resources */,
 				1053C44F137C881000E7E3F9 /* RumiAnim1_iPad.plist in Resources */,
 				1053C450137C881000E7E3F9 /* RumiAnim1_iPad.png in Resources */,
@@ -4058,6 +4077,7 @@
 				10D2DFC2138415EB00334C4C /* dress_snd_phone_Yellow_where_eng.mp3 in Resources */,
 				10FD52D61386AEFA00D9B984 /* backgroundMusicAnimales.mp3 in Resources */,
 				10A328C8138BF40800C4B0F5 /* animalsAnims_iPad.plist in Resources */,
+				334EC7491970A4D500EA0A0B /* snapshot_background_iPhone5-hd.png in Resources */,
 				10A328C9138BF40800C4B0F5 /* animalsAnims_iPad.png in Resources */,
 				10A32916138C05FD00C4B0F5 /* lever-sfx.mp3 in Resources */,
 				10A3292F138C092A00C4B0F5 /* theatre_left_iPad.png in Resources */,
@@ -4103,6 +4123,7 @@
 				84F01DB413A2954200034BCE /* LayeredDiamonds_iPad_1024x1024_00012.png.pvr in Resources */,
 				84F01DB513A2954200034BCE /* LayeredDiamonds_iPad_1024x1024_00011.png.pvr in Resources */,
 				84F01DB613A2954200034BCE /* LayeredDiamonds_iPad_1024x1024_00010.png.pvr in Resources */,
+				334EC7481970A4D500EA0A0B /* snapshot_background_iPhone5.png in Resources */,
 				84F01DB713A2954200034BCE /* LayeredDiamonds_iPad_1024x1024_00009.png.pvr in Resources */,
 				84F01DB813A2954200034BCE /* LayeredDiamonds_iPad_1024x1024_00008.png.pvr in Resources */,
 				84F01DB913A2954200034BCE /* LayeredDiamonds_iPad_1024x1024_00007.png.pvr in Resources */,
@@ -4160,6 +4181,7 @@
 				84952C1913ABAF1100F639D4 /* wheel_settings_iPhone.png in Resources */,
 				84952C1B13ABAF1100F639D4 /* wheel_dino_iPhone.png in Resources */,
 				84952C3313ABAF2600F639D4 /* wheel_btn_pig_iPhone.png in Resources */,
+				334EC743197098CB00EA0A0B /* dress_background_iPhone5-hd.png in Resources */,
 				84952C3413ABAF2600F639D4 /* wheel_btn_pig_dwn_iPhone.png in Resources */,
 				84952C3513ABAF2600F639D4 /* wheel_btn_horse_iPhone.png in Resources */,
 				84952C3613ABAF2600F639D4 /* wheel_btn_horse_dwn_iPhone.png in Resources */,
@@ -4200,7 +4222,6 @@
 				84E1A30E13B8E88A00BA7BE9 /* wheel_sound_off_iPhone-hd.png in Resources */,
 				84E1A30F13B8E88A00BA7BE9 /* wheel_basho_off_iPhone-hd.png in Resources */,
 				84E1A31013B8E88A00BA7BE9 /* wheel_basho_on_iPhone-hd.png in Resources */,
-				84E1A31113B8E88A00BA7BE9 /* wheel_home-hd.png in Resources */,
 				84E1A31213B8E88A00BA7BE9 /* wheel_dino_iPhone-hd.png in Resources */,
 				84E1A31813B8E8A600BA7BE9 /* wheel_btn_bee_iPhone-hd.png in Resources */,
 				84E1A31913B8E8A600BA7BE9 /* wheel_btn_bee_dwn_iPhone-hd.png in Resources */,
@@ -4617,6 +4638,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Basho_Prefix.pch;
 				INFOPLIST_FILE = "Basho-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
@@ -4637,6 +4659,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Basho_Prefix.pch;
 				INFOPLIST_FILE = "Basho-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
@@ -4649,11 +4672,11 @@
 		C01FCF4F08A954540054247B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
 				PREBINDING = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -4663,7 +4686,6 @@
 		C01FCF5008A954540054247B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;

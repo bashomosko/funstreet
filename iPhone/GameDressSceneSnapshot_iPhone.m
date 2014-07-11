@@ -31,6 +31,18 @@
 -(id) initWithDressVC:(GameDress_iPhone *)vc dinoImage:(UIImage *)img bashoDirected:(BOOL)_bashoDirected
 {
 	if( (self=[super init] )) {
+        
+        middle=240;
+        xOffset=0;
+        
+        NSString * strSprite = @"snapshot_background_iPhone.png";
+        
+        if (IS_IPHONE5) {
+            middle=284;
+            xOffset=44;
+            strSprite = @"snapshot_background_iPhone5.png";
+        }
+        
 		self.isTouchEnabled = YES;
 		self.isAccelerometerEnabled = YES;
         
@@ -45,16 +57,19 @@
 		moveOutActivated = NO;
 		        
         [CCTexture2D setDefaultAlphaPixelFormat:kCCTexture2DPixelFormat_RGBA8888];
-
-		CCSprite* background = [CCSprite spriteWithFile:@"snapshot_background_iPhone.png"];
+        
+        
+    
+        
+		CCSprite* background = [CCSprite spriteWithFile:strSprite];
 		[self addChild:background];
-		[background setPosition:ccp(240,160)];
+		[background setPosition:ccp(middle,160)];
         
         [CCTexture2D setDefaultAlphaPixelFormat:kCCTexture2DPixelFormat_RGBA4444];
 		
-		[self addDinoOnPosition:ccp(126,240) dinoImage:img num:1];
-		[self addDinoOnPosition:ccp(151,100) dinoImage:img num:2];
-		[self addDinoOnPosition:ccp(350,160) dinoImage:img num:3];
+		[self addDinoOnPosition:ccp(126+xOffset,240) dinoImage:img num:1];
+		[self addDinoOnPosition:ccp(151+xOffset,100) dinoImage:img num:2];
+		[self addDinoOnPosition:ccp(350+xOffset,160) dinoImage:img num:3];
 		
 		[self runAction:[CCSequence actions:[CCDelayTime actionWithDuration:3],[CCCallFunc actionWithTarget:self selector:@selector(tapToCont)],nil]];
 		
@@ -74,7 +89,7 @@
         [palabra setScale:0.2];
     }
     [self addChild:palabra];
-	[palabra setPosition:ccp(240,10)];
+	[palabra setPosition:ccp(middle,10)];
 	[palabra runAction:[CCRepeatForever actionWithAction:[CCSequence actions:[CCFadeIn actionWithDuration:0.5],[CCDelayTime actionWithDuration:1],[CCFadeOut actionWithDuration:0.5],nil]]];
 }
 

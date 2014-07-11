@@ -44,9 +44,38 @@
 		[self animateDoors:@"_iPhone"];
 	}
     doorsSuffix = @"_iPhone";
-    [scroll setContentSize:CGSizeMake(960,320)];
+    [scroll setContentSize:CGSizeMake(960,scroll.frame.size.height)];
+    
+    float width = 480;
+    
+    if (IS_IPHONE5) {
+        width = 568;
+    }
+    
+    [scroll setFrame:CGRectMake(scroll.frame.origin.x, scroll.frame.origin.y, width, scroll.frame.size.height)];
+    
+
     widthScreen = 480;
+    
+    if (IS_IPHONE5) {
+        widthScreen = 392;
+    }
+    
+ //   [scroll setFrame:CGRectMake(0, 0, widthScreen, 320)];
+    
+    
+    //widthScreen = 480;
     [super viewDidLoad];
+}
+
+- (BOOL)shouldAutorotate{
+    return YES;
+}
+-(NSUInteger)supportedInterfaceOrientations{
+    return UIInterfaceOrientationMaskLandscape;
+}
+- (UIInterfaceOrientation)preferredInterfaceOrientationForPresentation{
+    return UIInterfaceOrientationLandscapeLeft;
 }
 
 -(void)loadDress
@@ -83,6 +112,13 @@
 	[GameManager sharedGameManager].onPause = YES;
 	sv = [[SettingsViewController_iPhone alloc] initWithNibName:@"SettingsViewController_iPhone" bundle:nil];
 	sv.rootVC = self;
+    
+    
+    if (IS_IPHONE5) {
+        [sv.view setFrame:CGRectMake(0, 0, 568, 320)];
+    } else {
+        [sv.view setFrame:CGRectMake(0, 0, 480, 320)];
+    }
 	
 	[self.view addSubview:sv.view];
 }

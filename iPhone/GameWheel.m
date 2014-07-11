@@ -124,6 +124,12 @@
 	sv = [[SettingsViewController_iPhone alloc] initWithNibName:@"SettingsViewController_iPhone" bundle:nil];
     
 	sv.rootVC = self;
+    
+    if (IS_IPHONE5) {
+        [sv.view setFrame:CGRectMake(0, 0, 568, 320)];
+    } else {
+        [sv.view setFrame:CGRectMake(0, 0, 480, 320)];
+    }
 	
 	[[[CCDirector sharedDirector] openGLView] addSubview:sv.view];
 }
