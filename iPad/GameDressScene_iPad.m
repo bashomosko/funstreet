@@ -121,7 +121,7 @@
 	
 	videoTaps=0;
 	
-	//[introVideo play];
+	[introVideo play];
 }
 
 -(void)videoPlayerDidFinishLoading: (NSNotification*)aNotification {

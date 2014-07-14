@@ -20,6 +20,7 @@
 }
 
 @property (nonatomic,assign) GameDressScene_iPad * gameDressLayer;
+@property (nonatomic,retain) SettingsViewController_iPad * sv;
 
 -(void)goToNextGame;
 -(void)goToMenu;

@@ -21,6 +21,7 @@
         </window>
         <customObject id="6" customClass="AppDelegate_iPad">
             <connections>
+                <outlet property="navController" destination="PAk-ko-c6u" id="yy5-cT-bNV"/>
                 <outlet property="window" destination="2" id="7"/>
             </connections>
         </customObject>

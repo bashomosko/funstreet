@@ -18,7 +18,7 @@
 @synthesize gameDressLayer;
 
 // The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
-/*
+
  - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
  self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
  if (self) {
@@ -26,7 +26,7 @@
  }
  return self;
  }
- */
+
 
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
@@ -47,8 +47,8 @@
 	[director setOpenGLView:glView];
 	
 	//	// Enables High Res mode (Retina Display) on iPhone 4 and maintains low res on all other devices
-	//	if( ! [director enableRetinaDisplay:YES] )
-	//		CCLOG(@"Retina Display Not supported");
+		if( ! [director enableRetinaDisplay:YES] )
+		 CCLOG(@"Retina Display Not supported");
 	
 #if GAME_AUTOROTATION == kGameAutorotationUIViewController
 	[director setDeviceOrientation:kCCDeviceOrientationPortrait];
@@ -59,14 +59,19 @@
 	[director setAnimationInterval:1.0/60];
 	[director setDisplayFPS:YES];
 	
-	
+    [app.loading removeFromSuperview];
+    [app.window addSubview:app.loading];
+    //[app.loading startAnimating];
+    
 	// make the OpenGLView a child of the view controller
 	[self setView:glView];
 	
 	[CCTexture2D setDefaultAlphaPixelFormat:kCCTexture2DPixelFormat_RGBA8888];
 	
 	// Removes the startup flicker
-	//[self removeStartupFlicker];
+	[self removeStartupFlicker];
+    
+
 	
 	// Run the intro Scene
     GameDressScene_iPad * gameDressScene = [GameDressScene_iPad sceneWithDressVC:self bashoDirected:NO playVid:YES playingAgain:NO];

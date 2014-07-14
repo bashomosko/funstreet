@@ -100,16 +100,17 @@
 
 -(void)startLoadDress
 {
-	GameDress_iPad * gw = [[GameDress_iPad alloc] 
-						   initWithNibName:@"GameDress_iPad" bundle:nil];
-	
-	AppDelegate_iPad * app = (AppDelegate_iPad *)[[UIApplication sharedApplication] delegate];
+    AppDelegate_iPad * app = (AppDelegate_iPad *)[[UIApplication sharedApplication] delegate];
+    
+	GameDress_iPad * gw = [[GameDress_iPad alloc]
+							 initWithNibName:@"GameDress_iPad" bundle:nil];
     
     [btnDress setEnabled:YES];//01/08/2011
 	
 	[app.navController pushViewController:gw animated:NO];
 	
 	[gw release];
+
 }
 
 -(void)loadVideo
