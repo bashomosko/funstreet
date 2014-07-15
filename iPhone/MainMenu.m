@@ -139,8 +139,17 @@
 -(void)loadVideo
 {
 	
+    NSString * strScreen;
+    
+    if (IS_IPHONE5) {
+        strScreen = @"GameVideo5";
+    }
+    else {
+        strScreen = @"GameVideo";
+    }
+    
 	GameVideo * gw = [[GameVideo alloc] 
-					  initWithNibName:@"GameVideo" bundle:nil];
+					  initWithNibName:strScreen bundle:nil];
 	
 	AppDelegate_iPhone * app = (AppDelegate_iPhone *)[[UIApplication sharedApplication] delegate];
 	

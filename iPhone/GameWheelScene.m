@@ -159,8 +159,21 @@
 	bashoDirected = NO;
 	
     [CCTexture2D setDefaultAlphaPixelFormat:kCCTexture2DPixelFormat_RGB565];
-	CCSprite * back = [CCSprite spriteWithFile:@"wheel_background_iPhone.png"];
-	[back setPosition:ccp(240,160)];
+    
+    NSString * strSprite = nil;
+    
+    float middle;
+    
+    if (IS_IPHONE5) {
+        strSprite = @"wheel_background_iPhone5.png";
+        middle=284;
+    } else {
+         strSprite = @"wheel_background_iPhone.png";
+        middle=240;
+    }
+    
+	CCSprite * back = [CCSprite spriteWithFile:strSprite];
+	[back setPosition:ccp(middle,160)];
 	[self addChild:back];
     
     [CCTexture2D setDefaultAlphaPixelFormat:kCCTexture2DPixelFormat_RGBA4444];

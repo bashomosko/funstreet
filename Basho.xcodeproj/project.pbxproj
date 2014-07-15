@@ -300,7 +300,7 @@
 		10A32931138C092A00C4B0F5 /* theatre_top_iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 10A3292D138C092A00C4B0F5 /* theatre_top_iPad.png */; };
 		10A6BC0113251CB500391C82 /* dress_background_iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 10A6BC0013251CB500391C82 /* dress_background_iPad.png */; };
 		10A6BC88132595BA00391C82 /* GameVideo.m in Sources */ = {isa = PBXBuildFile; fileRef = 10A6BC86132595BA00391C82 /* GameVideo.m */; };
-		10A6BC89132595BA00391C82 /* GameVideo.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10A6BC87132595BA00391C82 /* GameVideo.xib */; };
+		10A6BC89132595BA00391C82 /* GameVideo5.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10A6BC87132595BA00391C82 /* GameVideo5.xib */; };
 		10A6BC9D1325966700391C82 /* ARG.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 10A6BC9C1325966700391C82 /* ARG.mp4 */; };
 		10A6BCB91325978000391C82 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10A6BCB81325978000391C82 /* MediaPlayer.framework */; };
 		10A6BCEE13259EC400391C82 /* videoLyrics.plist in Resources */ = {isa = PBXBuildFile; fileRef = 10A6BCED13259EC400391C82 /* videoLyrics.plist */; };
@@ -542,6 +542,9 @@
 		2860E32E111B888700E27156 /* AppDelegate_iPad.m in Sources */ = {isa = PBXBuildFile; fileRef = 2860E32C111B888700E27156 /* AppDelegate_iPad.m */; };
 		2860E32F111B888700E27156 /* MainWindow_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2860E32D111B888700E27156 /* MainWindow_iPad.xib */; };
 		288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765FC0DF74451002DB57D /* CoreGraphics.framework */; };
+		3337EAEF1974A31C0082750F /* wheel_background_iPhone5.png in Resources */ = {isa = PBXBuildFile; fileRef = 3337EAED1974A31C0082750F /* wheel_background_iPhone5.png */; };
+		3337EAF01974A31C0082750F /* wheel_background_iPhone5-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 3337EAEE1974A31C0082750F /* wheel_background_iPhone5-hd.png */; };
+		3337EAF21974A7FE0082750F /* GameVideo.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3337EAF11974A7FE0082750F /* GameVideo.xib */; };
 		334EC741197087CC00EA0A0B /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 334EC740197087CC00EA0A0B /* Default-568h@2x.png */; };
 		334EC743197098CB00EA0A0B /* dress_background_iPhone5-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 334EC742197098CB00EA0A0B /* dress_background_iPhone5-hd.png */; };
 		334EC74519709AAC00EA0A0B /* dress_background_iPhone5.png in Resources */ = {isa = PBXBuildFile; fileRef = 334EC74419709AAC00EA0A0B /* dress_background_iPhone5.png */; };
@@ -1239,7 +1242,7 @@
 		10A6BC0013251CB500391C82 /* dress_background_iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dress_background_iPad.png; sourceTree = "<group>"; };
 		10A6BC85132595BA00391C82 /* GameVideo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameVideo.h; sourceTree = "<group>"; };
 		10A6BC86132595BA00391C82 /* GameVideo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameVideo.m; sourceTree = "<group>"; };
-		10A6BC87132595BA00391C82 /* GameVideo.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GameVideo.xib; sourceTree = "<group>"; };
+		10A6BC87132595BA00391C82 /* GameVideo5.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GameVideo5.xib; sourceTree = "<group>"; };
 		10A6BC9C1325966700391C82 /* ARG.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = ARG.mp4; sourceTree = "<group>"; };
 		10A6BCB81325978000391C82 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		10A6BCED13259EC400391C82 /* videoLyrics.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = videoLyrics.plist; sourceTree = "<group>"; };
@@ -1605,6 +1608,9 @@
 		288765FC0DF74451002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Shared/main.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* Basho_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Basho_Prefix.pch; sourceTree = "<group>"; };
+		3337EAED1974A31C0082750F /* wheel_background_iPhone5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wheel_background_iPhone5.png; sourceTree = "<group>"; };
+		3337EAEE1974A31C0082750F /* wheel_background_iPhone5-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "wheel_background_iPhone5-hd.png"; sourceTree = "<group>"; };
+		3337EAF11974A7FE0082750F /* GameVideo.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GameVideo.xib; sourceTree = "<group>"; };
 		334EC740197087CC00EA0A0B /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		334EC742197098CB00EA0A0B /* dress_background_iPhone5-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dress_background_iPhone5-hd.png"; sourceTree = "<group>"; };
 		334EC74419709AAC00EA0A0B /* dress_background_iPhone5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dress_background_iPhone5.png; sourceTree = "<group>"; };
@@ -2420,9 +2426,10 @@
 		10A6BC83132595A600391C82 /* video */ = {
 			isa = PBXGroup;
 			children = (
+				3337EAF11974A7FE0082750F /* GameVideo.xib */,
 				10A6BC85132595BA00391C82 /* GameVideo.h */,
 				10A6BC86132595BA00391C82 /* GameVideo.m */,
-				10A6BC87132595BA00391C82 /* GameVideo.xib */,
+				10A6BC87132595BA00391C82 /* GameVideo5.xib */,
 			);
 			name = video;
 			sourceTree = "<group>";
@@ -3049,6 +3056,8 @@
 		10E025081311561C00549533 /* wheel */ = {
 			isa = PBXGroup;
 			children = (
+				3337EAED1974A31C0082750F /* wheel_background_iPhone5.png */,
+				3337EAEE1974A31C0082750F /* wheel_background_iPhone5-hd.png */,
 				84170ADB13C6390300DEDD21 /* AnimalsAnim */,
 				84E1A33F13B8FF2700BA7BE9 /* wheel_wordbackground_iPhone-hd.png */,
 				84E1A34013B8FF2800BA7BE9 /* wheel_wordbackground_iPhone.png */,
@@ -3770,7 +3779,7 @@
 				10A08C9513215091003F24AD /* GameDress_iPad.xib in Resources */,
 				10A08DC213215B3F003F24AD /* DressData_iPad.plist in Resources */,
 				10A6BC0113251CB500391C82 /* dress_background_iPad.png in Resources */,
-				10A6BC89132595BA00391C82 /* GameVideo.xib in Resources */,
+				10A6BC89132595BA00391C82 /* GameVideo5.xib in Resources */,
 				10A6BC9D1325966700391C82 /* ARG.mp4 in Resources */,
 				10A6BCEE13259EC400391C82 /* videoLyrics.plist in Resources */,
 				1024C2D91338314700F4D141 /* botas-2011.mp3 in Resources */,
@@ -3901,11 +3910,13 @@
 				109A4915136F39B60057428B /* WheelItems.plist in Resources */,
 				109A4917136F64130057428B /* wheel_settings_iPad.png in Resources */,
 				109A4919136F6A010057428B /* wheel_wordbackground_iPad.png in Resources */,
+				3337EAEF1974A31C0082750F /* wheel_background_iPhone5.png in Resources */,
 				109A49B513705E1A0057428B /* wheel_btn_bee_dwn_iPad.png in Resources */,
 				109A49B613705E1A0057428B /* wheel_btn_bee_iPad.png in Resources */,
 				109A49B713705E1A0057428B /* wheel_btn_cat_dwn_iPad.png in Resources */,
 				109A49B813705E1A0057428B /* wheel_btn_cat_iPad.png in Resources */,
 				109A49B913705E1A0057428B /* wheel_btn_chicken_dwn_iPad.png in Resources */,
+				3337EAF01974A31C0082750F /* wheel_background_iPhone5-hd.png in Resources */,
 				109A49BA13705E1A0057428B /* wheel_btn_chicken_iPad.png in Resources */,
 				109A49BB13705E1A0057428B /* wheel_btn_cow_dwn_iPad.png in Resources */,
 				109A49BC13705E1A0057428B /* wheel_btn_cow_iPad.png in Resources */,
@@ -4009,6 +4020,7 @@
 				10D2DF34138410F600334C4C /* dress_snd_necklace_where_eng.mp3 in Resources */,
 				10D2DF35138410F600334C4C /* dress_snd_pants_where_esp.mp3 in Resources */,
 				10D2DF36138410F600334C4C /* dress_snd_pants_where_eng.mp3 in Resources */,
+				3337EAF21974A7FE0082750F /* GameVideo.xib in Resources */,
 				10D2DF37138410F600334C4C /* dress_snd_phone_where_esp.mp3 in Resources */,
 				10D2DF38138410F600334C4C /* dress_snd_phone_where_eng.mp3 in Resources */,
 				10D2DF83138415EB00334C4C /* dress_snd_boots_Yellow_where_esp.mp3 in Resources */,
@@ -4628,6 +4640,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT) ";
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -4651,6 +4664,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT) ";
 				COPY_PHASE_STRIP = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -4672,6 +4686,7 @@
 		C01FCF4F08A954540054247B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
@@ -4686,6 +4701,7 @@
 		C01FCF5008A954540054247B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;

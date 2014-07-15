@@ -54,8 +54,16 @@
 	
 	[UIView setAnimationDuration:1];
 	[UIView setAnimationDelay:1];
-	[curtainL setCenter:CGPointMake(-56, curtainL.center.y)];
-	[curtainR setCenter:CGPointMake(538, curtainL.center.y)];
+    
+    if (IS_IPHONE5) {
+        [curtainL setCenter:CGPointMake(-56, curtainL.center.y)];
+        [curtainR setCenter:CGPointMake(625, curtainL.center.y)];
+    }
+    else {
+        [curtainL setCenter:CGPointMake(-56, curtainL.center.y)];
+        [curtainR setCenter:CGPointMake(538, curtainL.center.y)];
+    }
+
     [self performSelector:@selector(loadGame) withObject:nil afterDelay:0.8];
 	
 	[UIView commitAnimations];
