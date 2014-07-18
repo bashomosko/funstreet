@@ -28,8 +28,8 @@
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
 	
-    widthScroll = 640;
-    heightScroll= 360;
+    widthScroll = 720;
+    heightScroll= 440;
     
     widthVideo = 1024;
     heightVideo = 768;
@@ -59,8 +59,8 @@
 	
 	[UIView setAnimationDuration:1];
 	[UIView setAnimationDelay:0.1];
-	[curtainL setCenter:CGPointMake(-112, curtainL.center.y)];
-	[curtainR setCenter:CGPointMake(1136, curtainL.center.y)];
+	[curtainL setCenter:CGPointMake(-122, curtainL.center.y)];
+	[curtainR setCenter:CGPointMake(1146, curtainL.center.y)];
     [UIView commitAnimations];
 }
 

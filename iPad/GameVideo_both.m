@@ -174,6 +174,8 @@
     
     [videoView setDelegate:self];
     
+    videoView.allowsInlineMediaPlayback = NO;
+    
     for (id subview in videoView.subviews)
         if ([[subview class] isSubclassOfClass: [UIScrollView class]])
             ((UIScrollView *)subview).bounces = NO;

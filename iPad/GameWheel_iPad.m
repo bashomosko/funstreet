@@ -64,6 +64,8 @@
 	
 	[CCTexture2D setDefaultAlphaPixelFormat:kCCTexture2DPixelFormat_RGBA4444];
 	
+    if( ! [director enableRetinaDisplay:NO] )
+        CCLOG(@"Retina Display Not supported");
 	// Removes the startup flicker
 	//[self removeStartupFlicker];
 	
