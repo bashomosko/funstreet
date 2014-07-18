@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import <MediaPlayer/MediaPlayer.h>
+#import "MBProgressHUD.h"
 
-@interface GameVideo_both : UIViewController {
+@interface GameVideo_both : UIViewController <UIWebViewDelegate> {
 
 	MPMoviePlayerController * video;
 	
@@ -23,6 +24,11 @@
     float widthScroll;
     float heightScroll;
     
+    NSMutableArray * arrWebView;
+    MBProgressHUD * HUD;
+    
+    int videosLoaded;
+    
 }
 
 @property (nonatomic,retain) IBOutlet UIImageView * curtainL;
@@ -35,5 +41,8 @@
 @property (nonatomic,readwrite) float heightScroll;
 
 -(void)playVid:(int)videoNumber;
+- (void)embedYouTube:(NSString*)url frame:(CGRect)frame;
+-(IBAction)goToYoutubeChannel:(id)sender;
+-(void) doAnimation;
 
 @end

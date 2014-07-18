@@ -49,12 +49,18 @@
 	[self.view addSubview:skip];
     
     [scrollPaging setHidden:YES];
-    
-	[UIView beginAnimations:nil context:nil];
+
+    [self performSelector:@selector(loadGame) withObject:nil afterDelay:0.8];
+
+    [super viewDidLoad];
+	
+}
+
+-(void)doAnimation {
+    [UIView beginAnimations:nil context:nil];
 	
 	[UIView setAnimationDuration:1];
-	[UIView setAnimationDelay:1];
-    
+	[UIView setAnimationDelay:0.1];
     if (IS_IPHONE5) {
         [curtainL setCenter:CGPointMake(-56, curtainL.center.y)];
         [curtainR setCenter:CGPointMake(625, curtainL.center.y)];
@@ -63,18 +69,15 @@
         [curtainL setCenter:CGPointMake(-56, curtainL.center.y)];
         [curtainR setCenter:CGPointMake(538, curtainL.center.y)];
     }
-
-    [self performSelector:@selector(loadGame) withObject:nil afterDelay:0.8];
-	
-	[UIView commitAnimations];
-
-    [super viewDidLoad];
-	
+    [UIView commitAnimations];
 }
+
 
 -(void)goBack
 {
 	[self goToMenu];
+    
+    [[SimpleAudioEngine sharedEngine] playBackgroundMusic:@"backgroundMusic.mp3"];
 }
 
 -(void)goToMenu

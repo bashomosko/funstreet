@@ -44,19 +44,24 @@
     
     [scrollPaging setHidden:YES];
     
-	[UIView beginAnimations:nil context:nil];
-	
-	[UIView setAnimationDuration:1];
-	[UIView setAnimationDelay:1];
-	[curtainL setCenter:CGPointMake(-112, curtainL.center.y)];
-	[curtainR setCenter:CGPointMake(1136, curtainL.center.y)];
+
     [self performSelector:@selector(loadGame) withObject:nil afterDelay:0.8];
 	
-	[UIView commitAnimations];
+
 	
     [super viewDidLoad];
 	
 	
+}
+
+-(void)doAnimation {
+    [UIView beginAnimations:nil context:nil];
+	
+	[UIView setAnimationDuration:1];
+	[UIView setAnimationDelay:0.1];
+	[curtainL setCenter:CGPointMake(-112, curtainL.center.y)];
+	[curtainR setCenter:CGPointMake(1136, curtainL.center.y)];
+    [UIView commitAnimations];
 }
 
 

@@ -113,11 +113,34 @@
     if (IS_IPHONE5) {
         width = 568;
     }
+    
+    /*
+     [curtainL setCenter:CGPointMake(-56, curtainL.center.y)];
+     [curtainR setCenter:CGPointMake(625, curtainL.center.y)];
+     }
+     else {
+     [curtainL setCenter:CGPointMake(-56, curtainL.center.y)];
+     [curtainR setCenter:CGPointMake(538, curtainL.center.y)];
+     */
 	
 	introVideo = [[MPMoviePlayerController alloc] initWithContentURL:url];
 	[[[CCDirector sharedDirector] openGLView] addSubview:introVideo.view];
 	[introVideo.view setFrame:CGRectMake(0,0,width,320)];
 	[introVideo setControlStyle:MPMovieControlStyleNone];
+    
+    if (IS_IPHONE5) {
+        UIImageView *dot =[[UIImageView alloc] initWithFrame:CGRectMake(0,0,259,328)];
+        dot.image=[UIImage imageNamed:@"theatre_left_iPhone-hd.png"];
+        [introVideo.view addSubview:dot];
+        [dot setCenter:CGPointMake(-63, dot.center.y)];
+        [dot release];
+        
+        UIImageView *dot2 =[[UIImageView alloc] initWithFrame:CGRectMake(0,0,259,328)];
+        dot2.image=[UIImage imageNamed:@"theatre_right_iPhone-hd.png"];
+        [introVideo.view addSubview:dot2];
+        [dot2 setCenter:CGPointMake(632, dot2.center.y)];
+        [dot2 release];
+    }
     
     [[NSNotificationCenter defaultCenter]
 	 addObserver:self

@@ -10,9 +10,10 @@
 #import "SimpleAudioEngine.h"
 #import "GameManager.h"
 
+
 @implementation MainMenu_both
 
-@synthesize btnSong,btnDress,btnWheel,btnVideo,scroll,door1,door2;
+@synthesize btnSong,btnDress,btnWheel,btnVideo,scroll,door1,door2,internetReachability;
 
 // The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
 /*
@@ -44,9 +45,29 @@
 		 [[SimpleAudioEngine sharedEngine] playBackgroundMusic:@"backgroundMusic.mp3"];
 		[self animateDoors];
 	}*/
+    
+    [self configureReachability];
 
     [super viewDidLoad];
 	
+}
+
+-(void) configureReachability {
+    /*
+     Observe the kNetworkReachabilityChangedNotification. When that notification is posted, the method reachabilityChanged will be called.
+     */
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(reachabilityChanged:) name:kReachabilityChangedNotification object:nil];
+    
+    //Change the host name here to change the server you want to monitor.
+ 
+    self.internetReachability = [Reachability reachabilityWithHostName:@"www.google.com"];
+	[self.internetReachability startNotifier];
+}
+
+- (void) reachabilityChanged:(NSNotification *)note
+{
+	Reachability* curReach = [note object];
+	NSParameterAssert([curReach isKindOfClass:[Reachability class]]);
 }
 
 
@@ -84,6 +105,20 @@
 	[self.view addSubview:introVideo.view];
 	[introVideo.view setFrame:CGRectMake(0,0,width,height)];
 	[introVideo setControlStyle:MPMovieControlStyleNone];
+    
+    if (IS_IPHONE5) {
+        UIImageView *dot =[[UIImageView alloc] initWithFrame:CGRectMake(0,0,259,328)];
+        dot.image=[UIImage imageNamed:@"theatre_left_iPhone-hd.png"];
+        [introVideo.view addSubview:dot];
+        [dot setCenter:CGPointMake(-63, dot.center.y)];
+        [dot release];
+        
+        UIImageView *dot2 =[[UIImageView alloc] initWithFrame:CGRectMake(0,0,259,328)];
+        dot2.image=[UIImage imageNamed:@"theatre_right_iPhone-hd.png"];
+        [introVideo.view addSubview:dot2];
+        [dot2 setCenter:CGPointMake(632, dot2.center.y)];
+        [dot2 release];
+    }
 	
 	[[NSNotificationCenter defaultCenter]
 	 addObserver:self
@@ -264,6 +299,19 @@
 	[UIView setAnimationDidStopSelector:@selector(loadVideo)];
 	[self.view setAlpha:0];
 	[UIView commitAnimations];*/
+    NetworkStatus netStatus = [internetReachability currentReachabilityStatus];
+
+    if (netStatus == NotReachable) {
+        UIAlertView *alert = [[UIAlertView alloc]
+                              initWithTitle:@"Basho - Language Fun"
+                              message:@"An Internet connection is required to watch my videos."
+                              delegate:self
+                              cancelButtonTitle:@"Ok"
+                              otherButtonTitles: nil];
+        [alert show];
+        return;
+    }
+    
 	[self loadVideo];
 }
 
@@ -292,6 +340,8 @@
 
 
 - (void)dealloc {
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:kReachabilityChangedNotification object:nil];
+    
 	[door1 stopAnimating];
 	[door2 stopAnimating];
 	[btnSong release];

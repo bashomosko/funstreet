@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import <MediaPlayer/MediaPlayer.h>
+#import "Reachability.h"
 
 @interface MainMenu_both : UIViewController {
 	
@@ -27,8 +28,10 @@
     
     BOOL videoFromLoadingScene;
     NSString * doorsSuffix;
+    Reachability *internetReachability;
     
     float widthScreen;
+    
 }
 
 @property (nonatomic,retain) IBOutlet UIButton * btnSong;
@@ -38,6 +41,7 @@
 @property (nonatomic,retain) IBOutlet UIScrollView * scroll;
 @property (nonatomic,retain) IBOutlet UIImageView * door1;
 @property (nonatomic,retain) IBOutlet UIImageView * door2;
+@property (nonatomic) Reachability *internetReachability;
 
 -(IBAction) goToSong:(id)sender;
 -(IBAction) goToWheel:(id)sender;
