@@ -15,7 +15,6 @@
 @interface MainMenu : MainMenu_both {
     
     SettingsViewController_iPhone * sv;
-
 }
 
 -(void)removeSettings;

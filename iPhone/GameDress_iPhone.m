@@ -120,8 +120,11 @@
 	[self.view removeFromSuperview];
 	[self release];
 	
-	MainMenu * gw = [[MainMenu alloc] 
-						  initWithNibName:@"MainMenu" bundle:nil];
+    MainMenu * gw = nil;
+    
+   gw = [[MainMenu alloc]
+              initWithNibName:@"MainMenu" bundle:nil];
+    
 	[gw.view setAlpha:0];
 	AppDelegate_iPhone * app = (AppDelegate_iPhone *)[[UIApplication sharedApplication] delegate];
 	UIWindow * w = app.window;

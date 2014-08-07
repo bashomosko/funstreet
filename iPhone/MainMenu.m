@@ -17,15 +17,15 @@
 @implementation MainMenu
 
 // The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
-/*
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        // Custom initialization.
+       
     }
     return self;
 }
-*/
+
 
 
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
@@ -62,7 +62,8 @@
     }
     
  //   [scroll setFrame:CGRectMake(0, 0, widthScreen, 320)];
-    
+    [btnPreviousScreen setAlpha:0];
+    [btnPreviousScreen setEnabled:NO];
     
     //widthScreen = 480;
     [super viewDidLoad];
@@ -192,6 +193,32 @@
 		return YES;
 	
 	return NO;
+}
+
+-(IBAction) goToNextScreen:(id)sender
+{
+    [scroll setContentOffset:CGPointMake(widthScreen, 0) animated:YES];
+    
+    [UIView beginAnimations:nil context:nil];
+    [UIView setAnimationDuration:0.1];
+	[btnPreviousScreen setAlpha:1];
+    [btnNextScreen setEnabled:NO];
+    [btnPreviousScreen setEnabled:YES];
+    [btnNextScreen setAlpha:0];
+	[UIView commitAnimations];
+}
+
+-(IBAction) goToPreviousScreen:(id)sender
+{
+    [scroll setContentOffset:CGPointMake(0, 0) animated:YES];
+    
+    [UIView beginAnimations:nil context:nil];
+    [UIView setAnimationDuration:0.1];
+	[btnPreviousScreen setAlpha:0];
+    [btnNextScreen setEnabled:YES];
+    [btnPreviousScreen setEnabled:NO];
+    [btnNextScreen setAlpha:1];
+	[UIView commitAnimations];
 }
 
 

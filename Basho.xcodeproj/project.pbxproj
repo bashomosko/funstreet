@@ -536,6 +536,10 @@
 		334EC74519709AAC00EA0A0B /* dress_background_iPhone5.png in Resources */ = {isa = PBXBuildFile; fileRef = 334EC74419709AAC00EA0A0B /* dress_background_iPhone5.png */; };
 		334EC7481970A4D500EA0A0B /* snapshot_background_iPhone5.png in Resources */ = {isa = PBXBuildFile; fileRef = 334EC7461970A4D500EA0A0B /* snapshot_background_iPhone5.png */; };
 		334EC7491970A4D500EA0A0B /* snapshot_background_iPhone5-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = 334EC7471970A4D500EA0A0B /* snapshot_background_iPhone5-hd.png */; };
+		3364E01619943A5700A1027A /* leftArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 3364E01219943A5700A1027A /* leftArrow.png */; };
+		3364E01719943A5700A1027A /* rightArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 3364E01319943A5700A1027A /* rightArrow.png */; };
+		3364E01819943A5700A1027A /* leftArrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3364E01419943A5700A1027A /* leftArrow@2x.png */; };
+		3364E01919943A5700A1027A /* rightArrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3364E01519943A5700A1027A /* rightArrow@2x.png */; };
 		337B20D8197939F500304323 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 337B20D7197939F500304323 /* Reachability.m */; };
 		337B20DA19793BDA00304323 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 337B20D919793BDA00304323 /* SystemConfiguration.framework */; };
 		337B20DC19793EE300304323 /* FunStINTL_Icon_144.png in Resources */ = {isa = PBXBuildFile; fileRef = 337B20DB19793EE300304323 /* FunStINTL_Icon_144.png */; };
@@ -1581,6 +1585,10 @@
 		334EC74419709AAC00EA0A0B /* dress_background_iPhone5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dress_background_iPhone5.png; sourceTree = "<group>"; };
 		334EC7461970A4D500EA0A0B /* snapshot_background_iPhone5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = snapshot_background_iPhone5.png; sourceTree = "<group>"; };
 		334EC7471970A4D500EA0A0B /* snapshot_background_iPhone5-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "snapshot_background_iPhone5-hd.png"; sourceTree = "<group>"; };
+		3364E01219943A5700A1027A /* leftArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = leftArrow.png; sourceTree = "<group>"; };
+		3364E01319943A5700A1027A /* rightArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rightArrow.png; sourceTree = "<group>"; };
+		3364E01419943A5700A1027A /* leftArrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "leftArrow@2x.png"; sourceTree = "<group>"; };
+		3364E01519943A5700A1027A /* rightArrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "rightArrow@2x.png"; sourceTree = "<group>"; };
 		337B20D6197939F500304323 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		337B20D7197939F500304323 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		337B20D919793BDA00304323 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
@@ -2092,6 +2100,10 @@
 		1051CAD3137881B7002DACDF /* main menu */ = {
 			isa = PBXGroup;
 			children = (
+				3364E01219943A5700A1027A /* leftArrow.png */,
+				3364E01319943A5700A1027A /* rightArrow.png */,
+				3364E01419943A5700A1027A /* leftArrow@2x.png */,
+				3364E01519943A5700A1027A /* rightArrow@2x.png */,
 				84C8B2DD13AA300D00CEE27F /* mm_background1@2x.png */,
 				84C8B2DE13AA300D00CEE27F /* mm_background1.png */,
 				84C8B2DF13AA300D00CEE27F /* mm_background2@2x.png */,
@@ -3782,6 +3794,7 @@
 				109D60D8133A5B150061B1C3 /* dress_snd_necklace_Purple_wrong.mp3 in Resources */,
 				109D60D9133A5B150061B1C3 /* dress_snd_phone_Yellow_wrong.mp3 in Resources */,
 				109D60DA133A5B150061B1C3 /* dress_snd_phone_Blue_wrong.mp3 in Resources */,
+				3364E01619943A5700A1027A /* leftArrow.png in Resources */,
 				109D60DB133A5B150061B1C3 /* dress_snd_phone_Red_wrong.mp3 in Resources */,
 				109D60DC133A5B150061B1C3 /* dress_snd_phone_Purple_wrong.mp3 in Resources */,
 				109D60DD133A5B150061B1C3 /* dress_snd_sunglasses_Yellow_wrong.mp3 in Resources */,
@@ -3866,6 +3879,7 @@
 				109A49B613705E1A0057428B /* wheel_btn_bee_iPad.png in Resources */,
 				109A49B713705E1A0057428B /* wheel_btn_cat_dwn_iPad.png in Resources */,
 				109A49B813705E1A0057428B /* wheel_btn_cat_iPad.png in Resources */,
+				3364E01919943A5700A1027A /* rightArrow@2x.png in Resources */,
 				109A49B913705E1A0057428B /* wheel_btn_chicken_dwn_iPad.png in Resources */,
 				3337EAF01974A31C0082750F /* wheel_background_iPhone5-hd.png in Resources */,
 				109A49BA13705E1A0057428B /* wheel_btn_chicken_iPad.png in Resources */,
@@ -4129,6 +4143,7 @@
 				84D0BEF613AB736C00AA1A36 /* settingsbackground_iPhone.png in Resources */,
 				84D0BEF713AB736C00AA1A36 /* settingsbackground_iPhone@2x.png in Resources */,
 				84D0BEF913AB73AC00AA1A36 /* SettingsViewController_iPhone.xib in Resources */,
+				3364E01819943A5700A1027A /* leftArrow@2x.png in Resources */,
 				84952C1413ABAF1100F639D4 /* wheel_wheel_iPhone.png in Resources */,
 				84952C1513ABAF1100F639D4 /* wheel_sound_on_iPhone.png in Resources */,
 				84952C1713ABAF1100F639D4 /* wheel_sound_off_iPhone.png in Resources */,
@@ -4143,6 +4158,7 @@
 				84952C3813ABAF2600F639D4 /* wheel_btn_duck_dwn_iPhone.png in Resources */,
 				84952C3913ABAF2600F639D4 /* wheel_btn_dog_iPhone.png in Resources */,
 				84952C3A13ABAF2600F639D4 /* wheel_btn_dog_dwn_iPhone.png in Resources */,
+				3364E01719943A5700A1027A /* rightArrow.png in Resources */,
 				84952C3B13ABAF2600F639D4 /* wheel_btn_cow_iPhone.png in Resources */,
 				84952C3C13ABAF2600F639D4 /* wheel_btn_cow_dwn_iPhone.png in Resources */,
 				84952C3D13ABAF2600F639D4 /* wheel_btn_chicken_iPhone.png in Resources */,
