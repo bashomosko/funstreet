@@ -10,16 +10,6 @@
 	<string>${EXECUTABLE_NAME}</string>
 	<key>CFBundleIconFile</key>
 	<string></string>
-	<key>CFBundleIconFiles</key>
-	<array>
-		<string>FunStINTL_Icon_72.png</string>
-		<string>FunStINTL_Icon_57.png</string>
-		<string>FunStINTL_Icon_76.png</string>
-		<string>FunStINTL_Icon_120.png</string>
-		<string>FunStINTL_Icon_152.png</string>
-		<string>FunStINTL_Icon_114.png</string>
-		<string>FunStINTL_Icon_144.png</string>
-	</array>
 	<key>CFBundleIdentifier</key>
 	<string>com.yourcompany.${PRODUCT_NAME:rfc1034identifier}</string>
 	<key>CFBundleInfoDictionaryVersion</key>
