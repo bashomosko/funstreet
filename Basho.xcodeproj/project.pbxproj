@@ -372,9 +372,6 @@
 		10AA093313070E0400D11E6B /* CDOpenALSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 10AA08BA13070E0400D11E6B /* CDOpenALSupport.m */; };
 		10AA093413070E0400D11E6B /* CocosDenshion.m in Sources */ = {isa = PBXBuildFile; fileRef = 10AA08BC13070E0400D11E6B /* CocosDenshion.m */; };
 		10AA093513070E0400D11E6B /* SimpleAudioEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 10AA08BE13070E0400D11E6B /* SimpleAudioEngine.m */; };
-		10AA093613070E0400D11E6B /* CLScoreServerPost.m in Sources */ = {isa = PBXBuildFile; fileRef = 10AA08C113070E0400D11E6B /* CLScoreServerPost.m */; };
-		10AA093713070E0400D11E6B /* CLScoreServerRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 10AA08C313070E0400D11E6B /* CLScoreServerRequest.m */; };
-		10AA093813070E0400D11E6B /* cocoslive.m in Sources */ = {isa = PBXBuildFile; fileRef = 10AA08C513070E0400D11E6B /* cocoslive.m */; };
 		10AA093913070E0400D11E6B /* ZAttributedString.m in Sources */ = {isa = PBXBuildFile; fileRef = 10AA08C813070E0400D11E6B /* ZAttributedString.m */; };
 		10AA093A13070E0400D11E6B /* FontLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 10AA08CB13070E0400D11E6B /* FontLabel.m */; };
 		10AA093B13070E0400D11E6B /* FontLabelStringDrawing.m in Sources */ = {isa = PBXBuildFile; fileRef = 10AA08CD13070E0400D11E6B /* FontLabelStringDrawing.m */; };
@@ -1391,12 +1388,6 @@
 		10AA08BC13070E0400D11E6B /* CocosDenshion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CocosDenshion.m; sourceTree = "<group>"; };
 		10AA08BD13070E0400D11E6B /* SimpleAudioEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleAudioEngine.h; sourceTree = "<group>"; };
 		10AA08BE13070E0400D11E6B /* SimpleAudioEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleAudioEngine.m; sourceTree = "<group>"; };
-		10AA08C013070E0400D11E6B /* CLScoreServerPost.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLScoreServerPost.h; sourceTree = "<group>"; };
-		10AA08C113070E0400D11E6B /* CLScoreServerPost.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLScoreServerPost.m; sourceTree = "<group>"; };
-		10AA08C213070E0400D11E6B /* CLScoreServerRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLScoreServerRequest.h; sourceTree = "<group>"; };
-		10AA08C313070E0400D11E6B /* CLScoreServerRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLScoreServerRequest.m; sourceTree = "<group>"; };
-		10AA08C413070E0400D11E6B /* cocoslive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cocoslive.h; sourceTree = "<group>"; };
-		10AA08C513070E0400D11E6B /* cocoslive.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = cocoslive.m; sourceTree = "<group>"; };
 		10AA08C713070E0400D11E6B /* ZAttributedString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZAttributedString.h; sourceTree = "<group>"; };
 		10AA08C813070E0400D11E6B /* ZAttributedString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZAttributedString.m; sourceTree = "<group>"; };
 		10AA08C913070E0400D11E6B /* ZAttributedStringPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZAttributedStringPrivate.h; sourceTree = "<group>"; };
@@ -2411,7 +2402,6 @@
 			children = (
 				10AA080A13070E0300D11E6B /* cocos2d */,
 				10AA08B513070E0400D11E6B /* CocosDenshion */,
-				10AA08BF13070E0400D11E6B /* cocoslive */,
 				10AA08C613070E0400D11E6B /* FontLabel */,
 				10AA08D213070E0400D11E6B /* TouchJSON */,
 			);
@@ -2637,19 +2627,6 @@
 				10AA08BE13070E0400D11E6B /* SimpleAudioEngine.m */,
 			);
 			path = CocosDenshion;
-			sourceTree = "<group>";
-		};
-		10AA08BF13070E0400D11E6B /* cocoslive */ = {
-			isa = PBXGroup;
-			children = (
-				10AA08C013070E0400D11E6B /* CLScoreServerPost.h */,
-				10AA08C113070E0400D11E6B /* CLScoreServerPost.m */,
-				10AA08C213070E0400D11E6B /* CLScoreServerRequest.h */,
-				10AA08C313070E0400D11E6B /* CLScoreServerRequest.m */,
-				10AA08C413070E0400D11E6B /* cocoslive.h */,
-				10AA08C513070E0400D11E6B /* cocoslive.m */,
-			);
-			path = cocoslive;
 			sourceTree = "<group>";
 		};
 		10AA08C613070E0400D11E6B /* FontLabel */ = {
@@ -4535,9 +4512,6 @@
 				10AA093313070E0400D11E6B /* CDOpenALSupport.m in Sources */,
 				10AA093413070E0400D11E6B /* CocosDenshion.m in Sources */,
 				10AA093513070E0400D11E6B /* SimpleAudioEngine.m in Sources */,
-				10AA093613070E0400D11E6B /* CLScoreServerPost.m in Sources */,
-				10AA093713070E0400D11E6B /* CLScoreServerRequest.m in Sources */,
-				10AA093813070E0400D11E6B /* cocoslive.m in Sources */,
 				10AA093913070E0400D11E6B /* ZAttributedString.m in Sources */,
 				10AA093A13070E0400D11E6B /* FontLabel.m in Sources */,
 				10AA093B13070E0400D11E6B /* FontLabelStringDrawing.m in Sources */,
