@@ -10,29 +10,29 @@
 	<string>Basho</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>9A11DC4C-1197-46E2-8393-899029F9462C</key>
+		<key>A8F6F438BD4CA8A989E2992CB69FE143E904515A</key>
 		<string>https://github.com/bashomosko/funstreet.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>Basho.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>9A11DC4C-1197-46E2-8393-899029F9462C</key>
+		<key>A8F6F438BD4CA8A989E2992CB69FE143E904515A</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/bashomosko/funstreet.git</string>
 	<key>IDESourceControlProjectVersion</key>
-	<integer>110</integer>
+	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>9A11DC4C-1197-46E2-8393-899029F9462C</string>
+	<string>A8F6F438BD4CA8A989E2992CB69FE143E904515A</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>9A11DC4C-1197-46E2-8393-899029F9462C</string>
+			<string>A8F6F438BD4CA8A989E2992CB69FE143E904515A</string>
 			<key>IDESourceControlWCCName</key>
 			<string>funstreet</string>
 		</dict>

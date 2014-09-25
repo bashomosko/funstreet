@@ -216,7 +216,8 @@
 	}
     
 	[target end];
-	[target saveBuffer:@"pirulo"];
+    
+	[target saveBuffer:[[GameDressScene_both applicationDocumentsDirectory] stringByAppendingString:@"pirulo"]];
 	UIImage * savedImg = [target getUIImageFromBuffer];
     CCTexture2D * text = [[CCTexture2D alloc] initWithImage:savedImg];
     CCSprite * dinoDressed = [CCSprite spriteWithTexture:text];

@@ -115,6 +115,7 @@ static BOOL AccelerationIsShaking(UIAcceleration* last, UIAcceleration* current,
 -(void)beginGame;
 - (NSMutableArray *) shuffle:(NSMutableArray *)array;
 -(void)selectItemForBasho;
++ (NSString *) applicationDocumentsDirectory;
 
 
 @end
